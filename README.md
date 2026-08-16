@@ -38,7 +38,7 @@ Historical proof scaffolding, CI ledgers, result archives, theorem-by-theorem ch
 
 ## Executable tripwires
 
-`core_tripwires.py` and `test_core_tripwires.py` are intentionally tiny. They are **not proofs** and are not numerical substitutes for the PDE theorems. They encode a few semantics that future edits must not accidentally reverse: signed-before-Hahn routing, single recipient charge, stock/work separation, material-sidecar non-generation, antisymmetric relink flux, physical-first joint stops, and native-evidence admission.
+`core_tripwires.py` and `test_core_tripwires.py` are intentionally tiny. They are **not proofs** and are not numerical substitutes for the PDE theorems. They encode a few semantics that future edits must not accidentally reverse: signed-before-Hahn routing, single recipient charge, stock/work separation, hard-shell stock/inflow supply, material-sidecar non-generation, antisymmetric relink flux, physical-first joint stops, and native-evidence admission.
 
 Run them with no third-party dependency:
 
@@ -56,7 +56,9 @@ The live physical spine is
 actual signed NS nonlinear work
         ↓ Hahn once
 a canonical positive physical cause
-        ↓ physical ownership / donor provenance
+        ↓ same-time donor flow / mode-set continuity
+terminal hard-shell energy: earlier modal stock OR actual nonlinear boundary inflow
+        ↓ physical geometry / donor provenance
 hard tail: inherited stock OR true low→high supply
         ↓
 pure UV  ───────────────→ first-shell natural-time route
@@ -75,6 +77,8 @@ quotient role/probe labels and shell/service witness-charge duplication
 MIXED SOURCE / STRAIN / NONLINEAR-WORK RECURRENCE  ← current frontier
 ```
 
-The current quotients remove analysis-role/probe changes and shell/service rereadings as independent causal currencies.  The remaining master-facing **causal owner** families are source/SGS, strain/dissipation, and actual nonlinear work (including generic HH/high-tail work after its physical gates).  Physical shell/service objects remain in the state as real witnesses with their time, scale and provenance intact; an untyped observation fails closed rather than minting another owner.
+The current quotients remove analysis-role/probe changes and shell/service rereadings as independent causal currencies.  The new hard-shell supply quotient sharpens the ownership question further: once a physical hard shell exists, its terminal kinetic energy is supplied only by earlier modal stock or actual nonlinear boundary inflow; the theorem that exposed the shell may retain scale/geometry provenance but does not become a third energy supplier.
+
+The remaining master-facing event families are still provisionally source/SGS, strain/dissipation, and actual nonlinear work because source/strain can be genuine geometry breakers and the historical `old_pool_not_yet_eroded` capacity seam has not yet been physically quotiented.  The stronger reduction to one nonlinear kinetic-energy flow law is an audit hypothesis, not a theorem.
 
 The aim of this repository is to make that structure visible immediately, without requiring a reader to reconstruct it from thousands of historical files.

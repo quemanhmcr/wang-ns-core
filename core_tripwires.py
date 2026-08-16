@@ -49,6 +49,57 @@ def mode_set_endpoint_energy(E0: float, inflow: float, outflow: float, dissipati
     return max(E1, 0.0)
 
 
+HARD_SHELL_ENERGY_SUPPLY_TYPES = frozenset({
+    "modal_stock",
+    "actual_nonlinear_boundary_inflow",
+})
+
+
+def hard_shell_terminal_supply_cover(
+    *,
+    initial_energy: float,
+    terminal_energy: float,
+    nonlinear_inflow: float,
+    nonlinear_outflow: float,
+    viscous_dissipation: float,
+    stock_fraction: float = 1.0 / 5.0,
+    tol: float = 1e-12,
+) -> frozenset[str]:
+    """Exact corollary of mode-set continuity for one physical hard shell.
+
+    If E1 + D + Phi_out = E0 + Phi_in and E1>0, then for any theta in
+    (0,1), either E0>=theta E1 or Phi_in>=(1-theta)E1.  Outflow and
+    viscosity are sinks; a theorem label which merely exposed the shell is not
+    admitted as a third supplier of its terminal kinetic energy.
+    """
+    values = (initial_energy, terminal_energy, nonlinear_inflow, nonlinear_outflow, viscous_dissipation)
+    if any(x < 0.0 for x in values):
+        raise ValueError("hard-shell stock, boundary flows and dissipation must be nonnegative")
+    theta = float(stock_fraction)
+    if not 0.0 < theta < 1.0:
+        raise ValueError("stock fraction must lie strictly between zero and one")
+    expected = mode_set_endpoint_energy(
+        initial_energy,
+        inflow=nonlinear_inflow,
+        outflow=nonlinear_outflow,
+        dissipation=viscous_dissipation,
+    )
+    scale = max(*(abs(float(x)) for x in values), abs(expected), 1e-300)
+    if not isclose(terminal_energy, expected, abs_tol=tol * scale, rel_tol=tol):
+        raise ValueError("terminal shell energy must satisfy the exact mode-set continuity law")
+    if terminal_energy <= tol * scale:
+        return frozenset()
+    eps = tol * scale
+    suppliers: set[str] = set()
+    if initial_energy + eps >= theta * terminal_energy:
+        suppliers.add("modal_stock")
+    if nonlinear_inflow + eps >= (1.0 - theta) * terminal_energy:
+        suppliers.add("actual_nonlinear_boundary_inflow")
+    if not suppliers:
+        raise AssertionError("positive terminal hard-shell energy lost its stock/inflow supply cover")
+    return frozenset(suppliers)
+
+
 def inherited_stock_component(
     *,
     E0: float,

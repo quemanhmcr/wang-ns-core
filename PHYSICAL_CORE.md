@@ -108,6 +108,55 @@ Consequences:
 - no FIFO/LIFO/proportional matching of earlier deposits to later withdrawals;
 - large gross nonlinear traffic can coexist with small net boundary supply.
 
+### 3.1 Native hard-shell supply quotient
+
+Apply the same exact continuity law to the physical hard shell
+
+\[
+A_M=\{(k,s):M/2<|k|\le M,\ s=\pm1\}.
+\]
+
+For any physical interval \([s,t]\),
+
+\[
+E_M(t)+D_M[s,t]+\Phi_{\rm out,M}[s,t]
+=
+E_M(s)+\Phi_{\rm in,M}[s,t].
+\]
+
+Hence, if the terminal shell is critical,
+
+\[
+M E_M(t)\ge\mu_0>0,
+\]
+
+then for every fixed \(0<\theta<1\), exact nonnegativity of dissipation and outward flow gives
+
+\[
+\boxed{
+M E_M(s)\ge\theta\mu_0
+\quad\text{or}\quad
+M\Phi_{\rm in,M}[s,t]\ge(1-\theta)\mu_0.
+}
+\]
+
+Exact equality retains both alternatives.  With the familiar \(\theta=1/5\),
+
+\[
+M E_M(s)\ge\frac15\mu_0
+\quad\text{or}\quad
+M\Phi_{\rm in,M}\ge\frac45\mu_0.
+\]
+
+This is an **energy-supply theorem**, not another shell-selection rule.  Its two positive suppliers are only:
+
+1. earlier physical modal stock; or
+2. actual nonlinear boundary inflow, obtained from the already-canonical donor/recipient work law.
+
+Viscosity and outward flow are sinks.  A theorem which exposed, forced, or localized the hard shell---for example resolved dissipation, pressure-pair structure, or fresh SGS service---may retain indispensable scale/geometry provenance, but it is not thereby a third supplier of the shell's terminal kinetic energy.
+
+This distinction does **not** erase source, pressure, or strain physics from Navier--Stokes.  Those mechanisms can force a shell to exist, alter geometry, or break a pure recurrence theorem.  It says only that once the question is "what physically supplied the energy now stored in this fixed Fourier shell?", the native mode-set continuity law answers with stock or nonlinear inflow and nothing else.
+
 For the exterior \(H_R=\{|k|>R\}\), the same balance separates true low→high supply \(\Phi_\uparrow\), true high→low return \(\Phi_\downarrow\), tail stock, and viscosity. High→high circulation is internal work, not tail supply.
 
 Integrating the actual radial crossings against \(dR/R\) gives clipped logarithmic displacement. Equiradial transfer has zero radial action. Therefore an interaction does **not** automatically advance one dyadic shell and transfer count is not a physical scale clock.

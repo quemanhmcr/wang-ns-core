@@ -441,6 +441,91 @@ This still does not close Mixed recurrence.  It makes the remaining problem more
 
 ---
 
+## 3C. Exact hard-shell supply quotient: supplier theorem is not shell-energy owner
+
+The mode-set continuity theorem arrived later than the original objective-source compiler and sharpens Section 3B one physical level further.
+
+Fix the actual hard shell
+
+\[
+A_M=\{(k,s):M/2<|k|\le M\}.
+\]
+
+Its exact Navier--Stokes continuity law is
+
+\[
+E_M(t)+D_M+\Phi_{\rm out,M}=E_M(s)+\Phi_{\rm in,M}.
+\]
+
+Therefore a terminal lower \(M E_M(t)\ge\mu_0\) has, for every \(0<\theta<1\), the exact positive supply cover
+
+\[
+\boxed{
+M E_M(s)\ge\theta\mu_0
+\quad\lor\quad
+M\Phi_{\rm in,M}\ge(1-\theta)\mu_0.
+}
+\]
+
+The shell-energy owner vocabulary is thus smaller than the theorem-supplier vocabulary:
+
+\[
+\boxed{
+\{\text{earlier modal stock},\ \text{actual nonlinear boundary inflow}\}.
+}
+\]
+
+`D_M` and `Phi_out` are losses.  A pressure-pair theorem, resolved-dissipation theorem, fresh-service theorem, or other PDE result may be exactly what **certifies that the shell exists** and may carry essential scale geometry, but the certification label does not become a third positive supplier of the energy sitting in the shell.
+
+### Consequence for current supplier routes
+
+| theorem which exposes a shell | what survives as theorem data | owner of terminal shell energy |
+|---|---|---|
+| resolved/high-strain dissipation | physical shell and lower-frequency geometry | earlier stock or actual nonlinear inflow |
+| resolved pressure pair | actual hard pair plus shell/scale consequence | earlier stock or actual nonlinear inflow |
+| fresh SGS service | refinement-invariant service-band law plus actual witness shell | earlier stock or actual nonlinear inflow |
+| inherited hard-tail branch | tail/shell state | stock |
+| true high-tail regeneration | low→high crossing law | actual nonlinear inflow/work |
+
+This is not a claim that pressure, SGS, or strain are observer artifacts.  It separates two questions which the earlier compiler sometimes wrote in one vocabulary:
+
+1. **Which true PDE mechanism forced or located this state/geometry?**
+2. **What supplied the kinetic energy currently stored in this fixed Fourier shell?**
+
+The first may legitimately remember pressure/SGS/strain geometry.  The second is answered exactly by modal continuity.
+
+### A remaining stale-compiler seam: `old_pool_not_yet_eroded`
+
+The current historical SGS compiler can still return
+
+```text
+old_pool_not_yet_eroded -> RECURSE_CRITICAL_RESERVOIR_CAPACITY
+```
+
+from the inequality that an old service capacity remains above a threshold.  But the core's non-negotiable rule is that **capacity is not causal probability, work, reset resource, or recurrence budget**.  The later inherited-stock theorem also shows that old physical energy may persist with zero generation depth.
+
+Accordingly this branch is now a fail-closed research seam: before it is allowed to remain an event in a cleaned master, one must exhibit the actual Navier--Stokes change that occurs there.  A large capacity value by itself is not that event.  It may ultimately reduce to persistent stock plus actual boundary work, but the present same-carrier inherited-stock theorem is not broad enough to assert that reduction for an arbitrarily redistributed old pool.
+
+### Do not over-compress the frontier yet
+
+The exact shell-supply theorem permits one firm reduction:
+
+> **A source/service/pressure theorem that ends only by exposing a hard shell cannot retain independent ownership of that shell's kinetic energy.  The shell energy must be rerooted to earlier modal stock or canonical nonlinear inflow.**
+
+It does **not** yet justify deleting `source/SGS` from the whole Mixed vocabulary.  Differentiated SGS and pressure terms are genuine sources of derived resolved-strain variables, and source/strain episodes may be physical breakers of the geometry needed by the two existing pure recurrence telescopes.  The `old_pool_not_yet_eroded` seam also remains unresolved.
+
+The stronger working hypothesis for the next audit is therefore deliberately marked **conjectural**:
+
+\[
+\text{interior kinetic-energy causality}
+\stackrel{?}{=}
+\text{modal stock}\ +\ dW^+\ +\ \text{viscous loss},
+\]
+
+with \(t=0\) as the physical initial boundary and pressure/SGS/strain retained where they genuinely control geometry rather than minted as extra energy currencies.  If this survives the remaining audits, the Mixed problem should be reformulated as mixed **physical geometry/breakers of one nonlinear energy-flow law**, not as a competition among heterogeneous synthetic currencies.
+
+---
+
 ## 4. What a new Mixed theorem is allowed to use
 
 A new recurrence step may use only information physically supplied by the event it resolves.

@@ -2,6 +2,7 @@ import unittest
 
 from core_tripwires import (
     PhysicalHit,
+    hard_shell_terminal_supply_cover,
     mode_set_endpoint_energy,
     resolve_material_locator,
     resolve_role_probe_locator,
@@ -65,6 +66,57 @@ class CoreTripwires(unittest.TestCase):
 
     def test_mode_set_stock_uses_boundary_flow_not_internal_traffic(self):
         self.assertAlmostEqual(mode_set_endpoint_energy(10.0, inflow=3.0, outflow=2.0, dissipation=4.0), 7.0)
+
+    def test_terminal_hard_shell_energy_has_only_stock_or_actual_nonlinear_inflow_supply(self):
+        from core_tripwires import HARD_SHELL_ENERGY_SUPPLY_TYPES
+        self.assertEqual(
+            HARD_SHELL_ENERGY_SUPPLY_TYPES,
+            frozenset({"modal_stock", "actual_nonlinear_boundary_inflow"}),
+        )
+        self.assertEqual(
+            hard_shell_terminal_supply_cover(
+                initial_energy=0.1,
+                terminal_energy=1.0,
+                nonlinear_inflow=1.1,
+                nonlinear_outflow=0.1,
+                viscous_dissipation=0.1,
+            ),
+            frozenset({"actual_nonlinear_boundary_inflow"}),
+        )
+
+    def test_hard_shell_supply_cover_retains_exact_stock_inflow_tie(self):
+        self.assertEqual(
+            hard_shell_terminal_supply_cover(
+                initial_energy=0.2,
+                terminal_energy=1.0,
+                nonlinear_inflow=0.8,
+                nonlinear_outflow=0.0,
+                viscous_dissipation=0.0,
+            ),
+            frozenset({"modal_stock", "actual_nonlinear_boundary_inflow"}),
+        )
+
+    def test_dissipation_and_outflow_cannot_be_positive_hard_shell_suppliers(self):
+        cover = hard_shell_terminal_supply_cover(
+            initial_energy=1.2,
+            terminal_energy=0.5,
+            nonlinear_inflow=0.0,
+            nonlinear_outflow=0.4,
+            viscous_dissipation=0.3,
+        )
+        self.assertEqual(cover, frozenset({"modal_stock"}))
+        self.assertNotIn("strain_dissipation", cover)
+        self.assertNotIn("source_sgs", cover)
+
+    def test_hard_shell_supply_cover_refuses_a_nonphysical_balance(self):
+        with self.assertRaises(ValueError):
+            hard_shell_terminal_supply_cover(
+                initial_energy=0.1,
+                terminal_energy=1.0,
+                nonlinear_inflow=0.1,
+                nonlinear_outflow=0.0,
+                viscous_dissipation=0.0,
+            )
 
     def test_raw_material_locator_must_resolve_to_a_different_native_type(self):
         with self.assertRaises(ValueError):
