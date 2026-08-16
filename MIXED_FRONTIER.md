@@ -277,7 +277,7 @@ Every good edge already carries both physical interaction parents in `3/5<N_p/N_
 \psi_p=P_pu(t)/\|P_pu(t)\|_2.
 \]
 For the event-anchored smooth envelope `Q_pP_p=P_p`, exactly `<Q_pu,P_p psi_p>=||P_pu||_2`.  The common-slice theorem is shape-blind: either an existing role-interface/HH/strain obstruction reenters physical energy/work, or the same parent coefficient survives with the certified `1/4` factor.  Thus signed-good parabolic ancestry registers directly from the hard physical state; no Gaussian near-extremizer is needed for causal depth.
-Consequently the degenerate full-signed Young/Christ margin `mu->0` is **not a master no-escape seam** in the distilled hard-work route.  Full-signed Young/Christ remains meaningful for near-extremizer shape, Gaussian marking, amplitude productivity and entropy/coherent-root analysis; its degenerate margin may remain analytically open there.  If that auxiliary coherent route ever requires a positive kernel, it must still be a separately proved positive disintegration of canonical `dW+`; fresh coherent Hahn remains forbidden.
+Consequently the degenerate full-signed Young/Christ margin `mu->0` is **not a master no-escape seam** in the distilled hard-work route.  Full-signed Young/Christ remains meaningful for near-extremizer shape, Gaussian marking, amplitude productivity and entropy/coherent-root analysis; its degenerate margin may remain analytically open there.  If that auxiliary coherent route ever requires a positive kernel, it must still be a separately proved positive disintegration of canonical `dW+`; fresh coherent Hahn remains forbidden.  The same event-noncreation rule removes the rest of the optional coherent-analysis exit alphabet from hard ancestry: aspect itself is never charged and can change only through actual deformation/strain or expose a radius/mass state; large radius is a state witness whose energy reroutes modally; holonomy is a genuine polarization observable/cost but is not consulted by the hard self-probe causal chain; coherent deformation is existing `D_V`; full-natural service/material labels are witnesses/provenance; and Kelvin-flat is absent from `RecursiveEventState`, remaining a no-hit/auxiliary analysis certificate rather than a causal vertex.
 
 ### High-tail supply-owner exhaustion — DISTILLED EXACT DEDUCTION
 
@@ -310,8 +310,8 @@ Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier s
 
 ## 12. Best next targets
 
-1. **Genuine hard-lineage switching.**  Classify when inherited stock or actual nonlinear work can move the ancestry to a different hard role after all source/reader relays are quotiented.
-2. **Broader Mixed theorem.**  Assemble only genuinely certified stock/work/strain breaker laws; source marks remain geometry annotations, not currencies.
+1. **Genuine hard-lineage switching.**  Classify when inherited stock or actual nonlinear work can move the ancestry to a different hard role after all source/reader/coherent-analysis relays are quotiented.
+2. **Broader Mixed theorem.**  Assemble only genuinely certified stock/work/strain breaker laws; source and coherent-analysis marks remain annotations, not currencies.
 3. **Auxiliary productivity (separate).**  Resolve degenerate Young/Christ only if Gaussian/coherent productivity is still useful; do not put that analysis seam back on the causal path.
 
 ## 13. Frontier in one sentence

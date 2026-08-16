@@ -90,7 +90,7 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical physical shell is supplied; same-carrier inherited-stock relay once its carrier/endpoint/residual-work hypotheses hold; signed-good local HH recurrence geometry once the signed-good generated branch is physically selected.
 
-**DISTILLED EXACT DEDUCTIONS:** role/probe and shell/service readers mint no charge; hard-role energy is earlier stock or actual modal inflow; source marks mint no causal scale edge; hard-tail dissipation is inherited stock or true boundary inflow; canonical good hard-role inflow has a native spacetime `dW+` heavy-half and hard-parent self-probe, so signed-good causal registration does not require Young/Christ; and parent-continuing high-strain / signed-good-HH alternation including exact ties has finite depth.
+**DISTILLED EXACT DEDUCTIONS:** role/probe, shell/service and optional coherent-analysis coordinates mint no causal charge; hard-role energy is earlier stock or actual modal inflow; source marks mint no causal scale edge; hard-tail dissipation is inherited stock or true boundary inflow; canonical good hard-role inflow has a native spacetime `dW+` heavy-half and hard-parent self-probe; and parent-continuing high-strain / signed-good-HH alternation including exact ties has finite depth.
 
 **EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, CI certificates and master traces.
 
