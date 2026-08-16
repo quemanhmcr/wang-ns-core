@@ -371,4 +371,4 @@ For every proposed frontier lemma ask: **what exact true Navier–Stokes structu
 
 The identities and structural laws above are exact or exact-conditional as labelled.  Randomized triads, Galerkin/FFT probes, CI runs and stress tests in the source repository are evidence against implementation mistakes, not mathematical substitutes for the continuum proofs.
 
-Nothing here closes generic mixed recurrence, genuine hard-lineage switching, or the initial/singular-time interfaces.  The degenerate full-signed Young/Christ margin remains an auxiliary analysis seam, not a master causal gate.  Those distinctions belong to `MIXED_FRONTIER.md`.
+Nothing here closes the broader interior Mixed assembly or the initial/singular-time interfaces.  Hard-lineage switching itself is no longer an independent seam: on one causal charge it is forced to actual modal work or the separately typed high-strain relay.  The degenerate full-signed Young/Christ margin remains an auxiliary analysis seam, not a master causal gate.  Those distinctions belong to `MIXED_FRONTIER.md`.

@@ -281,7 +281,7 @@ Consequently the degenerate full-signed Young/Christ margin `mu->0` is **not a m
 
 ### High-tail supply-owner exhaustion — DISTILLED EXACT DEDUCTION
 
-For `H_N={|k|>N}`, exact radial continuity says fresh tail supply is `Phi_up`, not gross positive work inside `H_N`.  Internal high→high circulation can be arbitrarily large with `Phi_up=0`; it is real redistribution but no tail-supply owner.  Every atom of `Phi_up` is either pure-UV, which forces `M=2N` and enters the direct first-shell natural window, or resolved contact, which enters existing `K/S` or the contact-HH natural-window route.  Hence the historical nonlocal high-tail regeneration branch does not survive as an independent renewal edge.  A genuinely different hard lineage may still exist in broader Mixed, but it must be justified by its own modal stock/inflow law rather than by “tail activity”.
+For `H_N={|k|>N}`, exact radial continuity says fresh tail supply is `Phi_up`, not gross positive work inside `H_N`.  Internal high→high circulation can be arbitrarily large with `Phi_up=0`; it is real redistribution but no tail-supply owner.  Every atom of `Phi_up` is either pure-UV, which forces `M=2N` and enters the direct first-shell natural window, or resolved contact, which enters existing `K/S` or the contact-HH natural-window route.  Hence the historical nonlocal high-tail regeneration branch does not survive as an independent renewal edge.  An unrelated hard event may still coexist elsewhere in the PDE, but hard-lineage non-teleportation makes it a different physical charge/event; it cannot continue this tail ancestry unless actual modal inflow enters the carried role.
 
 ## 10. Final interfaces remain separate — OPEN
 

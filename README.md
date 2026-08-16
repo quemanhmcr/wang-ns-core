@@ -4,7 +4,7 @@ A three-document distillation of the current Wang–Navier–Stokes no-escape pr
 
 Source programme: [`quemanhmcr/wang-ns-triad-diamond`](https://github.com/quemanhmcr/wang-ns-triad-diamond), read only from `main`.  The source baseline used for this distillation is `main@63178b0e7f9fabdfd8c344dab938a3d639639df5` (2026-08-13), whose latest upstream theorem state is the native material-service causal quotient.  This distill also records later **deductions obtained by composing already-certified upstream identities**; each such deduction is labelled explicitly.
 
-There is **no claim of a proof of 3D Navier–Stokes global regularity**.  The remaining programme-level problems include mixed genuine-physics recurrence, a local degenerate HH seam, and the initial/singular-time interfaces.
+There is **no claim of a proof of 3D Navier–Stokes global regularity**.  The remaining causal task is broader interior Mixed assembly, followed separately by the initial-data and hypothetical-singular-time interfaces.  The degenerate full-signed Young/Christ margin remains only an auxiliary productivity/coherent-analysis seam.
 
 ## Repository invariant
 
@@ -58,9 +58,11 @@ critical shell / hard tail / service / first-stop corridor
               |
      quotient observer depth
               v
-strain/dissipation events <--> actual nonlinear work <--> source/derived-geometry events
+source/derived-geometry marks expose state; they mint no causal scale edge
               |
-       mixed frontier remains
+interior lineage candidate = high strain/dissipation <--> canonical good work
+              |
+     broader interior assembly remains
 ```
 
 The square/service/shell layers are real physical observables, but a new observable is not automatically a new causal charge.
