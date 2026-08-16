@@ -256,53 +256,57 @@ Changing the resolved cutoff repartitions the same full nonlinear law.  For a fi
 Differentiated SGS and pressure-Hessian terms are nevertheless real sources in **derived resolved-strain/gradient equations**.  They may control geometry, locate critical shells or break a recurrence regime.  “Source of a derived observable” must not be silently identified with “independent generator of global kinetic energy.”  This distinction is central to the current Mixed audit.
 
 
-### Native objective-source state exhaustion — EXACT-CONDITIONAL / DISTILLED
+### Native objective-source state exhaustion — DISTILLED EXACT DEDUCTION
 
-Compose the exact objective-source compiler with the later shell/tail continuity theorems.  Every currently certified source route has one of the following physical handoffs:
+Current source routes expose only physical states already typed elsewhere: local/viscous source -> `D_V` -> hard shell; resolved pressure pair -> hard shell; SGS high service -> hard tail; SGS low service -> hard shell; independently certified interface/work cost may terminate.  ON/material labels and `old_pool_not_yet_eroded` are not events.
 
-- local coherent source or viscous source -> resolved `D_V` -> actual critical shell;
-- resolved pressure pair -> actual critical shell, while the pressure-SGS half delegates to the SGS calculus;
-- SGS high-frequency service -> physical hard tail;
-- integrated total low SGS service -> actual hard shell at a witness time;
-- an independently certified physical transfer/interface cost may terminate, but an ON/material reading alone cannot create that cost;
-- `old_pool_not_yet_eroded` -> capacity state only.
-
-Whenever a route reaches a hard shell, Section 4 reroots its terminal kinetic-energy supply to earlier modal stock or actual nonlinear inflow.  Whenever it reaches the hard tail, Section 5 reroots it to inherited tail stock or true low-to-high nonlinear work.  Thus source/pressure/SGS labels remain genuine **geometry/source provenance**, but do not survive as extra kinetic-energy suppliers after the physical state has been exposed.
-
-The remaining historical `old_pool_not_yet_eroded` branch can be removed from **renewal entrance** without assuming any old-pool erosion.  On the scaled source interval, integrate the already-certified pointwise positive low-band law and define
+The low-SGS route needs no measurable choice of displacement.  For the already-fixed convolution filter set
 
 \[
-G_j:=\int\sum_C s_{j,C}(\tau)\,d\tau\ge0,
-\qquad
-\mathcal S_{low}:=\sum_{j\le0}G_j\ge Y-2D_{high}.
+d\mu_G=|G(r)|dr/g_1,\quad g_1=\|G\|_1,\quad a(\tau,r)=\|\delta_ru(\tau)\|_3,\quad A(\tau)=\int a^3d\mu_G=Q(\tau)/g_1.
 \]
 
-Here `Y` and `D_high` are the integrated objective-SGS square-service and high-frequency weights on that same interval.  If `D_high>=Y/4`, the physical hard-tail route is already available.  Otherwise `\mathcal S_{low}>=Y/2`.  Normalize the actual integrated band law,
+On the smooth interval `(tau,r)->a` is Borel.  If `m_1=int a dmu_G>0`, put
 
 \[
-p_j:=G_j/\mathcal S_{low},\qquad p_{max}=\max_jp_j.
+d\nu_\tau=(a/m_1)d\mu_G,
 \]
 
-The fixed annular LP frame plus the existing two-hard-shell cover gives, at an actual time on the source interval,
+and use `mu_G` when `m_1=0`.  `nu_tau` is a measurable reader kernel, not a causal probability.  With `S_j=M_j||delta_r u_j||_2^2`, pointwise LP/Bernstein and `m_1<=A^(1/3)` give
 
 \[
-\boxed{\mu_{hard}\ge \frac{G_{j_*}}{6c}\ge\frac{p_{max}Y}{12c}.}
+\sum_j\int S_jd\nu_\tau
+\ge\frac{A/m_1}{(C_{LP}C_B)^2}
+\ge\frac{A^{2/3}}{(C_{LP}C_B)^2}
+\ge C_Y\rho_R(\tau),
+\qquad C_Y=\frac{380}{g_1(1+g_1)(C_{LP}C_B)^2},
 \]
 
-Equivalently `mu_hard exp(H_inf^low-scale)>=Y/(12c)`.  This uses **total low service** before old/new material classification; no old-pool capacity, selected-family age, coherent-cell argmax or fresh-material threshold enters the entrance theorem.
+where the last step is exactly the certified SGS collision plus Germano bound.  The high-band estimate is pointwise in `r`, hence
 
-Thus, **once the upstream integrated positive low-service law is supplied**, every current objective-SGS episode reaches physical hard-tail structure or a real low/base hard shell.  Material old/fresh/interface partitions may remain provenance, but an ON restriction is not a terminal `Xi` by itself; only separately certified physical interface/work evidence may terminate.
+\[
+\sum_{j\ge1}\int S_jd\nu_\tau\le2d_{high}(\tau).
+\]
 
-The band law `(G_j)` and `H_inf^low-scale` belong to the fixed registered LP reader.  They may locate a physical hard shell, but they are not themselves causal primitives and may not be compared across different frames as one currency.  The native output of this step is the actual hard Fourier shell.
+Integrating scaled physical time,
 
-There is one formulation seam which this distill does not hide: the upstream source argument first proves at each time that **some** filter displacement `r` carries the required service.  The service-to-shell deduction above is exact once a measurable integrated law `(G_j)` exists, but source main does not presently contain a separate theorem constructing a measurable choice `tau -> r(tau)` (or an equivalent joint `(tau,r)` positive law).  Therefore the full source-to-low-service assembly remains conditional on that upstream measurability claim.
+\[
+G_j:=\int\!\int S_jd\nu_\tau d\tau,\qquad Y_{tot}=C_Y\Sigma_R,
+\qquad \boxed{\sum_{j\le0}G_j\ge Y_{tot}-2D_{high}}.
+\]
 
-A capacity threshold cannot define an event in any case: an upper bound may be replaced by a looser valid upper bound while the underlying field and realized service law are unchanged.  If crossing `C_old>Y/8` changes an alleged owner, that owner belongs to the proof envelope, not to Navier--Stokes.
+Thus either `D_high>=Y_tot/4` and the physical hard-tail route applies, or total low service is at least `Y_tot/2`.  For `p_j=G_j/sum_(k<=0)G_k`, the pointwise capacity `S_j<=4M_j||u_j||_2^2`, time averaging and the two-hard-shell cover give at an actual time
 
-The historical old-pool half-life remains valid only on its independently supplied signed-good low-strain lineage; it is no longer needed for generic SGS renewal and must not be imported as a source clock.
+\[
+\boxed{\mu_{hard}\ge G_{j_*}/(6c)\ge p_{max}Y_{tot}/(12c)}.
+\]
+
+No selector `tau->r(tau)` is needed.  `nu_tau`, `(G_j)` and `H_inf^low-scale` are discarded after exposing the actual Fourier shell; they create no event, charge or scale progress.  Shell/tail energy then reroots by Sections 4--5 to earlier modal stock or actual nonlinear boundary inflow.  Material old/fresh/interface readings remain provenance unless an independent physical work/cost law exists.
+
+A looser valid old-pool capacity bound can change `C_old>Y/8` without changing the field or realized service, so that threshold cannot define an event.  The historical old-pool half-life remains valid only on its separately supplied signed-good low-strain lineage and is not a generic source clock.
 
 
-### Objective-source event -> physical-state relay — EXACT-CONDITIONAL ON THE STATE HANDOFF
+### Objective-source event -> physical-state relay — DISTILLED EXACT DEDUCTION
 
 A source first hit remains a real event in the derived resolved-strain equation; its physical time and local/pressure/SGS/viscous provenance are not erased.  What changes is the **master leaf** attached to that event.
 
