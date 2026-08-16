@@ -37,7 +37,7 @@ After the native material-service quotient, a recursive observation must resolve
 - **symmetric strain / dissipation**;
 - **actual nonlinear work**, including genuine HH generation after its physical gates;
 - **physical shell / high-tail service or supply**;
-- **independently certified genuine role/probe/interface change**;
+- role/probe/interface observations only after they resolve to one of the native mechanisms below; this PR proves they carry no independent owner currency in the current canonical architecture;
 - any other future mechanism only after it is given its own native physical law and units.
 
 Smooth conservative relink, inherited stock, representation rereading, and sidecars may accompany these events but do not add independent generation depth.
@@ -65,7 +65,7 @@ source/service
    ↘
     strain/dissipation → actual HH/high-tail → source/service → ...
    ↗                         ↓
- genuine role/probe ← physical shell/service
+ native source/work ← physical shell/service
 ```
 
 The problem is not to count labels. The problem is to show that an infinite alternation cannot evade all of the native physical laws simultaneously.
@@ -78,22 +78,24 @@ The theorem must emerge from actual NS quantities. It must not manufacture a syn
 
 ---
 
-## 3A. Draft theorem target: native role/probe transition causal quotient
+## 3A. Theorem in this PR: native role/probe transition causal quotient
 
-The first Mixed slice to attack is the remaining **role/probe-change** entry in the owner vocabulary.
+The first Mixed slice is the remaining **role/probe-change** placeholder.  The theorem proved here is deliberately about the **current canonical carrier architecture**; it does not decree what every future representation must look like.
 
-The working hypothesis is not that role motion is "small". It is stronger and more physical:
+> **Theorem (current canonical role/probe quotient).**  Along every role/probe transition presently admitted by the Wang physical spine, changing the analysis role or probe contributes no independent Navier--Stokes generation currency.  The transition is either a zero-depth observer/common-transport re-registration, a locator that must reenter an existing physical energy/work gate, or a downstream registration of an already existing physical event.  After exact PDE resolution, the only recursive owners are the native mechanisms already present: source/SGS, symmetric strain/dissipation, actual nonlinear work, or physical shell/service.  An unresolved `role_change`, `probe_change`, or `role_probe_change` label is fail-closed and may not enter the recursive owner state.
 
-> a change of smooth role or analysis probe is not itself a Navier--Stokes source. It becomes causal only through the native PDE term that physically changed carrier energy/work.
+The proof is not an estimate.  It is an exhaustion of the exact places where the current architecture can change `Q` or `psi`, tied back to the direct Navier--Stokes energy law.
 
-This is already strongly suggested by the exact moving-role and `Q^2` carrier identities inherited from the old Wang architecture. Let `A_a(t,D)` be one smooth analysis role in a complete quadratic partition
+### Step 1. The physical carrier law is `Q^2`, before any role interpretation
+
+Let `A_a(t,D)` be one smooth analysis role in a complete quadratic partition
 
 \[
 \sum_a A_a^2=I,
-\qquad \eta_a=A_a^2,
+\qquad \eta_a=A_a^2.
 \]
 
-and let
+For the actual Navier--Stokes state and resolved transporter
 
 \[
 V=S_{N/4}u,
@@ -102,19 +104,19 @@ V=S_{N/4}u,
 \qquad
 K^*=-K,
 \qquad
-S^*=S.
+S^*=S,
 \]
 
-On the selected outer carrier, after the exact low--low support exclusion, the physical carrier energy law is
+direct differentiation of the **physical carrier energy** gives
 
 \[
 \frac d{dt}\|A_au\|_2^2
 +2\nu\|\nabla A_au\|_2^2
 =
-W_{HH,a}+J_a,
+W_{LL,a}+W_{HH,a}+J_a,
 \]
 
-with
+where
 
 \[
 J_a
@@ -123,67 +125,163 @@ J_a
 -2\operatorname{Re}\langle\eta_au,\mathcal L_Vu\rangle.
 \]
 
-The admissible moving role is transported first by the certified common affine/Kelvin skew generator `G`:
+On the selected outer support the already-certified moat gives `W_LL,a=0`.  Thus any claimed role-transition source must occur inside the exact `J_a`; it cannot be introduced from a coefficient label or from the fact that an analysis window moved.
+
+### Step 2. Common role motion is exactly gauge, not approximately small
+
+The admissible moving smooth roles are transported by the certified common affine/Kelvin skew generator `G`:
 
 \[
 \partial_t\eta_a+[G,\eta_a]=0.
 \]
 
-Hence the observer/common-transport contribution cancels **exactly**. Writing
+Therefore
+
+\[
+\langle u,\partial_t\eta_a u\rangle
+-2\operatorname{Re}\langle\eta_a u,Gu\rangle
+=0
+\]
+
+**exactly**.  Writing the actual skew resolved operator as
 
 \[
 K=G+K_{\rm phys},
 \]
 
-one obtains
+we obtain the native interface identity
 
 \[
 \boxed{
 J_a
-=
--2\operatorname{Re}\langle\eta_au,K_{\rm phys}u\rangle
+=-2\operatorname{Re}\langle\eta_au,K_{\rm phys}u\rangle
 -2\operatorname{Re}\langle\eta_au,Su\rangle.
 }
 \]
 
-The first row is already an antisymmetric same-event smooth-role flux and has zero recursive generation depth. The second row is the already existing symmetric strain/deformation work. There is no third residual quantity called "role change" left in this exact energy identity.
+There is no third energy-changing term called `role_change`.
 
-The analysis probe `\psi` is even more clearly a readout. At fixed `u` and fixed physical carrier `Q`, replacing `\psi` changes a coefficient representation but does not change `\|Qu\|_2^2`, signed nonlinear work, dissipation, or any physical shell balance. A probe change therefore cannot own generation by itself. If a probe obstruction is observed, it must reenter the physical carrier-energy/work gate before an owner is named.
+The first term has the already-bound pair law
 
-At an actual hard nonlinear event, the hard Fourier/helical projector `P` and the canonical signed work `dW` are supplied by the event itself. Registering a smooth envelope with `QP=P` or choosing the terminal hard-state probe is downstream observation of that already existing event; the registration does not create a second event.
+\[
+T_{ab}
+=-2\operatorname{Re}\langle\eta_a u,
+K_{\rm phys}\eta_bu\rangle,
+\qquad
+T_{ab}=-T_{ba}.
+\]
 
-### Candidate theorem
+Hence internal role traffic cancels on every certified subset.  It is genuine same-event physical redistribution, but it has zero generation depth.  The second term is exactly the existing symmetric strain/deformation work.  Thus the moving-role PDE resolves to
 
-For every **certified** role/probe transition used by the recursion, exactly one of the following must occur:
+\[
+\boxed{
+\text{common transport gauge}
++\text{conservative }K_{\rm phys}\text{ flux}
++\text{existing strain},
+}
+\]
 
-1. **same-state / common-transport re-anchoring:** zero generation depth;
-2. **residual skew `K_phys`:** conservative same-event role flux, zero generation depth;
-3. **symmetric `S`:** the existing strain/dissipation owner;
-4. **hard-event re-registration:** ownership remains the already existing canonical physical work/shell event;
-5. **another independently certified native PDE supplier:** route to its existing source/SGS, nonlinear-work, or shell/service type.
+not to a new role currency.
 
-An arbitrary `role_change`, `probe_change`, or `role_probe_change` label which has not been resolved by one of these native mechanisms is **fail-closed** and may not enter the recursive owner state.
+### Step 3. Observer-motion anti-theorem: changing the analysis partition can move channel energy while NS is frozen
 
-Equivalently, the theorem aims to remove
+This is the permanent falsifier against treating `dot Q` as physics.  Hold one physical state fixed and take the complete one-dimensional quadratic partition
 
-`genuine_role_probe_change`
+\[
+Q_\theta=\cos\theta,
+\qquad
+R_\theta=\sin\theta,
+\qquad
+Q_\theta^2+R_\theta^2=1.
+\]
 
-as an independent causal currency. The role/probe transition is a *locator* until the actual PDE mechanism is exposed, exactly as materiality became a locator in the previous quotient.
+Then
 
-### What must be proved, not assumed
+\[
+E_Q(\theta)=\cos^2\theta\,E,
+\qquad
+E_R(\theta)=\sin^2\theta\,E,
+\qquad
+E_Q+E_R=E.
+\]
 
-The PR must close the following obligations without introducing a common norm or synthetic clock:
+Changing only `theta` moves arbitrary energy between the two analysis channels while the physical state, total energy, nonlinear work, viscosity and Fourier stock are unchanged.  Therefore a raw analysis-role change cannot be a Navier--Stokes source.  The current smooth-interface theorem correctly rejects any moving partition that is not generated by the certified common PDE transport before causal ownership is assigned.
 
-- **Q2 identity preservation:** the transition must be tied to the direct Navier--Stokes `A^2` carrier-energy law, not to coefficient magnitude alone;
-- **gauge cancellation:** common affine/Kelvin role motion must cancel before physical work is charged;
-- **skew closure:** the same bound `K_phys` law must give antisymmetric finite role flux, so relink remains same-event provenance;
-- **probe-readout lemma:** changing only the analysis probe at a fixed physical state cannot create work, stock, dissipation, supply, or a new first-stop time;
-- **hard-event anchoring:** when a new hard role is registered, its owner is inherited from the already canonical signed work / shell event, with no second Hahn law and no cloned charge;
-- **master ingress barrier:** unresolved role/probe labels must fail closed rather than becoming a generic recursive cause.
+### Step 4. A probe is a readout, not an energy owner
 
-A proof of these statements would shrink the Mixed owner vocabulary to native mechanisms already carrying physical work, strain/dissipation, source/SGS, or shell/service structure. It would **not yet close Mixed recurrence**; it would remove one more apparent escape route before attempting heterogeneous recurrence itself.
+For a fixed physical carrier `w=Qu`, a probe produces only
 
-This candidate is intentionally a quotient theorem, not a new estimate. If it succeeds, the gain is that one less human-defined object needs a recurrence theorem at all.
+\[
+z_\psi=\langle w,\psi\rangle.
+\]
+
+The carrier energy remains
+
+\[
+\|w\|_2^2,
+\]
+
+independent of which probe is used to read it.  In dimension at least two, keeping the same nonzero `w` while replacing a normalized probe parallel to `w` by one orthogonal to `w` changes `|z_psi|` from `||w||_2` to zero with **no physical change at all**.  Therefore neither probe identity nor coefficient magnitude can own work, stock, dissipation, scale supply, or a first physical event.
+
+This does not permit arbitrary mid-corridor probe replacement.  Such a replacement invalidates the old coefficient certificate and therefore fails closed as a **locator/representation break**.  It does not become a physical owner.  The allowed continuing probe is transported by the already registered adjoint/Kelvin physical equation; a coefficient obstruction must reenter the `Q^2` physical-energy/work gate before any owner is named.
+
+### Step 5. Hard-role and terminal-probe changes occur only downstream of an already existing physical event
+
+At an actual nonlinear transfer event the event itself supplies the signed Fourier/helical work `dW`.  The hard projector `P` is only the deterministic event reader for that already-existing physical mode/helicity law.  The smooth envelope is then registered with
+
+\[
+QP=P,
+\]
+
+and for every terminal probe `phi`,
+
+\[
+\langle Pu,\phi\rangle
+=
+\langle Qu,P\phi\rangle.
+\]
+
+Thus hard-to-smooth role registration creates neither another transfer measure nor another Hahn operation.  Likewise the generic critical-shell theorem chooses `Q_A` and the normalized hard-shell state as terminal probe **after an actual critical physical shell has already been supplied**.  That registration is a consequence/readout of the shell event; it is not a new causal vertex.
+
+At a common slice, the same-carrier relay does not harden a fresh role.  It uses the already registered coefficient to lower-bound the energy of the same `Q u` carrier, and common affine/Kelvin re-anchoring is exact gauge composition.  Hard roles appear again only when a later actual physical interaction supplies new work.
+
+### Step 6. Exhaustion of the current executable transition sites
+
+The old Wang implementation contains exactly the following live transition types on the current proof spine:
+
+| transition site | what changes | physical meaning |
+|---|---|---|
+| common affine/Kelvin propagation | smooth `Q`, transported probe coordinates | exact gauge transport; zero generation depth |
+| no-event common-slice re-anchor | coordinate anchor of the same carrier | gauge composition; zero generation depth |
+| interface/HH coefficient obstruction | coefficient monitor crosses a face | interval locator; mandatory `Q^2` physical-energy reentry; impulse magnitude is not work |
+| actual nonlinear hard event | hard `P`, event terminal mark/probe | downstream disintegration/readout of already existing canonical signed work |
+| actual critical-shell renewal | `Q_A` and normalized shell probe | downstream registration of an already supplied physical shell |
+| material/selected-family rereading with same `Q,psi` | sidecar labels only | already quotiented; no role/probe change |
+| `Q` or `psi` changed outside the certified cases above | observer/certificate no longer matches | fail closed; **no owner is minted** |
+
+Crucially, the executable master has no independent `ROLE_PROBE_OWNER`.  Its coefficient-obstruction boundary already rejects raw role/interface coefficient locators until physical-energy reentry.  The historical `role_or_probe_change_requires_interface_registration` value is explicitly a delegate/fail-closed placeholder, not a work cause.
+
+This exhausts the current canonical transition architecture.  Therefore `genuine_role_probe_change` has no independent physical currency in the present proof state.
+
+### Consequence for Mixed
+
+Subject to the current architecture just exhausted, the live recursive owner vocabulary shrinks from
+
+\[
+\{\text{source/SGS},\ \text{strain/dissipation},\ \text{actual nonlinear work},\ \text{shell/service},\ \text{role/probe change}\}
+\]
+
+to
+
+\[
+\boxed{
+\{\text{source/SGS},\ \text{strain/dissipation},\ \text{actual nonlinear work},\ \text{shell/service}\}.
+}
+\]
+
+This does **not** close Mixed recurrence.  It removes one more observer-facing escape before Mixed is attacked.  If a future representation discovers an additional energy-changing term in the exact Navier--Stokes carrier law, that term must be typed by its actual PDE mechanism and this theorem must be extended or narrowed.  It may never be hidden inside a generic `role_change` label.
+
+The gain is precisely that no recurrence theorem is needed for a human-defined role/probe currency that the PDE never supplied.
 
 ---
 
@@ -197,7 +295,7 @@ Examples:
 - true high-tail supply may use actual low→high crossing and tail dissipation;
 - signed-good generated HH may use the certified parent-scale geometry and parabolic lifetime;
 - source/SGS may use its actual work/service and any independently proved shell reentry;
-- a genuine role/probe change may use only the physical interface law that proves it happened.
+- a role/probe transition may not be used as an owner at all; it must first resolve through the exact physical interface/work/shell/source law that actually changed the NS carrier.
 
 Cross-mechanism coupling is allowed only through an exact PDE identity, conservation law, common physical measure, or explicitly proved implication. Similar notation or matching critical scaling is not enough.
 

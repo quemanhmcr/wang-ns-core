@@ -8,7 +8,7 @@ physical ontology.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from math import isclose
+from math import cos, isclose, sin
 from typing import Iterable, Mapping, Sequence
 
 
@@ -140,6 +140,23 @@ def certified_role_transition_generation_depth(kind: str) -> int:
     if kind not in ZERO_DEPTH_CERTIFIED_ROLE_TRANSITIONS:
         raise ValueError("unresolved role transition must fail closed to native PDE resolution")
     return 0
+
+
+def observer_partition_channel_energies(total_energy: float, theta: float) -> tuple[float, float]:
+    """Same physical state, different quadratic analysis partition: channel readings move, total does not."""
+    E = float(total_energy)
+    if E < 0.0:
+        raise ValueError("physical energy must be nonnegative")
+    return E * cos(theta) ** 2, E * sin(theta) ** 2
+
+
+def probe_readout(carrier: Sequence[complex], probe: Sequence[complex]) -> complex:
+    """Coefficient readout only; changing the probe does not alter the supplied carrier state."""
+    w = tuple(complex(x) for x in carrier)
+    psi = tuple(complex(x) for x in probe)
+    if not w or len(w) != len(psi):
+        raise ValueError("matching nonempty carrier/probe vectors required")
+    return sum(x.conjugate() * y for x, y in zip(psi, w, strict=True))
 
 
 @dataclass(frozen=True)

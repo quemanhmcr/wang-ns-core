@@ -6,6 +6,8 @@ from core_tripwires import (
     resolve_material_locator,
     resolve_role_probe_locator,
     certified_role_transition_generation_depth,
+    observer_partition_channel_energies,
+    probe_readout,
     antisymmetric_subset_flux,
     high_strain_epoch_upper_scales,
     inherited_stock_component,
@@ -96,6 +98,21 @@ class CoreTripwires(unittest.TestCase):
             self.assertEqual(certified_role_transition_generation_depth(kind), 0)
         with self.assertRaises(ValueError):
             certified_role_transition_generation_depth("unresolved_probe_jump")
+
+    def test_observer_partition_can_move_channel_energy_with_fixed_total_physics(self):
+        e0 = observer_partition_channel_energies(10.0, 0.0)
+        e1 = observer_partition_channel_energies(10.0, 0.7853981633974483)
+        self.assertAlmostEqual(sum(e0), 10.0)
+        self.assertAlmostEqual(sum(e1), 10.0)
+        self.assertNotEqual(e0, e1)
+
+    def test_probe_can_change_coefficient_while_carrier_is_identical(self):
+        w = (3.0 + 0j, 0j)
+        parallel = probe_readout(w, (1.0 + 0j, 0j))
+        orthogonal = probe_readout(w, (0j, 1.0 + 0j))
+        self.assertEqual(parallel, 3.0 + 0j)
+        self.assertEqual(orthogonal, 0j)
+        self.assertEqual(sum(abs(x) ** 2 for x in w), 9.0)
 
     def test_sidecar_cannot_create_or_move_physical_first_stop(self):
         hits = [PhysicalHit(2.0, "source"), PhysicalHit(2.0, "strain"), PhysicalHit(3.0, "hh")]
