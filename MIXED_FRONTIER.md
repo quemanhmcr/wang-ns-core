@@ -105,9 +105,29 @@ The full Leray velocity equation has quadratic nonlinearity plus viscosity.  Smo
 
 Pressure is similarly nuanced: pressure Hessian is real and can drive strain geometry, while global divergence-free kinetic-energy work of pressure is zero.  Therefore a pressure theorem can be decisive for geometry without becoming an independent global energy source.
 
-What remains genuinely unresolved is whether every event currently called `source/SGS` can be quotiented this way without losing a physical breaker of the recurrence geometry.  Differentiated SGS and pressure terms are true sources of derived resolved-strain variables, so they cannot be erased by a kinetic-energy argument alone.
+Differentiated SGS and pressure terms are true sources of derived resolved-strain variables, so they cannot be erased by a kinetic-energy argument alone.  What can now be exhausted exactly is their **downstream state/energy handoff**.
 
-### The stale `old_pool_not_yet_eroded` seam — OPEN
+### Native source-state exhaustion — DISTILLED EXACT DEDUCTION
+
+The objective source identity first keeps the true source mechanisms distinct: local resolved deformation, pressure Hessian, differentiated SGS stress and viscosity.  Positive source weights may tie; no common probability law is invented.
+
+Composing the already-certified routes gives:
+
+| source route | true downstream object | kinetic-energy handoff |
+|---|---|---|
+| local coherent / viscous | resolved `D_V` then critical shell | shell stock or actual nonlinear inflow |
+| resolved pressure pair | actual pair + critical shell geometry | shell stock or actual nonlinear inflow |
+| pressure-SGS | actual SGS source | delegate to the SGS rows below |
+| SGS high-frequency | physical hard tail | inherited tail stock or true low→high nonlinear work |
+| SGS fresh scale | actual hard shell at a physical witness time | shell stock or actual nonlinear inflow |
+| selected-interface `Xi` | actual transfer/interface cost | terminal existing cost |
+| SGS old-pool capacity only | old service-capacity state | **unresolved; no owner minted** |
+
+The table is not a case order.  The canonical SGS compiler retains all simultaneously satisfied routes.  Therefore old-pool capacity is the *only* unresolved source handoff only when no simultaneous shell/tail/terminal route is present.
+
+This deduction removes no pressure or SGS physics.  Pressure-pair geometry, SGS stress and objective source action remain available as genuine breakers of recurrence hypotheses.  It removes only a false downstream inference: once those mechanisms expose shell/tail kinetic energy, their theorem label cannot remain an additional energy supplier beside the exact continuity law.
+
+### The `old_pool_not_yet_eroded` seam — OPEN
 
 The historical SGS compiler can return
 
@@ -119,15 +139,11 @@ because an old service-capacity bound remains above a threshold.  But capacity i
 
 Thus a large old-pool capacity value is **not by itself a physical event**.  Before this branch is allowed in a cleaned master, it must exhibit the actual NS change occurring there.  It may reduce to persistent stock plus actual boundary work, but the current same-carrier inherited-stock theorem is too narrow to prove that for an arbitrarily redistributed old pool.  This seam is fail-closed, not silently solved.
 
+A tempting shortcut is also forbidden.  The historical old-pool contraction `<1/2` assumes a supplied signed-good low-strain transfer lineage whose block scale grows `>8/5` while reused reservoir frequencies grow `<21/20`.  Generic objective-SGS recurrence does not supply that scale law; fresh SGS only gives a witness shell with `M<=2N` and no direction.  Therefore the old contraction cannot be imported merely because the same word “pool” appears in both theorems.
+
 ## 7. What the Mixed problem now looks like
 
-The conservative statement is still:
-
-\[
-\{\text{source/SGS or derived-source events},\ \text{strain/dissipation},\ \text{actual nonlinear work}\}
-\]
-
-can in principle alternate so that neither pure high-strain nor pure signed-good-HH telescope applies forever.  Shell/service states may sit between these events but do not add vertices.
+After the source-state exhaustion, source/pressure/SGS are best read as **derived-geometry breakers/provenance** around the kinetic-energy stock/inflow law, except for the explicit old-pool capacity seam which is still unresolved.  Strain/dissipation and actual nonlinear work remain genuine event-facing physics.  These regimes can in principle alternate so that neither pure high-strain nor pure signed-good-HH telescope applies forever.
 
 The stronger working hypothesis is deliberately **OPEN**:
 

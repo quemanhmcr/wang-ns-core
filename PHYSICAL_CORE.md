@@ -255,6 +255,24 @@ Changing the resolved cutoff repartitions the same full nonlinear law.  For a fi
 
 Differentiated SGS and pressure-Hessian terms are nevertheless real sources in **derived resolved-strain/gradient equations**.  They may control geometry, locate critical shells or break a recurrence regime.  “Source of a derived observable” must not be silently identified with “independent generator of global kinetic energy.”  This distinction is central to the current Mixed audit.
 
+
+### Native objective-source state exhaustion — DISTILLED EXACT DEDUCTION
+
+Compose the exact objective-source compiler with the later shell/tail continuity theorems.  Every currently certified source route has one of the following physical handoffs:
+
+- local coherent source or viscous source -> resolved `D_V` -> actual critical shell;
+- resolved pressure pair -> actual critical shell, while the pressure-SGS half delegates to the SGS calculus;
+- SGS high-frequency service -> physical hard tail;
+- SGS fresh-band service -> actual hard shell at a witness time;
+- selected-interface `Xi` -> existing terminal transfer/interface cost;
+- `old_pool_not_yet_eroded` -> capacity state only.
+
+Whenever a route reaches a hard shell, Section 4 reroots its terminal kinetic-energy supply to earlier modal stock or actual nonlinear inflow.  Whenever it reaches the hard tail, Section 5 reroots it to inherited tail stock or true low-to-high nonlinear work.  Thus source/pressure/SGS labels remain genuine **geometry/source provenance**, but do not survive as extra kinetic-energy suppliers after the physical state has been exposed.
+
+The sole current source-native handoff not resolved this way is the old-pool capacity state.  A large capacity is not an NS action and cannot self-authorize recursion.
+
+The historical geometric old-pool half-life does **not** close this seam: its contraction uses an independently supplied signed-good low-strain lineage with block-scale growth `>8/5`, whereas generic fresh-SGS reentry supplies no directional scale progress.  Importing that ratio here would manufacture physics.
+
 ## 11. Two pure recurrence tails are finite — EXACT
 
 ### Consecutive high strain

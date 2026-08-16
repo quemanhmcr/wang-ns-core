@@ -90,11 +90,11 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical physical shell is supplied; same-carrier inherited-stock relay once its carrier/endpoint/residual-work hypotheses hold; signed-good local HH recurrence geometry once the signed-good generated branch is physically selected.
 
-**DISTILLED EXACT DEDUCTIONS:** current role/probe changes do not form an independent generation currency; current shell/service routes do not mint a second charge; for a fixed hard shell, terminal kinetic energy has only earlier-stock or actual nonlinear-inflow positive supply.
+**DISTILLED EXACT DEDUCTIONS:** current role/probe changes do not form an independent generation currency; current shell/service routes do not mint a second charge; for a fixed hard shell, terminal kinetic energy has only earlier-stock or actual nonlinear-inflow positive supply; every current objective-source route except the old-pool capacity-only seam reroots downstream kinetic energy to shell/tail stock or nonlinear work, or terminates at `Xi`.
 
 **EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, CI certificates and master traces.
 
-**OPEN:** generic/non-signed-good HH recurrence; nonlocal high-tail continuation; the degenerate full-signed Young/Christ seam; the `old_pool_not_yet_eroded` capacity seam; exact role of derived source/SGS/pressure geometry in mixed switching; the mixed no-escape theorem; the initial-data and hypothetical-singular-time interfaces.
+**OPEN:** the physical meaning/continuation of `old_pool_not_yet_eroded`; generic/non-signed-good HH recurrence; nonlocal high-tail continuation; the degenerate full-signed Young/Christ seam; how derived source/pressure/SGS geometry breaks Mixed lineages; the mixed no-escape theorem; the initial-data and hypothetical-singular-time interfaces.
 
 ## Upstream proof lookup map
 
