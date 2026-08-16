@@ -124,7 +124,7 @@ Disintegrate `Phi_up` by recipient shell `M`.
 
 **Resolved contact.**  If one parent is `<=M/4`, exactly one parent is resolved and the other lies in `(M/4,5M/4]`.  Any deep direct upward jump `M>=4N` necessarily has resolved-scale parent contact.
 
-These are support theorems about actual Fourier interactions; they do not create another work law or shell-dependent causal unit.  The common unit remains the parent-scale `N dW`.
+These are support theorems about actual Fourier interactions; they do not create another work law or shell-dependent causal unit.  The common unit remains the parent-scale `N dW`.  Downstream, pure UV enters its first-shell natural window; resolved contact enters existing `K/S` or its bounded-parent HH natural window.  Thus internal nonlocal high→high traffic remains real modal redistribution but cannot survive as an independent **fresh tail-supply** recursion edge.
 
 ## 6. Resolved contact and interface work — EXACT
 
@@ -337,7 +337,7 @@ P_M:\quad M/2<|k|\le M,
 \qquad A=3M/4,
 \]
 
-and its registered smooth `A`-carrier.  Consider the hard-shell ancestry whose genuine recursive events are high strain or **parent-continuing** signed-good generated HH; source-marked state handoffs, nonlocal high-tail continuation and the still-degenerate full-signed HH margin remain outside this subalphabet.
+and its registered smooth `A`-carrier.  Consider the hard-shell ancestry whose genuine recursive events are high strain or **parent-continuing** signed-good generated HH; source-marked state handoffs, true-upward tail state relays / genuine hard-lineage switches, and the still-degenerate full-signed HH margin remain outside this subalphabet.
 
 A high-strain continuation at carrier scale `A` renews at `<=3A/16`.  If the shell energy is instead genuinely supplied by signed-good nonlinear inflow, hard-role modal causality restricts that owner to actual recipient modes inside `P_M`.  Hence the physical HH child has `N_c<=M=4A/3`, and its signed-good parent satisfies
 
@@ -371,4 +371,4 @@ For every proposed frontier lemma ask: **what exact true Navier–Stokes structu
 
 The identities and structural laws above are exact or exact-conditional as labelled.  Randomized triads, Galerkin/FFT probes, CI runs and stress tests in the source repository are evidence against implementation mistakes, not mathematical substitutes for the continuum proofs.
 
-Nothing here closes generic mixed recurrence, nonlocal high-tail continuation, the degenerate full-signed Young/Christ seam, the remaining source/strain geometry-breaker coupling, or the initial/singular-time interfaces.  Those belong to `MIXED_FRONTIER.md`.
+Nothing here closes generic mixed recurrence, the degenerate full-signed Young/Christ seam, the remaining source/strain geometry-breaker coupling, or the initial/singular-time interfaces.  Those belong to `MIXED_FRONTIER.md`.
