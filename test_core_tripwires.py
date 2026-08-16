@@ -4,6 +4,8 @@ from core_tripwires import (
     PhysicalHit,
     mode_set_endpoint_energy,
     resolve_material_locator,
+    resolve_role_probe_locator,
+    certified_role_transition_generation_depth,
     antisymmetric_subset_flux,
     high_strain_epoch_upper_scales,
     inherited_stock_component,
@@ -69,6 +71,31 @@ class CoreTripwires(unittest.TestCase):
             resolve_material_locator("material_relink", native_owner="strain_dissipation"),
             "strain_dissipation",
         )
+
+    def test_role_probe_locator_cannot_self_authorize_as_an_owner(self):
+        for locator in ("role_change", "probe_change", "role_probe_change"):
+            with self.assertRaises(ValueError):
+                resolve_role_probe_locator(locator, native_owner=None)
+            with self.assertRaises(ValueError):
+                resolve_role_probe_locator(locator, native_owner="genuine_role_probe_change")
+        self.assertEqual(
+            resolve_role_probe_locator("probe_change", native_owner="actual_nonlinear_work"),
+            "actual_nonlinear_work",
+        )
+        self.assertEqual(
+            resolve_role_probe_locator("role_change", native_owner="strain_dissipation"),
+            "strain_dissipation",
+        )
+
+    def test_material_locator_cannot_escape_through_a_role_probe_alias(self):
+        with self.assertRaises(ValueError):
+            resolve_material_locator("material_relink", native_owner="genuine_role_probe_change")
+
+    def test_certified_gauge_reanchor_and_kphys_relink_have_zero_depth(self):
+        for kind in ("same_state_reanchor", "common_transport_gauge", "kphys_relink"):
+            self.assertEqual(certified_role_transition_generation_depth(kind), 0)
+        with self.assertRaises(ValueError):
+            certified_role_transition_generation_depth("unresolved_probe_jump")
 
     def test_sidecar_cannot_create_or_move_physical_first_stop(self):
         hits = [PhysicalHit(2.0, "source"), PhysicalHit(2.0, "strain"), PhysicalHit(3.0, "hh")]

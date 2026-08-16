@@ -102,7 +102,18 @@ NATIVE_OWNER_TYPES = frozenset({
     "strain_dissipation",
     "actual_nonlinear_work",
     "shell_service",
-    "genuine_role_probe_change",
+})
+
+RAW_ROLE_PROBE_LOCATORS = frozenset({
+    "role_change",
+    "probe_change",
+    "role_probe_change",
+})
+
+ZERO_DEPTH_CERTIFIED_ROLE_TRANSITIONS = frozenset({
+    "same_state_reanchor",
+    "common_transport_gauge",
+    "kphys_relink",
 })
 
 
@@ -113,6 +124,22 @@ def resolve_material_locator(locator: str, *, native_owner: str | None) -> str:
     if native_owner not in NATIVE_OWNER_TYPES:
         raise ValueError("raw material state has no canonical owner without native PDE evidence")
     return native_owner
+
+
+def resolve_role_probe_locator(locator: str, *, native_owner: str | None) -> str:
+    """A role/probe change is a locator until an existing native PDE owner resolves it."""
+    if locator not in RAW_ROLE_PROBE_LOCATORS:
+        raise ValueError("this resolver is only for raw role/probe locators")
+    if native_owner not in NATIVE_OWNER_TYPES:
+        raise ValueError("role/probe change has no canonical owner without native PDE evidence")
+    return native_owner
+
+
+def certified_role_transition_generation_depth(kind: str) -> int:
+    """Certified gauge/reanchor/K_phys transitions add no recursive generation depth."""
+    if kind not in ZERO_DEPTH_CERTIFIED_ROLE_TRANSITIONS:
+        raise ValueError("unresolved role transition must fail closed to native PDE resolution")
+    return 0
 
 
 @dataclass(frozen=True)

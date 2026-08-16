@@ -78,6 +78,115 @@ The theorem must emerge from actual NS quantities. It must not manufacture a syn
 
 ---
 
+## 3A. Draft theorem target: native role/probe transition causal quotient
+
+The first Mixed slice to attack is the remaining **role/probe-change** entry in the owner vocabulary.
+
+The working hypothesis is not that role motion is "small". It is stronger and more physical:
+
+> a change of smooth role or analysis probe is not itself a Navier--Stokes source. It becomes causal only through the native PDE term that physically changed carrier energy/work.
+
+This is already strongly suggested by the exact moving-role and `Q^2` carrier identities inherited from the old Wang architecture. Let `A_a(t,D)` be one smooth analysis role in a complete quadratic partition
+
+\[
+\sum_a A_a^2=I,
+\qquad \eta_a=A_a^2,
+\]
+
+and let
+
+\[
+V=S_{N/4}u,
+\qquad
+\mathcal L_V=K+S,
+\qquad
+K^*=-K,
+\qquad
+S^*=S.
+\]
+
+On the selected outer carrier, after the exact low--low support exclusion, the physical carrier energy law is
+
+\[
+\frac d{dt}\|A_au\|_2^2
++2\nu\|\nabla A_au\|_2^2
+=
+W_{HH,a}+J_a,
+\]
+
+with
+
+\[
+J_a
+=
+\langle u,\partial_t\eta_a\,u\rangle
+-2\operatorname{Re}\langle\eta_au,\mathcal L_Vu\rangle.
+\]
+
+The admissible moving role is transported first by the certified common affine/Kelvin skew generator `G`:
+
+\[
+\partial_t\eta_a+[G,\eta_a]=0.
+\]
+
+Hence the observer/common-transport contribution cancels **exactly**. Writing
+
+\[
+K=G+K_{\rm phys},
+\]
+
+one obtains
+
+\[
+\boxed{
+J_a
+=
+-2\operatorname{Re}\langle\eta_au,K_{\rm phys}u\rangle
+-2\operatorname{Re}\langle\eta_au,Su\rangle.
+}
+\]
+
+The first row is already an antisymmetric same-event smooth-role flux and has zero recursive generation depth. The second row is the already existing symmetric strain/deformation work. There is no third residual quantity called "role change" left in this exact energy identity.
+
+The analysis probe `\psi` is even more clearly a readout. At fixed `u` and fixed physical carrier `Q`, replacing `\psi` changes a coefficient representation but does not change `\|Qu\|_2^2`, signed nonlinear work, dissipation, or any physical shell balance. A probe change therefore cannot own generation by itself. If a probe obstruction is observed, it must reenter the physical carrier-energy/work gate before an owner is named.
+
+At an actual hard nonlinear event, the hard Fourier/helical projector `P` and the canonical signed work `dW` are supplied by the event itself. Registering a smooth envelope with `QP=P` or choosing the terminal hard-state probe is downstream observation of that already existing event; the registration does not create a second event.
+
+### Candidate theorem
+
+For every **certified** role/probe transition used by the recursion, exactly one of the following must occur:
+
+1. **same-state / common-transport re-anchoring:** zero generation depth;
+2. **residual skew `K_phys`:** conservative same-event role flux, zero generation depth;
+3. **symmetric `S`:** the existing strain/dissipation owner;
+4. **hard-event re-registration:** ownership remains the already existing canonical physical work/shell event;
+5. **another independently certified native PDE supplier:** route to its existing source/SGS, nonlinear-work, or shell/service type.
+
+An arbitrary `role_change`, `probe_change`, or `role_probe_change` label which has not been resolved by one of these native mechanisms is **fail-closed** and may not enter the recursive owner state.
+
+Equivalently, the theorem aims to remove
+
+`genuine_role_probe_change`
+
+as an independent causal currency. The role/probe transition is a *locator* until the actual PDE mechanism is exposed, exactly as materiality became a locator in the previous quotient.
+
+### What must be proved, not assumed
+
+The PR must close the following obligations without introducing a common norm or synthetic clock:
+
+- **Q2 identity preservation:** the transition must be tied to the direct Navier--Stokes `A^2` carrier-energy law, not to coefficient magnitude alone;
+- **gauge cancellation:** common affine/Kelvin role motion must cancel before physical work is charged;
+- **skew closure:** the same bound `K_phys` law must give antisymmetric finite role flux, so relink remains same-event provenance;
+- **probe-readout lemma:** changing only the analysis probe at a fixed physical state cannot create work, stock, dissipation, supply, or a new first-stop time;
+- **hard-event anchoring:** when a new hard role is registered, its owner is inherited from the already canonical signed work / shell event, with no second Hahn law and no cloned charge;
+- **master ingress barrier:** unresolved role/probe labels must fail closed rather than becoming a generic recursive cause.
+
+A proof of these statements would shrink the Mixed owner vocabulary to native mechanisms already carrying physical work, strain/dissipation, source/SGS, or shell/service structure. It would **not yet close Mixed recurrence**; it would remove one more apparent escape route before attempting heterogeneous recurrence itself.
+
+This candidate is intentionally a quotient theorem, not a new estimate. If it succeeds, the gain is that one less human-defined object needs a recurrence theorem at all.
+
+---
+
 ## 4. What a new Mixed theorem is allowed to use
 
 A new recurrence step may use only information physically supplied by the event it resolves.
