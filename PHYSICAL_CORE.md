@@ -83,29 +83,19 @@ For the full mode set this reduces to the ordinary viscous energy balance.  The 
 
 A closed triad wholly inside `A` has zero boundary flux but can carry nonzero internal donor/recipient flow.  Scaling amplitudes by `lambda` scales this gross work like `lambda^3` while boundary flux remains zero.  Therefore modal stock does not bound total gross nonlinear turnover, and neither `int dW+` nor `int dW-` is a finite reset budget.
 
-### Native hard-shell supply quotient — DISTILLED EXACT DEDUCTION
+### Native hard-role / hard-shell supply quotient — DISTILLED EXACT DEDUCTION
 
-Take the physical hard shell
-
-\[
-A_M=\{(k,s):M/2<|k|\le M\}.
-\]
-
-Its continuity law is
+The same law applies to every bounded measurable event-anchored hard Fourier/helicity role `P`, not only a radial shell:
 
 \[
-E_M(t)+D_M+\Phi_{out,M}=E_M(s)+\Phi_{in,M}.
+\boxed{E_P(t)+D_P+\Phi_{out,P}=E_P(s)+\Phi_{in,P}}.
 \]
 
-If the terminal shell is critical, `M E_M(t)>=mu_0>0`, then for every `0<theta<1`, nonnegativity gives
+Hence for every `0<theta<1`, either `E_P(s)>=theta E_P(t)` or `Phi_in,P>=(1-theta)E_P(t)`; exact equality keeps both.  The inflow is the restriction of the already-canonical physical edge law to recipient modes **inside `P`**.  Internal traffic cancels, while viscosity and outward flow are losses.
 
-\[
-\boxed{M E_M(s)\ge\theta\mu_0\quad\text{or}\quad M\Phi_{in,M}\ge(1-\theta)\mu_0.}
-\]
+This is the master-facing energy rule for a hard role even when a smooth envelope `Q` with `QP=P` transports its coefficient between events.  Holding `P` fixed here is only Fourier control-volume bookkeeping, not material/packet persistence.  `Q^2` remains an exact carrier observable, but positive work elsewhere in `Q` cannot supply terminal `P` energy.  Indeed for disjoint hard roles `P,R` and `Q=P+R`, work entering only `R` can increase `E_Q` while `E_P` is unchanged.  A remote hard event is therefore separate unless its actual inflow crosses into `P`; smooth-envelope overlap cannot relaunch the ancestry of `P`.
 
-At equality both causes are retained.  For `theta=1/5`, the cover is `M E_M(s)>=mu_0/5` or `M Phi_in,M>=4mu_0/5`.
-
-This answers one precise question: **what supplied the kinetic energy now stored in this fixed shell?**  The only positive suppliers are earlier modal stock or actual nonlinear boundary inflow.  Viscosity and outward flow are losses.  A pressure, SGS, strain or service theorem may be exactly what proved that the shell exists and may carry indispensable geometry, but its label is not a third energy supplier.
+For the radial shell `A_M={(k,s):M/2<|k|<=M}` and `M E_M(t)>=mu_0`, this gives the previous cover `M E_M(s)>=theta mu_0` or `M Phi_in,M>=(1-theta)mu_0`; at `theta=1/5` the faces are `mu_0/5` and `4mu_0/5`.  Pressure, SGS, strain or service may expose indispensable geometry, but none is a third supplier of the kinetic energy stored in the hard role.  **Hard-lineage non-teleportation:** backward continuation of one hard-role charge is therefore only same-role inherited stock, a separately typed high-strain/dissipation state relay, or actual canonical inflow with child in the current role.  Bad/nonforward inflow is terminal; good inflow has one physical energy donor, and the donor kernel pushes the same recipient charge to that parent without cloning it.  Event-anchored registration then re-anchors the same smooth carrier at the donor-parent scale and the cutoff relay introduces no hard reselection.  Hence on the same causal charge the next hard child role is the previous physical donor role; work elsewhere in the envelope, source/reader/service/material/coherent-analysis marks and no-hit checkpoints cannot replace it.
 
 ## 5. Radial crossing and hard-tail supply — EXACT
 
@@ -134,7 +124,7 @@ Disintegrate `Phi_up` by recipient shell `M`.
 
 **Resolved contact.**  If one parent is `<=M/4`, exactly one parent is resolved and the other lies in `(M/4,5M/4]`.  Any deep direct upward jump `M>=4N` necessarily has resolved-scale parent contact.
 
-These are support theorems about actual Fourier interactions; they do not create another work law or shell-dependent causal unit.  The common unit remains the parent-scale `N dW`.
+These are support theorems about actual Fourier interactions; they do not create another work law or shell-dependent causal unit.  The common unit remains the parent-scale `N dW`.  Downstream, pure UV enters its first-shell natural window; resolved contact enters existing `K/S` or its bounded-parent HH natural window.  Thus internal nonlocal high→high traffic remains real modal redistribution but cannot survive as an independent **fresh tail-supply** recursion edge.
 
 ## 6. Resolved contact and interface work — EXACT
 
@@ -256,53 +246,57 @@ Changing the resolved cutoff repartitions the same full nonlinear law.  For a fi
 Differentiated SGS and pressure-Hessian terms are nevertheless real sources in **derived resolved-strain/gradient equations**.  They may control geometry, locate critical shells or break a recurrence regime.  “Source of a derived observable” must not be silently identified with “independent generator of global kinetic energy.”  This distinction is central to the current Mixed audit.
 
 
-### Native objective-source state exhaustion — EXACT-CONDITIONAL / DISTILLED
+### Native objective-source state exhaustion — DISTILLED EXACT DEDUCTION
 
-Compose the exact objective-source compiler with the later shell/tail continuity theorems.  Every currently certified source route has one of the following physical handoffs:
+Current source routes expose only physical states already typed elsewhere: local/viscous source -> `D_V` -> hard shell; resolved pressure pair -> hard shell; SGS high service -> hard tail; SGS low service -> hard shell; independently certified interface/work cost may terminate.  ON/material labels and `old_pool_not_yet_eroded` are not events.
 
-- local coherent source or viscous source -> resolved `D_V` -> actual critical shell;
-- resolved pressure pair -> actual critical shell, while the pressure-SGS half delegates to the SGS calculus;
-- SGS high-frequency service -> physical hard tail;
-- integrated total low SGS service -> actual hard shell at a witness time;
-- an independently certified physical transfer/interface cost may terminate, but an ON/material reading alone cannot create that cost;
-- `old_pool_not_yet_eroded` -> capacity state only.
-
-Whenever a route reaches a hard shell, Section 4 reroots its terminal kinetic-energy supply to earlier modal stock or actual nonlinear inflow.  Whenever it reaches the hard tail, Section 5 reroots it to inherited tail stock or true low-to-high nonlinear work.  Thus source/pressure/SGS labels remain genuine **geometry/source provenance**, but do not survive as extra kinetic-energy suppliers after the physical state has been exposed.
-
-The remaining historical `old_pool_not_yet_eroded` branch can be removed from **renewal entrance** without assuming any old-pool erosion.  On the scaled source interval, integrate the already-certified pointwise positive low-band law and define
+The low-SGS route needs no measurable choice of displacement.  For the already-fixed convolution filter set
 
 \[
-G_j:=\int\sum_C s_{j,C}(\tau)\,d\tau\ge0,
-\qquad
-\mathcal S_{low}:=\sum_{j\le0}G_j\ge Y-2D_{high}.
+d\mu_G=|G(r)|dr/g_1,\quad g_1=\|G\|_1,\quad a(\tau,r)=\|\delta_ru(\tau)\|_3,\quad A(\tau)=\int a^3d\mu_G=Q(\tau)/g_1.
 \]
 
-Here `Y` and `D_high` are the integrated objective-SGS square-service and high-frequency weights on that same interval.  If `D_high>=Y/4`, the physical hard-tail route is already available.  Otherwise `\mathcal S_{low}>=Y/2`.  Normalize the actual integrated band law,
+On the smooth interval `(tau,r)->a` is Borel.  If `m_1=int a dmu_G>0`, put
 
 \[
-p_j:=G_j/\mathcal S_{low},\qquad p_{max}=\max_jp_j.
+d\nu_\tau=(a/m_1)d\mu_G,
 \]
 
-The fixed annular LP frame plus the existing two-hard-shell cover gives, at an actual time on the source interval,
+and use `mu_G` when `m_1=0`.  `nu_tau` is a measurable reader kernel, not a causal probability.  With `S_j=M_j||delta_r u_j||_2^2`, pointwise LP/Bernstein and `m_1<=A^(1/3)` give
 
 \[
-\boxed{\mu_{hard}\ge \frac{G_{j_*}}{6c}\ge\frac{p_{max}Y}{12c}.}
+\sum_j\int S_jd\nu_\tau
+\ge\frac{A/m_1}{(C_{LP}C_B)^2}
+\ge\frac{A^{2/3}}{(C_{LP}C_B)^2}
+\ge C_Y\rho_R(\tau),
+\qquad C_Y=\frac{380}{g_1(1+g_1)(C_{LP}C_B)^2},
 \]
 
-Equivalently `mu_hard exp(H_inf^low-scale)>=Y/(12c)`.  This uses **total low service** before old/new material classification; no old-pool capacity, selected-family age, coherent-cell argmax or fresh-material threshold enters the entrance theorem.
+where the last step is exactly the certified SGS collision plus Germano bound.  The high-band estimate is pointwise in `r`, hence
 
-Thus, **once the upstream integrated positive low-service law is supplied**, every current objective-SGS episode reaches physical hard-tail structure or a real low/base hard shell.  Material old/fresh/interface partitions may remain provenance, but an ON restriction is not a terminal `Xi` by itself; only separately certified physical interface/work evidence may terminate.
+\[
+\sum_{j\ge1}\int S_jd\nu_\tau\le2d_{high}(\tau).
+\]
 
-The band law `(G_j)` and `H_inf^low-scale` belong to the fixed registered LP reader.  They may locate a physical hard shell, but they are not themselves causal primitives and may not be compared across different frames as one currency.  The native output of this step is the actual hard Fourier shell.
+Integrating scaled physical time,
 
-There is one formulation seam which this distill does not hide: the upstream source argument first proves at each time that **some** filter displacement `r` carries the required service.  The service-to-shell deduction above is exact once a measurable integrated law `(G_j)` exists, but source main does not presently contain a separate theorem constructing a measurable choice `tau -> r(tau)` (or an equivalent joint `(tau,r)` positive law).  Therefore the full source-to-low-service assembly remains conditional on that upstream measurability claim.
+\[
+G_j:=\int\!\int S_jd\nu_\tau d\tau,\qquad Y_{tot}=C_Y\Sigma_R,
+\qquad \boxed{\sum_{j\le0}G_j\ge Y_{tot}-2D_{high}}.
+\]
 
-A capacity threshold cannot define an event in any case: an upper bound may be replaced by a looser valid upper bound while the underlying field and realized service law are unchanged.  If crossing `C_old>Y/8` changes an alleged owner, that owner belongs to the proof envelope, not to Navier--Stokes.
+Thus either `D_high>=Y_tot/4` and the physical hard-tail route applies, or total low service is at least `Y_tot/2`.  For `p_j=G_j/sum_(k<=0)G_k`, the pointwise capacity `S_j<=4M_j||u_j||_2^2`, time averaging and the two-hard-shell cover give at an actual time
 
-The historical old-pool half-life remains valid only on its independently supplied signed-good low-strain lineage; it is no longer needed for generic SGS renewal and must not be imported as a source clock.
+\[
+\boxed{\mu_{hard}\ge G_{j_*}/(6c)\ge p_{max}Y_{tot}/(12c)}.
+\]
+
+No selector `tau->r(tau)` is needed.  `nu_tau`, `(G_j)` and `H_inf^low-scale` are discarded after exposing the actual Fourier shell; they create no event, charge or scale progress.  Shell/tail energy then reroots by Sections 4--5 to earlier modal stock or actual nonlinear boundary inflow.  Material old/fresh/interface readings remain provenance unless an independent physical work/cost law exists.
+
+A looser valid old-pool capacity bound can change `C_old>Y/8` without changing the field or realized service, so that threshold cannot define an event.  The historical old-pool half-life remains valid only on its separately supplied signed-good low-strain lineage and is not a generic source clock.
 
 
-### Objective-source event -> physical-state relay — EXACT-CONDITIONAL ON THE STATE HANDOFF
+### Objective-source event -> physical-state relay — DISTILLED EXACT DEDUCTION
 
 A source first hit remains a real event in the derived resolved-strain equation; its physical time and local/pressure/SGS/viscous provenance are not erased.  What changes is the **master leaf** attached to that event.
 
@@ -316,33 +310,60 @@ RESOLVED_SOURCE -> RECURSE_CRITICAL
 
 is no longer a canonical unresolved destination.  Keep the source event mark, then relay immediately to the certified terminal/shell/tail state.  If source ties with strain or actual work at the same physical time, keep the full joint cause set; the relay must not split or duplicate that event.
 
-This is proof-graph contraction, not physical-event deletion.  Source/pressure/SGS remain available as exact geometry marks on the resulting transition.  They simply do not require a separate source-currency recurrence theorem once their native state handoff is known.
+This is proof-graph contraction, not physical-event deletion.  Source/pressure/SGS remain exact geometry marks.  Their reader scale is not a causal parent scale: modal continuity reroots the exposed shell/tail to earlier stock or actual nonlinear inflow.  In the low-SGS frame `M_j=N2^j`, `j<=0`, the hard candidates are `M_j,2M_j`; the only candidate above `N` is exactly `P_(2N)={N<|k|<=2N}`, hence inherited tail stock or true `Phi_up`, while internal tail inflow is a separately typed hard-work event.  Source labels therefore mint no independent causal scale edge.
 
-## 11. Two pure recurrence tails are finite — EXACT
+## 11. Pure tails and the first mixed subalphabet — EXACT / DISTILLED EXACT
 
-### Consecutive high strain
+### Consecutive high strain — EXACT
 
-A genuine high-strain event at scale `N_j` pays a positive physical dissipation amount.  The certified resolved ancestor satisfies `M_j<=N_j/4`, and renewed scale is `N_{j+1}=3M_j/4`; hence
+A high-strain event at scale `N_j` pays `D_j>=D_*`, exposes `M_j<=N_j/4`, and renews at `A_j=3M_j/4<=3N_j/16`.  Since `D_j<=N_jG_*`, `G_*=int||grad u||_2^2`, the geometric scale descent makes every consecutive high-strain epoch finite without treating `D_V` as a global reset.
 
-\[
-\frac{N_{j+1}}{N_j}\le\frac3{16}.
-\]
+### Consecutive signed-good generated HH — EXACT
 
-Using the global gradient reservoir `G_*=int||∇u||_2^2`, the episode costs telescope with the geometric scale descent, giving a finite total bound.  Finiteness does **not** come from declaring a scale-critical normalized dissipation quantity to be a globally finite reset budget.
-
-### Consecutive signed-good generated HH
-
-A raw HH coefficient hit is only a locator; it must first pass the physical energy gate selecting actual positive HH generation.  On the signed-good generated route the physical parent/child scales obey
+After `Q^2` energy reentry selects actual positive HH work, the actual hard Fourier parent/child radii satisfy
 
 \[
-\frac35<\frac{N_{parent}}{N_{child}}<\frac58.
+3/5<N_p/N_c<5/8.
 \]
 
-Backward natural lifetimes therefore grow by a factor greater than `64/25`.  The required registration-surface backshift accumulates geometrically and reaches the absorbing initial surface `t=0` in finite depth.  This closes only the signed-good generated pure tail, not generic HH.
+Parent natural lifetimes grow by more than `64/25`; the certified registration surfaces therefore backshift geometrically to absorbing `t=0`.  Local positive HH outside signed-good edge geometry is already on the canonical bad/transfer-loss route.  On a compact smooth slab, the same signed continuum edge density lifts to the locally finite spacetime law `dW=C_F T(t,e) dt dlambda(e)` with `dW+=C_F[T]_+ dt dlambda`; this is the original native Hahn law with physical time attached, not a re-Hahn after coarsening.  Restrict actual hard-role inflow to the Borel signed-good set, push to physical time, and one half-child interval carries at least half of that positive sublaw.  The edge identity already supplies both hard parents and the cyclic theorem supplies the unique physical donor.  For every nonzero hard-parent role `P`, the self-probe `psi_P=Pu/||Pu||_2` and `QP=P` give `<Qu,P psi_P>=||Pu||_2`; common-slice registration is therefore exact without a Gaussian mark.  Young/Christ remains an auxiliary near-extremizer/productivity theorem, not a causal registration requirement.
+
+### Canonical hard-lineage high-strain / signed-good alternation, including exact ties — DISTILLED EXACT DEDUCTION
+
+Start from a physical hard shell
+
+\[
+P_M:\quad M/2<|k|\le M,
+\qquad A=3M/4,
+\]
+
+and its registered smooth `A`-carrier.  By hard-lineage non-teleportation, every good generated-work continuation of the same charge is automatically parent-continuing: the next hard child role is the previous unique donor parent.  Source/reader/coherent marks cannot reset that role; only a separately typed high-strain state relay remains as the non-work recursive event.  Degenerate Young/Christ belongs only to the separate auxiliary productivity analysis.
+
+A high-strain continuation at carrier scale `A` renews at `<=3A/16`.  If the shell energy is instead genuinely supplied by signed-good nonlinear inflow, hard-role modal causality restricts that owner to actual recipient modes inside `P_M`.  Hence the physical HH child has `N_c<=M=4A/3`, and its signed-good parent satisfies
+
+\[
+N_p<\frac58N_c\le\frac58\frac43A=\frac56A.
+\]
+
+This remains true at an exact high-strain/HH tie.  The joint event is never split or ordered: the high-strain continuation is `<=3A/16`, while every signed-good continuation that actually supplies the carried shell has parent `<5A/6`.  Positive HH work elsewhere in the smooth envelope is a different physical event and cannot relaunch this shell ancestry merely by overlap with `Q`.
+
+Therefore successive high-strain carrier scales satisfy
+
+\[
+A_{j+1}\le\frac56A_j.
+\]
+
+Since each high-strain event has `D_j>=D_*` and `D_j<=A_jG_*`,
+
+\[
+\#H\,D_*\le G_*\sum_jA_j\le 6A_0G_*.
+\]
+
+Thus only finitely many high-strain vertices occur even with arbitrary canonical signed-good layers and exact H/HH ties.  After the last one, an infinite remaining tail would be consecutive signed-good generated HH and the existing parabolic registration theorem reaches absorbing `t=0` in finite depth.  Hence this shell-anchored canonical two-mechanism alphabet has no infinite interior lineage.  No common mixed currency or synthetic clock is introduced.
 
 ## 12. Core anti-theorems and permanent guards
 
-Do not use raw Duhamel mass as causal probability.  Do not re-Hahn after coarse-graining.  Do not use interaction cells as wallets.  Do not call high→high circulation fresh tail supply.  Do not infer a dyadic step from positive work.  Do not promote checkpoints to events or reset cumulative monitors.  Do not treat inherited stock as generation.  Do not treat material rereading or `R_switch` as source.  Do not treat smooth skew relink as generation.  Do not treat OO/ON/NN as generators of their service law.  Do not split simultaneous causes by a synthetic clock.  Do not turn normalized critical quantities into finite additive reset budgets.  Do not exchange entropy coordinates from different underlying measures as if they were one currency.
+Do not use raw Duhamel mass as causal probability.  Do not re-Hahn after coarse-graining.  Do not use interaction cells as wallets.  Do not call high→high circulation fresh tail supply.  Do not infer a dyadic step from positive work.  Do not promote checkpoints to events or reset cumulative monitors.  Do not treat inherited stock as generation.  Do not treat material rereading or `R_switch` as source.  Do not treat smooth skew relink as generation.  Do not treat OO/ON/NN as generators of their service law.  Do not promote optional coherent-analysis thresholds—Gaussian aspect/radius, holonomy, flatness, sideband or reuse coordinates—to hard-lineage events: their actual consequences are existing strain/dissipation, modal state/work, terminal analysis cost, or no-hit continuation.  Do not split simultaneous causes by a synthetic clock.  Do not turn normalized critical quantities into finite additive reset budgets.  Do not exchange entropy coordinates from different underlying measures as if they were one currency.
 
 For every proposed frontier lemma ask: **what exact true Navier–Stokes structure makes this true that a generic averaged/bilinear model need not preserve?**  If the answer is only scaling, cancellation or a generic norm inequality, the physical mechanism has probably not yet been isolated.
 
@@ -350,4 +371,4 @@ For every proposed frontier lemma ask: **what exact true Navier–Stokes structu
 
 The identities and structural laws above are exact or exact-conditional as labelled.  Randomized triads, Galerkin/FFT probes, CI runs and stress tests in the source repository are evidence against implementation mistakes, not mathematical substitutes for the continuum proofs.
 
-Nothing here closes generic mixed recurrence, generic/non-signed-good HH, the degenerate full-signed Young/Christ seam, the remaining source/strain geometry-breaker coupling, or the initial/singular-time interfaces.  Those belong to `MIXED_FRONTIER.md`.
+Nothing here closes the broader interior Mixed assembly or the initial/singular-time interfaces.  Hard-lineage switching itself is no longer an independent seam: on one causal charge it is forced to actual modal work or the separately typed high-strain relay.  The degenerate full-signed Young/Christ margin remains an auxiliary analysis seam, not a master causal gate.  Those distinctions belong to `MIXED_FRONTIER.md`.

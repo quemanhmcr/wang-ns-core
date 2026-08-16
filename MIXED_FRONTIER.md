@@ -107,53 +107,71 @@ Pressure is similarly nuanced: pressure Hessian is real and can drive strain geo
 
 Differentiated SGS and pressure terms are true sources of derived resolved-strain variables, so they cannot be erased by a kinetic-energy argument alone.  What can now be exhausted exactly is their **downstream state/energy handoff**.
 
-### Native source-state exhaustion — EXACT-CONDITIONAL / DISTILLED
+### Native source-state exhaustion — DISTILLED EXACT DEDUCTION
 
-Local/viscous source and resolved pressure-pair routes already expose physical hard shells.  The pressure-SGS half delegates to SGS.  The only historical ambiguity was the low coherent SGS branch, where old/fresh/interface ancestry used to decide renewal.
+Local/viscous source and resolved pressure-pair routes already expose physical hard shells.  The pressure-SGS half delegates to SGS.  The remaining low coherent SGS route can be assembled without material ancestry and without choosing a measurable displacement.
 
-That ancestry split is unnecessary for physical entrance.  On the scaled source interval, integrate the exact positive low-band service atoms before any material reading:
+Let the fixed source filter define
 
 \[
-G_j:=\int\sum_Cs_{j,C}(\tau)\,d\tau\ge0,
+d\mu_G(r)=|G(r)|\,dr/\|G\|_1,
+\qquad a(\tau,r)=\|\delta_r u(\tau)\|_3,
+\qquad A(\tau)=\int a^3d\mu_G=Q(\tau)/\|G\|_1.
+\]
+
+For `m_1=int a dmu_G>0`, use the measurable reader kernel
+
+\[
+d\nu_\tau=(a/m_1)d\mu_G.
+\]
+
+It is a deterministic disintegration of the already-fixed increment reader, not a causal probability.  The key identity/inequality is
+
+\[
+\int a^2d\nu_\tau
+=\frac{\int a^3d\mu_G}{\int a d\mu_G}
+\ge A(\tau)^{2/3}.
+\]
+
+Combining this with the pointwise LP/Bernstein inequality, the exact SGS collision `||R||_(3/2)>=380 rho_R`, and the Germano increment bound gives exactly the same pointwise square-service lower as the historical `some r` argument, now without selection:
+
+\[
+\sum_j\int M_j\|\delta_r u_j\|_2^2d\nu_\tau
+\ge C_Y\rho_R(\tau),
+\quad
+C_Y=\frac{380}{g_1(1+g_1)(C_{LP}C_B)^2}.
+\]
+
+The high-band bound is pointwise in `r`, hence after time integration
+
+\[
+G_j:=\int\!\int M_j\|\delta_r u_j\|_2^2d\nu_\tau d\tau,
 \qquad
-\mathcal S_{low}:=\sum_{j\le0}G_j\ge Y-2D_{high}.
+\sum_{j\le0}G_j\ge Y_{tot}-2D_{high},
+\quad Y_{tot}=C_Y\Sigma_R.
 \]
 
-Here `Y` and `D_high` are integrated weights on the same interval.  Hence either `D_high>=Y/4` and the certified LP-to-hard-tail theorem applies, or
+Therefore either `D_high>=Y_tot/4` and the certified LP-to-hard-tail theorem applies, or the total low-band law has mass at least `Y_tot/2`.  If `p_j=G_j/sum_(k<=0)G_k`, the maximal band `j_*` and the already-certified pointwise capacity plus annular two-hard-shell cover give
 
 \[
-\mathcal S_{low}\ge Y/2.
-\]
-
-On the latter branch define the **total** band probabilities
-
-\[
-p_j=G_j/\mathcal S_{low}.
-\]
-
-A countable positive band law has an attained maximal atom `p_max`.  For its band `j_*`, the already-certified increment capacity and annular two-hard-shell cover give
-
-\[
+\boxed{
 \mu_{hard}\ge\frac{G_{j_*}}{6c}
-\ge\boxed{\frac{p_{max}Y}{12c}}
+\ge\frac{p_{max}Y_{tot}}{12c}.
+}
 \]
 
-at an actual physical time, on one of the two hard shells associated with the fixed LP band.  No material freshness is used in this inequality.  The normalized band law is a scale-concentration diagnostic, not a causal probability.  It is also **reader-dependent**: the fixed LP frame locates the shell but does not become the physical state.
+The filter-displacement kernel and LP band probabilities are **reader-dependent state locators** and are discarded after the hard shell is exposed.  They create no event, owner, entropy clock or scale progress.
 
-The exact status boundary is important.  The implication `integrated positive low-service law -> hard shell` is exact.  The upstream source note obtains the service pointwise from the existence of a displacement `r`; source main does not yet contain a separate measurable-selection theorem for `tau -> r(tau)` or an equivalent joint `(tau,r)` formulation.  Hence the complete source-to-low-service continuum assembly remains conditional on that measurability step.
-
-Subject to that upstream integrated-law input, every current objective-SGS source episode has a material-free physical state handoff:
+Thus every current objective-SGS source episode has a material-free physical cover:
 
 ```text
 SGS source
-  -> D_high >= Y/4 -> physical hard tail
+  -> physical high tail
   OR
-  -> integrated total low positive service >= Y/2 -> actual hard shell.
+  -> selector-free joint low service -> actual hard shell.
 ```
 
-This is a physical **cover**, not an exclusive branch order: high-frequency and low-service facts may coexist, and exact ties are retained.
-
-The shell/tail energy then reroots by the exact continuity laws to inherited modal stock or actual nonlinear boundary work.  Pressure/SGS source terms remain genuine derived-geometry physics; only the ancestry machinery is removed from renewal entrance.
+High-tail and low-service facts may coexist; this is not a lexicographic branch order.  The shell/tail energy then reroots by exact continuity to inherited modal stock or actual nonlinear boundary work.  Pressure/SGS source terms remain genuine derived-geometry physics; only the observer selection has disappeared.
 
 ### `old_pool_not_yet_eroded` — CLOSED AS A NON-EVENT
 
@@ -187,25 +205,49 @@ This consequence may change observable and units, so it is not a same-measure id
 
 Exact source/strain/work ties remain joint at the original event time.  No event is deleted from physical chronology.  What disappears is only the free recursive leaf `RECURSE_SOURCE` whose child state was unspecified.
 
-## 7. What the Mixed problem now looks like
+### Source-marked causal-scale reset — CLOSED AS AN INDEPENDENT EDGE
 
-After the source-state relay, source/pressure/SGS remain **real geometry marks on transitions**, but no longer form an unresolved owner currency.  The unresolved event-facing mechanisms are now symmetric strain/dissipation and actual nonlinear work, with source marks able to alter the geometry by which one state hands off to the next.  Those marked transitions can still alternate so that neither pure high-strain nor pure signed-good-HH telescope applies forever.
+Source/pressure/SGS marks remain real derived-geometry events, but their theorem reader scale is not a causal parent scale.  At source block scale `N`:
 
-The stronger working hypothesis is deliberately **OPEN**:
+- local/viscous and resolved-pressure routes expose shells `H<=N/4`; terminal shell energy is earlier `H`-stock or canonical nonlinear inflow.  Bad/nonforward inflow is already terminal; a recurrent good inflow has its unique physical energy donor among the signed-good interaction parents, hence donor frequency `<5H/8`;
+- low/base SGS uses `M_j=N2^j`, `j<=0`, and hard candidates `H in {M_j,2M_j}`.  The **only** candidate with `H>N` is `j=0, H=2N`, namely `P_(2N)={N<|k|<=2N}`.  If that state is inherited it is tail stock, not generation; if freshly supplied across the tail boundary, `Phi_up` has physical donor `<=N`; if supplied by internal tail work, that hard-work event—not the SGS mark—owns the lineage switch;
+- high-SGS tail state is already covered by inherited tail stock or true `Phi_up`, with pure-UV/contact continuation as above.
+
+Thus a source mark may genuinely change derived strain geometry, but it cannot mint a new causal scale edge or a hard-lineage switch by its label.  Any recurrent switch after the mark must be carried by an independently typed stock or actual nonlinear-work law.  Exact source/strain/work ties remain one joint physical event.
+
+## 7. Hard-lineage non-teleportation + strain / signed-good HH — CLOSED INCLUDING EXACT TIES
+
+The missing bridge is not an upper-support convention for the smooth carrier.  At a terminal hard shell `P_M`, exact mode-set continuity decides the energy owner:
 
 \[
-\text{interior kinetic-energy causality}
-\stackrel{?}{=}
-\text{modal stock}+dW^++\text{viscous loss},
+E_{P_M}(t)+D_{P_M}+\Phi_{out,P_M}=E_{P_M}(s)+\Phi_{in,P_M}.
 \]
 
-with pressure/SGS/strain retained where they genuinely control geometry rather than promoted to separate energy currencies.
+Thus smooth `Q^2` work outside `P_M` cannot pay for the shell merely because `Q=1` on it.  The exact anti-model is `Q=P+R` with `P perp R`: work entering only `R` raises `E_Q` but leaves `E_P` unchanged.  If terminal shell energy is generated rather than inherited, its owner is actual nonlinear inflow with child inside `P_M`, obtained by restricting the existing canonical `dW+`; no new Hahn is taken.  A different hard child elsewhere in `Q` is a separate physical event, not a free relaunch of this ancestry.
 
-If this audit succeeds, Mixed should be reformulated from “alternation of heterogeneous owner currencies” to:
+Now use the exact shell/carrier registration
 
-> **Can one actual nonlinear energy-flow lineage change true NS geometric regime infinitely often so as to evade every native telescope without reaching `t=0` or a terminal cost?**
+\[
+A=3M/4.
+\]
 
-That reformulation is not yet theorem.
+A high-strain continuation gives `<=3A/16`.  A signed-good generated inflow into the carried shell has child `N_c<=M=4A/3`, hence parent
+
+\[
+N_p<\frac58N_c\le\frac56A.
+\]
+
+At an exact H/HH tie both causes remain joint, but every continuation of this shell ancestry is still `<=5A/6`.  Therefore the high-strain subsequence obeys
+
+\[
+A_{j+1}\le\frac56A_j,
+\qquad
+\#H\,D_*\le G_*\sum_jA_j\le6A_0G_*.
+\]
+
+There can be only finitely many high-strain vertices.  After the last one, a parent-continuing signed-good tail is exactly the already-certified parabolic epoch and reaches `t=0` in finite depth.  Hence arbitrary alternation and exact ties of these two mechanisms cannot support an infinite interior shell ancestry.
+
+There is no independent hard-role relaunch left on this causal charge.  Earlier stock keeps the same hard role; good modal inflow pushes the one recipient charge to its unique donor parent; bad/nonforward work is terminal; high strain is the separately typed non-work state relay.  Source/role/material/service/coherent-analysis marks and same-carrier checkpoints may change geometry or annotation but cannot mutate the charge role.  The parent-scale carrier relay then makes `next child role = previous donor parent role` a consequence of physical ancestry rather than an epoch hypothesis.  An unrelated hard event elsewhere in the smooth envelope is a different physical event/charge, not continuation of this lineage.  The auxiliary degenerate Young/Christ analysis remains separate.
 
 ## 8. Required shape of a valid Mixed theorem
 
@@ -220,13 +262,26 @@ It may not create a common scalar exchange rate between physical time, log scale
 
 Cross-mechanism coupling is allowed only through an exact PDE identity, a conservation law, a common physical measure or an explicitly proved implication.  Similar critical scaling is not a coupling theorem.
 
-## 9. Current local HH seam — OPEN
+## 9. Canonical good spacetime inflow adapter — DISTILLED EXACT; YOUNG/CHRIST AUXILIARY
+The native signed edge law is lifted on every compact smooth physical slab `I` before any coarsening:
+\[
+d\mathcal W(t,e)=C_FT(t,e)\,dt\,d\lambda^{unord}(e),\qquad d\mathcal W^+=C_F[T(t,e)]_+\,dt\,d\lambda^{unord}(e).
+\]
+This is the same canonical Hahn law with physical time attached.  For every bounded child block `B`, the fixed-time energy-native variation bound integrates to
+\[
+|\mathcal W|(I\times B)\le |I|\,4\sqrt2C_FE_*^{3/2}\Big(\int_B|z|^2dz\Big)^{1/2}<\infty,
+\]
+so the spacetime law and its positive part are locally finite Radon measures.  The signed-good set `G={r_e>1-eta0}` is Borel.  At a terminal hard role `P`, restrict first to actual modal inflow `Phi_in,P`; its recipient marginal is a restriction of inherited canonical `dW+`.  Bad/nonforward inflow is terminal.  If the good inflow sublaw is nonzero, push it to physical time and split the child natural interval into its two physical halves; one carries at least half of this **same positive work law**.  No Duhamel or Young weight is introduced.
+Every good edge already carries both physical interaction parents in `3/5<N_p/N_c<5/8`; the cyclic theorem identifies the unique energy donor and the other parent as simultaneous terminal nonforward recipient.  Donor provenance is a zero-depth disintegration of the one recipient charge.  Disintegrate onto deterministic event hard roles.  On every nonzero parent role `P_p`, positive work implies `P_pu(t)!=0`; set
+\[
+\psi_p=P_pu(t)/\|P_pu(t)\|_2.
+\]
+For the event-anchored smooth envelope `Q_pP_p=P_p`, exactly `<Q_pu,P_p psi_p>=||P_pu||_2`.  The common-slice theorem is shape-blind: either an existing role-interface/HH/strain obstruction reenters physical energy/work, or the same parent coefficient survives with the certified `1/4` factor.  Thus signed-good parabolic ancestry registers directly from the hard physical state; no Gaussian near-extremizer is needed for causal depth.
+Consequently the degenerate full-signed Young/Christ margin `mu->0` is **not a master no-escape seam** in the distilled hard-work route.  Full-signed Young/Christ remains meaningful for near-extremizer shape, Gaussian marking, amplitude productivity and entropy/coherent-root analysis; its degenerate margin may remain analytically open there.  If that auxiliary coherent route ever requires a positive kernel, it must still be a separately proved positive disintegration of canonical `dW+`; fresh coherent Hahn remains forbidden.  The same event-noncreation rule removes the rest of the optional coherent-analysis exit alphabet from hard ancestry: aspect itself is never charged and can change only through actual deformation/strain or expose a radius/mass state; large radius is a state witness whose energy reroutes modally; holonomy is a genuine polarization observable/cost but is not consulted by the hard self-probe causal chain; coherent deformation is existing `D_V`; full-natural service/material labels are witnesses/provenance; and Kelvin-flat is absent from `RecursiveEventState`, remaining a no-hit/auxiliary analysis certificate rather than a causal vertex.
 
-Canonical HH routing is signed-first.  Good/bad/negative pieces inherit the existing physical law, and Young/Christ sees the full signed hard-cell work.  Nondegenerate failures can be dominated by already-existing bad-positive/backscatter and negative work under the certified margin bounds.
+### High-tail supply-owner exhaustion — DISTILLED EXACT DEDUCTION
 
-The remaining local seam is the **degenerate full-signed Young/Christ margin**.  It cannot be closed by taking another Hahn positive part after coherent coarse-graining.  If a coherent positive kernel is genuinely necessary, it must be proved as a positive disintegration of the already-existing `dW+`, not manufactured from a new signed representation.
-
-Generic/non-signed-good HH and nonlocal high-tail continuation remain live; they must not be identified with the signed-good generated theorem.
+For `H_N={|k|>N}`, exact radial continuity says fresh tail supply is `Phi_up`, not gross positive work inside `H_N`.  Internal high→high circulation can be arbitrarily large with `Phi_up=0`; it is real redistribution but no tail-supply owner.  Every atom of `Phi_up` is either pure-UV, which forces `M=2N` and enters the direct first-shell natural window, or resolved contact, which enters existing `K/S` or the contact-HH natural-window route.  Hence the historical nonlocal high-tail regeneration branch does not survive as an independent renewal edge.  An unrelated hard event may still coexist elsewhere in the PDE, but hard-lineage non-teleportation makes it a different physical charge/event; it cannot continue this tail ancestry unless actual modal inflow enters the carried role.
 
 ## 10. Final interfaces remain separate — OPEN
 
@@ -255,12 +310,10 @@ Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier s
 
 ## 12. Best next targets
 
-1. **Source-service measurability / reader quotient.**  Construct the measurable displacement law `tau -> r(tau)` (or an equivalent joint positive law) and make explicit that the LP scale distribution is discarded after it exposes a hard shell.
-2. **Source-marked transition geometry.**  Determine the exact scale/time constraints carried by the shell/tail state when its relay bears pressure/SGS/local/viscous provenance; source is a mark on the transition, not another currency.
-3. **Two-regime breaker theorem.**  Study the smallest true event alternation, strain ↔ physically gated nonlinear work, and derive an exact NS coupling of their physical geometry rather than a synthetic common budget.
-4. **Degenerate HH positive disintegration.**  Close the local margin seam only if the canonical `dW+` admits the required positive coherent disintegration.
-5. **Restricted-alphabet Mixed theorem.**  Only after the preceding audits, assemble pure blocks plus genuine breaker laws and prove that infinitely many breakers force a native telescope, terminal law or `t=0`.
+1. **Broader interior Mixed assembly.**  Verify globally that after all quotients every nonterminal interior causal vertex is exactly high strain/dissipation or canonical good nonlinear work, then compose the closed two-mechanism theorem without introducing a new clock.
+2. **Endpoint interfaces.**  Keep initial-data entrance and hypothetical singular-time exclusion separate from interior no-escape.
+3. **Auxiliary productivity (separate).**  Resolve degenerate Young/Christ only if Gaussian/coherent productivity is still useful; do not put that analysis seam back on the causal path.
 
 ## 13. Frontier in one sentence
 
-> **Remove no more physics and add no observer currency: preserve source/pressure/SGS as exact geometry marks on certified state relays, then prove that an infinite interior alternation of genuine strain/dissipation and actual nonlinear-work events cannot use those marked geometry changes to evade every native stock, flux, scale and physical-time law.**
+> **Remove no more physics and add no observer currency: hard-lineage switching is now forced to actual modal work or high strain; the remaining interior task is only to verify that no other nonterminal causal vertex survives the accumulated quotients, then compose the native scale/time laws.**

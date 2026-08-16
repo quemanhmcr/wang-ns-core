@@ -4,7 +4,7 @@ A three-document distillation of the current Wang–Navier–Stokes no-escape pr
 
 Source programme: [`quemanhmcr/wang-ns-triad-diamond`](https://github.com/quemanhmcr/wang-ns-triad-diamond), read only from `main`.  The source baseline used for this distillation is `main@63178b0e7f9fabdfd8c344dab938a3d639639df5` (2026-08-13), whose latest upstream theorem state is the native material-service causal quotient.  This distill also records later **deductions obtained by composing already-certified upstream identities**; each such deduction is labelled explicitly.
 
-There is **no claim of a proof of 3D Navier–Stokes global regularity**.  The remaining programme-level problems include mixed genuine-physics recurrence, a local degenerate HH seam, and the initial/singular-time interfaces.
+There is **no claim of a proof of 3D Navier–Stokes global regularity**.  The remaining causal task is broader interior Mixed assembly, followed separately by the initial-data and hypothetical-singular-time interfaces.  The degenerate full-signed Young/Christ margin remains only an auxiliary productivity/coherent-analysis seam.
 
 ## Repository invariant
 
@@ -58,9 +58,11 @@ critical shell / hard tail / service / first-stop corridor
               |
      quotient observer depth
               v
-strain/dissipation events <--> actual nonlinear work <--> source/derived-geometry events
+source/derived-geometry marks expose state; they mint no causal scale edge
               |
-       mixed frontier remains
+interior lineage candidate = high strain/dissipation <--> canonical good work
+              |
+     broader interior assembly remains
 ```
 
 The square/service/shell layers are real physical observables, but a new observable is not automatically a new causal charge.
@@ -90,11 +92,11 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical physical shell is supplied; same-carrier inherited-stock relay once its carrier/endpoint/residual-work hypotheses hold; signed-good local HH recurrence geometry once the signed-good generated branch is physically selected.
 
-**DISTILLED EXACT DEDUCTIONS:** current role/probe changes do not form an independent generation currency; current shell/service routes do not mint a second charge; hard-shell energy has only earlier-stock or actual nonlinear-inflow positive supply; once the upstream integrated SGS service law is supplied, an objective source hit relays to terminal/shell/tail state rather than a free `RECURSE_SOURCE` leaf.
+**DISTILLED EXACT DEDUCTIONS:** role/probe, shell/service and optional coherent-analysis coordinates mint no causal charge; a hard-role charge cannot teleport—stock stays on the same role, while any genuine hard-role change is an actual modal-work donor step or high-strain state relay; source marks mint no causal scale edge; canonical good inflow registers its unique donor parent directly; and high-strain / signed-good-HH alternation including exact ties has finite depth.
 
 **EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, CI certificates and master traces.
 
-**OPEN:** measurable source→service displacement assembly (or an equivalent joint law); generic/non-signed-good HH recurrence; nonlocal high-tail continuation; the degenerate full-signed Young/Christ seam; the exact geometry of source-marked breaker transitions after their shell/tail handoff; the strain/nonlinear-work Mixed theorem; the initial-data and hypothetical-singular-time interfaces.
+**OPEN:** broader interior Mixed assembly; the initial-data and hypothetical-singular-time interfaces.  The degenerate full-signed Young/Christ margin remains open only for auxiliary near-extremizer/productivity/coherent analysis, not as a causal no-escape gate.
 
 ## Upstream proof lookup map
 
