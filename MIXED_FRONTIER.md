@@ -215,7 +215,7 @@ Source/pressure/SGS marks remain real derived-geometry events, but their theorem
 
 Thus a source mark may genuinely change derived strain geometry, but it cannot mint a new causal scale edge or a hard-lineage switch by its label.  Any recurrent switch after the mark must be carried by an independently typed stock or actual nonlinear-work law.  Exact source/strain/work ties remain one joint physical event.
 
-## 7. First genuine Mixed closure: shell-anchored parent-continuing strain / signed-good HH — CLOSED INCLUDING EXACT TIES
+## 7. Hard-lineage non-teleportation + strain / signed-good HH — CLOSED INCLUDING EXACT TIES
 
 The missing bridge is not an upper-support convention for the smooth carrier.  At a terminal hard shell `P_M`, exact mode-set continuity decides the energy owner:
 
@@ -247,7 +247,7 @@ A_{j+1}\le\frac56A_j,
 
 There can be only finitely many high-strain vertices.  After the last one, a parent-continuing signed-good tail is exactly the already-certified parabolic epoch and reaches `t=0` in finite depth.  Hence arbitrary alternation and exact ties of these two mechanisms cannot support an infinite interior shell ancestry.
 
-This does **not** solve the auxiliary degenerate full-signed Young/Christ analysis or permit an unrelated hard event to replace the carried shell.  Any genuine switch to a different hard lineage must exhibit its own physical stock/inflow relation; smooth-envelope overlap is not enough.
+There is no independent hard-role relaunch left on this causal charge.  Earlier stock keeps the same hard role; good modal inflow pushes the one recipient charge to its unique donor parent; bad/nonforward work is terminal; high strain is the separately typed non-work state relay.  Source/role/material/service/coherent-analysis marks and same-carrier checkpoints may change geometry or annotation but cannot mutate the charge role.  The parent-scale carrier relay then makes `next child role = previous donor parent role` a consequence of physical ancestry rather than an epoch hypothesis.  An unrelated hard event elsewhere in the smooth envelope is a different physical event/charge, not continuation of this lineage.  The auxiliary degenerate Young/Christ analysis remains separate.
 
 ## 8. Required shape of a valid Mixed theorem
 
@@ -310,10 +310,10 @@ Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier s
 
 ## 12. Best next targets
 
-1. **Genuine hard-lineage switching.**  Classify when inherited stock or actual nonlinear work can move the ancestry to a different hard role after all source/reader/coherent-analysis relays are quotiented.
-2. **Broader Mixed theorem.**  Assemble only genuinely certified stock/work/strain breaker laws; source and coherent-analysis marks remain annotations, not currencies.
+1. **Broader interior Mixed assembly.**  Verify globally that after all quotients every nonterminal interior causal vertex is exactly high strain/dissipation or canonical good nonlinear work, then compose the closed two-mechanism theorem without introducing a new clock.
+2. **Endpoint interfaces.**  Keep initial-data entrance and hypothetical singular-time exclusion separate from interior no-escape.
 3. **Auxiliary productivity (separate).**  Resolve degenerate Young/Christ only if Gaussian/coherent productivity is still useful; do not put that analysis seam back on the causal path.
 
 ## 13. Frontier in one sentence
 
-> **Remove no more physics and add no observer currency: preserve source/pressure/SGS as exact geometry marks but charge every lineage switch to actual stock/work/strain physics, then prove that no infinite interior hard-lineage switching can evade all native stock, flux, scale and physical-time laws.**
+> **Remove no more physics and add no observer currency: hard-lineage switching is now forced to actual modal work or high strain; the remaining interior task is only to verify that no other nonterminal causal vertex survives the accumulated quotients, then compose the native scale/time laws.**

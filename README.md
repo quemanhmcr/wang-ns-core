@@ -90,11 +90,11 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical physical shell is supplied; same-carrier inherited-stock relay once its carrier/endpoint/residual-work hypotheses hold; signed-good local HH recurrence geometry once the signed-good generated branch is physically selected.
 
-**DISTILLED EXACT DEDUCTIONS:** role/probe, shell/service and optional coherent-analysis coordinates mint no causal charge; hard-role energy is earlier stock or actual modal inflow; source marks mint no causal scale edge; hard-tail dissipation is inherited stock or true boundary inflow; canonical good hard-role inflow has a native spacetime `dW+` heavy-half and hard-parent self-probe; and parent-continuing high-strain / signed-good-HH alternation including exact ties has finite depth.
+**DISTILLED EXACT DEDUCTIONS:** role/probe, shell/service and optional coherent-analysis coordinates mint no causal charge; a hard-role charge cannot teleport—stock stays on the same role, while any genuine hard-role change is an actual modal-work donor step or high-strain state relay; source marks mint no causal scale edge; canonical good inflow registers its unique donor parent directly; and high-strain / signed-good-HH alternation including exact ties has finite depth.
 
 **EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, CI certificates and master traces.
 
-**OPEN:** genuine hard-lineage switching and broader Mixed recurrence; the initial-data and hypothetical-singular-time interfaces.  The degenerate full-signed Young/Christ margin remains open only for auxiliary near-extremizer/productivity/coherent analysis, not as a causal no-escape gate.
+**OPEN:** broader interior Mixed assembly; the initial-data and hypothetical-singular-time interfaces.  The degenerate full-signed Young/Christ margin remains open only for auxiliary near-extremizer/productivity/coherent analysis, not as a causal no-escape gate.
 
 ## Upstream proof lookup map
 

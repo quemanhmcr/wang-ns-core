@@ -95,7 +95,7 @@ Hence for every `0<theta<1`, either `E_P(s)>=theta E_P(t)` or `Phi_in,P>=(1-thet
 
 This is the master-facing energy rule for a hard role even when a smooth envelope `Q` with `QP=P` transports its coefficient between events.  Holding `P` fixed here is only Fourier control-volume bookkeeping, not material/packet persistence.  `Q^2` remains an exact carrier observable, but positive work elsewhere in `Q` cannot supply terminal `P` energy.  Indeed for disjoint hard roles `P,R` and `Q=P+R`, work entering only `R` can increase `E_Q` while `E_P` is unchanged.  A remote hard event is therefore separate unless its actual inflow crosses into `P`; smooth-envelope overlap cannot relaunch the ancestry of `P`.
 
-For the radial shell `A_M={(k,s):M/2<|k|<=M}` and `M E_M(t)>=mu_0`, this gives the previous cover `M E_M(s)>=theta mu_0` or `M Phi_in,M>=(1-theta)mu_0`; at `theta=1/5` the faces are `mu_0/5` and `4mu_0/5`.  Pressure, SGS, strain or service may expose indispensable geometry, but none is a third supplier of the kinetic energy stored in the hard role.
+For the radial shell `A_M={(k,s):M/2<|k|<=M}` and `M E_M(t)>=mu_0`, this gives the previous cover `M E_M(s)>=theta mu_0` or `M Phi_in,M>=(1-theta)mu_0`; at `theta=1/5` the faces are `mu_0/5` and `4mu_0/5`.  Pressure, SGS, strain or service may expose indispensable geometry, but none is a third supplier of the kinetic energy stored in the hard role.  **Hard-lineage non-teleportation:** backward continuation of one hard-role charge is therefore only same-role inherited stock, a separately typed high-strain/dissipation state relay, or actual canonical inflow with child in the current role.  Bad/nonforward inflow is terminal; good inflow has one physical energy donor, and the donor kernel pushes the same recipient charge to that parent without cloning it.  Event-anchored registration then re-anchors the same smooth carrier at the donor-parent scale and the cutoff relay introduces no hard reselection.  Hence on the same causal charge the next hard child role is the previous physical donor role; work elsewhere in the envelope, source/reader/service/material/coherent-analysis marks and no-hit checkpoints cannot replace it.
 
 ## 5. Radial crossing and hard-tail supply — EXACT
 
@@ -328,7 +328,7 @@ After `Q^2` energy reentry selects actual positive HH work, the actual hard Four
 
 Parent natural lifetimes grow by more than `64/25`; the certified registration surfaces therefore backshift geometrically to absorbing `t=0`.  Local positive HH outside signed-good edge geometry is already on the canonical bad/transfer-loss route.  On a compact smooth slab, the same signed continuum edge density lifts to the locally finite spacetime law `dW=C_F T(t,e) dt dlambda(e)` with `dW+=C_F[T]_+ dt dlambda`; this is the original native Hahn law with physical time attached, not a re-Hahn after coarsening.  Restrict actual hard-role inflow to the Borel signed-good set, push to physical time, and one half-child interval carries at least half of that positive sublaw.  The edge identity already supplies both hard parents and the cyclic theorem supplies the unique physical donor.  For every nonzero hard-parent role `P`, the self-probe `psi_P=Pu/||Pu||_2` and `QP=P` give `<Qu,P psi_P>=||Pu||_2`; common-slice registration is therefore exact without a Gaussian mark.  Young/Christ remains an auxiliary near-extremizer/productivity theorem, not a causal registration requirement.
 
-### Parent-continuing high-strain / signed-good alternation, including exact ties — DISTILLED EXACT DEDUCTION
+### Canonical hard-lineage high-strain / signed-good alternation, including exact ties — DISTILLED EXACT DEDUCTION
 
 Start from a physical hard shell
 
@@ -337,7 +337,7 @@ P_M:\quad M/2<|k|\le M,
 \qquad A=3M/4,
 \]
 
-and its registered smooth `A`-carrier.  Consider the hard-shell ancestry whose genuine recursive events are high strain or **parent-continuing** signed-good generated HH; source-marked state handoffs and genuine hard-lineage switches remain outside this causal subalphabet.  Degenerate Young/Christ belongs only to the separate auxiliary productivity analysis.
+and its registered smooth `A`-carrier.  By hard-lineage non-teleportation, every good generated-work continuation of the same charge is automatically parent-continuing: the next hard child role is the previous unique donor parent.  Source/reader/coherent marks cannot reset that role; only a separately typed high-strain state relay remains as the non-work recursive event.  Degenerate Young/Christ belongs only to the separate auxiliary productivity analysis.
 
 A high-strain continuation at carrier scale `A` renews at `<=3A/16`.  If the shell energy is instead genuinely supplied by signed-good nonlinear inflow, hard-role modal causality restricts that owner to actual recipient modes inside `P_M`.  Hence the physical HH child has `N_c<=M=4A/3`, and its signed-good parent satisfies
 
@@ -359,7 +359,7 @@ Since each high-strain event has `D_j>=D_*` and `D_j<=A_jG_*`,
 \#H\,D_*\le G_*\sum_jA_j\le 6A_0G_*.
 \]
 
-Thus only finitely many high-strain vertices occur even with arbitrary parent-continuing signed-good layers and exact H/HH ties.  After the last one, an infinite remaining tail would be consecutive signed-good generated HH and the existing parabolic registration theorem reaches absorbing `t=0` in finite depth.  Hence this shell-anchored parent-continuing two-mechanism alphabet has no infinite interior lineage.  No common mixed currency or synthetic clock is introduced.
+Thus only finitely many high-strain vertices occur even with arbitrary canonical signed-good layers and exact H/HH ties.  After the last one, an infinite remaining tail would be consecutive signed-good generated HH and the existing parabolic registration theorem reaches absorbing `t=0` in finite depth.  Hence this shell-anchored canonical two-mechanism alphabet has no infinite interior lineage.  No common mixed currency or synthetic clock is introduced.
 
 ## 12. Core anti-theorems and permanent guards
 
