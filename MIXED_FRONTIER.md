@@ -165,9 +165,27 @@ This does not declare actual old-labelled service nonexistent; it says only that
 
 The historical old-pool contraction `<1/2` remains a correct theorem on a supplied signed-good low-strain lineage (`N` growth `>8/5`, old-frequency growth `<21/20`).  Generic SGS recurrence supplies no such directional geometry, so that contraction is neither needed nor permitted here.
 
+
+### Source recursive leaf — CLOSED BY STATE RELAY
+
+The old master could stop at a coarse `RESOLVED_SOURCE` cause and recurse without yet saying what physical state that source produced.  That was a legitimate conservative placeholder while source renewal was incomplete; after the handoff the placeholder is redundant.
+
+A source hit remains an actual PDE geometry event.  Preserve its physical time and exact local/pressure/SGS/viscous mark.  Then apply the certified consequence map:
+
+```text
+source event
+   -> terminal Xi, if independently present
+   -> or physical hard tail
+   -> or actual critical hard shell.
+```
+
+This consequence may change observable and units, so it is not a same-measure identity.  It is a **zero-second-charge witness relay**: the source event is not followed by another causal charge merely because its physical consequence is now readable as shell/tail state.
+
+Exact source/strain/work ties remain joint at the original event time.  No event is deleted from physical chronology.  What disappears is only the free recursive leaf `RECURSE_SOURCE` whose child state was unspecified.
+
 ## 7. What the Mixed problem now looks like
 
-After material-free SGS shell/tail reentry, source/pressure/SGS are **derived-geometry breakers/provenance** around the kinetic-energy stock/inflow law rather than a separate renewal currency.  Strain/dissipation and actual nonlinear work remain genuine event-facing physics.  These true geometric regimes can still alternate so that neither pure high-strain nor pure signed-good-HH telescope applies forever.
+After the source-state relay, source/pressure/SGS remain **real geometry marks on transitions**, but no longer form an unresolved owner currency.  The unresolved event-facing mechanisms are now symmetric strain/dissipation and actual nonlinear work, with source marks able to alter the geometry by which one state hands off to the next.  Those marked transitions can still alternate so that neither pure high-strain nor pure signed-good-HH telescope applies forever.
 
 The stronger working hypothesis is deliberately **OPEN**:
 
@@ -233,11 +251,11 @@ Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier s
 
 ## 12. Best next targets
 
-1. **Source/derived-geometry breaker law.**  Determine exactly what pressure/SGS source action changes in the physical scale/time geometry after the material-free shell/tail handoff; do not reintroduce source as an energy currency.
-2. **Two-regime breaker theorem.**  Study the smallest true alternation, e.g. strain ↔ physically gated HH, and derive an exact NS coupling of their scale/time geometry rather than a synthetic common budget.
+1. **Source-marked transition geometry.**  Determine the exact scale/time constraints carried by the shell/tail state when its relay bears pressure/SGS/local/viscous provenance; source is a mark on the transition, not another currency.
+2. **Two-regime breaker theorem.**  Study the smallest true event alternation, strain ↔ physically gated nonlinear work, and derive an exact NS coupling of their physical geometry rather than a synthetic common budget.
 3. **Degenerate HH positive disintegration.**  Close the local margin seam only if the canonical `dW+` admits the required positive coherent disintegration.
 4. **Restricted-alphabet Mixed theorem.**  Only after the preceding audits, assemble pure blocks plus genuine breaker laws and prove that infinitely many breakers force a native telescope, terminal law or `t=0`.
 
 ## 13. Frontier in one sentence
 
-> **Remove no more physics and add no observer currency: identify the true NS event carried by every remaining “source/strain/work” switch, then prove that an infinite interior alternation of those genuine mechanisms cannot evade all native stock, flux, dissipation, scale and physical-time laws.**
+> **Remove no more physics and add no observer currency: preserve source/pressure/SGS as exact geometry marks on certified state relays, then prove that an infinite interior alternation of genuine strain/dissipation and actual nonlinear-work events cannot use those marked geometry changes to evade every native stock, flux, scale and physical-time law.**

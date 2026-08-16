@@ -297,6 +297,23 @@ A capacity threshold cannot define an event in any case: an upper bound may be r
 
 The historical old-pool half-life remains valid only on its independently supplied signed-good low-strain lineage; it is no longer needed for generic SGS renewal and must not be imported as a source clock.
 
+
+### Objective-source event -> physical-state relay — DISTILLED EXACT DEDUCTION
+
+A source first hit remains a real event in the derived resolved-strain equation; its physical time and local/pressure/SGS/viscous provenance are not erased.  What changes is the **master leaf** attached to that event.
+
+The exact source routing above is now exhaustive: local/viscous and resolved-pressure routes supply a hard shell; SGS supplies the hard tail or a material-free low/base hard shell; an independently present `Xi` cost may terminate.  The continuum master already distinguishes a certified **witness relay** from a new cause: a source law may imply shell mass with different units while creating neither a second causal charge nor a probability law.
+
+Therefore a standalone historical
+
+```text
+RESOLVED_SOURCE -> RECURSE_CRITICAL
+```
+
+is no longer a canonical unresolved destination.  Keep the source event mark, then relay immediately to the certified terminal/shell/tail state.  If source ties with strain or actual work at the same physical time, keep the full joint cause set; the relay must not split or duplicate that event.
+
+This is proof-graph contraction, not physical-event deletion.  Source/pressure/SGS remain available as exact geometry marks on the resulting transition.  They simply do not require a separate source-currency recurrence theorem once their native state handoff is known.
+
 ## 11. Two pure recurrence tails are finite — EXACT
 
 ### Consecutive high strain
