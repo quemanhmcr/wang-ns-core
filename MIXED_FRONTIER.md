@@ -245,9 +245,9 @@ Thus hard-to-smooth role registration creates neither another transfer measure n
 
 At a common slice, the same-carrier relay does not harden a fresh role.  It uses the already registered coefficient to lower-bound the energy of the same `Q u` carrier, and common affine/Kelvin re-anchoring is exact gauge composition.  Hard roles appear again only when a later actual physical interaction supplies new work.
 
-### Step 6. Exhaustion of the current executable transition sites
+### Step 6. Exhaustion of the current master-facing transition sites
 
-The old Wang implementation contains exactly the following live transition types on the current proof spine:
+Here “transition site” means a place that can replace the propagated carrier/probe certificate or attempt to enter the recursive master state.  Analysis-only probes used to read an already supplied physical role are not additional physical transitions: changing such a readout may change a coefficient, but cannot change the underlying NS energy/work law.  With that distinction, the old Wang implementation contains the following live master-facing transition types on the current proof spine:
 
 | transition site | what changes | physical meaning |
 |---|---|---|
@@ -256,12 +256,15 @@ The old Wang implementation contains exactly the following live transition types
 | interface/HH coefficient obstruction | coefficient monitor crosses a face | interval locator; mandatory `Q^2` physical-energy reentry; impulse magnitude is not work |
 | actual nonlinear hard event | hard `P`, event terminal mark/probe | downstream disintegration/readout of already existing canonical signed work |
 | actual critical-shell renewal | `Q_A` and normalized shell probe | downstream registration of an already supplied physical shell |
+| analysis-only dual/Bargmann/coherent probe design on an already supplied role | readout used for a bound/mark | downstream analysis only; no carrier replacement and no master owner label |
 | material/selected-family rereading with same `Q,psi` | sidecar labels only | already quotiented; no role/probe change |
 | `Q` or `psi` changed outside the certified cases above | observer/certificate no longer matches | fail closed; **no owner is minted** |
 
 Crucially, the executable master has no independent `ROLE_PROBE_OWNER`.  Its coefficient-obstruction boundary already rejects raw role/interface coefficient locators until physical-energy reentry.  The historical `role_or_probe_change_requires_interface_registration` value is explicitly a delegate/fail-closed placeholder, not a work cause.
 
-This exhausts the current canonical transition architecture.  Therefore `genuine_role_probe_change` has no independent physical currency in the present proof state.
+A static dependency audit also finds older dual-Gaussian/Bargmann/coherent probe constructors below service/reuse modules.  They supply analysis bounds or marks for an already physical role; they do not replace the event-anchored carrier in the master and do not possess an owner-ingress label.  They are therefore readout machinery covered by Step 4, not an omitted physical transition class.
+
+This exhausts the current **master-facing** canonical transition architecture.  Therefore `genuine_role_probe_change` has no independent physical currency in the present proof state.
 
 ### Consequence for Mixed
 
