@@ -326,7 +326,7 @@ After `Q^2` energy reentry selects actual positive HH work, the actual hard Four
 3/5<N_p/N_c<5/8.
 \]
 
-Parent natural lifetimes grow by more than `64/25`; the certified registration surfaces therefore backshift geometrically to absorbing `t=0`.  Local positive HH outside signed-good edge geometry is already on the canonical bad/transfer-loss route; the remaining local pre-generation seam is full-signed Young/Christ, not a separate “generic HH” owner.
+Parent natural lifetimes grow by more than `64/25`; the certified registration surfaces therefore backshift geometrically to absorbing `t=0`.  Local positive HH outside signed-good edge geometry is already on the canonical bad/transfer-loss route.  On a compact smooth slab, the same signed continuum edge density lifts to the locally finite spacetime law `dW=C_F T(t,e) dt dlambda(e)` with `dW+=C_F[T]_+ dt dlambda`; this is the original native Hahn law with physical time attached, not a re-Hahn after coarsening.  Restrict actual hard-role inflow to the Borel signed-good set, push to physical time, and one half-child interval carries at least half of that positive sublaw.  The edge identity already supplies both hard parents and the cyclic theorem supplies the unique physical donor.  For every nonzero hard-parent role `P`, the self-probe `psi_P=Pu/||Pu||_2` and `QP=P` give `<Qu,P psi_P>=||Pu||_2`; common-slice registration is therefore exact without a Gaussian mark.  Young/Christ remains an auxiliary near-extremizer/productivity theorem, not a causal registration requirement.
 
 ### Parent-continuing high-strain / signed-good alternation, including exact ties — DISTILLED EXACT DEDUCTION
 
@@ -337,7 +337,7 @@ P_M:\quad M/2<|k|\le M,
 \qquad A=3M/4,
 \]
 
-and its registered smooth `A`-carrier.  Consider the hard-shell ancestry whose genuine recursive events are high strain or **parent-continuing** signed-good generated HH; source-marked state handoffs, true-upward tail state relays / genuine hard-lineage switches, and the still-degenerate full-signed HH margin remain outside this subalphabet.
+and its registered smooth `A`-carrier.  Consider the hard-shell ancestry whose genuine recursive events are high strain or **parent-continuing** signed-good generated HH; source-marked state handoffs and genuine hard-lineage switches remain outside this causal subalphabet.  Degenerate Young/Christ belongs only to the separate auxiliary productivity analysis.
 
 A high-strain continuation at carrier scale `A` renews at `<=3A/16`.  If the shell energy is instead genuinely supplied by signed-good nonlinear inflow, hard-role modal causality restricts that owner to actual recipient modes inside `P_M`.  Hence the physical HH child has `N_c<=M=4A/3`, and its signed-good parent satisfies
 
@@ -371,4 +371,4 @@ For every proposed frontier lemma ask: **what exact true Navier–Stokes structu
 
 The identities and structural laws above are exact or exact-conditional as labelled.  Randomized triads, Galerkin/FFT probes, CI runs and stress tests in the source repository are evidence against implementation mistakes, not mathematical substitutes for the continuum proofs.
 
-Nothing here closes generic mixed recurrence, the degenerate full-signed Young/Christ seam, the remaining source/strain geometry-breaker coupling, or the initial/singular-time interfaces.  Those belong to `MIXED_FRONTIER.md`.
+Nothing here closes generic mixed recurrence, genuine hard-lineage switching, or the initial/singular-time interfaces.  The degenerate full-signed Young/Christ margin remains an auxiliary analysis seam, not a master causal gate.  Those distinctions belong to `MIXED_FRONTIER.md`.

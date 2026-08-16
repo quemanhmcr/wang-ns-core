@@ -90,11 +90,11 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical physical shell is supplied; same-carrier inherited-stock relay once its carrier/endpoint/residual-work hypotheses hold; signed-good local HH recurrence geometry once the signed-good generated branch is physically selected.
 
-**DISTILLED EXACT DEDUCTIONS:** role/probe and shell/service readers mint no charge; hard-role energy is earlier stock or actual modal inflow; objective SGS has selector-free shell/tail handoff and source marks mint no independent causal scale edge after modal rerouting; hard-tail dissipation is inherited stock or true boundary inflow; local non-signed-good positive HH is terminal before Young; and parent-continuing high-strain / signed-good-HH alternation including exact ties has finite depth.
+**DISTILLED EXACT DEDUCTIONS:** role/probe and shell/service readers mint no charge; hard-role energy is earlier stock or actual modal inflow; source marks mint no causal scale edge; hard-tail dissipation is inherited stock or true boundary inflow; canonical good hard-role inflow has a native spacetime `dW+` heavy-half and hard-parent self-probe, so signed-good causal registration does not require Young/Christ; and parent-continuing high-strain / signed-good-HH alternation including exact ties has finite depth.
 
 **EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, CI certificates and master traces.
 
-**OPEN:** the degenerate full-signed Young/Christ seam (and only if genuinely needed, a separately proved positive coherent kernel); genuine hard-lineage switching and broader Mixed recurrence; the initial-data and hypothetical-singular-time interfaces.
+**OPEN:** genuine hard-lineage switching and broader Mixed recurrence; the initial-data and hypothetical-singular-time interfaces.  The degenerate full-signed Young/Christ margin remains open only for auxiliary near-extremizer/productivity/coherent analysis, not as a causal no-escape gate.
 
 ## Upstream proof lookup map
 

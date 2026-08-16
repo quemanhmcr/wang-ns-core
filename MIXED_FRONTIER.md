@@ -247,7 +247,7 @@ A_{j+1}\le\frac56A_j,
 
 There can be only finitely many high-strain vertices.  After the last one, a parent-continuing signed-good tail is exactly the already-certified parabolic epoch and reaches `t=0` in finite depth.  Hence arbitrary alternation and exact ties of these two mechanisms cannot support an infinite interior shell ancestry.
 
-This does **not** close the degenerate full-signed HH margin or permit an unrelated hard event to replace the carried shell.  Any genuine switch to a different hard lineage must exhibit its own physical stock/inflow relation; smooth-envelope overlap is not enough.
+This does **not** solve the auxiliary degenerate full-signed Young/Christ analysis or permit an unrelated hard event to replace the carried shell.  Any genuine switch to a different hard lineage must exhibit its own physical stock/inflow relation; smooth-envelope overlap is not enough.
 
 ## 8. Required shape of a valid Mixed theorem
 
@@ -262,15 +262,22 @@ It may not create a common scalar exchange rate between physical time, log scale
 
 Cross-mechanism coupling is allowed only through an exact PDE identity, a conservation law, a common physical measure or an explicitly proved implication.  Similar critical scaling is not a coupling theorem.
 
-## 9. Canonical local HH fate exhaustion — DISTILLED EXACT; DEGENERATE MARGIN OPEN
-
-The signed edge law is formed first and Hahn is taken once.  On canonical positive HH work let `r_e=(J_e/J_*)c_e` and `eta0=10^-4`.  The exact restriction `B={r_e<=1-eta0}` contains every positive nonforward edge (`J_e=0`) and every local non-signed-good edge; its own native deficit binds the same physical block to stage-zero `TRANSFER_WORK_LOSS`.  It is terminal, not a recursive HH owner.
-
-The complementary `G={r_e>1-eta0}` is actual **signed-good edge geometry**: positive work is forward and the certified single-edge rigidity gives `3/5<N_p/N_c<5/8`.  But `G` is only Young-eligible.  Hard cells inherit `pi_#dW+`, `pi_#dW-` and the full signed `pi_#dW`; Young/Christ must see the full signed trilinear work, never a fresh Hahn law.
-
-Mixed good/bad fate is already handled by terminal-bad reservation.  For every fixed full-signed Christ spare margin `mu>0`, a reserved-gate failure satisfies `g_C<n_C+(mu^-1-1)b_C`; on low-native-deficit blocks the total failed good fraction is correspondingly controlled by **actual** terminal-bad plus canonical negative work.  The cyclic donor kernel and its hard-cell quotient then read `dW-` only as same-time donor provenance whose recipient marginal is the already-existing `dW+`; overlapping recipient support and coarse self-loops create zero extra event depth and zero scale progress.  This is not a payment map and does not declare failed good mass terminal.
-
-Therefore no independent local owner called “generic/non-signed-good HH” remains.  The sharp unresolved local analytic limit is the **degenerate full-signed Young/Christ margin** `mu->0`.  It cannot be repaired by re-Hahn after coherent coarse-graining.  If a coherent positive kernel is ever genuinely required, it must be a separately proved positive disintegration of canonical `dW+`; fresh coherent Hahn is explicitly false as such a kernel.
+## 9. Canonical good spacetime inflow adapter — DISTILLED EXACT; YOUNG/CHRIST AUXILIARY
+The native signed edge law is lifted on every compact smooth physical slab `I` before any coarsening:
+\[
+d\mathcal W(t,e)=C_FT(t,e)\,dt\,d\lambda^{unord}(e),\qquad d\mathcal W^+=C_F[T(t,e)]_+\,dt\,d\lambda^{unord}(e).
+\]
+This is the same canonical Hahn law with physical time attached.  For every bounded child block `B`, the fixed-time energy-native variation bound integrates to
+\[
+|\mathcal W|(I\times B)\le |I|\,4\sqrt2C_FE_*^{3/2}\Big(\int_B|z|^2dz\Big)^{1/2}<\infty,
+\]
+so the spacetime law and its positive part are locally finite Radon measures.  The signed-good set `G={r_e>1-eta0}` is Borel.  At a terminal hard role `P`, restrict first to actual modal inflow `Phi_in,P`; its recipient marginal is a restriction of inherited canonical `dW+`.  Bad/nonforward inflow is terminal.  If the good inflow sublaw is nonzero, push it to physical time and split the child natural interval into its two physical halves; one carries at least half of this **same positive work law**.  No Duhamel or Young weight is introduced.
+Every good edge already carries both physical interaction parents in `3/5<N_p/N_c<5/8`; the cyclic theorem identifies the unique energy donor and the other parent as simultaneous terminal nonforward recipient.  Donor provenance is a zero-depth disintegration of the one recipient charge.  Disintegrate onto deterministic event hard roles.  On every nonzero parent role `P_p`, positive work implies `P_pu(t)!=0`; set
+\[
+\psi_p=P_pu(t)/\|P_pu(t)\|_2.
+\]
+For the event-anchored smooth envelope `Q_pP_p=P_p`, exactly `<Q_pu,P_p psi_p>=||P_pu||_2`.  The common-slice theorem is shape-blind: either an existing role-interface/HH/strain obstruction reenters physical energy/work, or the same parent coefficient survives with the certified `1/4` factor.  Thus signed-good parabolic ancestry registers directly from the hard physical state; no Gaussian near-extremizer is needed for causal depth.
+Consequently the degenerate full-signed Young/Christ margin `mu->0` is **not a master no-escape seam** in the distilled hard-work route.  Full-signed Young/Christ remains meaningful for near-extremizer shape, Gaussian marking, amplitude productivity and entropy/coherent-root analysis; its degenerate margin may remain analytically open there.  If that auxiliary coherent route ever requires a positive kernel, it must still be a separately proved positive disintegration of canonical `dW+`; fresh coherent Hahn remains forbidden.
 
 ### High-tail supply-owner exhaustion — DISTILLED EXACT DEDUCTION
 
@@ -304,8 +311,8 @@ Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier s
 ## 12. Best next targets
 
 1. **Genuine hard-lineage switching.**  Classify when inherited stock or actual nonlinear work can move the ancestry to a different hard role after all source/reader relays are quotiented.
-2. **Degenerate full-signed HH margin.**  Resolve the `mu->0` Young/Christ seam directly; introduce a coherent positive kernel only if the physics truly requires one.
-3. **Broader Mixed theorem.**  Assemble only genuinely certified stock/work/strain breaker laws; source marks remain geometry annotations, not currencies.
+2. **Broader Mixed theorem.**  Assemble only genuinely certified stock/work/strain breaker laws; source marks remain geometry annotations, not currencies.
+3. **Auxiliary productivity (separate).**  Resolve degenerate Young/Christ only if Gaussian/coherent productivity is still useful; do not put that analysis seam back on the causal path.
 
 ## 13. Frontier in one sentence
 
