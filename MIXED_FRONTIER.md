@@ -109,41 +109,65 @@ Differentiated SGS and pressure terms are true sources of derived resolved-strai
 
 ### Native source-state exhaustion — DISTILLED EXACT DEDUCTION
 
-The objective source identity first keeps the true source mechanisms distinct: local resolved deformation, pressure Hessian, differentiated SGS stress and viscosity.  Positive source weights may tie; no common probability law is invented.
+Local/viscous source and resolved pressure-pair routes already expose physical hard shells.  The pressure-SGS half delegates to SGS.  The only historical ambiguity was the low coherent SGS branch, where old/fresh/interface ancestry used to decide renewal.
 
-Composing the already-certified routes gives:
+That ancestry split is unnecessary for physical entrance.  On the scaled source interval, integrate the exact positive low-band service atoms before any material reading:
 
-| source route | true downstream object | kinetic-energy handoff |
-|---|---|---|
-| local coherent / viscous | resolved `D_V` then critical shell | shell stock or actual nonlinear inflow |
-| resolved pressure pair | actual pair + critical shell geometry | shell stock or actual nonlinear inflow |
-| pressure-SGS | actual SGS source | delegate to the SGS rows below |
-| SGS high-frequency | physical hard tail | inherited tail stock or true low→high nonlinear work |
-| SGS fresh scale | actual hard shell at a physical witness time | shell stock or actual nonlinear inflow |
-| selected-interface `Xi` | actual transfer/interface cost | terminal existing cost |
-| SGS old-pool capacity only | old service-capacity state | **unresolved; no owner minted** |
+\[
+G_j:=\int\sum_Cs_{j,C}(\tau)\,d\tau\ge0,
+\qquad
+\mathcal S_{low}:=\sum_{j\le0}G_j\ge Y-2D_{high}.
+\]
 
-The table is not a case order.  The canonical SGS compiler retains all simultaneously satisfied routes.  Therefore old-pool capacity is the *only* unresolved source handoff only when no simultaneous shell/tail/terminal route is present.
+Here `Y` and `D_high` are integrated weights on the same interval.  Hence either `D_high>=Y/4` and the certified LP-to-hard-tail theorem applies, or
 
-This deduction removes no pressure or SGS physics.  Pressure-pair geometry, SGS stress and objective source action remain available as genuine breakers of recurrence hypotheses.  It removes only a false downstream inference: once those mechanisms expose shell/tail kinetic energy, their theorem label cannot remain an additional energy supplier beside the exact continuity law.
+\[
+\mathcal S_{low}\ge Y/2.
+\]
 
-### The `old_pool_not_yet_eroded` seam — OPEN
+On the latter branch define the **total** band probabilities
 
-The historical SGS compiler can return
+\[
+p_j=G_j/\mathcal S_{low}.
+\]
+
+A countable positive band law has an attained maximal atom `p_max`.  For its band `j_*`, the already-certified increment capacity and annular two-hard-shell cover give
+
+\[
+\mu_{hard}\ge\frac{G_{j_*}}{6c}
+\ge\boxed{\frac{p_{max}Y}{12c}}
+\]
+
+at an actual physical time, on one of the two hard shells associated with the fixed LP band.  No material freshness is used in this inequality.  The normalized band law is a scale-concentration diagnostic, not a causal probability.
+
+Therefore every current objective-SGS source episode has a material-free physical state handoff:
 
 ```text
-old_pool_not_yet_eroded -> RECURSE_CRITICAL_RESERVOIR_CAPACITY
+SGS source
+  -> D_high >= Y/4 -> physical hard tail
+  OR
+  -> integrated total low positive service >= Y/2 -> actual hard shell.
 ```
 
-because an old service-capacity bound remains above a threshold.  But capacity is not work, probability, generation or reset budget.  Later stock theorems also show that old physical energy may persist with zero generation depth.
+The shell/tail energy then reroots by the exact continuity laws to inherited modal stock or actual nonlinear boundary work.  Pressure/SGS source terms remain genuine derived-geometry physics; only the ancestry machinery is removed from renewal entrance.
 
-Thus a large old-pool capacity value is **not by itself a physical event**.  Before this branch is allowed in a cleaned master, it must exhibit the actual NS change occurring there.  It may reduce to persistent stock plus actual boundary work, but the current same-carrier inherited-stock theorem is too narrow to prove that for an arbitrarily redistributed old pool.  This seam is fail-closed, not silently solved.
+### `old_pool_not_yet_eroded` — CLOSED AS A NON-EVENT
 
-A tempting shortcut is also forbidden.  The historical old-pool contraction `<1/2` assumes a supplied signed-good low-strain transfer lineage whose block scale grows `>8/5` while reused reservoir frequencies grow `<21/20`.  Generic objective-SGS recurrence does not supply that scale law; fresh SGS only gives a witness shell with `M<=2N` and no direction.  Therefore the old contraction cannot be imported merely because the same word “pool” appears in both theorems.
+`old_pool_integrated_capacity` is an **upper bound**, while `old_old_integrated_service` is the realized service.  These are different objects.  Any valid upper bound can be replaced by a looser valid one without changing the NS field or realized service.  A threshold rule based only on
+
+```text
+C_old > Y/8
+```
+
+can therefore be switched on by weakening the analyst's bound.  It cannot define a physical event or owner.
+
+This does not declare actual old-labelled service nonexistent; it says only that neither the old label nor a capacity envelope creates generation.  The total-low-service theorem above supplies the physical shell entrance without asking whether that service was old, interface or fresh.
+
+The historical old-pool contraction `<1/2` remains a correct theorem on a supplied signed-good low-strain lineage (`N` growth `>8/5`, old-frequency growth `<21/20`).  Generic SGS recurrence supplies no such directional geometry, so that contraction is neither needed nor permitted here.
 
 ## 7. What the Mixed problem now looks like
 
-After the source-state exhaustion, source/pressure/SGS are best read as **derived-geometry breakers/provenance** around the kinetic-energy stock/inflow law, except for the explicit old-pool capacity seam which is still unresolved.  Strain/dissipation and actual nonlinear work remain genuine event-facing physics.  These regimes can in principle alternate so that neither pure high-strain nor pure signed-good-HH telescope applies forever.
+After material-free SGS shell/tail reentry, source/pressure/SGS are **derived-geometry breakers/provenance** around the kinetic-energy stock/inflow law rather than a separate renewal currency.  Strain/dissipation and actual nonlinear work remain genuine event-facing physics.  These true geometric regimes can still alternate so that neither pure high-strain nor pure signed-good-HH telescope applies forever.
 
 The stronger working hypothesis is deliberately **OPEN**:
 
@@ -209,11 +233,10 @@ Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier s
 
 ## 12. Best next targets
 
-1. **Old-pool native resolution.**  Decide whether `old_pool_not_yet_eroded` is persistent stock/capacity only, actual boundary work, or a distinct true NS event; do not let capacity self-authorize.
-2. **Source/derived-geometry quotient.**  Separate source of resolved strain geometry from source of kinetic energy and determine what event information genuinely survives into Mixed.
-3. **Two-regime breaker theorem.**  Study the smallest true alternation, e.g. strain ↔ physically gated HH, and derive an exact NS coupling of their scale/time geometry rather than a synthetic common budget.
-4. **Degenerate HH positive disintegration.**  Close the local margin seam only if the canonical `dW+` admits the required positive coherent disintegration.
-5. **Restricted-alphabet Mixed theorem.**  Only after the preceding audits, assemble pure blocks plus genuine breaker laws and prove that infinitely many breakers force a native telescope, terminal law or `t=0`.
+1. **Source/derived-geometry breaker law.**  Determine exactly what pressure/SGS source action changes in the physical scale/time geometry after the material-free shell/tail handoff; do not reintroduce source as an energy currency.
+2. **Two-regime breaker theorem.**  Study the smallest true alternation, e.g. strain ↔ physically gated HH, and derive an exact NS coupling of their scale/time geometry rather than a synthetic common budget.
+3. **Degenerate HH positive disintegration.**  Close the local margin seam only if the canonical `dW+` admits the required positive coherent disintegration.
+4. **Restricted-alphabet Mixed theorem.**  Only after the preceding audits, assemble pure blocks plus genuine breaker laws and prove that infinitely many breakers force a native telescope, terminal law or `t=0`.
 
 ## 13. Frontier in one sentence
 

@@ -90,11 +90,11 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical physical shell is supplied; same-carrier inherited-stock relay once its carrier/endpoint/residual-work hypotheses hold; signed-good local HH recurrence geometry once the signed-good generated branch is physically selected.
 
-**DISTILLED EXACT DEDUCTIONS:** current role/probe changes do not form an independent generation currency; current shell/service routes do not mint a second charge; for a fixed hard shell, terminal kinetic energy has only earlier-stock or actual nonlinear-inflow positive supply; every current objective-source route except the old-pool capacity-only seam reroots downstream kinetic energy to shell/tail stock or nonlinear work, or terminates at `Xi`.
+**DISTILLED EXACT DEDUCTIONS:** current role/probe changes do not form an independent generation currency; current shell/service routes do not mint a second charge; for a fixed hard shell, terminal kinetic energy has only earlier-stock or actual nonlinear-inflow positive supply; every objective-SGS source episode has a material-free physical handoff to the hard tail or to an actual low/base hard shell, so `old_pool_not_yet_eroded` is no longer a renewal event.
 
 **EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, CI certificates and master traces.
 
-**OPEN:** the physical meaning/continuation of `old_pool_not_yet_eroded`; generic/non-signed-good HH recurrence; nonlocal high-tail continuation; the degenerate full-signed Young/Christ seam; how derived source/pressure/SGS geometry breaks Mixed lineages; the mixed no-escape theorem; the initial-data and hypothetical-singular-time interfaces.
+**OPEN:** generic/non-signed-good HH recurrence; nonlocal high-tail continuation; the degenerate full-signed Young/Christ seam; how genuine pressure/SGS/strain geometry breaks otherwise physical stock/work lineages; the mixed no-escape theorem; the initial-data and hypothetical-singular-time interfaces.
 
 ## Upstream proof lookup map
 

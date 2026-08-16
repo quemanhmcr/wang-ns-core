@@ -269,9 +269,33 @@ Compose the exact objective-source compiler with the later shell/tail continuity
 
 Whenever a route reaches a hard shell, Section 4 reroots its terminal kinetic-energy supply to earlier modal stock or actual nonlinear inflow.  Whenever it reaches the hard tail, Section 5 reroots it to inherited tail stock or true low-to-high nonlinear work.  Thus source/pressure/SGS labels remain genuine **geometry/source provenance**, but do not survive as extra kinetic-energy suppliers after the physical state has been exposed.
 
-The sole current source-native handoff not resolved this way is the old-pool capacity state.  A large capacity is not an NS action and cannot self-authorize recursion.
+The remaining historical `old_pool_not_yet_eroded` branch can be removed from **renewal entrance** without assuming any old-pool erosion.  On the scaled source interval, integrate the already-certified pointwise positive low-band law and define
 
-The historical geometric old-pool half-life does **not** close this seam: its contraction uses an independently supplied signed-good low-strain lineage with block-scale growth `>8/5`, whereas generic fresh-SGS reentry supplies no directional scale progress.  Importing that ratio here would manufacture physics.
+\[
+G_j:=\int\sum_C s_{j,C}(\tau)\,d\tau\ge0,
+\qquad
+\mathcal S_{low}:=\sum_{j\le0}G_j\ge Y-2D_{high}.
+\]
+
+Here `Y` and `D_high` are the integrated objective-SGS square-service and high-frequency weights on that same interval.  If `D_high>=Y/4`, the physical hard-tail route is already available.  Otherwise `\mathcal S_{low}>=Y/2`.  Normalize the actual integrated band law,
+
+\[
+p_j:=G_j/\mathcal S_{low},\qquad p_{max}=\max_jp_j.
+\]
+
+The fixed annular LP frame plus the existing two-hard-shell cover gives, at an actual time on the source interval,
+
+\[
+\boxed{\mu_{hard}\ge \frac{G_{j_*}}{6c}\ge\frac{p_{max}Y}{12c}.}
+\]
+
+Equivalently `mu_hard exp(H_inf^low-scale)>=Y/(12c)`.  This uses **total low service** before old/new material classification; no old-pool capacity, selected-family age, coherent-cell argmax or fresh-material threshold enters the entrance theorem.
+
+Thus every current objective-SGS episode reaches physical hard-tail structure or a real low/base hard shell.  Material old/fresh/interface partitions may remain provenance or terminal-cost diagnostics, but they are not needed to create renewal state.
+
+A capacity threshold cannot define an event in any case: an upper bound may be replaced by a looser valid upper bound while the underlying field and realized service law are unchanged.  If crossing `C_old>Y/8` changes an alleged owner, that owner belongs to the proof envelope, not to Navier--Stokes.
+
+The historical old-pool half-life remains valid only on its independently supplied signed-good low-strain lineage; it is no longer needed for generic SGS renewal and must not be imported as a source clock.
 
 ## 11. Two pure recurrence tails are finite — EXACT
 
@@ -305,4 +329,4 @@ For every proposed frontier lemma ask: **what exact true Navier–Stokes structu
 
 The identities and structural laws above are exact or exact-conditional as labelled.  Randomized triads, Galerkin/FFT probes, CI runs and stress tests in the source repository are evidence against implementation mistakes, not mathematical substitutes for the continuum proofs.
 
-Nothing here closes generic mixed recurrence, generic/non-signed-good HH, the degenerate full-signed Young/Christ seam, the `old_pool_not_yet_eroded` seam, or the initial/singular-time interfaces.  Those belong to `MIXED_FRONTIER.md`.
+Nothing here closes generic mixed recurrence, generic/non-signed-good HH, the degenerate full-signed Young/Christ seam, the remaining source/strain geometry-breaker coupling, or the initial/singular-time interfaces.  Those belong to `MIXED_FRONTIER.md`.
