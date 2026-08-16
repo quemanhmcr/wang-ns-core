@@ -8,6 +8,8 @@ from core_tripwires import (
     certified_role_transition_generation_depth,
     observer_partition_channel_energies,
     probe_readout,
+    physical_witness_relay,
+    witness_chain_owner,
     antisymmetric_subset_flux,
     high_strain_epoch_upper_scales,
     inherited_stock_component,
@@ -82,9 +84,36 @@ class CoreTripwires(unittest.TestCase):
                 "source_sgs",
                 "strain_dissipation",
                 "actual_nonlinear_work",
-                "shell_service",
             }),
         )
+
+    def test_shell_and_service_are_physical_witnesses_not_fourth_owner_type(self):
+        from core_tripwires import NATIVE_OWNER_TYPES, PHYSICAL_STATE_WITNESS_TYPES
+        self.assertNotIn("shell_service", NATIVE_OWNER_TYPES)
+        self.assertIn("coherent_service", PHYSICAL_STATE_WITNESS_TYPES)
+        self.assertIn("critical_shell", PHYSICAL_STATE_WITNESS_TYPES)
+        self.assertIn("hard_tail_state", PHYSICAL_STATE_WITNESS_TYPES)
+
+    def test_source_service_shell_chain_keeps_one_upstream_causal_owner(self):
+        self.assertEqual(
+            witness_chain_owner("source_sgs", ("coherent_service", "critical_shell")),
+            "source_sgs",
+        )
+        relay = physical_witness_relay("source_sgs", "coherent_service")
+        self.assertFalse(relay.new_causal_charge_created)
+
+    def test_dissipation_and_nonlinear_work_can_supply_shell_state_without_owner_clone(self):
+        self.assertEqual(witness_chain_owner("strain_dissipation", ("critical_shell",)), "strain_dissipation")
+        self.assertEqual(
+            witness_chain_owner("actual_nonlinear_work", ("hard_tail_state", "critical_shell")),
+            "actual_nonlinear_work",
+        )
+
+    def test_state_witness_cannot_self_authorize_as_upstream_owner(self):
+        with self.assertRaises(ValueError):
+            physical_witness_relay("shell_service", "critical_shell")
+        with self.assertRaises(ValueError):
+            physical_witness_relay("critical_shell", "coherent_service")
 
     def test_role_probe_locator_cannot_self_authorize_as_an_owner(self):
         for locator in ("role_change", "probe_change", "role_probe_change"):

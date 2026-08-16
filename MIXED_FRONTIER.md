@@ -31,18 +31,20 @@ These results do not prove the Mixed case. They force any hypothetical infinite 
 
 ## 2. What remains genuinely event-facing
 
-After the native material-service quotient, a recursive observation must resolve to an actual PDE mechanism. The live owner vocabulary is intentionally small:
+After the native material-service and role/probe quotients, a recursive observation must resolve to an actual PDE mechanism.  Section 3B sharpens one more distinction: **physical state/witness is not the same type as causal owner**.
 
-- **source / SGS work or service**;
+The live causal-owner vocabulary is therefore intentionally small:
+
+- **source / SGS physical source or work**;
 - **symmetric strain / dissipation**;
-- **actual nonlinear work**, including genuine HH generation after its physical gates;
-- **physical shell / high-tail service or supply**;
-- role/probe/interface observations are **pre-owner locators** only; Section 3A proves that the current canonical architecture resolves them into the native mechanisms above or fails closed;
+- **actual nonlinear work**, including genuine HH generation and true low→high supply after their physical gates;
 - any other future mechanism only after it is given its own native physical law and units.
 
-Smooth conservative relink, inherited stock, representation rereading, and sidecars may accompany these events but do not add independent generation depth.
+Critical shells, coherent/increment service laws, hard-tail state and full-natural own-scale service remain fully physical.  They are **state/witness objects** which may seed a later corridor or force a later physical alternative, but they do not mint a fourth causal charge merely because the same physics has become readable in another observable.  A shell/service observation with no typed upstream physical owner is fail-closed rather than promoted to a generic owner.
 
-Generic/non-signed-good HH and nonlocal high-tail behavior remain part of the live nonlinear-work/shell problem. They must not be silently identified with the signed-good generated theorem.
+Role/probe/interface observations are pre-owner locators only. Smooth conservative relink, inherited stock, representation rereading, same-corridor service and sidecars may accompany physical evolution but do not add independent generation depth.
+
+Generic/non-signed-good HH and nonlocal high-tail behavior remain part of the live nonlinear-work/state problem. They must not be silently identified with the signed-good generated theorem.
 
 ---
 
@@ -56,19 +58,21 @@ Because a pure signed-good generated-HH tail is finite, infinitely many breakers
 
 All zero-depth representation mechanisms have already been quotiented.
 
-Therefore the unresolved object is a path that can keep **alternating among genuine native owners** so that no single pure-epoch theorem applies forever.
+Therefore the unresolved object is a path that can keep **alternating among genuine native causal owners** so that no single pure-epoch theorem applies forever.  Physical service/shell states may lie between two causal events without themselves becoming extra vertices.
 
 Schematically,
 
 ```text
-source/service
-   ↘
-    strain/dissipation → actual HH/high-tail → source/service → ...
-   ↗                         ↓
-        physical shell/service
+source/SGS ──→ [physical service] ──→ [critical shell/state] ──→ next physical first stop
+                      ↑                                      ↓
+strain/dissipation ───┘                              actual nonlinear work
+                                                             │
+                                            [hard-tail/shell state]
+                                                             ↓
+                                                    next physical first stop
 ```
 
-The problem is not to count labels. The problem is to show that an infinite alternation cannot evade all of the native physical laws simultaneously.
+Square brackets denote real Navier--Stokes state/witness objects, not disposable notation.  The problem is not to count labels or witness transformations. The problem is to show that an infinite alternation of the **actual source / strain / nonlinear-work events** cannot evade all of their native physical laws simultaneously.
 
 A satisfactory Mixed theorem should have the form:
 
@@ -82,7 +86,7 @@ The theorem must emerge from actual NS quantities. It must not manufacture a syn
 
 The first Mixed slice is the remaining **role/probe-change** placeholder.  The theorem proved here is deliberately about the **current canonical carrier architecture**; it does not decree what every future representation must look like.
 
-> **Theorem (current canonical role/probe quotient).**  Along every role/probe transition presently admitted by the Wang physical spine, changing the analysis role or probe contributes no independent Navier--Stokes generation currency.  The transition is either a zero-depth observer/common-transport re-registration, a locator that must reenter an existing physical energy/work gate, or a downstream registration of an already existing physical event.  After exact PDE resolution, the only recursive owners are the native mechanisms already present: source/SGS, symmetric strain/dissipation, actual nonlinear work, or physical shell/service.  An unresolved `role_change`, `probe_change`, or `role_probe_change` label is fail-closed and may not enter the recursive owner state.
+> **Theorem (current canonical role/probe quotient).**  Along every role/probe transition presently admitted by the Wang physical spine, changing the analysis role or probe contributes no independent Navier--Stokes generation currency.  The transition is either a zero-depth observer/common-transport re-registration, a locator that must reenter an existing physical energy/work gate, or a downstream registration of an already existing physical event.  At this stage the transition can resolve only into source/SGS, symmetric strain/dissipation, actual nonlinear work, or a physical shell/service state supplied by one of those routes; Section 3B separates that state vocabulary from causal ownership.  An unresolved `role_change`, `probe_change`, or `role_probe_change` label is fail-closed and may not enter the recursive owner state.
 
 The proof is not an estimate.  It is an exhaustion of the exact places where the current architecture can change `Q` or `psi`, tied back to the direct Navier--Stokes energy law.
 
@@ -286,6 +290,155 @@ This does **not** close Mixed recurrence.  It removes one more observer-facing e
 
 The gain is precisely that no recurrence theorem is needed for a human-defined role/probe currency that the PDE never supplied.
 
+
+---
+
+## 3B. Theorem in the stacked PR: shell/service witness–charge separation
+
+The next apparent Mixed owner is `shell/service`.  The phrase combines two different ontological types and must be split before recurrence is discussed.
+
+A critical shell
+
+\[
+\mu_M(t)=M\|P_Mu(t)\|_2^2
+\]
+
+is a physical **state observable** at a physical time.  A coherent/increment service law is a positive physical observable/measure constructed from the actual field or from an already supplied physical source law.  Neither statement, by itself, says that a new source of energy has appeared.
+
+> **Theorem (current canonical witness–charge separation).**  In every shell/service route presently used by the master-facing Wang spine, passing from an already-owned physical law to coherent service, hard-shell criticality, hard-tail state, or full-natural own-scale service creates no second causal charge.  The downstream object remains fully physical and may occur at a different physical time or seed a later corridor, but its causal provenance stays with the upstream native source/work/dissipation law until a new Navier--Stokes first stop, true boundary supply, or other independently certified physical event occurs.  A shell/service observation with no such upstream law cannot self-authorize as a recursive owner.
+
+This is a charge theorem, not a claim that the state is static and not a claim that service is an observer artifact.
+
+### Step 1. Positive shell mass cannot mean generation by itself
+
+The inherited-stock theorem already gives the decisive anti-example.  A hard shell can carry positive critical mass at the earlier slice because that energy was already physically present.  In that case the shell is real, but the inherited component has zero generation depth.
+
+Thus
+
+\[
+\mu_M(t)>0
+\quad\not\Rightarrow\quad
+\text{new generation at }t.
+\]
+
+A shell becomes a causal event only when another theorem identifies the actual physical mechanism which created/changed it: for example source work, strain/dissipation, or true nonlinear transfer.  Otherwise it is a state supplied to the next local theorem.
+
+### Step 2. Source → service is a physical consequence map, not charge cloning
+
+For an actual positive SGS/source weight `Sigma`, the objective-source route proves a positive integrated square-service lower of the form
+
+\[
+S_{\rm coh}\ge C_{\rm SGS}\,\Sigma,
+\qquad C_{\rm SGS}>0.
+\]
+
+The two sides do not even have to be identified as the same measure: the theorem converts one native physical law into a certified downstream observable.  What is preserved causally is the fact that the service was supplied by the already existing source event.
+
+Likewise, the resolved pressure-pair law can force a hard-shell lower directly.  The current continuum master already has the correct abstract object for this situation: a **witness relay** may change observable and units, but records
+
+\[
+\boxed{\text{causal charge created}=0.}
+\]
+
+Therefore
+
+```text
+actual source law -> coherent service -> critical shell
+```
+
+is one owned physical cause followed by physical consequences, not three causes.
+
+### Step 3. Service → shell preserves the same charge while exposing a new physical state
+
+On the refinement-invariant fresh-service route, push the actual positive service measure to the canonical LP band index.  If `F_j` is the selected physical band service over its supplied interval, the already-certified time/band and two-hard-shell arguments give a physical shell state
+
+\[
+M\|P_Mu(t_*)\|_2^2\ge \mu_*(F_j)>0
+\]
+
+for some actual time `t_*` and one of the two actual hard shells in the certified support cover.
+
+Nothing here says `t_*` is fictitious.  The shell state and its physical time are retained exactly.  The only prohibited step is to say that the passage
+
+\[
+F_j\longrightarrow \mu_M(t_*)
+\]
+
+creates another causal mass merely because the observable and units changed.
+
+The same rule applies when resolved dissipation or a pressure-pair law supplies a critical shell: the shell mark is a downstream physical state of that already-owned law.
+
+### Step 4. A critical shell is a renewal hub, not a fourth cause
+
+Once the shell state is supplied, the generic shell theorem registers the smooth carrier and examines the actual backward natural corridor:
+
+```text
+critical shell state
+   -> genuine physical first stop
+   -> or t=0
+   -> or full no-hit corridor carrying own-scale service
+```
+
+The `Q_A`/probe registration has already been quotiented in Section 3A.  If a genuine first stop occurs, **that new PDE event** receives its own native owner.  If `t=0` is reached, the initial boundary absorbs.  If no stop occurs, the own-scale positive service is carried by the very physical corridor just traversed and the certified full-natural service theorem gives
+
+\[
+\boxed{\text{additional recursion depth}=0.}
+\]
+
+Hence a shell can seed later dynamics without being misclassified as a causal source at the instant it is read.
+
+### Step 5. High-frequency service must expose the tail physics before ownership changes
+
+A high coherent-service exit is first compared to the actual orthogonal hard tail.  The smooth service observable is not itself identified with the hard tail.  Once the physical tail dissipation `D_tail` is certified, the exact tail balance gives
+
+\[
+N E_{>N}(s)+N\int\Phi_\uparrow
+\ge 2\nu D_{\rm tail}.
+\]
+
+This equation tells us what the physics underneath the service observation actually is:
+
+- **inherited tail stock**: physical state continuation, zero generation depth for the inherited component;
+- **true low→high supply** `Phi_up`: actual nonlinear boundary work, hence the existing nonlinear-work owner.
+
+High→high circulation remains internal and cannot be promoted to supply.  Thus the service observation does not become a generic fourth owner; it forces the PDE to reveal either stock or an already-typed physical work mechanism.
+
+### Step 6. Exhaustion of the current master-facing shell/service routes
+
+| observed route | physical downstream object | causal semantics |
+|---|---|---|
+| objective SGS/source → coherent service | positive increment/service law | upstream `source_sgs` remains the owner |
+| resolved pressure/source → critical shell | physical hard-shell state | upstream source law remains the owner |
+| resolved/high-strain dissipation → critical shell | physical shell ancestor | upstream `strain_dissipation` remains the owner |
+| fresh service → hard shell | physical shell at an actual witness time | service is a consequence of its upstream law; no new charge |
+| high service → hard-tail structure | tail stock or true `Phi_up` | stock is zero-depth; `Phi_up` resolves to actual nonlinear work |
+| critical shell → full-natural own-scale service | physical service on the completed corridor | same-corridor witness, zero added depth |
+| shell/service with no certified upstream generator | real observable may still exist | fail closed; do not mint a generic owner |
+
+This exhausts the current distilled master-facing shell/service architecture.  A static ingress audit finds no canonical `RecursiveEventState` whose standalone cause is `coherent_service` or `critical_shell`.  The legacy compatibility helper can append names such as `coherent_service` and `critical_shell` to an already-owned bundle, but it keeps the physical measure and mass exactly unchanged; those names are downstream manifestations/provenance of one unsplit charge, not new causal roots.
+
+This theorem does **not** say that every conceivable future service observable is causally inert.  If a future PDE theorem finds a genuinely new source term whose native physical law is itself a service measure, that new term must be admitted by its actual identity and units.  It may not be smuggled in under the generic word `service`.
+
+### Consequence for Mixed
+
+The previous role/probe theorem reduced the provisional owner vocabulary to
+
+\[
+\{\text{source/SGS},\ \text{strain/dissipation},\ \text{actual nonlinear work},\ \text{shell/service}\}.
+\]
+
+After separating causal charge from physical shell/service state, the current recursive **cause** vocabulary becomes
+
+\[
+\boxed{
+\{\text{source/SGS},\ \text{strain/dissipation},\ \text{actual nonlinear work}\}.
+}
+\]
+
+Shells and service remain in the theorem state, with their physical time, scale, mass and provenance intact.  What disappears is only the false possibility of counting the same physical episode again when it is reread in a new observable.
+
+This still does not close Mixed recurrence.  It makes the remaining problem more physical: can genuine source, strain/dissipation and actual nonlinear-work events alternate forever when every service/shell bridge between them is treated as state rather than a new charge?
+
 ---
 
 ## 4. What a new Mixed theorem is allowed to use
@@ -297,7 +450,8 @@ Examples:
 - strain may use actual viscous/gradient structure;
 - true high-tail supply may use actual low→high crossing and tail dissipation;
 - signed-good generated HH may use the certified parent-scale geometry and parabolic lifetime;
-- source/SGS may use its actual work/service and any independently proved shell reentry;
+- source/SGS may use its actual source/work law and any certified service/shell consequence while retaining the source owner;
+- shell/service state may seed a later physical corridor but may not be counted as an additional causal charge;
 - a role/probe transition may not be used as an owner at all; it must first resolve through the exact physical interface/work/shell/source law that actually changed the NS carrier.
 
 Cross-mechanism coupling is allowed only through an exact PDE identity, conservation law, common physical measure, or explicitly proved implication. Similar notation or matching critical scaling is not enough.
@@ -352,6 +506,6 @@ A theorem that cannot answer these questions should not enter the core, even if 
 
 ## 8. Current target in one sentence
 
-> **Close mixed recurrence of genuinely resolved native PDE owners after quotienting all representation-only depth and after excluding the two certified pure recurrent tails, without inventing a common artificial clock or source.**
+> **Close mixed recurrence of genuine source/SGS, strain/dissipation, and actual nonlinear-work events, while treating physical shell/service layers as state/witness relays rather than extra charges, without inventing a common artificial clock or source.**
 
 That is the point from which new research in this repository should proceed.

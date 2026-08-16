@@ -101,8 +101,49 @@ NATIVE_OWNER_TYPES = frozenset({
     "source_sgs",
     "strain_dissipation",
     "actual_nonlinear_work",
-    "shell_service",
 })
+
+PHYSICAL_STATE_WITNESS_TYPES = frozenset({
+    "coherent_service",
+    "critical_shell",
+    "hard_tail_state",
+    "full_natural_own_scale_service",
+})
+
+@dataclass(frozen=True)
+class PhysicalWitnessRelay:
+    """A downstream physical state/observable certified from one already-owned law.
+
+    The downstream object may have different units and may seed later PDE evolution,
+    but this relay does not mint another causal charge merely because the state is
+    now readable in a new physical observable.
+    """
+
+    upstream_owner: str
+    downstream_state: str
+    new_causal_charge_created: bool = False
+
+    def __post_init__(self) -> None:
+        if self.upstream_owner not in NATIVE_OWNER_TYPES:
+            raise ValueError("witness relay requires an already typed native causal owner")
+        if self.downstream_state not in PHYSICAL_STATE_WITNESS_TYPES:
+            raise ValueError("unknown physical state/witness type")
+        if self.new_causal_charge_created:
+            raise ValueError("a witness relay may not mint a second causal charge")
+
+
+def physical_witness_relay(upstream_owner: str, downstream_state: str) -> PhysicalWitnessRelay:
+    """Certify source/work/dissipation -> service/shell as state consequence, not cause cloning."""
+    return PhysicalWitnessRelay(str(upstream_owner), str(downstream_state))
+
+
+def witness_chain_owner(upstream_owner: str, downstream_states: Iterable[str]) -> str:
+    """Follow any certified service/shell witness chain while preserving one causal owner."""
+    owner = str(upstream_owner)
+    for state in downstream_states:
+        physical_witness_relay(owner, str(state))
+    return owner
+
 
 RAW_ROLE_PROBE_LOCATORS = frozenset({
     "role_change",

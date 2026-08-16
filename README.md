@@ -70,9 +70,11 @@ material rereading and selected-family boundaries
 finite pure high-strain epochs
 finite pure signed-good generated-HH epochs
         ↓
-MIXED GENUINE NATIVE-OWNER RECURRENCE  ← current frontier
+quotient role/probe labels and shell/service witness-charge duplication
+        ↓
+MIXED SOURCE / STRAIN / NONLINEAR-WORK RECURRENCE  ← current frontier
 ```
 
-The current role/probe quotient removes analysis-role/probe changes as an independent causal currency.  The remaining master-facing native families are source/SGS, strain/dissipation, actual nonlinear work (including generic HH/high-tail work after its physical gates), and physical shell/service.  A role/probe observation must resolve into one of those mechanisms or fail closed.
+The current quotients remove analysis-role/probe changes and shell/service rereadings as independent causal currencies.  The remaining master-facing **causal owner** families are source/SGS, strain/dissipation, and actual nonlinear work (including generic HH/high-tail work after its physical gates).  Physical shell/service objects remain in the state as real witnesses with their time, scale and provenance intact; an untyped observation fails closed rather than minting another owner.
 
 The aim of this repository is to make that structure visible immediately, without requiring a reader to reconstruct it from thousands of historical files.

@@ -225,7 +225,9 @@ actual critical hard shell
 
 The theorem is deliberately supplier-independent.  Certified resolved dissipation, dominant fresh service, inherited hard-tail stock, pressure/source routes, and high-tail regeneration may all supply critical shells, but each supplier must retain its own native scale/work geometry.  The generic shell theorem does not invent monotone scale progress.
 
-For source/SGS and pressure routes this matters especially: an aggregate pressure reservoir, packet occupancy, or source label is not itself a renewal currency.  A source must expose an actual unit-matched PDE supplier (resolved dissipation, physical work/service, or a pair-native hard-shell mechanism).  The late objective-pressure route is pair-native rather than a return to coarse pressure-mass accounting.
+A critical shell here is a **physical state supplied to the renewal theorem**, not an additional causal currency.  If source work, dissipation, or nonlinear transfer certified the shell, that upstream native owner is not cloned when the shell becomes readable.  A later genuine first stop may create a new event; the shell registration itself does not.
+
+For source/SGS and pressure routes this matters especially: an aggregate pressure reservoir, packet occupancy, or source label is not itself a renewal currency.  A source must expose an actual unit-matched PDE route: native source/work or dissipation ownership together with any certified service/shell consequence it physically supplies.  The late objective-pressure route is pair-native rather than a return to coarse pressure-mass accounting.
 
 ### High coherent service reaches physical tail structure without a unit fiction
 
@@ -364,7 +366,7 @@ The final endgame refinement separates three things that must never again be ide
 
 1. intrinsic material old/new membership and selected-family bookkeeping;
 2. smooth synthesis roles \(\eta_a=A_a^2\) used by a separately certified interface theorem;
-3. native physical suppliers: source/SGS work, strain/dissipation, actual nonlinear work, or physical shell/service.  A role/probe transition is observation/registration until one of these actual mechanisms resolves it.
+3. native physical causal suppliers: source/SGS work, strain/dissipation, or actual nonlinear work.  Physical shell/service quantities are downstream state/witness objects unless a separate PDE theorem identifies a genuinely new native source.  A role/probe transition is observation/registration until actual PDE physics resolves it.
 
 ### 9.1 Intrinsic rereading
 
@@ -412,7 +414,7 @@ Thus the \(K_{\rm phys}\) component is same-event conservative role flux with ze
 
 ### 9.4 Fail-closed owner admission
 
-Raw labels such as `material_relink` or `new_coherent_ancestry` are pre-owner locators. They do not enter canonical recursion by name. They need an independently certified native PDE mechanism: for example strain, source/service, actual nonlinear work, or a physical shell owner.  A role/probe change cannot be used as an escape alias: it too must resolve to native PDE physics.
+Raw labels such as `material_relink` or `new_coherent_ancestry` are pre-owner locators. They do not enter canonical recursion by name. They need an independently certified native PDE mechanism: for example source/SGS, strain/dissipation, or actual nonlinear work.  A physical shell/service witness may locate the relevant state but cannot self-authorize as the missing owner.  A role/probe change cannot be used as an escape alias: it too must resolve to native PDE physics.
 
 This is the current material-service causal quotient.
 
@@ -448,11 +450,52 @@ A probe `psi` is a readout of the same carrier through `z=<Q u,psi>`.  Holding `
 
 At an actual hard nonlinear event, the signed physical work and hard Fourier/helical role already exist before the smooth envelope/probe is registered.  At a critical-shell renewal, the physical shell likewise exists before `Q_A` and its normalized shell probe are chosen.  These registrations read an existing event/state and create no second charge or Hahn law.
 
-Hence, in the current master-facing architecture, raw `role_change`, `probe_change`, and `role_probe_change` labels are pre-owner locators rather than a fifth native causal currency.  After resolution the surviving recursive mechanisms are source/SGS, strain/dissipation, actual nonlinear work, and physical shell/service.
+Hence, in the current master-facing architecture, raw `role_change`, `probe_change`, and `role_probe_change` labels are pre-owner locators rather than a fifth native causal currency.  The companion witness-charge theorem below further separates physical shell/service state from causal ownership.
 
 ---
 
-## 11. Minimal theorem basis carried forward
+## 11. Shell/service state is physical but is not a fourth causal currency
+
+The current core distinguishes **what exists physically** from **what owns a new causal charge**.  A critical shell
+
+\[
+\mu_M(t)=M\|P_Mu(t)\|_2^2
+\]
+
+and a positive coherent/increment service law are real Navier--Stokes observables.  They are not dismissed as representation artifacts.  But neither one, by its value alone, proves that generation just occurred.  Inherited shell stock is the simplest exact counterexample.
+
+Every current master-facing supplier chain respects the following rule:
+
+```text
+already-owned source/work/dissipation law
+        -> physical service/state consequence
+        -> physical hard-shell/tail state
+        -> next actual PDE first stop or continuation
+```
+
+The consequence arrows may change units and may expose a state at a different physical time.  They do not clone the upstream causal charge.  Objective SGS/source work may force coherent service; fresh service may force a hard shell; pressure-pair or resolved-dissipation laws may force a shell directly.  The shell then seeds the generic renewal theorem with the supplier's physical provenance intact.
+
+A completed no-hit natural corridor carries its own positive service law on the interval already traversed, so reading that service adds zero recursive depth.  At high frequency, service must pass through the actual hard-tail identity
+
+\[
+N E_{>N}(s)+N\int\Phi_\uparrow\ge2\nu D_{\rm tail}.
+\]
+
+The resulting physics is inherited stock (zero generation depth for the inherited component) or true low-to-high boundary supply, which is actual nonlinear work.  High-to-high circulation remains internal.
+
+Therefore the current causal-owner vocabulary is
+
+\[
+\boxed{
+\{\text{source/SGS},\ \text{strain/dissipation},\ \text{actual nonlinear work}\}.
+}
+\]
+
+Shell/service objects remain in the state, with their real time, frequency, mass/service law and provenance.  A shell/service observation with no certified upstream native owner fails closed; the generic word `service` is not allowed to mint a cause.
+
+---
+
+## 12. Minimal theorem basis carried forward
 
 The current core depends conceptually on the following old-Wang results; the new repository keeps their conclusions rather than their historical scaffolding:
 
@@ -466,6 +509,8 @@ The current core depends conceptually on the following old-Wang results; the new
 - resolved-contact native binding;
 - pure-UV true-upward natural-window binding;
 - joint physical first-stop / single-charge semantics;
+- objective source/service witness routing and fresh-service scale reentry;
+- full-natural service-corridor witness quotient;
 - same-carrier checkpoint segmentation quotient;
 - smooth conservative relink quotient;
 - high-strain descending-epoch telescope;
