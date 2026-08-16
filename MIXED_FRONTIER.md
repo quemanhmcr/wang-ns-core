@@ -205,9 +205,24 @@ This consequence may change observable and units, so it is not a same-measure id
 
 Exact source/strain/work ties remain joint at the original event time.  No event is deleted from physical chronology.  What disappears is only the free recursive leaf `RECURSE_SOURCE` whose child state was unspecified.
 
+### Source-marked state geometry — DISTILLED EXACT DEDUCTION
+
+After the source charge has been relayed away, its provenance still carries exact Fourier geometry.  At parent block scale `N`, the current routes expose only:
+
+| source mark | physical state exposed | exact scale fact |
+|---|---|---|
+| local / viscous resolved source | shell in `V=S_(N/4)u` | `M<=N/4` |
+| resolved pressure pair | hard `u` shell inherited from the same resolved pair scale | `M<=N/4` |
+| low/base SGS service | one of the two hard shells covering a low/base LP band | `M<=2N`; **no lower ratio** |
+| high SGS service | orthogonal hard-tail shell | `M>=2N` |
+
+For a supplied hard shell the generic shell theorem registers the smooth carrier `A=3M/4`.  This gives local corridor geometry but **not a new causal scale step**: for the first two rows `A<=3N/16`; for low SGS only `A<=3N/2`; for high tail `A>=3N/2`.  Equivalently the corresponding `A`-natural lifetime ratios are respectively `>=256/9`, `>=4/9` with no upper bound, and `<=4/9`.
+
+These are state-support facts.  The next physical event need not occur at frequency `A`; only an independently certified event theorem may relate two event scales.  In particular low SGS supplies no directional scale progress, and the historical compact-displacement Onsager ratio may not be imported into the current unbounded-filter source calculus.  On the high-tail row, exact tail continuity further reroots kinetic energy to inherited stock or actual nonlinear boundary work, so the source mark never becomes a third energy owner.
+
 ## 7. What the Mixed problem now looks like
 
-After the source-state relay, source/pressure/SGS remain **real geometry marks on transitions**, but no longer form an unresolved owner currency.  The unresolved event-facing mechanisms are now symmetric strain/dissipation and actual nonlinear work, with source marks able to alter the geometry by which one state hands off to the next.  Those marked transitions can still alternate so that neither pure high-strain nor pure signed-good-HH telescope applies forever.
+After the source-state relay, source/pressure/SGS remain **real geometry marks on transitions**, but their state-support geometry is now explicit and they no longer form an unresolved owner currency.  The unresolved event-facing mechanisms are symmetric strain/dissipation and actual nonlinear work.  What remains is to determine how those genuine events can alternate across the certified down/neutral/up source-marked state relays without either pure telescope taking over.
 
 The stronger working hypothesis is deliberately **OPEN**:
 
@@ -273,10 +288,9 @@ Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier s
 
 ## 12. Best next targets
 
-1. **Source-marked transition geometry.**  Determine the exact scale/time constraints carried by the shell/tail state when its relay bears pressure/SGS/local/viscous provenance; source is a mark on the transition, not another currency.
-2. **Two-regime breaker theorem.**  Study the smallest true event alternation, strain ↔ physically gated nonlinear work, and derive an exact NS coupling of their physical geometry rather than a synthetic common budget.
-3. **Degenerate HH positive disintegration.**  Close the local margin seam only if the canonical `dW+` admits the required positive coherent disintegration.
-4. **Restricted-alphabet Mixed theorem.**  Only after the preceding audits, assemble pure blocks plus genuine breaker laws and prove that infinitely many breakers force a native telescope, terminal law or `t=0`.
+1. **Two-regime breaker theorem.**  Study the smallest true event alternation, strain ↔ physically gated nonlinear work, across the exact source-marked state geometries above; derive a PDE coupling rather than a synthetic common budget.
+2. **Degenerate HH positive disintegration.**  Close the local margin seam only if the canonical `dW+` admits the required positive coherent disintegration.
+3. **Restricted-alphabet Mixed theorem.**  Only after the preceding audits, assemble pure blocks plus genuine breaker laws and prove that infinitely many breakers force a native telescope, terminal law or `t=0`.
 
 ## 13. Frontier in one sentence
 

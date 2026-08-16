@@ -94,7 +94,7 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, CI certificates and master traces.
 
-**OPEN:** generic/non-signed-good HH recurrence; nonlocal high-tail continuation; the degenerate full-signed Young/Christ seam; the exact geometry of source-marked breaker transitions after their shell/tail handoff; the strain/nonlinear-work Mixed theorem; the initial-data and hypothetical-singular-time interfaces.
+**OPEN:** generic/non-signed-good HH recurrence; nonlocal high-tail continuation; the degenerate full-signed Young/Christ seam; the coupling of certified source-marked state geometry to strain/nonlinear-work switching; the strain/nonlinear-work Mixed theorem; the initial-data and hypothetical-singular-time interfaces.
 
 ## Upstream proof lookup map
 
