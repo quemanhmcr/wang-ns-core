@@ -90,11 +90,11 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical physical shell is supplied; same-carrier inherited-stock relay once its carrier/endpoint/residual-work hypotheses hold; signed-good local HH recurrence geometry once the signed-good generated branch is physically selected.
 
-**DISTILLED EXACT DEDUCTIONS:** role/probe changes and shell/service witnesses mint no new charge; every event-hard-role energy is supplied only by its own earlier modal stock or actual nonlinear inflow; objective SGS source has selector-free shell/tail handoff; and parent-continuing high-strain / signed-good generated-HH alternation, including exact ties, has finite interior depth.
+**DISTILLED EXACT DEDUCTIONS:** role/probe and shell/service readers mint no charge; hard-role energy is earlier stock or actual modal inflow; objective SGS has selector-free shell/tail handoff; local non-signed-good positive HH is terminal before Young while the only unresolved local good-HH limit is degenerate full-signed Christ margin; and parent-continuing high-strain / signed-good-HH alternation including exact ties has finite depth.
 
 **EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, CI certificates and master traces.
 
-**OPEN:** generic/non-signed-good HH recurrence; nonlocal high-tail continuation; the degenerate full-signed Young/Christ seam; source-marked breaker coupling and broader Mixed recurrence; the initial-data and hypothetical-singular-time interfaces.
+**OPEN:** nonlocal high-tail continuation; the degenerate full-signed Young/Christ seam (and only if genuinely needed, a separately proved positive coherent kernel); source-marked breaker coupling and broader Mixed recurrence; the initial-data and hypothetical-singular-time interfaces.
 
 ## Upstream proof lookup map
 

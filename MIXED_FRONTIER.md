@@ -252,7 +252,7 @@ A_{j+1}\le\frac56A_j,
 
 There can be only finitely many high-strain vertices.  After the last one, a parent-continuing signed-good tail is exactly the already-certified parabolic epoch and reaches `t=0` in finite depth.  Hence arbitrary alternation and exact ties of these two mechanisms cannot support an infinite interior shell ancestry.
 
-This does **not** close generic HH or permit an unrelated hard event to replace the carried shell.  Any genuine switch to a different hard lineage must exhibit its own physical stock/inflow relation; smooth-envelope overlap is not enough.
+This does **not** close the degenerate full-signed HH margin, nonlocal high-tail continuation, or permit an unrelated hard event to replace the carried shell.  Any genuine switch to a different hard lineage must exhibit its own physical stock/inflow relation; smooth-envelope overlap is not enough.
 
 ## 8. Required shape of a valid Mixed theorem
 
@@ -267,13 +267,15 @@ It may not create a common scalar exchange rate between physical time, log scale
 
 Cross-mechanism coupling is allowed only through an exact PDE identity, a conservation law, a common physical measure or an explicitly proved implication.  Similar critical scaling is not a coupling theorem.
 
-## 9. Current local HH seam — OPEN
+## 9. Canonical local HH fate exhaustion — DISTILLED EXACT; DEGENERATE MARGIN OPEN
 
-Canonical HH routing is signed-first.  Good/bad/negative pieces inherit the existing physical law, and Young/Christ sees the full signed hard-cell work.  Nondegenerate failures can be dominated by already-existing bad-positive/backscatter and negative work under the certified margin bounds.
+The signed edge law is formed first and Hahn is taken once.  On canonical positive HH work let `r_e=(J_e/J_*)c_e` and `eta0=10^-4`.  The exact restriction `B={r_e<=1-eta0}` contains every positive nonforward edge (`J_e=0`) and every local non-signed-good edge; its own native deficit binds the same physical block to stage-zero `TRANSFER_WORK_LOSS`.  It is terminal, not a recursive HH owner.
 
-The remaining local seam is the **degenerate full-signed Young/Christ margin**.  It cannot be closed by taking another Hahn positive part after coherent coarse-graining.  If a coherent positive kernel is genuinely necessary, it must be proved as a positive disintegration of the already-existing `dW+`, not manufactured from a new signed representation.
+The complementary `G={r_e>1-eta0}` is actual **signed-good edge geometry**: positive work is forward and the certified single-edge rigidity gives `3/5<N_p/N_c<5/8`.  But `G` is only Young-eligible.  Hard cells inherit `pi_#dW+`, `pi_#dW-` and the full signed `pi_#dW`; Young/Christ must see the full signed trilinear work, never a fresh Hahn law.
 
-Generic/non-signed-good HH and nonlocal high-tail continuation remain live; they must not be identified with the signed-good generated theorem.
+Mixed good/bad fate is already handled by terminal-bad reservation.  For every fixed full-signed Christ spare margin `mu>0`, a reserved-gate failure satisfies `g_C<n_C+(mu^-1-1)b_C`; on low-native-deficit blocks the total failed good fraction is correspondingly controlled by **actual** terminal-bad plus canonical negative work.  The cyclic donor kernel and its hard-cell quotient then read `dW-` only as same-time donor provenance whose recipient marginal is the already-existing `dW+`; overlapping recipient support and coarse self-loops create zero extra event depth and zero scale progress.  This is not a payment map and does not declare failed good mass terminal.
+
+Therefore no independent local owner called “generic/non-signed-good HH” remains.  The sharp unresolved local analytic limit is the **degenerate full-signed Young/Christ margin** `mu->0`.  It cannot be repaired by re-Hahn after coherent coarse-graining.  If a coherent positive kernel is ever genuinely required, it must be a separately proved positive disintegration of canonical `dW+`; fresh coherent Hahn is explicitly false as such a kernel.  Nonlocal high-tail continuation is a different scale problem and remains open.
 
 ## 10. Final interfaces remain separate — OPEN
 
@@ -302,9 +304,9 @@ Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier s
 
 ## 12. Best next targets
 
-1. **Generic/non-signed-good HH continuation.**  Determine which actual hard-role inflows survive after the canonical `dW+` gate; do not borrow signed-good parent progress.
-2. **Source-marked breaker coupling.**  Determine how low-SGS / high-tail state relays can interrupt a hard-role lineage after modal energy ownership has been fixed.
-3. **Degenerate HH positive disintegration.**  Close the local margin seam only if the canonical `dW+` admits the required positive coherent disintegration.
+1. **Source-marked breaker coupling.**  Determine how low-SGS / high-tail state relays can interrupt a hard-role lineage after modal energy ownership has been fixed.
+2. **Nonlocal high-tail continuation.**  Follow actual tail stock / boundary inflow through shell ancestry without mistaking internal high-high circulation for supply.
+3. **Degenerate full-signed HH margin.**  Resolve the `mu->0` Young/Christ seam directly; introduce a coherent positive kernel only if the physics truly requires one.
 4. **Broader Mixed theorem.**  Assemble only genuinely certified breaker laws without a synthetic common budget.
 
 ## 13. Frontier in one sentence
