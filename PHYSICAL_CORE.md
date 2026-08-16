@@ -322,27 +322,37 @@ is no longer a canonical unresolved destination.  Keep the source event mark, th
 
 This is proof-graph contraction, not physical-event deletion.  Source/pressure/SGS remain available as exact geometry marks on the resulting transition.  They simply do not require a separate source-currency recurrence theorem once their native state handoff is known.
 
-## 11. Two pure recurrence tails are finite — EXACT
+## 11. Pure tails and the first mixed subalphabet — EXACT / DISTILLED EXACT
 
-### Consecutive high strain
+### Consecutive high strain — EXACT
 
-A genuine high-strain event at scale `N_j` pays a positive physical dissipation amount.  The certified resolved ancestor satisfies `M_j<=N_j/4`, and renewed scale is `N_{j+1}=3M_j/4`; hence
+A high-strain event at scale `N_j` pays `D_j>=D_*`, exposes `M_j<=N_j/4`, and renews at `A_j=3M_j/4<=3N_j/16`.  Since `D_j<=N_jG_*`, `G_*=int||grad u||_2^2`, the geometric scale descent makes every consecutive high-strain epoch finite without treating `D_V` as a global reset.
 
-\[
-\frac{N_{j+1}}{N_j}\le\frac3{16}.
-\]
+### Consecutive signed-good generated HH — EXACT
 
-Using the global gradient reservoir `G_*=int||∇u||_2^2`, the episode costs telescope with the geometric scale descent, giving a finite total bound.  Finiteness does **not** come from declaring a scale-critical normalized dissipation quantity to be a globally finite reset budget.
-
-### Consecutive signed-good generated HH
-
-A raw HH coefficient hit is only a locator; it must first pass the physical energy gate selecting actual positive HH generation.  On the signed-good generated route the physical parent/child scales obey
+After `Q^2` energy reentry selects actual positive HH work, the actual hard Fourier parent/child radii satisfy
 
 \[
-\frac35<\frac{N_{parent}}{N_{child}}<\frac58.
+3/5<N_p/N_c<5/8.
 \]
 
-Backward natural lifetimes therefore grow by a factor greater than `64/25`.  The required registration-surface backshift accumulates geometrically and reaches the absorbing initial surface `t=0` in finite depth.  This closes only the signed-good generated pure tail, not generic HH.
+Parent natural lifetimes grow by more than `64/25`; the certified registration surfaces therefore backshift geometrically to absorbing `t=0`.  This is signed-good generated HH only, not generic HH.
+
+### Untied high-strain / signed-good alternation — DISTILLED EXACT DEDUCTION
+
+Consider an interior lineage whose genuine event vertices, after zero-depth quotients, are only **untied** high-strain events or **untied** signed-good generated-HH events.  Source-marked state handoffs, generic HH/high-tail events and exact cross-type ties are outside this subalphabet.
+
+After a high-strain event at scale `N`, its renewed carrier has `A<=3N/16` and, until the next strain hit, Fourier support at most `(3/2)e^(1/30)A`.  If the next genuine event is signed-good HH, its actual backward parent therefore obeys
+
+\[
+N_p<\frac58\frac32e^{1/30}A
+\le \frac{45}{256}e^{1/30}N
+<\frac3{16}N.
+\]
+
+The last strict inequality is Arb-certified.  Further consecutive signed-good steps multiply scale by `<5/8`.  Hence **between any two high-strain vertices in this untied alphabet**, the high-strain frequencies still satisfy `N_(j+1)<=3N_j/16`.  Thus the same physical gradient-reservoir telescope makes the number of high-strain vertices finite.  After the last one, the remaining event tail is consecutive signed-good generated HH and reaches `t=0` in finite depth.
+
+Therefore no infinite untied interior path exists in this two-mechanism alphabet.  Equivalently, any infinite path using only these two owner types would have to contain infinitely many exact high-strain/HH joint ties.  This conclusion uses two native laws in sequence; it creates no mixed currency or common event clock.
 
 ## 12. Core anti-theorems and permanent guards
 

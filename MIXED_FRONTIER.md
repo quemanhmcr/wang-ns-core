@@ -220,25 +220,22 @@ For a supplied hard shell the generic shell theorem registers the smooth carrier
 
 These are state-support facts.  The next physical event need not occur at frequency `A`; only an independently certified event theorem may relate two event scales.  In particular low SGS supplies no directional scale progress, and the historical compact-displacement Onsager ratio may not be imported into the current unbounded-filter source calculus.  On the high-tail row, exact tail continuity further reroots kinetic energy to inherited stock or actual nonlinear boundary work, so the source mark never becomes a third energy owner.
 
-## 7. What the Mixed problem now looks like
+## 7. First genuine Mixed reduction: untied strain / signed-good HH — CLOSED
 
-After the source-state relay, source/pressure/SGS remain **real geometry marks on transitions**, but their state-support geometry is now explicit and they no longer form an unresolved owner currency.  The unresolved event-facing mechanisms are symmetric strain/dissipation and actual nonlinear work.  What remains is to determine how those genuine events can alternate across the certified down/neutral/up source-marked state relays without either pure telescope taking over.
+After the source-state relay, source/pressure/SGS remain real geometry marks rather than owner currencies.  The first nontrivial two-owner alphabet can now be closed **except at exact cross-type ties**.
 
-The stronger working hypothesis is deliberately **OPEN**:
+For an untied high-strain event at scale `N`, renewal gives `A<=3N/16`.  Before another strain hit, the transported carrier stays below `(3/2)e^(1/30)A`.  If signed-good physical HH generation fires first, its actual hard parent satisfies
 
 \[
-\text{interior kinetic-energy causality}
-\stackrel{?}{=}
-\text{modal stock}+dW^++\text{viscous loss},
+N_p<\frac58\frac32e^{1/30}A
+\le\frac{45}{256}e^{1/30}N<\frac3{16}N.
 \]
 
-with pressure/SGS/strain retained where they genuinely control geometry rather than promoted to separate energy currencies.
+Thus any finite run of signed-good HH events between two high-strain vertices cannot reset the high-strain scale descent: every additional signed-good parent contributes another factor `<5/8`.  The high-strain subsequence is therefore finite by `D_j>=D_*`, `D_j<=N_jG_*` and the geometric `3/16` scale law.  Once its final high-strain vertex is passed, an infinite tail would be consecutive signed-good generated HH, which the parabolic registration theorem already drives to `t=0` in finite depth.
 
-If this audit succeeds, Mixed should be reformulated from “alternation of heterogeneous owner currencies” to:
+So an infinite interior path whose only owner types are high strain and signed-good generated HH must contain **infinitely many exact joint high-strain/HH ties**.  We do not split or order those ties.  Current master semantics gives one joint event but does not yet certify a representation-independent upper support relating every tied hard HH child to the carrier frequency after arbitrary generated re-anchoring.  That exact joint-tie geometry is the remaining seam inside this restricted alphabet.
 
-> **Can one actual nonlinear energy-flow lineage change true NS geometric regime infinitely often so as to evade every native telescope without reaching `t=0` or a terminal cost?**
-
-That reformulation is not yet theorem.
+The broader Mixed problem remains open because generic/non-signed-good HH, nonlocal high tail, and source-marked state relays can still change physical geometry outside this alphabet.
 
 ## 8. Required shape of a valid Mixed theorem
 
@@ -288,9 +285,10 @@ Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier s
 
 ## 12. Best next targets
 
-1. **Two-regime breaker theorem.**  Study the smallest true event alternation, strain ↔ physically gated nonlinear work, across the exact source-marked state geometries above; derive a PDE coupling rather than a synthetic common budget.
-2. **Degenerate HH positive disintegration.**  Close the local margin seam only if the canonical `dW+` admits the required positive coherent disintegration.
-3. **Restricted-alphabet Mixed theorem.**  Only after the preceding audits, assemble pure blocks plus genuine breaker laws and prove that infinitely many breakers force a native telescope, terminal law or `t=0`.
+1. **Exact H/HH joint-tie geometry.**  Resolve a simultaneous high-strain / signed-good-HH event without identifying carrier scale with hard-child scale by convention; either prove a representation-invariant physical support law or leave the tie as a genuine breaker.
+2. **Generic/non-signed-good HH continuation.**  Determine which actual hard-parent geometries survive after the canonical `dW+` gate; do not borrow signed-good progress.
+3. **Degenerate HH positive disintegration.**  Close the local margin seam only if the canonical `dW+` admits the required positive coherent disintegration.
+4. **Broader Mixed theorem.**  Assemble only genuinely certified breaker laws, including source-marked state relays and high-tail geometry, without a synthetic common budget.
 
 ## 13. Frontier in one sentence
 
