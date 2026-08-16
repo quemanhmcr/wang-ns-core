@@ -83,29 +83,19 @@ For the full mode set this reduces to the ordinary viscous energy balance.  The 
 
 A closed triad wholly inside `A` has zero boundary flux but can carry nonzero internal donor/recipient flow.  Scaling amplitudes by `lambda` scales this gross work like `lambda^3` while boundary flux remains zero.  Therefore modal stock does not bound total gross nonlinear turnover, and neither `int dW+` nor `int dW-` is a finite reset budget.
 
-### Native hard-shell supply quotient — DISTILLED EXACT DEDUCTION
+### Native hard-role / hard-shell supply quotient — DISTILLED EXACT DEDUCTION
 
-Take the physical hard shell
-
-\[
-A_M=\{(k,s):M/2<|k|\le M\}.
-\]
-
-Its continuity law is
+The same law applies to every bounded measurable event-anchored hard Fourier/helicity role `P`, not only a radial shell:
 
 \[
-E_M(t)+D_M+\Phi_{out,M}=E_M(s)+\Phi_{in,M}.
+\boxed{E_P(t)+D_P+\Phi_{out,P}=E_P(s)+\Phi_{in,P}}.
 \]
 
-If the terminal shell is critical, `M E_M(t)>=mu_0>0`, then for every `0<theta<1`, nonnegativity gives
+Hence for every `0<theta<1`, either `E_P(s)>=theta E_P(t)` or `Phi_in,P>=(1-theta)E_P(t)`; exact equality keeps both.  The inflow is the restriction of the already-canonical physical edge law to recipient modes **inside `P`**.  Internal traffic cancels, while viscosity and outward flow are losses.
 
-\[
-\boxed{M E_M(s)\ge\theta\mu_0\quad\text{or}\quad M\Phi_{in,M}\ge(1-\theta)\mu_0.}
-\]
+This is the master-facing energy rule for a hard role even when a smooth envelope `Q` with `QP=P` transports its coefficient between events.  Holding `P` fixed here is only Fourier control-volume bookkeeping, not material/packet persistence.  `Q^2` remains an exact carrier observable, but positive work elsewhere in `Q` cannot supply terminal `P` energy.  Indeed for disjoint hard roles `P,R` and `Q=P+R`, work entering only `R` can increase `E_Q` while `E_P` is unchanged.  A remote hard event is therefore separate unless its actual inflow crosses into `P`; smooth-envelope overlap cannot relaunch the ancestry of `P`.
 
-At equality both causes are retained.  For `theta=1/5`, the cover is `M E_M(s)>=mu_0/5` or `M Phi_in,M>=4mu_0/5`.
-
-This answers one precise question: **what supplied the kinetic energy now stored in this fixed shell?**  The only positive suppliers are earlier modal stock or actual nonlinear boundary inflow.  Viscosity and outward flow are losses.  A pressure, SGS, strain or service theorem may be exactly what proved that the shell exists and may carry indispensable geometry, but its label is not a third energy supplier.
+For the radial shell `A_M={(k,s):M/2<|k|<=M}` and `M E_M(t)>=mu_0`, this gives the previous cover `M E_M(s)>=theta mu_0` or `M Phi_in,M>=(1-theta)mu_0`; at `theta=1/5` the faces are `mu_0/5` and `4mu_0/5`.  Pressure, SGS, strain or service may expose indispensable geometry, but none is a third supplier of the kinetic energy stored in the hard role.
 
 ## 5. Radial crossing and hard-tail supply — EXACT
 
@@ -338,21 +328,38 @@ After `Q^2` energy reentry selects actual positive HH work, the actual hard Four
 
 Parent natural lifetimes grow by more than `64/25`; the certified registration surfaces therefore backshift geometrically to absorbing `t=0`.  This is signed-good generated HH only, not generic HH.
 
-### Untied high-strain / signed-good alternation — DISTILLED EXACT DEDUCTION
+### Parent-continuing high-strain / signed-good alternation, including exact ties — DISTILLED EXACT DEDUCTION
 
-Consider an interior lineage whose genuine event vertices, after zero-depth quotients, are only **untied** high-strain events or **untied parent-continuing** signed-good generated-HH events.  Consecutive generated layers obey the existing exact chain condition `next child frequency = previous actual parent frequency`.  Source-marked state handoffs, hard-role relaunches that break this parent chain, generic HH/high-tail events and exact cross-type ties are outside this subalphabet.
-
-After a high-strain event at scale `N`, its renewed carrier has `A<=3N/16` and, until the next strain hit, Fourier support at most `(3/2)e^(1/30)A`.  If the next genuine event is signed-good HH, its actual backward parent therefore obeys
+Start from a physical hard shell
 
 \[
-N_p<\frac58\frac32e^{1/30}A
-\le \frac{45}{256}e^{1/30}N
-<\frac3{16}N.
+P_M:\quad M/2<|k|\le M,
+\qquad A=3M/4,
 \]
 
-The last strict inequality is Arb-certified.  Further consecutive signed-good steps multiply scale by `<5/8`.  Hence **between any two high-strain vertices in this untied alphabet**, the high-strain frequencies still satisfy `N_(j+1)<=3N_j/16`.  Thus the same physical gradient-reservoir telescope makes the number of high-strain vertices finite.  After the last one, the remaining event tail is consecutive signed-good generated HH and reaches `t=0` in finite depth.
+and its registered smooth `A`-carrier.  Consider the hard-shell ancestry whose genuine recursive events are high strain or **parent-continuing** signed-good generated HH; source-marked state handoffs and generic/non-signed-good HH remain outside this subalphabet.
 
-Therefore no infinite untied parent-continuing interior path exists in this two-mechanism alphabet.  Any longer lineage must eventually expose either an exact high-strain/HH joint tie or a physical hard-role relaunch that breaks the signed-good parent chain (or leave the alphabet by another already named breaker).  This conclusion uses two native laws in sequence; it creates no mixed currency or common event clock.
+A high-strain continuation at carrier scale `A` renews at `<=3A/16`.  If the shell energy is instead genuinely supplied by signed-good nonlinear inflow, hard-role modal causality restricts that owner to actual recipient modes inside `P_M`.  Hence the physical HH child has `N_c<=M=4A/3`, and its signed-good parent satisfies
+
+\[
+N_p<\frac58N_c\le\frac58\frac43A=\frac56A.
+\]
+
+This remains true at an exact high-strain/HH tie.  The joint event is never split or ordered: the high-strain continuation is `<=3A/16`, while every signed-good continuation that actually supplies the carried shell has parent `<5A/6`.  Positive HH work elsewhere in the smooth envelope is a different physical event and cannot relaunch this shell ancestry merely by overlap with `Q`.
+
+Therefore successive high-strain carrier scales satisfy
+
+\[
+A_{j+1}\le\frac56A_j.
+\]
+
+Since each high-strain event has `D_j>=D_*` and `D_j<=A_jG_*`,
+
+\[
+\#H\,D_*\le G_*\sum_jA_j\le 6A_0G_*.
+\]
+
+Thus only finitely many high-strain vertices occur even with arbitrary parent-continuing signed-good layers and exact H/HH ties.  After the last one, an infinite remaining tail would be consecutive signed-good generated HH and the existing parabolic registration theorem reaches absorbing `t=0` in finite depth.  Hence this shell-anchored parent-continuing two-mechanism alphabet has no infinite interior lineage.  No common mixed currency or synthetic clock is introduced.
 
 ## 12. Core anti-theorems and permanent guards
 

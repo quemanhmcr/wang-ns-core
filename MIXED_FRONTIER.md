@@ -220,22 +220,39 @@ For a supplied hard shell the generic shell theorem registers the smooth carrier
 
 These are state-support facts.  The next physical event need not occur at frequency `A`; only an independently certified event theorem may relate two event scales.  In particular low SGS supplies no directional scale progress, and the historical compact-displacement Onsager ratio may not be imported into the current unbounded-filter source calculus.  On the high-tail row, exact tail continuity further reroots kinetic energy to inherited stock or actual nonlinear boundary work, so the source mark never becomes a third energy owner.
 
-## 7. First genuine Mixed reduction: untied parent-continuing strain / signed-good HH — CLOSED
+## 7. First genuine Mixed closure: shell-anchored parent-continuing strain / signed-good HH — CLOSED INCLUDING EXACT TIES
 
-After the source-state relay, source/pressure/SGS remain real geometry marks rather than owner currencies.  The first nontrivial two-owner alphabet can now be closed **except at exact cross-type ties**.
-
-For an untied high-strain event at scale `N`, renewal gives `A<=3N/16`.  Before another strain hit, the transported carrier stays below `(3/2)e^(1/30)A`.  If signed-good physical HH generation fires first, its actual hard parent satisfies
+The missing bridge is not an upper-support convention for the smooth carrier.  At a terminal hard shell `P_M`, exact mode-set continuity decides the energy owner:
 
 \[
-N_p<\frac58\frac32e^{1/30}A
-\le\frac{45}{256}e^{1/30}N<\frac3{16}N.
+E_{P_M}(t)+D_{P_M}+\Phi_{out,P_M}=E_{P_M}(s)+\Phi_{in,P_M}.
 \]
 
-Thus any finite **parent-continuing** run of signed-good HH events between two high-strain vertices cannot reset the high-strain scale descent: every additional layer has `next child = previous actual parent` and contributes another factor `<5/8`.  The high-strain subsequence is therefore finite by `D_j>=D_*`, `D_j<=N_jG_*` and the geometric `3/16` scale law.  Once its final high-strain vertex is passed, an infinite tail would be consecutive signed-good generated HH, which the parabolic registration theorem already drives to `t=0` in finite depth.
+Thus smooth `Q^2` work outside `P_M` cannot pay for the shell merely because `Q=1` on it.  The exact anti-model is `Q=P+R` with `P perp R`: work entering only `R` raises `E_Q` but leaves `E_P` unchanged.  If terminal shell energy is generated rather than inherited, its owner is actual nonlinear inflow with child inside `P_M`, obtained by restricting the existing canonical `dW+`; no new Hahn is taken.  A different hard child elsewhere in `Q` is a separate physical event, not a free relaunch of this ancestry.
 
-So an infinite continuation cannot remain forever in the untied parent-continuing subalphabet.  It must expose an **exact joint high-strain/HH tie**, a **hard-role relaunch** for which the next signed-good child is not the previous actual parent, or another named breaker.  We do not split or order exact ties.  Current master semantics also does not yet certify a representation-independent upper support relating every tied/relaunched hard HH child to the incoming carrier frequency.
+Now use the exact shell/carrier registration
 
-The broader Mixed problem remains open because joint ties, hard-role relaunches, generic/non-signed-good HH, nonlocal high tail, and source-marked state relays can still change physical geometry outside this subalphabet.
+\[
+A=3M/4.
+\]
+
+A high-strain continuation gives `<=3A/16`.  A signed-good generated inflow into the carried shell has child `N_c<=M=4A/3`, hence parent
+
+\[
+N_p<\frac58N_c\le\frac56A.
+\]
+
+At an exact H/HH tie both causes remain joint, but every continuation of this shell ancestry is still `<=5A/6`.  Therefore the high-strain subsequence obeys
+
+\[
+A_{j+1}\le\frac56A_j,
+\qquad
+\#H\,D_*\le G_*\sum_jA_j\le6A_0G_*.
+\]
+
+There can be only finitely many high-strain vertices.  After the last one, a parent-continuing signed-good tail is exactly the already-certified parabolic epoch and reaches `t=0` in finite depth.  Hence arbitrary alternation and exact ties of these two mechanisms cannot support an infinite interior shell ancestry.
+
+This does **not** close generic HH or permit an unrelated hard event to replace the carried shell.  Any genuine switch to a different hard lineage must exhibit its own physical stock/inflow relation; smooth-envelope overlap is not enough.
 
 ## 8. Required shape of a valid Mixed theorem
 
@@ -285,10 +302,10 @@ Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier s
 
 ## 12. Best next targets
 
-1. **Joint-tie / hard-role-relaunch geometry.**  Resolve simultaneous H/HH events and parent-chain-breaking signed-good relaunches without identifying carrier scale with hard-child scale by convention.
-2. **Generic/non-signed-good HH continuation.**  Determine which actual hard-parent geometries survive after the canonical `dW+` gate; do not borrow signed-good progress.
+1. **Generic/non-signed-good HH continuation.**  Determine which actual hard-role inflows survive after the canonical `dW+` gate; do not borrow signed-good parent progress.
+2. **Source-marked breaker coupling.**  Determine how low-SGS / high-tail state relays can interrupt a hard-role lineage after modal energy ownership has been fixed.
 3. **Degenerate HH positive disintegration.**  Close the local margin seam only if the canonical `dW+` admits the required positive coherent disintegration.
-4. **Broader Mixed theorem.**  Assemble only genuinely certified breaker laws, including source-marked state relays and high-tail geometry, without a synthetic common budget.
+4. **Broader Mixed theorem.**  Assemble only genuinely certified breaker laws without a synthetic common budget.
 
 ## 13. Frontier in one sentence
 
