@@ -37,7 +37,7 @@ After the native material-service quotient, a recursive observation must resolve
 - **symmetric strain / dissipation**;
 - **actual nonlinear work**, including genuine HH generation after its physical gates;
 - **physical shell / high-tail service or supply**;
-- role/probe/interface observations only after they resolve to one of the native mechanisms below; this PR proves they carry no independent owner currency in the current canonical architecture;
+- role/probe/interface observations are **pre-owner locators** only; Section 3A proves that the current canonical architecture resolves them into the native mechanisms above or fails closed;
 - any other future mechanism only after it is given its own native physical law and units.
 
 Smooth conservative relink, inherited stock, representation rereading, and sidecars may accompany these events but do not add independent generation depth.
@@ -65,7 +65,7 @@ source/service
    ↘
     strain/dissipation → actual HH/high-tail → source/service → ...
    ↗                         ↓
- native source/work ← physical shell/service
+        physical shell/service
 ```
 
 The problem is not to count labels. The problem is to show that an infinite alternation cannot evade all of the native physical laws simultaneously.

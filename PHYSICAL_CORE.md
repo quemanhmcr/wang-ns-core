@@ -351,7 +351,7 @@ This quotient does not erase:
 
 - simultaneous residual physical-work owners;
 - material sidecars;
-- genuine role/probe changes;
+- unresolved role/probe transitions, which fail closed until their actual PDE mechanism is resolved;
 - genuine earlier-endpoint events.
 
 The stock remains one physical charge. It is never copied once per provenance label.
@@ -364,7 +364,7 @@ The final endgame refinement separates three things that must never again be ide
 
 1. intrinsic material old/new membership and selected-family bookkeeping;
 2. smooth synthesis roles \(\eta_a=A_a^2\) used by a separately certified interface theorem;
-3. native physical suppliers: source/SGS work, strain/dissipation, actual nonlinear work, physical shell/service, or an explicit genuine role/probe change.
+3. native physical suppliers: source/SGS work, strain/dissipation, actual nonlinear work, or physical shell/service.  A role/probe transition is observation/registration until one of these actual mechanisms resolves it.
 
 ### 9.1 Intrinsic rereading
 
@@ -412,13 +412,47 @@ Thus the \(K_{\rm phys}\) component is same-event conservative role flux with ze
 
 ### 9.4 Fail-closed owner admission
 
-Raw labels such as `material_relink` or `new_coherent_ancestry` are pre-owner locators. They do not enter canonical recursion by name. They need an independently certified native PDE mechanism: for example strain, source/service, actual nonlinear work, a physical shell owner, or an explicit genuine role/probe-change theorem.
+Raw labels such as `material_relink` or `new_coherent_ancestry` are pre-owner locators. They do not enter canonical recursion by name. They need an independently certified native PDE mechanism: for example strain, source/service, actual nonlinear work, or a physical shell owner.  A role/probe change cannot be used as an escape alias: it too must resolve to native PDE physics.
 
 This is the current material-service causal quotient.
 
 ---
 
-## 10. Minimal theorem basis carried forward
+## 10. Role/probe transitions are not an independent generation currency
+
+For one smooth analysis role `A_a`, let `eta_a=A_a^2` and use the direct physical carrier energy `||A_a u||_2^2`.  With the actual resolved transporter `L_V=K+S`, the native moving-interface work is
+
+\[
+J_a=\langle u,\partial_t\eta_a u\rangle-2\operatorname{Re}\langle\eta_a u,\mathcal L_Vu\rangle.
+\]
+
+The current canonical roles are transported by one certified common affine/Kelvin skew generator `G`, so
+
+\[
+\partial_t\eta_a+[G,\eta_a]=0,
+\qquad K=G+K_{\rm phys}.
+\]
+
+The common-transport contribution therefore cancels exactly and
+
+\[
+\boxed{
+J_a=-2\operatorname{Re}\langle\eta_a u,K_{\rm phys}u\rangle
+    -2\operatorname{Re}\langle\eta_a u,Su\rangle.
+}
+\]
+
+There is no third energy-changing term whose physical type is merely “role change”.  The `K_phys` term is the already-certified antisymmetric same-event role flux and has zero generation depth; the `S` term is existing strain/deformation.
+
+A probe `psi` is a readout of the same carrier through `z=<Q u,psi>`.  Holding `Q u` fixed while changing `psi` can change `z` arbitrarily without changing carrier energy, nonlinear work, dissipation, or shell balance.  Probe identity or coefficient magnitude therefore cannot own a physical event.  An unregistered mid-corridor probe/role replacement is not declared transparent: it invalidates the old certificate and fails closed until the actual PDE mechanism is identified.
+
+At an actual hard nonlinear event, the signed physical work and hard Fourier/helical role already exist before the smooth envelope/probe is registered.  At a critical-shell renewal, the physical shell likewise exists before `Q_A` and its normalized shell probe are chosen.  These registrations read an existing event/state and create no second charge or Hahn law.
+
+Hence, in the current master-facing architecture, raw `role_change`, `probe_change`, and `role_probe_change` labels are pre-owner locators rather than a fifth native causal currency.  After resolution the surviving recursive mechanisms are source/SGS, strain/dissipation, actual nonlinear work, and physical shell/service.
+
+---
+
+## 11. Minimal theorem basis carried forward
 
 The current core depends conceptually on the following old-Wang results; the new repository keeps their conclusions rather than their historical scaffolding:
 

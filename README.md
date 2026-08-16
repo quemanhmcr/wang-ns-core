@@ -73,4 +73,6 @@ finite pure signed-good generated-HH epochs
 MIXED GENUINE NATIVE-OWNER RECURRENCE  ← current frontier
 ```
 
+The current role/probe quotient removes analysis-role/probe changes as an independent causal currency.  The remaining master-facing native families are source/SGS, strain/dissipation, actual nonlinear work (including generic HH/high-tail work after its physical gates), and physical shell/service.  A role/probe observation must resolve into one of those mechanisms or fail closed.
+
 The aim of this repository is to make that structure visible immediately, without requiring a reader to reconstruct it from thousands of historical files.

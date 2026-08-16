@@ -74,6 +74,18 @@ class CoreTripwires(unittest.TestCase):
             "strain_dissipation",
         )
 
+    def test_post_role_probe_native_owner_vocabulary_is_exactly_physical(self):
+        from core_tripwires import NATIVE_OWNER_TYPES
+        self.assertEqual(
+            NATIVE_OWNER_TYPES,
+            frozenset({
+                "source_sgs",
+                "strain_dissipation",
+                "actual_nonlinear_work",
+                "shell_service",
+            }),
+        )
+
     def test_role_probe_locator_cannot_self_authorize_as_an_owner(self):
         for locator in ("role_change", "probe_change", "role_probe_change"):
             with self.assertRaises(ValueError):
