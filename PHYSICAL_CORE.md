@@ -256,15 +256,15 @@ Changing the resolved cutoff repartitions the same full nonlinear law.  For a fi
 Differentiated SGS and pressure-Hessian terms are nevertheless real sources in **derived resolved-strain/gradient equations**.  They may control geometry, locate critical shells or break a recurrence regime.  “Source of a derived observable” must not be silently identified with “independent generator of global kinetic energy.”  This distinction is central to the current Mixed audit.
 
 
-### Native objective-source state exhaustion — DISTILLED EXACT DEDUCTION
+### Native objective-source state exhaustion — EXACT-CONDITIONAL / DISTILLED
 
 Compose the exact objective-source compiler with the later shell/tail continuity theorems.  Every currently certified source route has one of the following physical handoffs:
 
 - local coherent source or viscous source -> resolved `D_V` -> actual critical shell;
 - resolved pressure pair -> actual critical shell, while the pressure-SGS half delegates to the SGS calculus;
 - SGS high-frequency service -> physical hard tail;
-- SGS fresh-band service -> actual hard shell at a witness time;
-- selected-interface `Xi` -> existing terminal transfer/interface cost;
+- integrated total low SGS service -> actual hard shell at a witness time;
+- an independently certified physical transfer/interface cost may terminate, but an ON/material reading alone cannot create that cost;
 - `old_pool_not_yet_eroded` -> capacity state only.
 
 Whenever a route reaches a hard shell, Section 4 reroots its terminal kinetic-energy supply to earlier modal stock or actual nonlinear inflow.  Whenever it reaches the hard tail, Section 5 reroots it to inherited tail stock or true low-to-high nonlinear work.  Thus source/pressure/SGS labels remain genuine **geometry/source provenance**, but do not survive as extra kinetic-energy suppliers after the physical state has been exposed.
@@ -291,14 +291,18 @@ The fixed annular LP frame plus the existing two-hard-shell cover gives, at an a
 
 Equivalently `mu_hard exp(H_inf^low-scale)>=Y/(12c)`.  This uses **total low service** before old/new material classification; no old-pool capacity, selected-family age, coherent-cell argmax or fresh-material threshold enters the entrance theorem.
 
-Thus every current objective-SGS episode reaches physical hard-tail structure or a real low/base hard shell.  Material old/fresh/interface partitions may remain provenance or terminal-cost diagnostics, but they are not needed to create renewal state.
+Thus, **once the upstream integrated positive low-service law is supplied**, every current objective-SGS episode reaches physical hard-tail structure or a real low/base hard shell.  Material old/fresh/interface partitions may remain provenance, but an ON restriction is not a terminal `Xi` by itself; only separately certified physical interface/work evidence may terminate.
+
+The band law `(G_j)` and `H_inf^low-scale` belong to the fixed registered LP reader.  They may locate a physical hard shell, but they are not themselves causal primitives and may not be compared across different frames as one currency.  The native output of this step is the actual hard Fourier shell.
+
+There is one formulation seam which this distill does not hide: the upstream source argument first proves at each time that **some** filter displacement `r` carries the required service.  The service-to-shell deduction above is exact once a measurable integrated law `(G_j)` exists, but source main does not presently contain a separate theorem constructing a measurable choice `tau -> r(tau)` (or an equivalent joint `(tau,r)` positive law).  Therefore the full source-to-low-service assembly remains conditional on that upstream measurability claim.
 
 A capacity threshold cannot define an event in any case: an upper bound may be replaced by a looser valid upper bound while the underlying field and realized service law are unchanged.  If crossing `C_old>Y/8` changes an alleged owner, that owner belongs to the proof envelope, not to Navier--Stokes.
 
 The historical old-pool half-life remains valid only on its independently supplied signed-good low-strain lineage; it is no longer needed for generic SGS renewal and must not be imported as a source clock.
 
 
-### Objective-source event -> physical-state relay — DISTILLED EXACT DEDUCTION
+### Objective-source event -> physical-state relay — EXACT-CONDITIONAL ON THE STATE HANDOFF
 
 A source first hit remains a real event in the derived resolved-strain equation; its physical time and local/pressure/SGS/viscous provenance are not erased.  What changes is the **master leaf** attached to that event.
 

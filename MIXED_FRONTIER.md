@@ -107,7 +107,7 @@ Pressure is similarly nuanced: pressure Hessian is real and can drive strain geo
 
 Differentiated SGS and pressure terms are true sources of derived resolved-strain variables, so they cannot be erased by a kinetic-energy argument alone.  What can now be exhausted exactly is their **downstream state/energy handoff**.
 
-### Native source-state exhaustion — DISTILLED EXACT DEDUCTION
+### Native source-state exhaustion — EXACT-CONDITIONAL / DISTILLED
 
 Local/viscous source and resolved pressure-pair routes already expose physical hard shells.  The pressure-SGS half delegates to SGS.  The only historical ambiguity was the low coherent SGS branch, where old/fresh/interface ancestry used to decide renewal.
 
@@ -138,9 +138,11 @@ A countable positive band law has an attained maximal atom `p_max`.  For its ban
 \ge\boxed{\frac{p_{max}Y}{12c}}
 \]
 
-at an actual physical time, on one of the two hard shells associated with the fixed LP band.  No material freshness is used in this inequality.  The normalized band law is a scale-concentration diagnostic, not a causal probability.
+at an actual physical time, on one of the two hard shells associated with the fixed LP band.  No material freshness is used in this inequality.  The normalized band law is a scale-concentration diagnostic, not a causal probability.  It is also **reader-dependent**: the fixed LP frame locates the shell but does not become the physical state.
 
-Therefore every current objective-SGS source episode has a material-free physical state handoff:
+The exact status boundary is important.  The implication `integrated positive low-service law -> hard shell` is exact.  The upstream source note obtains the service pointwise from the existence of a displacement `r`; source main does not yet contain a separate measurable-selection theorem for `tau -> r(tau)` or an equivalent joint `(tau,r)` formulation.  Hence the complete source-to-low-service continuum assembly remains conditional on that measurability step.
+
+Subject to that upstream integrated-law input, every current objective-SGS source episode has a material-free physical state handoff:
 
 ```text
 SGS source
@@ -148,6 +150,8 @@ SGS source
   OR
   -> integrated total low positive service >= Y/2 -> actual hard shell.
 ```
+
+This is a physical **cover**, not an exclusive branch order: high-frequency and low-service facts may coexist, and exact ties are retained.
 
 The shell/tail energy then reroots by the exact continuity laws to inherited modal stock or actual nonlinear boundary work.  Pressure/SGS source terms remain genuine derived-geometry physics; only the ancestry machinery is removed from renewal entrance.
 
@@ -161,7 +165,7 @@ C_old > Y/8
 
 can therefore be switched on by weakening the analyst's bound.  It cannot define a physical event or owner.
 
-This does not declare actual old-labelled service nonexistent; it says only that neither the old label nor a capacity envelope creates generation.  The total-low-service theorem above supplies the physical shell entrance without asking whether that service was old, interface or fresh.
+This does not declare actual old-labelled service nonexistent; it says only that neither the old label nor a capacity envelope creates generation.  The total-low-service theorem above supplies the physical shell entrance without asking whether that service was old, interface or fresh.  Likewise an ON/material-interface restriction of the same service law does **not** become terminal `Xi` by its label; terminal interface cost requires an independently certified physical work/cost law.
 
 The historical old-pool contraction `<1/2` remains a correct theorem on a supplied signed-good low-strain lineage (`N` growth `>8/5`, old-frequency growth `<21/20`).  Generic SGS recurrence supplies no such directional geometry, so that contraction is neither needed nor permitted here.
 
@@ -251,10 +255,11 @@ Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier s
 
 ## 12. Best next targets
 
-1. **Source-marked transition geometry.**  Determine the exact scale/time constraints carried by the shell/tail state when its relay bears pressure/SGS/local/viscous provenance; source is a mark on the transition, not another currency.
-2. **Two-regime breaker theorem.**  Study the smallest true event alternation, strain ↔ physically gated nonlinear work, and derive an exact NS coupling of their physical geometry rather than a synthetic common budget.
-3. **Degenerate HH positive disintegration.**  Close the local margin seam only if the canonical `dW+` admits the required positive coherent disintegration.
-4. **Restricted-alphabet Mixed theorem.**  Only after the preceding audits, assemble pure blocks plus genuine breaker laws and prove that infinitely many breakers force a native telescope, terminal law or `t=0`.
+1. **Source-service measurability / reader quotient.**  Construct the measurable displacement law `tau -> r(tau)` (or an equivalent joint positive law) and make explicit that the LP scale distribution is discarded after it exposes a hard shell.
+2. **Source-marked transition geometry.**  Determine the exact scale/time constraints carried by the shell/tail state when its relay bears pressure/SGS/local/viscous provenance; source is a mark on the transition, not another currency.
+3. **Two-regime breaker theorem.**  Study the smallest true event alternation, strain ↔ physically gated nonlinear work, and derive an exact NS coupling of their physical geometry rather than a synthetic common budget.
+4. **Degenerate HH positive disintegration.**  Close the local margin seam only if the canonical `dW+` admits the required positive coherent disintegration.
+5. **Restricted-alphabet Mixed theorem.**  Only after the preceding audits, assemble pure blocks plus genuine breaker laws and prove that infinitely many breakers force a native telescope, terminal law or `t=0`.
 
 ## 13. Frontier in one sentence
 

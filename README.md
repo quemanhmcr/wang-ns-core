@@ -90,11 +90,11 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical physical shell is supplied; same-carrier inherited-stock relay once its carrier/endpoint/residual-work hypotheses hold; signed-good local HH recurrence geometry once the signed-good generated branch is physically selected.
 
-**DISTILLED EXACT DEDUCTIONS:** current role/probe changes do not form an independent generation currency; current shell/service routes do not mint a second charge; hard-shell energy has only earlier-stock or actual nonlinear-inflow positive supply; every objective source hit has a certified terminal or shell/tail state handoff, so source remains physical geometry provenance but no longer ends in a free `RECURSE_SOURCE` leaf.
+**DISTILLED EXACT DEDUCTIONS:** current role/probe changes do not form an independent generation currency; current shell/service routes do not mint a second charge; hard-shell energy has only earlier-stock or actual nonlinear-inflow positive supply; once the upstream integrated SGS service law is supplied, an objective source hit relays to terminal/shell/tail state rather than a free `RECURSE_SOURCE` leaf.
 
 **EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, CI certificates and master traces.
 
-**OPEN:** generic/non-signed-good HH recurrence; nonlocal high-tail continuation; the degenerate full-signed Young/Christ seam; the exact geometry of source-marked breaker transitions after their shell/tail handoff; the strain/nonlinear-work Mixed theorem; the initial-data and hypothetical-singular-time interfaces.
+**OPEN:** measurable source→service displacement assembly (or an equivalent joint law); generic/non-signed-good HH recurrence; nonlocal high-tail continuation; the degenerate full-signed Young/Christ seam; the exact geometry of source-marked breaker transitions after their shell/tail handoff; the strain/nonlinear-work Mixed theorem; the initial-data and hypothetical-singular-time interfaces.
 
 ## Upstream proof lookup map
 
