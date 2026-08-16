@@ -340,7 +340,7 @@ Parent natural lifetimes grow by more than `64/25`; the certified registration s
 
 ### Untied high-strain / signed-good alternation — DISTILLED EXACT DEDUCTION
 
-Consider an interior lineage whose genuine event vertices, after zero-depth quotients, are only **untied** high-strain events or **untied** signed-good generated-HH events.  Source-marked state handoffs, generic HH/high-tail events and exact cross-type ties are outside this subalphabet.
+Consider an interior lineage whose genuine event vertices, after zero-depth quotients, are only **untied** high-strain events or **untied parent-continuing** signed-good generated-HH events.  Consecutive generated layers obey the existing exact chain condition `next child frequency = previous actual parent frequency`.  Source-marked state handoffs, hard-role relaunches that break this parent chain, generic HH/high-tail events and exact cross-type ties are outside this subalphabet.
 
 After a high-strain event at scale `N`, its renewed carrier has `A<=3N/16` and, until the next strain hit, Fourier support at most `(3/2)e^(1/30)A`.  If the next genuine event is signed-good HH, its actual backward parent therefore obeys
 
@@ -352,7 +352,7 @@ N_p<\frac58\frac32e^{1/30}A
 
 The last strict inequality is Arb-certified.  Further consecutive signed-good steps multiply scale by `<5/8`.  Hence **between any two high-strain vertices in this untied alphabet**, the high-strain frequencies still satisfy `N_(j+1)<=3N_j/16`.  Thus the same physical gradient-reservoir telescope makes the number of high-strain vertices finite.  After the last one, the remaining event tail is consecutive signed-good generated HH and reaches `t=0` in finite depth.
 
-Therefore no infinite untied interior path exists in this two-mechanism alphabet.  Equivalently, any infinite path using only these two owner types would have to contain infinitely many exact high-strain/HH joint ties.  This conclusion uses two native laws in sequence; it creates no mixed currency or common event clock.
+Therefore no infinite untied parent-continuing interior path exists in this two-mechanism alphabet.  Any longer lineage must eventually expose either an exact high-strain/HH joint tie or a physical hard-role relaunch that breaks the signed-good parent chain (or leave the alphabet by another already named breaker).  This conclusion uses two native laws in sequence; it creates no mixed currency or common event clock.
 
 ## 12. Core anti-theorems and permanent guards
 

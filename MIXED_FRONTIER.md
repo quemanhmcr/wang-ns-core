@@ -220,7 +220,7 @@ For a supplied hard shell the generic shell theorem registers the smooth carrier
 
 These are state-support facts.  The next physical event need not occur at frequency `A`; only an independently certified event theorem may relate two event scales.  In particular low SGS supplies no directional scale progress, and the historical compact-displacement Onsager ratio may not be imported into the current unbounded-filter source calculus.  On the high-tail row, exact tail continuity further reroots kinetic energy to inherited stock or actual nonlinear boundary work, so the source mark never becomes a third energy owner.
 
-## 7. First genuine Mixed reduction: untied strain / signed-good HH — CLOSED
+## 7. First genuine Mixed reduction: untied parent-continuing strain / signed-good HH — CLOSED
 
 After the source-state relay, source/pressure/SGS remain real geometry marks rather than owner currencies.  The first nontrivial two-owner alphabet can now be closed **except at exact cross-type ties**.
 
@@ -231,11 +231,11 @@ N_p<\frac58\frac32e^{1/30}A
 \le\frac{45}{256}e^{1/30}N<\frac3{16}N.
 \]
 
-Thus any finite run of signed-good HH events between two high-strain vertices cannot reset the high-strain scale descent: every additional signed-good parent contributes another factor `<5/8`.  The high-strain subsequence is therefore finite by `D_j>=D_*`, `D_j<=N_jG_*` and the geometric `3/16` scale law.  Once its final high-strain vertex is passed, an infinite tail would be consecutive signed-good generated HH, which the parabolic registration theorem already drives to `t=0` in finite depth.
+Thus any finite **parent-continuing** run of signed-good HH events between two high-strain vertices cannot reset the high-strain scale descent: every additional layer has `next child = previous actual parent` and contributes another factor `<5/8`.  The high-strain subsequence is therefore finite by `D_j>=D_*`, `D_j<=N_jG_*` and the geometric `3/16` scale law.  Once its final high-strain vertex is passed, an infinite tail would be consecutive signed-good generated HH, which the parabolic registration theorem already drives to `t=0` in finite depth.
 
-So an infinite interior path whose only owner types are high strain and signed-good generated HH must contain **infinitely many exact joint high-strain/HH ties**.  We do not split or order those ties.  Current master semantics gives one joint event but does not yet certify a representation-independent upper support relating every tied hard HH child to the carrier frequency after arbitrary generated re-anchoring.  That exact joint-tie geometry is the remaining seam inside this restricted alphabet.
+So an infinite continuation cannot remain forever in the untied parent-continuing subalphabet.  It must expose an **exact joint high-strain/HH tie**, a **hard-role relaunch** for which the next signed-good child is not the previous actual parent, or another named breaker.  We do not split or order exact ties.  Current master semantics also does not yet certify a representation-independent upper support relating every tied/relaunched hard HH child to the incoming carrier frequency.
 
-The broader Mixed problem remains open because generic/non-signed-good HH, nonlocal high tail, and source-marked state relays can still change physical geometry outside this alphabet.
+The broader Mixed problem remains open because joint ties, hard-role relaunches, generic/non-signed-good HH, nonlocal high tail, and source-marked state relays can still change physical geometry outside this subalphabet.
 
 ## 8. Required shape of a valid Mixed theorem
 
@@ -285,7 +285,7 @@ Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier s
 
 ## 12. Best next targets
 
-1. **Exact H/HH joint-tie geometry.**  Resolve a simultaneous high-strain / signed-good-HH event without identifying carrier scale with hard-child scale by convention; either prove a representation-invariant physical support law or leave the tie as a genuine breaker.
+1. **Joint-tie / hard-role-relaunch geometry.**  Resolve simultaneous H/HH events and parent-chain-breaking signed-good relaunches without identifying carrier scale with hard-child scale by convention.
 2. **Generic/non-signed-good HH continuation.**  Determine which actual hard-parent geometries survive after the canonical `dW+` gate; do not borrow signed-good progress.
 3. **Degenerate HH positive disintegration.**  Close the local margin seam only if the canonical `dW+` admits the required positive coherent disintegration.
 4. **Broader Mixed theorem.**  Assemble only genuinely certified breaker laws, including source-marked state relays and high-tail geometry, without a synthetic common budget.
