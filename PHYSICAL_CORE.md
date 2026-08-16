@@ -1,572 +1,290 @@
 # Physical Core
 
-This file is the minimal theorem-facing language of the current Wang–NS architecture. It records only objects and structural laws that remain live at the mixed frontier.
+This file contains the smallest current theorem basis needed to stand at the mixed frontier.  It deliberately preserves physical type: stock is not work, work is not capacity, a witness is not a source, same-time redistribution is not between-time generation, and an observer coordinate is not a physical clock.
 
-## 1. Research contract: preserve physical type
+## 1. Native PDE and ontology
 
-The core rule is simple:
-
-> A useful representation may observe a physical object, restrict it, or push it forward, but it may not manufacture a new physical currency merely because the representation changed.
-
-The following distinctions are non-negotiable.
-
-- signed nonlinear work vs. its positive/negative Hahn parts;
-- physical recipient charge vs. donor provenance;
-- same-time transfer vs. between-time energy stock;
-- internal circulation vs. boundary supply;
-- physical time/scale vs. observer checkpoints/covers;
-- genuine source/strain/work vs. material or selected-family bookkeeping;
-- physical event depth vs. conservative redistribution or persistent stock;
-- entropy/information vs. a physical clock.
-- native capacity/reference envelopes vs. causal probability, work, reset, or recurrence budget.
-- hard projectors as event readers vs. smooth roles that propagate between events.
-
-No theorem may normalize unlike native quantities into a common reset merely to make the recursion easier to count.
-
----
-
-## 2. Signed nonlinear work comes first
-
-For the actual helical/Fourier interaction law, reconstruct the signed edge measure
+On a smooth pre-singular interval write incompressible Navier–Stokes in Leray form
 
 \[
-dW
+\partial_t u+\mathcal B(u,u)=\nu\Delta u,\qquad \nabla\cdot u=0.
 \]
 
-before taking Hahn parts. The canonical causal measure is then
+Pressure is physical in the primitive equation and in strain/gradient dynamics, but after Leray projection it is not an independent global kinetic-energy source.  For divergence-free global probes, `⟨u,∇p⟩=0` exactly.  Localized pressure boundary work is a different object and must not be imported into global interscale causality by name.
+
+The persistent state is the velocity field, equivalently its physical Fourier–helical modal amplitudes.  Derived objects—resolved strain, SGS stress, coherent service, shell mass, material labels, probes—may be exact and useful without becoming primitive state or causal currency.
+
+## 2. Signed nonlinear work before Hahn — EXACT
+
+For one unordered helical parent orbit `x+y=z`, direct Leray/curl evaluation equals the Waleffe registration.  The physical child-energy work has the exact form
 
 \[
-d\mu=dW^+.
+T_e=4(s_x|x|-s_y|y|)\operatorname{Re}\big[\overline{a_z}\,\overline{g_e}\,a_xa_y\big].
 \]
 
-The negative part may acquire donor provenance, but it never replaces the positive recipient cause.
+The native modal interaction capacity `A_e=4|z||a_xa_ya_z|` obeys `|T_e|<=A_e`, but capacity is only a reference envelope.  It is never causal probability, work, reset budget or recurrence currency.
 
-After this canonical Hahn operation, every downstream label must inherit the same positive law by **restriction or positive pushforward**. In particular, if a coarse cell sees a signed total, one does not Hahn-split that coarse signed total again to create a fresh causal law.
-
-This prevents observer coarse-graining from manufacturing cause.
-
-### Closed-triad donor kernel
-
-For one closed helical triad,
+The continuum unordered-parent quotient reconstructs a locally Radon **signed** physical edge measure `dW`.  Only after signed reconstruction take the canonical Hahn decomposition
 
 \[
-T_0+T_1+T_2=0.
+dW=dW^+-dW^-.
 \]
 
-Let
+`dW+` is the canonical positive recipient-work law.  After this point every downstream good/bad, shell, donor, contact or service label must be a restriction or positive pushforward of the already-existing law.  Never replace `pi#(dW+)` by `[pi#dW]_+`.
+
+### Duhamel anti-theorem — EXACT countermodel
+
+For `c_dot=1`, `c(0)=0`, terminal adjoint `psi=1`, normalized Duhamel amplitude mass is `dGamma=dt`, while positive child-energy work is `dT=2t dt`.  Hence `Gamma([0,t])=t` but `T([0,t])=t^2`.  Duhamel may locate event support; it does not supply physical causal probability.
+
+## 3. Closed triads and donor provenance — EXACT
+
+For one closed triad let signed modal works satisfy
 
 \[
-P_i=[T_i]_+,\qquad N_i=[-T_i]_+,\qquad Q=\sum_iP_i=\sum_iN_i.
+T_0+T_1+T_2=0,
+\qquad P_i=[T_i]_+,
+\qquad N_i=[-T_i]_+,
+\qquad Q=\sum_iP_i=\sum_iN_i.
 \]
 
-For \(Q>0\), the canonical donor-recipient kernel is
+The canonical cyclic donor kernel is
 
 \[
 M(i\to j)=\frac{N_iP_j}{Q}.
 \]
 
-Its donor marginal is the canonical negative work and its recipient marginal is the canonical positive work. A recipient can have several donors, but it still carries **one physical positive charge**. Donors are sidecar provenance; they are not cloned owners.
+Its donor marginal is `dW-`; its recipient marginal is the already-canonical `dW+`.  Multiple donors may feed one recipient, but the recipient carries one physical charge.  Donors are provenance, not cloned causes.  Same-time donor cycles are real conservative redistribution and have zero generation depth.
 
-For hard cells, retain all three direct pushforwards:
+Generic triads can have two energy donors.  The signed-good forward case has one energy donor but can still have a positive nonforward side recipient; that side work is real energy transfer, not dissipation and not a reset.
 
-\[
-\pi_\#dW,\qquad \pi_\#dW^+,\qquad \pi_\#dW^-.
-\]
+## 4. Modal stock and mode-set continuity — EXACT
 
-If a mixed cell has
+Physical energy stock lives on helical modes `m=(k,s)`:
 
 \[
-T_C=g_C+b_C-n_C,
+E_m(t)=|a_{k,s}(t)|^2.
 \]
 
-then Young/Christ sees the **full signed** \(T_C\). Geometry/phase-bad positive work terminates through the existing transfer-loss route; good work is merely Young-eligible. A reservation deficit is a certificate of domination by existing bad/negative work, not a new payment measure.
-
----
-
-## 3. Energy stock lives on physical modes
-
-Persistent energy belongs to physical Fourier–helical modes, not to same-time interaction cells.
-
-For a physical mode set \(A\), internal cyclic nonlinear traffic cancels from the set balance:
+Push the cyclic donor flow to modal nodes.  For any physical mode set `A`, let `Phi_in,A` and `Phi_out,A` be actual donor-flow crossings of its boundary.  Internal flow cancels only from the set divergence, not from the PDE.  The exact interval law is
 
 \[
-W_A^+-W_A^- = \Phi_{\rm in,A}-\Phi_{\rm out,A}.
+\boxed{E_A(t_1)+D_A+\Phi_{out,A}=E_A(t_0)+\Phi_{in,A}},
 \]
 
-The exact Navier–Stokes balance is
+where
 
 \[
-E_A(t_1)+D_A+\int\Phi_{\rm out,A}
-=
-E_A(t_0)+\int\Phi_{\rm in,A}.
+D_A=2\nu\int_{t_0}^{t_1}\sum_{(k,s)\in A}|k|^2E_{k,s}(t)\,dt.
 \]
 
-Consequences:
+For the full mode set this reduces to the ordinary viscous energy balance.  The law gives aggregate stock/flow continuity only; it does not select FIFO, LIFO, oldest-first, newest-first or proportional temporal provenance.
 
-- hard interaction cells are never between-time wallets;
-- same-time donor provenance is not temporal inventory matching;
-- no FIFO/LIFO/proportional matching of earlier deposits to later withdrawals;
-- large gross nonlinear traffic can coexist with small net boundary supply.
+### Gross-transfer anti-theorem
 
-### 3.1 Native hard-shell supply quotient
+A closed triad wholly inside `A` has zero boundary flux but can carry nonzero internal donor/recipient flow.  Scaling amplitudes by `lambda` scales this gross work like `lambda^3` while boundary flux remains zero.  Therefore modal stock does not bound total gross nonlinear turnover, and neither `int dW+` nor `int dW-` is a finite reset budget.
 
-Apply the same exact continuity law to the physical hard shell
+### Native hard-shell supply quotient — DISTILLED EXACT DEDUCTION
+
+Take the physical hard shell
 
 \[
-A_M=\{(k,s):M/2<|k|\le M,\ s=\pm1\}.
+A_M=\{(k,s):M/2<|k|\le M\}.
 \]
 
-For any physical interval \([s,t]\),
+Its continuity law is
 
 \[
-E_M(t)+D_M[s,t]+\Phi_{\rm out,M}[s,t]
-=
-E_M(s)+\Phi_{\rm in,M}[s,t].
+E_M(t)+D_M+\Phi_{out,M}=E_M(s)+\Phi_{in,M}.
 \]
 
-Hence, if the terminal shell is critical,
+If the terminal shell is critical, `M E_M(t)>=mu_0>0`, then for every `0<theta<1`, nonnegativity gives
 
 \[
-M E_M(t)\ge\mu_0>0,
+\boxed{M E_M(s)\ge\theta\mu_0\quad\text{or}\quad M\Phi_{in,M}\ge(1-\theta)\mu_0.}
 \]
 
-then for every fixed \(0<\theta<1\), exact nonnegativity of dissipation and outward flow gives
+At equality both causes are retained.  For `theta=1/5`, the cover is `M E_M(s)>=mu_0/5` or `M Phi_in,M>=4mu_0/5`.
+
+This answers one precise question: **what supplied the kinetic energy now stored in this fixed shell?**  The only positive suppliers are earlier modal stock or actual nonlinear boundary inflow.  Viscosity and outward flow are losses.  A pressure, SGS, strain or service theorem may be exactly what proved that the shell exists and may carry indispensable geometry, but its label is not a third energy supplier.
+
+## 5. Radial crossing and hard-tail supply — EXACT
+
+Specialize the modal donor flow to Fourier radii.  A donor/recipient atom crosses every sphere whose radius lies strictly between the donor and recipient radii.  Integrating crossings against `dR/R` gives the clipped log-radius displacement.  Equiradial transfer has zero radial action, so physical work does not imply one dyadic step or any universal event-count clock.
+
+For the hard tail `|k|>N`, exact continuity gives
 
 \[
-\boxed{
-M E_M(s)\ge\theta\mu_0
-\quad\text{or}\quad
-M\Phi_{\rm in,M}[s,t]\ge(1-\theta)\mu_0.
-}
+N E_{>N}(t_1)+2\nu D_{tail}+N\Phi_{down}
+=N E_{>N}(t_0)+N\Phi_{up}.
 \]
 
-Exact equality retains both alternatives.  With the familiar \(\theta=1/5\),
+Hence
 
 \[
-M E_M(s)\ge\frac15\mu_0
-\quad\text{or}\quad
-M\Phi_{\rm in,M}\ge\frac45\mu_0.
+\boxed{N E_{>N}(t_0)+N\Phi_{up}\ge2\nu D_{tail}.}
 \]
 
-This is an **energy-supply theorem**, not another shell-selection rule.  Its two positive suppliers are only:
+Tail dissipation is covered only by inherited tail stock or true low→high nonlinear supply.  High→high circulation is internal, `Phi_down` is a drain, and gross positive tail work is too broad to be called fresh supply.
 
-1. earlier physical modal stock; or
-2. actual nonlinear boundary inflow, obtained from the already-canonical donor/recipient work law.
+### True-upward support split — EXACT
 
-Viscosity and outward flow are sinks.  A theorem which exposed, forced, or localized the hard shell---for example resolved dissipation, pressure-pair structure, or fresh SGS service---may retain indispensable scale/geometry provenance, but it is not thereby a third supplier of the shell's terminal kinetic energy.
+Disintegrate `Phi_up` by recipient shell `M`.
 
-This distinction does **not** erase source, pressure, or strain physics from Navier--Stokes.  Those mechanisms can force a shell to exist, alter geometry, or break a pure recurrence theorem.  It says only that once the question is "what physically supplied the energy now stored in this fixed Fourier shell?", the native mode-set continuity law answers with stock or nonlinear inflow and nothing else.
+**Pure UV.**  If both interaction parents are above `M/4`, an energy donor with radius `<=N` forces the first recipient shell `M=2N`; triad geometry makes both parents comparable to `M`.  On these parents the resolved cutoff vanishes and `h=u` exactly.  The output-scale concentration factor is one by support, not by an estimate.  Signed-edge total variation plus the clean Young bound gives the natural-window route.
 
-For the exterior \(H_R=\{|k|>R\}\), the same balance separates true low→high supply \(\Phi_\uparrow\), true high→low return \(\Phi_\downarrow\), tail stock, and viscosity. High→high circulation is internal work, not tail supply.
+**Resolved contact.**  If one parent is `<=M/4`, exactly one parent is resolved and the other lies in `(M/4,5M/4]`.  Any deep direct upward jump `M>=4N` necessarily has resolved-scale parent contact.
 
-Integrating the actual radial crossings against \(dR/R\) gives clipped logarithmic displacement. Equiradial transfer has zero radial action. Therefore an interaction does **not** automatically advance one dyadic shell and transfer count is not a physical scale clock.
+These are support theorems about actual Fourier interactions; they do not create another work law or shell-dependent causal unit.  The common unit remains the parent-scale `N dW`.
 
----
+## 6. Resolved contact and interface work — EXACT
 
-## 4. Hard-tail dissipation has only physical supply
-
-At parent-tail scale \(N\), the current exact hard-tail entrance is
+Let `V=S_{M/4}u`, `h=u-V`, and let `q` be a smooth low-parent cutoff.  Decompose the **signed** work first:
 
 \[
-N E_{>N}(t_0)+N\int\Phi_\uparrow
-\ge 2\nu D_{\rm tail}.
+dW=q\,dW+(1-q)dW=dW_{mixed}+dW_{HH}.
 \]
 
-Thus tail dissipation is owned by only two physical possibilities:
-
-1. inherited high-frequency stock already present at the earlier slice; or
-2. actual low→high boundary supply.
-
-The common causal unit remains \(N\,dW\). A recipient shell \(M\) records geometry; it does not silently change the work currency to \(M\,dW\).
-
-### True-upward support split
-
-Disintegrate true upward atoms by recipient shell \(M\).
-
-**Pure UV HH.** If both interaction parents are \(>M/4\), then necessarily
+Only then restrict the already-canonical positive cause:
 
 \[
-M=2N,
+d\mu_{mixed}=q\,dW^+,
+\qquad d\mu_{HH}=(1-q)dW^+.
 \]
 
-and both parents lie in \((M/4,3M/2]\). Every admissible resolved cutoff therefore vanishes on both parents and \(h=u\) exactly: there is no mixed/interface repartition. All pure mass already sits on the unique first shell, hence the output-scale concentration factor is one. The signed-edge total-variation bridge followed by the clean Young estimate gives the native shell-natural-time lower bound
+Contact is therefore not synonymous with interface work: a contact event may have `q=0` and be entirely HH.
+
+For the mixed resolved operator, split signed-first into skew and symmetric parts `I=K+S`.  Then
 
 \[
-\frac{\sqrt{\mu_{\rm win}}}{p_{\rm time}}
-\ge
-\frac{\nu D_{\rm tail}}
-{9c\sqrt\pi\,N E_{\rm global}}.
+[I]_+\le[K]_++[S]_+.
 \]
 
-**Resolved contact.** If one parent is \(\le M/4\), exactly one parent is resolved and the other lies in \((M/4,5M/4]\). Low-low cannot feed the recipient shell.
+The skew part is same-event conservative role-to-role flux; the symmetric part is existing strain/deformation.  No proportional `K/S` owner matching is permitted.
 
-Choose a real smooth cutoff \(0\le S_M\le1\), supported in \(B_{M/4}\), and let \(q=S_M(p_{\rm low})\). Split the **signed** physical edge before any new Hahn operation:
+## 7. Smooth carrier energy and observer quotient — EXACT
+
+For a self-adjoint scalar Fourier analysis operator `A(t,D)`, put `eta=A^2`.  Direct differentiation gives
 
 \[
-dW=q\,dW+(1-q)dW
-=dW_{\rm mixed}+dW_{HH}.
+\boxed{\frac d{dt}\|Au\|_2^2+2\nu\|\nabla Au\|_2^2
+=\langle u,\dot\eta u\rangle-2\operatorname{Re}\langle\eta u,\mathcal B(u,u)\rangle.}
 \]
 
-Then restrict the already canonical cause:
+With `V=S_{N/4}u`, `h=u-V`, the nonlinear term repartitions exactly into low-low, HH and the resolved linearized/interface operator.  On the selected outer support the low-low term vanishes by the support moat.
+
+If the common analysis roles are transported by a certified skew generator `G`, require
 
 \[
-d\mu_{\rm mixed}=q\,d\mu,\qquad
- d\mu_{HH}=(1-q)d\mu.
+\dot A+[G,A]=0.
 \]
 
-No mass is cloned and no new causal Hahn law appears. At exact boundary contact \(|p_{\rm low}|=M/4\), smooth support forces \(q=0\); contact can be entirely HH and is not synonymous with interface work.
-
-For the resolved mixed operator,
+That observer motion contributes zero channel-energy source.  After quotienting it, write the actual resolved skew operator as `K=G+K_phys`.  For synthesis roles `eta_a=A_a^2`,
 
 \[
-I=K+S,
-\qquad
-\mu_{\rm mixed}\le I^+\le K^++S^+.
+T^{phys}_{ab}=-2\operatorname{Re}\langle\eta_a u,K_{phys}\eta_bu\rangle,
+\qquad T^{phys}_{ab}=-T^{phys}_{ba}.
 \]
 
-Here fixed-event \(K\) is conservative same-time redistribution with zero recursive generation depth; \(S\) is symmetric strain/deformation and remains a genuine event-facing mechanism. No proportional K/S deposit matching is introduced.
+Thus smooth `K_phys` relink is a subset-boundary flux and has zero recursive generation depth.  The symmetric part remains actual strain/deformation.
 
-For the HH complement, both physical parents are \(\le5M/4\), the canonical edge-positive mass first obeys
+An arbitrary time-dependent partition can move analysis-channel energy while `u` is fixed.  Therefore unbound role motion is observer motion, not a Navier–Stokes source.
 
-\[
-d\mu_{HH}\le d|W_{HH}|\le dA_{HH},
-\]
+## 8. Critical shell and physical first stops — EXACT-CONDITIONAL
 
-and the sliding natural-window bound is
-
-\[
-\frac{\sqrt{\mu_{\rm win}}}{p_{\rm scale}p_{\rm time}}
-\ge
-\frac{\nu D_{\rm tail}}
-{15c\sqrt\pi\,N E_{\rm global}}.
-\]
-
-These two support regimes are physical alternatives, not two observer bins of the same artificial scale clock.
-
----
-
-## 5. Critical shell / coherent service is the supplier-independent renewal hub
-
-A crucial late simplification is that renewal does not need to remember **why** a physical hard shell became critical.  Once an actual shell satisfies
+Given an actual critical hard shell
 
 \[
 M\|P_Mu(t)\|_2^2\ge\mu_0>0,
 \]
 
-set \(A=3M/4\) and choose the smooth role \(Q_A\) equal to one on the entire shell.  With the normalized hard-shell state as terminal probe, the registered coefficient satisfies
+set `A=3M/4` and choose a smooth carrier `Q_A=1` on the shell.  With the normalized shell state as terminal probe,
 
 \[
 A|z(t)|^2\ge\frac34\mu_0.
 \]
 
-Before renewed service exists, inspect only native first-stop observables: renewed strain, a role-interface coefficient obstruction, and an HH-regeneration coefficient obstruction.  Interface/HH coefficient hits are only **locators**; they must reenter the physical energy/work gate before inheritance, interface work, or HH generation receives an owner.
+This theorem is supplier-independent: it does not know whether the shell was exposed by dissipation, fresh service, pressure structure, inherited stock or nonlinear supply.  It also does not invent supplier-relative scale progress.
 
-If no native hit occurs on the full \(A\)-natural corridor, coefficient persistence gives a positive carrier lower throughout the corridor and therefore an actual bounded increment/heat-service lower at the same physical scale.  Material OO/ON/NN ownership is read **only after this positive service law exists**.
+Before assigning materiality, inspect only three backward monitors: renewed strain action, a role-interface coefficient obstruction, and an HH-regeneration coefficient obstruction.  Coefficient hits are **locators**, not work.  They must reenter the exact physical energy/work gate before inheritance, strain/interface work or HH generation gets an owner.
 
-Thus the generic hub is
+If no hit occurs over the full natural corridor, the same smooth carrier persists with a quantitative lower and yields actual bounded own-scale increment/heat service.  That service lives on the corridor already traversed; reading it adds zero recursion depth.  Material OO/ON/NN is read only afterward from the positive service law.
 
-```text
-actual critical hard shell
-   -> named physical first stop
-   -> or t=0
-   -> or completed full-natural corridor carrying own-scale service
-```
+### First-stop semantics — EXACT
 
-The theorem is deliberately supplier-independent.  Certified resolved dissipation, dominant fresh service, inherited hard-tail stock, pressure/source routes, and high-tail regeneration may all supply critical shells, but each supplier must retain its own native scale/work geometry.  The generic shell theorem does not invent monotone scale progress.
+A physical first stop is the first physical time at which a named cause is met.  Exact simultaneous causes remain one joint cause set and one physical charge.  No lexicographic winner, fractional synthetic time or magnitude-based tie split is allowed.
 
-A critical shell here is a **physical state supplied to the renewal theorem**, not an additional causal currency.  If source work, dissipation, or nonlinear transfer certified the shell, that upstream native owner is not cloned when the shell becomes readable.  A later genuine first stop may create a new event; the shell registration itself does not.
+Natural horizons and checkpoints are analysis segmentation, not events.  They do not reset cumulative monitors, terminal coefficients or carriers.  Interior checkpoint Zeno either meets an already-existing physical face or continues the same carrier; `t=0` is absorbing.
 
-For source/SGS and pressure routes this matters especially: an aggregate pressure reservoir, packet occupancy, or source label is not itself a renewal currency.  A source must expose an actual unit-matched PDE route: native source/work or dissipation ownership together with any certified service/shell consequence it physically supplies.  The late objective-pressure route is pair-native rather than a return to coarse pressure-mass accounting.
+## 9. Inherited stock and material provenance — EXACT-CONDITIONAL / EXACT
 
-### High coherent service reaches physical tail structure without a unit fiction
+For one event-anchored carrier/dual, suppose there is no named first stop, the earlier endpoint is a certified non-event slice, `E0>=E1/5`, and classified residual positive physical work is strictly below its own `E1/5` owner face.  Then the inherited component is between-time physical stock with zero generation depth.  It performs no later Hahn split and no temporal deposit matching.
 
-A smooth LP high-frequency service exit is first related to the physical hard tail; the smooth LP observable is **not** silently identified with the hard orthogonal projector.  For the hard tail \(w=P_{>N}u\), the exact energy identity yields the physical alternative
+A crucial historical correction is built into the hypothesis: large `E0` may coexist with simultaneous residual physical work.  The stock component must not erase that work owner.
+
+Material ownership is downstream provenance.  Holding a positive service law fixed while changing only intrinsic old/new membership can change OO/ON/NN masses without changing total service.  Therefore material rereading creates neither work nor service.
+
+For a selected-family update,
 
 \[
-N\|w(s)\|_2^2 + N W_>^+
-\ge 2\nu D_{\rm tail}.
+R_{switch}=\sum_{C\in S_{old}\triangle S_{new}}E_C
 \]
 
-The later radial-crossing refinement sharpens the regeneration side: the UV feeder is actual low→high boundary supply \(\Phi_\uparrow\), not gross positive high→high circulation.  The inherited branch exposes a real critical high shell; the regeneration branch is resolved into actual HH/contact work in the common \(N\,dW\) unit and then enters the pure-UV or resolved-contact laws of Section 4.
+can be positive while the physical state and all cell increments are unchanged.  It is a boundary/bookkeeping quantity, not `dW`, stock, coefficient impulse or generation depth.
 
-So the live high-frequency architecture is
+Raw names such as `material_relink` or `new_coherent_ancestry` are pre-owner locators.  They require independent native PDE evidence before recursion.
 
-```text
-high coherent service
-   -> physical hard-tail dissipation/energy
-   -> inherited critical shell OR true low→high regeneration
-   -> canonical HH/contact ownership in N dW
-   -> natural-time hard-shell reentry / native strain-service route
-```
+## 10. Source/SGS and pressure: exact derived physics, not automatic energy currencies
 
-No high-frequency normalized enstrophy, shell mass, or service threshold is promoted to an additive global reset.
-
----
-
-## 6. Physical first stops: one event, unsplit causes
-
-At a physical first time \(\tau_*\), keep the exact simultaneous cause set
+For a smooth spectral filter, the standard SGS transfer density is
 
 \[
-J=\{r:\tau_r=\tau_*\}
+\Pi_t^{SGS}(x)=-\nabla\bar u:\tau_t(u,u).
 \]
 
-as a joint physical object. Do not invent Radon–Nikodym fractions between source work, strain, dissipation, service, or other observables merely to force them into a common unit.
-
-The event carries one physical charge. The complete exact tie set is provenance. Terminal implications may classify the whole joint state, but there is no lexicographic “true cause” and no cloned mass.
-
-The initial surface \(t=0\) is absorbing.
-
-Observer natural-horizon checkpoints are not events. Inserting or deleting them cannot reset cumulative first-hit monitors, coefficient impulses, or the physical carrier. An interior accumulation of checkpoint cuts either reaches an already-existing closed stop face or remains continuation of the same carrier. Hence checkpoint Zeno is segmentation, not a second physical lineage.
-
----
-
-## 7. Two pure recurrent tails are already finite
-
-These are important because the current Mixed problem begins **after** they have been removed.
-
-### 7.1 Consecutive high-strain epoch
-
-Every genuine high-strain first contact at scale \(N_j\) pays actual normalized resolved dissipation
+On the periodic/global divergence-free setting,
 
 \[
-D_j\ge D_*.
+\int\Pi_t^{SGS}(x)dx
+=-\frac d{dt_{phys}}\frac12\|\bar u\|_2^2\Big|_{NL}
+=\Pi^\delta(t),
 \]
 
-The certified resolved ancestor lies at \(M_j\le N_j/4\), and the renewed physical carrier has
+so the space-average SGS transfer is exactly the graded spectral nonlinear flux.  It is not a second transfer currency beside `dW`.
+
+Changing the resolved cutoff repartitions the same full nonlinear law.  For a fixed smooth outer role, the reconstructed nonlinear forcing is `-Q B(u,u)` independent of which admissible resolved field was used to split it.
+
+Differentiated SGS and pressure-Hessian terms are nevertheless real sources in **derived resolved-strain/gradient equations**.  They may control geometry, locate critical shells or break a recurrence regime.  “Source of a derived observable” must not be silently identified with “independent generator of global kinetic energy.”  This distinction is central to the current Mixed audit.
+
+## 11. Two pure recurrence tails are finite — EXACT
+
+### Consecutive high strain
+
+A genuine high-strain event at scale `N_j` pays a positive physical dissipation amount.  The certified resolved ancestor satisfies `M_j<=N_j/4`, and renewed scale is `N_{j+1}=3M_j/4`; hence
 
 \[
-N_{j+1}=\frac34M_j,
-\qquad
 \frac{N_{j+1}}{N_j}\le\frac3{16}.
 \]
 
-Let the physical global gradient reservoir on the root history be
+Using the global gradient reservoir `G_*=int||∇u||_2^2`, the episode costs telescope with the geometric scale descent, giving a finite total bound.  Finiteness does **not** come from declaring a scale-critical normalized dissipation quantity to be a globally finite reset budget.
+
+### Consecutive signed-good generated HH
+
+A raw HH coefficient hit is only a locator; it must first pass the physical energy gate selecting actual positive HH generation.  On the signed-good generated route the physical parent/child scales obey
 
 \[
-G_*=
-\int_0^{t_*}\|\nabla u(t)\|_2^2dt.
+\frac35<\frac{N_{parent}}{N_{child}}<\frac58.
 \]
 
-Without assuming disjoint event intervals,
+Backward natural lifetimes therefore grow by a factor greater than `64/25`.  The required registration-surface backshift accumulates geometrically and reaches the absorbing initial surface `t=0` in finite depth.  This closes only the signed-good generated pure tail, not generic HH.
 
-\[
-D_j\le N_jG_*.
-\]
+## 12. Core anti-theorems and permanent guards
 
-Hence \(N_j\ge D_*/G_*\), while the physical scales descend geometrically. Also
+Do not use raw Duhamel mass as causal probability.  Do not re-Hahn after coarse-graining.  Do not use interaction cells as wallets.  Do not call high→high circulation fresh tail supply.  Do not infer a dyadic step from positive work.  Do not promote checkpoints to events or reset cumulative monitors.  Do not treat inherited stock as generation.  Do not treat material rereading or `R_switch` as source.  Do not treat smooth skew relink as generation.  Do not treat OO/ON/NN as generators of their service law.  Do not split simultaneous causes by a synthetic clock.  Do not turn normalized critical quantities into finite additive reset budgets.  Do not exchange entropy coordinates from different underlying measures as if they were one currency.
 
-\[
-\sum_jD_j
-\le G_*\sum_jN_j
-\le\frac{16}{13}N_0G_*.
-\]
+For every proposed frontier lemma ask: **what exact true Navier–Stokes structure makes this true that a generic averaged/bilinear model need not preserve?**  If the answer is only scaling, cancellation or a generic norm inequality, the physical mechanism has probably not yet been isolated.
 
-Therefore a maximal consecutive high-strain epoch is finite. This is not a scale-independent \(D_V\) reset; finiteness comes from the **PDE-supplied descending lineage**.
+## 13. What is theorem, what is not
 
-### 7.2 Consecutive signed-good generated-HH epoch
+The identities and structural laws above are exact or exact-conditional as labelled.  Randomized triads, Galerkin/FFT probes, CI runs and stress tests in the source repository are evidence against implementation mistakes, not mathematical substitutes for the continuum proofs.
 
-A raw HH coefficient hit is only a locator. The branch enters this theorem only after actual energy reentry selects positive physical HH child work and the hard parent satisfies
-
-\[
-\frac35<\frac{N_{\rm parent}}{N_{\rm child}}<\frac58.
-\]
-
-Along a consecutive signed-good generated lineage, parent natural lifetimes grow backward by more than \(64/25\). The required common physical registration surfaces satisfy
-
-\[
-s_j-s_{j+1}\ge \frac{1792}{4875}T_j.
-\]
-
-Their cumulative backward displacement therefore reaches the absorbing initial surface \(t=0\) after finite depth at finite physical time.
-
-The registration surfaces are not extra events and no lower bound is imposed on the separation of actual HH event times.
-
-This closes only the **signed-good generated** pure tail. Generic/non-signed-good HH and nonlocal high-tail recurrence remain live.
-
----
-
-## 8. Persistent inherited energy is stock, not generation
-
-On one already event-anchored smooth carrier, suppose there is no named first stop, the earlier endpoint is a certified non-event slice, and
-
-\[
-E_0\ge E_1/5
-\]
-
-while classified residual positive physical work remains strictly below its own \(E_1/5\) owner face.
-
-Then the inherited-energy component is persistent between-time physical carrier stock with **zero generation depth**.
-
-This quotient does not erase:
-
-- simultaneous residual physical-work owners;
-- material sidecars;
-- unresolved role/probe transitions, which fail closed until their actual PDE mechanism is resolved;
-- genuine earlier-endpoint events.
-
-The stock remains one physical charge. It is never copied once per provenance label.
-
----
-
-## 9. Materiality is not an independent source currency
-
-The final endgame refinement separates three things that must never again be identified:
-
-1. intrinsic material old/new membership and selected-family bookkeeping;
-2. smooth synthesis roles \(\eta_a=A_a^2\) used by a separately certified interface theorem;
-3. native physical causal suppliers: source/SGS work, strain/dissipation, or actual nonlinear work.  Physical shell/service quantities are downstream state/witness objects unless a separate PDE theorem identifies a genuinely new native source.  A role/probe transition is observation/registration until actual PDE physics resolves it.
-
-### 9.1 Intrinsic rereading
-
-If the positive physical service law is held fixed and only old/new material membership is reread, OO/ON/NN masses may change while the total service does not. Therefore material ownership is downstream provenance of an existing positive law, not its generator.
-
-### 9.2 Selected-family boundary
-
-A selected-family change carries the exact Moyal boundary quantity
-
-\[
-R_{\rm switch}
-=
-\sum_{C\in S_{\rm old}\triangle S_{\rm new}}E_C.
-\]
-
-It can be positive even in an exact same-state observation with
-
-\[
-\Delta E_C=0\quad\forall C,
-\qquad
-P_+=P_-=0.
-\]
-
-Therefore \(R_{\rm switch}\) itself has zero generation depth. It is not \(dW\), inherited stock, a second coefficient impulse, or smooth \(K_{\rm phys}\).
-
-### 9.3 Smooth physical relink
-
-For an independently certified smooth role interface,
-
-\[
-T_{ab}=-2\operatorname{Re}\langle\eta_a u,
-K_{\rm phys}\eta_bu\rangle,
-\qquad T_{ab}=-T_{ba}.
-\]
-
-For any certified smooth-role subset \(O\), internal pair traffic cancels and
-
-\[
-\sum_{a\in O}R_a
-=
-\sum_{a\in O,\,b\notin O}T_{ab}.
-\]
-
-Thus the \(K_{\rm phys}\) component is same-event conservative role flux with zero generation depth. This theorem does **not** identify an arbitrary material-address crossing with a smooth-role boundary.
-
-### 9.4 Fail-closed owner admission
-
-Raw labels such as `material_relink` or `new_coherent_ancestry` are pre-owner locators. They do not enter canonical recursion by name. They need an independently certified native PDE mechanism: for example source/SGS, strain/dissipation, or actual nonlinear work.  A physical shell/service witness may locate the relevant state but cannot self-authorize as the missing owner.  A role/probe change cannot be used as an escape alias: it too must resolve to native PDE physics.
-
-This is the current material-service causal quotient.
-
----
-
-## 10. Role/probe transitions are not an independent generation currency
-
-For one smooth analysis role `A_a`, let `eta_a=A_a^2` and use the direct physical carrier energy `||A_a u||_2^2`.  With the actual resolved transporter `L_V=K+S`, the native moving-interface work is
-
-\[
-J_a=\langle u,\partial_t\eta_a u\rangle-2\operatorname{Re}\langle\eta_a u,\mathcal L_Vu\rangle.
-\]
-
-The current canonical roles are transported by one certified common affine/Kelvin skew generator `G`, so
-
-\[
-\partial_t\eta_a+[G,\eta_a]=0,
-\qquad K=G+K_{\rm phys}.
-\]
-
-The common-transport contribution therefore cancels exactly and
-
-\[
-\boxed{
-J_a=-2\operatorname{Re}\langle\eta_a u,K_{\rm phys}u\rangle
-    -2\operatorname{Re}\langle\eta_a u,Su\rangle.
-}
-\]
-
-There is no third energy-changing term whose physical type is merely “role change”.  The `K_phys` term is the already-certified antisymmetric same-event role flux and has zero generation depth; the `S` term is existing strain/deformation.
-
-A probe `psi` is a readout of the same carrier through `z=<Q u,psi>`.  Holding `Q u` fixed while changing `psi` can change `z` arbitrarily without changing carrier energy, nonlinear work, dissipation, or shell balance.  Probe identity or coefficient magnitude therefore cannot own a physical event.  An unregistered mid-corridor probe/role replacement is not declared transparent: it invalidates the old certificate and fails closed until the actual PDE mechanism is identified.
-
-At an actual hard nonlinear event, the signed physical work and hard Fourier/helical role already exist before the smooth envelope/probe is registered.  At a critical-shell renewal, the physical shell likewise exists before `Q_A` and its normalized shell probe are chosen.  These registrations read an existing event/state and create no second charge or Hahn law.
-
-Hence, in the current master-facing architecture, raw `role_change`, `probe_change`, and `role_probe_change` labels are pre-owner locators rather than a fifth native causal currency.  The companion witness-charge theorem below further separates physical shell/service state from causal ownership.
-
----
-
-## 11. Shell/service state is physical but is not a fourth causal currency
-
-The current core distinguishes **what exists physically** from **what owns a new causal charge**.  A critical shell
-
-\[
-\mu_M(t)=M\|P_Mu(t)\|_2^2
-\]
-
-and a positive coherent/increment service law are real Navier--Stokes observables.  They are not dismissed as representation artifacts.  But neither one, by its value alone, proves that generation just occurred.  Inherited shell stock is the simplest exact counterexample.
-
-Every current master-facing supplier chain respects the following rule:
-
-```text
-already-owned source/work/dissipation law
-        -> physical service/state consequence
-        -> physical hard-shell/tail state
-        -> next actual PDE first stop or continuation
-```
-
-The consequence arrows may change units and may expose a state at a different physical time.  They do not clone the upstream causal charge.  Objective SGS/source work may force coherent service; fresh service may force a hard shell; pressure-pair or resolved-dissipation laws may force a shell directly.  The shell then seeds the generic renewal theorem with the supplier's physical provenance intact.
-
-A completed no-hit natural corridor carries its own positive service law on the interval already traversed, so reading that service adds zero recursive depth.  At high frequency, service must pass through the actual hard-tail identity
-
-\[
-N E_{>N}(s)+N\int\Phi_\uparrow\ge2\nu D_{\rm tail}.
-\]
-
-The resulting physics is inherited stock (zero generation depth for the inherited component) or true low-to-high boundary supply, which is actual nonlinear work.  High-to-high circulation remains internal.
-
-Therefore the current causal-owner vocabulary is
-
-\[
-\boxed{
-\{\text{source/SGS},\ \text{strain/dissipation},\ \text{actual nonlinear work}\}.
-}
-\]
-
-Shell/service objects remain in the state, with their real time, frequency, mass/service law and provenance.  A shell/service observation with no certified upstream native owner fails closed; the generic word `service` is not allowed to mint a cause.
-
----
-
-## 12. Minimal theorem basis carried forward
-
-The current core depends conceptually on the following old-Wang results; the new repository keeps their conclusions rather than their historical scaffolding:
-
-- physical energy causal bridge and high-frequency dissipation reentry;
-- helical physical edge registration and signed continuum edge measure;
-- canonical positive edge-work routing;
-- cyclic helical triad donor kernel;
-- physical helical-mode-set energy continuity;
-- radial spectral crossing layer cake;
-- hard-tail true upward supply;
-- resolved-contact native binding;
-- pure-UV true-upward natural-window binding;
-- joint physical first-stop / single-charge semantics;
-- objective source/service witness routing and fresh-service scale reentry;
-- full-natural service-corridor witness quotient;
-- same-carrier checkpoint segmentation quotient;
-- smooth conservative relink quotient;
-- high-strain descending-epoch telescope;
-- signed-good generated-HH physical-time telescope;
-- same-carrier inherited-energy relay;
-- material-sidecar stock decomposition and central routing;
-- native material-service causal quotient;
-- master no-escape assembly.
-
-Anything older than this basis must justify itself by being a real dependency of one of these statements or by preventing a known false physical inference. Historical importance alone is not enough.
+Nothing here closes generic mixed recurrence, generic/non-signed-good HH, the degenerate full-signed Young/Christ seam, the `old_pool_not_yet_eroded` seam, or the initial/singular-time interfaces.  Those belong to `MIXED_FRONTIER.md`.

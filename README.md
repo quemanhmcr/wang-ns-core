@@ -1,84 +1,109 @@
 # Wang–NS Physical Core
 
-A distilled research kernel for the current Wang–Navier–Stokes no-escape programme.
+A three-document distillation of the current Wang–Navier–Stokes no-escape programme.
 
-This repository is **not** a smaller archive of [`wang-ns-triad-diamond`](https://github.com/quemanhmcr/wang-ns-triad-diamond). It is a backward slice from the current proof frontier: retain only the physical objects, structural theorems, anti-theorems, and recurrence laws still needed to stand at the mixed genuine-owner frontier.
+Source programme: [`quemanhmcr/wang-ns-triad-diamond`](https://github.com/quemanhmcr/wang-ns-triad-diamond), read only from `main`.  The source baseline used for this distillation is `main@63178b0e7f9fabdfd8c344dab938a3d639639df5` (2026-08-13), whose latest upstream theorem state is the native material-service causal quotient.  This distill also records later **deductions obtained by composing already-certified upstream identities**; each such deduction is labelled explicitly.
 
-Baseline distilled from the old repository at
+There is **no claim of a proof of 3D Navier–Stokes global regularity**.  The remaining programme-level problems include mixed genuine-physics recurrence, a local degenerate HH seam, and the initial/singular-time interfaces.
 
-`main@63178b0e7f9fabdfd8c344dab938a3d639639df5`
+## Repository invariant
 
-whose latest theorem state is the native material-service causal quotient
+This repository intentionally contains exactly **three tracked documents**:
 
-`d6ee03d5b9b7a82d11a2259c5dc0b8ae2ac945ab`.
+1. `README.md` — map, status legend, historical purification, reading order.
+2. `PHYSICAL_CORE.md` — the smallest current set of physical objects, exact identities, theorems and anti-theorems.
+3. `MIXED_FRONTIER.md` — what has been quotiented away, what remains open, and what a valid next theorem is allowed to use.
 
-There is **no claim here of a proof of 3D Navier–Stokes global regularity**. The current programme has closed many artificial or pure recurrence routes, but mixed genuine-native-owner recurrence, a local degenerate HH seam, and the initial/singular-time interfaces remain open.
+No theorem implementation, regression code, result archive, PR history, packet scaffolding or CI transcript belongs here.  Those live in the source repository.  If a future edit makes these documents substantially longer without changing the frontier, compress before merging.
 
-## Method
+Target line budgets: `README <= 140`, `PHYSICAL_CORE <= 380`, `MIXED_FRONTIER <= 320`; total `<= 840` lines.
 
-The project follows the physical PDE rather than forcing the PDE into an analyst-chosen master currency.
+## How to read the three files
 
-1. Start from actual Navier–Stokes quantities and preserve their type.
-2. Distinguish physical events from representation changes.
-3. Quotient observer freedom before charging causality.
-4. Never manufacture scale progress, event depth, source, or work from bookkeeping.
-5. Let each genuine recurrence be controlled only by the native physical law it actually supplies.
+Read this file once, then `PHYSICAL_CORE.md` from top to bottom, then `MIXED_FRONTIER.md`.  A physicist should not need the source repository to understand the current theorem architecture; the source repository is needed only to inspect proofs, exact constants, certification evidence or historical derivations.
 
-The guiding question is not “what can we bound globally?” but:
+The key discipline is:
 
-> What did Navier–Stokes physically do, who owns that action, and what exact law can that owner not evade?
+> **Observer may resolve Navier–Stokes physics, but may not manufacture Navier–Stokes physics.**
 
-## Three living documents
+A projector may read a shell; it does not create the shell.  A cutoff may repartition nonlinear work; it does not create another work law.  A stopping rule may locate a first hit; it does not create the hit.  A normalization may compare scales; it does not create a finite resource.  Estimates quantify an already-identified physical object; they do not define its causal ontology.
 
-- **`README.md`** — research contract, status, and map.
-- **`PHYSICAL_CORE.md`** — the minimal physical theorem basis needed by the current architecture.
-- **`MIXED_FRONTIER.md`** — what has been quotiented/closed, what is still genuinely recursive, and the exact next proof problem.
+## Status legend
 
-Historical proof scaffolding, CI ledgers, result archives, theorem-by-theorem chronology, and superseded representations are deliberately absent. Their irreversible lessons are retained as invariants or anti-theorems in the two core documents.
+- **EXACT** — analytic identity/theorem in the physical spine; CI/numerics are only certification evidence.
+- **EXACT-CONDITIONAL** — exact implication once a stated physical entrance hypothesis is supplied; not a universal entrance theorem.
+- **DISTILLED EXACT DEDUCTION** — new statement here obtained directly by composing upstream exact theorems, without a new estimate.
+- **EVIDENCE** — finite-grid, Galerkin, FFT, randomized or CI checks; never a continuum proof.
+- **OPEN / HYPOTHESIS** — research frontier; must not be quoted as theorem.
 
-## Executable tripwires
-
-`core_tripwires.py` and `test_core_tripwires.py` are intentionally tiny. They are **not proofs** and are not numerical substitutes for the PDE theorems. They encode a few semantics that future edits must not accidentally reverse: signed-before-Hahn routing, single recipient charge, stock/work separation, hard-shell stock/inflow supply, material-sidecar non-generation, antisymmetric relink flux, physical-first joint stops, and native-evidence admission.
-
-Run them with no third-party dependency:
-
-```bash
-PYTHONDONTWRITEBYTECODE=1 python -m unittest -q test_core_tripwires.py
-```
-
-The test suite is meant to run continuously while doing research. A slow certification farm would defeat the purpose of this repository.
-
-## Current proof picture
-
-The live physical spine is
+## Current physical picture
 
 ```text
-actual signed NS nonlinear work
-        ↓ Hahn once
-a canonical positive physical cause
-        ↓ same-time donor flow / mode-set continuity
-terminal hard-shell energy: earlier modal stock OR actual nonlinear boundary inflow
-        ↓ physical geometry / donor provenance
-hard tail: inherited stock OR true low→high supply
-        ↓
-pure UV  ───────────────→ first-shell natural-time route
-resolved contact ───────→ K/S or contact-HH route
-        ↓
-physical first-stop / continuation laws
-        ↓
-quotient checkpoints, conservative relink, inherited stock,
-material rereading and selected-family boundaries
-        ↓
-finite pure high-strain epochs
-finite pure signed-good generated-HH epochs
-        ↓
-quotient role/probe labels and shell/service witness-charge duplication
-        ↓
-MIXED SOURCE / STRAIN / NONLINEAR-WORK RECURRENCE  ← current frontier
+full incompressible NS:  u_t + B(u,u) = nu Delta u
+              |
+              v
+actual signed Fourier/helical nonlinear work dW
+              |
+          Hahn once
+              v
+canonical positive recipient work dW+  <--- donor provenance from dW-
+              |
+       mode-set continuity
+              v
+hard-shell/tail energy = earlier modal stock OR actual nonlinear boundary inflow
+              |
+       physical geometry/readout
+              v
+critical shell / hard tail / service / first-stop corridor
+              |
+     quotient observer depth
+              v
+strain/dissipation events <--> actual nonlinear work <--> source/derived-geometry events
+              |
+       mixed frontier remains
 ```
 
-The current quotients remove analysis-role/probe changes and shell/service rereadings as independent causal currencies.  The new hard-shell supply quotient sharpens the ownership question further: once a physical hard shell exists, its terminal kinetic energy is supplied only by earlier modal stock or actual nonlinear boundary inflow; the theorem that exposed the shell may retain scale/geometry provenance but does not become a third energy supplier.
+The square/service/shell layers are real physical observables, but a new observable is not automatically a new causal charge.
 
-The remaining master-facing event families are still provisionally source/SGS, strain/dissipation, and actual nonlinear work because source/strain can be genuine geometry breakers and the historical `old_pool_not_yet_eroded` capacity seam has not yet been physically quotiented.  The stronger reduction to one nonlinear kinetic-energy flow law is an audit hypothesis, not a theorem.
+## How the programme arrived here
 
-The aim of this repository is to make that structure visible immediately, without requiring a reader to reconstruct it from thousands of historical files.
+The historical movement is not “more abstraction”; it is repeated removal of abstractions that nature did not supply.
+
+1. **Extremizer/rigidity stage.**  Young/Christ near-extremizers, Gaussian grains, Hodge/Bellman/entropy, affine geometry and sidebands were used to seek rigidity of dangerous transfer.
+2. **Counterexamples disciplined the language.**  Full Mellin moments, fixed moat schedules, tree-growth counting, absolute-polarization intuition and affine-aspect penalties each failed in concrete models.  Correct inequalities were not enough if they forgot the wrong physical distinction.
+3. **Duhamel causality was rejected.**  A scalar exact countermodel has normalized Duhamel mass `dt` but positive child-energy work `2t dt`; amplitude mass cannot be declared causal probability.
+4. **Signed physical work became primitive.**  The programme reconstructed actual Leray/Fourier/helical work `dW` first and took one Hahn positive part `dW+` only afterward.
+5. **Same-time provenance was separated from between-time stock.**  The cyclic donor kernel routes canonical negative work to positive recipients without cloning charge; modal energy continuity then shows that persistent stock lives on modes, not interaction cells.
+6. **Scale motion became physical boundary crossing.**  Radial layer cake and hard-tail balance distinguish true low→high supply from high→high circulation; equiradial work has zero radial progress.
+7. **Resolved contact and pure UV were split by exact Fourier geometry.**  Signed work is decomposed before positive restriction; contact is not interface work by definition.
+8. **Critical-shell recurrence was cleaned.**  Hard shells are event readers, smooth carriers propagate, coefficient hits are locators, checkpoints do not reset, and full-natural service is a same-corridor witness.
+9. **Representation owners were quotiented.**  Material rereading, selected-family switching, smooth skew relink, role/probe changes and same-carrier inherited stock no longer create generation depth merely by changing description.
+10. **Two pure recurrence tails closed.**  Consecutive high strain is finite by exact scale descent plus the global gradient reservoir; consecutive signed-good generated HH is finite by exact parent-scale geometry plus parabolic backshift to `t=0`.
+11. **The remaining problem became genuinely mixed.**  A hypothetical infinite lineage can switch physical mechanism before either pure telescope applies forever.
+12. **Current distillation sharpens owner vs supplier.**  Shell/service is state/witness, not a fourth charge; exact mode-set continuity further says terminal hard-shell kinetic energy is supplied only by earlier modal stock or actual nonlinear inflow, regardless of which theorem exposed the shell.
+
+The recurring lesson is: **complexity should be removed only after its physical type is known**.
+
+## Current theorem status in one view
+
+**EXACT physical spine:** signed helical edge registration; continuum signed edge measure; canonical positive routing; cyclic donor kernel; mode-set energy continuity; radial crossing; hard-tail true upward supply; resolved-contact binding; pure-UV first-shell route; exact first-stop/tie semantics; checkpoint quotient; conservative relink quotient; inherited-stock relay; material-service quotient; the two pure recurrence telescopes.
+
+**EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical physical shell is supplied; same-carrier inherited-stock relay once its carrier/endpoint/residual-work hypotheses hold; signed-good local HH recurrence geometry once the signed-good generated branch is physically selected.
+
+**DISTILLED EXACT DEDUCTIONS:** current role/probe changes do not form an independent generation currency; current shell/service routes do not mint a second charge; for a fixed hard shell, terminal kinetic energy has only earlier-stock or actual nonlinear-inflow positive supply.
+
+**EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, CI certificates and master traces.
+
+**OPEN:** generic/non-signed-good HH recurrence; nonlocal high-tail continuation; the degenerate full-signed Young/Christ seam; the `old_pool_not_yet_eroded` capacity seam; exact role of derived source/SGS/pressure geometry in mixed switching; the mixed no-escape theorem; the initial-data and hypothetical-singular-time interfaces.
+
+## Upstream proof lookup map
+
+When a proof must be inspected, jump directly to these source-main modules: `physical_energy_causal_bridge.md` (Duhamel vs physical work); `helical_physical_edge_registration.md` + `continuum_helical_edge_measure_registration.md` (signed NS edge law); `cyclic_helical_triad_donor_kernel.md` (same-time donor provenance); `helical_mode_set_energy_continuity.md` (between-time stock); `radial_spectral_crossing_layer_cake.md` + `hard_tail_true_upward_supply.md` (true scale crossing/supply); `resolved_contact_native_binding.md` and the pure-UV natural-window theorem (upward support); `critical_shell_service_reentry.md` + `continuum_master_event_quotient.md` (shell/corridor/event semantics); `same_carrier_inherited_energy_relay.md` (stock); `native_material_service_causal_quotient.md` (material); `high_strain_descending_epoch_telescope.md` and `signed_good_generated_epoch_time_telescope.md` (the two finite pure tails).
+
+The exact filename is more important than historical commit order; certification hashes and numerical referee evidence live inside the source theorem records.
+
+## Non-negotiable audit questions
+
+Before admitting any new quantity, event or edge, ask: What exact NS object is this?  What are its units?  Is it stock, signed work, flux, dissipation, geometry, provenance or representation?  If the observer changes while the physical solution is fixed, does the alleged event change?  Has Hahn already been taken?  Does the step preserve one physical charge?  What exact true-NS identity makes the step valid that an averaged/blow-up surrogate need not retain?  If the answer is only scaling, cancellation or a generic bilinear estimate, it is not yet a frontier closure.
+
+The goal is not to make Navier–Stokes obey a convenient proof language.  The goal is to discover the smallest rigid grammar that Navier–Stokes already obeys.
