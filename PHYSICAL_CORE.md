@@ -310,7 +310,7 @@ RESOLVED_SOURCE -> RECURSE_CRITICAL
 
 is no longer a canonical unresolved destination.  Keep the source event mark, then relay immediately to the certified terminal/shell/tail state.  If source ties with strain or actual work at the same physical time, keep the full joint cause set; the relay must not split or duplicate that event.
 
-This is proof-graph contraction, not physical-event deletion.  Source/pressure/SGS remain available as exact geometry marks on the resulting transition.  They simply do not require a separate source-currency recurrence theorem once their native state handoff is known.
+This is proof-graph contraction, not physical-event deletion.  Source/pressure/SGS remain exact geometry marks.  Their reader scale is not a causal parent scale: modal continuity reroots the exposed shell/tail to earlier stock or actual nonlinear inflow.  In the low-SGS frame `M_j=N2^j`, `j<=0`, the hard candidates are `M_j,2M_j`; the only candidate above `N` is exactly `P_(2N)={N<|k|<=2N}`, hence inherited tail stock or true `Phi_up`, while internal tail inflow is a separately typed hard-work event.  Source labels therefore mint no independent causal scale edge.
 
 ## 11. Pure tails and the first mixed subalphabet — EXACT / DISTILLED EXACT
 

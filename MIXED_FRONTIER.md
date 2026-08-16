@@ -205,20 +205,15 @@ This consequence may change observable and units, so it is not a same-measure id
 
 Exact source/strain/work ties remain joint at the original event time.  No event is deleted from physical chronology.  What disappears is only the free recursive leaf `RECURSE_SOURCE` whose child state was unspecified.
 
-### Source-marked state geometry — DISTILLED EXACT DEDUCTION
+### Source-marked causal-scale reset — CLOSED AS AN INDEPENDENT EDGE
 
-After the source charge has been relayed away, its provenance still carries exact Fourier geometry.  At parent block scale `N`, the current routes expose only:
+Source/pressure/SGS marks remain real derived-geometry events, but their theorem reader scale is not a causal parent scale.  At source block scale `N`:
 
-| source mark | physical state exposed | exact scale fact |
-|---|---|---|
-| local / viscous resolved source | shell in `V=S_(N/4)u` | `M<=N/4` |
-| resolved pressure pair | hard `u` shell inherited from the same resolved pair scale | `M<=N/4` |
-| low/base SGS service | one of the two hard shells covering a low/base LP band | `M<=2N`; **no lower ratio** |
-| high SGS service | orthogonal hard-tail shell | `M>=2N` |
+- local/viscous and resolved-pressure routes expose shells `H<=N/4`; terminal shell energy is earlier `H`-stock or canonical nonlinear inflow.  Bad/nonforward inflow is already terminal; a recurrent good inflow has its unique physical energy donor among the signed-good interaction parents, hence donor frequency `<5H/8`;
+- low/base SGS uses `M_j=N2^j`, `j<=0`, and hard candidates `H in {M_j,2M_j}`.  The **only** candidate with `H>N` is `j=0, H=2N`, namely `P_(2N)={N<|k|<=2N}`.  If that state is inherited it is tail stock, not generation; if freshly supplied across the tail boundary, `Phi_up` has physical donor `<=N`; if supplied by internal tail work, that hard-work event—not the SGS mark—owns the lineage switch;
+- high-SGS tail state is already covered by inherited tail stock or true `Phi_up`, with pure-UV/contact continuation as above.
 
-For a supplied hard shell the generic shell theorem registers the smooth carrier `A=3M/4`.  This gives local corridor geometry but **not a new causal scale step**: for the first two rows `A<=3N/16`; for low SGS only `A<=3N/2`; for high tail `A>=3N/2`.  Equivalently the corresponding `A`-natural lifetime ratios are respectively `>=256/9`, `>=4/9` with no upper bound, and `<=4/9`.
-
-These are state-support facts.  The next physical event need not occur at frequency `A`; only an independently certified event theorem may relate two event scales.  In particular low SGS supplies no directional scale progress, and the historical compact-displacement Onsager ratio may not be imported into the current unbounded-filter source calculus.  On the high-tail row, exact tail continuity further reroots kinetic energy to inherited stock or actual nonlinear boundary work, so the source mark never becomes a third energy owner.
+Thus a source mark may genuinely change derived strain geometry, but it cannot mint a new causal scale edge or a hard-lineage switch by its label.  Any recurrent switch after the mark must be carried by an independently typed stock or actual nonlinear-work law.  Exact source/strain/work ties remain one joint physical event.
 
 ## 7. First genuine Mixed closure: shell-anchored parent-continuing strain / signed-good HH — CLOSED INCLUDING EXACT TIES
 
@@ -308,10 +303,10 @@ Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier s
 
 ## 12. Best next targets
 
-1. **Source-marked breaker coupling.**  Determine how the remaining low-SGS / pressure / strain geometry marks can interrupt a hard-role lineage after modal energy ownership has been fixed.
+1. **Genuine hard-lineage switching.**  Classify when inherited stock or actual nonlinear work can move the ancestry to a different hard role after all source/reader relays are quotiented.
 2. **Degenerate full-signed HH margin.**  Resolve the `mu->0` Young/Christ seam directly; introduce a coherent positive kernel only if the physics truly requires one.
-3. **Broader Mixed theorem.**  Assemble only genuinely certified breaker laws without a synthetic common budget.
+3. **Broader Mixed theorem.**  Assemble only genuinely certified stock/work/strain breaker laws; source marks remain geometry annotations, not currencies.
 
 ## 13. Frontier in one sentence
 
-> **Remove no more physics and add no observer currency: preserve source/pressure/SGS as exact geometry marks on certified state relays, then prove that an infinite interior alternation of genuine strain/dissipation and actual nonlinear-work events cannot use those marked geometry changes to evade every native stock, flux, scale and physical-time law.**
+> **Remove no more physics and add no observer currency: preserve source/pressure/SGS as exact geometry marks but charge every lineage switch to actual stock/work/strain physics, then prove that no infinite interior hard-lineage switching can evade all native stock, flux, scale and physical-time laws.**
