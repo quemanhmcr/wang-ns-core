@@ -328,6 +328,10 @@ A high-strain event at scale `N_j` pays `D_j>=D_*`, exposes `M_j<=N_j/4`, and re
 
 On a supplied parent-continuing generated epoch, actual positive HH work has `3/5<N_p/N_c<5/8` and the exact chain `N_(c,j+1)=N_(p,j)`.  Parent lifetimes then grow by `>64/25` and the certified registration surfaces reach `t=0` in finite depth.  The spacetime law is the original `dW=C_FT(t,e)dt dlambda(e)` with one Hahn; signed-good restriction, unique donor, hard-parent self-probe and common-slice registration introduce no Gaussian causal mark.  The `5/8` control-volume theorem below removes that chain hypothesis from the hard-state energy-predecessor problem.
 
+### Mixed `H/G` reduction — DISTILLED EXACT DEDUCTION
+
+On each carried-root branch, after stock/source/interface/material quotients, the only depth-increasing interior edges are high strain `H` and signed-good work `G`.  Both reduce carried hard-state scale by at least the common factor `5/8` (`H` gives `3/16`).  Hence `#H D_*<=G_* sum_j N_j<= (8/3)N_0G_*`; exact ties retain both contracting branches.  Every infinite interior branch would therefore be eventually pure `G`.  No temporal identity of a work charge is used.
+
 ### `5/8` signed-good boundary-crossing theorem — DISTILLED EXACT DEDUCTION
 
 No temporal chain `next child = previous donor` is permitted.  Refine any supplied finite hard state by the deterministic radial control-volume grid

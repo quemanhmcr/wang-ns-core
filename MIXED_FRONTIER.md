@@ -259,7 +259,9 @@ d\Sigma_P=(t,\pi_{donor})_\#\,d\mathcal M_P.
 
 On each resolved low/high closed triad, `2S_kl=-qT_p`.  With a smooth square-role weight, `S_eta,tri=-alpha_tri T_p`, `0<=alpha_tri<=1`; hence `[S_eta,tri]_+=alpha_tri[-T_p]_+`.  Positive `S` is therefore inherited low-root `dW-`, not a new positive law.  Coarse positive parts are dominated by the pushforward of this same restriction, which the cyclic donor kernel returns at zero depth to canonical `dW+`.  Its recipients are all bad: either nonforward, or their resolved parent is `<1/2` of the child and so violates signed-good `3/5`.  Thus `K` is zero-depth relink and `S` is terminal bad-work provenance; neither is a Mixed recurrence mechanism.
 
-The remaining OPEN problem is the **no-escape theorem for the measure-valued state/corridor forest** after this quotient: compose genuine high-strain state relays with signed-good donor-state reroots, preserve exact source/pressure/SGS geometry marks, and verify the physical-time telescope hypotheses on every surviving branch without counting the zero-depth reroot itself as time.  Endpoint interfaces remain separate.
+### Interior recursive alphabet and Mixed reduction — DISTILLED EXACT DEDUCTION
+On each fixed carried-root predecessor branch, after the accumulated quotients every event-depth-increasing interior continuation is exactly `H` (genuine high strain/`D_V` state relay) or `G` (canonical signed-good boundary work followed by zero-depth donor-state reroot).  Bad work terminates; `K` is zero-depth; `S` reroutes to terminal bad work; source marks retain geometry but any nonterminal source-state composite continues only through a nonexpansive `G`; stock/checkpoints/service/material readings add no depth.
+Thus `A_rec={H,G}` and every recursive branch obeys `N_(j+1)<=5N_j/8` (`H` gives `<=3N_j/16`).  Since each `H` pays `D_j>=D_*` and `D_j<=N_jG_*`, even with overlap `#H D_*<=G_* sum_j N_j<=(8/3)N_0G_*`.  Exact `H/G` ties retain both contracting branches.  Hence arbitrary Mixed alternation on one carried-root branch is closed: any infinite such branch would eventually be **pure `G`**.  The only interior OPEN seam is pure signed-good state/work recurrence under corrected zero-depth donor semantics; endpoints remain separate.
 
 ## 9. Canonical good spacetime inflow adapter — DISTILLED EXACT; YOUNG/CHRIST AUXILIARY
 The native signed edge law is lifted on every compact smooth physical slab `I` before any coarsening:
@@ -309,11 +311,10 @@ Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier s
 
 ## 12. Best next targets
 
-1. **State-forest Mixed no-escape.**  Compose hard-state corridors, zero-depth same-time donor reroots, and genuine high-strain relays; prove every infinite surviving branch satisfies a native telescope or reaches `t=0`.
-2. **Signed-good registration on the state forest.**  Verify that after rerooting, the next generated child is the previous physical donor **state** in the exact sense needed by the parabolic common-surface theorem, without a token identity.
-3. **Geometry attachment.**  Retain source/high-strain/interface marks at their real times; `K/S` is already quotiented to zero-depth/terminal work, so no hidden interface reset may reappear.
-4. **Endpoint/auxiliary work.**  Keep initial/singular-time interfaces separate; Young/Christ stays auxiliary unless independently needed.
+1. **Pure-`G` state/work recurrence.**  Decide whether fixed-mode inflow corridors plus zero-depth donor reroot give a true physical-time/initial-boundary telescope, or identify the missing NS law; do not reuse the old token-based parent chain.
+2. **Generated-vs-inherited gate.**  Separate good work that actually has to fund the carried hard state from same-time good circulation superposed on inherited stock.
+3. **Endpoint/auxiliary work.**  Keep initial/singular-time interfaces separate; coefficient/Young/entropy machinery remains auxiliary unless a native law proves it necessary.
 
 ## 13. Frontier in one sentence
 
-> **Fixed-mode stock corridors and same-time donor-state rerooting are now exact and measure-valued.  The remaining interior problem is branch geometry: prove that every surviving state forest is forced into the native high-strain or signed-good physical-time telescopes without ever inventing a token.**
+> **The recursive traffic alphabet is now only `H/G`, and `H` can occur only finitely often.  The sole interior road still needing a true NS no-escape law is pure signed-good work after same-time donor reroot—without resurrecting an energy token.**

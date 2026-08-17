@@ -92,11 +92,11 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical shell is supplied; same-carrier inherited-stock relay under its endpoint/residual-work hypotheses; the older signed-good generated-HH time telescope on a supplied parent-continuing chain.
 
-**DISTILLED EXACT DEDUCTIONS:** role/probe, shell/service and optional coherent-analysis coordinates mint no causal charge; hard-state last-entry strengthens to the physical inflow corridor `E_P(s)>=E_P(t)-Phi_in,P[s,t]`; the `5/8` grid gives exact signed-good boundary geometry; the spacetime cyclic kernel reroots actual inflow to occupied simultaneous donor states at zero depth; symmetric interface strain satisfies `S_eta,tri=-alpha T_low`, `0<=alpha<=1`, so `S+` reroutes to terminal canonical bad work; and every nonterminal source/pressure/SGS state-work composite is scale-nonexpansive, `N_next<=N_source`.
+**DISTILLED EXACT DEDUCTIONS:** role/probe, shell/service and optional coherent-analysis coordinates mint no causal charge; hard-state last-entry strengthens to the physical inflow corridor `E_P(s)>=E_P(t)-Phi_in,P[s,t]`; the `5/8` grid gives exact signed-good boundary geometry; the spacetime cyclic kernel reroots actual inflow to occupied simultaneous donor states at zero depth; symmetric interface strain satisfies `S_eta,tri=-alpha T_low`, `0<=alpha<=1`, so `S+` reroutes to terminal canonical bad work; every nonterminal source/pressure/SGS state-work composite is scale-nonexpansive; hence the recursive alphabet reduces exactly to `H/G`, with only finitely many `H`.
 
 **EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, CI certificates and master traces.
 
-**OPEN:** Mixed no-escape of the resulting measure-valued state/corridor forest after the new `K/S` quotient: `K` is zero-depth relink and positive `S` is an inherited low-root `dW-` restriction whose recipients are terminal canonical bad work.  The remaining interior task is high-strain / signed-good state-forest assembly with source geometry marks; endpoint interfaces stay separate.
+**OPEN:** pure signed-good (`G`) state/work recurrence under corrected zero-depth donor semantics, then initial-data/hypothetical-singular-time interfaces.  The carried-root Mixed alphabet is closed: every depth-increasing edge is `H` or `G`, both scale-contract, so high strain occurs only finitely often and any infinite carried-root branch would eventually be pure `G`; counting separate source-exposed roots is not claimed.
 
 ## Upstream proof lookup map
 
