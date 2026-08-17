@@ -104,7 +104,9 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **DISTILLED EXACT FIRST-CONTACT LAW:** at `M E_M=mu_*`, differential Kirchhoff gives a fixed inflow-rate floor.  If `G` owns it, sharp whole-band work forces a lower interaction shell `R<=5M/8` with `R E_R>=2mu_*`, so finite state descent reaches initial stock or a `B`-rate alternative; no donor genealogy is used.
 
-**OPEN:** classify the remaining bad-sidecar outflow/recycling and assemble it with the endpoint shell-birth law; companion-parent hardness is no longer an independent seam.
+**DISTILLED EXACT HELICITY QUOTIENT:** for signed radius `x=s|k|`, triad helicity conservation and the two-flow donor kernel give `V_x<=2V_rho`; helicity-flip sidecar outflow and same-helicity radial outflow therefore share the existing radial-variation ledger.
+
+**OPEN:** the only endpoint seam left is accumulation of critical radial variation / `Hdot^(3/2)` activity along the UV hard-shell contacts; no ancestry, transfer-loss, companion-parent, or helical-recycling currency remains.
 
 ## Upstream proof lookup map
 
