@@ -106,7 +106,9 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **DISTILLED EXACT HELICITY QUOTIENT:** for signed radius `x=s|k|`, triad helicity conservation and the two-flow donor kernel give `V_x<=2V_rho`; helicity-flip sidecar outflow and same-helicity radial outflow therefore share the existing radial-variation ledger.
 
-**OPEN:** the only endpoint seam left is accumulation of critical radial variation / `Hdot^(3/2)` activity along the UV hard-shell contacts; no ancestry, transfer-loss, companion-parent, or helical-recycling currency remains.
+**DISTILLED EXACT SHELL LAYER CAKE:** `||u||_Hdot^(1/2)^2=int_0^infinity [R||P_(R/2,R]u||_2^2] dR/R`.  Therefore a bounded-amplitude shell of bounded log-width cannot blow up merely by translating to UV.
+
+**OPEN:** the final physical alternatives are shell-amplitude concentration or logarithmic multiscale proliferation.  Current scalar ledgers permit an abstract critical shell cascade, so the next theorem must use full simultaneous NS convolution/cross-interaction structure, not ancestry or entropy labels.
 
 ## Upstream proof lookup map
 
