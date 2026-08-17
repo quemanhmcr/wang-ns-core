@@ -100,9 +100,9 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXACT ENDPOINT SHARPENING:** separating bounded low roots from high roots shows finite singularity forces `t_n->T_*`, `M_n->infinity`, `M_nE_(M_n)>c_nu`.  Since the initial `Hdot^(1/2)` tail vanishes, large `M_n` cannot be initial stock: last-entry forces `M_n Phi_in>=4c_nu/5`, hence canonical good or bad inflow carries at least `2c_nu/5`.
 
-**DISTILLED EXACT UV SIDECAR:** every large UV birth carries bad-positive work: directly on a `B`-dominant inflow, or from the signed-good side recipient with `W_side/W_child>3/10`; the endpoint quantum gives `M W_B>=3c_nu/25`.  This is real modal energy, not dissipation.
+**DISTILLED EXACT UV SIDECAR:** every large UV birth carries bad-positive work.  After at most two radial readers, it is actual boundary inflow into a comparable Fourier–helicity set `A` with `N Phi_in,A^B>=3c_nu/100`; Kirchhoff forces `N E_A`, `N D_A`, or `N Phi_out,A` to be at least `c_nu/100`.  No transfer-loss wallet exists.
 
-**OPEN:** rule out infinite recycling/rebirth of this unavoidable bad sidecar and quantify the second-parent critical mass needed by every `G`-dominant birth.
+**OPEN:** classify the remaining bad sidecar outflow and quantify the second interaction-parent critical mass required by every `G`-dominant rebirth.
 
 ## Upstream proof lookup map
 
