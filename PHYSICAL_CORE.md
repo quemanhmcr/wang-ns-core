@@ -138,30 +138,24 @@ Disintegrate `Phi_up` by recipient shell `M`.
 
 These are support theorems about actual Fourier interactions; they do not create another work law or shell-dependent causal unit.  The common unit remains the parent-scale `N dW`.  Downstream, pure UV enters its first-shell natural window; resolved contact enters existing `K/S` or its bounded-parent HH natural window.  Thus internal nonlocal high→high traffic remains real modal redistribution but cannot survive as an independent **fresh tail-supply** recursion edge.
 
-## 6. Resolved contact and interface work — EXACT
+## 6. Resolved contact and symmetric-strain donor quotient — EXACT / DISTILLED EXACT
 
-Let `V=S_{M/4}u`, `h=u-V`, and let `q` be a smooth low-parent cutoff.  Decompose the **signed** work first:
-
+Let `V=S_(M/4)u`, choose the decomposition gauge `0<=q<=1` on the resolved parent, and write signed-first
 \[
-dW=q\,dW+(1-q)dW=dW_{mixed}+dW_{HH}.
+dW_{mixed}=q\,dW,\qquad dW_{HH}=(1-q)dW;
 \]
+only afterward inherit `dmu_mixed=q dW+`, `dmu_HH=(1-q)dW+`.  Thus contact may be 100% HH when `q=0`; no later Hahn is taken.
 
-Only then restrict the already-canonical positive cause:
-
+Now fix one closed helical triad with its unique resolved low root `p` and the two unresolved roots `k,l`.  Let `T_p+T_k+T_l=0` be the canonical root works.  The two physical mixed high-root works are `qT_k,qT_l`.  Their skew pair is antisymmetric and their symmetric pair is equal, hence
 \[
-d\mu_{mixed}=q\,dW^+,
-\qquad d\mu_{HH}=(1-q)dW^+.
+\boxed{2S_{kl}=q(T_k+T_l)=-qT_p}.
 \]
-
-Contact is therefore not synonymous with interface work: a contact event may have `q=0` and be entirely HH.
-
-For the mixed resolved operator, split signed-first into skew and symmetric parts `I=K+S`.  Then
-
+For a smooth square-role energy weight `eta=Q^2`, the same triad contributes
 \[
-[I]_+\le[K]_++[S]_+.
+S_{eta,tri}=-\alpha_{tri}T_p,\qquad
+\alpha_{tri}=\tfrac q2(\eta(k)+\eta(l))\in[0,1].
 \]
-
-The skew part is same-event conservative role-to-role flux; the symmetric part is existing strain/deformation.  No proportional `K/S` owner matching is permitted.
+Therefore `[S_eta,tri]_+=alpha_tri[-T_p]_+`: fine positive symmetric strain work is a positive restriction of the **original canonical low-root `dW-`**, not a new Hahn law.  After any deterministic coarsening, `[pi#dS]_+<=pi#(alpha dW-)`; the cyclic donor kernel pushes that inherited restriction to existing canonical `dW+` at the same physical time.  Every such recipient is canonical bad work: if it is below the other unresolved root it is nonforward; otherwise its resolved interaction parent is `<1/2` of the child, contradicting the signed-good `3/5` lower bound.  Thus symmetric interface work adds no recursive owner; `K` remains zero-depth conservative relink and `S` reroutes to terminal bad-positive work.  Changing the resolved cutoff only repartitions the same `-Q B(u,u)`, so this quotient does not change the NS law.
 
 ## 7. Smooth carrier energy and observer quotient — EXACT
 
@@ -374,4 +368,4 @@ For every proposed frontier lemma ask: **what exact true Navier–Stokes structu
 
 The identities and structural laws above are exact or exact-conditional as labelled.  Randomized triads, Galerkin/FFT probes, CI runs and stress tests in the source repository are evidence against implementation mistakes, not mathematical substitutes for the continuum proofs.
 
-The hard-state **kinetic-energy layer** is exact: earlier modal stock and canonical boundary inflow are the only suppliers; viscosity/outflow are losses.  The `5/8` grid further proves that every signed-good positive inflow atom is a true boundary crossing whose same-time donor lies in one of the next two lower radial cells.  Donor provenance has zero recursion depth, so this is not yet a temporal no-escape theorem.  Full Mixed temporal/geometry assembly and the initial/singular-time interfaces remain open.  Degenerate Young/Christ remains only an auxiliary analysis seam.  See `MIXED_FRONTIER.md`.
+The hard-state **kinetic-energy layer** is exact: earlier modal stock and canonical boundary inflow are the only suppliers; viscosity/outflow are losses.  Signed-good inflow has the `5/8` donor geometry; same-time donor reroot has zero depth; and the resolved `K/S` split adds no recursive owner—`K` is conservative relink while fine `S+` is an inherited low-root `dW-` restriction whose recipient pushforward is canonical bad work.  Full Mixed state-forest assembly and the initial/singular-time interfaces remain open.  Degenerate Young/Christ remains auxiliary.  See `MIXED_FRONTIER.md`.

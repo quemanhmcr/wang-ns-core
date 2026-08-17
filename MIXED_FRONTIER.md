@@ -251,7 +251,11 @@ d\Sigma_P=(t,\pi_{donor})_\#\,d\mathcal M_P.
 \]
 `dSigma_P` is still a positive **work-valued provenance/support law**, not state energy and not causal probability.  It adds zero event depth.  For `dSigma_P`-almost every donor event the donor hard role is occupied—if that donor role vanished, the underlying physical edge-work density would vanish.  Hence those simultaneous donor states can each start their own fixed-mode inflow corridor at the same physical time.  No recipient inflow atom is assigned to later stock; no winner/normalization is chosen; generic coarse self-loops remain zero-depth.
 
-The remaining OPEN problem is the **no-escape theorem for this measure-valued state/corridor forest with all genuine geometry marks attached**.  Symmetric `S` is not ontologically open: the exact adjoint split identifies it with existing resolved strain/deformation, while skew relink is zero-depth.  What remains open is recurrence handoff—when physical strain/deformation interrupts signed-good registration, bind that already-identified strain state to the native `D_V`/high-strain telescope (or another exact state law) without turning an analysis/coherent threshold into a new primitive.  Endpoint interfaces remain separate.
+### Symmetric-strain work is not a recursive breaker — DISTILLED EXACT DEDUCTION
+
+On each resolved low/high closed triad, `2S_kl=-qT_p`.  With a smooth square-role weight, `S_eta,tri=-alpha_tri T_p`, `0<=alpha_tri<=1`; hence `[S_eta,tri]_+=alpha_tri[-T_p]_+`.  Positive `S` is therefore inherited low-root `dW-`, not a new positive law.  Coarse positive parts are dominated by the pushforward of this same restriction, which the cyclic donor kernel returns at zero depth to canonical `dW+`.  Its recipients are all bad: either nonforward, or their resolved parent is `<1/2` of the child and so violates signed-good `3/5`.  Thus `K` is zero-depth relink and `S` is terminal bad-work provenance; neither is a Mixed recurrence mechanism.
+
+The remaining OPEN problem is the **no-escape theorem for the measure-valued state/corridor forest** after this quotient: compose genuine high-strain state relays with signed-good donor-state reroots, preserve exact source/pressure/SGS geometry marks, and verify the physical-time telescope hypotheses on every surviving branch without counting the zero-depth reroot itself as time.  Endpoint interfaces remain separate.
 
 ## 9. Canonical good spacetime inflow adapter — DISTILLED EXACT; YOUNG/CHRIST AUXILIARY
 The native signed edge law is lifted on every compact smooth physical slab `I` before any coarsening:
@@ -303,7 +307,7 @@ Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier s
 
 1. **State-forest Mixed no-escape.**  Compose hard-state corridors, zero-depth same-time donor reroots, and genuine high-strain relays; prove every infinite surviving branch satisfies a native telescope or reaches `t=0`.
 2. **Signed-good registration on the state forest.**  Verify that after rerooting, the next generated child is the previous physical donor **state** in the exact sense needed by the parabolic common-surface theorem, without a token identity.
-3. **Geometry attachment.**  Retain source/high-strain/`S`/interface marks at their real times and show they cannot create a new energy edge or hidden reset.
+3. **Geometry attachment.**  Retain source/high-strain/interface marks at their real times; `K/S` is already quotiented to zero-depth/terminal work, so no hidden interface reset may reappear.
 4. **Endpoint/auxiliary work.**  Keep initial/singular-time interfaces separate; Young/Christ stays auxiliary unless independently needed.
 
 ## 13. Frontier in one sentence
