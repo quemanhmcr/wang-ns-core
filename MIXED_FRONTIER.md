@@ -259,9 +259,10 @@ d\Sigma_P=(t,\pi_{donor})_\#\,d\mathcal M_P.
 
 On each resolved low/high closed triad, `2S_kl=-qT_p`.  With a smooth square-role weight, `S_eta,tri=-alpha_tri T_p`, `0<=alpha_tri<=1`; hence `[S_eta,tri]_+=alpha_tri[-T_p]_+`.  Positive `S` is therefore inherited low-root `dW-`, not a new positive law.  Coarse positive parts are dominated by the pushforward of this same restriction, which the cyclic donor kernel returns at zero depth to canonical `dW+`.  Its recipients are all bad: either nonforward, or their resolved parent is `<1/2` of the child and so violates signed-good `3/5`.  Thus `K` is zero-depth relink and `S` is terminal bad-work provenance; neither is a Mixed recurrence mechanism.
 
-### Interior recursive alphabet and Mixed reduction — DISTILLED EXACT DEDUCTION
-On each fixed carried-root predecessor branch, after the accumulated quotients every event-depth-increasing interior continuation is exactly `H` (genuine high strain/`D_V` state relay) or `G` (canonical signed-good boundary work followed by zero-depth donor-state reroot).  Bad work terminates; `K` is zero-depth; `S` reroutes to terminal bad work; source marks retain geometry but any nonterminal source-state composite continues only through a nonexpansive `G`; stock/checkpoints/service/material readings add no depth.
-Thus `A_rec={H,G}` and every recursive branch obeys `N_(j+1)<=5N_j/8` (`H` gives `<=3N_j/16`).  Since each `H` pays `D_j>=D_*` and `D_j<=N_jG_*`, even with overlap `#H D_*<=G_* sum_j N_j<=(8/3)N_0G_*`.  Exact `H/G` ties retain both contracting branches.  Hence arbitrary Mixed alternation on one carried-root branch is closed: any infinite such branch would eventually be **pure `G`**.  The only interior OPEN seam is pure signed-good state/work recurrence under corrected zero-depth donor semantics; endpoints remain separate.
+### Interior recursive alphabet + radial-cut funding — DISTILLED EXACT DEDUCTION
+On each carried-root branch every depth-increasing continuation is `H` or `G`; all other current routes are terminal, zero-depth, separate roots, or nonexpansive state relays.  Both recursive edges contract scale (`G<=5/8`, `H<=3/16`), so `#H D_*<=G_* sum N_j<=(8/3)N_0G_*`; any infinite carried-root branch is eventually pure `G`.
+Pure-`G` **funding** needs no genealogy.  For `L_R={|k|<=R}`, exact NS gives `E_<=R(t)+D_<=R[0,t]+Phi_up(R)=E_<=R(0)+Phi_down(R)`.  Every `G` atom into `C_m` crosses `R=R_(m+1)`, hence `mu_G(C_m)<=Phi_up(R)<=E_<=R(0)+Phi_down(R)`: outward good work is funded at the cut by initial low-frequency stock or real high→low crossing, with no deposit matching.  `Phi_down` is canonical nonforward/bad work but remains real energy that may interact again; it is not dissipation or a finite reset.
+On `R^3`, `Phi_down` is dominated by canonical positive child-work into `B_R`.  Exact continuum variation and `E(t)<=E_*:=||u_0||_2^2` give `Phi_down(R;[0,t])<=4sqrt(2)C_F t E_*^(3/2)sqrt(4pi/5) R^(5/2)`; since `E_<=R(0)->0` for `u_0 in L^2(R^3)`, also `Phi_up(R;[0,t])->0`.  Same-time provenance can therefore accumulate at the infrared endpoint only with vanishing work mass.  This closes pure-`G` causal funding, **not** ultraviolet no-escape: the same initial reservoir may cross many cuts and must never be charged once per cut.  The remaining interior problem is a native second ledger/rigidity law for vanishing-mass repeated UV transport; endpoints remain separate.
 
 ## 9. Canonical good spacetime inflow adapter — DISTILLED EXACT; YOUNG/CHRIST AUXILIARY
 The native signed edge law is lifted on every compact smooth physical slab `I` before any coarsening:
@@ -310,11 +311,8 @@ Finally ask the Tao/averaged-NS stress test:
 Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier support, modal energy continuity, incompressibility/Leray orthogonality, viscosity, skew/symmetric operator structure or another explicit NS identity.  “Scaling”, “energy cancellation” and “generic bilinear bound” alone are insufficient at the frontier.
 
 ## 12. Best next targets
-
-1. **Pure-`G` state/work recurrence.**  Decide whether fixed-mode inflow corridors plus zero-depth donor reroot give a true physical-time/initial-boundary telescope, or identify the missing NS law; do not reuse the old token-based parent chain.
-2. **Generated-vs-inherited gate.**  Separate good work that actually has to fund the carried hard state from same-time good circulation superposed on inherited stock.
-3. **Endpoint/auxiliary work.**  Keep initial/singular-time interfaces separate; coefficient/Young/entropy machinery remains auxiliary unless a native law proves it necessary.
-
+1. **Vanishing-mass UV transport.**  Find the native NS quantity that prevents or rigidifies infinitely many signed-good outward layers after radial-cut funding has removed genealogy; do not sum initial stock across cuts.
+2. **Physical reuse/cycle law.**  Downward bad work is terminal only for forward recursion but remains real stock; identify the exact law governing its possible re-entry without observer entropy becoming primitive.
+3. **Endpoints/auxiliary work.**  Keep initial/singular-time interfaces separate; use coefficient/Young/entropy only if a native physical law requires them.
 ## 13. Frontier in one sentence
-
-> **The recursive traffic alphabet is now only `H/G`, and `H` can occur only finitely often.  The sole interior road still needing a true NS no-escape law is pure signed-good work after same-time donor reroot—without resurrecting an energy token.**
+> **Causal funding no longer needs a pure-`G` genealogy: every outward good layer is paid at a real Fourier cut by initial low stock or real downward crossing, and infrared outward flux vanishes.  The remaining interior difficulty is physical UV turnover/reuse, not ancestry.**

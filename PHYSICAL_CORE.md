@@ -351,6 +351,8 @@ This is a support theorem for the **same physical work event**.  The donor kerne
 
 Lift this same-time kernel by physical `dt`, restrict recipients to actual boundary inflow, and push donors to deterministic hard cells.  The resulting positive work-valued state-support law creates no charge/depth; for almost every donor event under that law the donor hard role is nonzero (otherwise its edge-work density vanishes).  Each such simultaneous donor state may therefore start its own fixed-mode inflow corridor from the same physical time, with no deposit matching.
 
+For the low ball `L_R={|k|<=R}`, exact continuity gives `E_<=R(t)+D_<=R+Phi_up=E_<=R(0)+Phi_down`; hence any signed-good layer crossing `R` obeys `mu_G<=Phi_up<=E_<=R(0)+Phi_down`.  Since `Phi_down` is nonforward positive child-work into `|k|<=R`, continuum variation yields `Phi_down[0,t]<=4sqrt(2)C_F t E_*^(3/2)sqrt(4pi/5)R^(5/2)`, and, because `E_<=R(0)->0` for `u_0 in L^2(R^3)`, `Phi_up(R;[0,t])->0` as `R->0`, with `E_*=||u_0||_2^2`.  This is IR funding/extinction, not a budget that may be charged once per cut.
+
 Together with exact mode-set continuity, this yields the absolute kinetic-energy grammar for every fixed hard control volume:
 \[
 \boxed{
@@ -372,4 +374,4 @@ For every proposed frontier lemma ask: **what exact true Navier–Stokes structu
 
 The identities and structural laws above are exact or exact-conditional as labelled.  Randomized triads, Galerkin/FFT probes, CI runs and stress tests in the source repository are evidence against implementation mistakes, not mathematical substitutes for the continuum proofs.
 
-The hard-state **kinetic-energy layer** is exact: earlier modal stock and canonical boundary inflow are the only suppliers; viscosity/outflow are losses.  Signed-good inflow has the `5/8` donor geometry; same-time donor reroot has zero depth; and the resolved `K/S` split adds no recursive owner—`K` is conservative relink while fine `S+` is an inherited low-root `dW-` restriction whose recipient pushforward is canonical bad work.  Full Mixed state-forest assembly and the initial/singular-time interfaces remain open.  Degenerate Young/Christ remains auxiliary.  See `MIXED_FRONTIER.md`.
+The hard-state **kinetic-energy layer** is exact: earlier modal stock and canonical boundary inflow are the only suppliers; viscosity/outflow are losses.  Signed-good inflow has the `5/8` donor geometry; same-time donor reroot has zero depth; and the resolved `K/S` split adds no recursive owner—`K` is conservative relink while fine `S+` is an inherited low-root `dW-` restriction whose recipient pushforward is canonical bad work.  Pure-`G` causal funding is now radial-cut rooted; what remains interior is vanishing-mass UV turnover/reuse, followed by the initial/singular-time interfaces.  Degenerate Young/Christ remains auxiliary.  See `MIXED_FRONTIER.md`.
