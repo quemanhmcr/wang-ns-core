@@ -112,9 +112,9 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **DISTILLED EXACT MINORITY CHANNEL:** homochiral triads create zero `Hdot^(1/2)` stock.  On every heterochiral triad `sum rho_iT_i=2rho_mT_m` for the minority-helicity root `m`; positive minority work has same-helicity parents and satisfies the native global gap `r_e<=99/100`.  Thus any critical-stock blow-up requires unbounded radius-weighted canonical minority-`B` work; the deficit is not an energy sink.
 
-**DISTILLED EXACT DIAMOND COVER:** for the canonical same-output minority source `dF=e^(i theta)d sigma`, `S^2-|F|^2=int int[1-cos(theta-theta')]d sigma d sigma'`.  Hence a large hidden source must produce net child source, meet comparably large other physical same-output sources, or carry `>=3/4` normalized Fourier-diamond phase variance.  This is source/state geometry, not `dW+`.
+**EXACT DIAMOND LEAKAGE:** a physical same-output diamond has mandatory cross pairs at `q+-d`.  Unequal-scale nonparallel helical parents satisfy `||F_nm||>=(1/2)|sin theta||M^2-N^2|/|n+m||a_na_m|`, giving `||F_+||||F_-||>=kappa_diamond sigma_1sigma_2` for the two cross outputs.  Hence strong same-output cancellation leaks state-source; at zero tolerance every active off-diagonal diamond has at least one nonzero source among its four non-original parent pairs.  Equal-radius/collinear faces can only make the quantitative constant small, not create an exact silent active diamond.  No causal Hahn is introduced.
 
-**OPEN:** bind persistent physical diamond misalignment / cross-family same-output cancellation to a native NS deformation, stock or work law.  Cell entropy/Hodge may only read this already-physical diamond measure; they may not create it.
+**OPEN:** prove a measure-level quantitative leakage/cancellation cover for the enlarged extra-pair source family when diamonds approach near-equal-radius/near-collinear faces.  Hodge/entropy may only read the already-physical measure downstream.
 
 ## Upstream proof lookup map
 
