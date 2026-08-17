@@ -88,7 +88,7 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 ## Current theorem status in one view
 
-**EXACT physical spine:** signed helical edge registration; continuum signed edge measure; canonical positive routing; cyclic donor kernel; mode-set energy continuity; radial crossing; hard-tail true upward supply; resolved-contact binding; pure-UV first-shell route; exact first-stop/tie semantics; checkpoint quotient; conservative relink quotient; inherited-stock relay; material-service quotient; high-strain telescope.
+**EXACT physical spine:** signed helical edge registration; continuum signed edge measure; canonical positive routing; cyclic donor kernel; mode-set energy continuity; radial crossing; hard-tail true upward supply; resolved-contact binding; pure-UV first-shell route; exact first-stop/tie semantics; checkpoint quotient; conservative relink quotient; inherited-stock relay; material-service quotient; high-strain telescope; canonical radial-variation collision.
 
 **EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical shell is supplied; same-carrier inherited-stock relay under its endpoint/residual-work hypotheses; the older signed-good generated-HH time telescope on a supplied parent-continuing chain.
 
@@ -96,7 +96,7 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, CI certificates and master traces.
 
-**OPEN:** on carried-root traffic, actual inward non-G radial action `A_(down,notG)` is the remaining interior reuse/cycle seam after the two native radial ledgers; critical `Hdot^(1/2)` growth and `Hdot^(3/2)` viscous loss are physical endpoint channels, not budgets.  Initial-data/hypothetical-singular-time interfaces remain separate.
+**OPEN:** no independent interior reuse currency remains: `A_(down,notG)` is bounded by `C_rad int||u||_Hdot^(1/2)||u||_Hdot^(3/2)^2`.  The remaining problem is the native critical endpoint law—growth of `Hdot^(1/2)`, `Hdot^(3/2)` activity—and then the initial-data/hypothetical-singular-time interfaces.
 
 ## Upstream proof lookup map
 

@@ -261,7 +261,7 @@ On each resolved low/high closed triad, `2S_kl=-qT_p`.  With a smooth square-rol
 
 ### Interior recursion + two native radial ledgers — DISTILLED EXACT DEDUCTION
 On each carried-root branch every depth-increasing continuation is `H` or `G`; both contract scale (`G<=5/8`, `H<=3/16`), so `#H D_*<=G_* sum N_j<=(8/3)N_0G_*` and any infinite branch is eventually pure `G`.  Radial-cut funding then removes genealogy: for `L_R={|k|<=R}`, `E_<=R(t)+D_<=R+Phi_up=E_<=R(0)+Phi_down`, hence `mu_G(C_m)<=Phi_up(R_m+1)<=E_<=R(0)+Phi_down`; on `R^3`, continuum variation gives `Phi_up(R;[0,t])->0` as `R->0`.  The same initial reservoir may cross many cuts, so this is not a reusable budget.
-The second ledger uses the basis-independent critical radial moment `C_(1/2)(t)=int |k||uhat|^2=||u||_Hdot^(1/2)^2`.  With actual donor flow `M`, define `A_up/down=int (rho_r-rho_d)_+/- dM`; `dR` layer cake gives exactly `C_(1/2)(t)+2nu int_0^t||u||_Hdot^(3/2)^2+A_down=C_(1/2)(0)+A_up`.  For one signed-good triad, cyclic work ratios give `P_G=2 rho_side W_side+` and `9/25 < P_G/(rho_c W_c+) < 5/12`.  Write `D_(3/2)=int_0^t||u||_Hdot^(3/2)^2`.  Since a triad has at most one `G` root, partitioning triads into `G` and `notG` yields `(9/25)int rho_c dW_G <= C_(1/2)(t)+2nu D_(3/2)+A_(down,notG)`.  Thus vanishing-mass UV `G` turnover must surface as critical `Hdot^(1/2)` stock, critical viscous loss, or genuine inward non-G radial action.  On a carried-root traffic branch only the last is an interior reuse/cycle seam; no entropy coordinate has been made primitive.  Separate source-exposed roots are not counted by this statement.
+The second ledger uses `C_(1/2)=||u||_Hdot^(1/2)^2`: `C_(1/2)(t)+2nu D_(3/2)+A_down=C_(1/2)(0)+A_up`, and signed-good triads give `(9/25)int rho_c dW_G<=C_(1/2)(t)+2nu D_(3/2)+A_(down,notG)`.  The inward term is now physically exhausted.  For every canonical donor atom in a closed triad, `M_(d->r)<=min(|T_d|,|T_r|)` and exact edge capacity plus triangle geometry give `|rho_r-rho_d|M_(d->r)<=4LK|a_0a_1a_2|` with `L=min rho_i`, `K=max rho_i`.  Dyadic low/high readers only prove the estimate: closure makes the two high roots comparable, Fourier `L1(low)` supplies `(L/K)^2`, and finite-overlap summation gives `v_rad(t)<=C_rad||u||_Hdot^(1/2)||u||_Hdot^(3/2)^2`.  Hence `A_(down,notG)<=C_rad int||u||_Hdot^(1/2)||u||_Hdot^(3/2)^2`.  Deep HH→low cancellation has no geometry-only radial-action discount—the gap can be order `K`—but its critical action is square-suppressed against high `Hdot^(3/2)` activity.  Thus no entropy/Hodge/reuse variable is primitive; separate source roots are still outside this carried-root statement.
 
 ## 9. Canonical good spacetime inflow adapter — DISTILLED EXACT; YOUNG/CHRIST AUXILIARY
 The native signed edge law is lifted on every compact smooth physical slab `I` before any coarsening:
@@ -286,7 +286,7 @@ For `H_N={|k|>N}`, exact radial continuity says fresh tail supply is `Phi_up`, n
 
 ## 10. Final interfaces remain separate — OPEN
 
-Even a full Mixed no-escape theorem would not by itself prove global regularity.  Two interfaces still require their own exact arguments:
+Even the present interior traffic exhaustion does not by itself prove global regularity.  Two interfaces still require their own exact arguments:
 
 - **initial-data entrance:** how every certified backward hard-state predecessor branch attaches to the absorbing `t=0` boundary for the admissible initial class;
 - **hypothetical singular-time interface:** how no-escape of the certified physical predecessor relation rules out or controls a singular endpoint.
@@ -310,8 +310,7 @@ Finally ask the Tao/averaged-NS stress test:
 Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier support, modal energy continuity, incompressibility/Leray orthogonality, viscosity, skew/symmetric operator structure or another explicit NS identity.  “Scaling”, “energy cancellation” and “generic bilinear bound” alone are insufficient at the frontier.
 
 ## 12. Best next targets
-1. **Inward radial reuse.**  Analyze `A_(down,notG)` as the only remaining interior turnover channel; any entropy/Hodge reader must be a consequence of this actual flow, not a substitute for it.
-2. **Critical endpoint channels.**  Keep growth of `||u||_Hdot^(1/2)` and `int||u||_Hdot^(3/2)^2` typed as physical singular/viscous outcomes, not proof costs.
-3. **Endpoints.**  Separate the initial-data and hypothetical-singular-time arguments from the interior radial traffic law.
+1. **Critical endpoint law.**  Use the radial-variation collision to state the sharp continuation criterion in the native pair `||u||_Hdot^(1/2)`, `int||u||_Hdot^(3/2)^2`; do not rename their product a budget.
+2. **Initial/singular interfaces.**  Prove how the exhausted interior traffic attaches to `t=0` and how bounded critical traffic excludes or controls a hypothetical singular endpoint.
 ## 13. Frontier in one sentence
-> **The native traffic grammar now has two radial ledgers: low-ball Kirchhoff roots funding, while the critical first-moment law forces every surviving `G` UV action into `Hdot^(1/2)` stock, `Hdot^(3/2)` viscosity, or actual inward non-G flow.  On carried-root traffic the only reuse seam left is that inward flow itself.**
+> **The interior traffic grammar is now closed at the physical-flow level: low-ball Kirchhoff roots funding, signed-good work creates a fixed positive critical radial moment, and every inward non-G cancellation is bounded by the native `Hdot^(1/2)`–`Hdot^(3/2)` collision.  What remains is endpoint regularity, not an ancestry/reuse currency.**
