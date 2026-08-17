@@ -102,7 +102,9 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **DISTILLED EXACT UV SIDECAR:** every large UV birth carries bad-positive work.  After at most two radial readers, it is actual boundary inflow into a comparable Fourier–helicity set `A` with `N Phi_in,A^B>=3c_nu/100`; Kirchhoff forces `N E_A`, `N D_A`, or `N Phi_out,A` to be at least `c_nu/100`.  No transfer-loss wallet exists.
 
-**OPEN:** classify the remaining bad sidecar outflow and quantify the second interaction-parent critical mass required by every `G`-dominant rebirth.
+**DISTILLED EXACT FIRST-CONTACT LAW:** at `M E_M=mu_*`, differential Kirchhoff gives a fixed inflow-rate floor.  If `G` owns it, sharp whole-band work forces a lower interaction shell `R<=5M/8` with `R E_R>=2mu_*`, so finite state descent reaches initial stock or a `B`-rate alternative; no donor genealogy is used.
+
+**OPEN:** classify the remaining bad-sidecar outflow/recycling and assemble it with the endpoint shell-birth law; companion-parent hardness is no longer an independent seam.
 
 ## Upstream proof lookup map
 
