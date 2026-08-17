@@ -88,7 +88,7 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 ## Current theorem status in one view
 
-**EXACT physical spine:** signed helical edge registration; continuum signed edge measure; canonical positive routing; cyclic donor kernel; mode-set energy continuity; radial crossing; hard-tail true upward supply; resolved-contact binding; pure-UV first-shell route; exact first-stop/tie semantics; checkpoint quotient; conservative relink quotient; inherited-stock relay; material-service quotient; high-strain telescope; canonical radial-variation/hard-shell collision; `t=0` as exact modal-stock boundary.
+**EXACT physical spine:** signed helical edge registration; continuum signed edge measure; canonical positive routing; cyclic donor kernel; mode-set energy continuity; radial crossing; hard-tail true upward supply; resolved-contact binding; pure-UV first-shell route; exact first-stop/tie semantics; checkpoint quotient; conservative relink quotient; inherited-stock relay; material-service quotient; high-strain telescope; canonical radial-variation/hard-shell collision; viscous hard-corridor natural-window inflow; `t=0` as exact modal-stock boundary.
 
 **EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical shell is supplied; same-carrier inherited-stock relay under its endpoint/residual-work hypotheses; the older signed-good generated-HH time telescope on a supplied parent-continuing chain.
 
@@ -98,7 +98,7 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXTERNAL EXACT ENDPOINT:** Kenig--Koch, arXiv:0908.3349, Theorem 0.1: a mild solution with `u_0 in Hdot^(1/2)` that stays bounded in `Hdot^(1/2)` on its maximal lifespan is global and smooth; hence finite-time singularity forces unbounded critical stock.
 
-**EXACT ENDPOINT SHARPENING:** separating bounded low roots from high roots shows finite singularity forces `t_n->T_*`, `M_n->infinity`, `M_nE_(M_n)>c_nu`.  Since the initial `Hdot^(1/2)` tail vanishes, large `M_n` cannot be initial stock: last-entry forces `M_n Phi_in>=4c_nu/5`, hence canonical good or bad inflow carries at least `2c_nu/5`.
+**EXACT ENDPOINT SHARPENING:** finite singularity forces `t_n->T_*`, `M_n->infinity`.  Large shells cannot be initial stock; their final occupied corridors contain an actual interval of length `<=cM_n^-2` carrying a fixed fraction `q_nat` of terminal critical mass as canonical inflow.  Thus UV rebirth is parabolically localized by stock persistence plus viscosity, not by an observer time bin.
 
 **DISTILLED EXACT UV SIDECAR:** every large UV birth carries bad-positive work.  After at most two radial readers, it is actual boundary inflow into a comparable Fourier–helicity set `A` with `N Phi_in,A^B>=3c_nu/100`; Kirchhoff forces `N E_A`, `N D_A`, or `N Phi_out,A` to be at least `c_nu/100`.  No transfer-loss wallet exists.
 
