@@ -83,19 +83,29 @@ For the full mode set this reduces to the ordinary viscous energy balance.  The 
 
 A closed triad wholly inside `A` has zero boundary flux but can carry nonzero internal donor/recipient flow.  Scaling amplitudes by `lambda` scales this gross work like `lambda^3` while boundary flux remains zero.  Therefore modal stock does not bound total gross nonlinear turnover, and neither `int dW+` nor `int dW-` is a finite reset budget.
 
-### Native hard-role / hard-shell supply quotient — DISTILLED EXACT DEDUCTION
+### Native hard-state last-entry theorem — DISTILLED EXACT DEDUCTION
 
-The same law applies to every bounded measurable event-anchored hard Fourier/helicity role `P`, not only a radial shell:
+For every bounded measurable event-anchored Fourier/helicity role `P`, exact mode-set continuity is
 
 \[
-\boxed{E_P(t)+D_P+\Phi_{out,P}=E_P(s)+\Phi_{in,P}}.
+\boxed{E_P(t)+D_P[s,t]+\Phi_{out,P}[s,t]=E_P(s)+\Phi_{in,P}[s,t]}.
 \]
 
-Hence for every `0<theta<1`, either `E_P(s)>=theta E_P(t)` or `Phi_in,P>=(1-theta)E_P(t)`; exact equality keeps both.  The inflow is the restriction of the already-canonical physical edge law to recipient modes **inside `P`**.  Internal traffic cancels, while viscosity and outward flow are losses.
+This is Kirchhoff stock/flow continuity, not temporal identity of an energy token.  Fix `t>0`, `e_1=E_P(t)>0` and `0<theta<1`.  If `{r<t:E_P(r)<=theta e_1}` is empty, then `E_P(0)>theta e_1`.  Otherwise put
 
-This is the master-facing energy rule for a hard role even when a smooth envelope `Q` with `QP=P` transports its coefficient between events.  Holding `P` fixed here is only Fourier control-volume bookkeeping, not material/packet persistence.  `Q^2` remains an exact carrier observable, but positive work elsewhere in `Q` cannot supply terminal `P` energy.  Indeed for disjoint hard roles `P,R` and `Q=P+R`, work entering only `R` can increase `E_Q` while `E_P` is unchanged.  A remote hard event is therefore separate unless its actual inflow crosses into `P`; smooth-envelope overlap cannot relaunch the ancestry of `P`.
+\[
+s_\theta=\sup\{r<t:E_P(r)\le\theta e_1\}.
+\]
 
-For the radial shell `A_M={(k,s):M/2<|k|<=M}` and `M E_M(t)>=mu_0`, this gives the previous cover `M E_M(s)>=theta mu_0` or `M Phi_in,M>=(1-theta)mu_0`; at `theta=1/5` the faces are `mu_0/5` and `4mu_0/5`.  Pressure, SGS, strain or service may expose indispensable geometry, but none is a third supplier of the kinetic energy stored in the hard role.  **Hard-lineage non-teleportation:** backward continuation of one hard-role charge is therefore only same-role inherited stock, a separately typed high-strain/dissipation state relay, or actual canonical inflow with child in the current role.  Bad/nonforward inflow is terminal; good inflow has one physical energy donor, and the donor kernel pushes the same recipient charge to that parent without cloning it.  Event-anchored registration then re-anchors the same smooth carrier at the donor-parent scale and the cutoff relay introduces no hard reselection.  Hence on the same causal charge the next hard child role is the previous physical donor role; work elsewhere in the envelope, source/reader/service/material/coherent-analysis marks and no-hit checkpoints cannot replace it.
+Continuity gives `E_P(s_theta)=theta e_1` and `E_P(r)>theta e_1` for `s_theta<r<=t`; the exact balance then gives
+
+\[
+\boxed{\Phi_{in,P}[s_\theta,t]\ge(1-\theta)e_1}.
+\]
+
+Thus a terminal hard state has an exact **last-entry alternative**: either the same physical mode set is already occupied above the `theta` level back to `t=0`, or actual canonical nonlinear boundary inflow enters `P` during its final occupied corridor.  `s_theta` is only a control-volume boundary, never an event or clock.  No FIFO/LIFO/proportional matching is introduced, and no inflow atom is declared to be the terminal stock.
+
+Consequently work elsewhere in a smooth envelope `Q` cannot continue the hard state merely because `QP=P`; it matters only when canonical inflow actually crosses into `P`.  For `P_M={M/2<|k|<=M}` with `M E_M(t)>=mu_0`, `theta=1/5` gives either `M E_M(0)>mu_0/5` or `M Phi_in,M[s_theta,t]>=4mu_0/5`.  Pressure, SGS, strain or service may expose the state, but none is a third supplier.  A `dW+` recipient charge lives at its work event; between events the persistent object is modal stock, not that charge carried through time.
 
 ## 5. Radial crossing and hard-tail supply — EXACT
 
@@ -291,7 +301,7 @@ Thus either `D_high>=Y_tot/4` and the physical hard-tail route applies, or total
 \boxed{\mu_{hard}\ge G_{j_*}/(6c)\ge p_{max}Y_{tot}/(12c)}.
 \]
 
-No selector `tau->r(tau)` is needed.  `nu_tau`, `(G_j)` and `H_inf^low-scale` are discarded after exposing the actual Fourier shell; they create no event, charge or scale progress.  Shell/tail energy then reroots by Sections 4--5 to earlier modal stock or actual nonlinear boundary inflow.  Material old/fresh/interface readings remain provenance unless an independent physical work/cost law exists.
+No selector `tau->r(tau)` is needed.  `nu_tau`, `(G_j)` and `H_inf^low-scale` are discarded after exposing the actual Fourier shell; they create no event, charge or scale progress.  The resulting shell/tail state then enters the Section 4 last-entry alternative (or the tail balance of Section 5): boundary stock or actual canonical inflow, with no temporal matching.  Material old/fresh/interface readings remain provenance unless an independent physical work/cost law exists.
 
 A looser valid old-pool capacity bound can change `C_old>Y/8` without changing the field or realized service, so that threshold cannot define an event.  The historical old-pool half-life remains valid only on its separately supplied signed-good low-strain lineage and is not a generic source clock.
 
@@ -310,60 +320,49 @@ RESOLVED_SOURCE -> RECURSE_CRITICAL
 
 is no longer a canonical unresolved destination.  Keep the source event mark, then relay immediately to the certified terminal/shell/tail state.  If source ties with strain or actual work at the same physical time, keep the full joint cause set; the relay must not split or duplicate that event.
 
-This is proof-graph contraction, not physical-event deletion.  Source/pressure/SGS remain exact geometry marks.  Their reader scale is not a causal parent scale: modal continuity reroots the exposed shell/tail to earlier stock or actual nonlinear inflow.  In the low-SGS frame `M_j=N2^j`, `j<=0`, the hard candidates are `M_j,2M_j`; the only candidate above `N` is exactly `P_(2N)={N<|k|<=2N}`, hence inherited tail stock or true `Phi_up`, while internal tail inflow is a separately typed hard-work event.  Source labels therefore mint no independent causal scale edge.
+This is proof-graph contraction, not physical-event deletion.  Source/pressure/SGS remain exact geometry marks.  Their reader scale is not a causal parent scale: the exposed shell/tail must instead satisfy its own modal last-entry/tail balance, which yields boundary stock or actual nonlinear inflow without creating an edge from the source scale.  In the low-SGS frame `M_j=N2^j`, `j<=0`, the hard candidates are `M_j,2M_j`; the only candidate above `N` is exactly `P_(2N)={N<|k|<=2N}`, hence inherited tail stock or true `Phi_up`, while internal tail inflow is a separately typed hard-work event.  Source labels therefore mint no independent causal scale edge.
 
-## 11. Pure tails and the first mixed subalphabet — EXACT / DISTILLED EXACT
+## 11. Pure recurrence theorems and the hard-state energy spine — EXACT / DISTILLED EXACT
 
 ### Consecutive high strain — EXACT
 
 A high-strain event at scale `N_j` pays `D_j>=D_*`, exposes `M_j<=N_j/4`, and renews at `A_j=3M_j/4<=3N_j/16`.  Since `D_j<=N_jG_*`, `G_*=int||grad u||_2^2`, the geometric scale descent makes every consecutive high-strain epoch finite without treating `D_V` as a global reset.
 
-### Consecutive signed-good generated HH — EXACT
+### Consecutive signed-good generated HH — EXACT-CONDITIONAL
 
-After `Q^2` energy reentry selects actual positive HH work, the actual hard Fourier parent/child radii satisfy
+On a supplied parent-continuing generated epoch, actual positive HH work has `3/5<N_p/N_c<5/8` and the exact chain `N_(c,j+1)=N_(p,j)`.  Parent lifetimes then grow by `>64/25` and the certified registration surfaces reach `t=0` in finite depth.  The spacetime law is the original `dW=C_FT(t,e)dt dlambda(e)` with one Hahn; signed-good restriction, unique donor, hard-parent self-probe and common-slice registration introduce no Gaussian causal mark.  The `5/8` control-volume theorem below removes that chain hypothesis from the hard-state energy-predecessor problem.
 
+### `5/8` signed-good boundary-crossing theorem — DISTILLED EXACT DEDUCTION
+
+No temporal chain `next child = previous donor` is permitted.  Refine any supplied finite hard state by the deterministic radial control-volume grid
 \[
-3/5<N_p/N_c<5/8.
+R_{m+1}=\frac58R_m,
+\qquad C_m=\{R_{m+1}<|k|\le R_m\},
 \]
+intersecting the first/last cell with the supplied state when necessary.  This partition is only a reader of modal stock and boundary flow.
 
-Parent natural lifetimes grow by more than `64/25`; the certified registration surfaces therefore backshift geometrically to absorbing `t=0`.  Local positive HH outside signed-good edge geometry is already on the canonical bad/transfer-loss route.  On a compact smooth slab, the same signed continuum edge density lifts to the locally finite spacetime law `dW=C_F T(t,e) dt dlambda(e)` with `dW+=C_F[T]_+ dt dlambda`; this is the original native Hahn law with physical time attached, not a re-Hahn after coarsening.  Restrict actual hard-role inflow to the Borel signed-good set, push to physical time, and one half-child interval carries at least half of that positive sublaw.  The edge identity already supplies both hard parents and the cyclic theorem supplies the unique physical donor.  For every nonzero hard-parent role `P`, the self-probe `psi_P=Pu/||Pu||_2` and `QP=P` give `<Qu,P psi_P>=||Pu||_2`; common-slice registration is therefore exact without a Gaussian mark.  Young/Christ remains an auxiliary near-extremizer/productivity theorem, not a causal registration requirement.
-
-### Canonical hard-lineage high-strain / signed-good alternation, including exact ties — DISTILLED EXACT DEDUCTION
-
-Start from a physical hard shell
-
+For every signed-good positive-work atom whose recipient lies in `C_m`, the certified triad theorem gives its unique same-time energy donor
 \[
-P_M:\quad M/2<|k|\le M,
-\qquad A=3M/4,
+\frac35|k_c|<|k_d|<\frac58|k_c|\le R_{m+1}.
 \]
+Hence signed-good work into `C_m` can never be internal traffic: it is actual nonlinear boundary inflow.  Since `|k_c|>R_(m+1)`, also `|k_d|>3R_m/8>R_(m+3)`, so donor support lies only in `C_(m+1)` or `C_(m+2)`.  Bad/nonforward positive work remains on its existing terminal transfer-loss route.
 
-and its registered smooth `A`-carrier.  By hard-lineage non-teleportation, every good generated-work continuation of the same charge is automatically parent-continuing: the next hard child role is the previous unique donor parent.  Source/reader/coherent marks cannot reset that role; only a separately typed high-strain state relay remains as the non-work recursive event.  Degenerate Young/Christ belongs only to the separate auxiliary productivity analysis.
+This is a support theorem for the **same physical work event**.  The donor kernel adds provenance to canonical `dW+` with zero recursion depth; it does not turn the donor cell into a temporal ancestor, assign inflow atoms to terminal stock, or create a Markov/particle genealogy.  Multiple donor pieces are all retained; no winner, probability or re-Hahn is introduced.
 
-A high-strain continuation at carrier scale `A` renews at `<=3A/16`.  If the shell energy is instead genuinely supplied by signed-good nonlinear inflow, hard-role modal causality restricts that owner to actual recipient modes inside `P_M`.  Hence the physical HH child has `N_c<=M=4A/3`, and its signed-good parent satisfies
-
+Together with exact mode-set continuity, this yields the absolute kinetic-energy grammar for every fixed hard control volume:
 \[
-N_p<\frac58N_c\le\frac58\frac43A=\frac56A.
+\boxed{
+\text{final modal stock}+\text{viscous loss}+\text{outflow}
+=\text{earlier modal stock}+\text{canonical boundary inflow}.
+}
 \]
+Pressure/SGS source marks, high strain, symmetric strain work, service, material marks and conservative relink may all occur physically, but none can mint a third modal-energy supplier.  Internal nonlinear circulation remains real and cancels only from the control-volume divergence.
 
-This remains true at an exact high-strain/HH tie.  The joint event is never split or ordered: the high-strain continuation is `<=3A/16`, while every signed-good continuation that actually supplies the carried shell has parent `<5A/6`.  Positive HH work elsewhere in the smooth envelope is a different physical event and cannot relaunch this shell ancestry merely by overlap with `Q`.
-
-Therefore successive high-strain carrier scales satisfy
-
-\[
-A_{j+1}\le\frac56A_j.
-\]
-
-Since each high-strain event has `D_j>=D_*` and `D_j<=A_jG_*`,
-
-\[
-\#H\,D_*\le G_*\sum_jA_j\le 6A_0G_*.
-\]
-
-Thus only finitely many high-strain vertices occur even with arbitrary canonical signed-good layers and exact H/HH ties.  After the last one, an infinite remaining tail would be consecutive signed-good generated HH and the existing parabolic registration theorem reaches absorbing `t=0` in finite depth.  Hence this shell-anchored canonical two-mechanism alphabet has no infinite interior lineage.  No common mixed currency or synthetic clock is introduced.
+What this theorem deliberately does **not** do is recurse through same-time donor provenance.  Any temporal no-escape theorem must separately prove how a physical state/corridor at one event continues to another event; mode-set balance and donor support alone do not supply that matching.
 
 ## 12. Core anti-theorems and permanent guards
 
-Do not use raw Duhamel mass as causal probability.  Do not re-Hahn after coarse-graining.  Do not use interaction cells as wallets.  Do not call high→high circulation fresh tail supply.  Do not infer a dyadic step from positive work.  Do not promote checkpoints to events or reset cumulative monitors.  Do not treat inherited stock as generation.  Do not treat material rereading or `R_switch` as source.  Do not treat smooth skew relink as generation.  Do not treat OO/ON/NN as generators of their service law.  Do not promote optional coherent-analysis thresholds—Gaussian aspect/radius, holonomy, flatness, sideband or reuse coordinates—to hard-lineage events: their actual consequences are existing strain/dissipation, modal state/work, terminal analysis cost, or no-hit continuation.  Do not split simultaneous causes by a synthetic clock.  Do not turn normalized critical quantities into finite additive reset budgets.  Do not exchange entropy coordinates from different underlying measures as if they were one currency.
+Do not use raw Duhamel mass as causal probability.  Do not carry a `dW+` charge through modal stock or infer temporal deposit matching from mode-set balance.  Do not re-Hahn after coarse-graining.  Do not use interaction cells as wallets.  Do not call high→high circulation fresh tail supply.  Do not infer a dyadic step from positive work.  Do not promote checkpoints to events or reset cumulative monitors.  Do not treat inherited stock as generation.  Do not treat material rereading or `R_switch` as source.  Do not treat smooth skew relink as generation.  Do not treat OO/ON/NN as generators of their service law.  Do not promote optional coherent-analysis thresholds—Gaussian aspect/radius, holonomy, flatness, sideband or reuse coordinates—to hard-lineage events: their actual consequences are existing strain/dissipation, modal state/work, terminal analysis cost, or no-hit continuation.  Do not split simultaneous causes by a synthetic clock.  Do not turn normalized critical quantities into finite additive reset budgets.  Do not exchange entropy coordinates from different underlying measures as if they were one currency.
 
 For every proposed frontier lemma ask: **what exact true Navier–Stokes structure makes this true that a generic averaged/bilinear model need not preserve?**  If the answer is only scaling, cancellation or a generic norm inequality, the physical mechanism has probably not yet been isolated.
 
@@ -371,4 +370,4 @@ For every proposed frontier lemma ask: **what exact true Navier–Stokes structu
 
 The identities and structural laws above are exact or exact-conditional as labelled.  Randomized triads, Galerkin/FFT probes, CI runs and stress tests in the source repository are evidence against implementation mistakes, not mathematical substitutes for the continuum proofs.
 
-Nothing here closes the broader interior Mixed assembly or the initial/singular-time interfaces.  Hard-lineage switching itself is no longer an independent seam: on one causal charge it is forced to actual modal work or the separately typed high-strain relay.  The degenerate full-signed Young/Christ margin remains an auxiliary analysis seam, not a master causal gate.  Those distinctions belong to `MIXED_FRONTIER.md`.
+The hard-state **kinetic-energy layer** is exact: earlier modal stock and canonical boundary inflow are the only suppliers; viscosity/outflow are losses.  The `5/8` grid further proves that every signed-good positive inflow atom is a true boundary crossing whose same-time donor lies in one of the next two lower radial cells.  Donor provenance has zero recursion depth, so this is not yet a temporal no-escape theorem.  Full Mixed temporal/geometry assembly and the initial/singular-time interfaces remain open.  Degenerate Young/Christ remains only an auxiliary analysis seam.  See `MIXED_FRONTIER.md`.

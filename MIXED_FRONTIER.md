@@ -171,7 +171,7 @@ SGS source
   -> selector-free joint low service -> actual hard shell.
 ```
 
-High-tail and low-service facts may coexist; this is not a lexicographic branch order.  The shell/tail energy then reroots by exact continuity to inherited modal stock or actual nonlinear boundary work.  Pressure/SGS source terms remain genuine derived-geometry physics; only the observer selection has disappeared.
+High-tail and low-service facts may coexist; this is not a lexicographic branch order.  The exposed shell/tail state then obeys its own exact modal last-entry/tail balance: boundary stock or actual nonlinear work, with no temporal matching.  Pressure/SGS source terms remain genuine derived-geometry physics; only the observer selection has disappeared.
 
 ### `old_pool_not_yet_eroded` — CLOSED AS A NON-EVENT
 
@@ -210,57 +210,37 @@ Exact source/strain/work ties remain joint at the original event time.  No event
 Source/pressure/SGS marks remain real derived-geometry events, but their theorem reader scale is not a causal parent scale.  At source block scale `N`:
 
 - local/viscous and resolved-pressure routes expose shells `H<=N/4`; terminal shell energy is earlier `H`-stock or canonical nonlinear inflow.  Bad/nonforward inflow is already terminal; a recurrent good inflow has its unique physical energy donor among the signed-good interaction parents, hence donor frequency `<5H/8`;
-- low/base SGS uses `M_j=N2^j`, `j<=0`, and hard candidates `H in {M_j,2M_j}`.  The **only** candidate with `H>N` is `j=0, H=2N`, namely `P_(2N)={N<|k|<=2N}`.  If that state is inherited it is tail stock, not generation; if freshly supplied across the tail boundary, `Phi_up` has physical donor `<=N`; if supplied by internal tail work, that hard-work event—not the SGS mark—owns the lineage switch;
+- low/base SGS uses `M_j=N2^j`, `j<=0`, and hard candidates `H in {M_j,2M_j}`.  The **only** candidate with `H>N` is `j=0, H=2N`, namely `P_(2N)={N<|k|<=2N}`.  If that state is inherited it is tail stock, not generation; if freshly supplied across the tail boundary, `Phi_up` has physical donor `<=N`; if supplied by internal tail work, only that actual hard-work event—not the SGS mark—can define a predecessor edge;
 - high-SGS tail state is already covered by inherited tail stock or true `Phi_up`, with pure-UV/contact continuation as above.
 
-Thus a source mark may genuinely change derived strain geometry, but it cannot mint a new causal scale edge or a hard-lineage switch by its label.  Any recurrent switch after the mark must be carried by an independently typed stock or actual nonlinear-work law.  Exact source/strain/work ties remain one joint physical event.
+Thus a source mark may genuinely change derived strain geometry, but it cannot mint a new causal scale edge by its label.  Stock remains state, while any predecessor edge after the mark requires an independently typed actual work or strain law.  Exact source/strain/work ties remain one joint physical event.
 
-## 7. Hard-lineage non-teleportation + strain / signed-good HH — CLOSED INCLUDING EXACT TIES
+## 7. `5/8` signed-good boundary-crossing theorem — DISTILLED EXACT DEDUCTION
 
-The missing bridge is not an upper-support convention for the smooth carrier.  At a terminal hard shell `P_M`, exact mode-set continuity decides the energy owner:
-
+Refine any supplied finite hard state by the deterministic radial control-volume grid
 \[
-E_{P_M}(t)+D_{P_M}+\Phi_{out,P_M}=E_{P_M}(s)+\Phi_{in,P_M}.
+R_{m+1}=\tfrac58R_m,\qquad C_m=\{R_{m+1}<|k|\le R_m\}.
 \]
-
-Thus smooth `Q^2` work outside `P_M` cannot pay for the shell merely because `Q=1` on it.  The exact anti-model is `Q=P+R` with `P perp R`: work entering only `R` raises `E_Q` but leaves `E_P` unchanged.  If terminal shell energy is generated rather than inherited, its owner is actual nonlinear inflow with child inside `P_M`, obtained by restricting the existing canonical `dW+`; no new Hahn is taken.  A different hard child elsewhere in `Q` is a separate physical event, not a free relaunch of this ancestry.
-
-Now use the exact shell/carrier registration
-
+The cells are observer readers, not events.  For every signed-good positive-work atom with child in `C_m`, the unique same-time donor obeys
 \[
-A=3M/4.
+\tfrac35|k_c|<|k_d|<\tfrac58|k_c|\le R_{m+1}.
 \]
+So the atom is necessarily true boundary inflow, never internal work in `C_m`.  Moreover `|k_d|>3R_m/8>R_(m+3)`, hence donor support lies only in `C_(m+1)` or `C_(m+2)`.  This is an exact support statement about canonical `dW+` and its already-certified donor provenance.
 
-A high-strain continuation gives `<=3A/16`.  A signed-good generated inflow into the carried shell has child `N_c<=M=4A/3`, hence parent
+The crucial topology is zero-depth: the donor kernel is same-time disintegration, not a temporal predecessor map.  Therefore the `5/8` scale drop may describe where one physical transfer came from, but it may **not** be iterated as an event clock without a separate state/corridor continuation theorem.  Multiple donor pieces remain set-valued provenance; no probability, winner, re-Hahn or stock assignment appears.
 
+## 8. Absolute kinetic-energy layer; temporal Mixed remains OPEN
+
+For every fixed hard mode set `P` and every physical interval `[s,t]`, exact NS gives
 \[
-N_p<\frac58N_c\le\frac56A.
+\boxed{E_P(t)+D_P[s,t]+\Phi_{out,P}[s,t]
+=E_P(s)+\Phi_{in,P}[s,t]}.
 \]
+This is the complete modal kinetic-energy ledger.  Earlier stock and canonical nonlinear boundary inflow are the only suppliers; viscosity and outward flow are losses.  Internal HH circulation is real but cancels from set divergence.  Pressure/SGS source hits, high strain, symmetric `S` strain/deformation, service, material marks and conservative relink remain real physical geometry/state/work annotations, but none can become a third kinetic-energy supplier.
 
-At an exact H/HH tie both causes remain joint, but every continuation of this shell ancestry is still `<=5A/6`.  Therefore the high-strain subsequence obeys
+This closes the **energy ontology**, not the full event chronology.  There is no FIFO/LIFO or labeled energy particle, and same-time donor provenance cannot be promoted to temporal recursion.  A source/high-strain/service theorem may expose another hard state, but connecting that state to an earlier/later event requires its own native PDE continuation law.  Untyped locators stay untyped.
 
-\[
-A_{j+1}\le\frac56A_j,
-\qquad
-\#H\,D_*\le G_*\sum_jA_j\le6A_0G_*.
-\]
-
-There can be only finitely many high-strain vertices.  After the last one, a parent-continuing signed-good tail is exactly the already-certified parabolic epoch and reaches `t=0` in finite depth.  Hence arbitrary alternation and exact ties of these two mechanisms cannot support an infinite interior shell ancestry.
-
-There is no independent hard-role relaunch left on this causal charge.  Earlier stock keeps the same hard role; good modal inflow pushes the one recipient charge to its unique donor parent; bad/nonforward work is terminal; high strain is the separately typed non-work state relay.  Source/role/material/service/coherent-analysis marks and same-carrier checkpoints may change geometry or annotation but cannot mutate the charge role.  The parent-scale carrier relay then makes `next child role = previous donor parent role` a consequence of physical ancestry rather than an epoch hypothesis.  An unrelated hard event elsewhere in the smooth envelope is a different physical event/charge, not continuation of this lineage.  The auxiliary degenerate Young/Christ analysis remains separate.
-
-## 8. Required shape of a valid Mixed theorem
-
-A satisfactory theorem must show that every infinite interior sequence of genuine physical events does at least one of the following:
-
-1. contains a native sublineage governed by an already finite telescope;
-2. forces a new native monotone/telescoping physical quantity;
-3. reaches a terminal transfer/cost law already bound to actual work or a true global resource;
-4. drives the required physical registration to the absorbing initial surface `t=0`.
-
-It may not create a common scalar exchange rate between physical time, log scale, work, dissipation, service, entropy or ancestry simply to make the proof telescope.
-
-Cross-mechanism coupling is allowed only through an exact PDE identity, a conservation law, a common physical measure or an explicitly proved implication.  Similar critical scaling is not a coupling theorem.
+Therefore the central OPEN interface is now precise: retain all singularity-relevant geometry marks and prove a genuine temporal state/corridor theorem that connects successive physical events without manufacturing a genealogy.  Only after that interface is closed may one combine the existing high-strain and conditional signed-good time telescopes into a full interior no-escape theorem.  Initial-data and hypothetical singular-time interfaces remain separate afterward.
 
 ## 9. Canonical good spacetime inflow adapter — DISTILLED EXACT; YOUNG/CHRIST AUXILIARY
 The native signed edge law is lifted on every compact smooth physical slab `I` before any coarsening:
@@ -281,14 +261,14 @@ Consequently the degenerate full-signed Young/Christ margin `mu->0` is **not a m
 
 ### High-tail supply-owner exhaustion — DISTILLED EXACT DEDUCTION
 
-For `H_N={|k|>N}`, exact radial continuity says fresh tail supply is `Phi_up`, not gross positive work inside `H_N`.  Internal high→high circulation can be arbitrarily large with `Phi_up=0`; it is real redistribution but no tail-supply owner.  Every atom of `Phi_up` is either pure-UV, which forces `M=2N` and enters the direct first-shell natural window, or resolved contact, which enters existing `K/S` or the contact-HH natural-window route.  Hence the historical nonlocal high-tail regeneration branch does not survive as an independent renewal edge.  An unrelated hard event may still coexist elsewhere in the PDE, but hard-lineage non-teleportation makes it a different physical charge/event; it cannot continue this tail ancestry unless actual modal inflow enters the carried role.
+For `H_N={|k|>N}`, exact radial continuity says fresh tail supply is `Phi_up`, not gross positive work inside `H_N`.  Internal high→high circulation can be arbitrarily large with `Phi_up=0`; it is real redistribution but no tail-supply owner.  Every atom of `Phi_up` is either pure-UV, which forces `M=2N` and enters the direct first-shell natural window, or resolved contact, which enters existing `K/S` or the contact-HH natural-window route.  Hence the historical nonlocal high-tail regeneration branch does not survive as an independent renewal edge.  An unrelated hard event may coexist elsewhere, but it is not a predecessor of the current hard state unless actual canonical inflow crosses into that state; smooth or tail overlap alone creates no edge.
 
 ## 10. Final interfaces remain separate — OPEN
 
 Even a full Mixed no-escape theorem would not by itself prove global regularity.  Two interfaces still require their own exact arguments:
 
-- **initial-data entrance:** how the complete backward lineage attaches to the absorbing `t=0` boundary for the admissible initial class;
-- **hypothetical singular-time interface:** how no-escape of the certified physical lineage rules out or controls a singular endpoint.
+- **initial-data entrance:** how every certified backward hard-state predecessor branch attaches to the absorbing `t=0` boundary for the admissible initial class;
+- **hypothetical singular-time interface:** how no-escape of the certified physical predecessor relation rules out or controls a singular endpoint.
 
 No document in this repository claims these are closed.
 
@@ -310,10 +290,11 @@ Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier s
 
 ## 12. Best next targets
 
-1. **Broader interior Mixed assembly.**  Verify globally that after all quotients every nonterminal interior causal vertex is exactly high strain/dissipation or canonical good nonlinear work, then compose the closed two-mechanism theorem without introducing a new clock.
-2. **Endpoint interfaces.**  Keep initial-data entrance and hypothetical singular-time exclusion separate from interior no-escape.
-3. **Auxiliary productivity (separate).**  Resolve degenerate Young/Christ only if Gaussian/coherent productivity is still useful; do not put that analysis seam back on the causal path.
+1. **Temporal state/corridor theorem.**  Connect successive genuine physical events while retaining all source/strain/interface marks and without turning same-time donor provenance or checkpoints into recursion.
+2. **Interior Mixed assembly.**  Only after that theorem, compose the high-strain and signed-good physical-time telescopes without a common synthetic currency.
+3. **Initial-data / singular-time interfaces.**  Keep both endpoint arguments separate from interior no-escape.
+4. **Auxiliary productivity (separate).**  Resolve degenerate Young/Christ only if Gaussian/coherent productivity remains useful; it is not part of the causal energy law.
 
 ## 13. Frontier in one sentence
 
-> **Remove no more physics and add no observer currency: hard-lineage switching is now forced to actual modal work or high strain; the remaining interior task is only to verify that no other nonterminal causal vertex survives the accumulated quotients, then compose the native scale/time laws.**
+> **The energy law is now small and rigid: modal stock plus canonical boundary flow plus viscosity.  The `5/8` grid resolves signed-good inflow geometry exactly, but same-time donors remain zero-depth provenance; the remaining frontier is a genuine temporal state/corridor law, not an invented energy genealogy.**

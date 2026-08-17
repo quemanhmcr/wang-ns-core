@@ -50,7 +50,7 @@ canonical positive recipient work dW+  <--- donor provenance from dW-
               |
        mode-set continuity
               v
-hard-shell/tail energy = earlier modal stock OR actual nonlinear boundary inflow
+hard-state last-entry = t=0 stock OR actual modal inflow on its occupied corridor
               |
        physical geometry/readout
               v
@@ -60,9 +60,9 @@ critical shell / hard tail / service / first-stop corridor
               v
 source/derived-geometry marks expose state; they mint no causal scale edge
               |
-interior lineage candidate = high strain/dissipation <--> canonical good work
+hard-state energy law = modal stock + canonical boundary flow + viscosity
               |
-     broader interior assembly remains
+     5/8 signed-good boundary geometry; temporal Mixed still open
 ```
 
 The square/service/shell layers are real physical observables, but a new observable is not automatically a new causal charge.
@@ -88,15 +88,15 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 ## Current theorem status in one view
 
-**EXACT physical spine:** signed helical edge registration; continuum signed edge measure; canonical positive routing; cyclic donor kernel; mode-set energy continuity; radial crossing; hard-tail true upward supply; resolved-contact binding; pure-UV first-shell route; exact first-stop/tie semantics; checkpoint quotient; conservative relink quotient; inherited-stock relay; material-service quotient; the two pure recurrence telescopes.
+**EXACT physical spine:** signed helical edge registration; continuum signed edge measure; canonical positive routing; cyclic donor kernel; mode-set energy continuity; radial crossing; hard-tail true upward supply; resolved-contact binding; pure-UV first-shell route; exact first-stop/tie semantics; checkpoint quotient; conservative relink quotient; inherited-stock relay; material-service quotient; high-strain telescope.
 
-**EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical physical shell is supplied; same-carrier inherited-stock relay once its carrier/endpoint/residual-work hypotheses hold; signed-good local HH recurrence geometry once the signed-good generated branch is physically selected.
+**EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical shell is supplied; same-carrier inherited-stock relay under its endpoint/residual-work hypotheses; the older signed-good generated-HH time telescope on a supplied parent-continuing chain.
 
-**DISTILLED EXACT DEDUCTIONS:** role/probe, shell/service and optional coherent-analysis coordinates mint no causal charge; a hard-role charge cannot teleport—stock stays on the same role, while any genuine hard-role change is an actual modal-work donor step or high-strain state relay; source marks mint no causal scale edge; canonical good inflow registers its unique donor parent directly; and high-strain / signed-good-HH alternation including exact ties has finite depth.
+**DISTILLED EXACT DEDUCTIONS:** role/probe, shell/service and optional coherent-analysis coordinates mint no causal charge; hard-state last-entry gives exact stock-or-boundary-inflow supply with no temporal matching; source marks mint no kinetic-energy edge; a deterministic `5/8` radial grid makes every signed-good positive inflow atom a true boundary crossing whose same-time donor lies in one of the next two lower cells.  Donor provenance remains zero recursion depth.
 
 **EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, CI certificates and master traces.
 
-**OPEN:** broader interior Mixed assembly; the initial-data and hypothetical-singular-time interfaces.  The degenerate full-signed Young/Christ margin remains open only for auxiliary near-extremizer/productivity/coherent analysis, not as a causal no-escape gate.
+**OPEN:** a genuine temporal state/corridor theorem connecting successive physical events without donor-token genealogy; then broader interior Mixed assembly and the initial-data/hypothetical-singular-time interfaces.  Degenerate Young/Christ remains only an auxiliary productivity/coherent-analysis seam.
 
 ## Upstream proof lookup map
 
@@ -106,6 +106,6 @@ The exact filename is more important than historical commit order; certification
 
 ## Non-negotiable audit questions
 
-Before admitting any new quantity, event or edge, ask: What exact NS object is this?  What are its units?  Is it stock, signed work, flux, dissipation, geometry, provenance or representation?  If the observer changes while the physical solution is fixed, does the alleged event change?  Has Hahn already been taken?  Does the step preserve one physical charge?  What exact true-NS identity makes the step valid that an averaged/blow-up surrogate need not retain?  If the answer is only scaling, cancellation or a generic bilinear estimate, it is not yet a frontier closure.
+Before admitting any new quantity, event or edge, ask: What exact NS object is this?  What are its units?  Is it stock, signed work, flux, dissipation, geometry, provenance or representation?  If the observer changes while the physical solution is fixed, does the alleged event change?  Has Hahn already been taken?  If a work charge exists, is it kept at its physical event rather than illegally carried through modal stock?  What exact true-NS identity makes the step valid that an averaged/blow-up surrogate need not retain?  If the answer is only scaling, cancellation or a generic bilinear estimate, it is not yet a frontier closure.
 
 The goal is not to make Navier–Stokes obey a convenient proof language.  The goal is to discover the smallest rigid grammar that Navier–Stokes already obeys.
