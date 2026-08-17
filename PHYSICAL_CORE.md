@@ -335,150 +335,71 @@ On each carried-root branch, after stock/source/interface/material quotients, th
 ### Critical radial first moment + hard-shell collision — EXACT
 On every compact smooth slab, `C_(1/2)=int |k||uhat|^2=||u||_Hdot^(1/2)^2` obeys `C_(1/2)(t)+2nu D_(3/2)+A_down=C_(1/2)(0)+A_up`, `D_(3/2)=int_0^t||u||_Hdot^(3/2)^2`.  A signed-good triad has `9/25 < P_G/(rho_c W_c+) < 5/12`, hence `(9/25)int rho_c dW_G<=C_(1/2)(t)+2nu D_(3/2)+A_(down,notG)`.  For one closed triad donor atom, `M_(d->r)<=min(|T_d|,|T_r|)` and `|T_i|<=4rho_i|a_0a_1a_2|`; triangle closure therefore gives `|rho_r-rho_d|M_(d->r)<=4LK|a_0a_1a_2|`, `L=min rho_i`, `K=max rho_i`, with at most two flows.  Dyadic annuli are proof readers only: the two high roots are comparable, low-root Fourier `L1` gives `(L/K)^2`, and the geometric kernel is summable.  Thus, with the physical radial concentration `mu_sh(t)=sup_(M>0) M||1_{M/2<|D|<=M}u(t)||_2^2`, `v_rad(t):=int|rho_r-rho_d|dM_t <= C_sh sqrt(mu_sh(t))||u(t)||_Hdot^(3/2)^2` for one universal `C_sh<infinity`.  Consequently `dC_(1/2)/dt+(2nu-C_sh sqrt(mu_sh))||u||_Hdot^(3/2)^2<=0`; whenever `dC_(1/2)/dt>0`, an actual hard shell satisfies `M||P_Mu||_2^2>(2nu/C_sh)^2`.  There is no separate helical-recycling ledger either.  Put `x=s|k|`.  The cyclic root formula also gives `sum_i x_iT_i=0`; donor-kernel marginals imply `sum_(d->r)(x_r-x_d)M=0`.  A nonzero triad has at most two flows, and all helicity-flip flows have one orientation, so their signed-radius displacement is balanced by same-helicity radial displacement.  Hence `V_x:=int|x_r-x_d|dM<=2V_rho`, `V_rho=int|rho_r-rho_d|dM`.  Same-helicity outflow is radial layer-cake traffic; helicity-flip outflow is signed-radius layer-cake traffic controlled by the same `V_rho`.  The critical stock itself has the exact grid-free shell layer cake `C_(1/2)(t)=int_0^infinity mu(R,t)dR/R`, `mu(R,t)=R||P_(R/2,R]u(t)||_2^2`, because each Fourier radius `rho` is counted for `R in [rho,2rho)`.  Its nonlinear production has an equally exact helical disintegration.  For a homochiral closed triad, signed-helicity conservation gives `sum rho_i T_i=0`.  For a heterochiral triad with minority-helicity root `m`, energy plus signed-helicity conservation gives `sum rho_i T_i=2 rho_m T_m`; hence `C_(1/2)(t)+2nu D_(3/2)=C_(1/2)(0)+2 W_min^signed[0,t]`.  If `T_m>0`, its two interaction parents have the same helicity, so the edge is never `G`.  More sharply its native efficiency obeys `r_e<=99/100`: outside the certified local stability rectangle `J/J_*<=99/100`, while inside `u=log(y/x)<=2/25` gives `(y-x)/(x+y)=tanh(u/2)<1/25` and `P_same/P_opp<3/25`.  Thus every positive creator of critical stock is a canonical minority-helicity `B` edge with at least `1/100` physical efficiency deficit; if `C_(1/2)` blows up, the radius-weighted positive minority `B` work must diverge.  The whole closed-triad radial/helicity law is one-dimensional in signed curl.  Put `x_i=s_i rho_i`, `Z_tri:=sum rho_i^2T_i`, and order distinct roots `alpha<beta<gamma`.  Exact cyclic work gives `Z_tri=R_tri(x_0-x_1)(x_0-x_2)(x_1-x_2)` and `T_alpha=Z_tri/[(beta-alpha)(gamma-alpha)]`, `T_beta=-Z_tri/[(beta-alpha)(gamma-beta)]`, `T_gamma=Z_tri/[(gamma-alpha)(gamma-beta)]`.  Hence the canonical donor graph is exactly the path `alpha--beta--gamma`; with `D=|Z_tri|/(gamma-alpha)`, `M_(alpha,beta)=D/(beta-alpha)` and `M_(beta,gamma)=D/(gamma-beta)`, so the two legs carry equal absolute signed-curl displacement `D`.  `Z_tri>0` orients median→extremes and `Z_tri<0` extremes→median; radial traffic is only the fold `rho=|x|`, giving exactly `V_(rho,tri)=D[||beta|-|alpha||/(beta-alpha)+||gamma|-|beta||/(gamma-beta)]`.  If two `x` coincide, the third work vanishes and any surviving exchange is same-helicity/equiradial with `Z_tri=V_(rho,tri)=0`.  This subsumes all four old low-recipient classes and all other radial donor fates.  Homochiral critical production is zero; heterochiral `sum rho_iT_i=2rho_mT_m` has the sign of `Z_tri`.  `Z_tri` is triad enstrophy production, not a new global ledger/reset currency; convex UV moments remain unbounded.  Full-convolution cancellation of that channel has a more primitive vector source object.  For fixed child `q` and same-helicity parents write `p=(q+r)/2`, `m=(q-r)/2`; `kappa=(|q|^2+|r|^2)/2`, so an equal-heat unordered fiber is the physical separation sphere `S^2/(r~-r)=RP^2`.  The unordered Leray vector orbit coefficient in `q^perp` has exact norm `||F_q(r)||=|q.r||qxr|sqrt((P+M)^2+Q^2)|a_pa_m|/[4PMQ(P+M)]`; hence its only nondegenerate geometric zeros are the equal-radius Beltrami equator and collinear shear pole.  Minority and spin-two majority source laws are only the two helical coordinates of this vector.  If `dF=xi d sigma`, `||xi||=1`, then `sigma(Omega)^2-||int dF||^2=(1/2)int int||xi-xi'||^2d sigma d sigma'`; every off-diagonal atom is an actual Fourier diamond.  Its geometric source line is `ell_q=[t_q+i h beta n]`, `beta=Q/(P+M)`, with exact projective separation `1-|<zhat,zhat'>|^2=[(beta-beta')^2cos^2psi+(1-beta beta')^2sin^2psi]/[(1+beta^2)(1+beta'^2)]`.  Thus the only generic nontrivial same-line heat-fiber pair is the planar cross-isospectral reflection rectangle.  If `r=u+Zqhat`, its two remaining non-Beltrami cross outputs `q+-u` satisfy `G_side/G_0=|Z|/sqrt(Q^2+U^2)*sqrt(((P+M)^2+Q^2+U^2)/((P+M)^2+Q^2))`; exact two-atom cancellation therefore leaks unless `Z=0`, where the original source itself is Beltrami-null.  Projective disintegration is exact: with `lambda=ell_#sigma`, conditional probability `nu_ell`, `b(ell)=int xi dnu_ell`, `S=sigma(Omega)`, one has `S^2-||F||^2=S int(1-||b||^2)d lambda+(1/2)int int||b-b'||^2d lambda d lambda'`, and the between-line term is bounded below by `(1/2)int int||b||||b'||D_proj d lambda d lambda'`.  This classifies actual vector-source cancellation but is not a new source/work law.  The downstream diamond incidence has an exact **analytic coarea on actual Fourier coordinates**; this is not a primitive NS source measure.  For two unordered same-output parent orbits and the `1/2` symmetry interchanging them, generic equal-heat incidence is `dXi=(1/8)dq dp dp' delta(kappa_q(p)-kappa_q(p'))`; because `kappa_q(p)-kappa_q(p')=2(p-p').(p+p'-q)`, coarea yields `dXi=dp dp' dH^2(y)/(16|p-p'|)`, `y perp(p-p')`, with modes `p,p',p'+y,p+y` and all four non-original pairings retained.  Do not Hahn-split the vector orbit source after helicity coarse-graining.  Its `RP^2` law above is source geometry only.  A helicity-resolved **derived source diagnostic** on the same pre-Hahn canonical edge is the edge-source square: if `f_e` is the child-helicity source amplitude of one unordered complete parent-helicity edge before Hahn, `S2_edge:=int|C_F f_e|^2dLambda_edge<=2C_F^2E||grad u||_2^2`, hence `int_0^T S2_edge dt<=C_F^2E_*^2/nu`.  For fixed child helical mode `(q,s)` and `kappa=(|q|^2+R^2)/2`, parent-helicity counting gives exact edge-fiber base mass `pi R`.  If `(S,F,L2)` are edge-source variation/resultant/square and `P,N` are the positive/negative parts of the same canonical signed edge work, pairwise complex-Hilbert variance gives `S^2-|F|^2>=PN/|a_(q,s)|^2` while Cauchy gives `S^2-|F|^2<=pi R L2`; hence `PN/(pi R|a_(q,s)|^2)<=L2_edge` (zero when `a_(q,s)=0`), and `F=0` implies `P=N`.  Thus persistent same-heat cancellation forces a lower bound on this **edge-source-square diagnostic**, with one Hahn only; it is not a new work/source currency.  The edge source itself has an exact PDE: for `f_e=C_ea_xa_y`, `(partial_t+nu kappa_e)f_e=g_e=C_e(n_xa_y+a_xn_y)`.  Hence `0.5 dS2_edge/dt+nu K2_edge=R_edge`, `K2_edge=int kappa_e|C_Ff_e|^2dLambda_edge`.  Exact source normalization gives `|C_e|^2/kappa_e<=2`; after child-helicity sum and unordered quotient, `G_(-1,edge):=int kappa_e^-1|C_Fg_e|^2dLambda_edge<=4C_F^2E||N||_2^2` for the full modal NS source `N=-P(u.grad u)=P(u x omega)`.  Rotational NS also gives the orthogonal split `u x omega=N+grad(p+|u|^2/2)`, with `<u,N>=0` and `<N,-Delta u>=int omega.S omega`; pressure is the gradient complement of the same Lamb vector, not another supplier.  Thus `0.5 dS2_edge/dt+(nu/2)K2_edge<=(2C_F^2E/nu)||N||_2^2`.  A natural window may have only `O(M^-2)` unweighted `S2_edge`; the first-contact Cauchy estimate forces an **order-one lower bound on the derived `K2_edge` diagnostic** on the comparable proof branch.  This is not native NS energy dissipation.  Transfer deficit/diamond variance is never declared dissipation or a finite budget.  The weak cross-pair faces have an intrinsic PDE description: for a same-helicity component `v_h`, `B=inf_K||(curl-hK)v_h||_2` and `S=inf_|e|=1[int(1-(k.e)^2/|k|^2)|vhat_h|^2]^(1/2)` vanish exactly on Beltrami eigenspheres and Fourier-line shears.  With `C_F=(2pi)^(-3/2)`, `N(v_h)=P(v_h x curl v_h)` obeys `sup_q|Nhat(q)|<=C_F||v_h||_2 B` and, on `|k|<=Kmax`, `sup_q|Nhat(q)|<=2C_F Kmax||v_h||_2 S`; surviving same-helicity source is therefore separated from both nonlinear-null manifolds.  For fixed child `q`, every parent source atom also obeys `(partial_t+nu kappa_q)f=C_q(N_p a_r+a_pN_r)`, `kappa_q=|p|^2+|r|^2`; absent parent forcing, persistent net cancellation on an interval is Laplace-unique and must occur fiberwise in `kappa`.  Source/state geometry is not promoted to `dW+`.  Bounded shell amplitude on bounded log-width still cannot blow up merely by translating to UV.
 The signed triad field `Z_tri` integrates exactly to the primitive global enstrophy source; one triad contribution is not a second work law or global owner.  Let `Q(t)=int omega.S omega`.  Root-marking gives `C_F int Z_tri dLambda_tri=int rho_z^2 dW=2Q`.  For `A=grad u=S+Omega`, `Omega omega=0` and trace-free `3x3` algebra give pointwise `omega.S omega=4(det A-det S)`; Piola gives `3det A=div[(cof A)^T u]`, hence on the smooth finite-energy `R^3` state `Q=-4int det S=-(4/3)int tr(S^3)=4int lambda_1lambda_2(-lambda_3)`.  The exact `H1` stock law is `0.5||grad u(t)||_2^2+nu int_0^t||Delta u||_2^2=0.5||grad u_0||_2^2+int_0^tQ`; therefore every finite singular endpoint has `sup_(t<T*)int_0^tQ=+infinity`.  Instantaneous signed cancellation is nevertheless real: the isolated-dilate anti-theorem has `Z_L=-Z` with `V_(rho,L)>0`, and pure-UV upward atoms occur with both `Z_tri` signs.  Pressure itself has a sharper exact type.  Put `g=-Delta p=|S|^2-|omega|^2/2` and `H0=Hess p+(g/3)I`.  For `z!=0`, `H0hat(z)=(I/3-zhat tensor zhat)ghat(z)` and `ghat(z)=-C_F int(z.uhat(x))(z.uhat(z-x))dx`.  One unordered parent pair has bare `g_(x,y)=-2(z.u_x)(z.u_y)`; for helical parent modes its geometric magnitude is `|xxy|^2|a_xa_y|/(|x||y|)`, so nonzero-amplitude pressure pairs vanish only at collinearity.  Thus all pair tensors at fixed `z` share one tensor line; exact two-pair pressure cancellation can coexist with nonzero Leray source.  In real space `H0=(4pi)^-1 PV int_0^infinity dr/r int_(S^2)(3n tensor n-I)g(x-rn)dOmega`, an exact `l=2` quadrupole extraction.  The elliptic map alone has no sign rigidity: for every symmetric trace-free `M`, `(4pi)^-1 int_(S^2)(3n tensor n-I)(n.Mn)dOmega=(2/5)M`; what is NS-specific is that `g` is the quadratic source of the same `u`.  At `omega!=0`, set `xi=omega/|omega|`, `P=I-xi tensor xi`, `a=xi.Sxi`, `b=P S xi`, `D=P S P+(a/2)P`, `tau=xi.H0xi`.  Then `S=a xi xi+xi b+b xi-(a/2)P+D`, `|S|^2=3a^2/2+2|b|^2+|D|^2`, `D_t|omega|=a|omega|+nu xi.Deltaomega`, `D_txi=b+(nu/|omega|)P Deltaomega`, and `D_ta=-a^2/2+5|b|^2/3+|D|^2/3-|omega|^2/6-tau+nu[2b.Deltaomega/|omega|+xi.(Delta S)xi]`.  Same-helicity equal-radius pairs are gradient-only/Bernoulli nulls after Leray, whereas collinear shear has zero raw convective and pressure pair.  `H0,tau` are pressure geometry, never kinetic-energy suppliers, work laws or currencies.
-### Pressure tidal redistribution and modal strain-source quotient — DISTILLED EXACT DEDUCTION
-Let `g=-Delta p=|S|^2-|omega|^2/2` and `H0=Hess p+(g/3)I`.  At every nonzero Fourier mode `k`, incompressibility gives
-\[
-\widehat S(k)=\frac{i}{2}\big(k\otimes\widehat u+\widehat u\otimes k\big),
-\qquad
-\widehat H_0(k)=\left(\frac13I-\widehat k\otimes\widehat k\right)\widehat g(k),
-\qquad k\cdot\widehat u=0.
-\]
-Hence, **mode by mode**, `S_hat:H0_hat=0`, `|H0_hat|^2=(2/3)|g_hat|^2`, and `|Hess(p)_hat|^2=|g_hat|^2`.  Therefore on every compact smooth slab where these quantities are square integrable,
-\[
-\|\nabla^2p\|_2^2=\|g\|_2^2,
-\qquad
-\|H_0\|_2^2=\frac23\|g\|_2^2,
-\qquad
-\langle S,H_0\rangle=0.
-\]
-The last identity is stronger than a global cancellation: it survives any common Fourier-mode restriction because the tensor orthogonality holds at each `k`.  Pressure Hessian can change strain geometry, but it performs zero direct work on the Frobenius norm of the same Fourier strain coefficient.
-
-The Leray equation makes the source quotient exact.  With `N=-P(u.grad u)`,
-\[
-\partial_t S=\operatorname{sym}\nabla N+\nu\Delta S,
-\qquad
-\partial_t\widehat S(k)+\nu|k|^2\widehat S(k)
-=\operatorname{sym}\big(ik\otimes\widehat N(k)\big),
-\qquad k\cdot\widehat N(k)=0.
-\]
-Moreover `|S_hat(k)|^2=(|k|^2/2)|u_hat(k)|^2` and
-\[
-\widehat S(k):\overline{\operatorname{sym}(ik\otimes\widehat N(k))}
-=\frac{|k|^2}{2}\,\widehat u(k)\cdot\overline{\widehat N(k)}.
-\]
-Thus modal `H^1`/enstrophy production is exactly the `|k|^2`-weighted kinetic nonlinear work already carried by the canonical signed work law and by `Z_tri`; pressure creates no additional `H^1` source road.
-
-At a physical point with `W=|omega|>0`, let `xi=omega/W`, `P=I-xi tensor xi`, and decompose the **actual** strain and tidal pressure into the irreducible `1+2+2` vorticity-frame pieces
-\[
-a=\xi\!\cdot S\xi,\quad b=PS\xi,\quad D=PSP+\frac a2P,
-\qquad
-\tau=\xi\!\cdot H_0\xi,\quad c=PH_0\xi,\quad E=PH_0P+\frac\tau2P.
-\]
-Then
-\[
-S=a\,\xi\xi+\xi b+b\xi-\frac a2P+D,
-\quad |S|^2=\frac32a^2+2|b|^2+|D|^2,
-\]
-\[
-H_0=\tau\,\xi\xi+\xi c+c\xi-\frac\tau2P+E,
-\quad |H_0|^2=\frac32\tau^2+2|c|^2+|E|^2,
-\quad S:H_0=\frac32a\tau+2b\!\cdot c+D:E.
-\]
-Consequently the elliptic same-field identities become
-\[
-\int\!\left(\frac32a\tau+2b\!\cdot c+D:E\right)dx=0,
-\qquad
-\int\!\left(\frac32\tau^2+2|c|^2+|E|^2\right)dx=\frac23\int g^2dx.
-\]
-Pressure therefore redistributes strain geometry through spin-0/1/2 channels but has zero net strain-Frobenius source; a net longitudinal `a tau` correlation must be balanced by transverse `b.c` and/or `D:E` correlation.
-The corresponding global strain-stock identity contains no pressure term:
-\[
-\frac12\frac{d}{dt}\|S\|_2^2+\nu\|\nabla S\|_2^2=\frac12\int \omega\!\cdot S\omega\,dx.
-\]
-It is exactly the enstrophy identity rewritten through `||S||_2^2=(1/2)||omega||_2^2`; pressure changes geometry but not the total strain-square source.
-
-The local evolution is equally rigid.  Put `v=(nu/W)P Delta omega`.  Exact NS gives
-\[
-D_tW=aW+\nu\,\xi\!\cdot\Delta\omega,
-\qquad
-D_t\xi=b+v,
-\]
-\[
-D_ta=-\frac12a^2+\frac53|b|^2+\frac13|D|^2-\frac16W^2-\tau
-+\nu\left[\frac{2}{W}b\!\cdot\Delta\omega+\xi\!\cdot(\Delta S)\xi\right],
-\]
-\[
-P(D_tb)=-2ab-c+\nu P(\Delta S)\xi+\left(D-\frac32aP\right)v,
-\]
-\[
-P(D_tD)P=aD-3\left(b\otimes b-\frac{|b|^2}{2}P\right)-E
-+\nu P(\Delta S)P-v\otimes b-b\otimes v
-+\left(b\!\cdot v+\frac\nu2\xi\!\cdot(\Delta S)\xi\right)P.
-\]
-Thus `tau`, `c`, and `E` act respectively on longitudinal stretching, vortex-direction turning, and transverse trace-free strain.  They are components of one pressure tidal tensor, not three causes, owners or currencies.  Also `omega.S omega=W^2 a`, so the sign of pointwise enstrophy production is exactly the sign of the longitudinal strain `a` when `W>0`.
-
-There is **no pointwise local closure of pressure by the first velocity jet**.  On the periodic exact anti-theorem
-\[
-\psi(x,y)=\sin x+\sin y-\sin(x+y),
-\qquad u=(\partial_y\psi,-\partial_x\psi,0),
-\]
-one has at the origin `u=0`, `grad u=0`, `S=omega=g=0`, but the pressure determined by `-Delta p=g` satisfies
-\[
-\nabla^2p(0)=\begin{pmatrix}0&-1/5&0\-1/5&0&0\0&0&0\end{pmatrix}\ne0.
-\]
-Amplitude scaling leaves the local first jet zero while multiplying this tidal tensor quadratically.  This torus witness is an anti-theorem only: it proves that incompressibility/Poisson algebra cannot yield `Hess p=F(S,omega)` or a finite pointwise bound from the local first jet alone.  The next exact reduction must therefore use the nonlocal same-field structure itself; the Biot--Savart/vorticity theorem below supplies that reduction without another pressure estimate.
+### Pressure quotient retained after closure — DISTILLED EXACT DEDUCTION
+Put `g=-Delta p=|S|^2-|omega|^2/2`, `H0=Hess p+(g/3)I`, and `N=-P(u.grad u)`.  For every `k!=0`, incompressibility gives `H0hat=(I/3-khat tensor khat)ghat`, `S_hat:H0_hat=0`, `|Hess(p)_hat|^2=|g_hat|^2`, `|H0_hat|^2=(2/3)|g_hat|^2`, while the projected PDE is `partial_t S=sym grad N+nu Delta S`.  Hence pressure is modewise orthogonal geometric redistribution, not a second modal `H^1` source; `||H0||_2^2=(2/3)||g||_2^2`, `<S,H0>=0`, and `0.5 d||S||_2^2/dt+nu||grad S||_2^2=0.5 int omega.S omega`.
+At `omega!=0`, the actual vorticity frame splits strain and tidal pressure into `1+2+2` pieces `(a,b,D)` and `(tau,c,E)`, with `a=xi.Sxi`, `b=P S xi`, `D=P S P+(a/2)P`, `tau=xi.H0xi`, `c=P H0 xi`, `E=P H0 P+(tau/2)P`.  Exact pairing is `S:H0=3a tau/2+2b.c+D:E`, whose space integral is zero; pressure can reorient longitudinal/turning/transverse strain geometry but cannot mint total strain-square source.  The exact three-sine torus witness `psi=sin x+sin y-sin(x+y)`, `u=(psi_y,-psi_x,0)` has `u=grad u=S=omega=g=0` at the origin but `Hess p(0)=[[0,-1/5,0],[-1/5,0,0],[0,0,0]]`, so no pointwise `Hess p=F(S,omega)` or finite local first-jet pressure bound exists.  These facts are retained as geometry guards only; the dynamical closure below removes pressure from the state entirely.
 
 ### Pressure-free vorticity closure + Biot--Savart two-point geometry — DISTILLED EXACT DEDUCTION
-On a smooth sufficiently decaying incompressible `R^3` state, `omega=curl u` determines the velocity and strain exactly:
+On a smooth sufficiently decaying incompressible `R^3` state,
 \[
 u[\omega]=\nabla\times(-\Delta)^{-1}\omega,
 \qquad
-S[\omega]=\operatorname{sym}\nabla\nabla\times(-\Delta)^{-1}\omega.
+S[\omega]=\operatorname{sym}\nabla\nabla\times(-\Delta)^{-1}\omega,
 \]
-The Navier--Stokes system is equivalent, on this class, to the **pressure-free closed vorticity PDE**
+and Navier--Stokes is equivalent to the pressure-free closed equation
 \[
 \partial_t\omega+(u[\omega]\!\cdot\nabla)\omega
 =(\omega\!\cdot\nabla)u[\omega]+\nu\Delta\omega
 =S[\omega]\omega+\nu\Delta\omega.
 \]
-Conversely, a smooth divergence-free `omega` solving this equation reconstructs `u` by Biot--Savart; then `partial_t u+(u.grad)u-nu Delta u` is curl-free and hence equals `-grad p`, with `-Delta p=|S|^2-|omega|^2/2`.  Pressure is therefore a dependent geometric reconstruction, not an independent dynamical state or `H^1` source.
+Conversely this vorticity equation reconstructs the momentum law, with pressure only the longitudinal Hodge completion.  Before curl, if `R:=-(u.grad)u`, then `Rhat=Nhat+ik ghat/|k|^2` and `|Rhat|^2=|Nhat|^2+|ghat|^2/|k|^2`; `sym grad` preserves the orthogonal split.  Pressure is therefore a dependent reconstruction, never a second source road.
+For one physical particle, if `F=grad_a X` then `Fdot=A(X,t)F`, `det F=1`, and the exact Cauchy-defect law is `d[F^-1 omega(X,t)]/dt=nu F^-1 Delta omega(X,t)`: inviscid vorticity is carried by volume-preserving deformation and viscosity is the sole frozen-in defect.
 
-The same statement is visible mode by mode before taking curl.  Put `R:=-(u.grad)u`, `N=P R` and `g=-Delta p`.  For every `k!=0`,
+Biot--Savart gives
 \[
-\widehat R(k)=\widehat N(k)+\frac{ik}{|k|^2}\widehat g(k),
-\qquad
-|\widehat R|^2=|\widehat N|^2+\frac{|\widehat g|^2}{|k|^2}.
-\]
-Applying `sym grad` preserves this Hodge split orthogonally: `sym(ik tensor Rhat)=sym(ik tensor Nhat)+Hess(p)_hat`.  Thus the Leray source and pressure Hessian are transverse/longitudinal pieces of the same raw quadratic interaction; pressure cannot be promoted to a second source road.
-
-Biot--Savart gives the actual nonlocal strain geometry.  With `h=y-x`,
-\[
-S(x)=\frac{3}{8\pi}\,PV\!\int_{\mathbb R^3}
+S(x)=\frac{3}{8\pi}\,PV\!\int
 \frac{(h\times\omega(x+h))\otimes h+h\otimes(h\times\omega(x+h))}{|h|^5}\,dh.
 \]
-At `W=|omega(x)|>0`, `xi=omega/W` and `a=xi.Sxi`, this becomes
-\[
-a(x)=\frac{3}{4\pi}\,PV\!\int_{\mathbb R^3}
-\frac{(\xi\!\cdot n)\,((\xi\times n)\!\cdot\omega(x+h))}{|h|^3}\,dh,
-\qquad n=h/|h|.
-\]
-For fixed `xi`, the angular vector `(xi.n)(xi cross n)` is a homogeneous harmonic quadratic in `n`; hence each physical sphere contributes to longitudinal stretching only through the Cartesian spherical-harmonic `l=2` component of the vorticity on that sphere.  A single spatial pair contributes zero whenever `xi.n=0` or `omega(x+h)` lies in `span{xi,n}`; in particular perfectly parallel/antiparallel vorticity directions give zero pairwise stretching.  When nonzero, the pair sign is exactly the sign of `(xi.n) det(xi,n,omega(x+h))`.  This is spatial geometry, not an angular currency or threshold.
-
-After integrating in `x` and symmetrizing `x<->y`, the principal-value source has the exact two-point form
+For `W=|omega(x)|>0`, `xi=omega/W`, `n=h/|h|`, the longitudinal strain is the pure Cartesian `l=2` angular readout `a=(3/4pi)PV int (xi.n)((xi cross n).omega(x+h))|h|^-3 dh`.  After integrating and symmetrizing,
 \[
 Q:=\int\omega\!\cdot S\omega\,dx
 =\frac{3}{8\pi}\iint
-\frac{[(\omega(y)-\omega(x))\!\cdot h]\,[(\omega(x)\times\omega(y))\!\cdot h]}{|h|^5}\,dx\,dy,
-\qquad h=y-x.
+\frac{[(\omega_y-\omega_x)\!\cdot h][(\omega_x\times\omega_y)\!\cdot h]}{|h|^5}\,dx\,dy.
 \]
-For smooth `omega`, both numerator factors are `O(|h|^2)` near the diagonal, so the symmetrized kernel is locally integrable there without a principal value.  Thus global enstrophy production requires, in the exact signed integrand, both a longitudinal vorticity increment and genuine three-dimensional vortex-pair chirality.  Together with root marking, `(C_F/2) int Z_tri dLambda_tri=Q` equals this same two-point scalar; this is a global equality of two exact representations, not a coupling of individual Fourier triads to individual spatial pairs.  Combining with the `H^1` stock law only rewrites the already-primitive source: a finite singular endpoint forces its cumulative signed two-point integral to be unbounded above; no finite chirality budget is created.
+Both numerator factors are `O(|h|^2)` near the diagonal.  With `deltaomega=omega_y-omega_x`, `baromega=(omega_x+omega_y)/2`, this pair integrand is exactly `|h|^-3 (deltaomega.n)[(baromega cross deltaomega).n]`: one zero manifold is longitudinal-increment null, the other is vortex-pair coplanarity/chirality null.  This is the same global scalar as `(C_F/2)int Z_tri`, not a triad-to-spatial-pair matching or a new Hahn law.
 
-There is also an exact material law.  Let `X(a,t)` be the physical flow map, `F=grad_a X`, and `A=grad u(X(a,t),t)`.  Then `Fdot=A F`, `det F=1`, and
+There is an exact anti-theorem against any **atomwise first-contact -> positive-stretching** map.  In the homochiral closed spectrum `1<sqrt(2)<sqrt(3)`, take the radial cut `R=6/5` and any crossing mass `m>0`.  Choosing `Z_A=-(sqrt(2)-1)(sqrt(3)-1)m` gives a canonical upward donor atom `1 -> sqrt(2)` of mass `m` with `Z_A<0`.  Dilate the same nondegenerate triad by `lambda=sqrt(2/3)` and choose `Z_B=(sqrt(2)-sqrt(2/3))(sqrt(2)-2/sqrt(3))m>0`; then `2/sqrt(3) -> sqrt(2)` crosses the **same** cut with the **same** mass and `Z_B>0`.  An `SO(3)` rotation identifies the second `sqrt(2)` child wavevector/helicity with the first, and the nonzero Waleffe coefficient plus amplitude/phase scaling realizes either signed `Z`.  Thus even exact child mode, cut and positive boundary-inflow amount do not determine the sign of triad stretching or of `Q`.
+
+The two-point source nevertheless has an exact **material** dynamics.  Let `x=X(a,t)`, `y=X(b,t)`, `h=y-x`, `r=|h|`, `n=h/r`, `omega_x=omega(x,t)`, `omega_y=omega(y,t)`, and define
 \[
-\frac{d}{dt}\left(F^{-1}\omega(X(a,t),t)\right)
-=\nu F^{-1}\Delta\omega(X(a,t),t).
+L=(\omega_y-\omega_x)\!\cdot h,
+\qquad C=(\omega_x\times\omega_y)\!\cdot h,
+\qquad K=LC/r^5.
 \]
-Hence Euler stretching is exactly volume-preserving deformation of frozen-in vorticity, while in Navier--Stokes viscosity is the sole defect of the Cauchy invariant; pressure does not enter.  Equivalently, every smooth material loop obeys `d/dt int_(Gamma_t) u.dx = nu int_(Gamma_t) Delta u.dx`.  The nonlocal pressure/same-field frontier is therefore closed: any further true-NS rigidity must live in the Biot--Savart two-point vorticity geometry, physical deformation, and viscosity along late UV first contacts, not in a new pressure owner, local pressure bound, or reader-defined angular budget.
+Put the actual secant gradient `Abar=int_0^1 grad u(x+theta h)dtheta`, `Sbar=sym Abar`.  Fundamental calculus and incompressibility give `hdot=Abar h`, `tr Abar=0`, and `rdot/r=n.Sbar n`.  The endpoint deviations are not new defects/currencies but exact curvature readings,
+\[
+E_x:=A_x-Abar=-\int_0^1(1-\theta)(h\!\cdot\nabla)A(x+\theta h)d\theta,
+\quad
+E_y:=A_y-Abar=\int_0^1\theta(h\!\cdot\nabla)A(x+\theta h)d\theta.
+\]
+Using `D_t omega=A omega+nu Delta omega` and the trace-free determinant identity gives
+\[
+\dot C=\det(E_x\omega_x,\omega_y,h)+\det(\omega_x,E_y\omega_y,h)
++\nu[\det(\Delta\omega_x,\omega_y,h)+\det(\omega_x,\Delta\omega_y,h)],
+\]
+\[
+\dot L=2(\omega_y-\omega_x)\!\cdot Sbar h+(E_y\omega_y-E_x\omega_x)\!\cdot h
++\nu(\Delta\omega_y-\Delta\omega_x)\!\cdot h,
+\qquad
+\dot K=r^{-5}(C\dot L+L\dot C)-5(n\!\cdot Sbar n)K.
+\]
+Thus a common incompressible affine deformation can change the longitudinal factor and separation metric but cancels **exactly** from `dot C`; departure from the chirality-null manifold can only come from actual velocity-gradient curvature along the material segment or from viscosity.  By contrast the longitudinal-null manifold can be left by common strain.  These are two physically different zeros of the same primitive source.
+
+Because `det grad_a X=1`, the global source is also exactly material:
+\[
+Q(t)=\frac{3}{8\pi}\iint K(a,b,t)\,da\,db.
+\]
+At a finite singular endpoint, smoothness before `T_*` and the `H^1` stock identity imply for **every** `t_0<T_*`, `sup_(t_0<t<T_*) int_(t_0)^t Q(s)ds=+infinity`.  Hence after every arbitrarily late UV first contact there is unbounded future cumulative signed material-pair source along a subsequence, but the same-child opposite-`Z` anti-theorem forbids assigning that source atomwise to the contact.  The first-contact/two-point typing frontier is therefore closed: any stronger theorem must correlate actual late radial traffic with the exact segment-curvature/material dynamics above, not invent a positive chirality owner, direction-coherence budget, or contact-to-pair genealogy.
 
 ### `5/8` signed-good boundary-crossing theorem — DISTILLED EXACT DEDUCTION
 
@@ -518,8 +439,9 @@ Fix `R_0>0` and split canonical radial variation by the smallest triad radius `L
 ## 12. Core anti-theorems and permanent guards
 
 Do not use raw Duhamel mass as causal probability.  Do not carry a `dW+` charge through modal stock or infer temporal deposit matching from mode-set balance.  Do not re-Hahn after coarse-graining.  Do not use interaction cells as wallets.  Do not call high→high circulation fresh tail supply.  Do not infer a dyadic step from positive work.  Do not promote checkpoints to events or reset cumulative monitors.  Do not treat inherited stock as generation.  Do not treat material rereading or `R_switch` as source.  Do not treat smooth skew relink as generation.  Do not treat OO/ON/NN as generators of their service law.  Do not promote optional coherent-analysis thresholds—Gaussian aspect/radius, holonomy, flatness, sideband or reuse coordinates—to hard-lineage events: their actual consequences are existing strain/dissipation, modal state/work, terminal analysis cost, or no-hit continuation.  Do not split simultaneous causes by a synthetic clock.  Do not turn normalized critical quantities into finite additive reset budgets.  Do not exchange entropy coordinates from different underlying measures as if they were one currency.  Do not infer that deep high-high→low radial action is small from separation alone: its gap may be `O(K)`; the genuine suppression appears only after the canonical donor bound is paired with critical `Hdot^(3/2)` activity.  Do not infer the sign or orientation of `Hess p` from the scalar Poisson trace: only its isotropic part is local, while the trace-free tidal part is an exact `l=2` quadrupole of the same-field source.  Do not rename a pressure pair or `tau=xi.H0xi` as kinetic-energy work, owner or currency.  Do not call `H0` an independent `H^1` source: it is modewise orthogonal to incompressible strain, while `partial_t S=sym grad N+nu Delta S` carries the actual modal source.  Do not infer any finite pointwise pressure-Hessian bound from the local first jet `(S,omega)`; the exact three-sine torus anti-theorem forbids it.  Do not Hahn-split the Biot--Savart two-point stretching integrand into causal spatial-pair owners or call its positive part a chirality currency: it is an exact signed disintegration of the already-native enstrophy source `Q`, not kinetic-energy transfer.
+Do not push a canonical UV boundary-inflow atom to `Q+` or to a positive spatial-pair owner: the exact same-child/same-cut/same-crossing-mass opposite-`Z_tri` witness forbids any such atomwise map.
 
 For every proposed frontier lemma ask: **what exact true Navier–Stokes structure makes this true that a generic averaged/bilinear model need not preserve?**  If the answer is only scaling, cancellation or a generic norm inequality, the physical mechanism has probably not yet been isolated.
 ## 13. What is theorem, what is not
 The identities and structural laws above are exact or exact-conditional as labelled.  Randomized triads, Galerkin/FFT probes, CI runs and stress tests in the source repository are evidence against implementation mistakes, not mathematical substitutes for the continuum proofs.
-The hard-state **kinetic-energy layer** is exact: earlier modal stock and canonical boundary inflow are the only suppliers; viscosity/outflow are losses.  Signed-good inflow has the `5/8` donor geometry; same-time donor reroot has zero depth; and the resolved `K/S` split adds no recursive owner—`K` is conservative relink while fine `S+` is an inherited low-root `dW-` restriction whose recipient pushforward is canonical bad work.  Pure-`G` funding is radial-cut rooted and total radial variation collides with actual hard-shell concentration `mu_sh`; no independent inward-reuse currency remains.  The initial traffic boundary is exact stock at `t=0`; a finite singular endpoint would force arbitrarily high first critical contacts, whose times tend to `T_*` because `M E_M<=4M^-1||grad u||_2^2->0` uniformly on every earlier compact smooth interval.  At each first contact, the chosen interval `J` and threshold `Lambda` give an **EXACT analytic proof partition**: the deep side forces genuine radial action, while the comparable side forces a scale-independent lower bound on the derived edge-source damping diagnostic `K2_edge`.  Sparse comparable heat bands then imply Lamb-action divergence, but this is not a new endpoint road: finite Lamb action would bound `||grad u||_2` by the gradient NS identity, hence bound `Hdot^(1/2)` by energy/interpolation, contradicting the already-canonical Kenig--Koch finite-endpoint criterion.  Infinitely many deep contacts still genuinely force `A_down=infinity`.  The algebraic involution `u->-u` (not an NS flow symmetry) fixes `N` and reverses `int omega.S omega`, so Lamb action cannot be renamed positive stretching.  The static radial/helicity/cancellation seam is closed by the signed-curl path plus Betchov source bridge.  The pressure/H1 seam is closed more strongly by the pressure-free vorticity formulation: `u,S` are Biot--Savart functionals of `omega`, pressure is the longitudinal Hodge reconstruction, and the primitive source `Q` is exactly the signed two-point product of longitudinal vorticity increment and vortex-pair chirality.  The Cauchy material law shows pressure is absent from frozen-in deformation and viscosity is its sole defect.  Any remaining true-NS frontier must therefore connect late UV first contacts to this exact Biot--Savart two-point/material geometry without turning its signed spatial integrand into a new owner, budget or Hahn law.  Degenerate Young/Christ remains auxiliary.  See `MIXED_FRONTIER.md`.
+The hard-state **kinetic-energy layer** is exact: earlier modal stock and canonical boundary inflow are the only suppliers; viscosity/outflow are losses.  Signed-good inflow has the `5/8` donor geometry; same-time donor reroot has zero depth; and the resolved `K/S` split adds no recursive owner—`K` is conservative relink while fine `S+` is an inherited low-root `dW-` restriction whose recipient pushforward is canonical bad work.  Pure-`G` funding is radial-cut rooted and total radial variation collides with actual hard-shell concentration `mu_sh`; no independent inward-reuse currency remains.  Finite singularity forces arbitrarily late UV-fresh first contacts and, independently, unbounded cumulative signed enstrophy source after every late time.  The signed-curl/Betchov theorem and Biot--Savart two-point formula are two exact representations of that same source, but the same-child opposite-`Z_tri` anti-theorem proves that no individual boundary-inflow atom owns a positive stretching/spatial-pair charge.  Material-pair dynamics closes the missing geometry: common incompressible affine deformation changes separation and longitudinal increment but cancels from chirality generation; only actual velocity-gradient curvature along the segment or viscosity can create chirality.  Therefore the first-contact/two-point **typing** frontier is closed.  Any stronger true-NS theorem must establish an exact spacetime correlation between late radial traffic and these segment-curvature/material dynamics, or exhibit an exact compatible escape; it may not invent a chirality Hahn, pressure/Lamb road, or reader-defined coherence budget.  Degenerate Young/Christ remains auxiliary.  See `MIXED_FRONTIER.md`.
