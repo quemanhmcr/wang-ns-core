@@ -229,18 +229,29 @@ So the atom is necessarily true boundary inflow, never internal work in `C_m`.  
 
 The crucial topology is zero-depth: the donor kernel is same-time disintegration, not a temporal predecessor map.  Therefore the `5/8` scale drop may describe where one physical transfer came from, but it may **not** be iterated as an event clock without a separate state/corridor continuation theorem.  Multiple donor pieces remain set-valued provenance; no probability, winner, re-Hahn or stock assignment appears.
 
-## 8. Absolute kinetic-energy layer; temporal Mixed remains OPEN
+## 8. Hard-state inflow corridor + donor-state reroot — DISTILLED EXACT; MIXED OPEN
 
 For every fixed hard mode set `P` and every physical interval `[s,t]`, exact NS gives
 \[
-\boxed{E_P(t)+D_P[s,t]+\Phi_{out,P}[s,t]
-=E_P(s)+\Phi_{in,P}[s,t]}.
+oxed{E_P(t)+D_P[s,t]+\Phi_{out,P}[s,t]=E_P(s)+\Phi_{in,P}[s,t]}.
 \]
-This is the complete modal kinetic-energy ledger.  Earlier stock and canonical nonlinear boundary inflow are the only suppliers; viscosity and outward flow are losses.  Internal HH circulation is real but cancels from set divergence.  Pressure/SGS source hits, high strain, symmetric `S` strain/deformation, service, material marks and conservative relink remain real physical geometry/state/work annotations, but none can become a third kinetic-energy supplier.
+Therefore, with `e1=E_P(t)>0`,
+\[
+oxed{E_P(s)\ge e_1-\Phi_{in,P}[s,t]}.
+\]
+This is already a causal corridor made only of physical objects.  Before canonical boundary inflow reaches `(1-theta)e1`, the same fixed hard state retains more than `theta e1`; if that physical inflow face never occurs before `t=0`, inherited modal stock reaches the initial boundary.  Viscosity/outflow are losses.  Pressure/SGS, symmetric `S` strain/deformation, service, material marks and conservative relink may be real simultaneous geometry/work annotations, but none adds another supplier term.
 
-This closes the **energy ontology**, not the full event chronology.  There is no FIFO/LIFO or labeled energy particle, and same-time donor provenance cannot be promoted to temporal recursion.  A source/high-strain/service theorem may expose another hard state, but connecting that state to an earlier/later event requires its own native PDE continuation law.  Untyped locators stay untyped.
+Thus the smooth `Q^2`/coefficient machinery is not required to manufacture temporal energy causality; it remains useful for registration, geometry and local service theorems.  At an inflow face the physical object is the inherited canonical `dW+` boundary law itself.  Bad/nonforward sublaw is terminal; signed-good sublaw has exact same-time donor support in the next two `5/8` cells, but that donor pushforward remains zero-depth provenance.
 
-Therefore the central OPEN interface is now precise: retain all singularity-relevant geometry marks and prove a genuine temporal state/corridor theorem that connects successive physical events without manufacturing a genealogy.  Only after that interface is closed may one combine the existing high-strain and conditional signed-good time telescopes into a full interior no-escape theorem.  Initial-data and hypothetical singular-time interfaces remain separate afterward.
+### Measure-valued donor-state reroot — DISTILLED EXACT DEDUCTION
+
+Lift the certified same-time cyclic donor kernel by physical `dt`, restrict its recipient marginal to the actual boundary inflow of `P`, and push the donor side through the deterministic hard-cell map:
+\[
+d\Sigma_P=(t,\pi_{donor})_\#\,d\mathcal M_P.
+\]
+`dSigma_P` is still a positive **work-valued provenance/support law**, not state energy and not causal probability.  It adds zero event depth.  For `dSigma_P`-almost every donor event the donor hard role is occupied—if that donor role vanished, the underlying physical edge-work density would vanish.  Hence those simultaneous donor states can each start their own fixed-mode inflow corridor at the same physical time.  No recipient inflow atom is assigned to later stock; no winner/normalization is chosen; generic coarse self-loops remain zero-depth.
+
+The remaining OPEN problem is the **no-escape theorem for this measure-valued state/corridor forest with all genuine geometry marks attached**.  Symmetric `S` is not ontologically open: the exact adjoint split identifies it with existing resolved strain/deformation, while skew relink is zero-depth.  What remains open is recurrence handoff—when physical strain/deformation interrupts signed-good registration, bind that already-identified strain state to the native `D_V`/high-strain telescope (or another exact state law) without turning an analysis/coherent threshold into a new primitive.  Endpoint interfaces remain separate.
 
 ## 9. Canonical good spacetime inflow adapter — DISTILLED EXACT; YOUNG/CHRIST AUXILIARY
 The native signed edge law is lifted on every compact smooth physical slab `I` before any coarsening:
@@ -290,11 +301,11 @@ Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier s
 
 ## 12. Best next targets
 
-1. **Temporal state/corridor theorem.**  Connect successive genuine physical events while retaining all source/strain/interface marks and without turning same-time donor provenance or checkpoints into recursion.
-2. **Interior Mixed assembly.**  Only after that theorem, compose the high-strain and signed-good physical-time telescopes without a common synthetic currency.
-3. **Initial-data / singular-time interfaces.**  Keep both endpoint arguments separate from interior no-escape.
-4. **Auxiliary productivity (separate).**  Resolve degenerate Young/Christ only if Gaussian/coherent productivity remains useful; it is not part of the causal energy law.
+1. **State-forest Mixed no-escape.**  Compose hard-state corridors, zero-depth same-time donor reroots, and genuine high-strain relays; prove every infinite surviving branch satisfies a native telescope or reaches `t=0`.
+2. **Signed-good registration on the state forest.**  Verify that after rerooting, the next generated child is the previous physical donor **state** in the exact sense needed by the parabolic common-surface theorem, without a token identity.
+3. **Geometry attachment.**  Retain source/high-strain/`S`/interface marks at their real times and show they cannot create a new energy edge or hidden reset.
+4. **Endpoint/auxiliary work.**  Keep initial/singular-time interfaces separate; Young/Christ stays auxiliary unless independently needed.
 
 ## 13. Frontier in one sentence
 
-> **The energy law is now small and rigid: modal stock plus canonical boundary flow plus viscosity.  The `5/8` grid resolves signed-good inflow geometry exactly, but same-time donors remain zero-depth provenance; the remaining frontier is a genuine temporal state/corridor law, not an invented energy genealogy.**
+> **Fixed-mode stock corridors and same-time donor-state rerooting are now exact and measure-valued.  The remaining interior problem is branch geometry: prove that every surviving state forest is forced into the native high-strain or signed-good physical-time telescopes without ever inventing a token.**

@@ -105,6 +105,8 @@ Continuity gives `E_P(s_theta)=theta e_1` and `E_P(r)>theta e_1` for `s_theta<r<
 
 Thus a terminal hard state has an exact **last-entry alternative**: either the same physical mode set is already occupied above the `theta` level back to `t=0`, or actual canonical nonlinear boundary inflow enters `P` during its final occupied corridor.  `s_theta` is only a control-volume boundary, never an event or clock.  No FIFO/LIFO/proportional matching is introduced, and no inflow atom is declared to be the terminal stock.
 
+Equivalently, `F(s)=Phi_in,P[s,t]` is a monotone **physical inflow corridor**: from the same balance `E_P(s)>=E_P(t)-F(s)`, so before the closed face `F=(1-theta)E_P(t)` the fixed hard state still has `E_P(s)>theta E_P(t)`; if that face never occurs before `t=0`, the stock reaches the initial boundary.  The only advancing quantity here is inherited canonical boundary flow, not a proof clock.
+
 Consequently work elsewhere in a smooth envelope `Q` cannot continue the hard state merely because `QP=P`; it matters only when canonical inflow actually crosses into `P`.  For `P_M={M/2<|k|<=M}` with `M E_M(t)>=mu_0`, `theta=1/5` gives either `M E_M(0)>mu_0/5` or `M Phi_in,M[s_theta,t]>=4mu_0/5`.  Pressure, SGS, strain or service may expose the state, but none is a third supplier.  A `dW+` recipient charge lives at its work event; between events the persistent object is modal stock, not that charge carried through time.
 
 ## 5. Radial crossing and hard-tail supply — EXACT
@@ -185,7 +187,7 @@ T^{phys}_{ab}=-2\operatorname{Re}\langle\eta_a u,K_{phys}\eta_bu\rangle,
 \qquad T^{phys}_{ab}=-T^{phys}_{ba}.
 \]
 
-Thus smooth `K_phys` relink is a subset-boundary flux and has zero recursive generation depth.  The symmetric part remains actual strain/deformation.
+Thus smooth `K_phys` relink is a subset-boundary flux and has zero recursive generation depth.  The symmetric part remains actual strain/deformation.  On a complete hard event-role partition its pair matrix is symmetric and reconstructs the same full resolved strain work; `S` is therefore not a fifth interface/source currency.  Its ontology is closed even though its recurrence handoff into the native strain/`D_V` telescope is a separate theorem question.
 
 An arbitrary time-dependent partition can move analysis-channel energy while `u` is fixed.  Therefore unbound role motion is observer motion, not a Navier–Stokes source.
 
@@ -213,7 +215,7 @@ If no hit occurs over the full natural corridor, the same smooth carrier persist
 
 A physical first stop is the first physical time at which a named cause is met.  Exact simultaneous causes remain one joint cause set and one physical charge.  No lexicographic winner, fractional synthetic time or magnitude-based tie split is allowed.
 
-Natural horizons and checkpoints are analysis segmentation, not events.  They do not reset cumulative monitors, terminal coefficients or carriers.  Interior checkpoint Zeno either meets an already-existing physical face or continues the same carrier; `t=0` is absorbing.
+Natural horizons and checkpoints remain analysis segmentation, not events.  They do not reset cumulative monitors, terminal coefficients or carriers.  Interior checkpoint Zeno either meets an existing native face or continues the same carrier; coefficient faces remain locators until physical energy/work reentry, and `t=0` is absorbing.
 
 ## 9. Inherited stock and material provenance — EXACT-CONDITIONAL / EXACT
 
@@ -349,6 +351,8 @@ Hence signed-good work into `C_m` can never be internal traffic: it is actual no
 
 This is a support theorem for the **same physical work event**.  The donor kernel adds provenance to canonical `dW+` with zero recursion depth; it does not turn the donor cell into a temporal ancestor, assign inflow atoms to terminal stock, or create a Markov/particle genealogy.  Multiple donor pieces are all retained; no winner, probability or re-Hahn is introduced.
 
+Lift this same-time kernel by physical `dt`, restrict recipients to actual boundary inflow, and push donors to deterministic hard cells.  The resulting positive work-valued state-support law creates no charge/depth; for almost every donor event under that law the donor hard role is nonzero (otherwise its edge-work density vanishes).  Each such simultaneous donor state may therefore start its own fixed-mode inflow corridor from the same physical time, with no deposit matching.
+
 Together with exact mode-set continuity, this yields the absolute kinetic-energy grammar for every fixed hard control volume:
 \[
 \boxed{
@@ -358,7 +362,7 @@ Together with exact mode-set continuity, this yields the absolute kinetic-energy
 \]
 Pressure/SGS source marks, high strain, symmetric strain work, service, material marks and conservative relink may all occur physically, but none can mint a third modal-energy supplier.  Internal nonlinear circulation remains real and cancels only from the control-volume divergence.
 
-What this theorem deliberately does **not** do is recurse through same-time donor provenance.  Any temporal no-escape theorem must separately prove how a physical state/corridor at one event continues to another event; mode-set balance and donor support alone do not supply that matching.
+The same-time donor pushforward is only a **zero-depth state handoff**; temporal progress occurs only on the donor state's subsequent modal corridor.  This closes state rerooting but not Mixed no-escape: one must still prove that every surviving branch satisfies the native physical-time hypotheses, especially across genuine symmetric strain/deformation geometry.
 
 ## 12. Core anti-theorems and permanent guards
 

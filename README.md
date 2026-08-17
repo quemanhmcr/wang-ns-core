@@ -92,11 +92,11 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical shell is supplied; same-carrier inherited-stock relay under its endpoint/residual-work hypotheses; the older signed-good generated-HH time telescope on a supplied parent-continuing chain.
 
-**DISTILLED EXACT DEDUCTIONS:** role/probe, shell/service and optional coherent-analysis coordinates mint no causal charge; hard-state last-entry gives exact stock-or-boundary-inflow supply with no temporal matching; source marks mint no kinetic-energy edge; a deterministic `5/8` radial grid makes every signed-good positive inflow atom a true boundary crossing whose same-time donor lies in one of the next two lower cells.  Donor provenance remains zero recursion depth.
+**DISTILLED EXACT DEDUCTIONS:** role/probe, shell/service and optional coherent-analysis coordinates mint no causal charge; hard-state last-entry strengthens to the physical inflow corridor `E_P(s)>=E_P(t)-Phi_in,P[s,t]`; the `5/8` grid gives exact signed-good boundary geometry; and the spacetime cyclic donor kernel pushes actual inflow to occupied simultaneous donor hard states as a zero-depth work-valued support law, from which each donor state can start its own modal corridor.
 
 **EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, CI certificates and master traces.
 
-**OPEN:** a genuine temporal state/corridor theorem connecting successive physical events without donor-token genealogy; then broader interior Mixed assembly and the initial-data/hypothetical-singular-time interfaces.  Degenerate Young/Christ remains only an auxiliary productivity/coherent-analysis seam.
+**OPEN:** Mixed no-escape of the resulting measure-valued state/corridor forest.  `S` is already exactly identified as existing resolved strain/deformation; the sharp seam is its recurrence handoff into a native strain/`D_V` state telescope while preserving signed-good parent-state registration.  Initial-data/hypothetical-singular-time interfaces remain separate; coefficient/Young machinery is auxiliary unless independently needed.
 
 ## Upstream proof lookup map
 
