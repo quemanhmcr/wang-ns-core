@@ -110,7 +110,9 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXACT FULL-CONVOLUTION STRESS TEST:** for a finite Fourier NS state, an absent mode `q=n+m` with a unique active parent pair is born immediately whenever its exact Leray pair-source is nonzero; viscosity cannot cancel an absent child.  This is state generation, not `dW+`.  Kishimoto--Yoneda Theorem 1.4 gives the corresponding zero-tolerance finite-mode Euler rigidity (stationary 2D-like/Beltrami only).
 
-**OPEN:** prove the quantitative continuum cancellation-cover analogue for multiscale hard mass: cross-sum source must create real stock or be cancelled by comparably large same-output physical pairs.  No cell count, entropy or raw Duhamel mass may replace those pairs.
+**DISTILLED EXACT MINORITY CHANNEL:** homochiral triads create zero `Hdot^(1/2)` stock.  On every heterochiral triad `sum rho_iT_i=2rho_mT_m` for the minority-helicity root `m`; positive minority work has same-helicity parents and satisfies the native global gap `r_e<=99/100`.  Thus any critical-stock blow-up requires unbounded radius-weighted canonical minority-`B` work; the deficit is not an energy sink.
+
+**OPEN:** prove the quantitative continuum same-output cancellation cover for the minority-`B` production law: its pair source must leak into real stock or be cancelled by comparably large physical pairs.  No cell count, entropy or raw Duhamel mass may replace them.
 
 ## Upstream proof lookup map
 
