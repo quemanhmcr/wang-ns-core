@@ -98,9 +98,9 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXTERNAL EXACT ENDPOINT:** Kenig--Koch, arXiv:0908.3349, Theorem 0.1: a mild solution with `u_0 in Hdot^(1/2)` that stays bounded in `Hdot^(1/2)` on its maximal lifespan is global and smooth; hence finite-time singularity forces unbounded critical stock.
 
-**DISTILLED EXACT ENDPOINT GATE:** finite singularity forces `C_(1/2)` unbounded; absolute continuity plus the hard-shell collision therefore forces times `t_n->T_*` and radii `M_n` with `M_n||P_(M_n/2,M_n]u(t_n)||_2^2>c_nu=(2nu/C_sh)^2`.  No claim `M_n->infinity` is made.
+**EXACT ENDPOINT SHARPENING:** separating bounded low roots from high roots shows finite singularity forces `t_n->T_*`, `M_n->infinity`, `M_nE_(M_n)>c_nu`.  Since the initial `Hdot^(1/2)` tail vanishes, large `M_n` cannot be initial stock: last-entry forces `M_n Phi_in>=4c_nu/5`, hence canonical good or bad inflow carries at least `2c_nu/5`.
 
-**OPEN:** prove that these universal hard-shell states cannot accumulate at a finite time under the exact stock/inflow and `H/G` traffic laws; this is the sole remaining large-data frontier.
+**OPEN:** exclude infinite UV rebirth through those two actual work laws.  Good births must use signed-good donor/parabolic geometry; bad births remain real inefficient/nonforward energy and may not be treated as dissipation or a synthetic transfer-loss budget.
 
 ## Upstream proof lookup map
 
