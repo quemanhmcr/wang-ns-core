@@ -284,14 +284,11 @@ Consequently the degenerate full-signed Young/Christ margin `mu->0` is **not a m
 
 For `H_N={|k|>N}`, exact radial continuity says fresh tail supply is `Phi_up`, not gross positive work inside `H_N`.  Internal high→high circulation can be arbitrarily large with `Phi_up=0`; it is real redistribution but no tail-supply owner.  Every atom of `Phi_up` is either pure-UV, which forces `M=2N` and enters the direct first-shell natural window, or resolved contact, which enters existing `K/S` or the contact-HH natural-window route.  Hence the historical nonlocal high-tail regeneration branch does not survive as an independent renewal edge.  An unrelated hard event may coexist elsewhere, but it is not a predecessor of the current hard state unless actual canonical inflow crosses into that state; smooth or tail overlap alone creates no edge.
 
-## 10. Final interfaces remain separate — OPEN
+## 10. Initial boundary closed; critical singular endpoint — OPEN
 
-Even the present interior traffic exhaustion does not by itself prove global regularity.  Two interfaces still require their own exact arguments:
+The old initial-data entrance seam disappears with genealogy: exact mode-set continuity already says that a hard state with no earlier supplying inflow is inherited modal stock at `t=0`, and low-ball funding is rooted in `E_<=R(0)`.  No atom-to-atom attachment is required.
 
-- **initial-data entrance:** how every certified backward hard-state predecessor branch attaches to the absorbing `t=0` boundary for the admissible initial class;
-- **hypothetical singular-time interface:** how no-escape of the certified physical predecessor relation rules out or controls a singular endpoint.
-
-No document in this repository claims these are closed.
+For the remaining endpoint, the radial-variation theorem gives `d C_(1/2)/dt+2nu H_(3/2)<=C_rad sqrt(C_(1/2)) H_(3/2)`.  Thus the sublevel `||u||_Hdot^(1/2)<=nu/C_rad` is viscosity-dominated.  Beyond the small sublevel, use the actual critical-space rigidity theorem: Kenig--Koch, arXiv:0908.3349, Theorem 0.1 says a mild solution bounded in `Hdot^(1/2)` on its maximal lifespan is global and smooth.  Hence any finite singular time must satisfy `limsup ||u(t)||_Hdot^(1/2)=infinity`.  The programme now has one global frontier only: prove that this primitive critical stock cannot diverge for the admissible large data.  No document here claims that final bound.
 
 ## 11. Research protocol for every next lemma
 
@@ -310,7 +307,7 @@ Finally ask the Tao/averaged-NS stress test:
 Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier support, modal energy continuity, incompressibility/Leray orthogonality, viscosity, skew/symmetric operator structure or another explicit NS identity.  “Scaling”, “energy cancellation” and “generic bilinear bound” alone are insufficient at the frontier.
 
 ## 12. Best next targets
-1. **Critical endpoint law.**  Use the radial-variation collision to state the sharp continuation criterion in the native pair `||u||_Hdot^(1/2)`, `int||u||_Hdot^(3/2)^2`; do not rename their product a budget.
-2. **Initial/singular interfaces.**  Prove how the exhausted interior traffic attaches to `t=0` and how bounded critical traffic excludes or controls a hypothetical singular endpoint.
+1. **Critical-stock no-blowup.**  With interior traffic and the initial boundary exhausted, attack only the primitive statement `sup_(t<T)||u(t)||_Hdot^(1/2)<infinity` for smooth large data; any new mechanism must be an exact NS law, not a reuse currency.
+2. **Singular-interface closure.**  Once that bound exists, Kenig--Koch endpoint rigidity closes the hypothetical finite singular time automatically.
 ## 13. Frontier in one sentence
-> **The interior traffic grammar is now closed at the physical-flow level: low-ball Kirchhoff roots funding, signed-good work creates a fixed positive critical radial moment, and every inward non-G cancellation is bounded by the native `Hdot^(1/2)`–`Hdot^(3/2)` collision.  What remains is endpoint regularity, not an ancestry/reuse currency.**
+> **All interior roads and the `t=0` traffic boundary are now typed by actual NS stock/flow laws.  A finite singular endpoint can survive only by literal blow-up of the primitive critical stock `||u||_Hdot^(1/2)`; that large-data critical-stock bound is the sole remaining frontier.**

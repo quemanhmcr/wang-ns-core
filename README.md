@@ -88,7 +88,7 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 ## Current theorem status in one view
 
-**EXACT physical spine:** signed helical edge registration; continuum signed edge measure; canonical positive routing; cyclic donor kernel; mode-set energy continuity; radial crossing; hard-tail true upward supply; resolved-contact binding; pure-UV first-shell route; exact first-stop/tie semantics; checkpoint quotient; conservative relink quotient; inherited-stock relay; material-service quotient; high-strain telescope; canonical radial-variation collision.
+**EXACT physical spine:** signed helical edge registration; continuum signed edge measure; canonical positive routing; cyclic donor kernel; mode-set energy continuity; radial crossing; hard-tail true upward supply; resolved-contact binding; pure-UV first-shell route; exact first-stop/tie semantics; checkpoint quotient; conservative relink quotient; inherited-stock relay; material-service quotient; high-strain telescope; canonical radial-variation collision; `t=0` as exact modal-stock boundary.
 
 **EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical shell is supplied; same-carrier inherited-stock relay under its endpoint/residual-work hypotheses; the older signed-good generated-HH time telescope on a supplied parent-continuing chain.
 
@@ -96,7 +96,9 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, CI certificates and master traces.
 
-**OPEN:** no independent interior reuse currency remains: `A_(down,notG)` is bounded by `C_rad int||u||_Hdot^(1/2)||u||_Hdot^(3/2)^2`.  The remaining problem is the native critical endpoint law—growth of `Hdot^(1/2)`, `Hdot^(3/2)` activity—and then the initial-data/hypothetical-singular-time interfaces.
+**EXTERNAL EXACT ENDPOINT:** Kenig--Koch, arXiv:0908.3349, Theorem 0.1: a mild solution with `u_0 in Hdot^(1/2)` that stays bounded in `Hdot^(1/2)` on its maximal lifespan is global and smooth; hence finite-time singularity forces unbounded critical stock.
+
+**OPEN:** interior traffic and the initial `t=0` boundary are exhausted.  The sole remaining large-data frontier is to prove `sup_(t<T)||u(t)||_Hdot^(1/2)<infinity`; once obtained, the external endpoint theorem rules out a finite singular time.
 
 ## Upstream proof lookup map
 
