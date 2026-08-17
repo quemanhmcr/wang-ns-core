@@ -284,11 +284,9 @@ Consequently the degenerate full-signed Young/Christ margin `mu->0` is **not a m
 
 For `H_N={|k|>N}`, exact radial continuity says fresh tail supply is `Phi_up`, not gross positive work inside `H_N`.  Internal high→high circulation can be arbitrarily large with `Phi_up=0`; it is real redistribution but no tail-supply owner.  Every atom of `Phi_up` is either pure-UV, which forces `M=2N` and enters the direct first-shell natural window, or resolved contact, which enters existing `K/S` or the contact-HH natural-window route.  Hence the historical nonlocal high-tail regeneration branch does not survive as an independent renewal edge.  An unrelated hard event may coexist elsewhere, but it is not a predecessor of the current hard state unless actual canonical inflow crosses into that state; smooth or tail overlap alone creates no edge.
 
-## 10. Initial boundary closed; critical singular endpoint — OPEN
+## 10. Initial boundary closed; singularity forces late hard shells — DISTILLED EXACT / EXTERNAL EXACT
 
-The old initial-data entrance seam disappears with genealogy: exact mode-set continuity already says that a hard state with no earlier supplying inflow is inherited modal stock at `t=0`, and low-ball funding is rooted in `E_<=R(0)`.  No atom-to-atom attachment is required.
-
-For the remaining endpoint, the radial-variation theorem gives `d C_(1/2)/dt+2nu H_(3/2)<=C_rad sqrt(C_(1/2)) H_(3/2)`.  Thus the sublevel `||u||_Hdot^(1/2)<=nu/C_rad` is viscosity-dominated.  Beyond the small sublevel, use the actual critical-space rigidity theorem: Kenig--Koch, arXiv:0908.3349, Theorem 0.1 says a mild solution bounded in `Hdot^(1/2)` on its maximal lifespan is global and smooth.  Hence any finite singular time must satisfy `limsup ||u(t)||_Hdot^(1/2)=infinity`.  The programme now has one global frontier only: prove that this primitive critical stock cannot diverge for the admissible large data.  No document here claims that final bound.
+The old initial-data seam disappears with genealogy: no earlier supplying inflow means exact modal stock at `t=0`; low-ball funding is rooted in `E_<=R(0)`.  For the other endpoint, Kenig--Koch, arXiv:0908.3349, Theorem 0.1 says finite `T_*` forces unbounded `C_(1/2)`.  Absolute continuity on each `[0,T]`, `T<T_*`, then gives `t_n->T_*` with positive critical-stock derivative.  The shell-collision theorem forces radii `M_n` satisfying `M_n||P_(M_n/2,M_n]u(t_n)||_2^2>c_nu`, `c_nu=(2nu/C_sh)^2`.  No scale trend is inferred.  The sole global frontier is now concrete: can these universal physical hard-shell states accumulate at finite time under the exact `H/G` traffic grammar?
 
 ## 11. Research protocol for every next lemma
 
@@ -307,7 +305,7 @@ Finally ask the Tao/averaged-NS stress test:
 Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier support, modal energy continuity, incompressibility/Leray orthogonality, viscosity, skew/symmetric operator structure or another explicit NS identity.  “Scaling”, “energy cancellation” and “generic bilinear bound” alone are insufficient at the frontier.
 
 ## 12. Best next targets
-1. **Critical-stock no-blowup.**  With interior traffic and the initial boundary exhausted, attack only the primitive statement `sup_(t<T)||u(t)||_Hdot^(1/2)<infinity` for smooth large data; any new mechanism must be an exact NS law, not a reuse currency.
-2. **Singular-interface closure.**  Once that bound exists, Kenig--Koch endpoint rigidity closes the hypothetical finite singular time automatically.
+1. **Universal hard-shell accumulation.**  Starting only from `M E_M>c_nu`, classify stock versus actual inflow and prove whether such states can occur arbitrarily late without forcing `t=0`, viscosity, or an already finite `H/G` route.
+2. **No false scale claim.**  Do not assume `M_n->infinity`; derive any scale drift from actual boundary work/support or prove it unnecessary.
 ## 13. Frontier in one sentence
-> **All interior roads and the `t=0` traffic boundary are now typed by actual NS stock/flow laws.  A finite singular endpoint can survive only by literal blow-up of the primitive critical stock `||u||_Hdot^(1/2)`; that large-data critical-stock bound is the sole remaining frontier.**
+> **A finite singularity can now enter only through a concrete gate: universal hard-shell states `M E_M>c_nu` arbitrarily late.  The sole remaining theorem is to show that such states cannot accumulate at finite time under the exact physical traffic grammar.**

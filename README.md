@@ -98,7 +98,9 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXTERNAL EXACT ENDPOINT:** Kenig--Koch, arXiv:0908.3349, Theorem 0.1: a mild solution with `u_0 in Hdot^(1/2)` that stays bounded in `Hdot^(1/2)` on its maximal lifespan is global and smooth; hence finite-time singularity forces unbounded critical stock.
 
-**OPEN:** interior traffic and the initial `t=0` boundary are exhausted.  The sole large-data frontier is now physical: prove that the recurrent critical hard-shell states forced by every increase of `C_(1/2)` cannot drive `||u||_Hdot^(1/2)` to infinity; once bounded, the external endpoint theorem rules out a finite singular time.
+**DISTILLED EXACT ENDPOINT GATE:** finite singularity forces `C_(1/2)` unbounded; absolute continuity plus the hard-shell collision therefore forces times `t_n->T_*` and radii `M_n` with `M_n||P_(M_n/2,M_n]u(t_n)||_2^2>c_nu=(2nu/C_sh)^2`.  No claim `M_n->infinity` is made.
+
+**OPEN:** prove that these universal hard-shell states cannot accumulate at a finite time under the exact stock/inflow and `H/G` traffic laws; this is the sole remaining large-data frontier.
 
 ## Upstream proof lookup map
 
