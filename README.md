@@ -108,7 +108,9 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **DISTILLED EXACT SHELL LAYER CAKE:** `||u||_Hdot^(1/2)^2=int_0^infinity [R||P_(R/2,R]u||_2^2] dR/R`.  Therefore a bounded-amplitude shell of bounded log-width cannot blow up merely by translating to UV.
 
-**OPEN:** the final physical alternatives are shell-amplitude concentration or logarithmic multiscale proliferation.  Current scalar ledgers permit an abstract critical shell cascade, so the next theorem must use full simultaneous NS convolution/cross-interaction structure, not ancestry or entropy labels.
+**EXACT FULL-CONVOLUTION STRESS TEST:** for a finite Fourier NS state, an absent mode `q=n+m` with a unique active parent pair is born immediately whenever its exact Leray pair-source is nonzero; viscosity cannot cancel an absent child.  This is state generation, not `dW+`.  Kishimoto--Yoneda Theorem 1.4 gives the corresponding zero-tolerance finite-mode Euler rigidity (stationary 2D-like/Beltrami only).
+
+**OPEN:** prove the quantitative continuum cancellation-cover analogue for multiscale hard mass: cross-sum source must create real stock or be cancelled by comparably large same-output physical pairs.  No cell count, entropy or raw Duhamel mass may replace those pairs.
 
 ## Upstream proof lookup map
 

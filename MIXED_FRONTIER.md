@@ -296,7 +296,6 @@ With signed radius `x=s|k|`, the cyclic work law gives `sum x_iT_i=0`, hence the
 
 ### Bad-sidecar outflow quotient — DISTILLED EXACT DEDUCTION
 Let `A_N` be the helicity-resolved sidecar annulus.  Enlarge only for energy accounting to `L_(2N)={|k|<=2N}` with both helicities.  Every actual `Phi_out,A` donor atom with recipient `<=2N` is internal traffic of `L_(2N)` and cancels exactly from its mode-set divergence; every recipient `>2N` is true radial upward crossing and hence a restriction of `Phi_up(2N)`.  There is no third recycling owner.  The deep exit also inherits the absolute low-output locality bound: donor-row marginal `<=[-T_d]_+`, `|T_d|<=4N|a_da_ra_q|`, and triangle closure puts the other high root above `N`, so `N Phi_(A->>2N)(I)<=3sqrt(pi/2)sqrt(mu_A^*)D_>N^(N)`.  Thus local helical recycling is internal circulation; UV escape re-enters the existing radial supply/viscosity grammar.
-
 ## 11. Research protocol for every next lemma
 
 Before proving an estimate, write the proposed physical event in the primitive NS variables and identify its units.  Ask whether it survives a change of cutoff, packet, role, probe, material reading or checkpoint while the physical trajectory is fixed.  If not, it is representation until proved otherwise.
@@ -312,9 +311,10 @@ Finally ask the Tao/averaged-NS stress test:
 > **What exact true Navier–Stokes structure makes this step true?**
 
 Acceptable answers include Waleffe/helical coefficient geometry, exact Fourier support, modal energy continuity, incompressibility/Leray orthogonality, viscosity, skew/symmetric operator structure or another explicit NS identity.  “Scaling”, “energy cancellation” and “generic bilinear bound” alone are insufficient at the frontier.
-
-## 12. Best next targets
-1. **Concentration versus proliferation.**  Treat separately `sup_R mu(R,t)->infinity` and divergence of `int mu(R,t)dR/R` through increasing log-scale occupation with bounded shell amplitude; use first-contact fertility on the first and full convolution compatibility on the second.
-2. **Full-convolution obstruction.**  A scalar shell model still survives all current ledgers.  The next valid theorem must use simultaneous cross-interactions among the many physical companion modes required by proliferating `G` births, or exhibit a true NS rigid exceptional family; entropy/cycle labels alone are insufficient.
+## 12. Full-convolution leakage theorem and next target
+### Unique-sum leakage — EXACT finite-Fourier Navier--Stokes / EXTERNAL EXACT RIGIDITY
+At a physical time `t0`, let a finite Fourier state have active support `S`, let `q=n+m notin S`, and assume `{n,m}` is the unique unordered active pair summing to `q`.  Then the full Leray NS Fourier ODE gives
+`d_t u_q(t0)=-(i/2)P_q[(u_n.m)u_m+(u_m.n)u_n]`: viscosity contributes zero because `u_q(t0)=0`.  If this vector is nonzero, `q` is born immediately.  This is **state generation**, not positive work: `d_t|u_q|^2(t0)=0`, so no `dW+` atom is manufactured.  Exact sparse invariance therefore requires pair noninteraction or genuine same-sum cancellation by other physical pairs.  Kishimoto--Yoneda, arXiv:2110.08039, Theorem 1.4, classifies the zero-tolerance 3D Euler endpoint: finite-mode solutions are stationary 2D-like families or Beltrami flows.
+The continuum target is now precise: prove a **quantitative cancellation cover** for proliferating hard Fourier mass.  Cross-sum source must either create measurable new modal stock after genuine PDE evolution, or be cancelled by other same-output pair sources of comparable size; those cancelling pairs are themselves physical interaction mass and may not be replaced by entropy/cell multiplicity.  Source/Duhamel is allowed only to prove state birth, never to become causal work.
 ## 13. Frontier in one sentence
-> **A singularity cannot be one bounded hard packet traveling to infinity: `Hdot^(1/2)` is exactly the log-scale integral of physical annular critical stock.  After all stock/flow/helicity quotients, the remaining genuine alternatives are shell-amplitude concentration or multiscale proliferation, and the latter must be attacked with full NS convolution rather than another scalar ledger.**
+> **The zero-tolerance full-convolution obstruction is now exact: a unique nonzero pair source cannot remain inside a sparse Fourier support.  The sole remaining bridge is quantitative—show that multiscale hard mass either leaks into new physical stock or pays for its cancellation with other real same-sum interactions.**
