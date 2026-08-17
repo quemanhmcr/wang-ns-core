@@ -92,11 +92,11 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical shell is supplied; same-carrier inherited-stock relay under its endpoint/residual-work hypotheses; the older signed-good generated-HH time telescope on a supplied parent-continuing chain.
 
-**DISTILLED EXACT DEDUCTIONS:** hard-state inflow corridors, `5/8` signed-good boundary geometry, zero-depth donor reroot, the `K/S` quotient and source scale nonexpansion reduce carried-root recursion to `H/G` with finitely many `H`; low-ball Kirchhoff then closes pure-`G` funding directly: `mu_G<=Phi_up(R)<=E_<=R(0)+Phi_down(R)`, while continuum variation gives `Phi_up(R;[0,t])->0` as `R->0` on `R^3`.
+**DISTILLED EXACT DEDUCTIONS:** carried-root recursion reduces to `H/G` with finitely many `H`; low-ball Kirchhoff roots pure-`G` funding and gives infrared flux extinction; a second basis-independent radial ledger `C_(1/2)=||u||_Hdot^(1/2)^2` satisfies `C_(1/2)(t)+2nu D_(3/2)+A_down=C_(1/2)(0)+A_up`, while each signed-good triad contributes net critical radial action between `(9/25)rho_c W_c+` and `(5/12)rho_c W_c+`.
 
 **EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, CI certificates and master traces.
 
-**OPEN:** a native second ledger/rigidity law for vanishing-mass repeated ultraviolet transport and physical reuse after radial cuts have removed causal genealogy; then initial-data/hypothetical-singular-time interfaces.  Do not sum the same initial reservoir across cuts or treat terminal bad work as dissipated energy.
+**OPEN:** on carried-root traffic, actual inward non-G radial action `A_(down,notG)` is the remaining interior reuse/cycle seam after the two native radial ledgers; critical `Hdot^(1/2)` growth and `Hdot^(3/2)` viscous loss are physical endpoint channels, not budgets.  Initial-data/hypothetical-singular-time interfaces remain separate.
 
 ## Upstream proof lookup map
 

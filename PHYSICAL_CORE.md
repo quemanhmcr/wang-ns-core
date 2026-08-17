@@ -332,6 +332,9 @@ On a supplied parent-continuing generated epoch, actual positive HH work has `3/
 
 On each carried-root branch, after stock/source/interface/material quotients, the only depth-increasing interior edges are high strain `H` and signed-good work `G`.  Both reduce carried hard-state scale by at least the common factor `5/8` (`H` gives `3/16`).  Hence `#H D_*<=G_* sum_j N_j<= (8/3)N_0G_*`; exact ties retain both contracting branches.  Every infinite interior branch would therefore be eventually pure `G`.  No temporal identity of a work charge is used.
 
+### Critical radial first-moment ledger — DISTILLED EXACT DEDUCTION
+On every compact smooth slab, `C_(1/2)=int |k||uhat|^2=||u||_Hdot^(1/2)^2` obeys `C_(1/2)(t)+2nu int||u||_Hdot^(3/2)^2+A_down=C_(1/2)(0)+A_up`, where `A_up/down=int (rho_r-rho_d)_+/- dM` are restrictions of the actual donor flow.  A signed-good triad has net first-moment production `P_G=2 rho_side W_side+`, so `9/25 < P_G/(rho_c W_c+) < 5/12`.  Writing `D_(3/2)=int_0^t||u||_Hdot^(3/2)^2`, partitioning closed triads into those with a `G` root and the rest gives `(9/25)int rho_c dW_G <= C_(1/2)(t)+2nu D_(3/2)+A_(down,notG)`.  Thus UV good-work action must appear as critical stock, critical viscous loss, or genuine inward non-G radial action; this is a physical second ledger, not a finite reset budget.
+
 ### `5/8` signed-good boundary-crossing theorem — DISTILLED EXACT DEDUCTION
 
 No temporal chain `next child = previous donor` is permitted.  Refine any supplied finite hard state by the deterministic radial control-volume grid
