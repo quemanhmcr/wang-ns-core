@@ -209,11 +209,15 @@ Exact source/strain/work ties remain joint at the original event time.  No event
 
 Source/pressure/SGS marks remain real derived-geometry events, but their theorem reader scale is not a causal parent scale.  At source block scale `N`:
 
-- local/viscous and resolved-pressure routes expose shells `H<=N/4`; terminal shell energy is earlier `H`-stock or canonical nonlinear inflow.  Bad/nonforward inflow is already terminal; a recurrent good inflow has its unique physical energy donor among the signed-good interaction parents, hence donor frequency `<5H/8`;
-- low/base SGS uses `M_j=N2^j`, `j<=0`, and hard candidates `H in {M_j,2M_j}`.  The **only** candidate with `H>N` is `j=0, H=2N`, namely `P_(2N)={N<|k|<=2N}`.  If that state is inherited it is tail stock, not generation; if freshly supplied across the tail boundary, `Phi_up` has physical donor `<=N`; if supplied by internal tail work, only that actual hard-work event—not the SGS mark—can define a predecessor edge;
-- high-SGS tail state is already covered by inherited tail stock or true `Phi_up`, with pure-UV/contact continuation as above.
+- local/viscous and resolved-pressure routes expose shells `H<=N/4`; inherited stock reaches `t=0`, bad inflow terminates, and any recurrent signed-good boundary inflow has donor outside the shell, hence `N_next<=H/2<=N/8`;
+- low/base SGS has hard candidates `H in {M_j,2M_j}`, `M_j=N2^j`, `j<=0`, so `H<=2N`; on a recurrent good boundary inflow the donor lies below the shell lower face, hence `N_next<=H/2<=N` (the sole `H>N` case is `H=2N`);
+- high-SGS tail state is inherited tail stock or true upward boundary supply, whose physical donor is `<=N`; bad/nonforward work is terminal.
 
-Thus a source mark may genuinely change derived strain geometry, but it cannot mint a new causal scale edge by its label.  Stock remains state, while any predecessor edge after the mark requires an independently typed actual work or strain law.  Exact source/strain/work ties remain one joint physical event.
+Therefore every nonterminal composite `source mark -> state -> good work -> donor state` obeys
+\[
+oxed{N_{next}\le N_{source}}.
+\]
+Source/pressure/SGS remain real geometry marks, but they cannot insert an ultraviolet reset between physical recurrence events.  Inherited state creates zero generation depth; a new exposed state not linked by actual work is a separate root, not continuation of the carried hard role.  Exact source/strain/work ties remain joint.
 
 ## 7. `5/8` signed-good boundary-crossing theorem — DISTILLED EXACT DEDUCTION
 

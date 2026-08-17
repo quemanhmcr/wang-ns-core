@@ -316,7 +316,7 @@ RESOLVED_SOURCE -> RECURSE_CRITICAL
 
 is no longer a canonical unresolved destination.  Keep the source event mark, then relay immediately to the certified terminal/shell/tail state.  If source ties with strain or actual work at the same physical time, keep the full joint cause set; the relay must not split or duplicate that event.
 
-This is proof-graph contraction, not physical-event deletion.  Source/pressure/SGS remain exact geometry marks.  Their reader scale is not a causal parent scale: the exposed shell/tail must instead satisfy its own modal last-entry/tail balance, which yields boundary stock or actual nonlinear inflow without creating an edge from the source scale.  In the low-SGS frame `M_j=N2^j`, `j<=0`, the hard candidates are `M_j,2M_j`; the only candidate above `N` is exactly `P_(2N)={N<|k|<=2N}`, hence inherited tail stock or true `Phi_up`, while internal tail inflow is a separately typed hard-work event.  Source labels therefore mint no independent causal scale edge.
+This is proof-graph contraction, not event deletion.  Source/pressure/SGS remain exact geometry marks, but each exposed shell/tail obeys its own modal balance.  Local/pressure shells have `H<=N/4`; low/base SGS has `H<=2N`; high SGS is a tail above `N`.  If the state is inherited, generation depth is zero; bad/nonforward inflow terminates.  On any surviving good boundary inflow the donor lies below the shell lower face, so `N_next<=H/2`, while true tail inflow has donor `<=N`.  Hence every nonterminal source-state-work composite satisfies `N_next<=N_source`; source labels cannot mint a UV reset.
 
 ## 11. Pure recurrence theorems and the hard-state energy spine — EXACT / DISTILLED EXACT
 

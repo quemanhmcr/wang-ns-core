@@ -92,7 +92,7 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical shell is supplied; same-carrier inherited-stock relay under its endpoint/residual-work hypotheses; the older signed-good generated-HH time telescope on a supplied parent-continuing chain.
 
-**DISTILLED EXACT DEDUCTIONS:** role/probe, shell/service and optional coherent-analysis coordinates mint no causal charge; hard-state last-entry strengthens to the physical inflow corridor `E_P(s)>=E_P(t)-Phi_in,P[s,t]`; the `5/8` grid gives exact signed-good boundary geometry; the spacetime cyclic kernel reroots actual inflow to occupied simultaneous donor states at zero depth; and symmetric interface strain satisfies `S_eta,tri=-alpha T_low`, `0<=alpha<=1`, so `S+` is inherited low-root `dW-` whose recipients are terminal canonical bad work.
+**DISTILLED EXACT DEDUCTIONS:** role/probe, shell/service and optional coherent-analysis coordinates mint no causal charge; hard-state last-entry strengthens to the physical inflow corridor `E_P(s)>=E_P(t)-Phi_in,P[s,t]`; the `5/8` grid gives exact signed-good boundary geometry; the spacetime cyclic kernel reroots actual inflow to occupied simultaneous donor states at zero depth; symmetric interface strain satisfies `S_eta,tri=-alpha T_low`, `0<=alpha<=1`, so `S+` reroutes to terminal canonical bad work; and every nonterminal source/pressure/SGS state-work composite is scale-nonexpansive, `N_next<=N_source`.
 
 **EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, CI certificates and master traces.
 
