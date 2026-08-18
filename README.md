@@ -1,26 +1,29 @@
 # Wang–NS Physical Core
 
-A three-document distillation of the current Wang–Navier–Stokes no-escape programme.
+A six-document distillation of the current Wang–Navier–Stokes physical-road exhaustion programme.
 
 Source programme: [`quemanhmcr/wang-ns-triad-diamond`](https://github.com/quemanhmcr/wang-ns-triad-diamond), read only from `main`.  The source baseline used for this distillation is `main@63178b0e7f9fabdfd8c344dab938a3d639639df5` (2026-08-13), whose latest upstream theorem state is the native material-service causal quotient.  This distill also records later **deductions obtained by composing already-certified upstream identities**; each such deduction is labelled explicitly.
 
-There is **no claim of a proof of 3D Navier–Stokes global regularity**.  The remaining causal task is broader interior Mixed assembly, followed separately by the initial-data and hypothetical-singular-time interfaces.  The degenerate full-signed Young/Christ margin remains only an auxiliary productivity/coherent-analysis seam.
+There is **no claim yet of a proof of 3D Navier–Stokes global regularity**.  The representation/owner frontier is exhausted and the endpoint/initial-data interfaces are already assembled.  The only remaining proof block is the direct full-state exclusion of infinite critical `B/S/V/O` recycling.  Here `B` means the already-canonical minority-helicity positive-critical work branch, not a fourth sidecar fate: the sidecar fate theorem remains exactly `S vee V vee O`.
 
 ## Repository invariant
 
-This repository intentionally contains exactly **three tracked documents**:
+This repository intentionally contains exactly **six tracked documents**:
 
 1. `README.md` — map, status legend, historical purification, reading order.
-2. `PHYSICAL_CORE.md` — the smallest current set of physical objects, exact identities, theorems and anti-theorems.
-3. `MIXED_FRONTIER.md` — what has been quotiented away, what remains open, and what a valid next theorem is allowed to use.
+2. `PHYSICAL_CORE.md` — the smallest current basis of physical objects and exact identities.
+3. `MIXED_FRONTIER.md` — exhausted observer/owner routes and the exact remaining frontier.
+4. `FOURTH_DOCUMENT_FINAL_EXHAUSTION.tex` — formal endpoint synthesis and the conditional final composition.
+5. `SOLUTION_MAP.md` — short Clay-to-QED proof graph with proof-location links.
+6. `BSVO_FULL_STATE_FRONTIER.md` — the dedicated remaining `B/S/V/O` full-state proof block.
 
-No theorem implementation, regression code, result archive, PR history, packet scaffolding or CI transcript belongs here.  Those live in the source repository.  If a future edit makes these documents substantially longer without changing the frontier, compress before merging.
+No theorem implementation, regression code, result archive, PR history, packet scaffolding or CI transcript belongs here.  If a future edit grows a core file without changing the frontier, compress before merging.
 
-Target line budgets: `README <= 140`, `PHYSICAL_CORE <= 530`, `MIXED_FRONTIER <= 320`; total `<= 990` lines.
+Target line budgets: `README <= 190`, `PHYSICAL_CORE <= 572`, `MIXED_FRONTIER <= 420`, `SOLUTION_MAP <= 180`, `BSVO_FULL_STATE_FRONTIER <= 300`.
 
-## How to read the three files
+## How to read the six files
 
-Read this file once, then `PHYSICAL_CORE.md` from top to bottom, then `MIXED_FRONTIER.md`.  A physicist should not need the source repository to understand the current theorem architecture; the source repository is needed only to inspect proofs, exact constants, certification evidence or historical derivations.
+For the shortest route, read `SOLUTION_MAP.md`, then `PHYSICAL_CORE.md`, then `BSVO_FULL_STATE_FRONTIER.md`.  Read `MIXED_FRONTIER.md` when auditing why older owner/bridge routes are forbidden, and `FOURTH_DOCUMENT_FINAL_EXHAUSTION.tex` for the formal endpoint synthesis and conditional QED composition.  A physicist should not need the source repository to understand the current theorem architecture; the source repository is needed only to inspect upstream proofs, constants, certification evidence or historical derivations.
 
 The key discipline is:
 
@@ -62,7 +65,19 @@ source/derived-geometry marks expose state; they mint no causal scale edge
               |
 hard-state energy law = modal stock + canonical boundary flow + viscosity
               |
-     5/8 signed-good boundary geometry; temporal Mixed still open
+     5/8 signed-good boundary geometry
+              |
+              v
+finite endpoint: X OR Y; initial Hdot^(1/2) tail kills X
+              |
+              v
+Y -> universal bad-positive sidecar -> S OR V OR O
+              |
+              v
+full-state road: N, G=curl N, strain/vorticity, exact triad phase
+              |
+              v
+OPEN: no infinite critical B/S/V/O full-state recycling
 ```
 
 The square/service/shell layers are real physical observables, but a new observable is not automatically a new causal charge.
@@ -81,8 +96,10 @@ The historical movement is not “more abstraction”; it is repeated removal of
 8. **Critical-shell recurrence was cleaned.**  Hard shells are event readers, smooth carriers propagate, coefficient hits are locators, checkpoints do not reset, and full-natural service is a same-corridor witness.
 9. **Representation owners were quotiented.**  Material rereading, selected-family switching, smooth skew relink, role/probe changes and same-carrier inherited stock no longer create generation depth merely by changing description.
 10. **Two pure recurrence tails closed.**  Consecutive high strain is finite by exact scale descent plus the global gradient reservoir; consecutive signed-good generated HH is finite by exact parent-scale geometry plus parabolic backshift to `t=0`.
-11. **The remaining problem became genuinely mixed.**  A hypothetical infinite lineage can switch physical mechanism before either pure telescope applies forever.
-12. **Current distillation sharpens owner vs supplier.**  Shell/service is state/witness, not a fourth charge; exact mode-set continuity further says terminal hard-shell kinetic energy is supplied only by earlier modal stock or actual nonlinear inflow, regardless of which theorem exposed the shell.
+11. **The mixed owner frontier was exhausted.**  Pressure, SGS, material, relink, helicity and traffic/material rereadings were reduced to exact state/geometry readings and cannot mint a fourth kinetic-energy supplier.
+12. **The endpoint was reduced to one physical-road block.**  Finite singularity gives `X vee Y`; the initial critical tail kills `X`; `Y` gives a universal bad-positive sidecar and the exact `S vee V vee O` trichotomy.
+13. **The cubic quotient was proved dynamically incomplete.**  The relative-translation witness keeps stocks, all active cubic works and `Q` fixed while changing `dot Q`, so the proof must return to full `u/omega`.
+14. **The current frontier is full-state `B/S/V/O`.**  New exact identities expose `N=u_t+nu Lambda^2u`, `G=curl N`, pressure reflection, quartic silent gates, viscous stock preparation, three-root work rigidity and the mirror-output obstruction.  They narrow recycling but do not yet prove `Y=>bot`.
 
 The recurring lesson is: **complexity should be removed only after its physical type is known**.
 
@@ -114,7 +131,9 @@ The recurring lesson is: **complexity should be removed only after its physical 
 **DISTILLED EXACT BETCHOV/ENSTROPHY-SOURCE BRIDGE:** with `Q(t)=int omega.S omega`, root-marking of the same closed-triad measure and the gradient-energy identity give `2Q=C_F int Z_tri dLambda_tri`.  Pointwise `omega.S omega=4(det grad u-det S)` and Piola gives `det grad u=(1/3)div[(cof grad u)^T u]`; hence on the smooth finite-energy `R^3` state `Q=-4 int det S=-(4/3)int tr(S^3)=4 int lambda_1 lambda_2(-lambda_3)` for ordered strain eigenvalues `lambda_1>=lambda_2>=lambda_3`.  This is the same global source scalar in three exact representations, not three currencies or measure-level identifications.  A finite-Fourier anti-theorem is exact: pair a nondegenerate triad with a spectrally isolated `L`-dilate, scale the dilated amplitudes by `L^-1` and flip one modal phase; then `Z_L=-Z` while `V_(rho,L)=V_rho/L>0`, so total stretching can cancel with nonzero radial turnover.  Instantaneous cancellation is genuine physics.  But `0.5||grad u(t)||_2^2+nu int_0^t||Delta u||_2^2=0.5||grad u_0||_2^2+int_0^t Q` forces `sup_(t<T*) int_0^t Q=+infinity` at any finite singular endpoint.  The local source itself obeys `D_t(omega.S omega)=|S omega|^2-omega.(Hess p)omega+nu[2(Delta omega).(S omega)+omega.(Delta S)omega]`, with `-Delta p=|S|^2-|omega|^2/2`; pressure Hessian is therefore the only inviscid counterterm to the nonnegative self-strain term, not an independent kinetic-energy supplier.
 **EXACT VECTOR HEAT-SPHERE LAW:** at fixed child `q` and parent helicity, `r=2p-q` turns equal heat rate into the physical unordered sphere `S^2/(r~-r)=RP^2`.  The unordered Leray vector-orbit norm is `|q.r||qxr|sqrt((P+M)^2+Q^2)|a_pa_m|/[4PMQ(P+M)]`; its Leray zeros are the Beltrami equator and shear pole.  The pressure complement distinguishes them exactly: same-helicity equal-radius parents are a gradient-only/Bernoulli interaction with generally nonzero pressure pair, while collinear shear has zero raw convective pair and zero pressure source.  The projective source line is `ell_q=[t_q+i h beta n]`, `beta=Q/(P+M)`, with an exact Fubini--Study separation formula.  Its generic nontrivial double fiber is the planar cross-isospectral reflection rectangle; exact two-atom cancellation there forces source at the remaining `q+-u` outputs with explicit ratio `G_side/G_0`, vanishing only as the original atom reaches the Beltrami equator.  Minority/spin-two are just helical coordinates; no causal Hahn is introduced.
 **DISTILLED EXACT MATERIAL-PAIR VORTICITY LAW:** pressure is downstream: `u=curl(-Delta)^-1 omega` and NS is equivalent to `partial_t omega+(u.grad)omega=(omega.grad)u+nu Delta omega`.  Biot--Savart gives `Q=int omega.S omega=(3/8pi)int int[((delta omega).h)((bar omega cross delta omega).h)]/|h|^5 dxdy`, `bar omega=(omega_x+omega_y)/2`; the two exact zero factors are longitudinal increment and vortex-pair chirality.  For material particles `x=X(a,t),y=X(b,t)`, put `Abar=int_0^1 grad u(x+theta h)dtheta`, `E_x=A_x-Abar`, `E_y=A_y-Abar`, `L=delta omega.h`, `C=(omega_x cross omega_y).h`, `K=LC/|h|^5`.  Then `hdot=Abar h`, `tr Abar=0`; common affine deformation cancels exactly from `Cdot`, while `E_x,E_y` are the weighted line-integrals of `(h.grad)grad u` and viscosity supplies the only other chirality term.  Common strain may still change `L` and `|h|`.  Thus chirality-null and longitudinal-null are physically different zero manifolds; no angular/chirality currency is introduced.
-**DISTILLED EXACT TRAFFIC/MATERIAL ANTI-CORRESPONDENCE:** the earlier same-child opposite-`Z_tri` witness already forbids pushing UV inflow atomwise to `Q+`.  A stronger exact torus witness now fixes the entire instantaneous spectral quotient: two real divergence-free states have identical modal stocks, every active canonical cubic work, and normalized `Q=-980`, yet a relative half-period translation of one spectrally cubic-isolated triad family changes the true NS first time jet by `dot Q_delta-dot Q_0=87152/55`, independently of `nu`.  The reason is exact: no mixed closed triad survives, but a mixed quartet does.  Thus traffic/work data are not a closed dynamical state and cannot canonically own or predict material-pair geometry; relative phase information discarded by the cubic quotient reappears in the quartic NS time jet.  The representation frontier is exhausted: the remaining mathematical question is direct regularity of the full pressure-free vorticity/NS state, not another traffic-to-chirality bridge, Hahn law, pressure/Lamb road, coherence budget or genealogy.
+**DISTILLED EXACT TRAFFIC/MATERIAL ANTI-CORRESPONDENCE:** the earlier same-child opposite-`Z_tri` witness already forbids pushing UV inflow atomwise to `Q+`.  A stronger exact torus witness now fixes the entire instantaneous spectral quotient: two real divergence-free states have identical modal stocks, every active canonical cubic work, and normalized `Q=-980`, yet a relative half-period translation of one spectrally cubic-isolated triad family changes the true NS first time jet by `dot Q_delta-dot Q_0=87152/55`, independently of `nu`.  The reason is exact: no mixed closed triad survives, but a mixed quartet does.  Thus traffic/work data are not a closed dynamical state and cannot canonically own or predict material-pair geometry; relative phase information discarded by the cubic quotient reappears in the quartic NS time jet.  The representation frontier is exhausted: the remaining mathematical question is the specific direct full-state `B/S/V/O` exclusion recorded in `BSVO_FULL_STATE_FRONTIER.md`, not another traffic-to-chirality bridge, Hahn law, pressure/Lamb road, coherence budget or genealogy.
+
+**EXACT FULL-STATE `B/S/V/O` FRONTIER:** write `N=-P(u.grad u)=u_t+nu Lambda^2u` and `G=curl N=S omega-(u.grad)omega`.  The critical-action Kirchhoff identity puts sidecar `S` and `V` as positive terms funded by the full quartic action of `N`.  Pressure is a Hodge/geometric completion, not a supplier: for `R=S^2+Omega^2+Hess p`, Piola gives a modewise reflection of `M=S^2+Omega^2`, hence `|Rhat(q)|=|Mhat(q)|`.  At a closed helical silent gate, exact complex interaction dynamics gives a stock/phase steering law; direct viscosity damps amplitudes but does not directly rotate modal phase.  For the dangerous opposite-helicity high-high-low `O/B` arch, forward work self-brakes its stock geometry while differential viscosity prepares the forward side at the neutral gate.  Energy+helicity make every work law supported on the same three signed roots proportional to the canonical cyclic vector.  Finally reality of the high pair forces a mirror difference-output farther in the UV; the selected mirror acceleration is nonzero unless the pair is signed-curl silent.  The only real nondegenerate one-triad closure is Beltrami silence.  What is still open is the continuum full-state cancellation/exclusion theorem that turns these exact local restrictions into `Y=>bot`; see `BSVO_FULL_STATE_FRONTIER.md`.
 
 ## Upstream proof lookup map
 

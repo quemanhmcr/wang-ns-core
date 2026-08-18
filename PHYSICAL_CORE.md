@@ -469,4 +469,51 @@ Do not push a canonical UV boundary-inflow atom to `Q+` or to a positive spatial
 For every proposed frontier lemma ask: **what exact true Navier–Stokes structure makes this true that a generic averaged/bilinear model need not preserve?**  If the answer is only scaling, cancellation or a generic norm inequality, the physical mechanism has probably not yet been isolated.
 ## 13. What is theorem, what is not
 The identities and structural laws above are exact or exact-conditional as labelled.  Randomized triads, Galerkin/FFT probes, CI runs and stress tests in the source repository are evidence against implementation mistakes, not mathematical substitutes for the continuum proofs.
-The hard-state **kinetic-energy layer** is exact: earlier modal stock and canonical boundary inflow are the only suppliers; viscosity/outflow are losses.  Signed-good inflow has the `5/8` donor geometry; same-time donor reroot has zero depth; and the resolved `K/S` split adds no recursive owner—`K` is conservative relink while fine `S+` is an inherited low-root `dW-` restriction whose recipient pushforward is canonical bad work.  Pure-`G` funding is radial-cut rooted and total radial variation collides with actual hard-shell concentration `mu_sh`; no independent inward-reuse currency remains.  Finite singularity forces arbitrarily late UV-fresh first contacts and, independently, unbounded cumulative signed enstrophy source after every late time.  Signed-curl/Betchov and Biot--Savart/material-pair formulas are exact representations of the same primitive state/source, not owners of one another.  The opposite-`Z_tri` witness forbids atomwise sign transfer, while the exact relative-translation witness is stronger: identical modal stocks, all active cubic works and `Q` can have different `dot Q`, because mixed quartic phase geometry survives after the traffic quotient has forgotten it.  Hence the proposed late-traffic/material-pair spacetime bridge is a **false frontier created by quotienting the full state too early**.  No nonredundant representation/ontology frontier remains in this architecture.  The unresolved mathematical problem is now only the direct regularity question for the full pressure-free vorticity/Navier--Stokes PDE itself; solving that requires a new exact theorem on the full state, not another bridge, reader, Hahn split, budget or genealogy.  Degenerate Young/Christ remains auxiliary.  See `MIXED_FRONTIER.md`.
+The hard-state **kinetic-energy layer** is exact: earlier modal stock and canonical boundary inflow are the only suppliers; viscosity/outflow are losses.  Signed-good inflow has the `5/8` donor geometry; same-time donor reroot has zero depth; and the resolved `K/S` split adds no recursive owner—`K` is conservative relink while fine `S+` is an inherited low-root `dW-` restriction whose recipient pushforward is canonical bad work.  Pure-`G` funding is radial-cut rooted and total radial variation collides with actual hard-shell concentration `mu_sh`; no independent inward-reuse currency remains.  Finite singularity forces arbitrarily late UV-fresh first contacts and, independently, unbounded cumulative signed enstrophy source after every late time.  Signed-curl/Betchov and Biot--Savart/material-pair formulas are exact representations of the same primitive state/source, not owners of one another.  The opposite-`Z_tri` witness forbids atomwise sign transfer, while the exact relative-translation witness is stronger: identical modal stocks, all active cubic works and `Q` can have different `dot Q`, because mixed quartic phase geometry survives after the traffic quotient has forgotten it.  Hence the proposed late-traffic/material-pair spacetime bridge is a **false frontier created by quotienting the full state too early**.  No nonredundant representation/ontology frontier remains in this architecture.  The unresolved mathematical problem is now the specific direct full-state `B/S/V/O` exclusion: prove that the exact stock/viscosity/outflow grammar cannot recycle critically through the minority-`B` full-state gate to a finite singular endpoint.  The frontier is not another bridge, reader, Hahn split, budget or genealogy.  See `BSVO_FULL_STATE_FRONTIER.md` and `MIXED_FRONTIER.md`.
+
+## 14. Full-state critical-action and `B/S/V/O` road laws — EXACT / CURRENT FRONTIER
+
+The representation frontier is closed; future dynamics must be read from the primitive state.  Put
+`N=-P(u.grad u)=P(u x omega)` and `Lambda=(-Delta)^(1/2)`.  Since
+`N=u_t+nu Lambda^2u`, Hilbert algebra gives the exact critical action law
+`||N||_Hdot^(-1/2)^2=||u_t||_Hdot^(-1/2)^2+nu^2||u||_Hdot^(3/2)^2+nu d||u||_Hdot^(1/2)^2/dt`.
+For every fixed Fourier/helicity set `A`, the same identity holds after `P_A`; thus sidecar stock `S` and viscosity `V` occur as positive terms of one exact full-state identity, not as invented payments.
+
+### Nonlinear vorticity acceleration — EXACT
+
+Define the genuine field
+`G:=curl N`.  Curling the velocity equation and using the vorticity equation gives
+`G=omega_t-nu Delta omega=S omega-(u.grad)omega=[omega,u]`.
+Moreover
+`G_t-nu Delta G=[G,u]+[omega,N]-2nu sum_j[partial_j omega,partial_j u]`.
+Thus every nonlinear re-entry after stock or viscous loss must be realized by the same pressure-free full-state acceleration; the last term is the exact diffusion/product commutator, not a fourth source.
+
+### Pressure/strain reflection — EXACT
+
+Let `A=grad u=S+Omega`, `g=-Delta p=|S|^2-|omega|^2/2`, `M=S^2+Omega^2` and `R=M+Hess p=-(D_tS-nu Delta S)`.  Piola implies, at every nonzero Fourier output `q` with `e=q/|q|`,
+`Rhat(q)=Mhat(q)-2<Mhat(q),e tensor e>_F e tensor e`.
+Hence pressure is a Householder reflection of the quadratic strain forcing: `|Rhat(q)|_F=|Mhat(q)|_F` and therefore `||m(Lambda)R||_2=||m(Lambda)M||_2` for every scalar multiplier for which the norms exist.  In particular pressure redistributes geometry but cannot mint a second strain-source magnitude.
+
+### Closed-triad complex gate — EXACT
+
+For signed roots `alpha<beta<gamma`, let `T_i=c_i Z_tau` be the canonical cyclic work law and `E_i=|a_i|^2`.  The selected triad has one complex interaction amplitude `mathfrak Z_tau=Z_tau+iJ_tau` satisfying `2 conj(a_i)b_i^tau=c_i mathfrak Z_tau`.  With the full modal acceleration split algebraically as `n_i=b_i^tau+r_i^tau`,
+`dot Z_tau+nu Sigma_tau Z_tau=(|Lambda_tau|^2/2)B_tau+M_tau`,
+where `B_tau=c_alpha E_beta E_gamma+c_beta E_gamma E_alpha+c_gamma E_alpha E_beta` and `M_tau=2 sum_i c_i^-1 Re(conj(r_i^tau)b_i^tau)`.
+At a silent gate `Z_tau=0`, direct viscosity contributes no sign flip.  If all three roots are active, `dot Z_tau=J_tau Omega_tau`, `Omega_tau=sum_i Im(conj(a_i)n_i)/E_i`; direct linear viscosity cancels from each modal angular velocity.
+
+### Dangerous opposite-high `O/B` geometry — EXACT ALGEBRAIC CONSEQUENCE
+
+For a true far-UV low-donor triad with two opposite-helicity high roots, the low root is the signed middle root, both highs are recipients, `Z_tau>0`, the radial flux profile is nonnegative across every cut, and the critical production is positive minority-helicity `B` work.  Same-helicity high pairs instead form a radial loop with a farther high donor and have zero or negative critical production.  Thus an outermost recipient of a true `O` atom must lie on the opposite-high positive-critical branch.
+
+At the opposite-high neutral stock surface `B_tau=0`, selected forward work self-brakes the geometry: for active roots, `dot chi_self=-Z_tau sum_i c_i^2/E_i^2`, where `B=(E_alpha E_beta E_gamma)chi`.  Direct differential viscosity has the opposite neutral tilt, `dot B_nu>0`; it changes stock ratios but does not directly rotate phase.  The corresponding selected viscous commutator contribution to angular steering is the same cross-effect, not a second mechanism: at the balanced gate `Z=B=0`, `J dot Omega_comm=(|Lambda_tau|^2/2) dot B_nu`.
+
+### Three-root work rigidity and mirror output — EXACT ALGEBRAIC CONSEQUENCE
+
+Any work vector supported on three distinct signed roots and conserving both nonlinear energy and helicity is proportional to `(c_alpha,c_beta,c_gamma)`.  The same statement holds for every time jet of the work while its support remains on those three roots.  Hence a harmless new radial work direction requires additional signed-root support; pure phase countersteering is the remaining three-root freedom and must be read from full `G/F_N`.
+
+For two active noncollinear helical modes `p,q` with signed curl eigenvalues `x_p,x_q`, the unordered pair contribution to `N` at `r=p+q` is
+`n_r^(p,q)=(x_q-x_p)P_r(u_p x u_q)`, and the projected cross product is nonzero for a nondegenerate helical pair.  Thus the pair is nonlinear-silent iff `x_p=x_q`.  In a real dangerous high-high-low opposite-helicity triad, reality supplies the mirror pair `(k_alpha,-k_gamma)` at difference output `k_Delta=k_alpha-k_gamma`; parallelogram geometry gives
+`|k_Delta|^2=2rho_alpha^2+2rho_gamma^2-rho_beta^2>max(rho_alpha^2,rho_gamma^2)`,
+and the selected mirror acceleration is nonzero.  A real nondegenerate one-triad Fourier state can therefore be closed under the full NS nonlinearity only when all three signed curl eigenvalues coincide, i.e. the homochiral equilateral Beltrami-silent case.
+
+These laws sharply narrow `S/V/O` recycling but do **not** prove `Y=>bot`.  In the continuum, simultaneous pair channels can cancel the forced farther-UV acceleration vector, and tangential phase countersteering is invisible to the two scalar energy/helicity work moments.  The remaining theorem is exactly the no-infinite-critical-full-state-recycling statement recorded in `BSVO_FULL_STATE_FRONTIER.md`.

@@ -61,7 +61,7 @@ E_P(t)+D_P[s,t]+\Phi_{\mathrm{out},P}[s,t]
 \]
 The canonical endpoint theorem forces arbitrarily late, arbitrarily high hard shells; the last-entry theorem then yields $X\vee Y$, and the $\Hdot^{1/2}$ initial tail excludes $X$ at sufficiently high scales.  The $Y$ branch is reduced, using the same one-Hahn positive work law, to a universal bad-positive sidecar and then by Kirchhoff to the exhaustive stock/viscosity/outflow trichotomy.  Subsequent canonical theorems quotient pressure, SGS, strain relink, helicity recycling, source geometry, material-pair readings, and finally the traffic/material bridge.  The last commit proves by an exact quartic phase witness that the instantaneous cubic traffic quotient is not a sufficient dynamical state.
 
-A strict logical audit is retained.  The canonical commit itself explicitly does \emph{not} claim global regularity.  In particular, the proved statement ``no fourth physical/representation fate exists outside stock/viscosity/outflow'' is not by itself the statement that each of those three fates is impossible.  Accordingly, the final section records both (i) the exact unconditional synthesis proved by the canonical core and (ii) the additional final-exclusion statement that would be required to turn the requested schematic
+A strict logical audit is retained.  The canonical commit itself explicitly does \emph{not} claim global regularity.  In particular, the proved statement ``no fourth physical/representation fate exists outside stock/viscosity/outflow'' is not by itself the statement that each of those three fates is impossible.  Accordingly, the final sections record both (i) the exact unconditional synthesis proved by the canonical core, (ii) the full-state identities now known inside the remaining $B/S/V/O$ block, and (iii) the additional final-exclusion statement still required to turn the requested schematic
 \[
 T_*<\infty\Rightarrow X\vee Y,
 \quad X\Rightarrow\bot,
@@ -972,6 +972,78 @@ and proves that no hidden fourth owner or traffic/material bridge is available. 
 
 This is not a request to reopen an ontology frontier.  It is only the distinction between an exhaustive classification theorem and an exclusion theorem.
 
+
+\section{Exact progress inside the remaining $B/S/V/O$ block}
+
+The representation frontier is no longer the mathematical unknown.  The surviving problem is a direct full-state statement about how the already-canonical sidecar roads can re-enter the true Navier--Stokes dynamics.  Here $B$ denotes the existing minority-helicity positive-critical work branch and is not a fourth sidecar fate.
+
+\subsection{Critical action and the common nonlinear acceleration}
+Put
+\[
+N=-\mathbb P(u\cdot\nabla u)=u_t+\nu\Lambda^2u,
+\qquad G:=\nabla\times N.
+\]
+Then
+\[
+\|N\|_{\dot H^{-1/2}}^2
+=\|u_t\|_{\dot H^{-1/2}}^2
++\nu^2\|u\|_{\dot H^{3/2}}^2
++\nu\frac d{dt}\|u\|_{\dot H^{1/2}}^2,
+\]
+and the same identity holds after every fixed Fourier--helicity projection.  Moreover
+\[
+G=\omega_t-\nu\Delta\omega
+=S\omega-(u\cdot\nabla)\omega,
+\]
+with exact pressure-free evolution
+\[
+G_t-\nu\Delta G
+=[G,u]+[\omega,N]
+-2\nu\sum_j[\partial_j\omega,\partial_j u].
+\]
+Thus stock, viscous re-entry and nonlinear outflow all return to one genuine full-state acceleration field.
+
+\subsection{Pressure reflection and triad silent gates}
+Let $M=S^2+\Omega^2$ and $R=M+\nabla^2p=-(D_tS-\nu\Delta S)$.  Piola gives for $q\ne0$, $e=q/|q|$,
+\[
+\widehat R(q)
+=\widehat M(q)-2\langle\widehat M(q),e\otimes e\rangle_F e\otimes e,
+\]
+so $|\widehat R(q)|_F=|\widehat M(q)|_F$: pressure is a modewise geometric reflection, not an independent source magnitude.
+
+For a selected closed helical triad, write its canonical works as $T_i=c_iZ_\tau$ and let $\mathfrak Z_\tau=Z_\tau+iJ_\tau$ be the corresponding complex interaction amplitude.  If $E_i=|a_i|^2$, define
+\[
+B_\tau
+=c_\alpha E_\beta E_\gamma
++c_\beta E_\gamma E_\alpha
++c_\gamma E_\alpha E_\beta.
+\]
+The exact traffic jet has the form
+\[
+\dot Z_\tau+\nu\Sigma_\tau Z_\tau
+=\frac{|\Lambda_\tau|^2}{2}B_\tau+\mathcal M_\tau,
+\]
+where $\mathcal M_\tau$ is the mixed full-state phase interference.  At an active silent gate $Z_\tau=0$, direct viscosity does not rotate phase and $\dot Z_\tau=J_\tau\Omega_\tau$ with $\Omega_\tau$ the sum of the three actual modal angular velocities.
+
+\subsection{Dangerous $O/B$ geometry and full-state leakage}
+For a true far-UV low-donor triad whose two high roots have opposite helicity, the low root is the signed middle root, both high roots are recipients, $Z_\tau>0$, the radial flux profile is nonnegative through every cut, and the critical production is positive minority-helicity $B$ work.  Same-helicity high pairs instead form a radial loop with a farther high donor and have nonpositive critical production.
+
+On three distinct signed roots, any nonlinear work vector conserving both energy and helicity is proportional to the canonical cyclic vector $(c_\alpha,c_\beta,c_\gamma)$; the same is true for any time jet whose work support remains on those roots.  Thus a different radial compensation needs additional signed-root work support, although tangential phase compensation remains invisible to those two scalar moments.
+
+Finally, for two active noncollinear helical modes $p,q$ with signed curl eigenvalues $x_p,x_q$, their unordered pair contribution to $N$ at $r=p+q$ is
+\[
+n_r^{(p,q)}=(x_q-x_p)\mathbb P_r(u_p\times u_q),
+\]
+and a nondegenerate helical pair is silent only when $x_p=x_q$.  In a real dangerous opposite-high triad, reality supplies the mirror pair $(k_\alpha,-k_\gamma)$ at
+\[
+k_\Delta=k_\alpha-k_\gamma,
+\qquad
+|k_\Delta|^2=2\rho_\alpha^2+2\rho_\gamma^2-\rho_\beta^2,
+\]
+so $|k_\Delta|$ exceeds both high radii and the selected mirror acceleration is nonzero.  A real nondegenerate one-triad Fourier state can therefore be closed under full NS only in the homochiral equilateral Beltrami-silent case.
+
+These statements narrow the physical road but do not yet exclude continuum same-output cancellation or full-state phase reorientation.  They are recorded in detail in \texttt{BSVO\_FULL\_STATE\_FRONTIER.md}; the theorem below remains OPEN.
+
 \section{The final exclusion theorem required for an unconditional QED}
 
 The contradiction architecture requested in \eqref{eq:architecture} becomes valid once one has the following additional statement.
@@ -984,7 +1056,7 @@ Let $u$ be a maximal smooth true three-dimensional incompressible Navier--Stokes
 \end{theorem}
 
 \begin{remark}[Status]
-Theorem \ref{thm:requiredExclusion} is the theorem that a genuine fourth document would have to add in order to turn the three-document physical-core programme into a completed global-regularity proof.  It is not present as a proved theorem in canonical commit \texttt{5a07887}.  The final quartic phase law prevents one from proving it by inventing a traffic/material bridge; it does not itself imply \eqref{eq:YbotRequired}.
+Theorem \ref{thm:requiredExclusion} remains the only missing implication needed to turn the physical-core programme into a completed global-regularity proof.  The dedicated file \texttt{BSVO\_FULL\_STATE\_FRONTIER.md} now records substantial exact progress inside this block---critical-action, $G=\curl N$, pressure reflection, silent-gate, viscous-preparation, three-root rigidity and mirror-output laws---but none of those results alone proves \eqref{eq:YbotRequired}.  The quartic phase law also forbids replacing the missing theorem by an invented traffic/material bridge.
 \end{remark}
 
 \section{Conditional final composition and QED}
@@ -1062,7 +1134,7 @@ G\vee B\\[1mm]
 \end{array}
 }
 \]
-The final quartic phase commit closes the representation question at the penultimate line: it proves that a hypothetical missing traffic/material bridge is a false frontier caused by quotienting away relative phase.  It does not replace the final leaf-exclusion implication.
+The quartic phase commit closes the representation question, while the subsequent full-state identities narrow the surviving line to the explicit `B/S/V/O` recycling block.  They do not yet replace the final leaf-exclusion implication.
 
 \section{Conclusion}
 
@@ -1078,7 +1150,7 @@ Y\Longrightarrow S\vee V\vee O,
 \]
 with no independent fourth fate.
 \end{enumerate}
-The late commit sequence then removes every attempted extra owner or representation escape, culminating in the quartic phase anti-correspondence \eqref{eq:QdotWitness}.  What that sequence certifies is the exhaustion of the \emph{representation/owner alphabet}.  An unconditional Clay QED additionally requires a proved exclusion of the three surviving physical fates, or an equivalent well-founded theorem showing that all possible re-entry through them terminates contradictorily.  Once such a theorem is supplied, the final logical composition is exactly
+The late commit sequence removes every attempted extra owner or representation escape, culminating in the quartic phase anti-correspondence \eqref{eq:QdotWitness}; the subsequent full-state laws identify the precise surviving mechanism as critical minority-$B$ regeneration coupled to sidecar stock/viscosity/outflow.  What remains is not a representation gap but the exact theorem excluding infinite critical $B/S/V/O$ re-entry.  An unconditional Clay QED requires that theorem, equivalently a proof of $Y\Rightarrow\bot$.  Once such a theorem is supplied, the final logical composition is exactly
 \[
 T_*<\infty\Rightarrow X\vee Y,
 \qquad
