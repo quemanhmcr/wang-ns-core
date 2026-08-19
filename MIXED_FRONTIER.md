@@ -21,7 +21,7 @@ The following may remain useful observables or provenance, but they no longer cr
 - simultaneous causes split by lexicographic priority or a fractional synthetic clock;
 - normalized critical quantities promoted to globally finite reset budgets.
 
-The two eventually-pure recurrence routes also cannot support an infinite interior tail: consecutive high strain is finite, and consecutive **physically selected signed-good generated HH** is finite.
+The two eventually-pure recurrence routes also cannot support an infinite interior tail: consecutive high strain is finite, and consecutive **geometric-good generated HH under the supplied continuation hypotheses** is finite.
 
 ## 2. Three ontological layers
 
@@ -33,7 +33,7 @@ Persistent physical modal stock, actual signed nonlinear work/boundary flux, vis
 
 ### B. Physical geometry/state witnesses
 
-High strain, pressure Hessian, SGS stress, critical shell, hard tail, resolved contact, signed-good geometry, coherent service and natural-corridor survival are real physical/derived observables.  They may decide which theorem applies, which scale is relevant, or which recurrence regime breaks.  Their existence does not automatically mint a new kinetic-energy charge.
+High strain, pressure Hessian, SGS stress, critical shell, hard tail, resolved contact, exact geometric-good support, coherent service and natural-corridor survival are real physical/derived observables.  They may decide which theorem applies, which scale is relevant, or which recurrence regime breaks.  Their existence does not automatically mint a new kinetic-energy charge.
 
 ### C. Representation/provenance
 
@@ -185,7 +185,7 @@ can therefore be switched on by weakening the analyst's bound.  It cannot define
 
 This does not declare actual old-labelled service nonexistent; it says only that neither the old label nor a capacity envelope creates generation.  The total-low-service theorem above supplies the physical shell entrance without asking whether that service was old, interface or fresh.  Likewise an ON/material-interface restriction of the same service law does **not** become terminal `Xi` by its label; terminal interface cost requires an independently certified physical work/cost law.
 
-The historical old-pool contraction `<1/2` remains a correct theorem on a supplied signed-good low-strain lineage (`N` growth `>8/5`, old-frequency growth `<21/20`).  Generic SGS recurrence supplies no such directional geometry, so that contraction is neither needed nor permitted here.
+The historical old-pool contraction `<1/2` remains a correct theorem under its supplied low-strain and directional scale-ratio hypotheses (`N` growth `>8/5`, old-frequency growth `<21/20`).  Generic SGS recurrence supplies no such directional geometry, so that contraction is neither needed nor permitted here.
 
 
 ### Source recursive leaf — CLOSED BY STATE RELAY
@@ -209,7 +209,7 @@ Exact source/strain/work ties remain joint at the original event time.  No event
 
 Source/pressure/SGS marks remain real derived-geometry events, but their theorem reader scale is not a causal parent scale.  At source block scale `N`:
 
-- local/viscous and resolved-pressure routes expose shells `H<=N/4`; inherited stock reaches `t=0`, bad inflow terminates, and any recurrent signed-good boundary inflow has donor outside the shell, hence `N_next<=H/2<=N/8`;
+- local/viscous and resolved-pressure routes expose shells `H<=N/4`; inherited stock reaches `t=0`, nonforward inflow exits this recursion, the general non-`G` complement is routed to fixed-control-volume Kirchhoff, and any recurrent geometric-good boundary inflow has donor outside the shell, hence `N_next<=H/2<=N/8`;
 - low/base SGS has hard candidates `H in {M_j,2M_j}`, `M_j=N2^j`, `j<=0`, so `H<=2N`; on a recurrent good boundary inflow the donor lies below the shell lower face, hence `N_next<=H/2<=N` (the sole `H>N` case is `H=2N`);
 - high-SGS tail state is inherited tail stock or true upward boundary supply, whose physical donor is `<=N`; bad/nonforward work is terminal.
 
@@ -219,17 +219,17 @@ Therefore every nonterminal composite `source mark -> state -> good work -> dono
 \]
 Source/pressure/SGS remain real geometry marks, but they cannot insert an ultraviolet reset between physical recurrence events.  Inherited state creates zero generation depth; a new exposed state not linked by actual work is a separate root, not continuation of the carried hard role.  Exact source/strain/work ties remain joint.
 
-## 7. `5/8` signed-good boundary-crossing theorem — DISTILLED EXACT DEDUCTION
+## 7. `5/8` geometric-good boundary-crossing theorem — EXACT DEDUCTION
 
 Refine any supplied finite hard state by the deterministic radial control-volume grid
 \[
 R_{m+1}=\tfrac58R_m,\qquad C_m=\{R_{m+1}<|k|\le R_m\}.
 \]
-The cells are observer readers, not events.  For every signed-good positive-work atom with child in `C_m`, the unique same-time donor obeys
+The cells are observer readers, not events.  For every exact geometric-good `G` atom with child in `C_m`, the signed-root definition and root-work identities give the unique same-time donor
 \[
 \tfrac35|k_c|<|k_d|<\tfrac58|k_c|\le R_{m+1}.
 \]
-So the atom is necessarily true boundary inflow, never internal work in `C_m`.  Moreover `|k_d|>3R_m/8>R_(m+3)`, hence donor support lies only in `C_(m+1)` or `C_(m+2)`.  This is an exact support statement about canonical `dW+` and its already-certified donor provenance.
+So the atom is necessarily true boundary inflow, never internal work in `C_m`.  Moreover `|k_d|>3R_m/8>R_(m+3)`, hence donor support lies only in `C_(m+1)` or `C_(m+2)`.  This is an exact support statement about canonical `dW+` and its cyclic donor provenance.
 
 The crucial topology is zero-depth: the donor kernel is same-time disintegration, not a temporal predecessor map.  Therefore the `5/8` scale drop may describe where one physical transfer came from, but it may **not** be iterated as an event clock without a separate state/corridor continuation theorem.  Multiple donor pieces remain set-valued provenance; no probability, winner, re-Hahn or stock assignment appears.
 
@@ -245,11 +245,11 @@ Therefore, with `e1=E_P(t)>0`,
 \]
 This is already a causal corridor made only of physical objects.  For a hard annulus `P_M`, after the last `theta`-entry it stays occupied, so shell viscosity gives `M D_M>=(nu theta mu/2)M^2(t-s_theta)`, `mu=M E_M(t)`.  Therefore every natural length `cM^-2` admits, by a sliding/partition proof only, some physical subinterval `J` of length `<=cM^-2` with `M Phi_in,M(J)>=q_nat mu`, `q_nat=min(1-theta,nu theta c/4)`.  At a **first** contact of the level `M E_M=mu`, one also has `M E_M(r)<=mu` on all earlier times, hence on this `J`.  The following is an **EXACT analytic estimate**, not a new physical branch: since boundary inflow is a restriction of canonical positive recipient work, use the proof partition `K=max(|x|,|y|)` at any chosen `Lambda>2`.  If the deep part `K>=Lambda M` carries at least half, triangle geometry puts both parents above `(Lambda-1)M`; donor-kernel recipient marginal then gives `A_down(J)>=(Lambda-2)q_nat mu/2`.  Otherwise the comparable part has `kappa<=2Lambda^2M^2`; using the helicity-resolved edge-fiber mass `pi R`, `kappa/R>=|q|>=M/2`, and `int_J E_M<=c mu/M^3`, Cauchy gives `int_J K2_edge^comp dt>=q_nat^2 mu/(64pi c Lambda^2)`.  Both `J` and `Lambda` remain proof readers, not events, owners or NS-created thresholds.  Pressure/SGS, `S`, service, material marks and relink still add no supplier term.
 
-Thus the smooth `Q^2`/coefficient machinery is not required to manufacture temporal energy causality; it remains useful for registration, geometry and local service theorems.  At an inflow face the physical object is the inherited canonical `dW+` boundary law itself.  Bad/nonforward sublaw is terminal; signed-good sublaw has exact same-time donor support in the next two `5/8` cells, but that donor pushforward remains zero-depth provenance.
+Thus the smooth `Q^2`/coefficient machinery is not required to manufacture temporal energy causality; it remains useful for registration, geometry and local service theorems.  At an inflow face the physical object is the inherited canonical `dW+` boundary law itself.  Nonforward sublaw exits this recursion; geometric-good `G` has exact same-time donor support in the next two `5/8` cells, but that donor pushforward remains zero-depth provenance.
 
 ### Measure-valued donor-state reroot — DISTILLED EXACT DEDUCTION
 
-Lift the certified same-time cyclic donor kernel by physical `dt`, restrict its recipient marginal to the actual boundary inflow of `P`, and push the donor side through the deterministic hard-cell map:
+Lift the exact same-time cyclic donor kernel by physical `dt`, restrict its recipient marginal to the actual boundary inflow of `P`, and push the donor side through the deterministic hard-cell map:
 \[
 d\Sigma_P=(t,\pi_{donor})_\#\,d\mathcal M_P.
 \]
@@ -257,11 +257,11 @@ d\Sigma_P=(t,\pi_{donor})_\#\,d\mathcal M_P.
 
 ### Symmetric-strain work is not a recursive breaker — DISTILLED EXACT DEDUCTION
 
-On each resolved low/high closed triad, `2S_kl=-qT_p`.  With a smooth square-role weight, `S_eta,tri=-alpha_tri T_p`, `0<=alpha_tri<=1`; hence `[S_eta,tri]_+=alpha_tri[-T_p]_+`.  Positive `S` is therefore inherited low-root `dW-`, not a new positive law.  Coarse positive parts are dominated by the pushforward of this same restriction, which the cyclic donor kernel returns at zero depth to canonical `dW+`.  Its recipients are all bad: either nonforward, or their resolved parent is `<1/2` of the child and so violates signed-good `3/5`.  Thus `K` is zero-depth relink and `S` is terminal bad-work provenance; neither is a Mixed recurrence mechanism.
+On each resolved low/high closed triad, `2S_kl=-qT_p`.  With a smooth square-role weight, `S_eta,tri=-alpha_tri T_p`, `0<=alpha_tri<=1`; hence `[S_eta,tri]_+=alpha_tri[-T_p]_+`.  Positive `S` is therefore inherited low-root `dW-`, not a new positive law.  Coarse positive parts are dominated by the pushforward of this same restriction, which the cyclic donor kernel returns at zero depth to canonical `dW+`.  Its recipients are all outside the recursive `G` channel: either nonforward, or their resolved parent is `<1/2` of the child and so violates the defining geometric-good `G` bound `3/5`.  Thus `K` is zero-depth relink and the positive `S` pushforward lies in the complementary `B_bad` restriction handled by fixed-control-volume Kirchhoff; neither is a new Mixed source mechanism.
 
 ### Interior recursion + two native radial ledgers — DISTILLED EXACT DEDUCTION
-On each carried-root branch every depth-increasing continuation is `H` or `G`; both contract scale (`G<=5/8`, `H<=3/16`), so `#H D_*<=G_* sum N_j<=(8/3)N_0G_*` and any infinite branch is eventually pure `G`.  Radial-cut funding then removes genealogy: for `L_R={|k|<=R}`, `E_<=R(t)+D_<=R+Phi_up=E_<=R(0)+Phi_down`, hence `mu_G(C_m)<=Phi_up(R_m+1)<=E_<=R(0)+Phi_down`; on `R^3`, continuum variation gives `Phi_up(R;[0,t])->0` as `R->0`.  The same initial reservoir may cross many cuts, so this is not a reusable budget.
-The second ledger uses `C_(1/2)=||u||_Hdot^(1/2)^2`: `C_(1/2)(t)+2nu D_(3/2)+A_down=C_(1/2)(0)+A_up`, and signed-good triads give `(9/25)int rho_c dW_G<=C_(1/2)(t)+2nu D_(3/2)+A_(down,notG)`.  The inward term is now physically exhausted without entropy.  For each canonical donor atom, `M_(d->r)<=min(|T_d|,|T_r|)` and exact edge capacity plus triangle closure give `|rho_r-rho_d|M_(d->r)<=4LK|a_0a_1a_2|`; dyadic low/high shells are only proof readers, with the two high roots comparable and a low-root `L1` gain `(L/K)^2`.  Keeping the low-shell factor in `l^infinity` yields the stronger street-level law `v_rad(t)<=C_sh sqrt(mu_sh(t))||u||_Hdot^(3/2)^2`, `mu_sh=sup_M M||1_{M/2<|D|<=M}u||_2^2`.  Hence `dC_(1/2)/dt+(2nu-C_sh sqrt(mu_sh))||u||_Hdot^(3/2)^2<=0`, so every time the critical first moment actually grows there exists a physical hard shell with `M||P_Mu||_2^2>(2nu/C_sh)^2`.  Local and deep inward flows are therefore not separate owners; both collide with shell concentration/viscosity.  Separate source roots remain outside this carried-root statement.
+On each carried-root branch, after routing every non-`G` positive inflow to its fixed-control-volume branch, every retained depth-increasing continuation is `H` or `G`; both contract scale (`G<=5/8`, `H<=3/16`), so `#H D_*<=G_* sum N_j<=(8/3)N_0G_*` and any infinite branch is eventually pure `G`.  Radial-cut funding then removes genealogy: for `L_R={|k|<=R}`, `E_<=R(t)+D_<=R+Phi_up=E_<=R(0)+Phi_down`, hence `mu_G(C_m)<=Phi_up(R_m+1)<=E_<=R(0)+Phi_down`; on `R^3`, continuum variation gives `Phi_up(R;[0,t])->0` as `R->0`.  The same initial reservoir may cross many cuts, so this is not a reusable budget.
+The second ledger uses `C_(1/2)=||u||_Hdot^(1/2)^2`: `C_(1/2)(t)+2nu D_(3/2)+A_down=C_(1/2)(0)+A_up`, and geometric-good `G` triads give `(9/25)int rho_c dW_G<=C_(1/2)(t)+2nu D_(3/2)+A_(down,notG)`.  The inward term is now physically exhausted without entropy.  For each canonical donor atom, `M_(d->r)<=min(|T_d|,|T_r|)` and exact edge capacity plus triangle closure give `|rho_r-rho_d|M_(d->r)<=4LK|a_0a_1a_2|`; dyadic low/high shells are only proof readers, with the two high roots comparable and a low-root `L1` gain `(L/K)^2`.  Keeping the low-shell factor in `l^infinity` yields the stronger street-level law `v_rad(t)<=C_sh sqrt(mu_sh(t))||u||_Hdot^(3/2)^2`, `mu_sh=sup_M M||1_{M/2<|D|<=M}u||_2^2`.  Hence `dC_(1/2)/dt+(2nu-C_sh sqrt(mu_sh))||u||_Hdot^(3/2)^2<=0`, so every time the critical first moment actually grows there exists a physical hard shell with `M||P_Mu||_2^2>(2nu/C_sh)^2`.  Local and deep inward flows are therefore not separate owners; both collide with shell concentration/viscosity.  Separate source roots remain outside this carried-root statement.
 
 ## 9. Canonical good spacetime inflow adapter — DISTILLED EXACT; YOUNG/CHRIST AUXILIARY
 The native signed edge law is lifted on every compact smooth physical slab `I` before any coarsening:
@@ -272,19 +272,19 @@ This is the same canonical Hahn law with physical time attached.  For every boun
 \[
 |\mathcal W|(I\times B)\le |I|\,4\sqrt2C_FE_*^{3/2}\Big(\int_B|z|^2dz\Big)^{1/2}<\infty,
 \]
-so the spacetime law and its positive part are locally finite Radon measures.  Use the native edge reader already defined in `PHYSICAL_CORE.md` §2: `r_e=(J_e/J_*)c_e`, `eta0=10^-4`, with exact registration `T_e ell_e=A_eJ_*r_e`.  Restrict the already-existing positive law exactly as `G={T_e>0,r_e>1-eta0}` and `B_bad={T_e>0,r_e<=1-eta0}`.  No new Hahn split occurs, and `B_bad` is not the later minority-helicity critical branch `B_crit`.  On `G`, the certified physical support gives signed roots `-r<d<c`, `Z>0`, `3/5<d/c,r/c<5/8`; the exact identities `sum T_i=0`, `sum x_iT_i=0` give `T_(-r)=Z/[(d+r)(c+r)]`, `T_d=-Z/[(d+r)(c-d)]`, `T_c=Z/[(c+r)(c-d)]`, hence `W_side/W_child=(c-d)/(d+r)>3/10`.  At a terminal hard role `P`, restrict first to actual modal inflow `Phi_in,P`; its recipient marginal is a restriction of inherited canonical `dW+`.  `B_bad` inflow is already actual boundary inflow.  If the `G` inflow sublaw is nonzero, push it to physical time and split the child natural interval into its two physical halves; one carries at least half of this **same positive work law**.  No Duhamel or Young weight is introduced.
-Every good edge already carries both physical interaction parents in `3/5<N_p/N_c<5/8`; the cyclic theorem identifies the unique energy donor and the other parent as simultaneous terminal nonforward recipient.  Donor provenance is a zero-depth disintegration of the one recipient charge.  Disintegrate onto deterministic event hard roles.  On every nonzero parent role `P_p`, positive work implies `P_pu(t)!=0`; set
+so the spacetime law and its positive part are locally finite Radon measures.  Use the exact geometric partition already defined in `PHYSICAL_CORE.md` §2.  Namely, `G` is the restriction of the existing `dW+` to positive child edges whose signed roots, after simultaneous helicity reversal if necessary, satisfy `-r<d<c`, `Z>0`, `3/5<d/c,r/c<5/8`; `B_bad` is its complement in the same `dW+`.  No optimizer, tolerance or new Hahn split occurs, and `B_bad` is not the later minority-helicity critical branch `B_crit`.  On `G`, the exact identities `sum T_i=0`, `sum x_iT_i=0` give `T_(-r)=Z/[(d+r)(c+r)]`, `T_d=-Z/[(d+r)(c-d)]`, `T_c=Z/[(c+r)(c-d)]`, hence `W_side/W_child=(c-d)/(d+r)>3/10`.  At a terminal hard role `P`, restrict first to actual modal inflow `Phi_in,P`; its recipient marginal is a restriction of inherited canonical `dW+`.  `B_bad` remains actual boundary inflow of the original child shell, while `G` has the exact simultaneous side-recipient law.  No Duhamel or Young weight is introduced.
+Every geometric-good edge carries both physical interaction parents in `3/5<N_p/N_c<5/8`; the cyclic theorem identifies the unique energy donor and the other parent as simultaneous nonforward recipient.  Donor provenance is a zero-depth disintegration of the one recipient charge.  Disintegrate onto deterministic event hard roles.  On every nonzero parent role `P_p`, positive work implies `P_pu(t)!=0`; set
 \[
 \psi_p=P_pu(t)/\|P_pu(t)\|_2.
 \]
-For the event-anchored smooth envelope `Q_pP_p=P_p`, exactly `<Q_pu,P_p psi_p>=||P_pu||_2`.  The common-slice theorem is shape-blind: either an existing role-interface/HH/strain obstruction reenters physical energy/work, or the same parent coefficient survives with the certified `1/4` factor.  Thus signed-good parabolic ancestry registers directly from the hard physical state; no Gaussian near-extremizer is needed for causal depth.
+For the event-anchored smooth envelope `Q_pP_p=P_p`, exactly `<Q_pu,P_p psi_p>=||P_pu||_2`.  The common-slice theorem is shape-blind: either an existing role-interface/HH/strain obstruction reenters physical energy/work, or the same parent coefficient survives with the proved `1/4` factor.  Thus geometric-good parabolic ancestry registers directly from the hard physical state; no Gaussian near-extremizer is needed for causal depth.
 Consequently the degenerate full-signed Young/Christ margin `mu->0` is **not a master no-escape seam** in the distilled hard-work route.  Full-signed Young/Christ remains meaningful for near-extremizer shape, Gaussian marking, amplitude productivity and entropy/coherent-root analysis; its degenerate margin may remain analytically open there.  If that auxiliary coherent route ever requires a positive kernel, it must still be a separately proved positive disintegration of canonical `dW+`; fresh coherent Hahn remains forbidden.  The same event-noncreation rule removes the rest of the optional coherent-analysis exit alphabet from hard ancestry: aspect itself is never charged and can change only through actual deformation/strain or expose a radius/mass state; large radius is a state witness whose energy reroutes modally; holonomy is a genuine polarization observable/cost but is not consulted by the hard self-probe causal chain; coherent deformation is existing `D_V`; full-natural service/material labels are witnesses/provenance; and Kelvin-flat is absent from `RecursiveEventState`, remaining a no-hit/auxiliary analysis certificate rather than a causal vertex.
 
 ### High-tail supply-owner exhaustion — DISTILLED EXACT DEDUCTION
 
 For `H_N={|k|>N}`, exact radial continuity says fresh tail supply is `Phi_up`, not gross positive work inside `H_N`.  Internal high→high circulation can be arbitrarily large with `Phi_up=0`; it is real redistribution but no tail-supply owner.  Every atom of `Phi_up` is either pure-UV, which forces `M=2N` and enters the direct first-shell natural window, or resolved contact, which enters existing `K/S` or the contact-HH natural-window route.  Hence the historical nonlocal high-tail regeneration branch does not survive as an independent renewal edge.  An unrelated hard event may coexist elsewhere, but it is not a predecessor of the current hard state unless actual canonical inflow crosses into that state; smooth or tail overlap alone creates no edge.
 
-## 10. Clay(A) -> `Y` -> bad sidecar -> `S vee V vee O` — CLOSED UPSTREAM SPINE
+## 10. Clay(A) -> `Y` -> exact geometric inflow split -> `S vee V vee O` — CLOSED UPSTREAM SPINE
 
 This is the hostile-referee contract for the assembled endpoint layer.  It uses no causal token, second Hahn, natural-window constant, or theorem-defined owner.
 
@@ -331,48 +331,46 @@ For every compact child block `B` and compact smooth time slab `I`, the absolute
 \]
 Hence `dW` is a locally finite signed Radon measure.  Fubini/Tonelli on this absolute majorant proves that its recipient pushforward is exactly the modal nonlinear-work measure in the fixed-mode energy equation; no symbolic “edge count” is substituted for the Fourier convolution.
 
-The cyclic donor kernel is then a disintegration of the already-registered signed closed-triad work.  Its recipient marginal is `dW+` and donor marginal is `dW-` only **after** the single canonical Hahn decomposition.  Deterministic restrictions to a shell, helicity, `G`, `B_bad`, or sidecar set commute with ordinary positive pushforward, but positivity is never retaken after pushforward.  Thus every measure in §§10.5--10.6 has one explicit ancestor:
+The cyclic donor kernel is then a disintegration of the already-registered signed closed-triad work.  Its recipient marginal is `dW+` and donor marginal is `dW-` only **after** the single canonical Hahn decomposition.  Deterministic restrictions to a shell, helicity, the exact geometric sets `G`,`B_bad`, or a sidecar set commute with ordinary positive pushforward, but positivity is never retaken after pushforward.  Thus every measure in §§10.5--10.6 has one explicit ancestor:
 \[
 \boxed{dW\ \longrightarrow\ (dW^+,dW^-)\ \longrightarrow\
 \text{positive restrictions/pushforwards}.}
 \]
 This is the full continuum plumbing needed by the endpoint theorem; no hidden measurable selector, winner, normalized probability, or second Hahn is used.
 
-### 10.5 Certified `G` support — COMPUTER-ASSISTED EXACT
-For `r_e=(J_e/J_*)c_e`, `eta_0=10^-4`, restrict the existing positive law into `G={r_e>1-eta_0}` and `B_bad={r_e<=1-eta_0}`.  The source theorem `single_edge_stability_certificate` uses exact sign reduction and inclusion-preserving Arb arithmetic: outside `u<=2/25, |v|<=2/25` the deficit is at least `1/100`, while locally `1-J/J_*>=u/50+v^2`.  Physical efficiency `>1-10^-4` sharpens to `u<=1/200`, `|v|<=1/100`; exact sign comparison selects opposite-helicity parents and yields
+### 10.5 Exact geometric `G/B_bad` partition — EXACT
+The endpoint partition is now purely analytic.  For each positive child edge use the actual signed roots `xi_i=s_i|k_i|` and `Z=sum_i xi_i^2T_i`.  The set `G` is defined by the finite sign/order conditions
 \[
-\boxed{3/5<d/c,r/c<5/8.}
+-r<d<c=|z|,\qquad Z>0,\qquad 3/5<d/c,r/c<5/8,
 \]
-Random stress output is not part of this proof.
-
-#### Certificate dependency contract
-The only computer-assisted input in the Clay-to-sidecar chain is the finite-dimensional support implication just stated.  Its replayable theorem file uses 160-bit Arb balls, proves the unique symmetric critical bracket, proves the local derivative inequalities by interval subdivision, and proves the global `1/100` exclusion by branch-and-bound.  A box is accepted only when its entire interval enclosure satisfies the required inequality or lies inside the already-certified local region.  Therefore the output is a finite certificate of inequalities, not a floating-point search for an optimizer.
-
-The endpoint argument imports only
+after simultaneous helicity reversal if needed; `B_bad` is the complement in `dW+`.  These are Borel inequalities in the true triad variables, so
 \[
-r_e>1-10^{-4}\Longrightarrow
--r<d<c,\quad Z>0,\quad 3/5<d/c,r/c<5/8,
+oxed{dW^+=dW^+|_G+dW^+|_{B_{bad}}}
 \]
-and discards all auxiliary optimization coordinates afterward.  In particular no Gaussian profile, packet lifetime, stress sample, or numerical tolerance appears in the sidecar constants.
+is an ordinary measurable restriction of the one Hahn-positive law.  No extremizer theorem, numerical localization, tolerance, packet profile or auxiliary efficiency coordinate is used anywhere in the Clay-to-sidecar implication.
 
-### 10.6 `Y ->` sidecar `-> S vee V vee O` — EXACT
-One same-Hahn restriction of the actual `Y` inflow has child-scale mass at least `2c_nu/5`.  `B_bad` is already bad-positive inflow.  On `G`, signed roots `-r<d<c` obey
+### 10.6 `Y ->` fixed positive control volume `-> S vee V vee O` — EXACT
+One exact geometric restriction of the actual `Y` inflow has child-scale mass at least `2c_nu/5`.
+
+If `B_bad` is larger, split the original child shell by its two helicities.  One helicity cell has `N_A=M` and `N_A Phi_(in,A)^(B_bad)>=c_nu/5`; direct Kirchhoff therefore gives an `S`, `V`, or `O` term at least `c_nu/15`.
+
+If `G` is larger, its defining signed roots obey
 \[
 T_{-r}=\frac Z{(d+r)(c+r)},\quad T_d=-\frac Z{(d+r)(c-d)},\quad T_c=\frac Z{(c+r)(c-d)},
 \]
-so `W_side/W_child=(c-d)/(d+r)>3/10` and `M Phi_side>3c_nu/25`.  The opposite-helicity side recipient lies in `(3M/10,5M/8]`, hence is a genuine boundary crossing of a helicity-resolved cell.
+so `W_side/W_child=(c-d)/(d+r)>3/10` and `M Phi_side>3c_nu/25`.  The opposite-helicity side recipient lies in `(3M/10,5M/8]`.  Cover by `(M/4,M/2]`, `(M/2,M]` and both helicities; if `q=max_A N_A Phi_(in,A)^side`, then `M Phi_side<=6q`, hence `q>=c_nu/50`.
 
-Cover by `(M/4,M/2]`, `(M/2,M]` and both helicities.  If `q=max_A N_A Phi_(in,A)^side`, then `M Phi_side<=6q`, so `q>=c_nu/50`; `B_bad` is stronger.  Exact Kirchhoff gives
+Thus in either branch there is a fixed helicity cell and an actual retained positive inflow restriction with `N_A Phi_(in,A)^sel>=c_nu/50`.  Exact Kirchhoff
 \[
-E_A(t_1)+D_A+\Phi_{out,A}=E_A(t_0)+\Phi_{in,A},
+E_A(t_1)+D_A+\Phi_{out,A}=E_A(t_0)+\Phi_{in,A}\ge\Phi_{in,A}^{sel}
 \]
-and without assuming `E_A(t_0)=0`, one of `N_AE_A(t_1)`, `N_AD_A`, `N_APhi_(out,A)` is at least `c_nu/150`.  This is exactly `S vee V vee O`; no fourth fate, stock matching, wallet, genealogy or second Hahn exists.
+then forces one of `N_AE_A(t_1)`, `N_AD_A`, `N_APhi_(out,A)` to be at least `c_nu/150`, with no assumption on `E_A(t_0)`.  This is exactly `S vee V vee O`; no fourth fate, stock matching, wallet, genealogy, optimizer or second Hahn exists.
 
 ### 10.7 Natural-window constant is separate — EXACT WORDING GUARD
 The endpoint constants above use the **whole final occupied corridor** and its `4/5` last-entry quantum.  A separate `cM^-2` localization gives only `M Phi_in(J)>=q_nat mu`, `q_nat=min(1-theta,nu theta c/4)`; at `theta=1/5`, `q_nat=min(4/5,nu c/20)`.  It is not used to derive `2/5 -> 3/25 -> 1/50 -> 1/150`.
 
 ### First-contact `G` fertility — DISTILLED EXACT DEDUCTION
-For a fixed shell first touching `M E_M=mu0`, exact differential Kirchhoff and the shell spectral gap give `phi_in>=nu M mu0/2`; so `B_bad` rate is `>=nu M mu0/4`, or `G` rate is.  On `G`, both interaction parents lie in `(3M/10,5M/8]`, and the whole-band sharp NS work estimate is `phi_G<=(15sqrt(pi)/8)M sqrt(mu0) mu_U`.  Hence one of the two covering parent shells `R in {5M/8,5M/16}` has `R E_R>=nu sqrt(mu0)/(36sqrt(pi))`.  With `mu_*=min(c_nu/2,nu^2/(5184pi))`, a `G` contact at `mu_*` forces a lower shell with `>=2mu_*`; it is initial stock or has a strictly earlier `mu_*` contact.  Pure-`G` state descent is finite (`R` contracts by `<=5/8` but `R>=mu_*/E_*`).  This closes companion-parent hardness as a state law; it does not identify the required interaction shell with the unique energy donor or create genealogy.
+For a fixed shell first touching `M E_M=mu0`, exact differential Kirchhoff and the shell spectral gap give `phi_in>=nu M mu0/2`; so `B_bad` rate is `>=nu M mu0/4`, or `G` rate is.  On geometric-good `G`, both interaction parents lie in `(3M/10,5M/8]` by definition, and the whole-band sharp NS work estimate is `phi_G<=(15sqrt(pi)/8)M sqrt(mu0) mu_U`.  Hence one of the two covering parent shells `R in {5M/8,5M/16}` has `R E_R>=nu sqrt(mu0)/(36sqrt(pi))`.  With `mu_*=min(c_nu/2,nu^2/(5184pi))`, a `G` contact at `mu_*` forces a lower shell with `>=2mu_*`; it is initial stock or has a strictly earlier `mu_*` contact.  Pure-`G` state descent is finite (`R` contracts by `<=5/8` but `R>=mu_*/E_*`).  This closes companion-parent hardness as a state law; it does not identify the required interaction shell with the unique energy donor or create genealogy.
 
 ### Helicity-outflow quotient — DISTILLED EXACT DEDUCTION
 With signed radius `x=s|k|`, the cyclic work law gives `sum x_iT_i=0`, hence the canonical donor flow has zero signed `x` displacement.  Since a triad has at most two flows, any helicity-flip displacement `(rho_d+rho_r)M` is balanced by same-helicity radial displacement; globally `V_x<=2V_rho`.  Same-helicity bad outflow is radial layer-cake traffic and helicity-flip outflow is signed-radius traffic controlled by it.  Separately, `C_(1/2)=int mu(R)dR/R` exactly, `mu(R)=R E_(R/2,R]`; so a single bounded critical shell cannot blow up merely by moving to UV.  The endpoint must concentrate shell amplitude or proliferate critical stock over unbounded log-scale width.  No third recycling ledger is left.

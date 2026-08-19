@@ -4,7 +4,7 @@ A six-document distillation of the current Wang–Navier–Stokes physical-road 
 
 Source programme: [`quemanhmcr/wang-ns-triad-diamond`](https://github.com/quemanhmcr/wang-ns-triad-diamond), read only from `main`.  The source baseline used for this distillation is `main@63178b0e7f9fabdfd8c344dab938a3d639639df5` (2026-08-13), whose latest upstream theorem state is the native material-service causal quotient.  This distill also records later **deductions obtained by composing already-certified upstream identities**; each such deduction is labelled explicitly.
 
-There is **no claim yet of a proof of 3D Navier–Stokes global regularity**.  The representation/owner frontier is exhausted and the endpoint/initial-data interfaces are already assembled.  The only remaining proof block is the direct full-state exclusion of infinite critical `B/S/V/O` recycling.  Here `B` means the already-canonical minority-helicity positive-critical work branch, not a fourth sidecar fate: the sidecar fate theorem remains exactly `S vee V vee O`.
+There is **no claim yet of a proof of 3D Navier–Stokes global regularity**.  The representation/owner frontier is exhausted and the endpoint/initial-data interfaces are already assembled.  The only remaining proof block is the direct full-state exclusion of infinite critical `B/S/V/O` recycling.  Here `B` means the already-canonical minority-helicity positive-critical work branch, not a fourth `S/V/O` fate: the endpoint control-volume theorem remains exactly `S vee V vee O`.
 
 ## Repository invariant
 
@@ -23,7 +23,7 @@ Target line budgets: `README <= 210`, `CONTROL_VOLUME_METHOD <= 100`, `PHYSICAL_
 
 ## How to read the six files
 
-For the shortest route, read `CONTROL_VOLUME_METHOD.md` first for the proof discipline, then `PHYSICAL_CORE.md` for the Clay(A)-to-`S/V/O` endpoint spine, `SOLUTION_MAP.md` for composition, and `BSVO_FULL_STATE_FRONTIER.md` for the remaining open block.  Read `MIXED_FRONTIER.md` when auditing why older owner/bridge routes are forbidden and why the endpoint Hahn/support/constant plumbing is exact.  A physicist should not need a separate synthesis document to understand the current theorem architecture; the source repository is needed only to inspect upstream proofs, constants, rigorous computer-assisted certificates or historical derivations.
+For the shortest route, read `CONTROL_VOLUME_METHOD.md` first for the proof discipline, then `PHYSICAL_CORE.md` for the Clay(A)-to-`S/V/O` endpoint spine, `SOLUTION_MAP.md` for composition, and `BSVO_FULL_STATE_FRONTIER.md` for the remaining open block.  Read `MIXED_FRONTIER.md` when auditing why older owner/bridge routes are forbidden and why the endpoint Hahn/support/constant plumbing is exact.  A physicist should not need a separate synthesis document to understand the current theorem architecture; the source repository is needed only to inspect upstream proofs, constants, implementation records or historical derivations.
 
 The key discipline is:
 
@@ -36,7 +36,6 @@ A projector may read a shell; it does not create the shell.  A cutoff may repart
 - **EXACT** — analytic identity/theorem in the physical spine; CI/numerics are only certification evidence.
 - **EXACT-CONDITIONAL** — exact implication once a stated physical entrance hypothesis is supplied; not a universal entrance theorem.
 - **DISTILLED EXACT DEDUCTION** — new statement here obtained directly by composing upstream exact theorems, without a new estimate.
-- **COMPUTER-ASSISTED EXACT** — a finite-dimensional theorem proved by exact reduction plus inclusion-preserving interval/ball arithmetic with a replayable certificate; random stress output is not part of the proof.
 - **EVIDENCE** — finite-grid, Galerkin, FFT, randomized stress or non-rigorous CI checks; never a continuum proof.
 - **OPEN / HYPOTHESIS** — research frontier; must not be quoted as theorem.
 
@@ -66,13 +65,13 @@ source/derived-geometry marks expose state; they mint no causal scale edge
               |
 hard-state energy law = modal stock + canonical boundary flow + viscosity
               |
-     5/8 signed-good boundary geometry
+     exact 5/8 geometric-good boundary geometry
               |
               v
 finite endpoint: X OR Y; initial Hdot^(1/2) tail kills X
               |
               v
-Y -> universal bad-positive sidecar -> S OR V OR O
+Y -> exact geometric split -> fixed positive inflow cell -> S OR V OR O
               |
               v
 full-state road: N, G=curl N, strain/vorticity, exact triad phase
@@ -82,7 +81,7 @@ OPEN: no infinite critical B/S/V/O full-state recycling
 ```
 
 
-**Closed upstream endpoint contract.**  The Clay branch used here is only `R^3(A)`: `nu>0`, `f=0`, smooth divergence-free rapidly decaying data, hence `u_0 in dot H^(1/2)`.  Classical/mild uniqueness makes Kenig--Koch apply to the same maximal time `T_*`.  The hard-shell gate now records the complete dyadic proof of `v_high<=C_sh sqrt(mu_>)||u||_(dot H^(3/2))^2` and the low-root Gronwall term.  The `G` support `3/5<d/c,r/c<5/8` is a **COMPUTER-ASSISTED EXACT** Arb theorem from the source programme, not a random test.  `Y -> S vee V vee O` uses the whole final occupied corridor; the optional `cM^-2` natural window keeps its own `q_nat=min(1-theta,nu theta c/4)` and is not used to manufacture the constants `2/5 -> 3/25 -> 1/50 -> 1/150`.
+**Closed upstream endpoint contract.**  The Clay branch used here is only `R^3(A)`: `nu>0`, `f=0`, smooth divergence-free rapidly decaying data, hence `u_0 in dot H^(1/2)`.  Classical/mild uniqueness makes Kenig--Koch apply to the same maximal time `T_*`.  The hard-shell gate now records the complete dyadic proof of `v_high<=C_sh sqrt(mu_>)||u||_(dot H^(3/2))^2` and the low-root Gronwall term.  The endpoint `G/B_bad` split is now a direct Borel restriction of the one Hahn-positive work law: `G` is defined by the exact signed-root conditions `-r<d<c`, `Z>0`, `3/5<d/c,r/c<5/8`, and `B_bad` is its complement.  No extremizer/certificate input remains in the Clay-to-sidecar implication.  `Y -> S vee V vee O` uses the whole final occupied corridor; the optional `cM^-2` natural window keeps its own `q_nat=min(1-theta,nu theta c/4)` and is not used to manufacture the constants `2/5 -> 3/25 -> 1/50 -> 1/150`.
 
 The square/service/shell layers are real physical observables, but a new observable is not automatically a new causal charge.
 
@@ -101,7 +100,7 @@ The historical movement is not “more abstraction”; it is repeated removal of
 9. **Representation owners were quotiented.**  Material rereading, selected-family switching, smooth skew relink, role/probe changes and same-carrier inherited stock no longer create generation depth merely by changing description.
 10. **Two pure recurrence tails closed.**  Consecutive high strain is finite by exact scale descent plus the global gradient reservoir; consecutive signed-good generated HH is finite by exact parent-scale geometry plus parabolic backshift to `t=0`.
 11. **The mixed owner frontier was exhausted.**  Pressure, SGS, material, relink, helicity and traffic/material rereadings were reduced to exact state/geometry readings and cannot mint a fourth kinetic-energy supplier.
-12. **The endpoint was reduced to one physical-road block.**  Finite singularity gives `X vee Y`; the initial critical tail kills `X`; `Y` gives a universal bad-positive sidecar and the exact `S vee V vee O` trichotomy.
+12. **The endpoint was reduced to one physical-road block.**  Finite singularity gives `X vee Y`; the initial critical tail kills `X`; `Y` gives an exact geometric two-way inflow split and then the exact `S vee V vee O` trichotomy.
 13. **The cubic quotient was proved dynamically incomplete.**  The relative-translation witness keeps stocks, all active cubic works and `Q` fixed while changing `dot Q`, so the proof must return to full `u/omega`.
 14. **The current frontier is full-state control-volume curvature accounting.**  The mother law, fixed radial hinge family and exact Volterra heat-square family have collapsed phase/tangent, zero-stock, superlevel and higher-jet observer mechanisms back into the actual state/work laws.  Unbounded endpoint recycling now forces scale-amplified hinge growth, blow-up of the actual boundary-work square family and infinite cumulative `N/F_N` curvature input.  Fixed-projector triple-product identities cancel every internal nonlinear curvature source and identify the remaining cross-volume part as antisymmetric transfer; `Y=>bot` is still open only at this final true transfer/viscosity block.
 
@@ -111,17 +110,17 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXACT physical spine:** signed helical edge registration; continuum signed edge measure; canonical positive routing; cyclic donor kernel; mode-set energy continuity; radial crossing; hard-tail true upward supply; resolved-contact binding; pure-UV first-shell route; exact first-stop/tie semantics; checkpoint quotient; conservative relink quotient; inherited-stock relay; material-service quotient; high-strain telescope; canonical radial-variation/hard-shell collision; viscous hard-corridor natural-window inflow; `t=0` as exact modal-stock boundary.
 
-**EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical shell is supplied; same-carrier inherited-stock relay under its endpoint/residual-work hypotheses; the older signed-good generated-HH time telescope on a supplied parent-continuing chain.
+**EXACT-CONDITIONAL:** generic critical-shell/coherent-service reentry once a critical shell is supplied; same-carrier inherited-stock relay under its endpoint/residual-work hypotheses; the older geometric-good generated-HH time telescope on a supplied parent-continuing chain.
 
-**DISTILLED EXACT DEDUCTIONS:** carried-root recursion reduces to `H/G` with finitely many `H`; low-ball Kirchhoff roots pure-`G` funding; the critical first-moment ledger gives the signed-good `9/25` radial-production floor; and the radial-variation proof sharpens to `v_rad<=C_sh sqrt(mu_sh)||u||_Hdot^(3/2)^2`, so any actual increase of `C_(1/2)` exposes a hard shell above the fixed `(2nu/C_sh)^2` critical quantum.
+**DISTILLED EXACT DEDUCTIONS:** carried-root recursion reduces to `H/G` with finitely many `H`; low-ball Kirchhoff roots pure-`G` funding; the critical first-moment ledger gives the geometric-good `9/25` radial-production floor; and the radial-variation proof sharpens to `v_rad<=C_sh sqrt(mu_sh)||u||_Hdot^(3/2)^2`, so any actual increase of `C_(1/2)` exposes a hard shell above the fixed `(2nu/C_sh)^2` critical quantum.
 
-**EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, non-rigorous stress tests and master traces.  Rigorous Arb interval certificates are classified separately as COMPUTER-ASSISTED EXACT.
+**EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, implementation certificates and master traces.  None is an input to the distilled Clay-to-`S/V/O` theorem.
 
 **EXTERNAL EXACT ENDPOINT:** Kenig--Koch, arXiv:0908.3349, Theorem 0.1: a mild solution with `u_0 in Hdot^(1/2)` that stays bounded in `Hdot^(1/2)` on its maximal lifespan is global and smooth; hence finite-time singularity forces unbounded critical stock.
 
 **EXACT ENDPOINT SHARPENING:** finite singularity forces `t_n->T_*`, `M_n->infinity`.  Large shells cannot be initial stock; their final occupied corridors contain an actual interval of length `<=cM_n^-2` carrying a fixed fraction `q_nat` of terminal critical mass as canonical inflow.  Thus UV rebirth is parabolically localized by stock persistence plus viscosity, not by an observer time bin.
 
-**DISTILLED EXACT UV SIDECAR:** every large UV birth carries bad-positive work.  In the endpoint split use the native same-Hahn restrictions `G={r_e>1-eta0}` and `B_bad={r_e<=1-eta0}`, reserving `B_crit` for the later minority-helicity positive-critical branch.  Two radial annuli × two helicities give a safe comparable Fourier–helicity set `A` with `N Phi_in,A^side>=c_nu/50`; Kirchhoff forces `N E_A`, `N D_A`, or `N Phi_out,A` to be at least `c_nu/150`.  No transfer-loss wallet exists.
+**DISTILLED EXACT UV CONTROL-VOLUME SPLIT:** every large UV birth obeys an exact geometric two-way restriction of the same `dW+`.  On `G`, signed roots satisfy `-r<d<c`, `Z>0`, `3/5<d/c,r/c<5/8`, so exact triad invariants give the simultaneous side recipient and the safe `N Phi_in,A^side>=c_nu/50`.  On the complementary `B_bad` branch, splitting the original child shell only by helicity gives the stronger direct inflow `N Phi_in,A>=c_nu/5`.  Kirchhoff therefore forces `N E_A`, `N D_A`, or `N Phi_out,A` to be at least the common `c_nu/150`.  No auxiliary extremizer, transfer-loss wallet or second Hahn exists.
 
 **DISTILLED EXACT FIRST-CONTACT LAW:** at `M E_M=mu_*`, differential Kirchhoff gives a fixed inflow-rate floor.  If `G` owns it, sharp whole-band work forces a lower interaction shell `R<=5M/8` with `R E_R>=2mu_*`, so finite state descent reaches initial stock or a `B_bad`-rate alternative; no donor genealogy is used.
 
