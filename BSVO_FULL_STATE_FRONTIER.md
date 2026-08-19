@@ -133,83 +133,127 @@ Consequences:
 - a genuinely different radial compensation needs additional signed-root work support;
 - energy/helicity do not control tangential phase steering.
 
-## 11. Helical pair-silence law — EXACT ALGEBRAIC CONSEQUENCE
+## 11. Helical atoms versus the full geometric pair — EXACT IDENTITY
 
-For active noncollinear helical modes `p,q` with signed curl eigenvalues `x_p=s_p|p|`, `x_q=s_q|q|`, their unordered pair contribution to `N` at `r=p+q` is
-`n_r^(p,q)=(x_q-x_p)P_r(u_p x u_q)`.
-For a nondegenerate helical pair the projected cross product is nonzero.  Therefore
-`n_r^(p,q)=0 iff x_p=x_q`.
-This is the pair-level Beltrami silence mechanism.
+For active helical modes, the selected atom law is
+`n_(p+q)^(p,q)=(x_q-x_p)P_(p+q)(u_p x u_q)`.
+It is silent iff the signed curl eigenvalues agree.  This is an atomwise statement only.
 
-## 12. Farther-UV mirror output — EXACT ALGEBRAIC CONSEQUENCE
+For the full Fourier coefficients `U=uhat(p)`, `V=uhat(q)`, `K=p+q`, sum both helicities before drawing a state conclusion.  In the pair-plane frame, write
+`U=A n+B(be-at)`, `V=C n+D(be+(|K|-a)t)`.
+Then
+`|N_K^(p,q)|^2=|p x q|^2[|BC+DA|^2+((|q|^2-|p|^2)^2/|K|^2)|BD|^2]`.
+This is a full-polarization Pythagoras.  If `|p|!=|q|`, the pair is silent iff both full velocity vectors are parallel to the common normal `p x q`.  If `|p|=|q|`, the exact null condition is the wider manifold `BC+DA=0`.  Thus equiradial helical cancellation can preserve a genuine relative phase and does not determine low-root critical-work sign.
 
-In a real dangerous opposite-high high-high-low triad,
-`k_alpha+k_beta+k_gamma=0`.
-Reality supplies the conjugate high mode `-k_gamma`, hence the simultaneous mirror pair `(k_alpha,-k_gamma)` at
-`k_Delta=k_alpha-k_gamma`.
-Parallelogram geometry gives
-`rho_Delta^2=2rho_alpha^2+2rho_gamma^2-rho_beta^2`.
-Since both highs exceed the low radius,
-`rho_Delta>max(rho_alpha,rho_gamma)`.
-The high helicities are opposite, so the signed curl mismatch of the mirror pair is `rho_alpha+rho_gamma`; by the pair-silence law its selected acceleration at `k_Delta` is nonzero.
+## 12. Universal active-triad outward leak — EXACT ALGEBRAIC CONSEQUENCE
 
-Thus every dangerous opposite-high triad carries a simultaneous selected nonlinear acceleration channel farther outward than both highs.
+Let `k_1+k_2+k_3=0` be nondegenerate and suppose all three full Fourier coefficients are nonzero.  If at least one of the three internal full pair accelerations is nonzero, then for some `i!=j` the reality companion pair `(k_i,-k_j)` has nonzero full acceleration at
+`K_out=k_i-k_j`,
+with
+`|K_out|>max_l |k_l|`.
+For unequal radii this follows from the common-normal silence theorem plus the parallelogram identity.  The equilateral case requires the full phase algebra: if all three difference pairs were silent, the three polarization ratios would coincide and be purely imaginary, which also kills every internal pair.  Therefore a genuinely active closed geometric triad cannot be locally UV-closed.
 
-## 13. One-triad full-state closure — EXACT ALGEBRAIC CONSEQUENCE
+There is no universal multiplicative jump: when the low root is much smaller than an equal high pair, the outward radius can be only `sqrt(H^2+2 ell^2)`.  No scale-jump budget is inferred.
 
-Consider a real nondegenerate finite-Fourier state supported only on one closed triad and its reality copies.  Difference outputs such as `k_1-k_2` lie outside that six-mode support.  Instantaneous full nonlinear closure would force each such pair contribution to vanish.  Pair-silence then gives
-`x_1=x_2=x_3`.
-Hence all three helicities coincide and all three radii coincide; the wavevector triangle is equilateral and the state is Beltrami:
-`omega=lambda u`, `N=0`.
-Therefore the only real nondegenerate one-triad full-NS closure is nonlinear silence.  A dangerous opposite-high `O/B` junction cannot live in an autonomous three-mode full state.
+## 13. Correct one-triad terminal class — EXACT ALGEBRAIC CONSEQUENCE
 
-## 14. Empty farther output and birth curvature — EXACT IDENTITY
+For a real finite-Fourier state supported only on one closed triad and its reality copies, full nonlinear closure forces all difference outputs to vanish.  By Section 12 the internal triad must therefore be nonlinear-silent: `N=0`.
 
-If the farther mirror output is empty at an instant,
-`a_Delta=0`,
-then its current nonlinear work is zero regardless of `n_Delta`.  But
-`dot E_Delta=0`,
-`ddot E_Delta=2|n_Delta|^2`.
-So if the full acceleration there is nonzero, farther-UV stock birth begins with strictly positive curvature.  This is a concrete physical meaning of the quartic action: it detects acceleration on a road before cubic traffic exists there.
+Correction of the older helical-only wording: closure is not restricted to homochiral Beltrami.  Non-equilateral closure is common-normal planar shear.  Equilateral closure is the monochromatic `2D3C` family
+`u=n x grad psi+c rho psi n`, `-Delta psi=rho^2 psi`, `c real`,
+for which `P(u.grad u)=0`; Beltrami is only a subfamily.  Under viscosity these states heat-decay exactly and are regular terminal physics.
 
-## 15. Exact cancellation alternative at the farther output
+## 14. Empty output and higher birth jets — EXACT IDENTITY
 
-The selected mirror acceleration need not equal the full output acceleration:
-`n_Delta=n_Delta^mirror+sum_other n_Delta^e`.
-If `n_Delta=0`, the other simultaneous parent channels must vectorially cancel the nonzero mirror contribution.  Any cancelling parent pair `p+q=k_Delta` satisfies
-`max(|p|,|q|)>=rho_Delta/2`.
-This is same-time UV structure, not ancestry.
+At an empty mode `a_K=0`, current nonlinear work is zero.  If `N_K!=0`, then
+`dot E_K=0`, `ddot E_K=2|N_K|^2>0`.
+If also `N_K=0` but `(F_N)_K!=0`, then
+`E_K^(r)=0` for `r<4`, while `E_K^(4)=6|(F_N)_K|^2>0`.
+More generally, if the first nonzero state derivative is `a_K^(m)`, then the first nonzero stock derivative is order `2m` and equals `binom(2m,m)|a_K^(m)|^2`.
+These are state jets, not genealogy or event counting.
 
-The unresolved point is that in the continuum many pair channels on the same output can interfere, and the complex two-dimensional output plane permits phase cancellation.
+## 15. Physical heat fibers — EXACT / EXACT ANALYTIC CONSEQUENCE
 
-## 16. Radial and tangential escape are different
+For a fixed child `K`, every parent pair `p+q=K` has the physical product heat rate
+`kappa=|p|^2+|q|^2`.
+Freeze the current state and evolve it only by the true linear heat semigroup.  If `dmu_K(kappa)` is the pushforward of the full pair-source vector measure by `kappa`, then
+`N_K[e^(nu tau Delta)u]=int exp(-nu kappa tau)dmu_K(kappa)`.
+Whenever this vector measure has finite variation, vanishing for `tau` in a nontrivial interval implies by Laplace-transform uniqueness
+`dmu_K(kappa)=0`.
+Thus direct viscosity cannot preserve a cancellation across distinct heat rates unless each heat-fiber resultant already vanishes; otherwise actual nonlinear parent dynamics must repair the cancellation.
+If fiberwise resultants vanish for every output, the heat orbit itself has `N=0` for all times and is an exact regular NS heat trajectory.
 
-At a dangerous balanced gate, radial counterwork confined to the same three signed roots is forced by energy/helicity to have the canonical cyclic direction.  To obtain another radial work pattern, actual support must leave the three-root set.
+## 16. Pair-source repair synchronization — EXACT IDENTITY
 
-Tangential countersteering is different.  At a silent gate the selected contribution is purely tangential, and the mixed term can be written
-`M_tau=J_tau Omega_tau^other`.
-Energy and helicity constrain only real work projections; they do not determine `Omega_tau^other`.  This is exactly why the quartic relative-translation witness survives after the cubic traffic quotient is fixed.
+For one helical pair atom write
+`F_e=C_e a_p a_q`,
+where the geometric vector `C_e` is fixed.  On active parents define
+`r_k=dot a_k/a_k=n_k/a_k-nu|k|^2`.
+Then
+`dot F_e=(r_p+r_q)F_e`.
+The atom's projective source line is fixed; dynamics only dilates and rotates its complex coefficient.
 
-## 17. What is already ruled out
+For two nonzero cancelling atoms `F_1+F_2=0`, first-order persistence is equivalent to
+`r_p+r_q=r_r+r_s`.
+Its real part is
+`w_p/E_p+w_q/E_q-w_r/E_r-w_s/E_s=nu(kappa_1-kappa_2)`;
+its imaginary part is equality of the two parent phase-rate sums.  Hence unequal-heat cancellation necessarily requires genuine nonlinear radial work at its parents.  Pure phase repair can occur only in the same-heat case.
+
+For a nondegenerate minimal three-atom cancellation circuit in the complex two-dimensional child plane, the same argument forces all three pair-rate sums to be equal.  In a larger block, if `F` is the child-source matrix, current and first-jet cancellation are exactly
+`F 1=0`, `F zeta=0`,
+with `zeta_e=r_(p_e)+r_(q_e)`.  Higher-dimensional kernel freedom is the genuine many-channel loophole.
+
+## 17. The repair rate is governed by `F_N/G` — EXACT IDENTITY
+
+Let `eta_k=n_k/a_k` on an active mode and `h_k=(F_N)_k`, where
+`F_N=N_t-nu Delta N`.
+Then direct linear viscosity cancels from the logarithmic nonlinear-rate equation:
+`dot eta_k=h_k/a_k-eta_k^2`.
+Thus maintaining a non-affine cancellation requires exact `F_N` steering of the parent rates.  There is no unnamed repair mechanism; in physical fields
+`F_N=-B(N,u)-B(u,N)+2nu sum_j B(partial_j u,partial_j u)`,
+and equivalently
+`G_t-nu Delta G=[G,u]+[omega,N]-2nu sum_j[partial_j omega,partial_j u]`.
+
+## 18. Affine synchronized repair is terminal regular physics — EXACT CONDITIONAL RIGIDITY
+
+Assume explicitly that overlapping cancellation circuits on a connected active set force the same logarithmic law across the connected helicity sectors,
+`r_(k,s)=sigma(t)+i v(t).k`.
+Then the full field has fixed shape up to amplitude and translation:
+`u(t,x)=A(t)U(x+delta(t))`.
+True viscous NS plus the energy identity forces `A'/A=-nu rho_*^2`, every active mode to satisfy `|k|=rho_*`, and
+`N[U]=(v_0.grad)U`.
+Hence every nonlinear modal work is zero.  On a torus/finite-Fourier setting this is a smooth monochromatic decaying traveling relative equilibrium.  For finite-energy `R^3`, exact nonzero `L^2` Fourier support on one sphere is impossible, so the synchronized state is trivial.
+This theorem does **not** assert that every cancellation network becomes affine; non-affine same-heat synchronization is precisely the remaining hard phase geometry.
+
+## 19. Radial and phase escape after the new reductions
+
+At the dangerous `B/O` gate, radial counterwork confined to the same three signed roots remains locked to the canonical cyclic direction by energy/helicity.  A fully active geometric triad also cannot stop locally: it creates an outward reality-companion pair acceleration.  If the resulting full child is cancelled, inter-heat cancellation must be repaired by actual parent radial work, while same-heat cancellation may use phase synchronization.
+
+Affine/global synchronization is regular by Section 18.  Therefore the genuinely dangerous remainder is narrower:
+`same-heat + non-affine + dynamically F_N/G-repaired cancellation`,
+together with the continuum possibility of large same-output cancellation kernels.  This is a description of the surviving freedom, not a proved contradiction.
+
+## 20. What is already ruled out
 
 The remaining proof may not use any of the following as if they were closure:
 - `S=>bot`, `V=>bot`, or `O=>bot` as raw local events;
 - an `O(1)` normalized dissipation/event budget;
 - positive quartic action as a monotone resource;
 - `Q+`, Lamb action or `D_(3/2)` divergence without an exact contradiction theorem;
-- a traffic-to-material bridge;
-- genealogy, token, event counting, entropy, Hodge owner, pressure owner or material owner;
-- a claim that every mirror/UV atom survives full same-output cancellation.
+- a traffic-to-material bridge, genealogy, token, entropy or new owner;
+- a claim that every selected mirror atom survives full helicity/pair cancellation;
+- the obsolete statement that one-triad closure is only Beltrami;
+- the claim that equiradial mirror cancellation fixes critical-work sign;
+- a claim that the affine synchronization theorem applies without its connectivity hypothesis.
 
-## 18. Exact remaining theorem — OPEN
+## 21. Exact remaining theorem — OPEN
 
-What remains is not an ontology question.  It is the following full-state theorem:
-> **No infinite critical full-state recycling.**  A smooth true 3D incompressible NS trajectory on a finite interval cannot repeatedly realize the stock/viscosity/outflow grammar, through the minority-helicity positive-critical `B` gates required for UV critical regeneration, at unbounded scales while satisfying all exact full-state convolution, phase, pressure/strain and viscosity identities above.
-Equivalent endpoint implication:
-`Y=>bot`.
-The current exact laws narrow the only surviving freedom to continuum same-output vector cancellation and full-state tangential phase reorientation around the dangerous `B/O` gates.  They do not yet prove that those mechanisms cannot sustain infinite critical re-entry.
+What remains is still:
+> **No infinite critical full-state recycling.**  A smooth true 3D incompressible NS trajectory on a finite interval cannot repeatedly realize the stock/viscosity/outflow grammar, through the minority-helicity positive-critical `B` gates required for UV critical regeneration, at unbounded scales while satisfying all exact full-state convolution, phase, pressure/strain, heat-fiber and repair identities above.
+Equivalent endpoint implication: `Y=>bot`.
+The new laws exclude local active-triad closure, passive inter-heat cancellation and globally affine synchronized repair as dangerous mechanisms.  They do **not** yet exclude continuum same-heat non-affine `F_N/G`-repaired cancellation.
 
-## 19. QED hook
+## 22. QED hook
 
 Once the open theorem is proved, the rest is already assembled:
 `T_*<infinity => X vee Y`,

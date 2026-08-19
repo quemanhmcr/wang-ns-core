@@ -124,9 +124,13 @@ Current laws include:
 5. self-braking of forward dangerous `O/B` geometry;
 6. differential-viscous preparation at the opposite-high neutral gate;
 7. three-root energy/helicity work rigidity;
-8. helical pair-silence law;
-9. farther-UV mirror-output forcing from a dangerous opposite-high pair;
-10. one-triad full-NS closure only in the Beltrami-silent case.
+8. full-polarization pair Pythagoras and exact shear/equiradial null geometry;
+9. universal outward reality-companion acceleration for every fully active closed geometric triad;
+10. corrected one-triad closure: nonlinear-silent planar-shear / monochromatic `2D3C`, not only Beltrami;
+11. heat-fiber Laplace rigidity for passive cancellation;
+12. exact pair-source repair synchronization `dot F_e=(r_p+r_q)F_e`;
+13. viscosity-free Riccati steering `dot eta=(F_N/a)-eta^2`;
+14. affine synchronized repair, under its explicit connectivity hypothesis, collapses to regular monochromatic translation/decay.
 
 See: `BSVO_FULL_STATE_FRONTIER.md` for the dedicated statement/derivation map.
 
@@ -136,7 +140,7 @@ The remaining theorem is:
 
 `No infinite critical full-state recycling`.
 
-It must show, using only true NS identities, that continuum same-output cancellation and full-state phase reorientation cannot sustain an infinite sequence of critical minority-`B` / `S` / `V` / `O` re-entry toward a finite endpoint.
+It must show, using only true NS identities, that the surviving continuum **same-heat, non-affine, dynamically `F_N/G`-repaired cancellation** cannot sustain an infinite sequence of critical minority-`B` / `S` / `V` / `O` re-entry toward a finite endpoint.  Unequal-heat passive cancellation, local active-triad closure and globally affine synchronized repair are already routed to exact work/UV leakage or regular terminal physics.
 
 Equivalent required implication:
 

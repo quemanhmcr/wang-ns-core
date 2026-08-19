@@ -1030,19 +1030,40 @@ For a true far-UV low-donor triad whose two high roots have opposite helicity, t
 
 On three distinct signed roots, any nonlinear work vector conserving both energy and helicity is proportional to the canonical cyclic vector $(c_\alpha,c_\beta,c_\gamma)$; the same is true for any time jet whose work support remains on those roots.  Thus a different radial compensation needs additional signed-root work support, although tangential phase compensation remains invisible to those two scalar moments.
 
-Finally, for two active noncollinear helical modes $p,q$ with signed curl eigenvalues $x_p,x_q$, their unordered pair contribution to $N$ at $r=p+q$ is
+The helical atom law remains exact, but a full-state conclusion must sum both parent helicities.  For full divergence-free Fourier coefficients $U=\widehat u(p)$, $V=\widehat u(q)$ at $K=p+q$, the pair-plane decomposition gives the exact full-polarization Pythagoras
 \[
-n_r^{(p,q)}=(x_q-x_p)\mathbb P_r(u_p\times u_q),
+|N_K^{(p,q)}|^2
+=|p\times q|^2\left(
+|BC+DA|^2
++\frac{(|q|^2-|p|^2)^2}{|K|^2}|BD|^2
+\right).
 \]
-and a nondegenerate helical pair is silent only when $x_p=x_q$.  In a real dangerous opposite-high triad, reality supplies the mirror pair $(k_\alpha,-k_\gamma)$ at
-\[
-k_\Delta=k_\alpha-k_\gamma,
-\qquad
-|k_\Delta|^2=2\rho_\alpha^2+2\rho_\gamma^2-\rho_\beta^2,
-\]
-so $|k_\Delta|$ exceeds both high radii and the selected mirror acceleration is nonzero.  A real nondegenerate one-triad Fourier state can therefore be closed under full NS only in the homochiral equilateral Beltrami-silent case.
+Consequently unequal-radius full-pair silence is precisely common-normal shear; equal-radius pairs have the wider null manifold $BC+DA=0$, so equiradial mirror cancellation alone cannot determine a critical-work sign.
 
-These statements narrow the physical road but do not yet exclude continuum same-output cancellation or full-state phase reorientation.  They are recorded in detail in \texttt{BSVO\_FULL\_STATE\_FRONTIER.md}; the theorem below remains OPEN.
+For a nondegenerate closed geometric triad $k_1+k_2+k_3=0$ with all three full Fourier coefficients nonzero, any nonzero internal full-pair acceleration forces, by reality and the exact pair-silence algebra, a nonzero companion pair at some $k_i-k_j$ with
+\[
+|k_i-k_j|>\max_\ell |k_\ell|.
+\]
+There is no universal multiplicative scale gap.  A real one-triad finite-Fourier state can therefore close only by becoming nonlinear-silent.  The earlier helical-only phrase ``only homochiral Beltrami'' is too narrow: non-equilateral closure is common-normal planar shear, while equilateral closure includes the monochromatic $2D3C$ family
+\[
+u=n\times\nabla\psi+c\rho\psi n,
+\qquad -\Delta\psi=\rho^2\psi,
+\]
+with Beltrami only a subfamily.
+
+At a fixed child, write a helical pair source as $F_e=C_ea_pa_q$ and $\kappa_e=|p|^2+|q|^2$.  On active parents put $r_k=\dot a_k/a_k$.  Then
+\[
+\dot F_e=(r_p+r_q)F_e.
+\]
+Thus every nondegenerate minimal persistent cancellation circuit synchronizes the sums $r_p+r_q$.  Unequal-heat cancellation forces genuine nonlinear radial parent work to compensate the viscous heat-rate mismatch; only same-heat cancellation can remain purely phase-driven.  With $\eta_k=n_k/a_k$ and $h_k=(F_N)_k$, the exact logarithmic steering law is
+\[
+\dot\eta_k=\frac{h_k}{a_k}-\eta_k^2.
+\]
+Moreover, along the frozen heat orbit the fixed-output source is the vector Laplace transform of its heat-fiber source measure.  Under finite-variation integrability, cancellation that survives a heat interval must vanish fiber by fiber.  Global fiberwise cancellation is an exact nonlinear-silent heat trajectory.
+
+Under the additional explicit hypothesis that overlapping cancellation circuits force the affine synchronization $r_{k,s}=\sigma+i v\cdot k$ across connected helicity sectors, true viscous NS forces a monochromatic fixed shape with nonlinearity equal only to rigid translation; all nonlinear modal works vanish.  This gives a smooth decaying traveling relative equilibrium on a periodic/finite-Fourier setting, while finite-energy $\mathbb R^3$ admits no nonzero exact $L^2$ state supported on one Fourier sphere.  The hypothesis is not known for a general continuum cancellation network.
+
+These statements narrow the physical road further: local active-triad closure, passive unequal-heat cancellation and globally affine synchronized repair are no longer dangerous mechanisms.  The unresolved possibility is continuum same-heat, non-affine, dynamically $F_N/G$-repaired cancellation coupled to repeated critical $B/S/V/O$ re-entry.  The detailed derivations are recorded in \texttt{BSVO\_FULL\_STATE\_FRONTIER.md}; the theorem below remains OPEN.
 
 \section{The final exclusion theorem required for an unconditional QED}
 
@@ -1056,7 +1077,7 @@ Let $u$ be a maximal smooth true three-dimensional incompressible Navier--Stokes
 \end{theorem}
 
 \begin{remark}[Status]
-Theorem \ref{thm:requiredExclusion} remains the only missing implication needed to turn the physical-core programme into a completed global-regularity proof.  The dedicated file \texttt{BSVO\_FULL\_STATE\_FRONTIER.md} now records substantial exact progress inside this block---critical-action, $G=\curl N$, pressure reflection, silent-gate, viscous-preparation, three-root rigidity and mirror-output laws---but none of those results alone proves \eqref{eq:YbotRequired}.  The quartic phase law also forbids replacing the missing theorem by an invented traffic/material bridge.
+Theorem \ref{thm:requiredExclusion} remains the only missing implication needed to turn the physical-core programme into a completed global-regularity proof.  The dedicated file \texttt{BSVO\_FULL\_STATE\_FRONTIER.md} now records critical action, $G=\curl N$, pressure reflection, silent-gate and viscous-preparation laws together with full-polarization pair rigidity, universal active-triad outward leakage, corrected nonlinear-silent one-triad closure, heat-fiber Laplace rigidity and exact parent-repair synchronization.  These results reduce the surviving mechanism to same-heat non-affine $F_N/G$-repaired continuum cancellation, but do not prove \eqref{eq:YbotRequired}.  The quartic phase law also forbids replacing the missing theorem by an invented traffic/material bridge.
 \end{remark}
 
 \section{Conditional final composition and QED}
