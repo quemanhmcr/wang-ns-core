@@ -284,9 +284,92 @@ Consequently the degenerate full-signed Young/Christ margin `mu->0` is **not a m
 
 For `H_N={|k|>N}`, exact radial continuity says fresh tail supply is `Phi_up`, not gross positive work inside `H_N`.  Internal high→high circulation can be arbitrarily large with `Phi_up=0`; it is real redistribution but no tail-supply owner.  Every atom of `Phi_up` is either pure-UV, which forces `M=2N` and enters the direct first-shell natural window, or resolved contact, which enters existing `K/S` or the contact-HH natural-window route.  Hence the historical nonlocal high-tail regeneration branch does not survive as an independent renewal edge.  An unrelated hard event may coexist elsewhere, but it is not a predecessor of the current hard state unless actual canonical inflow crosses into that state; smooth or tail overlap alone creates no edge.
 
-## 10. Singular endpoint -> UV-fresh hard-shell births — EXACT / EXTERNAL EXACT
+## 10. Clay(A) -> `Y` -> bad sidecar -> `S vee V vee O` — CLOSED UPSTREAM SPINE
 
-Fix `R_0`.  Triads whose smallest radius is `<=R_0` satisfy `v_low<=C_lo R_0^(5/2)E_*^(1/2)C_(1/2)`, so their entire effect is finite-time Gronwall.  The complementary triads satisfy `v_high<=C_sh sqrt(mu_>(R_0))H_(3/2)`.  Therefore if all shells above `R_0` stayed below `c_nu=(2nu/C_sh)^2` near an endpoint, `C_(1/2)` could not blow up.  Kenig--Koch then gives the exact contrapositive: finite `T_*` forces hard shells at arbitrarily late times and arbitrarily large scales.  For those large scales `M E_M(0)->0`, so the Section 4 last-entry law becomes **fresh actual boundary inflow** and, more sharply, puts a fixed fraction of the terminal critical mass into one actual `cM^-2` window.  Splitting the same inherited `dW+` gives `M Phi_(in,G)>=2c_nu/5` or `M Phi_(in,B_bad)>=2c_nu/5`.  But `G` itself forces the simultaneous nonforward side recipient `W_side>(3/10)W_child`; therefore **every** sufficiently large UV birth carries canonical bad-positive work with child-scale amount `>=3c_nu/25`.  This is real recipient energy, not dissipated transfer cost.  For `B_bad`-dominant birth it is already radial boundary inflow.  For a `G` birth the side recipient has helicity opposite the unique donor; its radii lie in `(3M/10,5M/8]`.  Cover by the two radial hard annuli and both helicities, and put `q=max_A N_A Phi_(in,A)^side`.  Since the two lower-helicity cells have `N_A=M/2` and the two upper-helicity cells have `N_A=M`, exact bookkeeping gives `M Phi_side<=6q`; together with `M Phi_side>=3c_nu/25`, this gives the safe universal `q>=c_nu/50`.  The `B_bad` branch is stronger after splitting only the two helicities of the original shell.  Kirchhoff on the selected `A` yields the exact trichotomy `N E_A(t_1)>=c_nu/150` OR `N D_A>=c_nu/150` OR `N Phi_(out,A)>=c_nu/150`.  Thus bad-sidecar recycling has only stock / viscosity / actual-outflow roads; transfer-loss labels add no fourth fate.
+This is the hostile-referee contract for the assembled endpoint layer.  It uses no causal token, second Hahn, natural-window constant, or theorem-defined owner.
+
+### 10.1 Scope + KK bridge — EXACT SCOPE / EXTERNAL EXACT
+Only Clay `R^3(A)` is used: `nu>0`, `f=0`, smooth divergence-free rapidly decaying `u_0`, hence `u_0 in L^2 cap dot H^(1/2)`.  The classical solution satisfies the Leray mild formula; standard uniqueness identifies classical and mild solutions on the common lifespan, so a smooth mild continuation would extend the classical solution.  Kenig--Koch therefore applies to the same `T_*` and gives `T_*<infinity => sup_(t<T_*)||u(t)||_(dot H^(1/2))=infinity` after the fixed viscosity normalization.  There is no periodic claim and no inference from smooth finite energy alone.
+
+### 10.2 Hard-shell collision — EXACT
+One donor atom obeys `|rho_r-rho_d|M_(d->r)<=4LK|a_0a_1a_2|`.  A dyadic block obeys
+\[
+V_{L,K}\lesssim L^{5/2}K E_L^{1/2}(E_KE_{K'})^{1/2}.
+\]
+For `L>R_0`, `LE_L<=mu_>` gives `(L/K)^2 sqrt(mu_>)K^3(E_KE_K')^(1/2)`; the geometric `L/K` series and bounded high-neighbor multiplicity give `v_high<=C_sh sqrt(mu_>)H_(3/2)`.  For `L<=R_0`, Cauchy gives `v_low<=C_lo R_0^(5/2)E_*^(1/2)C_(1/2)`.  Tonelli is only on the nonnegative variation majorant.  Hence
+\[
+C_{1/2}'+(2\nu-C_{sh}\sqrt{\mu_>})H_{3/2}\le C_{lo}R_0^{5/2}E_*^{1/2}C_{1/2}.
+\]
+With `c_nu=(2nu/C_sh)^2`, a final interval with every high shell below `c_nu` contradicts KK by Gronwall.  Thus finite `T_*` gives `t_n->T_*`, `M_n->infinity`, `M_nE_Mn(t_n)>c_nu`.
+
+### 10.3 `X vee Y`, then `X=bot` — EXACT
+At `theta=1/5`, exact mode-set last entry on the same shell gives
+\[
+M_nE_{M_n}(0)>\mu_n/5\quad\vee\quad M_n\Phi_{in,M_n}\ge4\mu_n/5.
+\]
+But `M E_M(0)<=2 int_(|k|>M/2)|k||uhat_0|^2 ->0`, so eventually only
+\[
+\boxed{Y:\ M_n\Phi_{in,M_n}\ge4c_\nu/5}
+\]
+remains.  No inflow atom is matched to terminal stock.
+
+### 10.4 Continuum signed edge law + one Hahn — EXACT
+The primitive spacetime edge law is signed:
+\[
+d\mathcal W=C_FT(t,e)\,dt\,d\lambda^{unord}(e).
+\]
+The compact-child variation estimate in §9 makes it locally finite Radon; its recipient pushforward is the modal nonlinear-work law.  Only then take `dW=dW+-dW-`.  All later `G`, `B_bad`, shell, helicity and sidecar laws are restrictions or positive pushforwards of that same `dW+`; `[pi#dW]_+` is never substituted for `pi#(dW+)`.
+
+#### Measure registration contract
+For a fixed child `z` and helicities, parameterize an ordered parent pair by `x`, `y=z-x`; the physical pair law is measurable away from the algebraic degeneracy set, and that set carries zero Lebesgue contribution to the continuum integral.  Quotient the involution `(x,y)~(y,x)` with its physical `1/2` multiplicity **before** any sign split.  Denote the resulting sigma-finite base by `d lambda^(unord)`.
+
+For every compact child block `B` and compact smooth time slab `I`, the absolute edge-work density has the fixed physical majorant
+\[
+|\mathcal W|(I\times B)
+\le |I|\,4\sqrt2 C_F E_*^{3/2}
+\Big(\int_B|z|^2dz\Big)^{1/2}<\infty.
+\]
+Hence `dW` is a locally finite signed Radon measure.  Fubini/Tonelli on this absolute majorant proves that its recipient pushforward is exactly the modal nonlinear-work measure in the fixed-mode energy equation; no symbolic “edge count” is substituted for the Fourier convolution.
+
+The cyclic donor kernel is then a disintegration of the already-registered signed closed-triad work.  Its recipient marginal is `dW+` and donor marginal is `dW-` only **after** the single canonical Hahn decomposition.  Deterministic restrictions to a shell, helicity, `G`, `B_bad`, or sidecar set commute with ordinary positive pushforward, but positivity is never retaken after pushforward.  Thus every measure in §§10.5--10.6 has one explicit ancestor:
+\[
+\boxed{dW\ \longrightarrow\ (dW^+,dW^-)\ \longrightarrow\
+\text{positive restrictions/pushforwards}.}
+\]
+This is the full continuum plumbing needed by the endpoint theorem; no hidden measurable selector, winner, normalized probability, or second Hahn is used.
+
+### 10.5 Certified `G` support — COMPUTER-ASSISTED EXACT
+For `r_e=(J_e/J_*)c_e`, `eta_0=10^-4`, restrict the existing positive law into `G={r_e>1-eta_0}` and `B_bad={r_e<=1-eta_0}`.  The source theorem `single_edge_stability_certificate` uses exact sign reduction and inclusion-preserving Arb arithmetic: outside `u<=2/25, |v|<=2/25` the deficit is at least `1/100`, while locally `1-J/J_*>=u/50+v^2`.  Physical efficiency `>1-10^-4` sharpens to `u<=1/200`, `|v|<=1/100`; exact sign comparison selects opposite-helicity parents and yields
+\[
+\boxed{3/5<d/c,r/c<5/8.}
+\]
+Random stress output is not part of this proof.
+
+#### Certificate dependency contract
+The only computer-assisted input in the Clay-to-sidecar chain is the finite-dimensional support implication just stated.  Its replayable theorem file uses 160-bit Arb balls, proves the unique symmetric critical bracket, proves the local derivative inequalities by interval subdivision, and proves the global `1/100` exclusion by branch-and-bound.  A box is accepted only when its entire interval enclosure satisfies the required inequality or lies inside the already-certified local region.  Therefore the output is a finite certificate of inequalities, not a floating-point search for an optimizer.
+
+The endpoint argument imports only
+\[
+r_e>1-10^{-4}\Longrightarrow
+-r<d<c,\quad Z>0,\quad 3/5<d/c,r/c<5/8,
+\]
+and discards all auxiliary optimization coordinates afterward.  In particular no Gaussian profile, packet lifetime, stress sample, or numerical tolerance appears in the sidecar constants.
+
+### 10.6 `Y ->` sidecar `-> S vee V vee O` — EXACT
+One same-Hahn restriction of the actual `Y` inflow has child-scale mass at least `2c_nu/5`.  `B_bad` is already bad-positive inflow.  On `G`, signed roots `-r<d<c` obey
+\[
+T_{-r}=\frac Z{(d+r)(c+r)},\quad T_d=-\frac Z{(d+r)(c-d)},\quad T_c=\frac Z{(c+r)(c-d)},
+\]
+so `W_side/W_child=(c-d)/(d+r)>3/10` and `M Phi_side>3c_nu/25`.  The opposite-helicity side recipient lies in `(3M/10,5M/8]`, hence is a genuine boundary crossing of a helicity-resolved cell.
+
+Cover by `(M/4,M/2]`, `(M/2,M]` and both helicities.  If `q=max_A N_A Phi_(in,A)^side`, then `M Phi_side<=6q`, so `q>=c_nu/50`; `B_bad` is stronger.  Exact Kirchhoff gives
+\[
+E_A(t_1)+D_A+\Phi_{out,A}=E_A(t_0)+\Phi_{in,A},
+\]
+and without assuming `E_A(t_0)=0`, one of `N_AE_A(t_1)`, `N_AD_A`, `N_APhi_(out,A)` is at least `c_nu/150`.  This is exactly `S vee V vee O`; no fourth fate, stock matching, wallet, genealogy or second Hahn exists.
+
+### 10.7 Natural-window constant is separate — EXACT WORDING GUARD
+The endpoint constants above use the **whole final occupied corridor** and its `4/5` last-entry quantum.  A separate `cM^-2` localization gives only `M Phi_in(J)>=q_nat mu`, `q_nat=min(1-theta,nu theta c/4)`; at `theta=1/5`, `q_nat=min(4/5,nu c/20)`.  It is not used to derive `2/5 -> 3/25 -> 1/50 -> 1/150`.
 
 ### First-contact `G` fertility — DISTILLED EXACT DEDUCTION
 For a fixed shell first touching `M E_M=mu0`, exact differential Kirchhoff and the shell spectral gap give `phi_in>=nu M mu0/2`; so `B_bad` rate is `>=nu M mu0/4`, or `G` rate is.  On `G`, both interaction parents lie in `(3M/10,5M/8]`, and the whole-band sharp NS work estimate is `phi_G<=(15sqrt(pi)/8)M sqrt(mu0) mu_U`.  Hence one of the two covering parent shells `R in {5M/8,5M/16}` has `R E_R>=nu sqrt(mu0)/(36sqrt(pi))`.  With `mu_*=min(c_nu/2,nu^2/(5184pi))`, a `G` contact at `mu_*` forces a lower shell with `>=2mu_*`; it is initial stock or has a strictly earlier `mu_*` contact.  Pure-`G` state descent is finite (`R` contracts by `<=5/8` but `R>=mu_*/E_*`).  This closes companion-parent hardness as a state law; it does not identify the required interaction shell with the unique energy donor or create genealogy.
@@ -317,7 +400,7 @@ The material-pair law remains exact: for material `x,y`, `K=[(delta omega).h][(o
 ### Vector heat-sphere source + diamond/edge diagnostics — DISTILLED EXACT / EXACT ANALYTIC / EXTERNAL EXACT RIGIDITY
 Fix a child wavevector `q` and one same-helicity parent sector `h`.  Write the unordered parent pair as `p=(q+r)/2`, `m=(q-r)/2`; then its physical heat rate is `kappa=(|q|^2+|r|^2)/2`, so every fixed-`kappa` fiber is the parent-separation sphere `S^2_(sqrt(2kappa-|q|^2))/(r~-r)=RP^2`.  The primitive object is the unordered Leray **vector** orbit coefficient `F_q(r)` in `q^perp`; the continuum source density is `C_F F_q(r)`, and minority/spin-two components are merely its two child-helicity coordinates.  With `P=|p|, M=|m|, Q=|q|`, exact Waleffe/Leray algebra gives `||F_q(r)||=|q.r||qxr| sqrt((P+M)^2+Q^2)|a_pa_m|/[4PMQ(P+M)]`.  Thus the complete **Leray-vector** zero set on a nondegenerate fiber is exactly `q.r=0` (equal-radius Beltrami equator) union `qxr=0` (collinear shear pole); the pressure complement separates their physics: the Beltrami equator is generally a nonzero gradient/Bernoulli pair canceled before Leray evolution, whereas collinear shear has zero raw convective and pressure pair.  For the vector-measure polar decomposition `dF=xi d sigma`, `||xi||=1`, Hilbert-space polarization gives `sigma(Omega)^2-||int dF||^2=(1/2)int int||xi(r)-xi(r')||^2 d sigma d sigma'`; every off-diagonal pair is an actual same-output Fourier diamond.  The geometric source line is explicit.  In the triad-normal frame `ell_q(r)=[t_q+i h beta n]`, `beta=Q/(P+M)`.  For two heat-fiber atoms with dihedral angle `psi`, `1-|<zhat,zhat'>|^2=[(beta-beta')^2 cos^2 psi+(1-beta beta')^2 sin^2 psi]/[(1+beta^2)(1+beta'^2)]`.  Hence equal projective source lines require `beta=beta'` and `psi=0 mod pi`.  On one heat sphere the generic nontrivial double fiber is exactly the equatorial reflection `r=u+Z qhat`, `r'=u-Z qhat`, a planar cross-isospectral rectangle.  Its two equal-radius cross pairs are Beltrami-null, but the other two outputs `q+-u` have common geometric source coefficient `G_side` satisfying `G_side/G_0=|Z|/sqrt(Q^2+U^2)*sqrt(((P+M)^2+Q^2+U^2)/((P+M)^2+Q^2))`; with arbitrary amplitudes `sqrt(sigma_side,+ sigma_side,-)=(G_side/G_0)sqrt(sigma_1 sigma_2)`.  Thus exact line-aligned two-atom cancellation leaks to side outputs unless the original atom itself approaches the Beltrami equator `Z=0`.  At measure level there is an exact projective disintegration, not an entropy.  Put `S=sigma(Omega)`, `lambda=ell_#sigma`, disintegrate `d sigma=d nu_ell d lambda` with conditional probabilities, and set `b(ell)=int xi d nu_ell`.  Then `S^2-||F||^2=S int(1-||b||^2)d lambda+(1/2)int int||b(ell)-b(ell')||^2d lambda d lambda'`; the first term is within-line phase/amplitude cancellation, while the second is between-line cancellation and is `>=(1/2)int int||b||||b'||D_proj(ell,ell')d lambda d lambda'`.  Generic within-line fibers are exactly the reflection rectangles already routed above.  More general off-diagonal diamonds retain the existing unequal-radius/nonparallel cross-source lower bound, and zero tolerance forbids all non-original pair-source contributions from vanishing simultaneously.  The downstream incidence geometry has an exact **analytic coarea on actual Fourier coordinates**; it is not a primitive NS source measure.  For two physical unordered same-output parent orbits and the `1/2` symmetry interchanging them, generic equal-heat incidence is `dXi=(1/8)dq dp dp' delta(kappa_q(p)-kappa_q(p'))`.  Since `kappa_q(p)-kappa_q(p')=2(p-p').(p+p'-q)`, coarea gives `dXi=dp dp' dH^2(y)/(16|p-p'|)`, `y perp(p-p')`, with the four physical modes `p,p',p'+y,p+y`; all four non-original pairings are retained.  Keep source geometry and causal work typed separately.  The same-helicity **vector** orbit source on `RP^2` carries the projective/diamond law above; its `pi R/4` geometric fiber mass is not used to Hahn-split work.  Canonical `dW` lives instead on the helicity-resolved edge space.  Let `f_e` be the child-helicity source amplitude of one unordered complete parent-helicity edge before Hahn and define `S2_edge=int|C_F f_e|^2dLambda_edge`.  Summing child helicities by Parseval and using `|s_y|y|-s_x|x||<=|x|+|y|` gives `S2_edge<=2C_F^2E||grad u||_2^2`, hence `int_0^T S2_edge dt<=C_F^2E_*^2/nu`.  For fixed child mode `(q,s)` and heat fiber, parent-helicity counting changes the base mass to exactly `pi R`.  If `(S,F,L2)` are edge-source variation/resultant/square and `P,N` are the positive/negative parts of the **same signed edge-work law**, pairwise complex-Hilbert variance gives `S^2-|F|^2>=PN/|a_(q,s)|^2`, while Cauchy gives `S^2-|F|^2<=S^2<=pi R L2`; therefore `PN/(pi R|a_(q,s)|^2)<=L2_edge`, and `F=0` implies `P=N`.  No re-Hahn occurs.  Coarea remains the exact vector-geometry map for cross leakage; it is not the definition of this work-cancellation budget.  Independently, `B(v_h)=inf_K||(curl-hK)v_h||_2` and `S(v_h)=inf_e[int(1-(k.e)^2/|k|^2)|vhat_h|^2]^(1/2)` control every surviving modal source by `C_F||v_h||_2B` and `2C_FKmax||v_h||_2S`; both zero sets are exactly the same Beltrami/shear null manifolds.  Finally each canonical edge source satisfies `(partial_t+nu kappa_e)f_e=g_e=C_e(n_xa_y+a_xn_y)`.  With the source normalization `<h_z,F_z>=2(s_x|x|-s_y|y|)conj(g)a_xa_y`, `|g|<=1/2` gives `|C_e|^2/kappa_e<=2`.  Put `G_(-1,edge)=int kappa_e^-1|C_Fg_e|^2dLambda_edge`.  Summing child helicities and using the unordered `1/2` quotient gives the exact analytic bound `G_(-1,edge)<=4C_F^2E||N||_2^2` on the actual modal NS source, `N=-P(u.grad u)=P(u x omega)`.  Weighted Cauchy--Young in `0.5 dS2_edge/dt+nu K2_edge=R_edge` therefore gives `0.5 dS2_edge/dt+(nu/2)K2_edge<=(2C_F^2E/nu)||N||_2^2`.  For a sparse late-UV first-contact subsequence, infinitely many deep contacts genuinely force `A_down[0,T*)=infinity`; infinitely many comparable contacts force `int K2_edge=infinity` and hence Lamb `L_t^2L_x^2` divergence.  The latter is **not a new endpoint branch**: finite Lamb action would bound `||grad u||_2` by the gradient NS identity and then `Hdot^(1/2)` by energy/interpolation, contradicting the already-canonical Kenig--Koch finite-endpoint criterion.  Rotational NS gives `u x omega=N+grad B`, `B=p+|u|^2/2`, as the orthogonal Leray/gradient split; `<u,N>=0`, while `<N,-Delta u>=int omega.S omega` is vortex stretching.  Finiteness of Lamb `L_t^2L_x^2` action would keep `H^1` bounded by the gradient energy identity, but large Lamb action alone is **not** positive stretching: the instantaneous algebraic involution `u->-u` leaves `N` unchanged and reverses `int omega.S omega` (it is not a symmetry of the NS time evolution).  This is source/diagnostic typing, not a new singular-mechanism dichotomy or a regularity proof; no Hodge/entropy variable is primitive.
 ## 13. Frontier in one sentence
-> **FRONTIER EXHAUSTION:** there is no remaining nonredundant traffic/material/pressure/owner bridge.  Finite singularity has already been pushed to `Y`, then to the universal bad sidecar and the exact sidecar grammar `S vee V vee O`; positive critical regeneration is the existing minority-`B_crit` branch.  The mother-law family now folds to the actual radial state/action identity `partial_t K_rad+2nu L_rad=Psi_rad`.  For any fixed `0<kappa<c/4`, endpoint hard states force the unique reader front `K_rad(R_kappa,t)=kappa` to make unbounded UV excursions, while true viscosity gives the finite physical budget `8nu kappa int R_kappa dt +2nu int int(rho-2R_kappa)^2de dt<=E(0)`.  At every outward UV front state, the superlevel family of the actual tail-stock growth `g_tail=partial_tE_>R` produces stationary-stock control volumes that harden every increasing radial observable; topology leaves only a wholly-UV hardening cell or a one-sided UV state-growth corridor.  The full radial family reconstructs the radial state velocity `h_t` and all nonlinear work as `h_t+2nu rho^2`; all weighted/Sobolev force triangles are readings of one positive growth profile.  The maximal mode-set remainder is only tangent/zero-stock state motion, and its tangent square cancels exactly inside the true `|N|^2+Re(conj(u)F_N)` work-curvature combination.  The missing theorem is therefore to exclude unbounded `L^1_t`-thin UV excursions of this one actual state family, not to invent another owner, clock, genealogy, Hahn law, wallet or phase mechanism.**
+> **FRONTIER EXHAUSTION:** there is no remaining nonredundant traffic/material/pressure/owner bridge.  Finite singularity is reduced to `Y`, then to one fixed critical hinge family.  Inverse fronts, growth superlevels and `J_alpha` are now proved to be observer transforms only.  Summing every physical radial cut with an arbitrary multiplier returns the second-level accounting to one full-field slot commutator of `u,N,omega,G`; the Volterra heat operator is exactly tail enstrophy-work, internal UV nonlinear curvature cancels, and even adaptive `J_alpha` growth is pure complementary work-rate redistribution.  The whole `kappa` family forces critical-plus `N` forcing action divergence, while an exact coarea kernel bound proves no unbounded observer weight can weaken this to the energy-class `L_t^(4/3)H^-1` level.  The missing theorem is therefore genuinely full-convolution: exclude the surviving commutator/transfer at a finite endpoint without inventing another owner, front, clock, genealogy, Hahn law or wallet.**
 
 ## 14. Direct full-state `B/S/V/O` frontier — CURRENT OPEN BLOCK
 
@@ -357,4 +440,4 @@ shows exactly what `F_N` must do to preserve or rebuild donor curvature.  Under 
 Required final statement:
 `No infinite critical full-state recycling`, equivalently `Y=>bot` under the already-proved endpoint grammar.
 
-The sharp unresolved subproblem is no longer merely “same-heat cancellation exists”, nor is radial `O` a separate escape road.  It is whether the next true stock jet / `F_N/G` can keep producing outward excursions of one fixed `K_rad=kappa` front while the front has finite genuine viscous `L^1_t` radius budget and while every outward state is forced into the stationary-stock growth-level geometry above.  Radial state/work shape is already reconstructed by the family; tangent motion is not a separate work-curvature mechanism.  See `BSVO_FULL_STATE_FRONTIER.md` §§2--20 and `SOLUTION_MAP.md` for the current proof graph.
+The sharp unresolved subproblem is now purely full-state.  All radial observer families have been collapsed: `L_tail J` is actual tail enstrophy-work; arbitrary cut sums are one multiplier slot-commutator; the adaptive work-square reader has no independent source; and all-front coarea extracts the strongest possible observer forcing burden, which remains critical-plus `H^-1/2` and cannot be converted to the energy-funded `H^-1` control.  Thus only true convolutional `u/N/G/F_N` commutator transfer can sustain the endpoint.  Showing it cannot is the remaining theorem.  See `BSVO_FULL_STATE_FRONTIER.md` §20 and `SOLUTION_MAP.md`.

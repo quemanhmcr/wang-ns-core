@@ -3,6 +3,26 @@
 This file contains the smallest current theorem basis needed to stand at the mixed frontier.  It deliberately preserves physical type: stock is not work, work is not capacity, a witness is not a source, same-time redistribution is not between-time generation, and an observer coordinate is not a physical clock.
 The reusable discipline behind these choices is stated in `CONTROL_VOLUME_METHOD.md`: begin from exact physical control-volume continuity, then use families of cuts as readers rather than inventing mechanisms.
 
+## 0. Clay `R^3` endpoint contract — EXACT SCOPE / EXTERNAL EXACT
+
+The endpoint spine targets **Clay assertion (A) on `R^3` only**: `nu>0`, `f=0`, and smooth divergence-free initial data with the Clay rapid-decay condition
+\[
+|\partial^\alpha u_0(x)|\le C_{\alpha,K}(1+|x|)^{-K}
+\quad\text{for every multi-index }\alpha\text{ and }K\ge0.
+\]
+Hence `u_0 in H^m(R^3)` for every `m`, in particular `u_0 in L^2 cap dot H^(1/2)`; no periodic claim is used.  Let `T_*` be the maximal classical smooth lifespan.
+
+### Classical/mild lifespan bridge — STANDARD EXACT
+On every compact smooth subinterval the Leray equation integrates to
+\[
+u(t)=e^{\nu t\Delta}u_0-\int_0^t e^{\nu(t-s)\Delta}\mathbb P\nabla\!\cdot(u\otimes u)(s)\,ds.
+\]
+Thus the classical solution is the local `dot H^(1/2)` mild solution; standard uniqueness identifies the two on their common lifespan, and any smooth mild continuation past `T_*` would extend the classical solution.  Kenig--Koch Theorem 0.1 therefore applies to this same endpoint time.  Their viscosity-one normalization loses nothing: `u(x,t)=nu v(x,nu t)` converts a viscosity-one solution `v` to viscosity `nu`, and the `dot H^(1/2)` norm changes only by the fixed amplitude factor.  Consequently
+\[
+\boxed{T_*<\infty\Longrightarrow\sup_{t<T_*}\|u(t)\|_{\dot H^{1/2}}=\infty.}
+\]
+This is the only external regularity theorem used in the Clay-to-`Y` gate.
+
 ## 1. Native PDE and ontology
 
 On a smooth pre-singular interval write incompressible Navier–Stokes in Leray form
@@ -479,6 +499,22 @@ Pressure/SGS source marks, high strain, symmetric strain work, service, material
 
 The same-time donor pushforward is only a **zero-depth state handoff**; no temporal token is created.  Radial-cut funding and the total-variation collision control the resulting traffic directly.
 
+### Signed-good support theorem — COMPUTER-ASSISTED EXACT
+
+The support used below is a finite-dimensional theorem from the source programme (`docs/single_edge_stability_certificate.md`, `src/single_edge_certificate.py`), proved by exact sign reduction plus inclusion-preserving Arb ball arithmetic.  Normalize the child radius to one, order `0<x<=y<1`, `x+y>1`, and set `s=x+y`, `d=y-x`, `L=log(1/y)`.  The exact sign-exhausted envelope is
+\[
+J_{env}^2=\frac{L^2s^2(s^2-1)(1+d)^3(1-d)}{8(s^2-d^2)^2}.
+\]
+Its unique symmetric maximizer obeys `-log r_*=4r_*^2-1` with certified bracket `0.61090410158<r_*<0.61090410160`.  In coordinates `u=log(y/x)`, `v=-(log x+log y)/2-gamma_*`, the certificate proves
+\[
+1-J_{env}/J_*\ge u/50+v^2
+\]
+on the local rectangle and `1-J/J_*>=1/100` outside `u<=2/25, |v|<=2/25`.  Hence the physical good condition `r_e=(J/J_*)c_e>1-10^-4` lies in the certified near-extremal core; exact sign comparison selects opposite-helicity parents and the sharpened bounds `u<=1/200`, `|v|<=1/100` give
+\[
+\boxed{3/5<x,y<5/8.}
+\]
+This Arb certificate is the proof of the finite-dimensional support theorem; its random stress output is regression evidence only.
+
 ### Endpoint `G/B_bad` notation + exact side-recipient algebra — EXACT
 
 Recall the exact same-Hahn restrictions `G,B_bad` from §2.  The endpoint complement `B_bad` is not the final full-state `B`: reserve `B_crit` for the positive minority-helicity critical branch determined by the exact identity `sum_i rho_i T_i=2 rho_m T_m` on a heterochiral triad (and `sum_i rho_iT_i=0` on a homochiral triad).  Thus the `G/B_bad` split and the later `B_crit/S/V/O` frontier are different classifications of the same native work law.
@@ -506,7 +542,63 @@ No new Hahn split or temporal ancestry enters these identities.  The reader `r_e
 ### First-contact good-birth fertility — DISTILLED EXACT DEDUCTION
 For any fixed `P_M={M/2<|k|<=M}`, let `tau>0` be the first contact of the actual stock level `M E_M=mu0`.  This is a state locator, not a new cause.  Smoothness gives `dot E_M(tau)>=0`; differentiating the exact mode-set law gives `phi_in,M(tau)>=2nu||grad P_Mu||_2^2>=nu M mu0/2`.  Hence endpoint-complement `B_bad` inflow rate is `>=nu M mu0/4`, or `G` rate is.  In the latter case signed-good support puts both interaction parents in `U_M={3M/10<|k|<=5M/8}`.  The direct sharp work bound on the whole bands, with `C_Y=3sqrt(3)/2`, gives `phi_G<=(15sqrt(pi)/8) M sqrt(mu0) mu_U`, `mu_U=M||P_Uu||_2^2`; thus `mu_U>=2nu sqrt(mu0)/(15sqrt(pi))`.  Covering `U_M` by the two hard shells at `5M/8,5M/16` yields one required interaction shell `R<=5M/8` with `R E_R(tau)>=nu sqrt(mu0)/(36sqrt(pi))`.  Put `mu_*=min(c_nu/2,nu^2/(5184pi))`: at a `mu_*` contact the `G` alternative therefore forces `R E_R(tau)>=2mu_*`.  Either `R E_R(0)>=mu_*`, or continuity gives a strictly earlier `mu_*` contact of that lower shell.  Repeating only the `G` alternative has finite depth because scales contract by `<=5/8` while every contacted shell has `R>=mu_*/E_*`.  Thus every such state-contact descent ends at initial stock or a genuine `B_bad`-rate alternative; no energy-token parent is asserted.
 ### Critical endpoint rigidity + UV-fresh shell gate — EXACT / EXTERNAL EXACT
-Fix `R_0>0` and split canonical radial variation by the smallest triad radius `L`.  For `L<=R_0`, the atom law `|rho_r-rho_d|M_(d->r)<=4LK|a_0a_1a_2|`, comparability of the two high roots, and Cauchy give `v_(L<=R0)(t)<=C_lo R_0^(5/2)E_*^(1/2) C_(1/2)(t)`, `E_*=||u_0||_2^2`; this is the actual band-limited low-root transport, not a recurrence edge.  For `L>R_0`, the shell proof gives `v_(L>R0)<=C_sh sqrt(mu_>(R_0,t))||u||_Hdot^(3/2)^2`, `mu_>=sup_(M>R_0)M||P_(M/2,M]u||_2^2`.  Hence if `mu_><=(2nu/C_sh)^2` on a final interval, `C_(1/2)` satisfies a finite Gronwall bound there.  Kenig--Koch, arXiv:0908.3349, Theorem 0.1 therefore implies: finite `T_*` forces, for every `R_0` and every `t_0<T_*`, some `t>t_0`, `M>R_0` with `M E_M(t)>c_nu:=(2nu/C_sh)^2`.  Thus one may extract `t_n->T_*`, `M_n->infinity`.  Since `u_0 in Hdot^(1/2)` gives `M E_M(0)->0`, the hard-state last-entry theorem eventually rules out initial stock and forces `M_n Phi_(in,M_n)>=4c_nu/5`; canonical good/bad restriction then gives at least `2c_nu/5` in one of the two actual inflow sublaws.  This bifurcation collapses further: a `B_bad`-dominant birth already carries positive endpoint-complement work, while every `G` atom has the certified simultaneous nonforward side recipient with `W_side/W_child>3/10`; hence every sufficiently large UV birth carries a canonical bad-positive sublaw with child-scale amount at least `3c_nu/25`.  `TRANSFER_WORK_LOSS` is only its forward-recursion fate.  More sharply, the bad sidecar is always a **mode-set boundary inflow**: a `B_bad`-dominant birth already crosses the hard shell boundary; on a `G` birth the side recipient has opposite helicity to the unique donor, so after covering its radii `(3M/10,5M/8]` by the two hard annuli at `M/2,M`, let `q=max_A N_A Phi_(in,A)^side` over the four cells from the two radial annuli and two helicities.  The lower cells have `N_A=M/2`, the upper cells `N_A=M`, so `M Phi_side<=6q`; since the `G` side law has `M Phi_side>=3c_nu/25`, one gets the safe universal `q>=c_nu/50`.  The `B_bad` branch is stronger after only a two-helicity split.  Exact mode-set continuity then forces `N E_A(t_1)>=c_nu/150` or `N D_A>=c_nu/150` or `N Phi_(out,A)>=c_nu/150`, ties retained.  These are stock, viscosity and actual outflow; the recipient energy never disappears into a transfer-loss wallet.  The outflow is not a new owner either: embed the helicity annulus `A_N` in the full low ball `L_(2N)`.  Recipient radius `<=2N` is internal donor traffic of `L_(2N)` and cancels from its divergence; recipient radius `>2N` is a restriction of the already-canonical true upward crossing `Phi_up(2N)`.  More quantitatively, reading the donor root as the low child in the certified UV-locality proof gives `N Phi_(A->>2N)<=3sqrt(pi/2)sqrt(mu_A^*)D_>N^(N)`, `mu_A^*=sup_I N E_A`; no recipient Hahn or helicity-action currency is introduced.  The initial boundary itself is exact modal stock at `t=0`.
+
+Set `C_(1/2)=||u||_(dot H^(1/2))^2`, `H_(3/2)=||u||_(dot H^(3/2))^2`, `E_M=||P_Mu||_2^2` for `P_M={M/2<|k|<=M}`, and `mu_>(R_0,t)=sup_(M>R_0)M E_M(t)`.  The exact shell layer cake is `C_(1/2)=int_0^infinity R E_(R/2,R] dR/R`, and its nonlinear derivative is the signed radial donor displacement, hence is bounded by `v_rad`.
+
+For one closed triad, with `L=min rho_i`, `K=max rho_i`, exact cyclic work and triangle closure give
+\[
+|\rho_r-\rho_d|M_{d\to r}\le4LK|a_0a_1a_2|.
+\]
+On a dyadic low/high block the two high roots have `O(1)` neighboring-shell multiplicity and `||uhat_L||_1<=C L^(3/2)E_L^(1/2)`, so the block is bounded by
+\[
+L^{5/2}K E_L^{1/2}(E_KE_{K'})^{1/2}.
+\]
+If `L>R_0`, use `LE_L<=mu_>` to obtain `(L/K)^2 sqrt(mu_>) K^3(E_KE_K')^(1/2)`.  Since `sum_(L<=K)(L/K)^2<infinity` and `2ab<=a^2+b^2` with bounded high-neighbor multiplicity,
+\[
+\boxed{v_{L>R_0}\le C_{sh}\sqrt{\mu_>(R_0,t)}H_{3/2}.}
+\]
+If `L<=R_0`, Cauchy gives `sum L^(5/2)E_L^(1/2)<=C R_0^(5/2)E_*^(1/2)` and `sum K(E_KE_K')^(1/2)<=C C_(1/2)`, hence
+\[
+\boxed{v_{L<=R_0}\le C_{lo}R_0^{5/2}E_*^{1/2}C_{1/2}.}
+\]
+All implicit block constants depend only on the fixed Fourier normalization and finite helicity/neighbor multiplicities and are absorbed into `C_sh,C_lo`.  Tonelli is used only on the nonnegative total-variation majorant; degenerate zero-work triads contribute zero.  Thus
+\[
+C_{1/2}'+(2\nu-C_{sh}\sqrt{\mu_>})H_{3/2}
+\le C_{lo}R_0^{5/2}E_*^{1/2}C_{1/2}.
+\]
+With `c_nu=(2nu/C_sh)^2`, if all `M>R_0` obeyed `M E_M(t)<=c_nu` on a final interval, Gronwall would bound `C_(1/2)` up to `T_*`, contradicting §0.  Therefore for every `R_0>0,t_0<T_*` there exist `t>t_0,M>R_0` with `M E_M(t)>c_nu`; choose `t_n->T_*`, `M_n->infinity`, `mu_n=M_nE_Mn(t_n)>c_nu`.
+
+Exact last entry on the **same terminal shell** with `theta=1/5` gives
+\[
+M_nE_{M_n}(0)>\mu_n/5
+\quad\vee\quad
+M_n\Phi_{in,M_n}\ge4\mu_n/5.
+\]
+The first alternative is eventually impossible because Clay rapid decay gave `u_0 in dot H^(1/2)` and
+\[
+M E_M(0)\le2\int_{|k|>M/2}|k||\widehat u_0(k)|^2dk\to0.
+\]
+Hence finite `T_*` forces `Y: M_n Phi_(in,M_n)>=4c_nu/5` along an arbitrarily late arbitrarily-UV subsequence.
+
+Restrict this **existing boundary inflow** by the one-Hahn `G/B_bad` partition.  One branch has child-scale mass at least `2c_nu/5`.  `B_bad` is already bad-positive boundary inflow.  On `G`, the certified support theorem gives signed roots `-r<d<c`, `3/5<d/c,r/c<5/8`, and the exact energy/signed-helicity identities give
+\[
+T_{-r}=\frac Z{(d+r)(c+r)},\quad T_d=-\frac Z{(d+r)(c-d)},\quad T_c=\frac Z{(c+r)(c-d)},
+\]
+so `W_side/W_child=(c-d)/(d+r)>3/10` and `M Phi_side>3c_nu/25`.  The side recipient has opposite helicity to the unique donor and lies in `(3M/10,5M/8]`.
+
+Cover by `(M/4,M/2]` and `(M/2,M]` and both helicities.  If `q=max_A N_A Phi_(in,A)^side`, two cells have `N_A=M/2` and two `N_A=M`, so `M Phi_side<=2(2q)+2q=6q`; hence `q>=c_nu/50` (the `B_bad` branch is stronger).  Exact Kirchhoff on the selected cell gives
+\[
+E_A(t_1)+D_A+\Phi_{out,A}=E_A(t_0)+\Phi_{in,A}\ge\Phi_{in,A}^{side},
+\]
+with no assumption `E_A(t_0)=0`.  Therefore
+\[
+\boxed{N_AE_A(t_1)\ge c_\nu/150\ \vee\ N_AD_A\ge c_\nu/150\ \vee\ N_A\Phi_{out,A}\ge c_\nu/150.}
+\]
+These are exactly `S vee V vee O`: stock, physical viscosity, or actual modal outflow; there is no fourth kinetic fate.
+
+### Natural-window separation — EXACT WORDING GUARD
+The Clay-to-`S/V/O` theorem above uses the **whole final occupied corridor** and its exact `4/5` last-entry quantum.  The optional `cM^-2` localization theorem instead gives `M Phi_in(J)>=q_nat mu` with `q_nat=min(1-theta,nu theta c/4)`; at `theta=1/5`, `q_nat=min(4/5,nu c/20)`.  Never replace this by `4/5` for arbitrary `c`.  The constants `2/5,3/25,1/50,1/150` above do not use the natural-window theorem.
+
 ## 12. Core anti-theorems and permanent guards
 
 Do not use raw Duhamel mass as causal probability.  Do not carry a `dW+` charge through modal stock or infer temporal deposit matching from mode-set balance.  Do not re-Hahn after coarse-graining.  Do not use interaction cells as wallets.  Do not call high→high circulation fresh tail supply.  Do not infer a dyadic step from positive work.  Do not promote checkpoints to events or reset cumulative monitors.  Do not treat inherited stock as generation.  Do not treat material rereading or `R_switch` as source.  Do not treat smooth skew relink as generation.  Do not treat OO/ON/NN as generators of their service law.  Do not promote optional coherent-analysis thresholds—Gaussian aspect/radius, holonomy, flatness, sideband or reuse coordinates—to hard-lineage events: their actual consequences are existing strain/dissipation, modal state/work, terminal analysis cost, or no-hit continuation.  Do not split simultaneous causes by a synthetic clock.  Do not turn normalized critical quantities into finite additive reset budgets.  Do not exchange entropy coordinates from different underlying measures as if they were one currency.  Do not infer that deep high-high→low radial action is small from separation alone: its gap may be `O(K)`; the genuine suppression appears only after the canonical donor bound is paired with critical `Hdot^(3/2)` activity.  Do not infer the sign or orientation of `Hess p` from the scalar Poisson trace: only its isotropic part is local, while the trace-free tidal part is an exact `l=2` quadrupole of the same-field source.  Do not rename a pressure pair or `tau=xi.H0xi` as kinetic-energy work, owner or currency.  Do not call `H0` an independent `H^1` source: it is modewise orthogonal to incompressible strain, while `partial_t S=sym grad N+nu Delta S` carries the actual modal source.  Do not infer any finite pointwise pressure-Hessian bound from the local first jet `(S,omega)`; the exact three-sine torus anti-theorem forbids it.  Do not Hahn-split the Biot--Savart two-point stretching integrand into causal spatial-pair owners or call its positive part a chirality currency: it is an exact signed disintegration of the already-native enstrophy source `Q`, not kinetic-energy transfer.
@@ -588,7 +680,7 @@ true NS gives
 Thus nonlinearity hardens and viscosity softens along the **same actual radial-shape direction**.  See `BSVO_FULL_STATE_FRONTIER.md` §§8--10.
 
 ### Full radial control-volume fold — EXACT / CURRENT SHARPENING
-The canonical derivation is now kept only in `BSVO_FULL_STATE_FRONTIER.md` §20.  In short: `partial_tK_rad+2nu L_rad=Psi_rad`; any fixed `K_rad=kappa` endpoint front has unbounded UV limsup but the genuine viscous budget `8nu kappa int R_kappa dt+2nu int int(rho-2R_kappa)^2de dt<=E(0)`; the `g_tail=partial_tE_(>R)` level family yields stationary-stock hardening cells or one-sided UV growth corridors, reconstructs radial state/work motion exactly, and leaves only the next true stock jet / `F_N/G` as the open regeneration dynamics.  No `O`, phase/tangent repair, or first-contact clock is an independent road.
+The canonical derivation is kept only in `BSVO_FULL_STATE_FRONTIER.md` §20.  Beyond fixed-front/Volterra accounting, summing the entire radial cut family gives one exact multiplier ladder: `L_tail J=2<Lambda H_Ru,Lambda H_RN>`, all nonlinear curvature collapses to the full-field slot commutator `D_phi(N,u;omega)+(1/2)D_phi(u,u;G)`, and the adaptive `phi'_(alpha,J)=2R^alpha J` reads `4J_alpha` while its derivative is only complementary work-rate transfer.  All-front coarea further forces critical-plus `N` action divergence and proves an observer barrier: any weight whose primitive can see `R_kappa->infinity` induces at least an `H^-1/2`-scale multiplier with unbounded slow strengthening, whereas kinetic energy funds only the standard `L_t^(4/3)H^-1` forcing control.  No extra front/norm reader can close that gap.
 ### True curvature/repair field — EXACT
 For every fixed mode
 `(partial_t+2nu|k|^2)T_k=2|N_k|^2+2Re(conj(u_k)(F_N)_k)`.
@@ -604,4 +696,4 @@ See `BSVO_FULL_STATE_FRONTIER.md` §§11--13.
 ### Microscopic convolution guard and exact remaining theorem
 The full-polarization pair Pythagoras, reality-companion outward leak, corrected nonlinear-silent one-triad terminal class, heat-fiber Laplace rigidity, pair-rate synchronization and the conditional affine-rigidity theorem remain exact.  They now serve to constrain the refined `N_shape/N_fib/F_N` freedom rather than define a parallel proof architecture.  See `BSVO_FULL_STATE_FRONTIER.md` §§15--20.
 
-These laws still do **not** prove `Y=>bot`.  The precise open block is now to exclude unbounded excursions of one fixed `K_rad=kappa` front while its true viscous budget remains finite.  At every outward UV state the full growth family forces either a wholly-UV stationary-stock hardening cell or a monotone UV state-growth corridor; radial state/work shape is already reconstructed, and the remaining tangent freedom is not a separate work-curvature mechanism.  What is still open is whether the next true stock jet / `F_N/G` can keep re-forming those states on `L^1_t`-thin UV excursions.  Equivalently: **No infinite critical full-state recycling.**  See `BSVO_FULL_STATE_FRONTIER.md` §20.
+These laws still do **not** prove `Y=>bot`.  The remaining obstruction is no longer a source taxonomy or an observer deficit.  The summed physical family has reduced it to one true full-field slot commutator / antisymmetric complementary work-rate transfer, with the Volterra positive terms typed as actual tail enstrophy-work readings of viscosity.  All-front coarea shows that observer kinematics alone can only force critical-plus `H^-1/2` action and cannot reach the weaker spatial `H^-1` control supplied by kinetic energy.  Ruling out finite-endpoint persistence must therefore use genuine convolution structure of `u,N,G,F_N`; this is still **OPEN** and is exactly **No infinite critical full-state recycling**.

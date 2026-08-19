@@ -393,7 +393,17 @@ The physical second acceleration may be written rotationally as
 
 `F_N=P(N x omega + u x G - 2nu sum_j partial_j u x partial_j omega)`.    (13.3)
 
-Hence every non-affine repair/reshaping in Sections 11--12 belongs to true `N/G/F_N` dynamics.
+For every fixed Fourier projector `H` commuting with derivatives and Leray, put `L=I-H`.  Exact scalar-triple-product cancellation gives
+`C_H:=||HN||_2^2+<Hu,HF_N>`
+`=<HN,Lu x omega>+<Hu,LN x omega>+<Hu,Lu x G>-2nu sum_j<Hu,partial_j u x partial_j omega>`.    (13.4)
+Indeed `||HN||^2=<HN,Hu x omega>+<HN,Lu x omega>` while `<Hu,HN x omega>=-<HN,Hu x omega>` and `<Hu,u x G>=<Hu,Lu x G>`.  Thus the nonlinear **internal `H-H` curvature source cancels exactly**.  Applying the same formula to `L` reverses all three cross terms, so
+`C_H+2nu sum_j<Hu,partial_j u x partial_j omega>=-[C_L+2nu sum_j<Lu,partial_j u x partial_j omega>]`,
+`C_H+C_L=||N||^2+<u,F_N>=2nu Q`.    (13.5)
+Hence cross-volume nonlinear curvature is an exact antisymmetric transfer, not a source; only the genuine viscous commutator has nonzero global sum, already owned by the `H^1` law `0.5 d||grad u||^2/dt+nu||Delta u||^2=Q`.  Put `Q_H:=<Lambda Hu,Lambda HN>`.  Combining (13.4) with the fixed-set work-curvature identity gives
+`(1/2)dot W_H=<HN,Lu x omega>+<Hu,LN x omega>+<Hu,Lu x G>-2nu[sum_j<Hu,partial_j u x partial_j omega>+Q_H]`.    (13.6)
+Every term on the right changes sign under `H<->L`; actual work-rate is therefore pure complementary transfer, with no second-order global supplier.  In fact the underlying boundary work already has the exact cross-volume form
+`W_H=2<Hu,HN>=2<Hu,Lu x omega>=-W_L`.    (13.7)
+Differentiating this same true triple by NS reproduces (13.6), so curvature transfer is the time jet of the existing boundary-work object, not a new currency.  Every non-affine reshaping belongs to true `N/G/F_N` transfer plus known viscosity, not to an internal UV mechanism.
 
 ## 14. Pressure remains Hodge completion, not a second road — EXACT
 
@@ -644,33 +654,141 @@ When the indicated integrals are finite, or after compact radial localization an
 `+2nu int_0^infinity R^3J(R)^2dR+2nu Q^2`
 `=2int_0^infinity R J(R)[N2_>(R)+R_N,>(R)]dR`.    (20.41)
 The `2nu Q^2` term is genuine viscosity in this reader.  Equation (20.41) is not a new finite budget: the RHS contains the true full-state curvature and may diverge at a singular endpoint.
-### 20.10 Exact remaining theorem — OPEN
-The surviving theorem is now:
-> **No infinite critical full-state recycling.** A smooth true 3D incompressible Navier--Stokes trajectory on a finite interval cannot have one fixed positive hinge level `K_rad(R_kappa,t)=kappa` make unbounded UV excursions while the same true fields satisfy the mother force triangle, the folded radial state/action identities, the genuine viscous front budget (20.15), the flux- and growth-level control-volume families, the state-growth action profile (20.29)--(20.32), the maximal work/tangent decomposition, the true next-stock-jet law (20.36)--(20.38), and all full-pair/heat-fiber convolution identities.
-Equivalently, under the already-proved endpoint grammar: `Y=>bot`.
+### 20.10 Observer-neutralization stops here; the mother law gives a dual growth action — EXACT
+There is a useful methodological stopping theorem.  Let `dmu` be any finite signed radial measure and `G(R):=dmu((R,infinity))`.  If `I=(a,b)` is a component of `{G>lambda}` with equal endpoint value `lambda`, then
+`dmu(I)=0`,
+`int_I f(rho)dmu=int_a^b f'(R)(G(R)-lambda)dR`    (20.42)
+for every absolutely continuous reader `f`.  Thus the superlevel-neutral-cell construction is **observer calculus**, not a new Navier--Stokes mechanism.  It applies equally to `dW`, `dE_t`, `dE_tt`, and higher signed jets.  In particular, merely replacing `g_tail` by `partial_t g_tail` and repeating Section 20.5 would add no physics.
+The genuine NS content is the mother law.  For every frozen nonnegative radial weight `w`, define its force-triangle defect
+`Delta[w]:=||w(Lambda)^(1/2)N||_2^2-||w(Lambda)^(1/2)u_t||_2^2-nu^2||w(Lambda)^(1/2)Lambda^2u||_2^2`.
+Then directly from `N=u_t+nu Lambda^2u`,
+`Delta[w]=nu int_0^infinity rho^2 w(rho)dE_t(rho)`.    (20.43)
+This is one identity; all state-growth force triangles are readers of it.
+Write `g:=g_tail`, `Xi(R,t):=partial_tK_rad(R,t)=int_R^infinity g(b,t)db`, so `Xi'=-g` and `dE_t=partial_R^2Xi=-dg`.  Since `g(0)=-2nu||Lambda u||_2^2<0` and `g(infinity)=0`, for every `p>1` and every radial exponent `beta` for which the boundary terms vanish,
+`Delta[rho^beta g_+^(p-1)]`
+`=nu(beta+2)/p int_0^infinity rho^(beta+1)g_+(rho)^p d rho`.    (20.44)
+The sign pivot `beta=-2` is the same mother-law homogeneity already seen at Sobolev `sigma=-1`, not a new criterion.  In particular,
+`Delta[rho g_+]=(3nu/2)int_0^infinity rho^2g_+(rho)^2d rho >=0`.    (20.45)
+The one-hinge-higher reader has the opposite exact sign.  Taking the frozen weight `w=Xi_+/rho^2` in (20.43) and integrating the Stieltjes derivative once gives
+`Delta[Xi_+/rho^2]`
+`=nu Xi_+(0)g(0)-nu int_{Xi>0}g(R)^2dR <=0`.    (20.46)
+If `Xi(0)<=0`, the RHS is exactly `-nu int_{Xi>0}g^2`.  Thus positive tail-stock growth and positive hinge-stock growth are not two mechanisms: the same mother triangle reads the former as a positive growth action and the latter as a negative square.  The weights are observers; `g`, `Xi`, `dE_t`, and the force fields are the true state objects.
+### 20.11 Thin UV excursions force scale-amplified true growth; zero stock is a crossing, not a birth mechanism — EXACT
+Extend the reader front by `R_kappa(t)=0` when `K_rad(0,t)<=kappa` and put `Omega_kappa:={(R,t):K_rad(R,t)>kappa}`.  Exact layer cake and the physical energy law give
+`|Omega_kappa|=int R_kappa(t)dt <= E_total(0)/(8nu kappa)`.    (20.47)
+At a positive front radius put `E:=E_(>R_kappa)`, `D_j:=D_(j,>R_kappa)` and `S_*:=int_(rho>R_kappa)(rho-D_1/E)^2dE_rho`.  Since `D_1=R_kappa E+kappa`,
+`E D_2=(R_kappa E+kappa)^2+E S_*`.    (20.48)
+At every outward state `Xi(R_kappa)=R_kappa'E`, hence
+`Xi(R_kappa)D_2=R_kappa'[(R_kappa E+kappa)^2+ES_*] >= kappa^2R_kappa'`.    (20.49)
+Because `2nu int D_2dt<=E_total(0)`, every absolutely continuous increasing unbounded reader `Phi` with `Phi'>=0` satisfies
+`limsup_(outward,t->T_*) Phi'(R_kappa(t)) Xi(R_kappa(t),t)=infinity`.    (20.50)
+Otherwise the positive variation of the unbounded function `Phi(R_kappa)` would be bounded by `kappa^-2 sup(Phi'Xi) int D_2dt`.  Thus not only `Xi` but, e.g., `Xi/(1+R_kappa)` is cofinally unbounded (`Phi=log(1+R)`).
+For every `beta>0`, Cauchy on `Xi(R)<=int_R^infinity g_+` and (20.44) give the scale-sharp family
+`Delta[rho^beta g_+] >= [nu beta(beta+2)/2] R^beta Xi(R)^2` whenever `Xi(R)>0`.    (20.51)
+Hence finite-area escape forces arbitrarily large true mother-law growth action at arbitrarily large scale; thinness is only observer geometry.
+On maximal Fourier/helicity mode space let `e_m=|u_m|^2`, `T_m=2Re(conj(u_m)N_m)`, `O={e_m>0}`, `Z={e_m=0}`, `h_t=dot e/e` and `h_N=T/e=h_t+2nu rho^2` on `O`.  Define the positive **zero-stock curvature measure**
+`dZ_0(m):=2 1_Z(m)|N_m|^2dm`.
+Then
+`dE_tt=(dot h_t+h_t^2)dE+dZ_0`,
+`[2|N|^2+2Re(conj(u)F_N)]dm=(dot h_N+h_N^2)dE+dZ_0`.    (20.52)
+The tangent variable is absent.  The true work-rate measure
+`d dot W:=dE_tt+2nu rho^2dE_t`
+obeys `int d dot W=0`, `int x d dot W=0`, and `d dot W=dZ_0` on `Z`.    (20.53)
+For a fixed modal control volume with `Pu(t_0)=0`,
+`E_P'(t_0)=0`, `E_P''(t_0)=2||PN(t_0)||_2^2`, `E_P(t_0+h)=h^2||PN(t_0)||_2^2+o(h^2)`.    (20.54)
+If `t_0` is an interior time and `PN(t_0)!=0`, this is a two-sided strict quadratic minimum: an actual zero crossing/reappearance, **not** one-sided creation from nothing.  Its curvature is owned by existing `N` stock and is compensated by occupied work-rate through (20.53).
+### 20.12 One Volterra heat-square family collapses the remaining second-stock mechanisms — EXACT
+The instantaneous tail law itself already has core-style accounting.  Since `g=J-2nu D_(2,>R)`,
+`int_0^infinity R^2g_+(R)J(R)dR=int R^2g_+^2dR+2nu int R^2g_+(R)D_(2,>R)dR`.    (20.55)
+The left side is actual nonlinear boundary work read by the positive-growth family; the two right terms are the positive stock-growth square and the genuine viscous tail payment.  No second source has appeared.
+More generally define the exact heat-tail operator and first-moment tail
+`(L_tail h)(R):=R^2h(R)+2int_R^infinity r h(r)dr`, `M_h(R):=int_R^infinity r h(r)dr`.
+For every decaying signed tail `h` and every `alpha>1` (or after compact radial localization), integration by parts gives the positive Green identity
+`int R^alpha h L_tail h = int R^(alpha+2)h^2 +(alpha-1)int R^(alpha-2)M_h^2`.    (20.56)
+At `alpha=1` the last term is replaced by the boundary square `M_h(0)^2`.  Thus if the **true** tail object satisfies `h_t+2nu L_tail h=S`, then
+`(1/2)d/dt int R^alpha h^2 +2nu int R^(alpha+2)h^2+2nu(alpha-1)int R^(alpha-2)M_h^2=int R^alpha hS`    (20.57)
+for `alpha>1`, with the stated `alpha=1` boundary replacement.  This is an observer-square identity generated exactly by physical viscosity, not a new kinetic energy.
+The two true tails already present obey the same operator law:
+`g_t+2nu L_tail g=J_t`,
+`J_t+2nu L_tail J=2C`, `C(R):=N2_>(R)+R_N,>(R)`.    (20.58)
+At the decisive `alpha=2`, therefore,
+`(1/2)d/dt int R^2g^2+2nu int R^4g^2+2nu int M_g^2=int R^2g J_t`,
+`(1/2)d/dt int R^2J^2+2nu int R^4J^2+2nu int M_J^2=2int R^2J C`.    (20.59)
+The `alpha=1` member of the second line is exactly (20.41), because `M_J(0)=Q`; (20.41) was one member of this family, not an isolated mechanism.
+Put `G_2=(1/2)int R^2g^2`, `J_2=(1/2)int R^2J^2`.  Since `A_g=(3nu/2)int R^2g_+^2` and `J>=g>0` wherever `g>0`,
+`G_2>=A_g/(3nu)`, `J_2>=A_g/(3nu)`.    (20.60)
+More generally, matching `alpha=beta+1` in (20.57) to the mother reader (20.44), for every `beta>0`
+`G_(beta+1),J_(beta+1) >= Delta[rho^beta g_+]/[nu(beta+2)] >= (beta/2)R^beta Xi(R)^2`,
+where `G_alpha=(1/2)int R^alpha g^2`, `J_alpha=(1/2)int R^alpha J^2`.  Thus every member is one Mellin reading of the same state/work family, not a new criterion.  In particular fixed-front escape forces `limsup G_2=limsup J_2=infinity`; (20.50) with `Phi=log(1+R)` gives `limsup_(outward) G_2/R_kappa^3=limsup_(outward) J_2/R_kappa^3=infinity`.
+Integrating the matched balances from any fixed smooth `s<T_*` gives, for every `beta>0`, the necessary endpoint divergence
+`sup_(t<T_*) int_s^t int R^(beta+1)g J_t dRdt=infinity`,
+`sup_(t<T_*) 2int_s^t int R^(beta+1)J(R)C(R)dRdt=infinity`.    (20.61)
+Thus the old “occupied curvature versus zero-stock birth” dichotomy is not a dynamical fork.  All second-stock behavior first collapses into actual work-rate `J_t`, then into the single true `N/F_N` curvature tail `C`; by (13.4)--(13.5) its nonlinear internal-tail part cancels and the surviving cross-volume part is antisymmetric curvature transfer; only the known viscous commutator has nonzero global sum.
+The observer families themselves contain no extra state.  If `R_kappa(t)` denotes the inverse hinge level for `0<kappa<K_rad(0,t)`, then for every `p>=0`
+`int_0^(K_rad(0,t)) R_kappa(t)^p d kappa = [1/(p+1)]int rho^(p+1)dE_rho`; in particular `int R_kappa d kappa=D_2/2`.    (20.62)
+Likewise, because `int dW_rho=0`, for every `alpha>-1` with the indicated moment finite,
+`J_alpha=-(1/[4(alpha+1)]) int int |rho^(alpha+1)-sigma^(alpha+1)| dW_rho dW_sigma`.    (20.63)
+The exact integrated `J`-balance, for `alpha>1`, is therefore
+`J_alpha(t)+2nu int_s^t[int R^(alpha+2)J^2 +(alpha-1)int R^(alpha-2)M_J^2]dtau = J_alpha(s)+2int_s^t int R^alpha J C dRdtau`.    (20.64)
+This is the precise second-level analogue of control-volume bookkeeping: `J_alpha` is a quadratic reader of the one actual boundary-work law, the positive left terms are heat-generated reader payments, and the right side is the true `N/F_N` curvature input.  The moving-front family is likewise only inverse coordinates for actual stock moments by (20.62).  None of these readers is a new kinetic owner or resource.
+### 20.13 Summing the entire physical cut family gives one multiplier commutator — EXACT
+Let `H_R=1_(Lambda>R)`, `L_R=I-H_R` and `Q_R:=<Lambda H_Ru,Lambda H_RN>`.  Comparing fixed-set work curvature with (20.58) gives the exact owner of the Volterra heat term,
+`L_tail J(R)=2Q_R`.    (20.65)
+For every real absolutely continuous radial multiplier `phi` with `phi(0)=0` (first compactly localized if needed), layer cake gives
+`W_phi:=int phi'(R)J(R)dR=2<phi(Lambda)u,N>`,
+`Q_phi:=int phi'(R)Q_RdR=<phi(Lambda)Lambda u,Lambda N>`,
+`C_phi:=int phi'(R)C(R)dR=<phi(Lambda)N,N>+<phi(Lambda)u,F_N>`.    (20.66)
+Let `T_R` denote the three nonlinear cross-volume terms in (13.4) and `V_R:=sum_j<H_Ru,partial_j u x partial_j omega>`.  Then
+`C_phi=T_phi-2nu V_phi`, `0.5 dot W_phi=T_phi-2nu(V_phi+Q_phi)`,    (20.67)
+for time-independent `phi`, where `T_phi=int phi'T_R`, `V_phi=int phi'V_R`.  Thus summing cuts creates no source.
+Define the slot commutator
+`D_phi(a,b;c):=<phi(Lambda)a,b x c>-<a,phi(Lambda)b x c>`.
+Exact complement cancellation yields
+`T_phi=D_phi(N,u;omega)+(1/2)D_phi(u,u;G)`.    (20.68)
+If `phi(Lambda)` has an even kernel `K_phi`, then
+`D_phi(a,b;c)=int int K_phi(x-y)a(x).[b(y)x(c(y)-c(x))]dxdy`.    (20.69)
+So the summed nonlinear curvature is a full-field increment commutator, not a traffic token or internal UV engine.
+For `alpha>1` define the adaptive **reader** `phi_(alpha,J)(rho):=2int_0^rho R^alpha J(R)dR`.  At each frozen time,
+`W_(phi_(alpha,J))=4J_alpha`,
+`Q_(phi_(alpha,J))=int R^alpha J L_tail J=int R^(alpha+2)J^2+(alpha-1)int R^(alpha-2)M_J^2>=0`,
+`dot J_alpha=T_(phi_(alpha,J))-2nu[V_(phi_(alpha,J))+Q_(phi_(alpha,J))]`.    (20.70)
+The last line is simply the family sum of the antisymmetric `0.5 dot W_(H_R)` law with weight `2R^alpha J`; even the adaptive observer contributes no extra mechanism.  The inviscid part has no universal sign (finite-Fourier states realize both signs).
+### 20.14 The whole hinge-front family forces a critical forcing burden, and also shows the observer barrier — EXACT / EXACT ANALYTIC
+Fix `0<kappa_0<kappa_1<c/4`.  Every `R_kappa`, `kappa in[kappa_0,kappa_1]`, has unbounded endpoint limsup.  If `w>=0` has unbounded primitive `Phi(R)=int_0^R w`, Tonelli plus the exact change of variables `d kappa=-E_(>R)dR` and `R_kappa'E_(>R_kappa)=Xi(R_kappa)` gives
+`int_(kappa_0)^(kappa_1) int w(R_kappa)(R_kappa')_+ dt d kappa`
+`=int int_(R_(kappa_1)(t))^(R_(kappa_0)(t)) w(R)Xi_+(R,t)dRdt=infinity`.    (20.71)
+This is family coarea for observer motion; the middle integrand is the actual hinge-stock rate.
+With `q_R=(Lambda-R)_+`, mother law gives
+`Xi=2<q_Ru,N>-2nu||q_R^(1/2)Lambda u||^2 <= B_R/(2nu)`,
+`B_R:=||q_R^(1/2)Lambda^-1N||^2`.    (20.72)
+Hence for every `0<=epsilon<1`,
+`int_0^infinity R^(-epsilon)B_RdR=||Lambda^(-epsilon/2)N||^2/[(1-epsilon)(2-epsilon)]`,
+so finite-endpoint recycling forces
+`int_0^(T_*)||Lambda^(-epsilon/2)N||_2^2dt=infinity`.    (20.73)
+At the endpoint reader `w(R)=(1+R)^-1`, the forced multiplier is explicitly
+`m_log(rho)=[(rho+1)log(1+rho)-rho]/rho^2 ~ log(rho)/rho`,
+and `int_0^(T_*)||m_log(Lambda)^(1/2)N||_2^2dt=infinity`.    (20.74)
+More generally the forcing multiplier produced by `w` is
+`m_w(rho):=rho^-2 int_0^rho w(R)(rho-R)dR >= Phi(rho/2)/(2rho)`.    (20.75)
+Thus any observer weight capable of seeing an unbounded front necessarily demands at least an `H^-1/2`-scale forcing action with an unbounded slowly varying strengthening.  By contrast the standard energy-class estimate is only
+`||N||_Hdot^-1 <= C||u||_2^(1/2)||grad u||_2^(3/2)`, hence `int_0^(T_*)||N||_Hdot^-1^(4/3)dt <= C E_*^(1/3)int||grad u||_2^2dt<infinity`.    (20.76)
+So no unbounded observer primitive can weaken (20.71)--(20.75) to the spatial `H^-1` / time-`L^(4/3)` level already funded by kinetic energy.  The remaining closure must use the actual convolution/full-field structure in (20.68), not another front or norm mechanism.
+### 20.15 Exact remaining theorem — OPEN
+The surviving theorem is still:
+> **No infinite critical full-state recycling.** A smooth true 3D incompressible Navier--Stokes trajectory on a finite interval cannot have one fixed positive hinge level `K_rad(R_kappa,t)=kappa` make unbounded UV excursions while the same true fields satisfy the mother force triangle, folded radial state/action law, genuine viscous front budget, growth family, tangent cancellation, the scale-amplified front law (20.47)--(20.54), the Volterra heat-square family (20.55)--(20.61), the observer-exhaustion/integrated accounting identities (20.62)--(20.64), the summed-family/full-field identities (20.65)--(20.76), and all full-pair/heat-fiber identities.
+Equivalently: `Y=>bot`.
 The sharpened chain is
-`late UV hard state`
-`=>` one fixed `K_rad=kappa` front with `limsup R_kappa=infinity`
-`=>` arbitrarily late outward UV states `R_kappa'>0`
-`=>` positive actual tail-stock growth above the same UV cut
-`=>` stationary-stock growth-level control volumes
-`=>` either a wholly-UV stationary-stock hardening cell, or a one-sided UV state-growth corridor with `dE_t>=0`
-`=>` all radial state motion and all weighted force-triangle defects reconstructed by one positive profile `Gamma_I`
-`=>` only fiber/mode-tangent instantaneous state motion remains, and its square cancels exactly in the true work-curvature combination
-`=>` any further regeneration is a statement about the next actual stock jet / `F_N/G`, not about a parallel phase mechanism.
-What is **not** proved:
-- unbounded `limsup R_kappa` is not yet incompatible with the finite viscous budget (20.15); `L^1_t`-thin UV excursions remain logically possible;
-- wholly-UV stationary-stock cells or one-sided UV state-growth corridors are not yet excluded from re-forming at unbounded scales;
-- the reconstructed radial state profile plus the remaining fiber/tangent state motion has not yet yielded a contradiction at the next true stock jet;
-- no additional monotone action/flux resource has been proved;
-- the RHS of (20.41) is not known to be dominated by its viscous terms near a finite endpoint;
-- large `Q`, Lamb action, or source-square diagnostics alone do not contradict smoothness;
-- no selected pair/triad is assumed to survive full-convolution cancellation.
-Any closure must be an incompatibility among true Navier--Stokes state laws, not a new token, observer clock, genealogy, Hahn split, transfer wallet, or estimate-defined mechanism.
+`fixed unbounded K_rad=kappa front`
+`=>` cofinal scale-amplified true `Xi` and mother growth action
+`=>` blow-up of both tail-growth square `G_2` and actual boundary-work square `J_2`
+`=>` infinite cumulative actual work-rate input and `N/F_N` curvature input
+`=>` the whole `kappa` family simultaneously forces critical-plus `N` forcing action divergence
+`=>` by (20.68) and (13.4)--(13.7), no internal UV nonlinear curvature owner remains: the required evolution is one full-field slot commutator / complementary work-rate transfer plus known viscosity.
+What is **not** proved is exactly that this final full-field commutator/work-rate transfer is incompatible with finite smooth lifespan.  No finite physical budget for the weighted curvature-transfer/viscous input on the right side of (20.61) has yet been proved; large `Q`, Lamb/source-square diagnostics, or selected pair/triad arguments do not supply one automatically.  Any closure must therefore control this true `N/G/F_N` input without inventing a clock, genealogy, Hahn law, transfer wallet, internal-UV curvature mechanism, or higher observer jet.
 ## 21. QED hook
 Once Section 20 is proved, the existing composition is unchanged:
 `T_*<infinity => X vee Y`,
 `X=>bot`,
 `Y=>bot`,
 therefore `T_*<infinity=>bot` and `T_*=infinity`.
-See `SOLUTION_MAP.md` for the short proof graph, `PHYSICAL_CORE.md` for the primitive identity basis, `MIXED_FRONTIER.md` for exhausted false-owner routes, and `FOURTH_DOCUMENT_FINAL_EXHAUSTION.tex` for the conditional endpoint composition.
+See `SOLUTION_MAP.md` for the short proof graph, `PHYSICAL_CORE.md` for the primitive identity/endpoint basis, and `MIXED_FRONTIER.md` for exhausted false-owner routes and the closed Clay-to-`S/V/O` upstream spine.

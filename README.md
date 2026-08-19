@@ -1,6 +1,6 @@
 # Wang–NS Physical Core
 
-A seven-document distillation of the current Wang–Navier–Stokes physical-road exhaustion programme.
+A six-document distillation of the current Wang–Navier–Stokes physical-road exhaustion programme.
 
 Source programme: [`quemanhmcr/wang-ns-triad-diamond`](https://github.com/quemanhmcr/wang-ns-triad-diamond), read only from `main`.  The source baseline used for this distillation is `main@63178b0e7f9fabdfd8c344dab938a3d639639df5` (2026-08-13), whose latest upstream theorem state is the native material-service causal quotient.  This distill also records later **deductions obtained by composing already-certified upstream identities**; each such deduction is labelled explicitly.
 
@@ -8,23 +8,22 @@ There is **no claim yet of a proof of 3D Navier–Stokes global regularity**.  T
 
 ## Repository invariant
 
-This repository intentionally contains exactly **seven tracked documents**:
+This repository intentionally contains exactly **six tracked documents**:
 
 1. `README.md` — map, status legend, historical purification, reading order.
 2. `CONTROL_VOLUME_METHOD.md` — reusable methodology: exact control-volume families before mechanisms or estimates.
-3. `PHYSICAL_CORE.md` — the smallest current basis of physical objects and exact identities.
-4. `MIXED_FRONTIER.md` — exhausted observer/owner routes and the exact remaining frontier.
-5. `FOURTH_DOCUMENT_FINAL_EXHAUSTION.tex` — formal endpoint synthesis and the conditional final composition.
-6. `SOLUTION_MAP.md` — short Clay-to-QED proof graph with proof-location links.
-7. `BSVO_FULL_STATE_FRONTIER.md` — the dedicated remaining `B/S/V/O` full-state proof block.
+3. `PHYSICAL_CORE.md` — the primitive identities plus the self-contained Clay(A)-to-`Y`-to-`S/V/O` endpoint spine.
+4. `MIXED_FRONTIER.md` — hostile-referee closure of measure/Hahn/support/sidecar seams and the exact remaining frontier.
+5. `SOLUTION_MAP.md` — short Clay-to-QED proof graph with proof-location links.
+6. `BSVO_FULL_STATE_FRONTIER.md` — the dedicated remaining `B/S/V/O` full-state proof block.
 
 No theorem implementation, regression code, result archive, PR history, packet scaffolding or CI transcript belongs here.  If a future edit grows a core file without changing the frontier, compress before merging.
 
-Target line budgets: `README <= 190`, `CONTROL_VOLUME_METHOD <= 100`, `PHYSICAL_CORE <= 572`, `MIXED_FRONTIER <= 420`, `SOLUTION_MAP <= 180`, `BSVO_FULL_STATE_FRONTIER <= 560`.
+Target line budgets: `README <= 210`, `CONTROL_VOLUME_METHOD <= 100`, `PHYSICAL_CORE <= 700`, `MIXED_FRONTIER <= 520`, `SOLUTION_MAP <= 180`, `BSVO_FULL_STATE_FRONTIER <= 560`.
 
-## How to read the seven files
+## How to read the six files
 
-For the shortest route, read `CONTROL_VOLUME_METHOD.md` first for the proof discipline, then `SOLUTION_MAP.md`, `PHYSICAL_CORE.md`, and `BSVO_FULL_STATE_FRONTIER.md`.  Read `MIXED_FRONTIER.md` when auditing why older owner/bridge routes are forbidden, and `FOURTH_DOCUMENT_FINAL_EXHAUSTION.tex` for the formal endpoint synthesis and conditional QED composition.  A physicist should not need the source repository to understand the current theorem architecture; the source repository is needed only to inspect upstream proofs, constants, certification evidence or historical derivations.
+For the shortest route, read `CONTROL_VOLUME_METHOD.md` first for the proof discipline, then `PHYSICAL_CORE.md` for the Clay(A)-to-`S/V/O` endpoint spine, `SOLUTION_MAP.md` for composition, and `BSVO_FULL_STATE_FRONTIER.md` for the remaining open block.  Read `MIXED_FRONTIER.md` when auditing why older owner/bridge routes are forbidden and why the endpoint Hahn/support/constant plumbing is exact.  A physicist should not need a separate synthesis document to understand the current theorem architecture; the source repository is needed only to inspect upstream proofs, constants, rigorous computer-assisted certificates or historical derivations.
 
 The key discipline is:
 
@@ -37,7 +36,8 @@ A projector may read a shell; it does not create the shell.  A cutoff may repart
 - **EXACT** — analytic identity/theorem in the physical spine; CI/numerics are only certification evidence.
 - **EXACT-CONDITIONAL** — exact implication once a stated physical entrance hypothesis is supplied; not a universal entrance theorem.
 - **DISTILLED EXACT DEDUCTION** — new statement here obtained directly by composing upstream exact theorems, without a new estimate.
-- **EVIDENCE** — finite-grid, Galerkin, FFT, randomized or CI checks; never a continuum proof.
+- **COMPUTER-ASSISTED EXACT** — a finite-dimensional theorem proved by exact reduction plus inclusion-preserving interval/ball arithmetic with a replayable certificate; random stress output is not part of the proof.
+- **EVIDENCE** — finite-grid, Galerkin, FFT, randomized stress or non-rigorous CI checks; never a continuum proof.
 - **OPEN / HYPOTHESIS** — research frontier; must not be quoted as theorem.
 
 ## Current physical picture
@@ -81,6 +81,9 @@ full-state road: N, G=curl N, strain/vorticity, exact triad phase
 OPEN: no infinite critical B/S/V/O full-state recycling
 ```
 
+
+**Closed upstream endpoint contract.**  The Clay branch used here is only `R^3(A)`: `nu>0`, `f=0`, smooth divergence-free rapidly decaying data, hence `u_0 in dot H^(1/2)`.  Classical/mild uniqueness makes Kenig--Koch apply to the same maximal time `T_*`.  The hard-shell gate now records the complete dyadic proof of `v_high<=C_sh sqrt(mu_>)||u||_(dot H^(3/2))^2` and the low-root Gronwall term.  The `G` support `3/5<d/c,r/c<5/8` is a **COMPUTER-ASSISTED EXACT** Arb theorem from the source programme, not a random test.  `Y -> S vee V vee O` uses the whole final occupied corridor; the optional `cM^-2` natural window keeps its own `q_nat=min(1-theta,nu theta c/4)` and is not used to manufacture the constants `2/5 -> 3/25 -> 1/50 -> 1/150`.
+
 The square/service/shell layers are real physical observables, but a new observable is not automatically a new causal charge.
 
 ## How the programme arrived here
@@ -100,7 +103,7 @@ The historical movement is not “more abstraction”; it is repeated removal of
 11. **The mixed owner frontier was exhausted.**  Pressure, SGS, material, relink, helicity and traffic/material rereadings were reduced to exact state/geometry readings and cannot mint a fourth kinetic-energy supplier.
 12. **The endpoint was reduced to one physical-road block.**  Finite singularity gives `X vee Y`; the initial critical tail kills `X`; `Y` gives a universal bad-positive sidecar and the exact `S vee V vee O` trichotomy.
 13. **The cubic quotient was proved dynamically incomplete.**  The relative-translation witness keeps stocks, all active cubic works and `Q` fixed while changing `dot Q`, so the proof must return to full `u/omega`.
-14. **The current frontier is full-state `B/S/V/O`.**  Beyond critical action, `G=curl N`, pressure reflection and silent-gate laws, the full-polarization pair algebra now proves that every fully active closed geometric triad leaks a reality-companion acceleration beyond its largest root.  Full finite-Fourier one-triad closure is nonlinear-silent but is broader than Beltrami.  Heat-fiber Laplace rigidity and pair-source synchronization show that unequal-heat cancellation needs actual radial parent repair; globally affine synchronization is regular terminal physics.  The surviving hard mechanism is same-heat, non-affine, dynamically `F_N/G`-repaired cancellation.  `Y=>bot` is still open.
+14. **The current frontier is full-state control-volume curvature accounting.**  The mother law, fixed radial hinge family and exact Volterra heat-square family have collapsed phase/tangent, zero-stock, superlevel and higher-jet observer mechanisms back into the actual state/work laws.  Unbounded endpoint recycling now forces scale-amplified hinge growth, blow-up of the actual boundary-work square family and infinite cumulative `N/F_N` curvature input.  Fixed-projector triple-product identities cancel every internal nonlinear curvature source and identify the remaining cross-volume part as antisymmetric transfer; `Y=>bot` is still open only at this final true transfer/viscosity block.
 
 The recurring lesson is: **complexity should be removed only after its physical type is known**.
 
@@ -112,7 +115,7 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **DISTILLED EXACT DEDUCTIONS:** carried-root recursion reduces to `H/G` with finitely many `H`; low-ball Kirchhoff roots pure-`G` funding; the critical first-moment ledger gives the signed-good `9/25` radial-production floor; and the radial-variation proof sharpens to `v_rad<=C_sh sqrt(mu_sh)||u||_Hdot^(3/2)^2`, so any actual increase of `C_(1/2)` exposes a hard shell above the fixed `(2nu/C_sh)^2` critical quantum.
 
-**EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, stress tests, CI certificates and master traces.
+**EVIDENCE ONLY:** randomized helical triads, finite Galerkin/FFT NS probes, non-rigorous stress tests and master traces.  Rigorous Arb interval certificates are classified separately as COMPUTER-ASSISTED EXACT.
 
 **EXTERNAL EXACT ENDPOINT:** Kenig--Koch, arXiv:0908.3349, Theorem 0.1: a mild solution with `u_0 in Hdot^(1/2)` that stays bounded in `Hdot^(1/2)` on its maximal lifespan is global and smooth; hence finite-time singularity forces unbounded critical stock.
 
@@ -134,7 +137,7 @@ The recurring lesson is: **complexity should be removed only after its physical 
 **DISTILLED EXACT MATERIAL-PAIR VORTICITY LAW:** pressure is downstream: `u=curl(-Delta)^-1 omega` and NS is equivalent to `partial_t omega+(u.grad)omega=(omega.grad)u+nu Delta omega`.  Biot--Savart gives `Q=int omega.S omega=(3/8pi)int int[((delta omega).h)((bar omega cross delta omega).h)]/|h|^5 dxdy`, `bar omega=(omega_x+omega_y)/2`; the two exact zero factors are longitudinal increment and vortex-pair chirality.  For material particles `x=X(a,t),y=X(b,t)`, put `Abar=int_0^1 grad u(x+theta h)dtheta`, `E_x=A_x-Abar`, `E_y=A_y-Abar`, `L=delta omega.h`, `C=(omega_x cross omega_y).h`, `K=LC/|h|^5`.  Then `hdot=Abar h`, `tr Abar=0`; common affine deformation cancels exactly from `Cdot`, while `E_x,E_y` are the weighted line-integrals of `(h.grad)grad u` and viscosity supplies the only other chirality term.  Common strain may still change `L` and `|h|`.  Thus chirality-null and longitudinal-null are physically different zero manifolds; no angular/chirality currency is introduced.
 **DISTILLED EXACT TRAFFIC/MATERIAL ANTI-CORRESPONDENCE:** the earlier same-child opposite-`Z_tri` witness already forbids pushing UV inflow atomwise to `Q+`.  A stronger exact torus witness now fixes the entire instantaneous spectral quotient: two real divergence-free states have identical modal stocks, every active canonical cubic work, and normalized `Q=-980`, yet a relative half-period translation of one spectrally cubic-isolated triad family changes the true NS first time jet by `dot Q_delta-dot Q_0=87152/55`, independently of `nu`.  The reason is exact: no mixed closed triad survives, but a mixed quartet does.  Thus traffic/work data are not a closed dynamical state and cannot canonically own or predict material-pair geometry; relative phase information discarded by the cubic quotient reappears in the quartic NS time jet.  The representation frontier is exhausted: the remaining mathematical question is the specific direct full-state `B/S/V/O` exclusion recorded in `BSVO_FULL_STATE_FRONTIER.md`, not another traffic-to-chirality bridge, Hahn law, pressure/Lamb road, coherence budget or genealogy.
 
-**EXACT FULL-STATE `B/S/V/O` FRONTIER — MOTHER-LAW / CONTROL-VOLUME FAMILY FORM:** the dedicated frontier starts from `N=u_t+nu Lambda^2u`.  Signed curl gives `A(a)=2nu Psi(a)`; folding only after energy/helicity invariants gives the actual radial state/action family `partial_t K_rad+2nu L_rad=Psi_rad`, `Psi_rad=int_R^infinity J`.  Fix any `0<kappa<c/4`.  Endpoint hard shells force the unique reader front `K_rad(R_kappa,t)=kappa` to satisfy `limsup R_kappa=infinity`, while exact differentiation gives `R_kappa'E_>R=Psi_rad-2nu L_rad`.  True viscosity supplies a genuine finite resource: `D_(2,>R_kappa)=4R_kappa kappa+int(rho-2R_kappa)^2de`, hence `8nu kappa int R_kappa dt+2nu int int(rho-2R_kappa)^2de dt<=E(0)`; the excess square is exactly radial variance plus tail-energy mismatch, not a proof-created concentration cost.  Every positive radial `O` cut is internal to a larger equal-flux work-neutral cell.  More strongly, with `g_tail=partial_tE_(>R)=J-2nu D_(2,>R)`, every superlevel `{g_tail>lambda}` is an actual stationary-stock control volume that hardens every increasing radial observable.  At outward UV front states this yields either a wholly-UV stationary-stock hardening cell or a monotone UV state-growth corridor with `de_t>=0`.  The full growth family reconstructs the radial state velocity `de_t=h_tde`; radial nonlinear work is exactly `h_t+2nu rho^2`.  Its quadratic state-growth profile has height/slope/curvature equal to hinge-stock growth / suffix-stock growth / actual state change, and all Sobolev force-triangle defects are Mellin readings with an exact sign pivot at `sigma=-1`.  The old `N_perp` refines to work-determined `N_shape` plus `N_fib=(U_t)_fib`; the maximal Fourier/helicity observer leaves only tangent/zero-stock instantaneous motion.  On occupied modes `F_N/u=dot eta+eta^2`, so tangent squares cancel exactly between `|N|^2` and `Re(conj(u)F_N)` in work curvature; there is no separate phase-repair cost/mechanism.  The unresolved theorem is now to exclude unbounded `L^1_t`-thin UV excursions of this fixed actual state family by the next true stock jet / `F_N/G`; equivalently `Y=>bot`.  See `BSVO_FULL_STATE_FRONTIER.md`.
+**EXACT FULL-STATE `B/S/V/O` FRONTIER — TOTAL CONTROL-VOLUME FAMILY FORM:** the canonical derivation is `BSVO_FULL_STATE_FRONTIER.md` §20.  The fixed hinge and Volterra families now collapse one level further when **all** radial cuts are summed: `L_tail J` is exactly twice the tail enstrophy-work, arbitrary cut weights give one full-field slot commutator `D_phi(N,u;omega)+(1/2)D_phi(u,u;G)`, and the adaptive reader `phi'_(alpha,J)=2R^alpha J` satisfies `4J_alpha=W_phi` with `dot J_alpha` equal to complementary work-rate transfer rather than a new curvature source.  The entire continuum of `kappa` fronts gives an exact coarea theorem forcing `int||Lambda^(-epsilon/2)N||^2dt=infinity` for every `epsilon<1` and a log-enhanced `H^-1/2` burden.  A general kernel lower bound proves this is the observer limit: any weight capable of seeing an unbounded front is at least critical `H^-1/2` (with slow strengthening), while kinetic energy supplies only the standard `N in L_t^(4/3)H^-1` control.  Therefore no extra front, norm, phase, zero-stock birth, radial `O`, clock, genealogy or wallet can close the branch.  The still-open theorem is genuinely full-convolution: exclude finite-endpoint persistence of the remaining `u/N/G/F_N` slot-commutator / antisymmetric work-rate transfer; equivalently `Y=>bot`.
 
 ## Upstream proof lookup map
 
