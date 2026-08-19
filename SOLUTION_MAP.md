@@ -125,7 +125,6 @@ The dedicated frontier is now organized from one mother law rather than from a c
 `N=u_t+nu Lambda^2u`.
 
 Current exact consequences include:
-
 1. modewise and fixed-set force-triangle / Kirchhoff action identity;
 2. signed-curl boundary-work profile `F`, hinge potential `Psi`, and quadratic action profile `A=2nu Psi`;
 3. height/slope/curvature readings: critical source / actual cut flux / actual modal work, with `Q` the profile area;
@@ -138,20 +137,21 @@ Current exact consequences include:
 10. actual work curvature obeys `(partial_t+2nu|k|^2)T_k=2|N_k|^2+2Re(conj(u_k)(F_N)_k)`;
 11. `G=curl N` and `F_N` are the genuine fields governing all non-affine reshaping/repair;
 12. Piola pressure reflection remains Hodge/strain completion, not a second supply road;
-13. dangerous outermost `O` atoms are opposite-high positive-critical `B` arches;
+13. dangerous outermost `O` atoms are opposite-high positive-critical `B_crit` arches;
 14. full-polarization pair Pythagoras and reality-companion leakage exclude local active-triad closure;
 15. passive inter-heat cancellation is fiberwise by Laplace uniqueness; unequal-heat persistence needs true parent radial work;
-16. affine synchronized repair, under its explicit connectivity hypothesis, collapses to regular monochromatic translation/decay.
+16. affine synchronized repair, under its explicit connectivity hypothesis, collapses to regular monochromatic translation/decay;
+17. the folded radial family gives one fixed endpoint hinge front `K_rad(R_kappa,t)=kappa` with unbounded UV limsup but a genuine finite viscous `L^1_t` radius/mis-centering budget;
+18. the `g_tail=partial_tE_(>R)` level family forces stationary-stock radial hardening cells or one-sided UV state-growth corridors, reconstructs radial state/work motion exactly, and leaves only next-stock-jet / `F_N/G` dynamics as the open regeneration question.  See `BSVO_FULL_STATE_FRONTIER.md` §20 for all identities, Sobolev sign-pivot, and tangent cancellation.
 
 See `BSVO_FULL_STATE_FRONTIER.md` for the canonical statement/derivation map.  `PHYSICAL_CORE.md` §14 now keeps only the primitive entry identities and links here rather than duplicating the frontier.
 
 ## 11. The only missing proof block
 
 The remaining theorem is:
-
 `No infinite critical full-state recycling`.
 
-It must show, using only true NS identities, that repeated late UV critical regeneration cannot keep rebuilding the forced neutral-tail radial sorter `[H/(2S)](Lambda-mu)U` through the moment-orthogonal `N_perp/F_N` freedom at unbounded scales.  The older same-heat non-affine cancellation loophole survives precisely inside this remainder; unequal-heat passive cancellation, local active-triad closure and globally affine synchronized repair are already routed to exact work/UV leakage or regular terminal physics.
+It must show, using only true NS identities, that one fixed positive critical-hinge level `K_rad(R_kappa,t)=kappa` cannot make unbounded UV excursions while obeying its genuine finite viscous budget and the exact growth-level control-volume family.  At every outward UV state, the full NS state is forced into either a wholly-UV stationary-stock hardening cell or a one-sided UV state-growth corridor.  All radial state motion is already reconstructed by `h_t/Gamma_I`; all radial nonlinear work is that state motion plus the explicit viscous shift; all Sobolev/action defects are readings of the same profile.  The only instantaneous freedom left after maximal mode-set observation is fiber/tangent state motion, and its tangent square cancels exactly inside the true work-curvature combination; future influence is therefore encoded in the next actual stock jet / `F_N/G`, not in a parallel phase mechanism.  Unequal-heat passive cancellation, local active-triad closure and globally affine synchronized repair remain already routed to exact work/UV leakage or regular terminal physics.
 
 Equivalent required implication:
 

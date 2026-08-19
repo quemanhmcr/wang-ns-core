@@ -2,7 +2,7 @@
 
 This is the canonical remaining proof block after the representation/owner frontier has been exhausted.  It is organized from true Navier--Stokes state laws outward, not from a cancellation taxonomy inward.  It does **not** claim `Y=>bot` or global regularity.
 
-`B` means the already-canonical minority-helicity positive-critical nonlinear-work branch; it is not a fourth sidecar fate.  The exact sidecar theorem remains `Y => S vee V vee O`.  The missing theorem remains
+In this file `B` means `B_crit`, the already-canonical minority-helicity positive-critical nonlinear-work branch; it is not the endpoint complement `B_bad` and is not a fourth sidecar fate.  The exact sidecar theorem remains `Y => S vee V vee O`.  The missing theorem remains
 
 > **No infinite critical full-state recycling**, equivalently `Y=>bot` under the already-proved endpoint grammar.
 
@@ -411,9 +411,9 @@ Pressure redistributes the geometry of the same state; it does not mint kinetic-
 
 ## 15. Dangerous `B/O` atomic geometry survives inside the new full-state spine — EXACT
 
-For a true far-UV low-donor triad with opposite-helicity high roots, the low root is the signed middle root, both high roots are recipients, `Z_tau>0`, every radial-cut flux of that triad is nonnegative, and the critical production is positive minority-helicity `B` work.
+For a true far-UV low-donor triad with opposite-helicity high roots, the low root is the signed middle root, both high roots are recipients, `Z_tau>0`, every radial-cut flux of that triad is nonnegative, and the critical production is positive minority-helicity `B_crit` work.
 
-If the high pair has the same helicity, the radial profile is a loop with a farther high donor and critical production zero or negative.  Therefore a true `O` atom whose recipient is radially outermost in its triad lies on the opposite-high positive-critical `B` arch.
+If the high pair has the same helicity, the radial profile is a loop with a farther high donor and critical production zero or negative.  Therefore a true `O` atom whose recipient is radially outermost in its triad lies on the opposite-high positive-critical `B_crit` arch.
 
 The triad picture explains microscopic incidence.  Sections 6--12 are stronger for the final frontier because they survive full convolution summation.
 
@@ -477,38 +477,200 @@ The frontier no longer treats the following as independent mechanisms:
 The phase/polarization loophole has not disappeared.  It has been isolated into the moment-orthogonal remainder `N_perp`, the higher-shape component `Z`, and the true `F_N` evolution needed to regenerate the forced radial sorter.
 
 ## 20. Exact surviving frontier — OPEN
-
-The remaining theorem may now be stated more sharply:
-
-> **No infinite critical full-state recycling.**  A smooth true 3D incompressible NS trajectory on a finite interval cannot repeatedly realize unbounded-scale positive-critical regeneration while the same true fields `u,N,F_N/G` satisfy the mother force triangle, the signed-curl action-profile identities, the neutral-helicity-tail hardening law, the forced sorter decomposition, the opposite viscous radial-shape projection, and all full-pair/heat-fiber convolution identities.
-
+The endpoint block is now organized by one fixed radial control-volume family.  No new owner, clock, genealogy, Hahn split, or estimate-defined mechanism is introduced below.  Every set is frozen at the physical time where its identity is read.
+### 20.1 Folded radial state/action family — EXACT
+Push modal energy and the one actual signed modal-work law under `rho=|k|` to `dE_rho` and `dW_rho`.  Define
+`J(R,t):=int_(rho>R)dW_rho = F(R,t)-F(-R,t)`,
+`K_rad(R,t):=int (rho-R)_+ dE_rho`,
+`Psi_rad(R,t):=int (rho-R)_+ dW_rho=int_R^infinity J(b,t)db=Psi(R,t)+Psi(-R,t)`.    (20.1)
+The last equality uses only the exact affine invariants `int dW=0` and `int x dW=0`; the fold does not discard helicity arbitrarily.  Distributionally,
+`partial_R K_rad=-E_(>R)`, `partial_R^2K_rad=dE_rho`,
+`partial_R Psi_rad=-J`, `partial_R^2Psi_rad=dW_rho`.    (20.2)
+Integrating the exact tail Kirchhoff law over the nested family gives
+`partial_t K_rad + 2nu L_rad = Psi_rad`,
+`L_rad(R,t):=int rho^2(rho-R)_+dE_rho >=0`.    (20.3)
+The genuine viscous term is itself an exact Volterra reading of the state hinge,
+`L_rad=R^2K_rad+4R int_R^infinity K_rad(b)db+6 int_R^infinity(b-R)K_rad(b)db`.    (20.4)
+The folded mother-law action is
+`A_rad(R,t):=A(R,t)+A(-R,t)=2nu Psi_rad`
+`=2nu partial_tK_rad+4nu^2L_rad`.    (20.5)
+At the origin,
+`K_rad(0)=||u||_Hdot^(1/2)^2`, `Psi_rad(0)=P_(1/2)^NL`, `int_0^infinity Psi_rad(R)dR=Q`.    (20.6)
+Thus `B_crit`, radial `O`, sidecar stock and viscosity are not independent mechanisms here: they are height/slope/state/viscous readings of one exact family.
+### 20.2 Endpoint hard states force one fixed unbounded hinge front — EXACT
+If a hard shell satisfies `M E_M(t)>=c`, then at `R=M/4`,
+`K_rad(R,t)>= (M/4)E_M(t)>=c/4`.    (20.7)
+Fix once and for all any observer level `0<kappa<c/4`.  Whenever `K_rad(0,t)>kappa`, strict monotonicity at the positive level,
+`partial_RK_rad(R,t)=-E_(>R)(t)<0`,
+defines a unique reader front `R_kappa(t)` by
+`K_rad(R_kappa(t),t)=kappa`.    (20.8)
+The endpoint hard-shell sequence therefore forces
+`limsup_(t->T_*) R_kappa(t)=infinity`.    (20.9)
+Differentiating the level identity gives the exact moving-reader law
+`R_kappa' E_(>R_kappa)=partial_tK_rad(R_kappa)`
+`=Psi_rad(R_kappa)-2nu L_rad(R_kappa)`
+`=int_(R_kappa)^infinity g_tail(b,t)db`,    (20.10)
+where
+`g_tail(R,t):=partial_tE_(>R)=J(R,t)-2nu D_(2,>R)(t)`,
+`D_(2,>R):=int_(rho>R)rho^2dE_rho`.    (20.11)
+The front is an observer, not an event.  Since it has unbounded UV excursions on a finite interval, there are arbitrarily late, arbitrarily large outward states `R_kappa'>0`.  At every such actual state,
+`Psi_rad(R_kappa)>2nu L_rad(R_kappa)>=2nu R_kappa^2 kappa`.    (20.12)
+No Sard selection or first-contact clock is needed in the canonical endpoint spine.
+### 20.3 The fixed hinge carries a genuine finite viscous resource — EXACT
+At `K_rad(R_kappa)=kappa`, the elementary identity
+`rho^2=4R_kappa(rho-R_kappa)+(rho-2R_kappa)^2`
+gives
+`D_(2,>R_kappa)=4R_kappa kappa+int_(rho>R_kappa)(rho-2R_kappa)^2dE_rho`.    (20.13)
+Put `E_*:=E_(>R_kappa)`, `D_(1,>R_kappa):=int_(rho>R_kappa)rho dE_rho`,
+`mu_*:=D_(1,>R_kappa)/E_*=R_kappa+kappa/E_*`,
+`S_*:=int_(rho>R_kappa)(rho-mu_*)^2dE_rho`.
+Then
+`int_(rho>R_kappa)(rho-2R_kappa)^2dE_rho`
+`=S_*+(kappa-R_kappa E_*)^2/E_*`.    (20.14)
+Hence the global kinetic-energy law yields, on every interval where the front is defined,
+`8nu kappa int R_kappa(t)dt`
+`+2nu int int_(rho>R_kappa(t))(rho-2R_kappa(t))^2dE_rho dt <= E_total(t_0)-E_total(t_1) <= E_total(0)`.    (20.15)
+This is a true viscosity budget in physical units.  The excess is actual radial variance plus actual tail-energy mismatch; it is not a concentration wallet.  It does not by itself rule out unbounded `limsup R_kappa`, because UV excursions may be `L^1_t`-thin.
+### 20.4 Flux-level cells absorb radial `O` — EXACT
+For any `lambda>=0`, let
+`C^J_lambda:={R>0:J(R)>lambda}`
+and let `P^J_lambda` be the corresponding actual radial Fourier set.  Each connected component has equal flux on its two faces, so Stieltjes accounting gives
+`W^J_lambda:=2<P^J_lambda u,P^J_lambda N>=0`,    (20.16)
+while
+`H^J_lambda:=2<Lambda P^J_lambda u,P^J_lambda N>`
+`=int_0^infinity (J(R)-lambda)_+dR>0` whenever the set is nonempty.    (20.17)
+More generally, if `I=(a,b)` is a component of `{J>0}`, then for every absolutely continuous radial reader `f`,
+`int_I f(rho)dW_rho=int_a^b f'(R)J(R)dR`.    (20.18)
+Thus every increasing radial observable is nonlinearly hardened on the work-neutral cell.  Every true positive radial `O` through an internal cut is therefore internal circulation of a larger equal-flux neutral control volume.  `O` remains real boundary work through the smaller cut, but it is no longer an independent dynamical road once the full family is observed.
+### 20.5 Growth-level cells absorb stock/viscosity/outflow after full NS — EXACT
+At any fixed smooth time and any `lambda>0`, put
+`C^g_lambda:={R>0:g_tail(R)>lambda}`
+and let `P^g_lambda` be the corresponding actual radial mode set.  Since every component has equal `g_tail=lambda` on its two faces,
+`d/dt ||P^g_lambda u||_2^2=0`.    (20.19)
+For every absolutely continuous radial reader `f`,
+`d/dt int_(C^g_lambda) f(rho)dE_rho`
+`=int_0^infinity f'(R)(g_tail(R)-lambda)_+dR`.    (20.20)
+Thus every positive tail-stock-growth region lies inside an actual stationary-stock control volume that hardens every increasing radial observable under the **full** Navier--Stokes evolution.  The selection-free multiplier form is
+`int q^g_lambda dE_t=0`,
+`int rho q^g_lambda dE_t=(1/2)int (q^g_lambda(R))^2dR>0`,
+`q^g_lambda:=(g_tail-lambda)_+`,    (20.21)
+where `dE_t` is the actual radial state-change measure.  This is a reader of one signed state-change law, not a second Hahn split.
+At every outward UV front state from (20.10), `g_tail>0` somewhere above `R=R_kappa`.  Let `I=(a,b)` be a component of `{g_tail>lambda}` containing such a point and define
+`Gamma_I(r):=g_tail(r)-lambda>0`, `a<r<b`, `Gamma_I(a)=Gamma_I(b)=0`.
+Then
+`d/dt E_I=0`,
+`d/dt <Lambda P_Iu,P_Iu>=int_a^b Gamma_I(r)dr>0`.    (20.22)
+For every frozen upper suffix `I_r=(r,b)`,
+`d/dt E_(I_r)=Gamma_I(r)>0`,
+`W_(I_r)=2nu D_(2,I_r)+Gamma_I(r)`,    (20.23)
+whereas on the whole cell `W_I=2nu D_(2,I)`.  Nonlinear work exceeds each suffix's own viscosity by exactly its actual stock growth.
+The level topology gives a sharper alternative at the same outward radius `R`.  Either some positive-growth superlevel component lies wholly in `(R,infinity)`, producing a genuinely UV stationary-stock hardening cell, or no such component exists.  In the latter case any rise of `g_tail` above `R` would itself create such a component; therefore on the positive corridor up to its first zero `b_R`,
+`g_tail` is nonincreasing, hence `dE_t=-dg_tail>=0`,
+`dW_rho=dE_t+2nu rho^2dE_rho >=2nu rho^2dE_rho`.    (20.24)
+So the no-cell alternative is a one-sided UV state-growth corridor in which every radial subannulus gains actual stock under full NS.  No temporal ancestry is asserted.
+### 20.6 The growth family reconstructs the radial state velocity — EXACT
+Freeze one growth cell `I` and put `U=P_Iu`.  Define
+`dE_I(B):=||1_B(Lambda)U||_2^2`,
+`dE_(t,I)(B):=2 Re<1_B(Lambda)U,1_B(Lambda)U_t>`.
+Then `dE_(t,I)<<dE_I`, so there is a unique real `h_t in L^2(dE_I)` with
+`dE_(t,I)=h_t dE_I`,
+`2 Re<f(Lambda)U,U_t>=int f h_t dE_I`.    (20.25)
+The nested suffix family gives
+`Gamma_I(r)=int_(r<rho<b) h_t(rho)dE_I(rho)`.    (20.26)
+Hence
+`(U_t)_rad=(1/2)h_t(Lambda)U`,
+`(U_t)_fib:=U_t-(U_t)_rad`,
+`Re<f(Lambda)U,(U_t)_fib>=0` for every real radial `f`.    (20.27)
+Because `P_IN=P_Iu_t+nu Lambda^2U`, the radial nonlinear-work density is exactly
+`h_N(rho)=h_t(rho)+2nu rho^2`,
+and `(P_IN)_fib=(U_t)_fib`.    (20.28)
+Thus no hidden radial regeneration freedom remains at that instant: radial state motion is `h_t`, viscosity is the explicit `2nu rho^2` shift, and the only unseen instantaneous freedom is fiber-tangent state motion.
+### 20.7 Quadratic state-growth profile and the Sobolev sign pivot — EXACT
+Let
+`Theta_I(r):=int_r^b Gamma_I(s)ds=d/dt int_I(rho-r)_+dE_rho`
+and `q_(I,r):=1_I(Lambda)(Lambda-r)_+`.  The mother law gives
+`B_I(r):=||q_(I,r)^(1/2)Lambda^-1P_IN||^2`
+`-||q_(I,r)^(1/2)Lambda^-1P_Iu_t||^2`
+`-nu^2||q_(I,r)^(1/2)Lambda U||^2=nu Theta_I(r)`.    (20.29)
+Distributionally,
+`partial_r B_I=-nu Gamma_I<0`, `partial_r^2B_I=nu dE_(t,I)`.    (20.30)
+The negative viscous sign is correct because this profile reads **state growth after viscosity**, whereas `A=2nu Psi` reads nonlinear work before viscosity.  Height/slope/curvature now recover hinge-stock growth / suffix-stock growth / actual radial state change.
+For every nonnegative absolutely continuous radial weight `f`,
+`||f(Lambda)^(1/2)P_IN||^2-||f(Lambda)^(1/2)P_Iu_t||^2`
+`-nu^2||f(Lambda)^(1/2)Lambda^2U||^2`
+`=nu int_a^b (rho^2f(rho))' Gamma_I(rho)d rho`.    (20.31)
+Since `0<a<b<infinity`, all Sobolev weights are admissible on the frozen cell.  For every real `sigma`,
+`||Lambda^sigma P_IN||^2-||Lambda^sigma P_Iu_t||^2-nu^2||Lambda^(sigma+2)U||^2`
+`=2nu(sigma+1)int_a^b r^(2sigma+1)Gamma_I(r)dr`.    (20.32)
+Thus the complete Sobolev force-triangle family changes sign **exactly** at `sigma=-1`: positive for `sigma>-1`, zero at `-1`, negative for `sigma<-1`.  These are Mellin readings of one state-growth profile, not separate norm mechanisms.
+### 20.8 Maximal work/state decomposition and exact tangent cancellation — EXACT
+The older two-moment remainder can be refined by the whole radial family.  For any frozen actual set `P`, with `U=Pu`, `n=PN`, define radial state/work measures
+`dE_U(B)=||1_B(Lambda)U||^2`,
+`dW_U(B)=2 Re<1_B(Lambda)U,1_B(Lambda)n>`.
+Then `dW_U<<dE_U`, so `dW_U=h_U dE_U` and
+`N_rad=(1/2)h_U(Lambda)U`, `N_fib=n-N_rad`,
+`Re<f(Lambda)U,N_fib>=0` for all real radial `f`.    (20.33)
+On a work-neutral first-moment-positive cell, the old sorter is the affine projection of `h_U`; the remaining radial work shape is still determined by `dW_U`, while only `N_fib` is radial-work invisible.  Since viscosity belongs to the radial cyclic subspace,
+`N_fib=(U_t)_fib`.    (20.34)
+Taking the observer all the way to physical Fourier/helicity mode space, let `dE(m)=|u_m|^2dm`, `dW(m)=T_mdm`.  On occupied modes,
+`N_work,m=(1/2)(dW/dE)(m)u_m`,
+`N_tan:=N-N_work`, `Re(conj(u_m)N_tan,m)=0`,
+`(N_tan)_m=(u_t)_tan,m`.    (20.35)
+Thus the maximal observer removes every possible **instantaneous hidden kinetic-work mechanism**: the work-aligned acceleration is reconstructed by the one actual work law; the remainder is true state rotation/zero-stock acceleration.
+Its next-jet role is also exact.  On an occupied scalar helical mode write
+`eta_m:=N_m/u_m=alpha_m+i gamma_m`.
+Because `F_N=(partial_t+nu Lambda^2)N` and `N=(partial_t+nu Lambda^2)u`,
+`(F_N)_m/u_m=dot eta_m+eta_m^2`.    (20.36)
+Therefore
+`|N_m|^2/|u_m|^2=alpha_m^2+gamma_m^2`,
+`Re(conj(u_m)(F_N)_m)/|u_m|^2=dot alpha_m+alpha_m^2-gamma_m^2`,
+so
+`|N_m|^2+Re(conj(u_m)(F_N)_m)=|u_m|^2(dot alpha_m+2alpha_m^2)`.    (20.37)
+The tangent square cancels exactly.  Equivalently, with `e_m=|u_m|^2`,
+`T_m=(partial_t+2nu rho^2)e_m`,
+`(partial_t+2nu rho^2)^2e_m=2|N_m|^2+2Re(conj(u_m)(F_N)_m)`.    (20.38)
+Thus neither `N_tan` nor the matching `F_N` term is a separate phase-repair cost.  Relative phase still matters because the present stock/work quotient does not determine the next amplitude jet; once the true next jet is retained, there is no parallel tangent mechanism.
+### 20.9 True radial-flux curvature remains a full-state law — EXACT
+Let
+`N2_>(R):=int_(rho>R)|Nhat|^2`,
+`R_N,>(R):=int_(rho>R)Re(conj(uhat)(F_N)hat)`.
+Folding the fixed-mode work-curvature law gives
+`partial_tJ(R)+2nu R^2J(R)+4nu int_R^infinity rJ(r)dr`
+`=2N2_>(R)+2R_N,>(R)`.    (20.39)
+At `R=0`,
+`<u,F_N>=2nu Q-||N||_2^2`.    (20.40)
+When the indicated integrals are finite, or after compact radial localization and passage to the limit,
+`(1/2)d/dt int_0^infinity R J(R)^2dR`
+`+2nu int_0^infinity R^3J(R)^2dR+2nu Q^2`
+`=2int_0^infinity R J(R)[N2_>(R)+R_N,>(R)]dR`.    (20.41)
+The `2nu Q^2` term is genuine viscosity in this reader.  Equation (20.41) is not a new finite budget: the RHS contains the true full-state curvature and may diverge at a singular endpoint.
+### 20.10 Exact remaining theorem — OPEN
+The surviving theorem is now:
+> **No infinite critical full-state recycling.** A smooth true 3D incompressible Navier--Stokes trajectory on a finite interval cannot have one fixed positive hinge level `K_rad(R_kappa,t)=kappa` make unbounded UV excursions while the same true fields satisfy the mother force triangle, the folded radial state/action identities, the genuine viscous front budget (20.15), the flux- and growth-level control-volume families, the state-growth action profile (20.29)--(20.32), the maximal work/tangent decomposition, the true next-stock-jet law (20.36)--(20.38), and all full-pair/heat-fiber convolution identities.
 Equivalently, under the already-proved endpoint grammar: `Y=>bot`.
-
-The especially sharp unresolved subproblem is:
-
-`late UV hard B-regeneration`
-`=>` `late UV neutral-helicity flux-reversal tail`
-`=>` repeated regeneration of `[H/(2S)](Lambda-mu)U` by the moment-orthogonal `N_perp/F_N` dynamics at `R->infinity`,
-
-and then prove that this true-state process cannot continue to a finite endpoint.
-
-What is **not** yet proved:
-
-- that neutral radii from Section 6 must track the hard-shell sequence to unbounded UV;
-- that `N_perp` must synchronize affinely;
-- that action-hump height is monotone or a finite resource;
-- that large `Q`, Lamb action or source-square diagnostics alone contradict smoothness;
-- that a selected pair/triad survives full-convolution cancellation.
-
-Any closure must be an incompatibility among true NS state laws, not a new token, budget, observer clock, genealogy or estimate-defined mechanism.
-
+The sharpened chain is
+`late UV hard state`
+`=>` one fixed `K_rad=kappa` front with `limsup R_kappa=infinity`
+`=>` arbitrarily late outward UV states `R_kappa'>0`
+`=>` positive actual tail-stock growth above the same UV cut
+`=>` stationary-stock growth-level control volumes
+`=>` either a wholly-UV stationary-stock hardening cell, or a one-sided UV state-growth corridor with `dE_t>=0`
+`=>` all radial state motion and all weighted force-triangle defects reconstructed by one positive profile `Gamma_I`
+`=>` only fiber/mode-tangent instantaneous state motion remains, and its square cancels exactly in the true work-curvature combination
+`=>` any further regeneration is a statement about the next actual stock jet / `F_N/G`, not about a parallel phase mechanism.
+What is **not** proved:
+- unbounded `limsup R_kappa` is not yet incompatible with the finite viscous budget (20.15); `L^1_t`-thin UV excursions remain logically possible;
+- wholly-UV stationary-stock cells or one-sided UV state-growth corridors are not yet excluded from re-forming at unbounded scales;
+- the reconstructed radial state profile plus the remaining fiber/tangent state motion has not yet yielded a contradiction at the next true stock jet;
+- no additional monotone action/flux resource has been proved;
+- the RHS of (20.41) is not known to be dominated by its viscous terms near a finite endpoint;
+- large `Q`, Lamb action, or source-square diagnostics alone do not contradict smoothness;
+- no selected pair/triad is assumed to survive full-convolution cancellation.
+Any closure must be an incompatibility among true Navier--Stokes state laws, not a new token, observer clock, genealogy, Hahn split, transfer wallet, or estimate-defined mechanism.
 ## 21. QED hook
-
-Once Section 20 is proved, the remaining composition is already assembled:
-
+Once Section 20 is proved, the existing composition is unchanged:
 `T_*<infinity => X vee Y`,
 `X=>bot`,
 `Y=>bot`,
 therefore `T_*<infinity=>bot` and `T_*=infinity`.
-
-See `SOLUTION_MAP.md` for the short proof graph, `PHYSICAL_CORE.md` for the primitive identity basis, `MIXED_FRONTIER.md` for the exhausted false-owner routes, and `FOURTH_DOCUMENT_FINAL_EXHAUSTION.tex` for the conditional endpoint composition.
+See `SOLUTION_MAP.md` for the short proof graph, `PHYSICAL_CORE.md` for the primitive identity basis, `MIXED_FRONTIER.md` for exhausted false-owner routes, and `FOURTH_DOCUMENT_FINAL_EXHAUSTION.tex` for the conditional endpoint composition.

@@ -587,8 +587,9 @@ true NS gives
 
 Thus nonlinearity hardens and viscosity softens along the **same actual radial-shape direction**.  See `BSVO_FULL_STATE_FRONTIER.md` §§8--10.
 
+### Full radial control-volume fold — EXACT / CURRENT SHARPENING
+The canonical derivation is now kept only in `BSVO_FULL_STATE_FRONTIER.md` §20.  In short: `partial_tK_rad+2nu L_rad=Psi_rad`; any fixed `K_rad=kappa` endpoint front has unbounded UV limsup but the genuine viscous budget `8nu kappa int R_kappa dt+2nu int int(rho-2R_kappa)^2de dt<=E(0)`; the `g_tail=partial_tE_(>R)` level family yields stationary-stock hardening cells or one-sided UV growth corridors, reconstructs radial state/work motion exactly, and leaves only the next true stock jet / `F_N/G` as the open regeneration dynamics.  No `O`, phase/tangent repair, or first-contact clock is an independent road.
 ### True curvature/repair field — EXACT
-
 For every fixed mode
 `(partial_t+2nu|k|^2)T_k=2|N_k|^2+2Re(conj(u_k)(F_N)_k)`.
 For every fixed set
@@ -601,7 +602,6 @@ The same true source is read through
 See `BSVO_FULL_STATE_FRONTIER.md` §§11--13.
 
 ### Microscopic convolution guard and exact remaining theorem
+The full-polarization pair Pythagoras, reality-companion outward leak, corrected nonlinear-silent one-triad terminal class, heat-fiber Laplace rigidity, pair-rate synchronization and the conditional affine-rigidity theorem remain exact.  They now serve to constrain the refined `N_shape/N_fib/F_N` freedom rather than define a parallel proof architecture.  See `BSVO_FULL_STATE_FRONTIER.md` §§15--20.
 
-The full-polarization pair Pythagoras, reality-companion outward leak, corrected nonlinear-silent one-triad terminal class, heat-fiber Laplace rigidity, pair-rate synchronization and the conditional affine-rigidity theorem remain exact.  They now serve to reconstruct/limit the moment-orthogonal `N_perp/F_N` freedom rather than define a parallel proof architecture.  See `BSVO_FULL_STATE_FRONTIER.md` §§15--18.
-
-These laws still do **not** prove `Y=>bot`.  The precise open block is to exclude unbounded-scale regeneration of the forced neutral-tail sorter by the true moment-orthogonal `N_perp/F_N` dynamics while all exact full-pair/heat-fiber laws remain satisfied.  Equivalently: **No infinite critical full-state recycling.**  See `BSVO_FULL_STATE_FRONTIER.md` §20.
+These laws still do **not** prove `Y=>bot`.  The precise open block is now to exclude unbounded excursions of one fixed `K_rad=kappa` front while its true viscous budget remains finite.  At every outward UV state the full growth family forces either a wholly-UV stationary-stock hardening cell or a monotone UV state-growth corridor; radial state/work shape is already reconstructed, and the remaining tangent freedom is not a separate work-curvature mechanism.  What is still open is whether the next true stock jet / `F_N/G` can keep re-forming those states on `L^1_t`-thin UV excursions.  Equivalently: **No infinite critical full-state recycling.**  See `BSVO_FULL_STATE_FRONTIER.md` §20.
