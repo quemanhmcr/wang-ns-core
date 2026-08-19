@@ -471,57 +471,91 @@ For every proposed frontier lemma ask: **what exact true Navier–Stokes structu
 The identities and structural laws above are exact or exact-conditional as labelled.  Randomized triads, Galerkin/FFT probes, CI runs and stress tests in the source repository are evidence against implementation mistakes, not mathematical substitutes for the continuum proofs.
 The hard-state **kinetic-energy layer** is exact: earlier modal stock and canonical boundary inflow are the only suppliers; viscosity/outflow are losses.  Signed-good inflow has the `5/8` donor geometry; same-time donor reroot has zero depth; and the resolved `K/S` split adds no recursive owner—`K` is conservative relink while fine `S+` is an inherited low-root `dW-` restriction whose recipient pushforward is canonical bad work.  Pure-`G` funding is radial-cut rooted and total radial variation collides with actual hard-shell concentration `mu_sh`; no independent inward-reuse currency remains.  Finite singularity forces arbitrarily late UV-fresh first contacts and, independently, unbounded cumulative signed enstrophy source after every late time.  Signed-curl/Betchov and Biot--Savart/material-pair formulas are exact representations of the same primitive state/source, not owners of one another.  The opposite-`Z_tri` witness forbids atomwise sign transfer, while the exact relative-translation witness is stronger: identical modal stocks, all active cubic works and `Q` can have different `dot Q`, because mixed quartic phase geometry survives after the traffic quotient has forgotten it.  Hence the proposed late-traffic/material-pair spacetime bridge is a **false frontier created by quotienting the full state too early**.  No nonredundant representation/ontology frontier remains in this architecture.  The unresolved mathematical problem is now the specific direct full-state `B/S/V/O` exclusion: prove that the exact stock/viscosity/outflow grammar cannot recycle critically through the minority-`B` full-state gate to a finite singular endpoint.  The frontier is not another bridge, reader, Hahn split, budget or genealogy.  See `BSVO_FULL_STATE_FRONTIER.md` and `MIXED_FRONTIER.md`.
 
-## 14. Full-state critical-action and `B/S/V/O` road laws — EXACT / CURRENT FRONTIER
+## 14. Full-state mother law and current `B/S/V/O` frontier — EXACT / CURRENT FRONTIER
 
-The representation frontier is closed; future dynamics must be read from the primitive state.  Put
-`N=-P(u.grad u)=P(u x omega)` and `Lambda=(-Delta)^(1/2)`.  Since
-`N=u_t+nu Lambda^2u`, Hilbert algebra gives the exact critical action law
-`||N||_Hdot^(-1/2)^2=||u_t||_Hdot^(-1/2)^2+nu^2||u||_Hdot^(3/2)^2+nu d||u||_Hdot^(1/2)^2/dt`.
-For every fixed Fourier/helicity set `A`, the same identity holds after `P_A`; thus sidecar stock `S` and viscosity `V` occur as positive terms of one exact full-state identity, not as invented payments.
+The representation frontier is closed.  The canonical remaining derivation is now organized in `BSVO_FULL_STATE_FRONTIER.md` from the true mother law
+`N=u_t+nu Lambda^2u`,
+not from a cancellation taxonomy.  This core keeps only the primitive identities needed to enter that file.
 
-### Nonlinear vorticity acceleration — EXACT
+### Fixed-set force triangle + Kirchhoff — EXACT
 
-Define the genuine field
-`G:=curl N`.  Curling the velocity equation and using the vorticity equation gives
-`G=omega_t-nu Delta omega=S omega-(u.grad)omega=[omega,u]`.
-Moreover
+For every fixed Fourier/helicity projector `P`, with actual net nonlinear boundary work
+`W_P=2<Pu,PN>=phi_(in,P)-phi_(out,P)`,
+
+`nu W_P=||Lambda^-1PN||_2^2-||Lambda^-1Pu_t||_2^2+nu^2||Lambda Pu||_2^2`,
+
+and
+
+`d||Pu||_2^2/dt+2nu||Lambda Pu||_2^2=W_P`.
+
+The usual critical-action law is the radial layer-cake of this fixed-set identity.  Sidecar stock and viscosity are therefore terms of one true control-volume law, not independent currencies.  See `BSVO_FULL_STATE_FRONTIER.md` §§2--4.
+
+### Signed-curl action profile — EXACT
+
+Put `x=s|k|` and push actual modal work to `dW_t(x)`.  Energy/helicity give
+`int dW=int x dW=0`.
+Define
+`F(a)=int_(x>a)dW`,
+`Psi(a)=int(x-a)_+dW`,
+and with `C=curl`, `M_a=|C-a|`,
+
+`A(a):=||M_a^(1/2)Lambda^-1N||^2-||M_a^(1/2)Lambda^-1u_t||^2+nu^2||M_a^(1/2)Lambda u||^2`.
+
+Then
+
+`A(a)=2nu Psi(a)`,
+`F(a)=-(1/(2nu))A_a(a)`,
+`dW=(1/(2nu))A_(aa)` distributionally.
+
+Also
+`P_(1/2)^NL=2Psi(0)` and `Q=int Psi(a)da`.
+Thus critical production, radial/signed-curl traffic and vortex stretching are readings of one actual work/action profile.  This profile is not dynamically closed; its time curvature uses the true `F_N`.  See `BSVO_FULL_STATE_FRONTIER.md` §§3--5 and §11.
+
+### Neutral-helicity hardening tail — EXACT on smooth finite-energy `R^3`
+
+If `P_(1/2)^NL>0`, continuity of the signed-radius cumulative work profile gives a positive maximum `a_*` with `F(a_*)=0`.  Choosing the corresponding single-helicity tail `P_(sigma,R_*)` yields, with `U=Pu`,
+
+`2<U,PN>=0`,
+`H:=2<Lambda U,PN>>=P_(1/2)^NL/2>0`.
+
+Thus the tail has zero nonlinear kinetic-energy source but positive helicity/critical transfer.  At a nondegenerate maximum, a shallower same-helicity tail is net donor while a deeper one is net recipient.  On torus/discrete signed radii retain the sign/equal-moment statement rather than asserting a continuous zero.  See `BSVO_FULL_STATE_FRONTIER.md` §§6--7.
+
+### Forced radial sorter versus moment-orthogonal complexity — EXACT
+
+On that frozen neutral tail set
+`E=||U||^2`, `mu=<Lambda U,U>/E`, `V=(Lambda-mu)U`, `S=||V||^2`.
+Then `S>0` and
+
+`PN=[H/(2S)]V+N_perp`,
+`N_perp perp U,V`, hence `<Lambda U,N_perp>=0`.
+
+The first term is the unique full-state component carrying all kinetic-neutral / critical-positive hardening; modewise its work is
+`T_sort=(H/S)(rho-mu)|U|^2`, donor below `mu` and recipient above.  All phase, polarization, same-heat and higher-shape freedom that is invisible to the first two radial moments is isolated in `N_perp`.
+
+Writing
+`Lambda^2U=(D_2/E)U+beta V+Z`, `Z perp U,V`,
+`beta=(D_3-mu D_2)/S>2R_*`,
+true NS gives
+
+`U_t=-nu(D_2/E)U+[H/(2S)-nu beta]V+[N_perp-nu Z]`.
+
+Thus nonlinearity hardens and viscosity softens along the **same actual radial-shape direction**.  See `BSVO_FULL_STATE_FRONTIER.md` §§8--10.
+
+### True curvature/repair field — EXACT
+
+For every fixed mode
+`(partial_t+2nu|k|^2)T_k=2|N_k|^2+2Re(conj(u_k)(F_N)_k)`.
+For every fixed set
+`dot W_P+4nu<Lambda Pu,Lambda PN>=2||PN||^2+2<Pu,PF_N>`.
+Therefore persistent donor curvature, neutral-front drift and hump-height regeneration are exact `F_N` projection conditions.  There is no unnamed repair mechanism.
+
+The same true source is read through
+`G=curl N=omega_t-nu Delta omega=S omega-(u.grad)omega`,
 `G_t-nu Delta G=[G,u]+[omega,N]-2nu sum_j[partial_j omega,partial_j u]`.
-Thus every nonlinear re-entry after stock or viscous loss must be realized by the same pressure-free full-state acceleration; the last term is the exact diffusion/product commutator, not a fourth source.
+See `BSVO_FULL_STATE_FRONTIER.md` §§11--13.
 
-### Pressure/strain reflection — EXACT
+### Microscopic convolution guard and exact remaining theorem
 
-Let `A=grad u=S+Omega`, `g=-Delta p=|S|^2-|omega|^2/2`, `M=S^2+Omega^2` and `R=M+Hess p=-(D_tS-nu Delta S)`.  Piola implies, at every nonzero Fourier output `q` with `e=q/|q|`,
-`Rhat(q)=Mhat(q)-2<Mhat(q),e tensor e>_F e tensor e`.
-Hence pressure is a Householder reflection of the quadratic strain forcing: `|Rhat(q)|_F=|Mhat(q)|_F` and therefore `||m(Lambda)R||_2=||m(Lambda)M||_2` for every scalar multiplier for which the norms exist.  In particular pressure redistributes geometry but cannot mint a second strain-source magnitude.
+The full-polarization pair Pythagoras, reality-companion outward leak, corrected nonlinear-silent one-triad terminal class, heat-fiber Laplace rigidity, pair-rate synchronization and the conditional affine-rigidity theorem remain exact.  They now serve to reconstruct/limit the moment-orthogonal `N_perp/F_N` freedom rather than define a parallel proof architecture.  See `BSVO_FULL_STATE_FRONTIER.md` §§15--18.
 
-### Closed-triad complex gate — EXACT
-
-For signed roots `alpha<beta<gamma`, let `T_i=c_i Z_tau` be the canonical cyclic work law and `E_i=|a_i|^2`.  The selected triad has one complex interaction amplitude `mathfrak Z_tau=Z_tau+iJ_tau` satisfying `2 conj(a_i)b_i^tau=c_i mathfrak Z_tau`.  With the full modal acceleration split algebraically as `n_i=b_i^tau+r_i^tau`,
-`dot Z_tau+nu Sigma_tau Z_tau=(|Lambda_tau|^2/2)B_tau+M_tau`,
-where `B_tau=c_alpha E_beta E_gamma+c_beta E_gamma E_alpha+c_gamma E_alpha E_beta` and `M_tau=2 sum_i c_i^-1 Re(conj(r_i^tau)b_i^tau)`.
-At a silent gate `Z_tau=0`, direct viscosity contributes no sign flip.  If all three roots are active, `dot Z_tau=J_tau Omega_tau`, `Omega_tau=sum_i Im(conj(a_i)n_i)/E_i`; direct linear viscosity cancels from each modal angular velocity.
-
-### Dangerous opposite-high `O/B` geometry — EXACT ALGEBRAIC CONSEQUENCE
-
-For a true far-UV low-donor triad with two opposite-helicity high roots, the low root is the signed middle root, both highs are recipients, `Z_tau>0`, the radial flux profile is nonnegative across every cut, and the critical production is positive minority-helicity `B` work.  Same-helicity high pairs instead form a radial loop with a farther high donor and have zero or negative critical production.  Thus an outermost recipient of a true `O` atom must lie on the opposite-high positive-critical branch.
-
-At the opposite-high neutral stock surface `B_tau=0`, selected forward work self-brakes the geometry: for active roots, `dot chi_self=-Z_tau sum_i c_i^2/E_i^2`, where `B=(E_alpha E_beta E_gamma)chi`.  Direct differential viscosity has the opposite neutral tilt, `dot B_nu>0`; it changes stock ratios but does not directly rotate phase.  The corresponding selected viscous commutator contribution to angular steering is the same cross-effect, not a second mechanism: at the balanced gate `Z=B=0`, `J dot Omega_comm=(|Lambda_tau|^2/2) dot B_nu`.
-
-### Three-root work rigidity, full-pair leakage and repair — EXACT / EXACT ALGEBRAIC CONSEQUENCE
-
-Any work vector supported on three distinct signed roots and conserving both nonlinear energy and helicity is proportional to `(c_alpha,c_beta,c_gamma)`.  The same statement holds for every time jet of the work while its support remains on those three roots.  Hence a genuinely different radial work direction requires additional signed-root support; pure phase countersteering must be read from full `N/G/F_N`.
-
-The helical pair identity remains exact: `n_(p+q)^(p,q)=(x_q-x_p)P_(p+q)(u_p x u_q)`.  But helical atoms are readers, so full-polarization cancellation must be summed before making a state claim.  For full divergence-free coefficients `U=uhat(p)`, `V=uhat(q)`, `K=p+q`, choose the pair-plane frame `e=K/|K|`, `n parallel p x q`, `t=n x e`, and write `U=A n+B(be-at)`, `V=C n+D(be+(|K|-a)t)`.  Then the exact full-pair Pythagoras is
-`|N_K^(p,q)|^2=|p x q|^2[|BC+DA|^2+((|q|^2-|p|^2)^2/|K|^2)|BD|^2]`.
-For unequal parent radii, full-pair silence is therefore exactly common-normal shear: `N_K^(p,q)=0 iff U,V parallel p x q`.  Equal-radius pairs have the larger exact null manifold `BC+DA=0`; this is why an equiradial mirror cancellation does not determine the sign of the low critical work.
-
-Let `k_1+k_2+k_3=0` be a nondegenerate geometric triad with all three full Fourier coefficients nonzero.  If at least one of its three full pair accelerations is nonzero, reality forces some companion pair `(k_i,-k_j)` with nonzero acceleration at `k_i-k_j`, and exact parallelogram geometry gives `|k_i-k_j|>max_l|k_l|`.  Thus every fully active closed geometric triad leaks an actual pair-acceleration direction beyond its largest root.  The only local stop is full nonlinear silence.  For a real finite-Fourier one-triad state, closure therefore implies `N=0`; the earlier helical-only wording “only homochiral Beltrami” is too narrow.  Non-equilateral closure is common-normal planar shear, while equilateral closure includes the monochromatic `2D3C` family `u=n x grad psi+c rho psi n`, `-Delta psi=rho^2 psi`, with Beltrami only a subfamily.  These are exact heat-decaying terminal states.
-
-At a fixed child, write a helical pair source as `F_e=C_e a_p a_q`, `kappa_e=|p|^2+|q|^2`, and on active parents put `r_k=dot a_k/a_k=n_k/a_k-nu|k|^2`.  The pair-source repair law is exact:
-`dot F_e=(r_p+r_q)F_e`.
-Hence a nondegenerate minimal cancellation circuit can persist only if all its pair sums `r_p+r_q` are equal.  If two cancelling pairs have unequal `kappa`, the real part of this equality forces genuine parent nonlinear radial work to compensate the exact viscous heat-rate mismatch; pure phase steering cannot do it.  Same-heat cancellation is the genuinely hard phase case.  With `eta_k=n_k/a_k` and `h_k=(F_N)_k`, the exact viscosity-free Riccati law is `dot eta_k=h_k/a_k-eta_k^2`.
-
-Direct viscosity also organizes cancellation by physical heat fibers.  Along the frozen heat orbit, the fixed-output source is the vector Laplace transform `N_K[e^(nu tau Delta)u]=int exp(-nu kappa tau)dmu_K(kappa)`.  Whenever the pair-source vector measure has finite variation, vanishing on a time interval implies by Laplace uniqueness that every heat-fiber resultant vanishes separately.  If this holds at every output, the heat orbit is an exact nonlinear-silent NS trajectory.  Thus persistent nonterminal cancellation must either be dynamically repaired through `F_N/G` or remain in the same-heat phase geometry.
-
-Under the explicit additional hypothesis that overlapping cancellation circuits force the modal logarithmic rates to the affine form `r_(k,s)=sigma+i v.k` with the same law across connected helicity sectors, the full field has fixed Fourier shape up to amplitude and translation.  True viscous NS then forces all active modes to one radius and the nonlinearity to be pure translation; all modal nonlinear works vanish.  On a torus this is a smooth decaying traveling relative equilibrium; in finite-energy `R^3`, exact nonzero monochromatic `L^2` support is impossible, so the synchronized state is trivial.  This is a conditional rigidity theorem, not a proof that every cancellation network synchronizes.
-These laws sharply narrow `S/V/O` recycling but do **not** prove `Y=>bot`.  In the continuum, simultaneous pair channels can cancel the forced farther-UV acceleration vector, and tangential phase countersteering is invisible to the two scalar energy/helicity work moments.  The remaining theorem is exactly the no-infinite-critical-full-state-recycling statement recorded in `BSVO_FULL_STATE_FRONTIER.md`.
+These laws still do **not** prove `Y=>bot`.  The precise open block is to exclude unbounded-scale regeneration of the forced neutral-tail sorter by the true moment-orthogonal `N_perp/F_N` dynamics while all exact full-pair/heat-fiber laws remain satisfied.  Equivalently: **No infinite critical full-state recycling.**  See `BSVO_FULL_STATE_FRONTIER.md` §20.

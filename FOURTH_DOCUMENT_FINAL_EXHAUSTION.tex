@@ -977,31 +977,108 @@ This is not a request to reopen an ontology frontier.  It is only the distinctio
 
 The representation frontier is no longer the mathematical unknown.  The surviving problem is a direct full-state statement about how the already-canonical sidecar roads can re-enter the true Navier--Stokes dynamics.  Here $B$ denotes the existing minority-helicity positive-critical work branch and is not a fourth sidecar fate.
 
-\subsection{Critical action and the common nonlinear acceleration}
+\subsection{Mother-law force triangle and signed-curl action profile}
 Put
 \[
-N=-\mathbb P(u\cdot\nabla u)=u_t+\nu\Lambda^2u,
-\qquad G:=\nabla\times N.
+N=-\mathbb P(u\cdot\nabla u)=u_t+\nu\Lambda^2u.
+\]
+For every fixed Fourier--helicity projector $P$, if
+$W_P=2\langle Pu,PN\rangle$ is the actual net nonlinear boundary work, exact Hilbert algebra gives
+\[
+\nu W_P
+=\|\Lambda^{-1}PN\|_2^2
+-\|\Lambda^{-1}Pu_t\|_2^2
++\nu^2\|\Lambda Pu\|_2^2,
+\]
+while the same set obeys Kirchhoff continuity
+\[
+\frac d{dt}\|Pu\|_2^2+2\nu\|\Lambda Pu\|_2^2=W_P.
+\]
+The usual critical-action identity is the radial layer-cake of this fixed-set force triangle.
+
+Now write the helical signed-curl coordinate $x=s|k|$ and push actual modal work to $dW_t(x)$.  Energy and helicity conservation give
+\[
+\int dW_t=0,
+\qquad
+\int x\,dW_t=0.
+\]
+Define
+\[
+\Psi(a,t)=\int (x-a)_+\,dW_t(x),
+\qquad M_a=|\curl-a|,
+\]
+and the quadratic full-state profile
+\[
+\mathcal A(a,t)
+:=\|M_a^{1/2}\Lambda^{-1}N\|_2^2
+-\|M_a^{1/2}\Lambda^{-1}u_t\|_2^2
++\nu^2\|M_a^{1/2}\Lambda u\|_2^2.
 \]
 Then
 \[
-\|N\|_{\dot H^{-1/2}}^2
-=\|u_t\|_{\dot H^{-1/2}}^2
-+\nu^2\|u\|_{\dot H^{3/2}}^2
-+\nu\frac d{dt}\|u\|_{\dot H^{1/2}}^2,
+\boxed{\mathcal A(a,t)=2\nu\Psi(a,t)}.
 \]
-and the same identity holds after every fixed Fourier--helicity projection.  Moreover
+Hence profile slope is actual signed-curl boundary work and profile curvature is actual modal nonlinear work, distributionally.  Moreover
 \[
-G=\omega_t-\nu\Delta\omega
-=S\omega-(u\cdot\nabla)\omega,
+\mathcal P_{1/2}^{NL}=2\Psi(0),
+\qquad
+Q=\int_{\mathbb R}\Psi(a)\,da.
+\]
+Thus critical production and vortex stretching are height/area readings of one actual work/action profile, not independent mechanisms.
+
+\subsection{Neutral-helicity tail and forced radial sorter}
+On a smooth finite-energy $\mathbb R^3$ state with positive critical production, the positive component of $\Psi$ containing zero has a maximum $a_*$.  The corresponding single-helicity tail $P=P_{\sigma,R_*}$ satisfies, with $U=Pu$,
+\[
+2\langle U,PN\rangle=0,
+\qquad
+H:=2\langle\Lambda U,PN\rangle
+\ge \frac12\mathcal P_{1/2}^{NL}>0.
+\]
+Thus the tail has zero nonlinear kinetic-energy source but positive helicity/critical transfer.  Put
+\[
+E=\|U\|_2^2,
+\qquad
+\mu=\frac{\langle\Lambda U,U\rangle}{E},
+\qquad
+V=(\Lambda-\mu)U,
+\qquad
+S=\|V\|_2^2.
+\]
+Then $S>0$ and exact orthogonal projection gives
+\[
+\boxed{
+PN=\frac{H}{2S}(\Lambda-\mu)U+N_\perp,
+\qquad
+N_\perp\perp U,
+\qquad
+N_\perp\perp V.}
+\]
+Hence all kinetic-neutral / critical-positive first-moment hardening is carried by one forced radial sorter.  The surviving phase, polarization, same-heat and higher-shape complexity lies in the moment-orthogonal remainder $N_\perp$.
+
+Writing
+\[
+\Lambda^2U=\frac{D_2}{E}U+\beta V+Z,
+\qquad Z\perp U,V,
+\qquad \beta=\frac{D_3-\mu D_2}{S}>2R_*,
+\]
+true Navier--Stokes gives
+\[
+U_t
+=-\nu\frac{D_2}{E}U
++\left(\frac{H}{2S}-\nu\beta\right)V
++(N_\perp-\nu Z).
+\]
+Thus nonlinearity hardens and viscosity softens along the same actual radial-shape direction.  At a nondegenerate action maximum, the same-helicity tail flux reverses from shallower donor to deeper recipient across the neutral radius.
+
+Finally set $G=\nabla\times N$.  Then
+\[
+G=\omega_t-\nu\Delta\omega=S\omega-(u\cdot\nabla)\omega,
 \]
 with exact pressure-free evolution
 \[
-G_t-\nu\Delta G
-=[G,u]+[\omega,N]
--2\nu\sum_j[\partial_j\omega,\partial_j u].
+G_t-\nu\Delta G=[G,u]+[\omega,N]-2\nu\sum_j[\partial_j\omega,\partial_j u].
 \]
-Thus stock, viscous re-entry and nonlinear outflow all return to one genuine full-state acceleration field.
+The higher work curvature is governed by the genuine field $F_N=N_t-\nu\Delta N$; there is no unnamed repair mechanism.
 
 \subsection{Pressure reflection and triad silent gates}
 Let $M=S^2+\Omega^2$ and $R=M+\nabla^2p=-(D_tS-\nu\Delta S)$.  Piola gives for $q\ne0$, $e=q/|q|$,
@@ -1063,7 +1140,7 @@ Moreover, along the frozen heat orbit the fixed-output source is the vector Lapl
 
 Under the additional explicit hypothesis that overlapping cancellation circuits force the affine synchronization $r_{k,s}=\sigma+i v\cdot k$ across connected helicity sectors, true viscous NS forces a monochromatic fixed shape with nonlinearity equal only to rigid translation; all nonlinear modal works vanish.  This gives a smooth decaying traveling relative equilibrium on a periodic/finite-Fourier setting, while finite-energy $\mathbb R^3$ admits no nonzero exact $L^2$ state supported on one Fourier sphere.  The hypothesis is not known for a general continuum cancellation network.
 
-These statements narrow the physical road further: local active-triad closure, passive unequal-heat cancellation and globally affine synchronized repair are no longer dangerous mechanisms.  The unresolved possibility is continuum same-heat, non-affine, dynamically $F_N/G$-repaired cancellation coupled to repeated critical $B/S/V/O$ re-entry.  The detailed derivations are recorded in \texttt{BSVO\_FULL\_STATE\_FRONTIER.md}; the theorem below remains OPEN.
+These statements narrow the physical road further: local active-triad closure, passive unequal-heat cancellation and globally affine synchronized repair are no longer dangerous mechanisms.  In the current mother-law organization, the older same-heat non-affine loophole survives precisely inside the moment-orthogonal $N_\perp$ and its true $F_N/G$ evolution.  The unresolved problem is whether this remainder can repeatedly regenerate the forced neutral-tail sorter $[H/(2S)](\Lambda-\mu)U$ at unbounded UV scales while all exact full-pair and heat-fiber identities remain satisfied.  The detailed derivations are recorded in \texttt{BSVO\_FULL\_STATE\_FRONTIER.md}; the theorem below remains OPEN.
 
 \section{The final exclusion theorem required for an unconditional QED}
 
@@ -1077,7 +1154,7 @@ Let $u$ be a maximal smooth true three-dimensional incompressible Navier--Stokes
 \end{theorem}
 
 \begin{remark}[Status]
-Theorem \ref{thm:requiredExclusion} remains the only missing implication needed to turn the physical-core programme into a completed global-regularity proof.  The dedicated file \texttt{BSVO\_FULL\_STATE\_FRONTIER.md} now records critical action, $G=\curl N$, pressure reflection, silent-gate and viscous-preparation laws together with full-polarization pair rigidity, universal active-triad outward leakage, corrected nonlinear-silent one-triad closure, heat-fiber Laplace rigidity and exact parent-repair synchronization.  These results reduce the surviving mechanism to same-heat non-affine $F_N/G$-repaired continuum cancellation, but do not prove \eqref{eq:YbotRequired}.  The quartic phase law also forbids replacing the missing theorem by an invented traffic/material bridge.
+Theorem \ref{thm:requiredExclusion} remains the only missing implication needed to turn the physical-core programme into a completed global-regularity proof.  The dedicated file \texttt{BSVO\_FULL\_STATE\_FRONTIER.md} is now organized from the mother law $N=u_t+\nu\Lambda^2u$: fixed-set force triangles generate the signed-curl action profile, positive criticality forces a kinetic-work-neutral but helicity-hardening single-helicity tail, and the exact decomposition $PN=[H/(2S)](\Lambda-\mu)U+N_\perp$ isolates the forced radial sorter from moment-orthogonal phase/polarization complexity.  Full-pair leakage, heat-fiber rigidity and conditional affine synchronization remain the microscopic guards on that remainder.  These results do not prove \eqref{eq:YbotRequired}; the quartic phase law also forbids replacing the missing theorem by an invented traffic/material bridge.
 \end{remark}
 
 \section{Conditional final composition and QED}

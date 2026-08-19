@@ -115,24 +115,30 @@ See: `PHYSICAL_CORE.md` §14 and `FOURTH_DOCUMENT_FINAL_EXHAUSTION.tex` “The f
 
 ## 10. Exact laws already proved inside the remaining `B/S/V/O` block
 
-Current laws include:
+The dedicated frontier is now organized from one mother law rather than from a cancellation taxonomy:
 
-1. critical-action Kirchhoff for `N`, including fixed-set sidecar form;
-2. pressure-free `G` evolution;
-3. Piola/pressure modewise reflection for material strain forcing;
-4. complex triad silent-gate law and stock polynomial `B_tau`;
-5. self-braking of forward dangerous `O/B` geometry;
-6. differential-viscous preparation at the opposite-high neutral gate;
-7. three-root energy/helicity work rigidity;
-8. full-polarization pair Pythagoras and exact shear/equiradial null geometry;
-9. universal outward reality-companion acceleration for every fully active closed geometric triad;
-10. corrected one-triad closure: nonlinear-silent planar-shear / monochromatic `2D3C`, not only Beltrami;
-11. heat-fiber Laplace rigidity for passive cancellation;
-12. exact pair-source repair synchronization `dot F_e=(r_p+r_q)F_e`;
-13. viscosity-free Riccati steering `dot eta=(F_N/a)-eta^2`;
-14. affine synchronized repair, under its explicit connectivity hypothesis, collapses to regular monochromatic translation/decay.
+`N=u_t+nu Lambda^2u`.
 
-See: `BSVO_FULL_STATE_FRONTIER.md` for the dedicated statement/derivation map.
+Current exact consequences include:
+
+1. modewise and fixed-set force-triangle / Kirchhoff action identity;
+2. signed-curl boundary-work profile `F`, hinge potential `Psi`, and quadratic action profile `A=2nu Psi`;
+3. height/slope/curvature readings: critical source / actual cut flux / actual modal work, with `Q` the profile area;
+4. closed-triad triangular Green profile and divided-difference law as the atomic signed-curl model;
+5. on smooth finite-energy `R^3`, positive critical production forces a kinetic-work-neutral but helicity/critical-positive single-helicity tail;
+6. nondegenerate neutral tails have a shallower-donor / deeper-recipient same-helicity flux reversal;
+7. exact neutral-tail decomposition `PN=[H/(2S)](Lambda-mu)U+N_perp`, where `N_perp` is orthogonal to both kinetic and critical radial moments;
+8. viscosity decomposes on the same radial-shape direction, giving exact nonlinear hardening versus viscous softening of mean tail radius;
+9. moving neutral fronts obey an exact excess-radius stock identity;
+10. actual work curvature obeys `(partial_t+2nu|k|^2)T_k=2|N_k|^2+2Re(conj(u_k)(F_N)_k)`;
+11. `G=curl N` and `F_N` are the genuine fields governing all non-affine reshaping/repair;
+12. Piola pressure reflection remains Hodge/strain completion, not a second supply road;
+13. dangerous outermost `O` atoms are opposite-high positive-critical `B` arches;
+14. full-polarization pair Pythagoras and reality-companion leakage exclude local active-triad closure;
+15. passive inter-heat cancellation is fiberwise by Laplace uniqueness; unequal-heat persistence needs true parent radial work;
+16. affine synchronized repair, under its explicit connectivity hypothesis, collapses to regular monochromatic translation/decay.
+
+See `BSVO_FULL_STATE_FRONTIER.md` for the canonical statement/derivation map.  `PHYSICAL_CORE.md` §14 now keeps only the primitive entry identities and links here rather than duplicating the frontier.
 
 ## 11. The only missing proof block
 
@@ -140,7 +146,7 @@ The remaining theorem is:
 
 `No infinite critical full-state recycling`.
 
-It must show, using only true NS identities, that the surviving continuum **same-heat, non-affine, dynamically `F_N/G`-repaired cancellation** cannot sustain an infinite sequence of critical minority-`B` / `S` / `V` / `O` re-entry toward a finite endpoint.  Unequal-heat passive cancellation, local active-triad closure and globally affine synchronized repair are already routed to exact work/UV leakage or regular terminal physics.
+It must show, using only true NS identities, that repeated late UV critical regeneration cannot keep rebuilding the forced neutral-tail radial sorter `[H/(2S)](Lambda-mu)U` through the moment-orthogonal `N_perp/F_N` freedom at unbounded scales.  The older same-heat non-affine cancellation loophole survives precisely inside this remainder; unequal-heat passive cancellation, local active-triad closure and globally affine synchronized repair are already routed to exact work/UV leakage or regular terminal physics.
 
 Equivalent required implication:
 
