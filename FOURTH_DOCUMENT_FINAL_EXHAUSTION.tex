@@ -458,36 +458,92 @@ M_n\Phi_{\mathrm{in},M_n}
 \end{equation}
 \end{proposition}
 
-\section{The $Y$ branch: same-Hahn $G/B$ refinement}
+\section{The $Y$ branch: same-Hahn $G/B_{\mathrm{bad}}$ refinement}
 
-\subsection{Good and bad are restrictions of the same $dW^+$}
+\subsection{Good and endpoint-complement work are restrictions of the same $dW^+$}
 
-The actual boundary inflow in \eqref{eq:Yquantum} is a restriction of canonical $dW^+$.  Split that same positive law into the signed-good and bad/nonforward restrictions
+The actual boundary inflow in \eqref{eq:Yquantum} is a restriction of canonical $dW^+$.  To make the native signed-good reader explicit, for a forward edge $x+y=z$ put
+\[
+\ell_e:=\log_+\frac{|z|}{\max(|x|,|y|)},
+\qquad
+A_e:=4|z|\,|a_xa_ya_z|,
+\]
+\[
+J_e:=\ell_e\,|s_x|x|-s_y|y||\,\frac{|g_e|}{|z|},
+\qquad
+c_e:=\operatorname{sgn}(s_x|x|-s_y|y|)
+\frac{\Re(\overline{a_z}\,\overline{g_e}a_xa_y)}{|g_ea_xa_ya_z|},
+\]
+with $c_e=0$ on a zero interaction factor.  Let $J_*$ be the sign-exhausted global supremum of $J_e$ on normalized admissible edge geometry and put
+\[
+r_e:=\frac{J_e}{J_*}c_e,
+\qquad \eta_0:=10^{-4}.
+\]
+The physical edge formula gives the exact registration identity
+\begin{equation}\label{eq:nativeEfficiency}
+\boxed{T_e\ell_e=A_eJ_ec_e=A_eJ_*r_e.}
+\end{equation}
+Only after the one Hahn-positive law exists define
+\[
+G:=\{T_e>0:r_e>1-\eta_0\},
+\qquad
+B_{\mathrm{bad}}:=\{T_e>0:r_e\le1-\eta_0\}.
+\]
+These are complementary measurable restrictions of the same $dW^+$, not new work laws.  The reader $r_e$ is not an owner, probability, clock or NS-created threshold.  Moreover $B_{\mathrm{bad}}$ must not be confused with $B_{\mathrm{crit}}$ below, the minority-helicity positive-critical branch determined by the exact critical-moment identity \eqref{eq:minoritymoment}.  The full-state $B/S/V/O$ frontier uses $B=B_{\mathrm{crit}}$.
+
+Thus
 \[
 \Phi_{\mathrm{in},M}
 =
 \Phi_{\mathrm{in},M}^{G}
 +
-\Phi_{\mathrm{in},M}^{B}.
+\Phi_{\mathrm{in},M}^{B_{\mathrm{bad}}},
 \]
-No new Hahn decomposition is taken.  Therefore
+with no new Hahn decomposition.  Therefore
 \begin{equation}\label{eq:GBhalf}
 \boxed{
 M\Phi_{\mathrm{in},M}^{G}\ge\frac{2c_\nu}{5}
 \quad\vee\quad
-M\Phi_{\mathrm{in},M}^{B}\ge\frac{2c_\nu}{5}.
+M\Phi_{\mathrm{in},M}^{B_{\mathrm{bad}}}\ge\frac{2c_\nu}{5}.
 }
 \end{equation}
 
-\subsection{Signed-good geometry}
+\subsection{Signed-good geometry from the exact signed-root identities}
 
-For a signed-good positive-work atom with child $k_c$ and unique energy donor $k_d$,
+For the endpoint spine, no efficiency coordinate is needed after the signed-good restriction has been made.  A signed-good positive-work atom can, after a simultaneous reversal of all helicity signs if necessary, be written with ordered signed roots
+\[
+\alpha=-r<\beta=d<\gamma=c,
+\]
+where $c=|k_c|$ is the main positive recipient, $d=|k_d|$ is the unique energy donor, and $r$ is the simultaneous opposite-helicity side recipient.  The certified physical support window is
 \begin{equation}\label{eq:58geom}
 \boxed{
-\frac35|k_c|<|k_d|<\frac58|k_c|.
+\frac35<\frac dc<\frac58,
+\qquad
+\frac35<\frac rc<\frac58.
 }
 \end{equation}
-Thus a signed-good atom entering a hard radial control cell is a genuine boundary crossing; it cannot be internal circulation of that cell.
+The two exact closed-triad invariants
+\[
+T_\alpha+T_\beta+T_\gamma=0,
+\qquad
+\alpha T_\alpha+\beta T_\beta+\gamma T_\gamma=0
+\]
+leave a one-dimensional work line.  Writing $Z:=\sum_i x_i^2T_i$, the $Z>0$ orientation gives
+\begin{equation}\label{eq:triadRootWorks}
+\boxed{
+T_{-r}=\frac{Z}{(d+r)(c+r)},\qquad
+T_d=-\frac{Z}{(d+r)(c-d)},\qquad
+T_c=\frac{Z}{(c+r)(c-d)}.
+}
+\end{equation}
+Hence $d$ is the unique donor and $-r,c$ are the two positive recipients.  In particular the side/main ratio is the exact identity
+\begin{equation}\label{eq:sideRatioExact}
+\frac{W_{\mathrm{side}}}{W_{\mathrm{child}}}
+=\frac{T_{-r}}{T_c}
+=\frac{c-d}{d+r}
+>\frac{3/8}{5/4}=\frac3{10}.
+\end{equation}
+Therefore, on the deterministic $5/8$ control-volume grid $C=(5R/8,R]$, a $G$ child in $C$ has its unique donor below the lower face and is genuine boundary inflow.  For the original dyadic endpoint shell $P_M$, no such inference is needed: \eqref{eq:GBhalf} has already restricted to actual boundary inflow.  The simultaneous side recipient is a consequence of the same physical triad, not a second event or a second Hahn split.
 
 At a first contact $ME_M=\mu_*$, with
 \begin{equation}\label{eq:mustar}
@@ -513,13 +569,7 @@ Thus pure $G$ cannot be an independent infinite-depth escape road.
 
 \subsection{Universal bad-positive sidecar}
 
-The stronger same-time statement is that every signed-good birth has a simultaneous nonforward side recipient satisfying
-\begin{equation}\label{eq:sideRatio}
-\boxed{
-\frac{W_{\mathrm{side}}}{W_{\mathrm{child}}}>\frac3{10}.
-}
-\end{equation}
-Therefore either branch of \eqref{eq:GBhalf} contains a canonical bad-positive sublaw.  Quantitatively,
+Equation \eqref{eq:sideRatioExact} is the exact same-time side-recipient identity.  Therefore either branch of \eqref{eq:GBhalf} contains a canonical bad-positive sublaw: the $B_{\mathrm{bad}}$ branch is already such a restriction of the original boundary inflow, while the $G$ branch carries the simultaneous nonforward side recipient.  Quantitatively,
 \begin{equation}\label{eq:badquantum}
 \boxed{
 \text{every sufficiently large UV birth carries bad-positive work of child-scale amount}
@@ -530,32 +580,43 @@ This is real recipient kinetic-energy work.  ``Transfer loss'' denotes only a re
 
 \section{The second throat: bad sidecar $\Rightarrow S\vee V\vee O$}
 
-For a $G$ birth, the side recipient has helicity opposite to the unique donor.  Cover the radial interval
+For a $G$ birth, the side recipient has helicity opposite to the unique donor and its radius lies in
 \[
-\left(\frac{3M}{10},\frac{5M}{8}\right]
+\left(\frac{3M}{10},\frac{5M}{8}\right].
 \]
-by the two canonical hard annuli.  For either a $B$-dominant birth or the $G$ sidecar, one obtains a helicity-resolved annulus $A_N$ such that
+Cover this interval by the two hard annuli $P_{M/2}=(M/4,M/2]$ and $P_M=(M/2,M]$, and then by the two helicity signs.  Let
+\[
+q:=\max_A N_A\Phi_{\mathrm{in},A}^{\mathrm{side}}
+\]
+over these four fixed Fourier--helicity cells, where $N_A=M/2$ on the lower radial annulus and $N_A=M$ on the upper one.  The exact bookkeeping is
+\[
+M\Phi_{\mathrm{side}}
+\le 4q+2q=6q.
+\]
+On the $G$ branch, \eqref{eq:GBhalf}, \eqref{eq:badquantum}, and the exact ratio \eqref{eq:sideRatioExact} give $M\Phi_{\mathrm{side}}\ge3c_\nu/25$, hence $q\ge c_\nu/50$.  On the $B_{\mathrm{bad}}$ branch the original shell is already a boundary inflow; splitting only its two helicities gives the stronger $q\ge c_\nu/5$.  Thus in both cases there is a fixed helicity-resolved annulus $A_N$ with the safe universal quantum
 \begin{equation}\label{eq:sidecarIn}
 \boxed{
-N\Phi_{\mathrm{in},A}^{B}
-\ge\frac{3c_\nu}{100}.
+N\Phi_{\mathrm{in},A}^{\mathrm{side}}
+\ge\frac{c_\nu}{50}.
 }
 \end{equation}
-Applying exact mode-set continuity to $A_N$ gives the canonical trichotomy
+No helicity sign is silently assumed fixed before this covering.
+
+Applying exact mode-set continuity to $A_N$ and using only nonnegativity of stock, viscosity and outflow gives the canonical trichotomy
 \begin{equation}\label{eq:SVO}
 \boxed{
-N E_A(t_1)\ge\frac{c_\nu}{100}
+N E_A(t_1)\ge\frac{c_\nu}{150}
 \quad\vee\quad
-N D_A\ge\frac{c_\nu}{100}
+N D_A\ge\frac{c_\nu}{150}
 \quad\vee\quad
-N\Phi_{\mathrm{out},A}\ge\frac{c_\nu}{100}.
+N\Phi_{\mathrm{out},A}\ge\frac{c_\nu}{150}.
 }
 \end{equation}
 Define
 \begin{align*}
-S&:=\left\{N E_A(t_1)\ge\frac{c_\nu}{100}\right\},\\
-V&:=\left\{N D_A\ge\frac{c_\nu}{100}\right\},\\
-O&:=\left\{N\Phi_{\mathrm{out},A}\ge\frac{c_\nu}{100}\right\}.
+S&:=\left\{N E_A(t_1)\ge\frac{c_\nu}{150}\right\},\\
+V&:=\left\{N D_A\ge\frac{c_\nu}{150}\right\},\\
+O&:=\left\{N\Phi_{\mathrm{out},A}\ge\frac{c_\nu}{150}\right\}.
 \end{align*}
 Then the canonical core proves
 \begin{equation}\label{eq:YtoSVO}
@@ -635,13 +696,13 @@ C_{1/2}(t)+2\nu D_{3/2}[0,t]
 =C_{1/2}(0)+2W_{\min}^{\mathrm{signed}}[0,t].
 }
 \end{equation}
-If $T_m>0$, the two interaction parents have the same helicity; the edge is never signed-good.  The canonical core further gives a uniform native non-good efficiency gap.  Consequently
+If $T_m>0$, the two interaction parents have the same helicity; the edge is never signed-good.  Define $B_{\mathrm{crit}}$ to be this positive minority-helicity restriction of the already-canonical $dW^+$.  Then the exact identity \eqref{eq:minoritymoment}, not an efficiency reader, gives
 \begin{equation}\label{eq:allpositivecriticalB}
 \boxed{
-\text{every positive nonlinear creator of critical stock is canonical minority-helicity }B\text{ work}.
+\text{every positive nonlinear creator of critical stock is canonical minority-helicity }B_{\mathrm{crit}}\text{ work}.
 }
 \end{equation}
-Thus no new positive critical-production channel lies outside the already-existing $B$ road.
+This $B_{\mathrm{crit}}$ is the symbol abbreviated to $B$ in the final $B/S/V/O$ frontier.  It is distinct from the endpoint complement $B_{\mathrm{bad}}=G^c$ used only to split the incoming positive law.
 
 \section{Signed curl, enstrophy source, and Betchov identity}
 
@@ -889,11 +950,11 @@ Moreover,
 \begin{equation}\label{eq:canonicalChain4}
 Y\Longrightarrow S\vee V\vee O,
 \end{equation}
-where $S,V,O$ are exactly the sidecar stock, genuine viscous loss, and actual outflow fates in \eqref{eq:SVO}.  There is no independent fourth kinetic-energy fate.  The outflow road is further quotiented into internal circulation or true upward radial flux; helicity recycling has no independent ledger; every positive nonlinear critical-stock creator is minority-helicity $B$ work; pressure and material pair geometry are derived representations of the same full pressure-free vorticity state; and the final quartic phase witness rules out a hidden traffic/material bridge.
+where $S,V,O$ are exactly the sidecar stock, genuine viscous loss, and actual outflow fates in \eqref{eq:SVO}.  There is no independent fourth kinetic-energy fate.  The outflow road is further quotiented into internal circulation or true upward radial flux; helicity recycling has no independent ledger; every positive nonlinear critical-stock creator is minority-helicity $B_{\mathrm{crit}}$ work; pressure and material pair geometry are derived representations of the same full pressure-free vorticity state; and the final quartic phase witness rules out a hidden traffic/material bridge.
 \end{theorem}
 
 \begin{proof}
-The endpoint gate is Theorem \ref{thm:endpointgate}.  Applying the exact last-entry theorem at $\theta=1/5$ gives \eqref{eq:XYraw}, hence \eqref{eq:canonicalChain1}.  Initial $\Hdot^{1/2}$ tail vanishing gives Proposition \ref{prop:Xbot} and therefore \eqref{eq:canonicalChain3}.  Restricting the same canonical $dW^+$ gives the $G/B$ alternative; a $B$-dominant birth already carries bad-positive work, while a $G$ birth carries the simultaneous nonforward side recipient \eqref{eq:sideRatio}.  This gives the universal bad sidecar \eqref{eq:badquantum}.  Helicity-annulus covering gives \eqref{eq:sidecarIn}; exact Kirchhoff continuity gives \eqref{eq:SVO}, hence \eqref{eq:canonicalChain4}.  The outflow and signed-radius quotients are \eqref{eq:Oquotient} and \eqref{eq:VxVrho}; critical production is \eqref{eq:criticalminority}; pressure-free closure is \eqref{eq:vorticity}; and representation frontier exhaustion is Theorem \ref{thm:antiCorrespondence} and Corollary \ref{cor:repExhaustion}.  No additional owner, budget, Hahn split, genealogy, or traffic/material bridge is introduced.
+The endpoint gate is Theorem \ref{thm:endpointgate}.  Applying the exact last-entry theorem at $\theta=1/5$ gives \eqref{eq:XYraw}, hence \eqref{eq:canonicalChain1}.  Initial $\Hdot^{1/2}$ tail vanishing gives Proposition \ref{prop:Xbot} and therefore \eqref{eq:canonicalChain3}.  Restricting the same canonical $dW^+$ gives the $G/B_{\mathrm{bad}}$ alternative; a $B_{\mathrm{bad}}$-dominant birth is already positive boundary inflow, while a $G$ birth carries the simultaneous nonforward side recipient \eqref{eq:sideRatioExact}.  This gives the universal bad sidecar \eqref{eq:badquantum}.  Helicity-annulus covering gives \eqref{eq:sidecarIn}; exact Kirchhoff continuity gives \eqref{eq:SVO}, hence \eqref{eq:canonicalChain4}.  The outflow and signed-radius quotients are \eqref{eq:Oquotient} and \eqref{eq:VxVrho}; critical production is \eqref{eq:criticalminority}; pressure-free closure is \eqref{eq:vorticity}; and representation frontier exhaustion is Theorem \ref{thm:antiCorrespondence} and Corollary \ref{cor:repExhaustion}.  No additional owner, budget, Hahn split, genealogy, or traffic/material bridge is introduced.
 \end{proof}
 
 \section{Why ``no fourth fate'' is not yet $Y\Rightarrow\bot$}
@@ -975,7 +1036,7 @@ This is not a request to reopen an ontology frontier.  It is only the distinctio
 
 \section{Exact progress inside the remaining $B/S/V/O$ block}
 
-The representation frontier is no longer the mathematical unknown.  The surviving problem is a direct full-state statement about how the already-canonical sidecar roads can re-enter the true Navier--Stokes dynamics.  Here $B$ denotes the existing minority-helicity positive-critical work branch and is not a fourth sidecar fate.
+The representation frontier is no longer the mathematical unknown.  The surviving problem is a direct full-state statement about how the already-canonical sidecar roads can re-enter the true Navier--Stokes dynamics.  Here $B$ denotes $B_{\mathrm{crit}}$, the existing minority-helicity positive-critical work branch, and is not the endpoint complement $B_{\mathrm{bad}}$ or a fourth sidecar fate.
 
 \subsection{Mother-law force triangle and signed-curl action profile}
 Put
@@ -1103,7 +1164,7 @@ The exact traffic jet has the form
 where $\mathcal M_\tau$ is the mixed full-state phase interference.  At an active silent gate $Z_\tau=0$, direct viscosity does not rotate phase and $\dot Z_\tau=J_\tau\Omega_\tau$ with $\Omega_\tau$ the sum of the three actual modal angular velocities.
 
 \subsection{Dangerous $O/B$ geometry and full-state leakage}
-For a true far-UV low-donor triad whose two high roots have opposite helicity, the low root is the signed middle root, both high roots are recipients, $Z_\tau>0$, the radial flux profile is nonnegative through every cut, and the critical production is positive minority-helicity $B$ work.  Same-helicity high pairs instead form a radial loop with a farther high donor and have nonpositive critical production.
+For a true far-UV low-donor triad whose two high roots have opposite helicity, the low root is the signed middle root, both high roots are recipients, $Z_\tau>0$, the radial flux profile is nonnegative through every cut, and the critical production is positive minority-helicity $B_{\mathrm{crit}}$ work.  Same-helicity high pairs instead form a radial loop with a farther high donor and have nonpositive critical production.
 
 On three distinct signed roots, any nonlinear work vector conserving both energy and helicity is proportional to the canonical cyclic vector $(c_\alpha,c_\beta,c_\gamma)$; the same is true for any time jet whose work support remains on those roots.  Thus a different radial compensation needs additional signed-root work support, although tangential phase compensation remains invisible to those two scalar moments.
 
@@ -1220,7 +1281,7 @@ M_n\Phi_{\mathrm{in},M_n}\ge4c_\nu/5\\[1mm]
 \Downarrow\qquad\quad\Downarrow\\[-1mm]
 \bot\ \text{ by }\Hdot^{1/2}\text{ tail}
 \qquad
-G\vee B\\[1mm]
+G\vee B_{\mathrm{bad}}\\[1mm]
 \qquad\qquad\Downarrow\ \text{side recipient / first-contact law}\\[1mm]
 \qquad\qquad\text{universal bad-positive sidecar}\\[1mm]
 \qquad\qquad\Downarrow\ \text{helicity annulus + Kirchhoff}\\[1mm]

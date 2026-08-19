@@ -58,7 +58,11 @@ See: `FOURTH_DOCUMENT_FINAL_EXHAUSTION.tex` “Exclusion of `X`”.
 
 ## 5. `Y` is pushed to one bad-positive sidecar
 
-Use the same one-Hahn canonical positive work law.  The signed-good `G` branch has a simultaneous bad side recipient; a `B`-dominant birth is already bad-positive.  After the hard-annulus/helicity covering:
+Use the same one-Hahn canonical positive work law.  Use the native edge reader `r_e=(J_e/J_*)c_e`, `eta0=10^-4`, whose exact physical registration is `T_e ell_e=A_eJ_*r_e`.  On the already-existing `dW+`, define `G={T_e>0,r_e>1-eta0}` and the endpoint complement `B_bad={T_e>0,r_e<=1-eta0}`.  This `B_bad` is **not** the full-state `B_crit` of §8.  On `G` the certified signed-root support is `-r<d<c`, `Z>0`, `3/5<d/c,r/c<5/8`.  The exact triad identities `sum T_i=0`, `sum x_iT_i=0` give
+
+`T_(-r)=Z/[(d+r)(c+r)]`, `T_d=-Z/[(d+r)(c-d)]`, `T_c=Z/[(c+r)(c-d)]`,
+
+so the simultaneous side recipient satisfies `W_side/W_child=(c-d)/(d+r)>3/10`.  Thus a `G` birth produces the sidecar from the same physical triad, while a `B_bad`-dominant birth is already positive boundary inflow.  The reader (`r_e`, `eta0`) is used only for this same-Hahn restriction; after entry into `G`, the endpoint spine uses only the certified physical support and the exact signed-root identities.  After the radial/helicity covering one obtains a fixed helicity annulus with the safe own-scale quantum `N Phi_in,A >= c_nu/50`.
 
 `Y => universal bad-positive sidecar`.
 
@@ -94,9 +98,9 @@ See: `FOURTH_DOCUMENT_FINAL_EXHAUSTION.tex` “Outflow and recycling quotient”
 
 ## 8. Where `B` belongs
 
-`B` is **not** a fourth sidecar fate.  It is the canonical minority-helicity bad-work branch that creates positive critical stock:
+From this point onward `B` means `B_crit`, not the endpoint complement `B_bad`.  It is **not** a fourth sidecar fate.  The exact heterochiral identity `sum_i rho_i T_i=2 rho_m T_m` shows that positive critical production is precisely positive minority-helicity work:
 
-`positive nonlinear d/dt ||u||_Hdot^(1/2)^2 = positive minority-helicity B work`.
+`positive nonlinear d/dt ||u||_Hdot^(1/2)^2 = positive minority-helicity B_crit work`.
 
 Dangerous frontier-advancing true `O` atoms are exactly the opposite-helicity high-high-low positive-critical `B` arches.
 

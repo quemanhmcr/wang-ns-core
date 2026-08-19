@@ -118,9 +118,9 @@ The recurring lesson is: **complexity should be removed only after its physical 
 
 **EXACT ENDPOINT SHARPENING:** finite singularity forces `t_n->T_*`, `M_n->infinity`.  Large shells cannot be initial stock; their final occupied corridors contain an actual interval of length `<=cM_n^-2` carrying a fixed fraction `q_nat` of terminal critical mass as canonical inflow.  Thus UV rebirth is parabolically localized by stock persistence plus viscosity, not by an observer time bin.
 
-**DISTILLED EXACT UV SIDECAR:** every large UV birth carries bad-positive work.  After at most two radial readers, it is actual boundary inflow into a comparable Fourier–helicity set `A` with `N Phi_in,A^B>=3c_nu/100`; Kirchhoff forces `N E_A`, `N D_A`, or `N Phi_out,A` to be at least `c_nu/100`.  No transfer-loss wallet exists.
+**DISTILLED EXACT UV SIDECAR:** every large UV birth carries bad-positive work.  In the endpoint split use the native same-Hahn restrictions `G={r_e>1-eta0}` and `B_bad={r_e<=1-eta0}`, reserving `B_crit` for the later minority-helicity positive-critical branch.  Two radial annuli × two helicities give a safe comparable Fourier–helicity set `A` with `N Phi_in,A^side>=c_nu/50`; Kirchhoff forces `N E_A`, `N D_A`, or `N Phi_out,A` to be at least `c_nu/150`.  No transfer-loss wallet exists.
 
-**DISTILLED EXACT FIRST-CONTACT LAW:** at `M E_M=mu_*`, differential Kirchhoff gives a fixed inflow-rate floor.  If `G` owns it, sharp whole-band work forces a lower interaction shell `R<=5M/8` with `R E_R>=2mu_*`, so finite state descent reaches initial stock or a `B`-rate alternative; no donor genealogy is used.
+**DISTILLED EXACT FIRST-CONTACT LAW:** at `M E_M=mu_*`, differential Kirchhoff gives a fixed inflow-rate floor.  If `G` owns it, sharp whole-band work forces a lower interaction shell `R<=5M/8` with `R E_R>=2mu_*`, so finite state descent reaches initial stock or a `B_bad`-rate alternative; no donor genealogy is used.
 
 **DISTILLED EXACT HELICITY QUOTIENT:** for signed radius `x=s|k|`, triad helicity conservation and the two-flow donor kernel give `V_x<=2V_rho`; helicity-flip sidecar outflow and same-helicity radial outflow therefore share the existing radial-variation ledger.
 
