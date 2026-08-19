@@ -1,6 +1,7 @@
 # Physical Core
 
 This file contains the smallest current theorem basis needed to stand at the mixed frontier.  It deliberately preserves physical type: stock is not work, work is not capacity, a witness is not a source, same-time redistribution is not between-time generation, and an observer coordinate is not a physical clock.
+The reusable discipline behind these choices is stated in `CONTROL_VOLUME_METHOD.md`: begin from exact physical control-volume continuity, then use families of cuts as readers rather than inventing mechanisms.
 
 ## 1. Native PDE and ontology
 

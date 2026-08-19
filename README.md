@@ -1,6 +1,6 @@
 # Wang–NS Physical Core
 
-A six-document distillation of the current Wang–Navier–Stokes physical-road exhaustion programme.
+A seven-document distillation of the current Wang–Navier–Stokes physical-road exhaustion programme.
 
 Source programme: [`quemanhmcr/wang-ns-triad-diamond`](https://github.com/quemanhmcr/wang-ns-triad-diamond), read only from `main`.  The source baseline used for this distillation is `main@63178b0e7f9fabdfd8c344dab938a3d639639df5` (2026-08-13), whose latest upstream theorem state is the native material-service causal quotient.  This distill also records later **deductions obtained by composing already-certified upstream identities**; each such deduction is labelled explicitly.
 
@@ -8,22 +8,23 @@ There is **no claim yet of a proof of 3D Navier–Stokes global regularity**.  T
 
 ## Repository invariant
 
-This repository intentionally contains exactly **six tracked documents**:
+This repository intentionally contains exactly **seven tracked documents**:
 
 1. `README.md` — map, status legend, historical purification, reading order.
-2. `PHYSICAL_CORE.md` — the smallest current basis of physical objects and exact identities.
-3. `MIXED_FRONTIER.md` — exhausted observer/owner routes and the exact remaining frontier.
-4. `FOURTH_DOCUMENT_FINAL_EXHAUSTION.tex` — formal endpoint synthesis and the conditional final composition.
-5. `SOLUTION_MAP.md` — short Clay-to-QED proof graph with proof-location links.
-6. `BSVO_FULL_STATE_FRONTIER.md` — the dedicated remaining `B/S/V/O` full-state proof block.
+2. `CONTROL_VOLUME_METHOD.md` — reusable methodology: exact control-volume families before mechanisms or estimates.
+3. `PHYSICAL_CORE.md` — the smallest current basis of physical objects and exact identities.
+4. `MIXED_FRONTIER.md` — exhausted observer/owner routes and the exact remaining frontier.
+5. `FOURTH_DOCUMENT_FINAL_EXHAUSTION.tex` — formal endpoint synthesis and the conditional final composition.
+6. `SOLUTION_MAP.md` — short Clay-to-QED proof graph with proof-location links.
+7. `BSVO_FULL_STATE_FRONTIER.md` — the dedicated remaining `B/S/V/O` full-state proof block.
 
 No theorem implementation, regression code, result archive, PR history, packet scaffolding or CI transcript belongs here.  If a future edit grows a core file without changing the frontier, compress before merging.
 
-Target line budgets: `README <= 190`, `PHYSICAL_CORE <= 572`, `MIXED_FRONTIER <= 420`, `SOLUTION_MAP <= 180`, `BSVO_FULL_STATE_FRONTIER <= 560`.
+Target line budgets: `README <= 190`, `CONTROL_VOLUME_METHOD <= 100`, `PHYSICAL_CORE <= 572`, `MIXED_FRONTIER <= 420`, `SOLUTION_MAP <= 180`, `BSVO_FULL_STATE_FRONTIER <= 560`.
 
-## How to read the six files
+## How to read the seven files
 
-For the shortest route, read `SOLUTION_MAP.md`, then `PHYSICAL_CORE.md`, then `BSVO_FULL_STATE_FRONTIER.md`.  Read `MIXED_FRONTIER.md` when auditing why older owner/bridge routes are forbidden, and `FOURTH_DOCUMENT_FINAL_EXHAUSTION.tex` for the formal endpoint synthesis and conditional QED composition.  A physicist should not need the source repository to understand the current theorem architecture; the source repository is needed only to inspect upstream proofs, constants, certification evidence or historical derivations.
+For the shortest route, read `CONTROL_VOLUME_METHOD.md` first for the proof discipline, then `SOLUTION_MAP.md`, `PHYSICAL_CORE.md`, and `BSVO_FULL_STATE_FRONTIER.md`.  Read `MIXED_FRONTIER.md` when auditing why older owner/bridge routes are forbidden, and `FOURTH_DOCUMENT_FINAL_EXHAUSTION.tex` for the formal endpoint synthesis and conditional QED composition.  A physicist should not need the source repository to understand the current theorem architecture; the source repository is needed only to inspect upstream proofs, constants, certification evidence or historical derivations.
 
 The key discipline is:
 

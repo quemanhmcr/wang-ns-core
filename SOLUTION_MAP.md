@@ -1,6 +1,7 @@
 # Solution Map: Clay Statement to the Remaining QED Arrow
 
 This file is the shortest proof-location map.  It is not a proof by itself and it does **not** claim that the final arrow has been proved.
+Methodological convention: every road below is first typed by the exact control-volume discipline in `CONTROL_VOLUME_METHOD.md`.
 
 ## 1. Clay target
 
