@@ -1574,6 +1574,180 @@ There is no static dangerous refuge, no principal first-order same-to-opposite h
 \]
 The right side must be expressed entirely through existing NS/NEO owners; no coherence wallet, companion genealogy, new clock or observer source is allowed. If such a bound is proved, the forced endpoint divergence of \(J_{\rm flip}\) contradicts finite physical action and closes the recycling loop. At present this estimate is **OPEN**.
 
+
+## 95. Second NEO jet has a cubic near-phase null — EXACT ZERO STRUCTURE / DEDUCTION / AUDIT
+The first NEO jet already has the exact same-to-opposite selection rule
+\[
+\Pi_{-h}(n)\,(i a\times)\,\Pi_h(n)=0.
+\]
+At the next longitudinal jet the ambient helicity Hessian has the exact double-increment representation
+\[
+B_H^{\rm amb}(u,v)f(x)
+=PV\!\int \nabla^2K_H(x-y):(\delta u\otimes\delta v)f(y)\,dy.
+\]
+For two direction frequencies \(q,p\) and a carrier \(\ell\), the two velocity increments force the localized Fourier symbol to vanish when \(q=0\) or \(p=0\). Projecting the output at \(k=\ell+q+p\) to the opposite helicity sheet adds the fixed-frame NEO zero when \(q+p=0\). Therefore, on a deep-near localization
+\[
+|q|+|p|\le \eta |\ell|,\qquad 0<\eta<1,
+\]
+smooth divisibility and homogeneity give the trilinear symbol bound
+\[
+\boxed{
+\|\Pi_{-h}(k)B_H^{\rm amb}(u,u)\Pi_h(\ell)\|
+\le C_\eta\frac{|q|\,|p|\,|q+p|}{|\ell|}.
+}
+\]
+For the intrinsic Hessian, when the two direction slots coincide one has
+\[
+B_H(u,u)=C_H(u,u)-HA_u^2,
+\]
+and \(HA_u^2\) is helicity diagonal. Hence the same opposite-sheet block belongs to the free Codazzi tensor itself:
+\[
+\boxed{
+\Pi_{-h}C_H(u,u)\Pi_h
+=
+\Pi_{-h}B_H(u,u)\Pi_h.
+}
+\]
+After the endpoint \(\Lambda^{-1}\) reading, the deep-near free phase symbol is therefore of size
+\[
+\boxed{
+\frac{|q|\,|p|\,|q+p|}{|\ell|^2}.
+}
+\]
+Finite Fourier audits give the expected \(|\ell|^{-1}\) decay before the final \(\Lambda^{-1}\), and cubic decay under \((q,p)\mapsto\varepsilon(q,p)\). This is a second-jet NEO selection rule, not a new source or finite norm budget. In particular, spatial order counting alone does not prove the required \(L_t^2H_x^{-1}\) endpoint bound: naive use of two viscous \(L_t^2\) factors loses time integrability.
+
+A useful proof partition follows from matching this cubic null to the half-derivative gap isolated by the heat-fiber analysis. If the carrier/output scale is \(K\) and the largest direction scale is \(Q\), then
+\[
+|\Lambda^{-1}C_H^{\rm near}|\sim \frac{Q^3}{K^2}.
+\]
+For a fixed UV excision scale \(L\), the threshold
+\[
+\boxed{Q\le L^{1/6}K^{5/6}}
+\]
+gives
+\[
+\boxed{\frac{Q^3}{K^2}\le L^{1/2}K^{1/2}.}
+\]
+Thus the cubic NEO null supplies exactly the missing half derivative at the symbolic level. The complement contains a true direction/root at scale \(\gtrsim L^{1/6}K^{5/6}\), where the square anchor \(C^2\) is nonzero. This is a structural near/far split only; no analytic closure is claimed.
+
+## 96. Reflection coherence is owned by radial variance — EXACT / DEDUCTION
+The exact hard-flip coefficient from the same-helicity parent pair obeys a sharper radial-mismatch gate than the child-scale bound. From the algebra used in the hard-symbol theorem,
+\[
+\left(\frac{2\sqrt2\,G_{\rm flip}}{Q}\right)^2
+\le 4d^2(1-d^2),
+\qquad d=\frac{|P-M|}{Q},
+\]
+so
+\[
+\boxed{G_{\rm flip}\le \frac{|P-M|}{\sqrt2}.}
+\]
+For one helicity sheet, with radial energy measure \(de_h\), energy \(E_h\), mean radius \(r_h\), and radial variance
+\[
+D_h=\|(\Lambda-r_h)u_h\|_2^2,
+\]
+the pairwise variance identity is
+\[
+\boxed{
+\iint(\rho-\eta)^2\,de_h(\rho)de_h(\eta)=2E_hD_h.
+}
+\]
+With the canonical unordered edge normalization this yields the refined microscopic hard-source estimate
+\[
+\boxed{
+S_{2,{\rm flip},h}\le \frac{C_F^2}{2}E_hD_h.
+}
+\]
+Since \(D_h\le\|\Lambda u_h\|_2^2\), the original kinetic dissipation owns its spacetime action:
+\[
+\boxed{
+\int_0^{T_*}D_h(t)\,dt<\infty.
+}
+\]
+Therefore the same-heat reflection corridor has no hidden coherent refuge. Away from the Beltrami equator it emits side companions; suppressing that side leakage forces \(P-M\to0\), and the original hard source then becomes sterile at a rate controlled by the already-owned radial variance. This is the quantitative NEO form of heat-optimal critical sterility.
+
+## 97. Reciprocal coherence amplifies companion source-square by the missing heat factor — DEEP-FIBER DEDUCTION
+The other nontrivial aligned equal-heat projective configuration is the reciprocal-\(\beta\), orthogonal-plane pair from the complete source-line classification. Let the common child have radius \(Q>0\), and let the same-helicity parent separation be
+\[
+r=R(\sin\gamma\,e_1+\cos\gamma\,\widehat q),
+\qquad R/Q\to\infty.
+\]
+Expanding the exact geometric coefficient \(G_{ab}\) on this reciprocal quartet gives
+\[
+G_{\rm ss}=Q|\sin\gamma\cos\gamma|+o(Q),
+\qquad
+G_{\rm mix}=Q+o(Q),
+\]
+while one of the two complete companion partitions has
+\[
+G_{\rm small}=\frac{\sqrt3}{4}Q|\cos\gamma|+o(Q),
+\qquad
+G_{\rm large}=\frac R2+o(R).
+\]
+The exact amplitude cancellation in each four-mode partition therefore gives
+\[
+\boxed{
+\chi_{\rm geom}^2
+=
+\frac{\sqrt3}{8}\frac{R}{Q|\sin\gamma|}(1+o(1))
+\ge
+\frac{\sqrt3}{8}\frac RQ(1+o(1)).
+}
+\]
+Thus a deep reciprocal cancellation cannot remain a cheap two-atom coherence. To cancel a child-scale source at radius \(Q\), it emits a companion source-square amplified by the parent/child ratio \(R/Q\). This is precisely the factor missing from the abstract heat-fiber Cauchy argument. It is an actual quartet leakage of the true convolution, not a new budget.
+
+## 98. Diamond coarea converts reciprocal leakage into the endpoint child \(H^{-1}\) weight — DEEP-FIBER DEDUCTION / AUDIT
+The exact analytic diamond incidence measure for two same-output parent orbits is
+\[
+\boxed{
+ d\Xi=\frac{dp\,dp'\,d\mathcal H^2(y)}{16|p-p'|}.
+}
+\]
+In the reciprocal orthogonal geometry above,
+\[
+|p-p'|=\frac R{\sqrt2}+o(R).
+\]
+Consequently the companion amplification and the incidence Jacobian cancel the deep parent scale:
+\[
+\boxed{
+\frac{\chi_{\rm geom}^2}{|p-p'|}
+\longrightarrow
+\frac{\sqrt6}{8Q|\sin\gamma|}
+\ge
+\frac{\sqrt6}{8Q}.
+}
+\]
+The surviving weight is exactly the inverse child radius \(Q^{-1}\), i.e. the Fourier weight of the final \(\Lambda^{-1}\) endpoint source. This is a structural explanation of how the missing half-heat factor can reappear as physical companion multiplicity rather than as static parent-symbol decay.
+
+A finite-geometry sweep is consistent with the stronger scale-free inequality
+\[
+\boxed{
+\frac{Q\,\chi_{\rm geom}^2}{|p-p'|}\ge\frac{\sqrt6}{8}
+}
+\]
+throughout the reciprocal family, with equality approached in the deep-fiber limit. At present this stronger uniform statement is classified only as **AUDIT / CANDIDATE LEMMA**; an exact algebraic proof is still required before it can be used in the proof graph.
+
+## 99. Sharpened NEO coherence--incidence theorem target — CANDIDATE PRINCIPLE / OPEN
+The endpoint coherence problem can now be split by the exact projective zero set. If a heat-fiber resultant has efficiency close to its total microscopic variation, the pairwise projective variance forces most coherent mass toward one of only two nontrivial aligned geometries:
+
+1. **reflection / equal-\(\beta\)**: either side-companion leakage remains visible, or the configuration approaches the Beltrami equal-radius null, where the hard source-square is controlled by the finite radial-variance action of Section 96;
+2. **reciprocal / orthogonal-plane**: companion incidence amplifies source-square by \(R/Q\), and the exact diamond coarea cancels the parent factor \(R\), leaving the endpoint child weight \(Q^{-1}\) as in Section 98.
+
+Away from these aligned sets, projective separation contributes directly to the exact resultant variance deficit and cannot sustain near-perfect macroscopic coherence.
+
+This suggests a more precise form of the open estimate in Section 94. On each actual high heat fiber one seeks a scale-free inequality of the schematic form
+\[
+\boxed{
+\text{coherent hard pair mass at child }Q
+\ \lesssim\
+\text{projective variance}
++\text{radial-sterile hard square}
++\text{diamond companion square with }Q^{-1}\text{ incidence}.
+}
+\]
+Every term is only a reading of existing NS/NEO objects: actual vector-source variance, the kinetic-owned radial defect, actual companion source-square, and the existing \(\Lambda^{-1}\) endpoint weight. No coherence wallet, genealogy, observer source, or new clock is introduced.
+
+The remaining analytic seam is now concrete: **global companion-incidence multiplicity**. One must prove that, after integrating over the full actual edge space, the map from coherent source pairs to companion diamonds has summable multiplicity and does not recreate the continuum factor removed by the coarea cancellation. If this global incidence theorem holds, the coherence--leakage estimate of Section 94 would be reduced to already-owned microscopic square action plus genuine square-anchor repair. If the multiplicity is not summable, the exact form of that failure identifies the next NEO jet that must be used. No such global incidence theorem is claimed here.
+
 ---
 
 ## Compact suspected essence
