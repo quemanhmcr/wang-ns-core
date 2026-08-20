@@ -1285,6 +1285,135 @@ That change of question is the main result of this note.
 
 ---
 
+## 86. Quantitative conservation of visibility — EXACT / DEDUCTION
+At the physical hinge, let
+\[
+\mathcal U(t):=\int |x|\,dM_t(x)
+=\|u(t)\|_{\dot H^{1/2}}^2+2\nu\int_0^t\|\Lambda^{3/2}u\|_2^2\,d\tau .
+\]
+Then
+\[ \boxed{\mathcal U'=W_\Lambda.} \]
+Define the representation-free critical visibility speed
+\[ \boxed{\mathfrak v(t):=\frac{W_\Lambda(t)^2}{\mathcal U(t)}} \]
+on every nontrivial smooth time slice, so that
+\[ \boxed{(\sqrt{\mathcal U})'=\frac{W_\Lambda}{2\sqrt{\mathcal U}}.} \]
+If a finite endpoint forces \(\mathcal U(t_n)\to\infty\) along \(t_n\uparrow T_*<\infty\), then for every later smooth time \(s<T_*\),
+\[ \boxed{\int_s^{T_*}\mathfrak v(t)\,dt=\infty.} \]
+Indeed, finiteness of the integral would give by Cauchy--Schwarz
+\[
+|\sqrt{\mathcal U(t)}-\sqrt{\mathcal U(s)}|
+\le \frac12(T_*-s)^{1/2}
+\left(\int_s^{T_*}\mathfrak v\,dt\right)^{1/2},
+\]
+contradicting unbounded critical variation.
+The same scalar speed has three simultaneous exact faces. First, from
+\[
+W_\Lambda=\langle u,L_u u\rangle,
+\qquad L_u=[\nabla_u,\Lambda],
+\]
+and \(\|\Lambda^{1/2}u\|_2^2\le\mathcal U\),
+\[ \boxed{\mathfrak v\le\|\Lambda^{-1/2}L_u u\|_2^2.} \]
+Second, from
+\[
+W_\Lambda=4\langle\Lambda u,J_{\rm flip}\rangle,
+\]
+\[
+\boxed{\mathfrak v\le16\|\Lambda^{1/2}J_{\rm flip}\|_2^2.}
+\]
+Third, from
+\[
+W_\Lambda=-\int S:G\,dx,
+\qquad G\succeq0,
+\qquad \int\operatorname{tr}G\,dx=\|u\|_{\dot H^{1/2}}^2\le\mathcal U,
+\]
+the weighted matrix Cauchy inequality
+\[
+|S:G|^2\le \operatorname{tr}G\,\operatorname{tr}(S^2G)
+\]
+and spatial Cauchy give
+\[
+\boxed{\mathfrak v\le\int\operatorname{tr}(S^2G)\,dx.}
+\]
+All statements are understood on smooth compact slabs; if one displayed carrier is already infinite, its forced-divergence conclusion is immediate. Infrared localization may be inserted in the radial formula before passing to the nonzero-spectrum limit.
+**DEDUCTION.** A finite singular endpoint cannot choose one inexpensive disguise for critical growth. It must force infinite time action simultaneously in the radial connection, the anti-equivariant angular/torsion face, and the strain/Poisson-Gram face:
+\[
+\int^{T_*}\|\Lambda^{-1/2}L_u u\|_2^2dt
+=\int^{T_*}\|\Lambda^{1/2}J_{\rm flip}\|_2^2dt
+=\int^{T_*}\!\int\operatorname{tr}(S^2G)\,dxdt
+=\infty
+\]
+in the sense that each integral is forced to diverge by the common lower obstruction \(\int\mathfrak v=\infty\). This is a quantitative form of conservation of visibility; none of the three right-hand quantities is promoted to a new physical wallet.
+
+## 87. The visibility speed sharpens the double-involution gauntlet — DEDUCTION
+Part III isolates a local Riccati candidate amplifier through
+\[
+\mathcal E_\lambda\approx0,
+\qquad D_tJ_A\approx0,
+\qquad D_t\lambda\approx\lambda^2,
+\]
+while the global curl-polar geometry requires positive and repeatedly regenerated \(W_\Lambda\). Section 86 adds a necessary finite-time synchronization condition: any shrinking-scale Riccati realization that genuinely feeds critical blow-up must also generate the same nonintegrable scalar speed \(\mathfrak v\) in all three global polar faces.
+Thus the local and global demands can be separated more sharply:
+\[
+\boxed{
+\text{local phase locking of }J_A
+\quad+\quad
+\int^{T_*}\mathfrak v=\infty
+\quad+\quad
+\text{global polar compatibility of }H,\Lambda,-\Delta .
+}
+\]
+A proposed regularity mechanism need not show that every dangerous local Riccati loop is damped; the affine anti-model forbids that claim. It is enough to show that the finite-energy compatibility gauntlet makes **one** compulsory carrier of \(\mathfrak v\) time-integrable. Any such estimate would contradict the representation-free speed requirement before one has to assign a sign to Codazzi or pressure.
+The most structurally privileged candidate is the radial carrier
+\[
+\|\Lambda^{-1/2}L_u u\|_2^2,
+\]
+because
+\[
+\boxed{\{\Lambda,L_u\}=[\nabla_u,\Lambda^2],\qquad \Lambda^2=-\Delta.}
+\]
+Unlike a generic observer norm, this carrier is obtained by positive Sylvester resolution of a commutator with the actual viscous generator. The open question is whether the full polar ideal, Curl--Killing and Hodge/Ricci compatibility convert its time action into an exact compensated derivative plus terms already owned by genuine viscosity.
+
+## 88. Kinetic connection transfer does not supply the missing speed limit — EXACT REDUCTION / AUDIT
+A tempting compensation is to combine the finite signed helicity-connection transfer
+\[
+T_E:=\langle u_+,A_u u_-\rangle
+\]
+with the common-mode critical loading \(W_\Lambda\). On an exact radial shell
+\[
+\Lambda u=\rho u
+\]
+in Euler dynamics, energy and helicity conservation give
+\[
+\boxed{W_\Lambda'=2\langle N,(\Lambda-\rho)N\rangle,}
+\]
+while \(T_E=\langle Hu,N\rangle=0\) and
+\[
+\boxed{T_E'=-\rho^{-1}\langle HN,(\Lambda-\rho)N\rangle.}
+\]
+Hence \(W_\Lambda'/2\) and \(-\rho T_E'\) are only the sum and difference of the two helicity-sheet radial first moments of the same acceleration square. The finite signed connection ledger merely resolves the curvature by sheet; it creates no positive compensation.
+**AUDIT.** On the real finite-Fourier shell \(\rho^2=6\) with reality partners and occupied directions
+\[
+p=(-2,-1,-1),\quad m=(-2,-1,1),\quad
+\ell=(-1,-2,1),\quad s=(-1,1,-2),
+\]
+using divergence-free amplitudes
+\[
+a=(-1,0,2),\quad b=(3,4,10),\quad
+\varepsilon c,\ \varepsilon d,
+\]
+\[
+c=(-2,0,-2),\quad d=(-2,0,1),\quad \varepsilon=10^{-2},
+\]
+exact symbolic convolution gives
+\[
+T_E'=0,
+\qquad
+\langle N,(\Lambda-\rho)N\rangle<0
+\]
+(the latter is approximately \(-286.5588\)). The two helicity-sheet radial moments are equal and negative. This is an algebraic torus anti-shortcut, not a whole-space regularity theorem: bounded cumulative kinetic connection transfer cannot by itself control the critical visibility speed.
+
+---
+
 ## Compact suspected essence
 
 \[
