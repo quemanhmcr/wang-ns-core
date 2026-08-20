@@ -1285,7 +1285,7 @@ That change of question is the main result of this note.
 
 ---
 
-## 86. Quantitative conservation of visibility — EXACT / DEDUCTION
+## 87. Quantitative conservation of visibility — EXACT / DEDUCTION
 At the physical hinge, let
 \[
 \mathcal U(t):=\int |x|\,dM_t(x)
@@ -1344,14 +1344,14 @@ All statements are understood on smooth compact slabs; if one displayed carrier 
 \]
 in the sense that each integral is forced to diverge by the common lower obstruction \(\int\mathfrak v=\infty\). This is a quantitative form of conservation of visibility; none of the three right-hand quantities is promoted to a new physical wallet.
 
-## 87. The visibility speed sharpens the double-involution gauntlet — DEDUCTION
+## 88. The visibility speed sharpens the double-involution gauntlet — DEDUCTION
 Part III isolates a local Riccati candidate amplifier through
 \[
 \mathcal E_\lambda\approx0,
 \qquad D_tJ_A\approx0,
 \qquad D_t\lambda\approx\lambda^2,
 \]
-while the global curl-polar geometry requires positive and repeatedly regenerated \(W_\Lambda\). Section 86 adds a necessary finite-time synchronization condition: any shrinking-scale Riccati realization that genuinely feeds critical blow-up must also generate the same nonintegrable scalar speed \(\mathfrak v\) in all three global polar faces.
+while the global curl-polar geometry requires positive and repeatedly regenerated \(W_\Lambda\). Section 87 adds a necessary finite-time synchronization condition: any shrinking-scale Riccati realization that genuinely feeds critical blow-up must also generate the same nonintegrable scalar speed \(\mathfrak v\) in all three global polar faces.
 Thus the local and global demands can be separated more sharply:
 \[
 \boxed{
@@ -1373,7 +1373,7 @@ because
 \]
 Unlike a generic observer norm, this carrier is obtained by positive Sylvester resolution of a commutator with the actual viscous generator. The open question is whether the full polar ideal, Curl--Killing and Hodge/Ricci compatibility convert its time action into an exact compensated derivative plus terms already owned by genuine viscosity.
 
-## 88. Kinetic connection transfer does not supply the missing speed limit — EXACT REDUCTION / AUDIT
+## 89. Kinetic connection transfer does not supply the missing speed limit — EXACT REDUCTION / AUDIT
 A tempting compensation is to combine the finite signed helicity-connection transfer
 \[
 T_E:=\langle u_+,A_u u_-\rangle
@@ -1411,6 +1411,49 @@ T_E'=0,
 \langle N,(\Lambda-\rho)N\rangle<0
 \]
 (the latter is approximately \(-286.5588\)). The two helicity-sheet radial moments are equal and negative. This is an algebraic torus anti-shortcut, not a whole-space regularity theorem: bounded cumulative kinetic connection transfer cannot by itself control the critical visibility speed.
+
+---
+
+## 90. Immutable anchors beneath the metamorphosis — EXACT / INTERPRETATION
+The repeated ontology collapses suggest a stricter distinction between a derived face and an object that remains fixed while the face changes. The smallest presently visible set of physical anchors is
+\[
+\boxed{u(t),\qquad P,\qquad C=\operatorname{curl},\qquad C^2=-\Delta,\qquad t.}
+\]
+Here \(u\) is the actual divergence-free trajectory, \(P\) is the incompressibility/Hodge constraint, \(C\) is curl, \(C^2=-\Delta\) is the physical heat scale, and \(t\) is physical time. None is created by changing observer, gauge, multiplier, measure, or helicity frame.
+
+The two canonical affine quadratic readings are
+\[
+\boxed{E=\langle u,u\rangle,\qquad \mathcal H=\langle u,Cu\rangle,}
+\]
+with exact nonlinear annihilation
+\[
+\boxed{\langle u,N\rangle=0,\qquad \langle Cu,N\rangle=0.}
+\]
+Equivalently, in signed-curl work coordinates,
+\[
+\boxed{\int dW=0,\qquad \int x\,dW=0.}
+\]
+Thus nonlinear multiplier visibility begins beyond the affine spectral skeleton \(1,C\). The hinge family \(|C-a|\) is a canonical second-difference coordinate of that quotient, not another primitive.
+
+The polar objects are intrinsic but derived:
+\[
+\boxed{H=\operatorname{sgn}C,\qquad \Lambda=|C|,\qquad C=H\Lambda.}
+\]
+Pressure/Hodge curvature, helicity torsion, Codazzi, Jordan variation and the Poisson Gram tensor are likewise derived representations of compatibility failures among the anchors; changing tensor type does not create a new physical source.
+
+The persistent relation underneath these changes is non-intertwining. For any admissible \(f(C)\), transport before or after applying \(f(C)\) differs by
+\[
+\boxed{[\nabla,f(C)]u.}
+\]
+Angular deformation \([\nabla,H]\), radial deformation \([\nabla,\Lambda]\), full curl deformation \([\nabla,C]\), Hodge leakage from failure of raw transport to remain in \(\operatorname{Ran}P\), and radial heat compatibility through \([\nabla,C^2]\) are typed readings of this same noncommutation principle.
+
+**INTERPRETATION.** The anchors remain fixed; what metamorphoses is the incompatibility of transporting them simultaneously. Apparent disappearance from one reader must first be tested for migration into a complementary projection, gauge connection, higher jet, or scalar contraction.
+
+A useful ontology stopping rule is
+\[
+\boxed{X\ \text{is not a new primitive if it is an exact projection, gauge transform, functional-calculus reading, contraction, or covariant prolongation of }(u,P,C,C^2,t).}
+\]
+The regularity frontier can therefore be stated without adding another species: can the actual finite-energy trajectory sustain nonintegrable critical visibility speed in finite physical time while these fixed anchors and all exact compatibility relations among them remain simultaneously satisfied?
 
 ---
 
