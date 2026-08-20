@@ -3,7 +3,9 @@
 
 ### Status
 This is a structural research note, not a proof of global regularity.
-Exact statements are marked **EXACT**; interpretations are marked **INTERPRETATION**; new consequences of exact identities are marked **DEDUCTION**; unproved organizing ideas are marked **CANDIDATE PRINCIPLE**.
+Exact statements are marked **EXACT**; interpretations are marked **INTERPRETATION**; new consequences of exact identities are marked **DEDUCTION**; unproved organizing ideas are marked **CANDIDATE PRINCIPLE**. Exact counterexamples or adversarial constructions are marked **ANTI-TEST**; numerical/algebraic stress tests are marked **AUDIT** and are never promoted to PDE theorems.
+
+**Working ceiling:** this architecture note may grow to **1500 lines**. The extra space is reserved for structural contributions that survive exact counterchecks; it is not a license to duplicate the proof archaeology already stored elsewhere.
 
 Part I is not a compressed replacement for BSVO. BSVO already records the detailed proof archaeology. Here we keep only the moments where Navier–Stokes behaved strangely enough to force a change of ontology. Each stage matters because it left one clue about a structure that was still invisible at the time.
 
@@ -885,6 +887,8 @@ A static Fourier source becomes torsion, then stress, then curvature, without cr
 Dissipated state is retained in the lifted positive history measure.
 **CANDIDATE PRINCIPLE.** The system does not conserve every dangerous quantity; it appears to conserve compatibility and detectability across its natural representations.
 
+**ADVERSARIAL WARNING.** Compatibility and return must not be confused with stability. Part III constructs exact nondecaying NS states where the local return loop closes into a Riccati blow-up amplifier. Any genuine regularity mechanism must therefore use the extra constraints of the finite-energy class and the simultaneous compatibility of local, Hodge, spectral and parabolic geometries.
+
 ## 65. The suspected short core
 The long journey now points repeatedly toward a very short list.
 
@@ -986,20 +990,276 @@ A better question is:
 That is the speed-limit problem suggested by the architecture.
 
 ## 69. Immediate research program
-The next steps should preserve the structure rather than destroy it with premature estimates.
+The next steps should now be adversarial rather than hierarchical.
 
-1. Differentiate the helicity-parallel symmetry-defect tower one more order and identify the exact third angular jet.
-2. Differentiate Curl-Killing to the same order and project onto the anti-equivariant sector.
-3. Use the reduced Codazzi–curl Sylvester identity before any norm inequality.
-4. Track the corresponding radial third jet through \(C^2=\Lambda^2\).
-5. Match all parabolic carré-du-champ terms before estimating them.
-6. Differentiate the three-face work identity simultaneously in radial, angular, and strain/Gram representations.
-7. Determine whether the longitudinal Codazzi contribution is an exact compensated derivative plus heat-owned terms.
-8. Test finite spectral models only as algebraic verification, never as substitutes for the PDE identities.
-9. Treat zero frequency carefully in every Poisson/Sylvester inversion.
-10. Keep exact identities, structural interpretations, and analytic estimates strictly separated.
+1. Characterize the tangent and normal cones of the local Riccati involution under the **self-consistent** pressure map \(H_0=\mathcal R[\operatorname{tr}(
+abla u)^2]\), not for arbitrary trace-free tensors.
+2. Quantify finite-energy near-rigidity: if \(\mathcal E_\lambda\) is small on a region with large \(\lambda\), determine what companion \(g<0\) and opposite determinant geometry are forced outside that region.
+3. Track how that companion geometry returns through the nonlocal Hodge tensor and how much of it can remain tangent to \(J_A\).
+4. Relate the local involution sectors of \(
+abla u\) to the positive Poisson Gram tensor \(G(u)\) in \(W_\Lambda=-\int S:G\).
+5. Determine whether positive critical work imposes a quantitative incompatibility with persistent local Riccati phase locking, rather than assuming such a tradeoff.
+6. Compare the local normal kick \(\{J_A,Z-Z_{
+m rad}\}\) with the global torsion-regeneration rate \(C_J^\sigma\) before any norm splitting.
+7. Use the curl-polar identities to test whether repeated rebuilding of a near-zero-mode affine geometry at higher physical frequency necessarily creates radial/helicity mismatch visible to heat.
+8. Preserve exact finite-energy identities \(\int g=0\), \(\int\det
+abla u=0\), Curl-Killing, and \(C^2=-\Delta\) simultaneously in every candidate model.
+9. Continue to build anti-models: every proposed sign, monotonicity, or coherence principle must first survive exact affine and localized-packet counterchecks.
+10. Keep local Riccati coherence, global critical alignment, and dynamic torsion regeneration as separate notions until an exact bridge proves otherwise.
 
-## 70. Final synthesis
+# Part III. Adversarial decoding: the Riccati amplifier and the double-involution constraint
+
+The previous parts reconstructed a curl-polar compatibility architecture from the clues left by many failed proof routes. That architecture is not yet a regularity mechanism. The correct next test is adversarial: build the strongest exact blow-up loop compatible with as much 3D NS structure as possible, then identify precisely which finite-energy compatibilities it must violate.
+
+## 70. Return is not protection — the first exact anti-test
+Let
+\[ A_0=\begin{pmatrix}1&0&b\\0&1&0\\0&0&-2\end{pmatrix},\qquad b\ne0. \]
+Then
+\[ \operatorname{tr}A_0=0,\qquad A_0^2=-A_0+2I,\qquad \operatorname{tr}A_0^2=6. \]
+Put
+\[ a(t)=\frac1{T-t},\qquad u(t,x)=a(t)A_0x,\qquad p(t,x)=-a(t)^2|x|^2. \]
+Because \(a'=a^2\), \(\Delta u=0\), and \(A_0+A_0^2=2I\), direct substitution gives the exact 3D Euler equation and, simultaneously, the exact Navier--Stokes equation for every \(\nu>0\).
+The vorticity is nonzero when \(b\ne0\) and grows like \((T-t)^{-1}\).
+At the same time the local curl-return identity remains exact:
+\[ \boxed{\bar B_C(u,u)u=(-\Delta p)\omega=6a(t)^2\omega.} \]
+**ANTI-TEST.** Structural return by itself does not prevent blow-up. A perfectly closed return loop can be a positive Riccati amplifier.
+The escape hatch of this example is global: \(u\notin L^2(\mathbb R^3)\).
+
+## 71. The affine-strain backbone survives genuine vorticity variation and heat
+The previous anti-model is not isolated. There is an exact family
+\[ u(t,x,y,z)=\big(a(t)x+F(t,z),\ a(t)y,\ -2a(t)z\big), \]
+\[ p(t,x,y,z)=-a(t)^2(x^2+y^2+z^2), \]
+provided
+\[ \boxed{a'=a^2,} \]
+and
+\[ \boxed{F_t+aF-2azF_z=\nu F_{zz}.} \]
+Then
+\[ \omega=(0,F_z,0), \]
+so vorticity may vary in space and viscosity genuinely acts on it, while the harmonic affine-strain backbone still blows up through \(a'=a^2\).
+**ANTI-TEST.** Vorticity variation, pressure, and viscosity do not by themselves kill the coherent amplifier. The finite-energy problem must destroy the ability to maintain the nondecaying affine/zero-mode strain backbone.
+
+## 72. Perfect local amplification is an involution geometry — EXACT
+Set
+\[ A=\nabla u,\qquad g=\operatorname{tr}(A^2),\qquad \lambda=\sqrt{g/6} \]
+on the branch \(g>0\), and define the Riccati-shape defect
+\[ \boxed{\mathcal E_\lambda:=A^2+\lambda A-2\lambda^2I.} \]
+The full NS gradient equation is
+\[ D_tA=-A^2+\frac g3I-H_0+\nu\Delta A, \]
+where
+\[ H_0:=\nabla^2p+\frac g3I,\qquad \operatorname{tr}H_0=0. \]
+Therefore
+\[ \boxed{D_tA=\lambda A-\mathcal E_\lambda-H_0+\nu\Delta A.} \]
+Define
+\[ \boxed{J_A:=\frac13\left(I+\frac{2A}{\lambda}\right).} \]
+Then
+\[ \boxed{J_A^2-I=\frac{4}{9\lambda^2}\mathcal E_\lambda.} \]
+Hence
+\[ \boxed{\mathcal E_\lambda=0\iff J_A^2=I,\qquad \operatorname{tr}J_A=1.} \]
+Equivalently, with \(P=(I-J_A)/2\),
+\[ \boxed{P^2=P,\qquad \operatorname{tr}P=1,\qquad A=\lambda(I-3P)=\frac\lambda2(3J_A-I).} \]
+**DEDUCTION.** The exact local Riccati amplifier is not merely an eigenvalue pattern. It is an involution/projector manifold.
+
+## 73. The perfect amplifier locks vorticity to its extensional sheet — EXACT
+Write a rank-one projector as
+\[ P=n\otimes m,\qquad m\cdot n=1. \]
+Then
+\[ A=\lambda(I-3n\otimes m), \]
+and the vorticity of the corresponding affine jet is
+\[ \boxed{\omega=3\lambda\,n\times m.} \]
+Since \(P\omega=0\),
+\[ \boxed{A\omega=\lambda\omega.} \]
+The skew part of \(A\) annihilates \(\omega\), so
+\[ \boxed{S\omega=\lambda\omega.} \]
+Using the local curl-Hessian identity,
+\[ \boxed{\omega\ \longmapsto\ S\omega=\lambda\omega\ \longmapsto\ (-\Delta p)\omega=6\lambda^2\omega.} \]
+Moreover
+\[ \boxed{J_A\omega=\omega.} \]
+**DEDUCTION.** Perfect Riccati growth is a phase-locked eigenline amplifier: the local involution freezes the vorticity direction while the radial amplitude grows.
+
+## 74. The same involution has tangent and Gauss sectors — EXACT
+If \(J_A^2=I\) and \(K=D_tJ_A\), differentiation gives
+\[ \boxed{J_AK+KJ_A=0.} \]
+A second derivative gives
+\[ \boxed{J_AD_tK+(D_tK)J_A=-2K^2.} \]
+In projector language,
+\[ P\dot PP=0,\qquad (I-P)\dot P(I-P)=0, \]
+while the second derivative fixes the diagonal blocks by quadratic tangent motion.
+**DEDUCTION.** The local Riccati manifold carries the same involution/Gauss algebra already encountered in the global helicity involution \(H^2=I\). This statement is algebraic; \(J_A\) need not be self-adjoint when \(A\) is non-normal, whereas \(H\) is self-adjoint on the divergence-free spectral space.
+
+## 75. Full NS splits the local correction into gain, steering and decoherence — EXACT
+Assume at one instant \(\mathcal E_\lambda=0\), and put
+\[ Z:=-H_0+\nu\Delta A. \]
+Then
+\[ D_tA=\lambda A+Z,\qquad \operatorname{tr}Z=0. \]
+Define
+\[ q:=\frac14\operatorname{tr}(J_AZ). \]
+Direct differentiation gives
+\[ \boxed{D_t\lambda=\lambda^2+q.} \]
+The radial part of the correction is
+\[ \boxed{Z_{\rm rad}=\frac q\lambda A=\frac{\operatorname{tr}(J_AZ)}8(3J_A-I).} \]
+The involution moves by
+\[ \boxed{D_tJ_A=\frac{2}{3\lambda}(Z-Z_{\rm rad}).} \]
+For any matrix \(K\), define the algebraic splits
+\[ K_{\rm tan}=\frac12(K-J_AKJ_A),\qquad K_{\rm nor}=\frac12(K+J_AKJ_A). \]
+Then
+\[ \{J_A,K_{\rm tan}\}=0,\qquad [J_A,K_{\rm nor}]=0. \]
+Finally, at \(\mathcal E_\lambda=0\),
+\[ \boxed{D_t\mathcal E_\lambda=\frac{3\lambda}{2}\{J_A,Z-Z_{\rm rad}\}.} \]
+Thus Hodge plus viscosity perform three different jobs: alter Riccati gain, move tangentially along the amplifier manifold, and push normally away from it. Only the last action destroys the perfect involution relation at first order.
+
+## 76. Scalar coherence is weaker than tensor coherence — EXACT
+Let
+\[ r=\operatorname{tr}(A^3),\qquad \chi=-\frac{\sqrt6\,r}{g^{3/2}} \]
+on \(g>0\), and rescale time by
+\[ d\tau=\sqrt g\,dt. \]
+For Euler, define
+\[ \eta_1=\frac{A:H_0}{g^{3/2}},\qquad \eta_2=\frac{A^2:H_0}{g^2}. \]
+Then
+\[ \boxed{\frac{d\log g}{d\tau}=2\left(\frac\chi{\sqrt6}-\eta_1\right),} \]
+\[ \boxed{\frac{d\chi}{d\tau}=\frac{\sqrt6}{2}(1-\chi^2)+3\chi\eta_1+3\sqrt6\eta_2.} \]
+Restricted Euler has \(\eta_1=\eta_2=0\), so \(\chi=1\) is an invariant coherent branch and is attracting within the scalar shape variable.
+On the exact Riccati manifold,
+\[ A^2=-\lambda A+2\lambda^2I, \]
+and therefore
+\[ \eta_2=-\frac{\eta_1}{\sqrt6}. \]
+Hence the pressure contribution to \(d\chi/d\tau\) cancels at \(\chi=1\).
+**DEDUCTION.** Pressure may be tangent to the scalar Vieillefosse/Riccati separatrix while still moving the full tensor shape. The tensor involution defect \(\mathcal E_\lambda\), not \(\chi\) alone, is the correct local coherence variable.
+
+## 77. Pressure is a loop-gain controller, not a hidden stabilizer
+The local invariants satisfy for Euler
+\[ \boxed{D_tg=-2r-2A:H_0,} \]
+\[ \boxed{D_tr=-\frac12g^2-3A^2:H_0.} \]
+Therefore the discriminant
+\[ \mathcal V=r^2-\frac16g^3 \]
+obeys
+\[ \boxed{D_t\mathcal V=g^2(A:H_0)-6r(A^2:H_0).} \]
+There is no sign forced by the algebra.
+**AUDIT.** Finite-energy localized affine packets with nearly identical local Riccati jets exhibit pressure corrections of both signs. The same local scalar coherence can coexist with enhanced or reduced Riccati gain. This rules out the candidate shortcut “pressure is always stabilizing.”
+
+## 78. Finite energy forbids a global positive-amplitude Riccati branch — EXACT
+For smooth decaying incompressible fields,
+\[ \boxed{\int_{\mathbb R^3}\operatorname{tr}(\nabla u)^2\,dx=0.} \]
+A perfect Riccati branch has
+\[ g=6\lambda^2\ge0. \]
+Therefore, if the perfect relation holds globally in the decaying finite-energy class, the positive-amplitude branch must satisfy
+\[ \lambda=0\quad\text{a.e.} \]
+This statement does not classify the degenerate \(\lambda=0\) nilpotent case; it only excludes a nonzero global Riccati amplifier.
+Likewise, for decaying smooth fields,
+\[ \boxed{\int_{\mathbb R^3}\det\nabla u\,dx=0.} \]
+while the perfect amplifier has
+\[ \det A=-2\lambda^3. \]
+**DEDUCTION.** A localized amplifier core with \(g>0\) and \(\det A<0\) must be accompanied by compensating regions of opposite quadratic and cubic type. Finite energy converts the perfect affine backbone into a core-plus-companion geometry.
+
+## 79. The companion geometry returns nonlocally through Hodge pressure — EXACT
+Since
+\[ g=-\Delta p, \]
+the trace-free pressure Hessian has Fourier symbol
+\[ \widehat{H_0}(k)=\left(\frac13I-\hat k\otimes\hat k\right)\widehat g(k). \]
+Consequently
+\[ \boxed{\|H_0\|_2^2=\frac23\|g\|_2^2.} \]
+Thus a nontrivial integrable pressure-source field necessarily produces a nontrivial pressure anisotropy of the same quadratic size in \(L^2\).
+**INTERPRETATION.** The affine blow-up loop escapes this feedback only through a forbidden zero-mode geometry: its constant \(g\) is not an integrable finite-energy pressure source. Localizing the loop creates companion structure, and Hodge nonlocality immediately feeds that structure back into the gain/steering/normal decomposition of Section 75.
+
+## 80. Critical growth is a second alignment problem, not a local Riccati corollary
+The exact critical work is
+\[ \boxed{W_\Lambda=-\int S(u):G(u)\,dx,} \]
+where
+\[ G(u)=2\int_0^\infty \nabla e^{-s\Lambda}u\,\nabla e^{-s\Lambda}u^T\,ds\succeq0. \]
+Because \(\operatorname{tr}S=0\), only the anisotropic part of \(G\) contributes.
+On the perfect local amplifier, vorticity is locked to an extensional direction:
+\[ S\omega=\lambda\omega. \]
+By contrast, positive critical work requires the positive Gram tensor to place sufficient weight against compressive strain so that the integrated contraction \(S:G\) is negative.
+**INTERPRETATION.** Local vorticity growth and global critical creation ask the same trace-free strain to support two different alignments: extension for \(\omega\), compression-weighted anisotropy for \(G\).
+**AUDIT.** Finite-energy localized affine packets can have strong positive local Riccati gain while \(W_\Lambda<0\), and other geometries can reverse the sign of \(W_\Lambda\). Hence local amplifier coherence does not determine global critical feeding.
+
+## 81. The double-involution architecture
+The local perfect-amplifier geometry is
+\[ \boxed{A=\frac\lambda2(3J_A-I),\qquad J_A^2=I.} \]
+The global curl-polar geometry is
+\[ \boxed{C=H\Lambda,\qquad H^2=I.} \]
+Both consist of an involutive angular variable plus a radial magnitude. Both have off-diagonal tangent motion and quadratic Gauss reaction under differentiation. But they are not the same involution: \(J_A\) is a pointwise local matrix built from \(\nabla u\), while \(H\) is a self-adjoint nonlocal spectral involution built from curl.
+A perfect local Riccati amplifier wants
+\[ D_tJ_A\approx0,\qquad D_t\lambda\approx\lambda^2. \]
+Positive critical creation, however, requires nontrivial curvature of the global \(H/\Lambda\) geometry:
+\[ W_\Lambda=4\langle\Lambda u,J_{\rm flip}\rangle,\qquad J_{\rm flip}=\frac14R_H(u)u. \]
+**CANDIDATE PRINCIPLE.** A singular trajectory would have to keep the local involution nearly phase-locked while continually generating and regenerating curvature of the global spectral involution. These are distinct compatibility requirements imposed on the same state \(u\).
+
+## 82. What survived the adversarial tests
+The following tempting principles did **not** survive:
+
+- “return prevents blow-up” — false by the exact affine NS anti-model;
+- “pressure is stabilizing” — false even at the sign level;
+- “scalar Vieillefosse coherence measures the full loop” — false because pressure may remain tangent to the scalar separatrix while changing tensor shape;
+- “strong local Riccati gain implies positive critical work” — false in localized packet audits.
+
+What did survive is more restrictive:
+
+1. perfect coherent amplification is an involution/projector geometry;
+2. the exact coherent amplifier naturally occupies a nondecaying harmonic/zero-mode backbone;
+3. finite-energy localization forces quadratic and cubic companion structure;
+4. Hodge pressure feeds that companion geometry nonlocally back into local gain and shape;
+5. global critical growth requires a separate anisotropic curl-polar alignment;
+6. sustained critical growth requires regeneration of the corresponding torsion/curvature against heat.
+
+**DEDUCTION.** The regularity problem is not the absence of a blow-up mechanism. 3D NS possesses an exact blow-up mechanism outside the finite-energy class. The structural question is whether the finite-energy compatibility architecture prevents repeated realization of that mechanism at shrinking scales.
+
+## 83. Revised self-protection principle
+The phrase “self-protection” should now be used only in the following restricted sense.
+It does **not** mean that every dangerous local loop is damped, returned, or sign-cancelled.
+It means that every exact positive-feedback representation found so far closes perfectly only on a lower-dimensional compatibility geometry, while a genuine finite-energy NS state must simultaneously satisfy other self-generated geometries that the reduced loop does not control.
+
+A candidate singularity would need all of the following at increasingly small physical scales:
+\[ \mathcal E_\lambda\approx0 \]
+(local Riccati shape coherence),
+\[ \{J_A,Z-Z_{\rm rad}\}\approx0,\qquad Z=-H_0+\nu\Delta A \]
+(small normal Hodge/heat kick relative to that shape),
+\[ W_\Lambda>0 \]
+(global critical anisotropic alignment),
+and sufficiently coherent
+\[ C_J^\sigma \]
+(regeneration of spectral torsion before heat destroys it).
+No known identity proves these conditions incompatible. The point is that they are different locks controlled by the same \(u\), not independent knobs.
+
+## 84. The sharpened research target
+The next theorem should not be “return is contractive” or “pressure has good sign.” Both are false in exact or adversarial models.
+A more faithful target is a **finite-energy compatibility obstruction**:
+
+> Can a sequence of shrinking finite-energy regions become asymptotically Riccati-involutive in local gradient geometry, keep the Hodge/viscous correction predominantly tangent to that local involution, and at the same time maintain positive and repeatedly regenerated global curl-polar critical work?
+
+A useful route is to compare four exact defects before estimating:
+
+1. local involution defect \(\mathcal E_\lambda\);
+2. local normal correction \(\{J_A,Z-Z_{\rm rad}\}\), \(Z=-H_0+\nu\Delta A\);
+3. global critical anisotropy \(-S:G\) or equivalently \(4\langle\Lambda u,J_{\rm flip}\rangle\);
+4. global torsion-regeneration rate \(C_J^\sigma\).
+
+The objective is not to bound each separately. It is to determine whether the exact self-consistency relations of 3D NS force a tradeoff among them that a shrinking-scale Riccati realization cannot evade.
+
+---
+
+## 85. The zero-mode/UV paradox selects the critical scale — EXACT SCALING / INTERPRETATION
+The perfect affine Riccati backbone is harmonic:
+\[ \Delta u=0. \]
+In Fourier language an affine field is a generalized distribution concentrated at \(k=0\), exactly where
+\[ C=0,\qquad |C|=0,\qquad C^2=-\Delta=0. \]
+This makes the ideal amplifier simultaneously invisible to viscosity and degenerate for the helicity sign, but only outside the finite-energy Hilbert space. In \(L^2(\mathbb R^3)\), the kernel of \(-\Delta\) is trivial.
+
+To localize the geometry, fix a smooth compact divergence-free profile \(v\) carrying an affine-like core and scale
+\[ u_{a,\ell}(x)=a\ell\,v(x/\ell). \]
+For fixed \(v\), exact scaling gives
+\[ \|u_{a,\ell}\|_2^2\asymp_v a^2\ell^5, \]
+\[ \|u_{a,\ell}\|_{\dot H^{1/2}}^2\asymp_v a^2\ell^4, \]
+\[ \|\nabla u_{a,\ell}\|_2^2\asymp_v a^2\ell^3. \]
+The local Riccati time scale is \(t_R\sim a^{-1}\), while the viscous time scale is \(t_\nu\sim\ell^2/\nu\). Their balance is
+\[ \boxed{a\ell^2\sim\nu.} \]
+At that balance,
+\[ \boxed{\|u_{a,\ell}\|_{\dot H^{1/2}}^2\asymp_v\nu^2,} \]
+independent of \(\ell\).
+**INTERPRETATION.** Critical \(\dot H^{1/2}\) scaling emerges automatically when a finite-energy localization of the Riccati amplifier is tuned to outrun physical heat. A putative singularity would have to recreate a rescaled near-zero-mode affine geometry at ever smaller physical scales while its actual Fourier support moves to the ultraviolet. This is the local/global form of the “zero-mode geometry surfing to UV” paradox.
+
+---
+
+## 86. Updated synthesis after adversarial testing
 The control-volume journey was not wasted motion.
 It was a sequence of eliminations.
 Each gate removed one false primitive.
@@ -1016,6 +1276,7 @@ Each object became a coordinate face of a smaller intrinsic core.
 The core currently visible is built from curl, its sign, its modulus, its square, and the divergence-free connection.
 The most striking possibility is that the celebrated “cancellations” of 3D Navier–Stokes are not isolated accidents.
 They may be the local shadows of one overdetermined compatibility architecture.
+Part III makes the statement more precise and more cautious: the architecture contains an exact Riccati blow-up machine outside the finite-energy class, so cancellation, return and pressure reaction are not individually stabilizing. What finite energy appears to add is a compatibility gauntlet: a local Riccati involution, nonlocal Hodge response, global curl-polar involution and parabolic regeneration must all be synchronized by the same state.
 
 The journey began by asking how energy crosses a Fourier wall.
 It ended by asking how fast a curl-centered geometry can move while remaining compatible with every representation of itself.
@@ -1073,14 +1334,38 @@ J_{\rm flip}=\Omega_u^-u,
 }
 \]
 
+\[
+oxed{
+\mathcal E_\lambda=A^2+\lambda A-2\lambda^2I,
+\qquad
+J_A=rac13\left(I+rac{2A}{\lambda}
+ight),
+\qquad
+J_A^2-I=rac{4}{9\lambda^2}\mathcal E_\lambda.
+}
+\]
+
+\[
+oxed{
+D_tA=\lambda A-\mathcal E_\lambda-H_0+
+u\Delta A,
+\qquad
+C=H\Lambda,
+\qquad
+C^2=\Lambda^2=-\Delta.
+}
+\]
+
+**Revised suspected essence.** The dangerous local Riccati loop and the global critical curl geometry are both organized by an involution-plus-radial-variable structure, but on different spaces. A finite-energy singularity would have to phase-lock the local involution while regenerating curvature of the global involution against Hodge and heat feedback.
+
 ### CANDIDATE PRINCIPLE
 
 \[
 \boxed{
-\text{Every time dangerous motion disappears from one natural representation,}
+\text{Danger may return as amplification rather than damping;}
 \quad
-\text{the exact NS compatibility laws force it to reappear in another.}
+\text{the unresolved protection is the simultaneous finite-energy compatibility of all returns.}
 }
 \]
 
-The open problem is whether that compatibility architecture admits infinite-speed ultraviolet motion in finite time.
+The open problem is whether a finite-energy trajectory can repeatedly realize a near-Riccati local amplifier at shrinking scales while keeping Hodge correction sufficiently tangent, global critical curl-polar work positive, and torsion regeneration fast enough to outrun heat.
