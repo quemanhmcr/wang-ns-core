@@ -1443,6 +1443,139 @@ The NEO file records the current strongest deductions: the opposite-helicity blo
 
 ---
 
+## 91. Sterile resonance pins the UV barycenter — EXACT / DEDUCTION
+Let
+\[
+E=\|u\|_2^2,\qquad U=\langle u,\Lambda u\rangle,\qquad Z=\|\Lambda u\|_2^2,
+\qquad R=\frac{U}{E},
+\]
+and define the radial variance and its one-extra-root companion
+\[
+V=\|(\Lambda-R)u\|_2^2=Z-\frac{U^2}{E},
+\qquad
+K=\|\Lambda^{1/2}(\Lambda-R)u\|_2^2.
+\]
+The kinetic and critical laws give
+\[
+E'=-2\nu Z,
+\qquad
+U'=W_\Lambda-2\nu\|\Lambda^{3/2}u\|_2^2.
+\]
+Since
+\[
+\|\Lambda^{3/2}u\|_2^2-RZ=RV+K,
+\]
+the spectral barycenter obeys the exact identity
+\[
+\boxed{ER'=W_\Lambda-2\nu RV-2\nu K.}
+\]
+On the formal single-radius geometry \((\Lambda-R)u=0\), one has \(V=K=0\) and \(W_\Lambda=2R\langle u,N\rangle=0\), hence
+\[
+\boxed{R'=0.}
+\]
+Thus a monochromatic resonant state is not a conveyor belt that can slide itself to the UV: heat only lowers amplitude, while Euler critical work is tangent-null. On \(L^2(\mathbb R^3)\) the exact nonzero eigensphere is only a limiting geometry because a Fourier sphere has Lebesgue measure zero.
+
+Resolve this variance by helicity. With
+\[
+E_h=\|u_h\|_2^2,
+\qquad
+r_h=\frac{\langle u_h,\Lambda u_h\rangle}{E_h},
+\qquad
+D_h=\|(\Lambda-r_h)u_h\|_2^2,
+\qquad D=D_++D_-,
+\]
+one has
+\[
+\boxed{V=D+\frac{E_+E_-}{E}(r_+-r_-)^2.}
+\]
+The heat-cheapest configuration therefore suppresses both within-sheet radial spread and mean-radius separation. But the same-helicity nonlinear self-interaction is exactly
+\[
+\boxed{P(u_h\times Cu_h)=hP\big(u_h\times(\Lambda-r_h)u_h\big),}
+\]
+so \(D_h=0\) makes that sheet dynamically infertile for the hard opposite-helicity output. In particular the heat-optimal resonance is also critical-sterile. This is an exact structural paradox, not yet a regularity theorem.
+
+## 92. First intrinsic escape from the sterile manifold is the radial heat commutator — EXACT / INTERPRETATION
+Write
+\[
+\bar r=\frac{r_++r_-}{2},
+\qquad
+\delta r=\frac{r_+-r_-}{2},
+\qquad
+\Gamma=\Lambda-\bar r P-\delta r H.
+\]
+Then \(\Gamma u_h=(\Lambda-r_h)u_h\), so \(D=\|\Gamma u\|_2^2\). Applying the NEO transport derivation gives
+\[
+\boxed{\delta_u\Gamma=L_u-\bar r K_u-\delta r A_u,}
+\]
+where \(K_u=[D_u,P]\), \(A_u=[D_u,H]\), and \(L_u=[D_u,\Lambda]\). Since \(PK_uP=0\), the physical block is
+\[
+\boxed{P\delta_u\Gamma P=PL_uP-\delta r\,PA_uP.}
+\]
+At the heat optimum \(r_+=r_-=R\), this collapses to
+\[
+\boxed{P\delta_u\Gamma P=PL_uP.}
+\]
+Hence the first intrinsic velocity away from the safe-but-sterile resonance is exactly the radial NEO connection already forced by visibility. The square anchor immediately locks this escape to the true viscous generator:
+\[
+\boxed{\{\Lambda,L_u\}=[D_u,\Lambda^2],\qquad \Lambda^2=C^2.}
+\]
+The angular reader offers no free bypass: its contribution to the normal escape is multiplied by the mean-sheet separation \(\delta r\), while the exact variance identity above charges that same separation quadratically through \(C^2\). **INTERPRETATION.** The radial carrier is not merely a convenient estimate; it is the normal velocity of the state away from the heat-optimal critical-sterile geometry.
+
+## 93. Endpoint divergence must amplify finite microscopic source-square into macroscopic coherence — EXACT SYNTHESIS / DEDUCTION
+The distilled frontiers supply two facts that become especially revealing under the NEO reading. First, the actual helicity-resolved edge-source square satisfies
+\[
+S_{2,\mathrm{edge}}(t)\lesssim E\,\|\nabla u(t)\|_2^2,
+\]
+so genuine kinetic dissipation gives
+\[
+\boxed{\int_0^{T_*}S_{2,\mathrm{edge}}(t)\,dt<\infty.}
+\]
+Second, any finite singular endpoint forces the full hard-flip resultant to satisfy
+\[
+\boxed{\int_0^{T_*}\|J_{\rm flip}(t)\|_2^2\,dt=\infty.}
+\]
+These statements concern the same true quadratic source before and after full convolution summation. Therefore a hypothetical endpoint cannot be powered merely by divergent square action of individual microscopic source atoms. It must obtain unbounded macroscopic resultant efficiency from aggregation/coherence of many finite-square source contributions.
+
+That coherence is not a closed subsystem. Exact heat-fiber projective classification shows that non-null line-aligned source fibers are finite-dimensional; reflection or reciprocal alignments emit actual companion outputs unless they collapse toward the Beltrami equal-radius or collinear null sets, where the original source itself becomes sterile. Passive cancellation across unequal heat rates is not persistent under the physical \(\nu C^2\) clock; maintaining it requires true parent acceleration and therefore the next NEO jet. After full resummation the repair is not a new mechanism but the existing \(u,N,C\) slot commutator. The NEO selection rule then gives the sharp alternative: near the spectral diagonal its direct same-to-opposite principal symbol is forbidden and gains one derivative, while far displacement remains visible to the square anchor.
+
+**DEDUCTION.** The remaining endpoint is therefore a coherence-maintenance problem, not a missing supplier problem. Finite microscopic square action must be amplified into infinite resultant action while every coherent arrangement either approaches a source-null geometry or leaks into companion state that must itself be repaired against the same heat clock.
+
+## 94. NEO coherence--leakage contradiction — CANDIDATE PRINCIPLE / OPEN
+The current synthesis can be written as one closed frustration cycle:
+\[
+\boxed{
+\begin{array}{c}
+\text{approach heat-optimal resonance}
+\Rightarrow \text{critical sterility and }R'=0,\\
+\text{leave resonance}
+\Rightarrow \text{radial/mean-sheet defect visible to }C^2,\\
+\text{keep the defect small}
+\Rightarrow \text{need high source aggregation/coherence},\\
+\text{enforce coherence}
+\Rightarrow \text{source-null collapse or companion leakage},\\
+\text{repair leakage}
+\Rightarrow \text{next mother-jet motion},\\
+\text{near repair}
+\Rightarrow \text{one-derivative NEO gain},\\
+\text{far repair}
+\Rightarrow \text{square-anchor heat exposure}.
+\end{array}}
+\]
+There is no static dangerous refuge, no principal first-order same-to-opposite highway, and no closed coherent source fiber. A finite endpoint could survive only by traversing this compatibility loop with increasing physical-time density.
+
+**CANDIDATE PRINCIPLE.** A scale-free space-time coherence-or-leakage estimate should bound the hard resultant by the already finite microscopic source-square plus a square-anchor-controlled leakage/repair term, with the Beltrami and collinear degeneracies absorbed by the exact NEO gates. Schematically, the desired theorem has the form
+\[
+\boxed{
+\int_0^T\|J_{\rm flip}\|_2^2dt
+\ \lesssim\
+\int_0^T S_{2,\mathrm{edge}}dt
++\text{genuine }C^2\text{-owned near/far repair action}.
+}
+\]
+The right side must be expressed entirely through existing NS/NEO owners; no coherence wallet, companion genealogy, new clock or observer source is allowed. If such a bound is proved, the forced endpoint divergence of \(J_{\rm flip}\) contradicts finite physical action and closes the recycling loop. At present this estimate is **OPEN**.
+
+---
+
 ## Compact suspected essence
 
 \[
