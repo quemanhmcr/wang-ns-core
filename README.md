@@ -1,6 +1,6 @@
 # Wang–NS Physical Core
 
-A six-document distillation of the current Wang–Navier–Stokes physical-road exhaustion programme.
+An eight-document distillation of the current Wang–Navier–Stokes physical-road exhaustion programme.
 
 Source programme: [`quemanhmcr/wang-ns-triad-diamond`](https://github.com/quemanhmcr/wang-ns-triad-diamond), read only from `main`.  The source baseline used for this distillation is `main@63178b0e7f9fabdfd8c344dab938a3d639639df5` (2026-08-13), whose latest upstream theorem state is the native material-service causal quotient.  This distill also records later **deductions obtained by composing already-certified upstream identities**; each such deduction is labelled explicitly.
 
@@ -8,7 +8,7 @@ There is **no claim yet of a proof of 3D Navier–Stokes global regularity**.  T
 
 ## Repository invariant
 
-This repository intentionally contains exactly **six tracked documents**:
+This repository intentionally contains exactly **eight tracked documents**:
 
 1. `README.md` — map, status legend, historical purification, reading order.
 2. `CONTROL_VOLUME_METHOD.md` — reusable methodology: exact control-volume families before mechanisms or estimates.
@@ -16,14 +16,16 @@ This repository intentionally contains exactly **six tracked documents**:
 4. `MIXED_FRONTIER.md` — hostile-referee closure of measure/Hahn/support/sidecar seams and the exact remaining frontier.
 5. `SOLUTION_MAP.md` — short Clay-to-QED proof graph with proof-location links.
 6. `BSVO_FULL_STATE_FRONTIER.md` — the dedicated remaining `B/S/V/O` full-state proof block.
+7. `NS_POLAR_COMPATIBILITY_ARCHITECTURE.md` — the full polar/Hodge/compatibility synthesis, with a compact mandatory NEO gateway.
+8. `NEO_ANCHOR_COMPILER.md` — the dedicated anchor algebra, mother-jet compiler, selection rules, unit tests and NEO research protocol.
 
 No theorem implementation, regression code, result archive, PR history, packet scaffolding or CI transcript belongs here.  If a future edit grows a core file without changing the frontier, compress before merging.
 
-Target line budgets: `README <= 210`, `CONTROL_VOLUME_METHOD <= 100`, `PHYSICAL_CORE <= 700`, `MIXED_FRONTIER <= 520`, `SOLUTION_MAP <= 180`, `BSVO_FULL_STATE_FRONTIER <= 560`, `NS_POLAR_COMPATIBILITY_ARCHITECTURE <= 1800`.
+Target line budgets: `README <= 210`, `CONTROL_VOLUME_METHOD <= 100`, `PHYSICAL_CORE <= 700`, `MIXED_FRONTIER <= 520`, `SOLUTION_MAP <= 180`, `BSVO_FULL_STATE_FRONTIER <= 560`, `NS_POLAR_COMPATIBILITY_ARCHITECTURE <= 1800`, `NEO_ANCHOR_COMPILER <= 520`.
 
-## How to read the six files
+## How to read the eight files
 
-For the shortest route, read `CONTROL_VOLUME_METHOD.md` first for the proof discipline, then `PHYSICAL_CORE.md` for the Clay(A)-to-`S/V/O` endpoint spine, `SOLUTION_MAP.md` for composition, and `BSVO_FULL_STATE_FRONTIER.md` for the remaining open block.  Read `MIXED_FRONTIER.md` when auditing why older owner/bridge routes are forbidden and why the endpoint Hahn/support/constant plumbing is exact.  A physicist should not need a separate synthesis document to understand the current theorem architecture; the source repository is needed only to inspect upstream proofs, constants, implementation records or historical derivations.
+For the shortest route, read `CONTROL_VOLUME_METHOD.md` first for the proof discipline, then `PHYSICAL_CORE.md` for the Clay(A)-to-`S/V/O` endpoint spine, `SOLUTION_MAP.md` for composition, and `BSVO_FULL_STATE_FRONTIER.md` for the remaining open block.  Read `MIXED_FRONTIER.md` when auditing why older owner/bridge routes are forbidden and why the endpoint Hahn/support/constant plumbing is exact. Read `NS_POLAR_COMPATIBILITY_ARCHITECTURE.md` for the geometric synthesis and use `NEO_ANCHOR_COMPILER.md` whenever proposing, classifying or estimating a new mechanism: NEO is the mandatory ontology audit before a new object may enter the architecture.  A physicist should not need a separate synthesis document to understand the current theorem architecture; the source repository is needed only to inspect upstream proofs, constants, implementation records or historical derivations.
 
 The key discipline is:
 
