@@ -400,6 +400,156 @@ A local cylinder functional may need tilted cylinders or a moving center to be g
 Use only pressure normalization required by the selected mild/suitable compactness theorem.
 Do not introduce a new pressure state.
 Do not require a global pressure Fourier representation unless integrability supports it.
+### J07. Campanato oscillation already encounters the mean-drift obstruction.
+**EXTERNAL EXACT.** In localized smoothing/Campanato arguments, decay is proved for an oscillation quantity such as \(v-(v)_Q\), but small oscillation alone is not enough when the mean velocity is large; the mean creates a transport drift that must also be controlled.
+**TEAM USE.** This is the analytic version of the Galilean seam: quotienting constants algebraically does not by itself localize the PDE on a fixed cylinder.
+Paper: Albritton--Barker--Prange, *Localized smoothing and concentration for the Navier-Stokes equations in the half space*.
+https://arxiv.org/abs/2112.10705
+### J08. A fixed vertical cylinder is not the canonical Galilean quotient geometry.
+**DEDUCTION.** For a constant frame velocity \(c\), the exact Galilean transform changes both velocity and spatial center:
+\[
+u^{(c)}(x,t)=u(x+c(t-t_0),t)-c
+\]
+(up to sign convention).
+Therefore a genuinely Galilean local functional should naturally live on a tilted cylinder
+\[
+Q_r^c(z_0)
+=
+\{t_0-r^2<t<t_0,\ |x-x_0-c(t-t_0)|<r\}.
+\]
+**TEAM RULE.** Do not claim Galilean invariance for a functional that only subtracts \(c\) while keeping the cylinder fixed unless the induced drift term is explicitly handled.
+### J09. Candidate Galilean oscillation functional.
+**CANDIDATE.** For \(q>5/2\), a natural scale-invariant quantity is
+\[
+\mathcal G_q(u;z_0,r)
+:=
+\inf_{c\in\mathbb R^3}
+ r^{1-5/q}
+\|u-c\|_{L^q(Q_r^c(z_0))}.
+\]
+Its \(q\)-th power is
+\[
+\inf_c r^{q-5}\iint_{Q_r^c(z_0)}|u-c|^q.
+\]
+It vanishes on constant/Galilean-null flows and has the correct NS scaling.
+**OPEN.** The exact admissible class of \(c\), localization geometry, and compactness continuity must be proved; this is not yet an external theorem.
+### J10. Pressure-free one-scale epsilon regularity makes J09 plausible.
+**EXTERNAL EXACT.** Wang--Wu--Zhou prove that for every \(\delta>0\), sufficiently small
+\[
+\iint_{Q_1}|u|^{5/2+\delta}
+\]
+for a suitable weak solution implies interior regularity, with no pressure smallness hypothesis.
+Paper: Wang--Wu--Zhou, *A epsilon-regularity criterion without pressure of suitable weak solutions to the Navier-Stokes equations at one scale*.
+https://arxiv.org/abs/1811.09927
+**TEAM DEDUCTION.** If suitability/local energy and the cylinder transform are checked under the exact constant Galilean frame change, this theorem is a strong candidate engine for
+\[
+\mathcal G_q(u;z_0,r)<\varepsilon_q
+\Rightarrow
+z_0\text{ regular}.
+\]
+Do not label this derived Galilean statement EXTERNAL EXACT until the transformation audit is written.
+### J11. The old Galilean Nondegeneracy Theorem should be split into two lemmas.
+**DEDUCTION.** The literature suggests separating:
+\[
+\boxed{\text{A. Galilean epsilon-regularity/nonvanishing}}
+\]
+from
+\[
+\boxed{\text{B. Galilean critical-scale compactness}.}
+\]
+Lemma A should prove singularity forces a uniform lower bound for a Galilean quotient activity at every sufficiently small scale.
+Lemma B should select scales/frames for which that lower bound survives while the rescaled sequence converges to a bounded mild ancient profile.
+**TEAM USE.** Lemma B, not Lemma A, now looks like the genuinely hard extraction seam.
+### J12. Critical activity and bounded ancient compactness need not choose the same scale.
+**OPEN / WARNING.** A scale that optimizes local Galilean oscillation is not automatically a scale that yields a uniformly bounded ancient velocity sequence.
+The extraction proof must own both properties on one subsequence; otherwise nondegeneracy may be lost between microscopes.
+### J13. Type-I concentration identifies a distinguished parabolic scale only in a restricted regime.
+**EXTERNAL EXACT / SCOPE.** Localized smoothing/concentration results show that in Type-I settings critical \(L^3\) activity concentrates at scales comparable to
+\[
+\sqrt{T_*-t}.
+\]
+**TEAM USE.** This is evidence that a singularity can force a preferred critical radius, but it is not an arbitrary-blowup theorem.
+Paper: Albritton--Barker--Prange, *Localized smoothing and concentration for the Navier-Stokes equations in the half space*.
+https://arxiv.org/abs/2112.10705
+### J14. Amplitude scale and parabolic terminal scale can separate in Type-II behavior.
+**DEDUCTION.** Amplitude normalization uses approximately
+\[
+r_{amp}\sim \|u(t)\|_\infty^{-1},
+\]
+whereas the natural endpoint parabolic scale is
+\[
+r_{par}\sim\sqrt{T_*-t}.
+\]
+If
+\[
+\|u(t)\|_\infty\sqrt{T_*-t}\to\infty,
+\]
+then \(r_{amp}\ll r_{par}\).
+**TEAM USE.** Critical concentration visible at \(r_{par}\) may disappear into an almost-constant mode at \(r_{amp}\); this gives a mechanism for the KNSS constant obstruction rather than a contradiction with concentration theory.
+### J15. Recent Type-II work explicitly uses a different microscope.
+**EXTERNAL EXACT / SCOPE.** Seregin's 2026 Type-II note studies specified potential Type-II scenarios using an Euler scaling and Liouville theorems for ancient Euler classes.
+Paper: Seregin, *On potential Type II blowups for the Navier-Stokes equations* (2026).
+https://arxiv.org/abs/2606.29468
+**TEAM USE.** Do not assume there is one universal singular microscope. Extraction normalization may depend on the analytic regime while the NEO ontology remains fixed.
+### J16. Extraction typing may itself require a finite external classifier.
+**CANDIDATE.** A useful external split may be
+\[
+\text{Type-I-like}\quad\vee\quad\text{Type-II-like},
+\]
+with different compactness microscopes in the two branches.
+**TEAM RULE.** If used, this belongs to the external extraction layer, not the NEO ontology and not the terminal local classifier.
+### J17. Critical-radius selection is a promising replacement for raw amplitude maximization.
+**CANDIDATE.** Instead of choosing \(r\) solely from \(\|u\|_\infty\), choose \(r_k\) near a threshold where a scale-invariant Galilean activity is just non-small.
+This is the local analogue of minimal-bad-object/critical-element logic, without assuming a bounded global critical norm.
+**OPEN.** One must prove enough surrounding-scale control to obtain compactness; the critical radius is not useful if adjacent scales remain uncontrolled.
+### J18. The optimizer \(c\) in a tilted-cylinder functional can itself escape.
+**WARNING.** Over a time interval of length \(r^2\), a tilted frame drifts a spatial distance \(|c|r^2\), i.e. \(|c|r\) radii.
+If the infimum in \(\mathcal G_q\) allows \(|c|r\gg1\), the tube may sample a remote corridor rather than the intended singular core.
+**OPEN.** Audit either a controlled class \(|c|r\le A\), a canonical local mean frame, or another formulation that prevents optimizer escape while retaining exact Galilean meaning.
+### J19. Use constant Galilean frames only unless acceleration terms are explicitly typed.
+**TEAM RULE.** Replacing \(c\) by an arbitrary \(c(t)\) is not the same symmetry.
+A time-dependent moving frame introduces acceleration and corresponding pressure/forcing effects.
+This is related to the parasitic time-dependent spatially constant weak ancient modes distinguished from mild ancient solutions in KNSS.
+### J20. The target can now be stated as a critical-radius extraction theorem.
+**OPEN.** Seek \(q>5/2\), \(\varepsilon_*>0\), and a singular-point sequence \((r_k,c_k)\) such that the exact Galilean-rescaled solutions converge locally to a bounded mild ancient \(U\) and
+\[
+\mathcal G_q(U;0,1)\ge\varepsilon_*>0.
+\]
+Then \(U\) is nonconstant modulo Galilean constants and therefore curl-active.
+**TEAM USE.** This is sharper than asking vaguely for a `nontrivial ancient solution`.
+### J21. Backward uniqueness gives a second possible finishing architecture.
+**EXTERNAL EXACT / SCOPE.** Escauriaza--Seregin--Sverak prove the endpoint \(L^{3,\infty}\) regularity theorem using backward-uniqueness machinery for parabolic equations/vorticity in the required analytic setting.
+Paper: Escauriaza--Seregin--Sverak, *L_{3,\infty}-solutions of the Navier-Stokes equations and backward uniqueness* (2003).
+https://doi.org/10.1070/RM2003v058n02ABEH000609
+**TEAM USE.** NEO need not prove a general bounded-ancient Liouville theorem if it can force an exact terminal zero set/trace to which an external propagation theorem applies.
+### J22. Zero-set production is closer to NEO's strengths than global propagation.
+**DEDUCTION.** A plausible division of labor is
+\[
+\text{external extraction}
+\to
+\text{NEO finite zero/contact form}
+\to
+\text{external unique continuation/backward uniqueness}
+\to
+CU\equiv0.
+\]
+Then bounded curl-null rigidity gives the Galilean-null contradiction.
+**TEAM RULE.** Any use of backward uniqueness must state its coefficient, growth, domain, and terminal-trace hypotheses exactly; do not cite ESS as a black box for arbitrary bounded ancient profiles.
+### J23. The research frontier has narrowed to two genuinely new arrows.
+**DEDUCTION.** The broad literature supplies precedents for most of
+\[
+T_*<\infty
+\to
+\text{scale activity}
+\to
+\text{ancient object}
+\to
+\text{rigidity}.
+\]
+The least-covered arrows are now:
+1. persistent Galilean quotient activity \(	o\) bounded nondegenerate ancient compactness;
+2. Local-NEO contact type \(	o\) a finite zero-producing scale geometry.
+**TEAM USE.** Concentrate research on these arrows; other descendants are secondary until one of them moves.
 ---
 ## K. Immediate local classifier discipline
 ### K01. First split remains useful.
@@ -452,6 +602,41 @@ C1:\quad \xi\cdot S\xi>0,
 inspect the eigenvalue allocation of the trace-free matrix \(S\) before launching higher Riccati descendants.
 Miller's \(\lambda_2^+\) criterion gives historical reason to treat the middle strain eigenvalue as a high-value reader.
 https://arxiv.org/abs/1710.05569
+### K07. Finite normal form should not mean finite Taylor jet.
+**DEDUCTION.** The literature supports a two-coordinate terminal normal form
+\[
+\boxed{
+(\text{finite algebraic contact type},\ \text{one finite scale-geometry type})
+}
+\]
+more strongly than a pointwise jet tower.
+Candidate scale coordinates include Galilean oscillation, near-maximal-vorticity set geometry, direction coherence, sparseness, or a terminal zero trace.
+**TEAM RULE.** A scale renderer compiled from \(U,CU,S\) does not enlarge the ontology merely because it refers to a superlevel set or cylinder.
+### K08. C1 admits a sharper finite matrix split before Riccati.
+Diagonalize the trace-free strain tensor
+\[
+Se_i=\lambda_i e_i,\qquad \lambda_1\le\lambda_2\le\lambda_3,
+\qquad \lambda_1+\lambda_2+\lambda_3=0.
+\]
+Then inspect
+\[
+\boxed{\lambda_2\le0\quad\vee\quad\lambda_2>0.}
+\]
+If \(\lambda_2\le0\), positive \(\xi\cdot S\xi\) must be supplied strongly by the top extensional eigendirection.
+If \(\lambda_2>0\), the contact lies in a biaxially extensional strain geometry.
+**CANDIDATE.** Test whether either branch is incompatible with a true terminal vorticity maximum before generating higher Riccati jets.
+### K09. The preferred rigidity output is an exact zero set, not necessarily a full Liouville theorem.
+**DEDUCTION.** A high-value NEO theorem would force a statement such as
+\[
+\omega(\cdot,0)=0
+\]
+or vanishing on an analytically sufficient terminal region/class.
+External backward uniqueness or unique continuation could then propagate that zero under separately verified hypotheses.
+**TEAM USE.** This matches NEO's comparative advantage: exact zero-set classification rather than global compactness/propagation.
+### K10. C0 next attack is now scale propagation.
+Do not ask for \(\nabla^m\omega(0,0)=0\) for increasing \(m\).
+Ask whether C0 plus bounded ancientness forces one finite property of the near-maximal curl set on a shrinking cylinder.
+If no such finite property is obtained, record the pointwise contact facts and stop.
 ---
 ## L. Anti-loop rules strengthened by history
 ### L01.
@@ -507,24 +692,35 @@ and the global spectral normalizer.
 Until then keep it off.
 ---
 ## N. Current theorem target after the history audit
-**OPEN.** Prove or locate an external theorem of the following shape.
-There exists a local scale-invariant Galilean quantity \(\mathcal O\) and \(\varepsilon_*>0\) such that any genuine finite-energy classical singular endpoint \(z_*\) satisfies
+### N01. Near-term lemma -- Galilean epsilon nonvanishing.
+**OPEN / NEAR-KNOWN.** Audit whether pressure-free one-scale epsilon regularity plus exact constant Galilean symmetry proves that for some \(q>5/2\)
 \[
-\limsup_{r\downarrow0}\mathcal O(u;Q_r(z_*))\ge\varepsilon_*.
+z_*\text{ singular}
+\Rightarrow
+\mathcal G_q(u;z_*,r)\ge\varepsilon_q
+\quad\text{for every sufficiently small }r.
 \]
-The same quantity must be stable enough under a blow-up sequence to produce a bounded mild ancient limit \(U\) with
+The proof must explicitly transform the suitable/local-energy class and the spacetime cylinder.
+### N02. Main extraction theorem -- critical-radius compactness.
+**OPEN.** Prove that a genuine finite singular endpoint admits \(r_k\downarrow0\) and constant Galilean frames \(c_k\) such that the exact rescaled solutions converge locally to a bounded mild ancient profile \(U\) and
 \[
-\mathcal O(U;Q_1)>0.
+\mathcal G_q(U;0,1)\ge\varepsilon_*>0.
 \]
-Hence
+Then
 \[
-[U]_{\rm Gal}\neq0.
-\]
-For bounded incompressible mild ancient \(U\), this yields
-\[
+[U]_{\rm Gal}\neq0
+\Rightarrow
 CU\not\equiv0.
 \]
-Only after this extraction theorem is secure should Local NEO normalize an exact curl contact and classify C0/C1.
+Do not require terminal global \(L^2\), \(\dot H^{1/2}\), Fourier tightness, or global spectral NEO.
+### N03. Next NEO theorem after extraction.
+Once N02 is secure, normalize a true curl contact and seek a finite statement
+\[
+C0\vee C1
+\Longrightarrow
+\text{finite scale-geometric form forcing an exact zero set}.
+\]
+Only then invoke an external propagation theorem if its hypotheses are verified.
 ---
 ## O. Team bottom line
 The historical record gives a strong vote for the architecture
