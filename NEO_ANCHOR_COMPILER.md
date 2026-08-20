@@ -1,4 +1,6 @@
 # NEO Core Compiler
+
+**Mode selection.** This is the canonical **Core / Normalizer** mode of NEO: use it when the target structure is known and must be reconstructed, typed or normalized from the fixed anchors. For unresolved phenomena, adversarial experiments and broad hypothesis search, use the companion [NEO Discovery Workbench](NEO_DISCOVERY_WORKBENCH.md), then compile any surviving result back into this core before promotion.
 Companion synthesis: [NS Polar Compatibility Architecture](history/NS_POLAR_COMPATIBILITY_ARCHITECTURE.md).
 This file is the canonical NEO manual for the Wang--Navier--Stokes programme. Its purpose is not to add a second geometry to Navier--Stokes. Its purpose is to reconstruct the genuine 3D incompressible Navier--Stokes equation, its standard geometric faces, and its finite derived jets from the smallest fixed structural language presently known.
 **Strategic scope.** NEO is strongest as a reconstruction and normalization compiler: it exposes exact parentage, canonical gauges, and rigid zero sets of genuine NS structures. It is **not necessary**, and is not presently justified, to make NEO control every metamorphosis of an arbitrary full trajectory. Reconstruction completeness is not control completeness.
