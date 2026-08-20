@@ -19,7 +19,7 @@ This repository intentionally contains exactly **six tracked documents**:
 
 No theorem implementation, regression code, result archive, PR history, packet scaffolding or CI transcript belongs here.  If a future edit grows a core file without changing the frontier, compress before merging.
 
-Target line budgets: `README <= 210`, `CONTROL_VOLUME_METHOD <= 100`, `PHYSICAL_CORE <= 700`, `MIXED_FRONTIER <= 520`, `SOLUTION_MAP <= 180`, `BSVO_FULL_STATE_FRONTIER <= 560`.
+Target line budgets: `README <= 210`, `CONTROL_VOLUME_METHOD <= 100`, `PHYSICAL_CORE <= 700`, `MIXED_FRONTIER <= 520`, `SOLUTION_MAP <= 180`, `BSVO_FULL_STATE_FRONTIER <= 560`, `NS_POLAR_COMPATIBILITY_ARCHITECTURE <= 1800`.
 
 ## How to read the six files
 
