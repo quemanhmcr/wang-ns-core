@@ -475,3 +475,352 @@ The selection rule suggests a two-regime attack on the true operator \(P_{-h}[D_
 This is not yet a regularity theorem. The next task is to implement an exact/paradifferential partition before norm inequalities, identify the near piece as \(\Lambda^{-1}\) times a second-order local transport term, and rewrite the far piece so the parent heat scale is explicit. If successful, critical angular regeneration would split into a local derivative-gain branch and a nonlocal heat-visible branch without adding an observer, wallet or mechanism.
 
 **NEO frontier.** The current experiments support a stronger working thesis: the wardrobe is one mother curl-jet spine with functional-calculus renderers, and the renderers obey selection rules. The difficult critical channel is not free; its principal local symbol is forbidden, its near-diagonal part is one order smoother, and its far-off-diagonal escape remains exposed to the same square anchor that generates viscosity.
+
+---
+
+## 17. Parabolic regeneration closes inside the same mother/Sylvester compiler — EXACT after localization
+Let
+\[
+\mathscr J(a,b):=\frac14T_H(a,b),
+\qquad
+J_{\rm flip}=\mathscr J(u,u),
+\]
+where \(T_H\) is the symmetric helicity-involution torsion already compiled from the Euler bilinear map and \(H=\operatorname{sgn}C\).  Resolving the same-helicity inputs gives
+\[
+\boxed{
+\mathscr J(a,b)
+=-\frac14\sum_{h=\pm1}h\,P_{-h}
+\Big([D_{a_h},H]b_h+[D_{b_h},H]a_h\Big).
+}
+\]
+For a divergence-free direction field \(a\), write
+\[
+E_a:=[D_a,C],
+\qquad
+E_{a,h}^{\times}:=P_{-h}E_aP_h,
+\qquad
+\mathcal S_\Lambda X:=\Lambda X+X\Lambda.
+\]
+On a fixed nonzero spectral localization the opposite-sheet block obeys the positive Sylvester equation
+\[
+P_{-h}[D_a,H]P_h=2\mathcal S_\Lambda^{-1}(E_{a,h}^{\times}),
+\qquad
+\mathcal S_\Lambda^{-1}(Y)=\int_0^\infty e^{-s\Lambda}Ye^{-s\Lambda}\,ds.
+\]
+Hence the full polarized hard-crossing map has the mother normal form
+\[
+\boxed{
+\mathscr J(a,b)
+=-\frac12\sum_h h\Big[
+\mathcal S_\Lambda^{-1}(E_{a_h,h}^{\times})b_h
++\mathcal S_\Lambda^{-1}(E_{b_h,h}^{\times})a_h
+\Big].
+}
+\]
+In particular
+\[
+\boxed{
+J_{\rm flip}
+=-\sum_h h\,\mathcal S_\Lambda^{-1}(E_{u_h,h}^{\times})u_h.
+}
+\]
+Thus hard helicity crossing is not an additional bilinear primitive: it is a self-contraction of the same mother curl deformation after positive Sylvester resolution.
+
+The native NS law
+\[
+(\partial_t+\nu\Lambda^2)J_{\rm flip}=S_J
+\]
+closes under the same compiler.  Since \(J(u)=\mathscr J(u,u)\) is quadratic and \(N=P(u\times Cu)\),
+\[
+\boxed{
+S_J
+=2\mathscr J(u,N)-2\nu\sum_j\mathscr J(\partial_j u,\partial_j u).
+}
+\]
+Equivalently,
+\[
+\boxed{
+\begin{aligned}
+S_J=-\sum_hh\Big[&
+\mathcal S_\Lambda^{-1}(E_{u_h,h}^{\times})N_h
++\mathcal S_\Lambda^{-1}(E_{N_h,h}^{\times})u_h\\
+&-2\nu\sum_j\mathcal S_\Lambda^{-1}(E_{\partial_j u_h,h}^{\times})\partial_j u_h
+\Big].
+\end{aligned}
+}
+\]
+The first line is the actual NS directional derivative of the same crossing map in the direction \(N\); the second is the exact heat carré-du-champ generated when the square anchor \(C^2=\Lambda^2\) passes through a quadratic derived field.  No regeneration source outside \((u,P,C,C^2,t)\) has appeared.
+
+**NEO upgrade.**  The compiler chain is now
+\[
+\boxed{
+(u,P,C,C^2,t)
+\longrightarrow E_u
+\longrightarrow \mathscr J
+\longrightarrow J_{\rm flip}
+\longrightarrow S_J,
+}
+\]
+with every arrow an anchor functional-calculus, contraction, NS substitution, or parabolic Leibniz prolongation.  Regeneration is therefore a higher motion of an already compiled costume, not ontology growth.
+
+## 18. The derived crossing field has its own exact dynamic polar law — EXACT
+Because \(\Lambda\) is time-independent and commutes with the heat semigroup, put
+\[
+z:=\Lambda^{-1}J_{\rm flip},
+\qquad
+f:=\Lambda^{-1}S_J.
+\]
+On the nonzero spectral support,
+\[
+\boxed{z_t+\nu\Lambda^2z=f.}
+\]
+Whenever \(z\neq0\), write the Hilbert-space polar decomposition
+\[
+z=\rho e,
+\qquad
+\rho=\|z\|_2,
+\qquad
+\|e\|_2=1,
+\]
+and let
+\[
+\mathbb P_e^\perp:=I-|e\rangle\langle e|
+\]
+be the orthogonal projector in the state Hilbert space.  This \(\mathbb P_e^\perp\) is a derived kinematic reader; it is not the Fourier Hodge projector \(P\) or \(Q=I-P\).  Since \(\langle e,e_t\rangle=0\) and \(\langle e,\Lambda^2e\rangle=\|\Lambda e\|_2^2\), the source splits exactly as
+\[
+\boxed{
+f=
+\Big(\rho'+\nu\rho\|\Lambda e\|_2^2\Big)e
++\rho\Big(e_t+\nu\mathbb P_e^\perp\Lambda^2e\Big).
+}
+\]
+The two terms are orthogonal, so
+\[
+\boxed{
+\|\Lambda^{-1}S_J\|_2^2
+=
+\Big(\rho'+\nu\rho\|\Lambda e\|_2^2\Big)^2
++\rho^2\Big\|e_t+\nu\mathbb P_e^\perp\Lambda^2e\Big\|_2^2.
+}
+\]
+This is a genuine Hilbert-space Pythagoras for the one derived source \(\Lambda^{-1}S_J\).  It must not be confused with a vector-level Pythagoras between NEO near/far Fourier channels, where interference is allowed.
+
+**DEDUCTION.**  Dynamic maintenance of hard crossing has exactly two kinematic readings:
+\[
+\boxed{\text{amplitude/radial repair}}
+\qquad\text{or}\qquad
+\boxed{\text{coherence-direction relocation}}.
+\]
+A cancellation need not be repaired at the same Fourier child.  The normalized profile \(e\) may rotate toward companion outputs while \(\rho\) remains small or vice versa.  Unequal-output heat is visible through \(\mathbb P_e^\perp\Lambda^2e\); parent-relative heat mismatch remains inside the already compiled carré-du-champ in \(S_J\).  Neither effect is a new mechanism.
+
+## 19. Hardy ownership locks macroscopic crossing coherence to the UV — ABSOLUTE ANALYTIC DEDUCTION
+The div--curl Hardy estimate for the hard field gives
+\[
+\|J_{\rm flip}\|_{\mathcal H^1}
+\lesssim
+\|u\|_2\|\nabla u\|_2,
+\]
+so the original kinetic budget owns
+\[
+\mathcal M_J(T):=\int_0^T\|J_{\rm flip}\|_{\mathcal H^1}^2dt<\infty
+\]
+on every finite interval before a putative endpoint.  The three-dimensional Nash inequality, using \(\mathcal H^1\hookrightarrow L^1\), gives pointwise
+\[
+\boxed{
+\|J\|_2^2
+\lesssim
+\|J\|_{\mathcal H^1}^{4/5}\|\Lambda J\|_2^{6/5}.
+}
+\]
+Hence, with
+\[
+\mathcal A_J(T):=\int_0^T\|J\|_2^2dt,
+\qquad
+\mathcal Z_J(T):=\int_0^T\|\Lambda J\|_2^2dt,
+\]
+Hölder yields
+\[
+\boxed{
+\mathcal A_J\lesssim \mathcal M_J^{2/5}\mathcal Z_J^{3/5}.
+}
+\]
+The exact heat law for \(J\), paired as
+\[
+\langle J,S_J\rangle
+=\langle\Lambda J,\Lambda^{-1}S_J\rangle,
+\]
+gives
+\[
+\mathcal Z_J
+\le
+\frac{\|J(0)\|_2^2}{\nu}
++\frac1{\nu^2}
+\mathcal R_J,
+\qquad
+\mathcal R_J(T):=\int_0^T\|\Lambda^{-1}S_J\|_2^2dt.
+\]
+Therefore
+\[
+\boxed{
+\mathcal A_J
+\lesssim
+\mathcal M_J^{2/5}
+\left(
+\frac{\|J(0)\|_2^2}{\nu}
++\frac{\mathcal R_J}{\nu^2}
+\right)^{3/5}.
+}
+\]
+Equivalently, up to universal constants,
+\[
+\boxed{
+\mathcal R_J
+\gtrsim
+\nu^2\frac{\mathcal A_J^{5/3}}{\mathcal M_J^{2/3}}
+-\nu\|J(0)\|_2^2.
+}
+\]
+Thus finite microscopic Hardy action converts large macroscopic \(L^2\) coherence into a superlinear dynamic repair bill.  This is not a new wallet: \(\mathcal M_J\) is kinetically owned and \(\mathcal R_J\) is exactly the already forced endpoint source action.
+
+There is also a pointwise scale lock.  Define the RMS output frequency when \(J\neq0\) by
+\[
+\kappa_J:=\frac{\|\Lambda J\|_2}{\|J\|_2}.
+\]
+Nash implies
+\[
+\boxed{
+\kappa_J
+\gtrsim
+\left(\frac{\|J\|_2}{\|J\|_{\mathcal H^1}}\right)^{2/3}.
+}
+\]
+Consequently, on a finite singular interval, the combination
+\[
+\int\|J\|_{\mathcal H^1}^2dt<\infty,
+\qquad
+\int\|J\|_2^2dt=\infty
+\]
+forces
+\[
+\boxed{\sup_{t<T_*}\kappa_J(t)=\infty.}
+\]
+Macroscopic hard-crossing coherence cannot remain confined to a bounded output scale while its microscopic Hardy mass stays finite.
+
+## 20. Variational prolongation is a compiler operation, not a new primitive — EXACT for the quadratic crossing map / RESEARCH RULE
+Once a nonlinear NS costume has been compiled from the anchors, its linearization and adjoint linearization are canonical prolongations of that same map.  For
+\[
+J(u):=J_{\rm flip}(u),
+\qquad
+K_u:=DJ[u],
+\]
+quadratic homogeneity gives
+\[
+\boxed{K_uu=2J.}
+\]
+The existing variational Gauss--Weingarten identity is
+\[
+\boxed{
+R_\Lambda=2\Lambda J+2K_u^*\Lambda u.
+}
+\]
+Therefore the adjoint companion response of the same crossing map obeys
+\[
+\langle u,K_u^*\Lambda u\rangle
+=2\langle\Lambda u,J\rangle
+=\frac12W_\Lambda,
+\]
+and hence
+\[
+\boxed{
+\|K_u^*\Lambda u\|_2^2
+\ge
+\frac{W_\Lambda^2}{4\|u\|_2^2}.
+}
+\]
+A large \(J\) need not feed critical stock if it is nearly orthogonal to \(\Lambda u\); once it does feed criticality, however, the same quadratic map necessarily has a nontrivial adjoint companion response.  This is a full-convolution variational statement, not a quartet genealogy.
+
+The coherence functional
+\[
+\Phi(u):=\frac12\|J(u)\|_2^2
+\]
+has the exact gradient
+\[
+\boxed{\nabla\Phi(u)=K_u^*J.}
+\]
+Euler homogeneity gives
+\[
+\boxed{
+\langle u,K_u^*J\rangle=2\|J\|_2^2,
+\qquad
+\|K_u^*J\|_2\ge\frac{2\|J\|_2^2}{\|u\|_2}.
+}
+\]
+Hence, on a finite interval with the kinetic mass bounded, the endpoint condition \(\int\|J\|_2^2dt=\infty\) forces
+\[
+\boxed{
+\int_0^{T_*}\|DJ[u]^*J\|_2^2dt=\infty.
+}
+\]
+This cubic field is a variational prolongation of the already compiled quadratic map; it must not be promoted to an incidence wallet or new source species.
+
+Static variational response and dynamic regeneration are linked by one exact derivative:
+\[
+\boxed{
+\frac12\frac d{dt}\|J\|_2^2
+=\langle u_t,K_u^*J\rangle
+=\langle J,S_J\rangle-\nu\|\Lambda J\|_2^2.
+}
+\]
+Thus companion/incidence language and heat-covariant repair language are two renderings of the same derived-field motion.
+
+**RESEARCH RULE.**  The NEO grammar now admits three kinds of operations without ontology growth:
+\[
+\boxed{
+\text{spectral functional calculus }f(C),
+\qquad
+\text{transport/parabolic prolongation},
+\qquad
+\text{variational prolongation }DF[u],DF[u]^*.
+}
+\]
+The last operation is permitted only after \(F\) itself has been compiled from \((u,P,C,C^2,t)\); it does not license arbitrary auxiliary functionals.
+
+## 21. Upgraded NEO closure principle — CANDIDATE PRINCIPLE / OPEN
+The current compiler has moved beyond a static polar dictionary.  It now has a closed hierarchy of generated motion:
+\[
+\boxed{
+\begin{array}{ccccc}
+(u,P,C,C^2,t)
+&\longrightarrow&E_u=[D_u,C]
+&\longrightarrow&\text{spectral costumes}\\
+&&\downarrow&&\\[-1mm]
+&&J_{\rm flip}&&\\
+&&\downarrow&&\\[-1mm]
+&&S_J&&\\
+&&\downarrow&&\\[-1mm]
+&&\Lambda^{-1}S_J
+&\longrightarrow&\text{amplitude/direction polar motion}.
+\end{array}
+}
+\]
+In parallel, every already compiled nonlinear map has its canonical variational branch
+\[
+\boxed{F(u)\longrightarrow DF[u]\longrightarrow DF[u]^*.}
+\]
+The resulting working principle is:
+
+\[
+\boxed{
+\begin{gathered}
+\textbf{NEO closure principle.}\\
+\text{Every dynamically relevant NS defect found so far is generated by}\\
+\text{anchor functional calculus, transport/parabolic prolongation, or}\\
+\text{variational prolongation of an already compiled map.}
+\end{gathered}
+}
+\]
+Pressure, stress, torsion, Codazzi, coherence, leakage and incidence remain costumes whenever they pass this parentage test.  Changing tensor type, observer, or differentiation order is not evidence for a new primitive.
+
+The new dynamic content is equally restrictive.  If hard-crossing coherence becomes macroscopically large while its kinetic Hardy owner remains finite, then it must move to the UV.  Maintaining that UV coherence requires the already compiled \(\Lambda^{-1}S_J\), whose exact polar law splits only into amplitude repair and coherence-direction relocation.  If the coherence aligns so as to feed the critical stock, the adjoint prolongation of the same quadratic map is forced as well.  Thus NEO now tracks not only where a derived quantity comes from, but the kinematically allowed ways in which that compiled quantity can move under the true NS flow.
+
+**OPEN.**  None of these identities proves that the endpoint repair action is finite, nor do they prove global regularity.  The strengthened research target is instead structural: push the no-new-primitive statement to higher NEO jets, derive normal forms for their near/far renderings, and determine whether every apparent higher defect continues to reduce to the same anchor spine before any norm inequality is applied.
