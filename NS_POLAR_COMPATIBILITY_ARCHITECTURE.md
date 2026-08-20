@@ -1,344 +1,255 @@
 # THE CURL–POLAR COMPATIBILITY ARCHITECTURE
-## From control-volume labyrinth to the intrinsic geometry of 3D Navier–Stokes
+## From control-volume anomalies to the intrinsic geometry of 3D Navier–Stokes
 
 ### Status
 This is a structural research note, not a proof of global regularity.
 Exact statements are marked **EXACT**; interpretations are marked **INTERPRETATION**; new consequences of exact identities are marked **DEDUCTION**; unproved organizing ideas are marked **CANDIDATE PRINCIPLE**.
-The purpose is to reconstruct the clues left by the control-volume journey and then move beyond that journey toward an intrinsic curl-centered architecture.
-The shortest starting point is
-\[
-C=\operatorname{curl},\qquad H=\operatorname{sgn}C,\qquad \Lambda=|C|,\qquad C^2=\Lambda^2=-\Delta.
-\]
+
+Part I is not a compressed replacement for BSVO. BSVO already records the detailed proof archaeology. Here we keep only the moments where Navier–Stokes behaved strangely enough to force a change of ontology. Each stage matters because it left one clue about a structure that was still invisible at the time.
+
+The retrospective destination is short:
+\[ C=\operatorname{curl},\qquad H=\operatorname{sgn}C,\qquad \Lambda=|C|,\qquad C^2=\Lambda^2=-\Delta. \]
+The purpose of the journey is to understand why these few identities eventually became unavoidable.
 
 ---
-# Part I. Entering the strange region: the control-volume labyrinth
+# Part I. How the labyrinth taught us that the labyrinth was not the mechanism
 
-## 1. First gate — fixed control volumes
-We began with
-\[
-\partial_tu-\nu\Delta u+\mathbb P(u\cdot\nabla u)=0,\qquad \nabla\cdot u=0,
-\]
-and
-\[
-N=-\mathbb P(u\cdot\nabla u)=u_t+\nu\Lambda^2u.
-\]
-For every fixed Fourier/helicity projector \(P\),
-\[
-\frac d{dt}\|Pu\|_2^2+2\nu\|\Lambda Pu\|_2^2=2\langle Pu,PN\rangle=:W_P.
-\]
-The first hope was that UV growth could be trapped by a sufficiently well chosen boundary.
-Then the mother law appeared.
+## 1. We entered through control volume because singularity looked like transport
+A possible singularity looked like ultraviolet stock growth, so the first natural question was: through which spectral boundary does the stock enter? For a fixed projector \(P\),
+\[ \frac d{dt}\|Pu\|_2^2+2\nu\|\Lambda Pu\|_2^2=2\langle Pu,PN\rangle=:W_P,\qquad N=u_t+\nu\Lambda^2u. \]
+This made stock, viscosity and boundary work look primitive.
 
-### 1.1 Mother force triangle — EXACT
-\[
-\boxed{\nu W_P=\|\Lambda^{-1}PN\|_2^2-\|\Lambda^{-1}Pu_t\|_2^2+\nu^2\|\Lambda Pu\|_2^2.}
-\]
-At \(W_P=0\),
-\[
-\|\Lambda^{-1}Pu_t\|_2^2=\|\Lambda^{-1}PN\|_2^2+\nu^2\|\Lambda Pu\|_2^2.
-\]
-At a stock turning point,
-\[
-\|\Lambda^{-1}PN\|_2^2=\|\Lambda^{-1}Pu_t\|_2^2+\nu^2\|\Lambda Pu\|_2^2.
-\]
-**First clue:** a scalar reading can vanish while a deeper vector geometry becomes more rigid. Zero work does not mean zero motion; it can mean an exact orthogonal decomposition.
+Then the mother identity appeared:
+\[ \boxed{\nu W_P=\|\Lambda^{-1}PN\|_2^2-\|\Lambda^{-1}Pu_t\|_2^2+\nu^2\|\Lambda Pu\|_2^2.} \]
+At \(W_P=0\), motion does not vanish; it becomes an exact Pythagoras. The observer sees zero while the underlying vector geometry becomes more rigid.
 
-## 2. Second gate — signed curl
-Introduce the helical signed-curl coordinate
-\[
-x=s|k|,\qquad s=\pm1.
-\]
-Push actual modal nonlinear work to \(dW_t(x)\). Euler energy and helicity give
-\[
-\boxed{\int dW_t=0,\qquad \int x\,dW_t=0.}
-\]
-For the signed tail \(\{x>a\}\), define
-\[
-F(a,t)=\int_{x>a}dW_t(x),\qquad \Psi(a,t)=\int(x-a)_+\,dW_t(x).
-\]
-The affine constraints imply
-\[
-\boxed{\Psi(a,t)=\frac12\int|x-a|\,dW_t(x),\qquad \Psi'=-F,\qquad \Psi''=dW_t.}
-\]
-Critical work and vortex stretching are
-\[
-P_{1/2}^{NL}=2\Psi(0),\qquad Q=\int_{\mathbb R}\Psi(a)\,da.
-\]
-**Second clue:** height, slope, curvature and area were not separate mechanisms; they were different readings of one signed-curl profile.
+**CLUE 1.** Vanishing in one natural reading can mean conversion into an orthogonal component, not physical disappearance.
 
-## 3. Third gate — the full-state action profile
-Let
-\[
-M_a=|C-a|.
-\]
+---
+## 2. Signed curl converted many boundaries into one shape
+Helical coordinates give the signed-curl variable \(x=s|k|\). Pushing nonlinear work to \(dW_t(x)\), Euler energy and helicity become
+\[ \boxed{\int dW_t=0,\qquad \int x\,dW_t=0.} \]
 Define
-\[
-\mathscr A(a,t)=\|M_a^{1/2}\Lambda^{-1}N\|_2^2-\|M_a^{1/2}\Lambda^{-1}u_t\|_2^2+\nu^2\|M_a^{1/2}\Lambda u\|_2^2.
-\]
+\[ F(a)=\int_{x>a}dW_t(x),\qquad \Psi(a)=\int(x-a)_+\,dW_t(x). \]
+The affine constraints force
+\[ \boxed{\Psi=\tfrac12\int|x-a|\,dW_t,\qquad \Psi'=-F,\qquad \Psi''=dW_t.} \]
+Critical work is one height, vortex stretching one area, boundary flux one slope, actual modal work one curvature.
+
+The family of control volumes was already collapsing into one profile.
+
+**CLUE 2.** When many observers are merely derivatives or moments of one exact object, the observers are coordinates rather than mechanisms.
+
+---
+## 3. Cubic traffic and quadratic force geometry turned out to be the same profile
+For \(M_a=|C-a|\), define the full-state action
+\[ \mathscr A(a,t)=\|M_a^{1/2}\Lambda^{-1}N\|_2^2-\|M_a^{1/2}\Lambda^{-1}u_t\|_2^2+\nu^2\|M_a^{1/2}\Lambda u\|_2^2. \]
 The mother law gives
-\[
-\boxed{\mathscr A(a,t)=2\nu\Psi(a,t).}
-\]
-A cubic work potential and a quadratic force-action defect were exactly the same object.
-**Third clue:** if two descriptions are exactly equal, neither description is the mechanism; the mechanism is the compatibility making them equal.
+\[ \boxed{\mathscr A(a,t)=2\nu\Psi(a,t).} \]
+One side is cubic nonlinear traffic; the other is quadratic force geometry. They are exactly the same function.
 
-## 4. Fourth gate — triad tents
-For a closed helical triad with signed roots \(\alpha<\beta<\gamma\), the work has the affine-constrained form
-\[
-T_\alpha=\frac{Z}{(\beta-\alpha)(\gamma-\alpha)},\quad T_\beta=-\frac{Z}{(\beta-\alpha)(\gamma-\beta)},\quad T_\gamma=\frac{Z}{(\gamma-\alpha)(\gamma-\beta)}.
-\]
-Its hinge contribution is a triangular Green tent \(Z M_{\alpha\beta\gamma}(a)\), and
-\[
-\boxed{\sum_if(x_i)T_i=Zf[\alpha,\beta,\gamma]=Z\int f''(a)M_{\alpha\beta\gamma}(a)\,da.}
-\]
-Affine readers \(1,x\) vanish. Enstrophy reads constant curvature. Criticality \(|x|\) reads the fold at zero.
-For \(Z>0\), the signed-curl distribution undergoes a mean-preserving spread: the median donates and the extremes receive.
-**Fourth clue:** criticality is not a mysterious new invariant; it is the first natural convex non-affine reading beyond the two affine Euler invariants.
+The strange part was not that one representation was better. The strange part was that two apparently different ontologies were forced to agree.
 
-## 5. Fifth gate — neutral single-helicity hardening
-Positive critical creation forces a true single-helicity tail \(P\) with
-\[
-\boxed{2\langle Pu,PN\rangle=0,\qquad 2\langle\Lambda Pu,PN\rangle>0.}
-\]
-The tail hardens in signed curl without receiving net kinetic-energy work.
-The dangerous process therefore need not be growth of total mass; it can be deformation of the distribution of a finite mass.
-This was the first early shadow of the later total-variation picture.
-
-## 6. Sixth gate — flux reversal and the radial sorter
-Around a nondegenerate neutral tail, shallower radii donate and deeper radii receive. The intervening annulus compensates.
-This suggested that the core mechanism might be radial sorting.
-We introduced radial moments, excess-radius stocks, moving neutral radii, and viscous shape directions.
-Nonlinearity and viscosity repeatedly acted on the same radial shape variables.
-For a long stretch of the journey, it was reasonable to expect a final radial inequality.
-
-## 7. Seventh gate — moving fronts
-Fix a positive stock level \(\kappa\) and define
-\[
-K_{\rm rad}(R_\kappa(t),t)=\kappa.
-\]
-The moving front obeys an exact kinematic law
-\[
-R_\kappa'E_{>R_\kappa}=\Xi(R_\kappa).
-\]
-It also carries a true viscous budget and a scale-amplified growth law.
-The family seemed capable of following a singular UV excursion directly.
-But coarea revealed the observer cost: any weight strong enough to see an unbounded front demanded a forcing action stronger than the kinetic energy class supplies.
-**Seventh clue:** an observer cannot manufacture a physical budget.
-
-## 8. Eighth gate — Volterra families and observer exhaustion
-Radial stock families, heat-square families, and adaptive observers all collapsed back to moments or commutators of the true NS fields.
-No further control-volume refinement lowered the endpoint requirement to the already-funded energy-dual level.
-This was the first unmistakable sign that the labyrinth was made of representations, not mechanisms.
-The control volumes were revealing shadows of a deeper object.
-
-## 9. Ninth gate — full convolution
-We stopped taking absolute values before complete convolution summation.
-For each scalar curl multiplier \(\phi\), the nonlinear covariance failure resums into a single full-field defect \(R_\phi\).
-Affine multipliers vanish as fields:
-\[
-\boxed{R_{\alpha+\beta x}=0.}
-\]
-The hinge family gives the Peano reconstruction
-\[
-\boxed{R_\phi=\frac12\int R_{|C-a|}\,d\phi''(a)}
-\]
-after standard localization.
-Triads, quartets, heat fibers, projective source lines, and companion outputs became disintegrations of one field rather than separate pieces of ontology.
-
-## 10. Tenth gate — the hard helicity flip
-For \(\phi(x)=|x|\), the critical work collapses to
-\[
-J_{\rm flip}=P_-N^{(++)}+P_+N^{(--)}
-\]
-and
-\[
-\boxed{W_\Lambda=4\langle\Lambda u,J_{\rm flip}\rangle.}
-\]
-The two positive critical helicity stocks obey
-\[
-\boxed{\dot C_+|_{NL}=\dot C_-|_{NL}=\frac12W_\Lambda.}
-\]
-Critical growth is common-mode loading, not kinetic helicity ping-pong.
-**Tenth clue:** signed helicity stays balanced while unsigned critical variation can grow on both sheets together.
-
-## 11. Eleventh gate — static geometry reaches its limit
-The hard flip has an exact child-scale null structure, but after one \(\Lambda^{-1}\) the symbol is order zero.
-Deep high-high interactions at fixed child scale saturate to a nonzero angular profile.
-There is no hidden parent-heat decay.
-**Eleventh clue:** the missing mechanism cannot be another static Fourier-symbol gain; it must be dynamical compatibility.
-
-## 12. Twelfth gate — torsion
-Define the symmetric helicity-involution torsion
-\[
-T_H(a,b)=B(Ha,Hb)-HB(Ha,b)-HB(a,Hb)+B(a,b).
-\]
-Then
-\[
-\boxed{J_{\rm flip}=\frac14T_H(u,u).}
-\]
-The Fourier statement “same-helicity parents create an opposite-helicity child” became the intrinsic statement “the eigenspaces of \(H\) fail to close under the Euler bilinear product.”
-The object stayed the same; the language became intrinsic.
-
-## 13. Thirteenth gate — torsion has its own heat law
-The same field obeys
-\[
-\boxed{(\partial_t+\nu\Lambda^2)J_{\rm flip}=S_J.}
-\]
-A finite singular endpoint forces the energy-dual heat-source action \(\Lambda^{-1}S_J\) to diverge in the ultraviolet.
-The static source had become a derived field with a native parabolic evolution.
-
-## 14. Fourteenth gate — stress
-The torsion is also
-\[
-J_{\rm flip}=-\sum_hP_{-h}\mathbb P\operatorname{div}(u_h\otimes u_h).
-\]
-Its source is the projected divergence of the heat-covariant stress rate
-\[
-\Sigma_h=u_h\otimes N_h+N_h\otimes u_h-2\nu\sum_j\partial_ju_h\otimes\partial_ju_h.
-\]
-Trace is Leray-invisible. Deviatoric stress mass is exactly kinetic mass in another coordinate.
-Viscosity pays both magnitude Fisher information and orientation Fisher information.
-**Fourteenth clue:** stress did not create a new wallet; it was another chart on the same kinetic geometry.
-
-## 15. Fifteenth gate — pressure becomes extrinsic geometry
-On divergence-free fields define
-\[
-\nabla_vw=\mathbb P[(v\cdot\nabla)w].
-\]
-The Hodge-normal complement is a second fundamental form, with
-\[
-II(u,u)=-\nabla p.
-\]
-Gauss expresses intrinsic curvature through this pressure/Hodge normal geometry.
-But the final source remains divergent after exact Leray projection.
-Pressure therefore cannot own the endpoint; the remaining problem is intrinsic to the divergence-free state manifold.
-
-## 16. Sixteenth gate — helicity connection
-Define
-\[
-\boxed{A_v=[\nabla_v,H].}
-\]
-Then
-\[
-\boxed{A_v^*=A_v,\qquad HA_v+A_vH=0.}
-\]
-Define
-\[
-R_H(v)=HA_v-A_{Hv}.
-\]
-The hard field becomes
-\[
-\boxed{4J_{\rm flip}=R_H(u)u.}
-\]
-A source had become curvature.
-
-## 17. Seventeenth gate — Gauss, Codazzi, Ricci
-Differentiating \(H^2=I\) forces
-\[
-HA_u+A_uH=0,
-\]
-and then
-\[
-H\mathcal L_uA_u+(\mathcal L_uA_u)H=-2A_u^2.
-\]
-The apparent positive square \(A_u^2\) later cancels from the true longitudinal curvature rate.
-The Hessian splits into forced diagonal Gauss terms, antisymmetric Ricci/pressure terms, and one symmetric self-adjoint off-diagonal Codazzi block \(C_H\).
-The final obstruction became a longitudinal Codazzi rate.
-**Seventeenth clue:** some positive-looking terms are not resources at all; they are geometric accelerations required by a moving frame.
-
-## 18. Eighteenth gate — curl/radial mismatch
-On one helicity sheet \(Cu_h=h\Lambda u_h\). Exact differentiation gives
-\[
-P_{-h}A_uu=\Lambda^{-1}P_{-h}([D_u,C]-h[D_u,\Lambda])u_h.
-\]
-Sheet crossing is the mismatch between transporting signed curl and transporting radial frequency.
-The flip is therefore not an independent species.
-It is a failure of the two factors of curl to move compatibly.
-
-## 19. Nineteenth gate — radial transport is heat-resolved
-With
-\[
-L_u=[\nabla_u,\Lambda],
-\]
-we have
-\[
-\boxed{\{\Lambda,L_u\}=[\nabla_u,\Lambda^2].}
-\]
-On nonzero spectrum,
-\[
-L_u=\int_0^\infty e^{-s\Lambda}[\nabla_u,\Lambda^2]e^{-s\Lambda}\,ds.
-\]
-The nonlocal radial connection is a Poisson resolution of a local commutator with the physical viscous generator.
-The radial story had never been separate from heat.
-
-## 20. Leaving the labyrinth
-At this point the pattern was impossible to ignore.
-Flux became hinge potential.
-Hinge potential became force action.
-Triad geometry became full-field secant defect.
-Secant defect became torsion.
-Torsion became stress.
-Stress became kinetic geometry.
-Raw transport became pressure plus intrinsic connection.
-Flip became curvature.
-Radial transport became a heat-resolved commutator.
-Every apparent new mechanism repeatedly collapsed into another representation of something already present.
-The control-volume maze had done its job: it had removed false ontologies one by one.
-The remaining task was no longer to find a better observer.
-It was to identify the structure generating all those observers and all those collapses.
+**CLUE 3.** Exact coincidence between unrelated-looking descriptions usually means both descend from a smaller common structure.
 
 ---
-## 20.1 Retrospective — what each gate changed in the question
-The importance of the control-volume journey is not the number of identities accumulated. Its importance is that every successful gate changed the question itself.
+## 4. Triad tents showed that criticality reads curvature of the fold
+For a closed helical triad with signed roots \(\alpha<\beta<\gamma\), energy and helicity constrain the work to one affine-null direction. For every scalar reader \(f\),
+\[ \boxed{\sum_i f(x_i)T_i=Zf[\alpha,\beta,\gamma]=Z\int f''(a)M_{\alpha\beta\gamma}(a)\,da.} \]
+Affine readers \(1,x\) vanish. Enstrophy sees constant curvature. Criticality \(|x|\) sees the kink at \(0\). For \(Z>0\), the median signed root donates and the extremes receive: a mean-preserving spread.
 
-At the first gate we asked: **where does nonlinear work enter a region?** The mother triangle answered that work is only a scalar projection of a three-vector relation among nonlinear acceleration, true state velocity, and heat drift.
+This was the first clear sign that criticality was not attached to a named triad class. It was attached to the non-affinity of the modulus of signed curl.
 
-At the signed-curl gate we asked: **which boundary sees critical transfer?** The hinge potential answered that boundaries are derivatives of one potential, while criticality and vortex stretching are different moments of the same signed-curl work law.
+**CLUE 4.** Criticality is the first natural convex reading beyond the two affine Euler invariants.
 
-At the action gate we asked: **can cubic traffic be owned by a quadratic budget?** The answer was stranger: the cubic traffic profile and the quadratic force-action profile are exactly equal. The distinction between “traffic” and “force geometry” was already coordinate-dependent.
+---
+## 5. A tail hardened without receiving kinetic work
+Positive critical creation forces a single-helicity tail with
+\[ \boxed{2\langle Pu,PN\rangle=0,\qquad 2\langle\Lambda Pu,PN\rangle>0.} \]
+The tail hardens in signed curl while receiving no net kinetic-energy work. So UV danger need not mean more mass; it can mean deformation of a finite mass distribution.
 
-At the triad gate we asked: **which interaction is dangerous?** The tent identity answered that affine invariants annihilate all triads, while the critical kink only detects second-difference curvature across the fold. Danger was encoded in non-affinity, not in a named interaction taxonomy.
+The same tail exhibits flux reversal: shallower radii donate, deeper radii receive. That naturally suggested a radial sorter and led us into moving fronts, excess-radius stocks and viscous shape laws.
 
-At the neutral-tail gate we asked: **where is the energy feeding the UV?** The answer was that a tail can harden with zero net kinetic work. The relevant process was redistribution of signed-curl moment, not simple mass injection.
+**CLUE 5.** One finite state can be stationary in one metric and expanding in another. Critical growth is already a problem of changing geometry, not merely changing mass.
 
-At the radial-sorter gate we asked: **can the outward bias be turned into a one-dimensional monotonic mechanism?** The answer was partly yes: exact sorting and flux reversal exist. But every sorter came with compensating regions and a heat-coupled shape law.
+---
+## 6. The radial road was real, yet every better observer demanded a stronger observer cost
+The radial sorter produced exact front dynamics. For a fixed level \(\kappa\),
+\[ K_{\rm rad}(R_\kappa(t),t)=\kappa,\qquad R_\kappa' E_{>R_\kappa}=\Xi(R_\kappa). \]
+There were genuine viscous budgets and scale-amplified laws. It was reasonable to expect the right moving front to trap the singular excursion.
 
-At the moving-front gate we asked: **can an adaptive boundary follow the singularity and force a contradiction?** The answer was that adaptive observers can locate the motion but cannot lower the physical forcing regularity demanded by that motion.
+Instead, coarea and Volterra analysis revealed a systematic obstruction: any observer strong enough to see an unbounded front demanded forcing regularity stronger than the kinetic energy class supplies. Refining the observer only reconstructed more exact moments of the same fields.
 
-At observer exhaustion we finally learned the methodological lesson: a reader can reveal structure, but it cannot create an owner. If an estimate is not present in the true fields, no increasingly sophisticated control-volume coordinate will manufacture it.
+**CLUE 6.** A reader can expose or amplify motion, but it cannot manufacture a physical owner. Repeated observer failure is evidence that the missing structure lies below the observer level.
 
-At full convolution we asked: **what remains after all channel bookkeeping is summed before estimating?** The answer was a single multiplier covariance defect. Many microscopic cancellation patterns were Fourier disintegrations of one full-field object.
+---
+## 7. Full convolution erased microscopic ontology
+The next decisive move was to sum the entire nonlinearity before estimating. For every scalar curl multiplier \(\phi\), all covariance failure resums into one field \(R_\phi\), with
+\[ \boxed{R_{\alpha+\beta x}=0,\qquad R_\phi=\tfrac12\int R_{|C-a|}\,d\phi''(a)} \]
+after standard localization.
 
-At the hard-flip gate we asked: **which helicity transfer actually produces critical growth?** The answer was common-mode critical loading through one same-sheet-to-opposite-sheet resultant. The two positive critical stocks rose together while signed helicity remained the difference invariant.
+Triads, quartets, heat fibers, projective source lines and companion outputs did not disappear; they became disintegrations of one full-field defect. The question “which microscopic channel is the mechanism?” was no longer intrinsic.
 
-At the static-symbol gate we asked: **is the missing half derivative hidden in a sharper helical null form?** The answer was no. The deep high-high symbol saturates. The remaining mechanism must know time, heat, or compatibility between structures.
+**CLUE 7.** The object that survives exact resummation is more fundamental than the taxonomy of coordinates used to disintegrate it.
 
-At the torsion gate we asked: **what is the hard Fourier sector intrinsically?** The answer was the failure of the helicity eigenspaces to close under the Euler bilinear product. A parent-child story became an involution-torsion story.
+---
+## 8. The hard helicity flip revealed balanced unsigned growth
+For \(\phi(x)=|x|\), the full field reduces to one hard resultant
+\[ J_{\rm flip}=P_-N^{(++)}+P_+N^{(--)},\qquad \boxed{W_\Lambda=4\langle\Lambda u,J_{\rm flip}\rangle.} \]
+The two positive critical helicity stocks satisfy
+\[ \boxed{\dot C_+|_{NL}=\dot C_-|_{NL}=\tfrac12W_\Lambda.} \]
+This is not helicity ping-pong. The positive stocks grow in common mode while their difference, signed helicity, has zero nonlinear input.
 
-At the native-heat gate we asked: **can inherited coherence sustain the endpoint?** The answer was no: smooth inherited pieces are heat-funded, while the singular part must be continually regenerated by a true heat-covariant source.
+Long before we introduced a signed measure, the algebra was already describing growth of an unsigned magnitude under a fixed signed quantity.
 
-At the stress gate we asked: **is there a hidden tensor energy behind torsion?** The answer was that stress mass is kinetic mass, isotropic stress is pressure-invisible, and first-order magnitude/orientation deformation is already paid by viscosity.
+**CLUE 8.** Critical growth is balanced creation of opposite-signed variation, not simple transfer between the sheets.
 
-At the pressure gate we asked: **can the missing source live in the gradient direction?** The answer was that pressure is extrinsic Hodge geometry. The divergent endpoint survives after projection onto the true divergence-free manifold.
+---
+## 9. Static null structure reached a hard wall
+The flip coefficient has real null structure: child-scale gain, angular vanishing, Beltrami degeneracy. But the deep high-high limit at fixed child scale remains nonzero. After the natural \(\Lambda^{-1}\), the hard symbol is only order zero.
 
-At the connection gate we asked: **what does sheet crossing mean without Fourier coordinates?** The answer was the commutator \(A=[\nabla,H]\): helicity splitting is not parallel under the intrinsic transport connection.
+This negative result was a major clue. There was no hidden parent-heat decay left to discover in the static coefficient.
 
-At the Gauss gate we asked: **is the square \(A^2\) the positive quantity we had been missing?** The answer was no. It is the centripetal correction forced by \(H^2=I\), and it disappears from the true longitudinal curvature rate.
+**CLUE 9.** Once static geometry is exhausted, any remaining protection must be dynamical: it must come from compatibility of evolving structures, not a sharper frozen-time symbol.
 
-At the Codazzi gate we asked: **what is left once involution geometry, pressure curvature, stress mass, and static null structure are exhausted?** The answer was a symmetric off-diagonal angular acceleration — a rate, not a new state variable.
+---
+## 10. Fourier ancestry collapsed into torsion
+Define the helicity-involution torsion
+\[ T_H(a,b)=B(Ha,Hb)-HB(Ha,b)-HB(a,Hb)+B(a,b). \]
+Then
+\[ \boxed{J_{\rm flip}=\tfrac14T_H(u,u).} \]
+The statement “same-helicity parents create opposite-helicity output” became “the eigenspaces of \(H\) fail to close under the Euler bilinear product.” The physical event was unchanged; only the representation became intrinsic.
 
-At the curl/radial gate we asked: **is that angular acceleration truly independent?** The answer began to be no: sheet crossing is exactly the mismatch between transport of curl and transport of its modulus.
+**CLUE 10.** A Fourier genealogy can be the coordinate shadow of an algebraic non-integrability.
 
-At the heat-Sylvester gate we asked: **is radial transport an unrelated nonlocal obstruction?** The answer was again no: radial transport is the Poisson-resolved commutator with the same \(\Lambda^2=-\Delta\) that generates physical viscosity.
+---
+## 11. Torsion became heat rate, then stress, but never a new resource
+The same field obeys
+\[ \boxed{(\partial_t+\nu\Lambda^2)J_{\rm flip}=S_J.} \]
+It is also
+\[ J_{\rm flip}=-\sum_hP_{-h}\mathbb P\operatorname{div}(u_h\otimes u_h). \]
+Its source is the projected divergence of the heat-covariant rate of that same quadratic helical stress.
 
-This is why the journey should be remembered as a sequence of ontology collapses rather than a sequence of failed estimates.
+Could stress supply the missing wallet? Again the answer was no in a revealing way. Trace is pressure-invisible; deviatoric stress mass is exactly kinetic mass in another coordinate; first-order magnitude and orientation Fisher information are already paid by viscosity.
 
-Each gate removed one candidate primitive and exposed a smaller structure underneath it.
+**CLUE 11.** Every time a dangerous state object changes representation, its obvious mass turns out to be already owned. What remains unowned is increasingly its rate of geometric change.
 
-By the time the control-volume labyrinth was exhausted, the surviving vocabulary had become astonishingly small: curl, sign, modulus, square, connection, symmetry defect, and covariant rate.
+---
+## 12. Pressure disappeared as a force and returned as curvature
+On the divergence-free manifold,
+\[ \nabla_vw=\mathbb P[(v\cdot\nabla)w]. \]
+The removed Hodge-normal component becomes a second fundamental form \(II\), with \(II(u,u)=-\nabla p\), and Gauss expresses intrinsic curvature through \(II\).
 
-That is where Part II begins.
+Pressure therefore did not vanish under Leray projection. It changed role: from an apparent forcing direction into extrinsic geometry of the retained state manifold. Yet the endpoint divergence survives after projection, so pressure cannot own the final obstruction.
 
+**CLUE 12.** Projection does not erase discarded physics; it can reappear as curvature of the geometry that remains.
+
+---
+## 13. The hard source became a connection curvature
+Define
+\[ \boxed{A_v=[\nabla_v,H],\qquad A_v^*=A_v,\qquad HA_v+A_vH=0.} \]
+and
+\[ R_H(v)=HA_v-A_{Hv}. \]
+Then
+\[ \boxed{4J_{\rm flip}=R_H(u)u.} \]
+The hard field had now passed through the exact chain
+\[ \text{Fourier flip}\to\text{Euler torsion}\to\text{stress divergence}\to\text{helicity curvature}. \]
+A “source” had become failure of a splitting to remain compatible with intrinsic transport.
+
+**CLUE 13.** If one object can be written both as a nonlinear source and as curvature, the deeper problem is compatibility of the decomposition under motion.
+
+---
+## 14. The tempting positive square was only centripetal
+Differentiating \(H^2=I\) yields
+\[ HA_u+A_uH=0,\qquad H\mathcal L_uA_u+(\mathcal L_uA_u)H=-2A_u^2. \]
+The square \(A_u^2\) looked like the positive quantity that all previous approaches lacked. But it cancels exactly from the true longitudinal derivative of helicity curvature.
+
+The later interpretation explains why: \(A^2\) is the centripetal term forced by observing a rotating helicity frame from a fixed frame. It is genuine geometry, but not intrinsic angular acceleration.
+
+**CLUE 14.** A positive term can be kinematic rather than coercive. The invariant obstruction is what survives passage to the adapted frame.
+
+---
+## 15. The surviving obstruction was a rate, not another state quantity
+The helicity Hessian splits into diagonal Gauss terms, antisymmetric Ricci terms tied to Hodge curvature, and one symmetric self-adjoint off-diagonal Codazzi block \(C_H\). After stress mass, pressure, static null structure and Gauss square were exhausted, the endpoint became a longitudinal covariant Codazzi rate.
+
+This changed the possible singularity mechanism completely. A trajectory can obey every instantaneous identity and still move through the compatible state geometry infinitely fast.
+
+**CLUE 15.** When state-level escape routes are repeatedly closed, the last possible escape can be infinite compatible speed rather than an illegal state.
+
+---
+## 16. Angular crossing turned out to be curl/radial mismatch
+On a helicity sheet \(Cu_h=h\Lambda u_h\), exact differentiation gives
+\[ P_{-h}A_uu=\Lambda^{-1}P_{-h}([D_u,C]-h[D_u,\Lambda])u_h. \]
+Sheet crossing is therefore not an independent helicity source. It is the mismatch between transport of signed curl and transport of its radial modulus.
+
+This was the moment when the long radial story and the later helicity story began to look like two projections of one parent geometry.
+
+**CLUE 16.** Radial deformation and helicity rotation are complementary pieces of the transport of curl itself.
+
+---
+## 17. Radial transport was already tethered to heat
+For
+\[ L_u=[\nabla_u,\Lambda], \]
+the square identity \(\Lambda^2=-\Delta\) gives
+\[ \boxed{\{\Lambda,L_u\}=[\nabla_u,\Lambda^2].} \]
+On nonzero spectrum,
+\[ L_u=\int_0^\infty e^{-s\Lambda}[\nabla_u,\Lambda^2]e^{-s\Lambda}\,ds. \]
+Thus the nonlocal radial connection is the Poisson-resolved form of a local commutator with the physical viscous generator.
+
+The early observation that viscosity and nonlinear sorting kept acting on the same radial shape finally had an operator explanation.
+
+**CLUE 17.** Heat does not merely oppose radial motion; radial transport is algebraically resolved from the same square that generates heat.
+
+---
+## 18. What the labyrinth actually taught us
+The control-volume journey was useful precisely because each successful stage destroyed one false primitive.
+
+Scalar work became a vector Pythagoras.
+Boundaries became derivatives of one hinge potential.
+Cubic traffic became quadratic force action.
+Triad danger became curvature of \(|x|\).
+UV hardening became redistribution at fixed lower-order mass.
+Adaptive observers became readers with unavoidable observer cost.
+Microscopic channels became one full-convolution defect.
+Fourier ancestry became torsion.
+Torsion became stress and curvature.
+Stress mass became kinetic mass.
+Pressure became extrinsic geometry.
+The Gauss square became centripetal frame correction.
+Helicity crossing became radial/curl mismatch.
+Radial transport became heat-resolved.
+
+These were not repeated failures to find a clever estimate. They were repeated **ontology collapses**. Every time we promoted a visible representation to “the mechanism,” an exact identity revealed it as one face of something smaller.
+
+By the end, the surviving vocabulary had become astonishingly short:
+\[ \boxed{C,\qquad H=\operatorname{sgn}C,\qquad \Lambda=|C|,\qquad C^2=\Lambda^2,\qquad \nabla,\qquad [\nabla,H].} \]
+
+This is the real meaning of the journey. BSVO records the maze; the maze itself points toward the few identities that generate all of its shadows.
+
+---
+## 19. The strange pattern we could name before we could explain it
+One phenomenon kept recurring.
+
+When work vanished, a Pythagoras appeared.
+When a boundary description proliferated, one potential reconstructed it.
+When interaction classes proliferated, full convolution collapsed them.
+When a source seemed new, it became torsion or stress.
+When pressure was projected away, it returned as curvature.
+When a positive square appeared, it became frame geometry.
+When radial sensitivity weakened, helicity sensitivity strengthened.
+When angular motion was absorbed into a co-moving frame, the same motion reappeared as state crossing.
+
+Nothing simply disappeared. It changed representation, and the change was exact.
+
+The first informal name for this was **conservation of visibility**. The stronger idea is now:
+\[
+\boxed{
+\text{dangerous motion may change representation, but the exact NS compatibility laws force the representations to remain mutually consistent.}
+}
+\]
+
+That is the bridge to Part II. The goal is no longer to escape the maze. It is to identify the small structure that generates the maze and governs every allowed metamorphosis.
+
+---
 # Part II. The intrinsic architecture suggested by the clues
 
 ## 21. One operator, three physical faces
