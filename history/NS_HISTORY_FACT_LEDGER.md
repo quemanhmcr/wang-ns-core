@@ -1,5 +1,5 @@
-# NS HISTORY FACTS FOR NEO
-Purpose: a compact team-facing literature ledger for the active contract in `DEFINE_PROBLEM.md`.
+# NS HISTORY FACT LEDGER — TERMINAL ERA
+Historical purpose: a team-facing literature ledger for the terminal contract now archived as `TERMINAL_PROBLEM_CONTRACT.md`.
 Keep only facts that change an extraction, typing, normal-form, propagation, or anti-loop decision.
 Do not read this file as a regularity proof.
 Do not promote `TEAM DEDUCTION`, `CANDIDATE`, or `OPEN` to external theorems.
@@ -55,7 +55,7 @@ For the NEO layer, the main seam is
 Once a terminal datum enters a backward-rigid class, external propagation can finish the branch.
 ### A03. Terminal-object architecture is mainstream NS methodology.
 **EXTERNAL EXACT.** CKN/Lin localize singularity analysis; ESS uses blow-up plus backward uniqueness; Kenig--Koch uses concentration-compactness plus rigidity; KNSS and Albritton--Barker produce ancient objects.
-**TEAM USE.** `DEFINE_PROBLEM.md` is historically aligned: compactness and propagation are external layers, not NEO primitives.
+**TEAM USE.** `TERMINAL_PROBLEM_CONTRACT.md` is historically aligned: compactness and propagation are external layers, not NEO primitives.
 CKN: https://doi.org/10.1002/cpa.3160350604
 Lin: https://doi.org/10.1002/(SICI)1097-0312(199803)51:3%3C241::AID-CPA2%3E3.0.CO;2-A
 ESS: https://doi.org/10.1070/RM2003v058n02ABEH000609

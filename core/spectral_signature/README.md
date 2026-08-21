@@ -120,3 +120,5 @@ u/\mathrm{Kill}
 F_{NS}(u).
 }
 \]
+
+For the pre-signature worktree history — terminal normal forms, C0/C1/G3/Type-I geometry and the material-curl precursor — see [../../history/worktrees/README.md](../../history/worktrees/README.md).

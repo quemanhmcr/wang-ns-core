@@ -1,11 +1,13 @@
-# DEFINE THE PROBLEM
-## Clay -> singular endpoint -> NEO Singularity Normal Form
+# TERMINAL PROBLEM CONTRACT — HISTORICAL
+## Clay → singular endpoint → finite terminal normal form
 
-This file is the active problem contract for the Wang--Navier--Stokes programme.
-The long exploratory files are archived under `history/`.
-They remain evidence and audit history, but they are no longer the proof surface.
-The canonical compiler is `core/NEO/NEO_ANCHOR_COMPILER.md`.
-This file states what problem we are actually trying to solve and how NEO should be used.
+> **Historical role.** This file was formerly the root `DEFINE_PROBLEM.md` and was the active contract before the worktree programme discovered the whole-state mother/spectral-flag signature. It is retained because it explains why the project pivoted from trajectory surveillance to bounded-ancient terminal objects, C0/C1 contact geometry, Type-I/Type-II typing, and finite normal forms. It is **not** the current canonical problem statement.
+>
+> Current structural theory: [../core/spectral_signature/README.md](../core/spectral_signature/README.md).
+> Current compiler/workbench: [../core/NEO/](../core/NEO/).
+> Worktree-era narrative: [worktrees/README.md](worktrees/README.md).
+
+**Path note.** Any `research/...` filenames mentioned below are historical branch-era coordinates. They are intentionally preserved as provenance names even though the root `research/` directory no longer exists on `main`.
 
 ## 0. Status labels
 

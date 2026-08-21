@@ -30,6 +30,8 @@ Ba audit executable tương ứng:
 
 NEO được giữ riêng tại [core/NEO/](core/NEO/) đúng vai trò của nó: **compiler/workbench đã dẫn tới discovery và giúp ép ontology về anchors nhỏ**. NEO không phải chủ đề của spectral-signature core.
 
+Tiền sử các worktree — singularity normal form, endpoint-first, C0/C1/G3/Type-I và material-curl trước khi có toàn spectral flag — được kể tại [history/worktrees/README.md](history/worktrees/README.md).
+
 Phần II dưới đây kể lại con đường khám phá: những reader nào đã mù, những overclaim nào bị falsify, vì sao zero fold không đủ, vì sao shifted family xuất hiện, và vì sao cuối cùng family lớn lại co về mother `E=[\nabla,C]`.
 
 ---
