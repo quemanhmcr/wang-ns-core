@@ -76,9 +76,9 @@ Claim của core này là structural formation: projected Euler/geodesic/Lie–P
 
 ## Curved Formation–Signature core
 
-Core hợp nhất tại [core/curved_formation_signature/README.md](core/curved_formation_signature/README.md) trả lời câu hỏi xuất hiện sau khi hai theory trên đã trưởng thành: **formation core sinh ra phương trình, còn spectral signature có phải chỉ là một bộ tọa độ hoàn chỉnh, hay nó thực sự mang geometry của formation core?**
+Core hợp nhất tại [core/curved_formation_signature/README.md](core/curved_formation_signature/README.md) trả lời câu hỏi xuất hiện sau khi hai theory trên đã trưởng thành: **formation core sinh ra phương trình, còn spectral signature chỉ là tọa độ hoàn chỉnh hay thật sự mang geometry của formation core?**
 
-Kết quả canonical hiện tại là
+Kết quả canonical đã được sharpen sau campaign thứ hai.  Không chỉ có
 
 \[
 \boxed{
@@ -88,7 +88,7 @@ E_u=[\nabla_u,C],
 }
 \]
 
-và degree kế tiếp là curvature action
+và
 
 \[
 \boxed{
@@ -96,16 +96,53 @@ d_\nabla E=d_\nabla^2C=[R,C].
 }
 \]
 
-Formation bracket khi transport sang mother image không phải naive operator commutator; exact identity là
+Curl còn tạo một **spectral reduction** của formation connection.  Trong curl spectral frame,
 
 \[
 \boxed{
-E_{[u,v]}
-=[\nabla_u,E_v]-[\nabla_v,E_u]-[R(u,v),C].
+\nabla=V+B,
+\qquad
+[V,C]=0,
+\qquad
+E=[B,C].
 }
 \]
 
-Curvature term này được đo trực tiếp như curl holonomy quanh infinitesimal formation loop, và shifted spectral cuts tomograph chính curvature đó:
+Nói cách khác, \(V\) quay bên trong cùng curl eigensheet, còn \(B\) trộn giữa các eigensheets; mother \(E\) đo chính sheet-mixing part này, weighted bởi spectral gaps.
+
+Formation curvature cũng tách
+
+\[
+R=R_\parallel+R_\perp,
+\qquad
+[R_\parallel,C]=0,
+\]
+
+với within-sheet Gauss/Ricci sector
+
+\[
+R_\parallel=[V,V]+\Pi_\parallel[B,B]
+\]
+
+và cross-sheet Codazzi sector \(R_\perp\).  Curvature mother chỉ thấy cross-sheet part:
+
+\[
+\boxed{
+K=[R,C]=[R_\perp,C].
+}
+\]
+
+Higher Bianchi levels couple hidden within-sheet curvature trở lại các sensor đã thấy:
+
+\[
+\boxed{
+d_\nabla K=R\wedge E,
+\qquad
+d_\nabla R=0.
+}
+\]
+
+Shifted spectral cuts vẫn tomograph curvature action:
 
 \[
 \boxed{
@@ -113,17 +150,30 @@ Curvature term này được đo trực tiếp như curl holonomy quanh infinite
 }
 \]
 
-Metric bridge cũng đóng exact trên strain signature \(q_u(x,n)=n^TS(u)(x)n\):
+Metric bridge giữ nguyên exact trên strain signature \(q_u(x,n)=n^TS(u)(x)n\):
 
 \[
 \boxed{
 L^2_u\longleftrightarrow15\,\dot H^{-1}_q,
 \qquad
-\|Cu\|_2^2\longleftrightarrow15\,L^2_q,
+\|Cu\|_2^2\longleftrightarrow15\,L^2_q.
 }
 \]
 
-nên heat là Riesz ratio giữa hai signature metrics. Strongest current claim là: **spectral-signature theory là một complete curved representation theory của canonical physical formation core**. Claim này vẫn không phải global regularity theorem; abstract snapshot signature cũng không tự xác định mọi possible background metric-Lie core.
+Strongest current wording là:
+
+\[
+\boxed{
+\textbf{Navier–Stokes formation geometry admits a canonical curl-spectral reduction.}
+}
+\]
+
+“Curved representation” ở đây nghĩa là signature coordinates mang transported formation connection/curvature; **signature image tự nó vẫn là một linear flat state image**.  \([R,C]\) cũng không phải blow-up amplitude: 2D, Beltrami và shear controls đều có thể có nonzero ambient curvature.  `comm(C)` chỉ là first-order stabilizer, không phải final gauge; và \(\ker C\) không được đồng nhất với gauge trên topology không tầm thường.
+
+Hai notes quan trọng nhất của update này:
+
+- [CURL_SPECTRAL_REDUCTION.md](core/curved_formation_signature/CURL_SPECTRAL_REDUCTION.md) — isospectral orbit, stabilizer splitting, spectral sheets, Gauss–Codazzi–Ricci và Cartan/Bianchi structure.
+- [DEEP_GEOMETRY_LESSONS.md](core/curved_formation_signature/DEEP_GEOMETRY_LESSONS.md) — falsifications, topology/boundary lessons, BCH distinction, harmless classes và các scope corrections.
 
 ## Kết quả structural chính
 
@@ -201,6 +251,8 @@ Tức microlocal signature norm, sau universal normalization, chính là Sobolev
 - [Core_signature.md](Core_signature.md) — narrative chung: Mục I giới thiệu formation core, Mục II giữ lịch sử spectral-signature, Mục III kể quá trình hai theory hợp nhất thành curved formation–signature geometry.
 - [core/curved_formation_signature/README.md](core/curved_formation_signature/README.md) — cửa vào core hợp nhất và current structural claim.
 - [core/curved_formation_signature/FORMATION_SIGNATURE_EQUIVALENCE.md](core/curved_formation_signature/FORMATION_SIGNATURE_EQUIVALENCE.md) — forward/reverse bridge và dynamical conjugacy trên fixed physical core.
+- [core/curved_formation_signature/CURL_SPECTRAL_REDUCTION.md](core/curved_formation_signature/CURL_SPECTRAL_REDUCTION.md) — curl isospectral orbit, spectral-sheet splitting, Gauss–Codazzi–Ricci và Cartan/Bianchi geometry.
+- [core/curved_formation_signature/DEEP_GEOMETRY_LESSONS.md](core/curved_formation_signature/DEEP_GEOMETRY_LESSONS.md) — falsifications, topology/boundary typing, BCH distinction, harmless controls và kinh nghiệm tránh overclaim.
 - [core/curved_formation_signature/CURVED_CURL_MODULE.md](core/curved_formation_signature/CURVED_CURL_MODULE.md) — curvature-corrected bracket, holonomy, Bianchi tower và shifted-cut curvature tomography.
 - [core/curved_formation_signature/SIGNATURE_METRIC_DYNAMICS.md](core/curved_formation_signature/SIGNATURE_METRIC_DYNAMICS.md) — exact metric/heat bridge giữa formation và signature geometry.
 - [core/metric_lie_hodge/README.md](core/metric_lie_hodge/README.md) — cửa vào formation theory: metric Lie tensor, Riesz operator pencil, domain/topology typing và Euler–heat descendant algebra.
@@ -245,13 +297,27 @@ python core/curved_formation_signature/audits/signature_metric_heat_bridge.py
 python core/curved_formation_signature/audits/galerkin_probe_lie_failure.py
 python core/curved_formation_signature/audits/curved_curl_dg_physical.py
 python core/curved_formation_signature/audits/physical_curvature_flag_tomography.py
+python core/curved_formation_signature/audits/curl_solder_cartan_structure.py
+python core/curved_formation_signature/audits/curl_orbit_stabilizer.py
+python core/curved_formation_signature/audits/spectral_gauss_codazzi_ricci.py
+python core/curved_formation_signature/audits/full_physical_gauss_codazzi.py
+python core/curved_formation_signature/audits/connection_lift_curvature_recovery.py
+python core/curved_formation_signature/audits/full_physical_vertical_curvature.py
+python core/curved_formation_signature/audits/full_physical_vertical_degree4.py
+python core/curved_formation_signature/audits/blind_reversible_irreversible_split.py
+python core/curved_formation_signature/audits/orientation_double_cover.py
+python core/curved_formation_signature/audits/bch_vs_geometric_curvature.py
+python core/curved_formation_signature/audits/harmless_class_curvature.py
+python core/curved_formation_signature/audits/harmonic_zero_mode_signature.py
+python core/curved_formation_signature/audits/boundary_metric_typing.py
+python core/curved_formation_signature/audits/representation_curvature_not_embedding_curvature.py
 ```
 
-Ba audit suites phục vụ ba tầng claim khác nhau: formation/core geometry ở `metric_lie_hodge`, whole-state signature/completeness ở `spectral_signature`, và curved representation/holonomy/metric bridge ở `curved_formation_signature`.
+Ba audit suites phục vụ ba tầng claim khác nhau: formation/core geometry ở `metric_lie_hodge`, whole-state signature/completeness ở `spectral_signature`, và curl-spectral reduction / transported formation geometry ở `curved_formation_signature`.  Deep suite cố ý giữ cả negative controls: harmless curvature, topology zero-mode, boundary typing, BCH-vs-curvature và flat-image-vs-curved-connection.
 
 ## Scope
 
-Repository hiện có hai theorem-level parent structures và một canonical synthesis core. Spectral-signature completeness được theoremize sạch trên smooth mean-zero periodic state space; formation identities là exact trên typed periodic setting; curved formation–signature core tổ chức các exact curvature identities cùng các full-physical adversarial tribunals thành một synthesis chưa được overclaim thành global regularity theorem.
+Repository hiện có hai theorem-level parent structures và một canonical synthesis core. Spectral-signature completeness được theoremize sạch trên smooth mean-zero periodic state space; formation identities là exact trên typed periodic setting; core thứ ba hiện được sharpen thành **curl-spectral reduction of formation geometry**, tổ chức exact connection/curvature identities cùng full-physical adversarial tribunals mà không overclaim thành regularity theorem.
 
 Nó **không** tự động chứng minh:
 
@@ -290,4 +356,4 @@ history/
   worktrees/
 ```
 
-`core/metric_lie_hodge/` và `core/spectral_signature/` là hai parent cores: một bên equation formation, một bên whole-state coordinate/completeness. `core/curved_formation_signature/` là canonical synthesis core mô tả spectral theory như curved representation geometry của formation core. `core/NEO/` vẫn là methodology/workbench.
+`core/metric_lie_hodge/` và `core/spectral_signature/` là hai parent cores: một bên equation formation, một bên whole-state coordinate/completeness. `core/curved_formation_signature/` là canonical synthesis core mô tả **curl-spectral reduction** của formation geometry: spectral soldering, Gauss/Codazzi/Ricci curvature split, Bianchi coupling và signature-side dynamics. `core/NEO/` vẫn là methodology/workbench.

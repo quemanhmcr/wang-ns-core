@@ -163,3 +163,78 @@ The unsupported and falsified statement is
 \]
 
 Keeping this distinction explicit is essential to the theory.
+
+---
+
+## 6. The curl commutant is only the first-order stabilizer
+
+At degree one, the mother forgets connection components that commute with curl:
+
+\[
+E=[\nabla,C]=[B,C]
+\]
+
+for the spectral splitting \(\nabla=V+B\) with \([V,C]=0\).  This justifies calling \(V\) vertical or gauge-like **at first order**.
+
+The deep inverse campaign shows that this wording must not be promoted to a final gauge statement.  Generic vertical components alter curvature through their interaction with \(B\), and the pair \((E,K)\), with
+
+\[
+K=[R,C],
+\]
+
+reconstructed the missing vertical connection lift at machine precision in all tested generic degeneracy patterns.  Only a sector stabilizing the complete generated sensor algebra remains genuinely dark.
+
+Thus the safe hierarchy is
+
+\[
+\boxed{
+\operatorname{comm}(C)
+=
+\text{first-order stabilizer},
+}
+\]
+
+not
+
+\[
+\boxed{
+\operatorname{comm}(C)
+=
+\text{final physical gauge}.
+}
+\]
+
+## 7. Zero curl is not a gauge criterion
+
+The periodic Galilean kernel can tempt one to identify \(\ker C\) with gauge.  That is false on more general topological sectors.
+
+For the annular harmonic circulation
+
+\[
+h=
+\left(
+-\frac{y}{x^2+y^2},
+\frac{x}{x^2+y^2},
+0
+\right),
+\]
+
+one has \(Ch=0\), yet a divergence-free probe can satisfy \([D_h,C]w\neq0\).  An independent algebraic control likewise produced two zero-curl directions, one mother-visible and one truly central/mother-dark.
+
+Hence
+
+\[
+\boxed{
+\ker C
+\neq
+\ker(u\mapsto E_u)
+}
+\]
+
+in general.  Harmonic circulation belongs to physical topology/cohomology and must not be silently quotiented with Galilean constants.
+
+## 8. Boundary/domain identifiability is typed
+
+The periodic reverse compiler uses the correct \(L^2\)-adjoint and spectral realization of curl.  A non-self-adjoint raw curl analog in a fixed physical metric breaks the adjoint-parity reverse formulas by order one, while the positive Stokes/Dirichlet form remains well-defined.
+
+Therefore bounded-domain extension requires the typed Hodge/Stokes data of the formation core: operator/form domains, boundary trace pairing, harmonic sector and the selected self-adjoint or otherwise correctly typed realization.  Identifiability statements from the periodic operator model are not automatically boundary theorems.

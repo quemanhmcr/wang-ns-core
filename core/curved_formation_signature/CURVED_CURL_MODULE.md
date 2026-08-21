@@ -206,3 +206,47 @@ C,\ d_\nabla C,\ d_\nabla^2C,\ d_\nabla^3C,\ldots,
 \]
 
 What remains open is the correct quotient/cohomology language that distinguishes dynamically dangerous non-flatness from harmless nonzero curvature representatives.
+
+---
+
+## 7. Spectral reduction correction: \([R,C]\) is the cross-sheet curvature mother
+
+The deeper campaign clarifies what the curvature mother does and does not contain.  In a curl spectral frame, split the formation connection as
+
+\[
+\nabla=V+B,
+\qquad [V,C]=0,
+\]
+
+and the curvature as
+
+\[
+R=R_\parallel+R_\perp,
+\qquad [R_\parallel,C]=0.
+\]
+
+Then
+
+\[
+\boxed{
+E=[B,C],
+\qquad
+K=[R,C]=[R_\perp,C].
+}
+\]
+
+Thus \(K\) is not “all formation curvature”.  It is the complete first functional-calculus sensor of the **cross-sheet / Codazzi part** of formation curvature.  The within-sheet Gauss/Ricci part commutes with curl and is invisible to the degree-two commutator.
+
+Higher Bianchi degrees can nevertheless couple this vertical curvature back to visible data:
+
+\[
+d_\nabla K=R\wedge E,
+\qquad
+d_\nabla^2K=R\wedge K.
+\]
+
+Full physical helical tests found order-one relative contributions from the curl-commuting curvature to both degrees.  The correct interpretation is therefore a typed observability mechanism, not a claim that each higher degree is a new independent physical mechanism.
+
+For the full spectral-sheet decomposition, including the two-block symmetric-space special case and the distinction between extrinsic \(\Pi_\parallel[B,B]\) and intrinsic \([V,V]\) curvature, see [CURL_SPECTRAL_REDUCTION.md](CURL_SPECTRAL_REDUCTION.md).
+
+A second correction is equally important: the signature image is a linear state image.  “Curved representation” means that the nonflat **formation connection** is represented there; it does not mean that the image is an intrinsically curved embedded manifold.  See [DEEP_GEOMETRY_LESSONS.md](DEEP_GEOMETRY_LESSONS.md).

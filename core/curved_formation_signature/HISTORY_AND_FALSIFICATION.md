@@ -137,3 +137,119 @@ C\to E\to[R,C]\to R\wedge E\to\cdots.
 \]
 
 The historical lesson is the same one learned repeatedly elsewhere in the repository: when a new “mechanism” appears after changing representation or differentiating, first ask whether it is a generated degree of an existing structure.  In this case the answer led from two apparently separate cores to one curved formation–signature geometry.
+
+---
+
+## 9. Fifth major correction: “curved representation” is not a curved embedding
+
+The phrase “curved signature geometry” was initially too loose.  An exact \(so(3)\) test used a linear signature image with constant transported metric.  Its ordinary coordinate curvature was zero, while the transported formation curvature was nonzero and matched the physical curvature at roundoff.
+
+This forced the wording:
+
+\[
+\boxed{
+\text{signature image = linear state representation carrying a curved formation connection.}
+}
+\]
+
+The curvature belongs to the represented formation geometry, not to a nonlinear embedding of the signature image.
+
+## 10. The spectral-sheet picture emerges
+
+Writing the connection in a curl spectral frame revealed the split
+
+\[
+\nabla=V+B,
+\qquad [V,C]=0,
+\]
+
+so that
+
+\[
+E=[B,C].
+\]
+
+This exposed the mother as the gap-weighted cross-sheet mixing of the formation connection.  Curvature then decomposed into within-sheet and cross-sheet pieces, with
+
+\[
+K=[R,C]
+\]
+
+seeing only the latter.  Finite spectral and full physical helical audits agreed.
+
+Gauss, Ricci and Codazzi therefore stopped looking like historical costumes: they are the natural block geometry of the curl spectral reduction.
+
+## 11. Sixth falsification: the first curl commutant is not the final gauge
+
+At first order, a connection component commuting with curl is invisible to \(E\).  It was tempting to call the entire commutant a gauge sector.
+
+That interpretation failed.  Generic vertical connection components alter curvature through interaction with the cross-sheet component, and the pair \((E,K)\) reconstructed the hidden lift in every tested compatible-connection degeneracy pattern.
+
+The corrected statement is:
+
+\[
+\boxed{
+\operatorname{comm}(C)=\text{first-order stabilizer}.
+}
+\]
+
+Only transformations stabilizing the complete generated sensor algebra deserve to be called truly dark.
+
+## 12. Seventh falsification: higher tower does not always add new connection information
+
+When curvature was treated as an independent unknown, the higher Bianchi degrees formed a real observability filtration.  A \(3+3\) spectrum left one vertical curvature direction after degree three and lost it only after degree four.
+
+But when curvature was constrained to arise from the same compatible connection that generated \(E\), the degree-two data \((E,K)\) were already generically full rank for the hidden vertical connection.  Higher degrees then added consistency rather than new independent connection information.
+
+This separated two inverse problems that had previously been conflated.
+
+## 13. Eighth falsification: curvature is not a danger amplitude
+
+The mother and curvature mother remained nonzero on harmless classes:
+
+- 2D incompressible flows with zero self-stretching;
+- exact Beltrami states with vanishing Euler self-dynamics;
+- shear flows with vanishing Euler self-dynamics.
+
+Therefore the third core must remain a structural theory of ambient state-space geometry.  Nonzero \(E\) or \([R,C]\) cannot by itself be advertised as evidence of singular behavior.
+
+## 14. Ninth falsification: zero curl is not gauge
+
+An annular harmonic circulation has \(Ch=0\) but can have \([D_h,C]\neq0\) on probes.  A separate algebraic model placed both a visible harmonic-like direction and a truly central direction in \(\ker C\).
+
+This killed the shortcut
+
+\[
+\ker C=\text{gauge}.
+\]
+
+The true kernel is interaction- and domain-dependent, and topology must be carried explicitly.
+
+## 15. Tenth falsification: BCH is not geometric curvature
+
+Euler–heat BCH descendants and the geometric curvature mother are both generated from the same formation core, but they are not the same object.  Beltrami and shear controls had zero tested Euler–heat diagonal mixed term while ambient \([R,C]\) remained nonzero.
+
+The correct relation is ancestry, not identity:
+
+\[
+(T,C)
+\longrightarrow
+\begin{cases}
+\text{Euler–heat BCH descendants},\\
+\text{formation connection curvature descendants}.
+\end{cases}
+\]
+
+## 16. What the second campaign changed
+
+The first campaign established that the spectral-signature theory carries the formation dynamics and curvature.  The second campaign changed the interpretation from a generic “curved representation” into a much more specific statement:
+
+\[
+\boxed{
+\textbf{curl supplies a spectral reduction of the formation connection.}
+}
+\]
+
+The mother measures spectral-sheet mixing.  The curvature mother measures cross-sheet curvature.  Gauss/Ricci curvature lives within sheets.  Bianchi identities couple the visible and hidden sectors.  The first commutant is only a stabilizer, not automatically a physical gauge.  Boundary, topology, orientation and metric typing remain indispensable.
+
+The most useful methodological lesson is that each attractive slogan was accepted only after adversarial controls tried to break it.  Several slogans did break, and the resulting theory became both narrower and clearer.
