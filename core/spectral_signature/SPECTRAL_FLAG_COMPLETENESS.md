@@ -762,18 +762,22 @@ with the physical state tying the sectors together.
 
 ---
 
-## 25. What remains before a continuum whole-NS theorem -- OPEN
+## 25. Historical frontier before theoremization -- RESOLVED ON THE SMOOTH PERIODIC SCOPE
 
-The remaining work is now sharply typed.
+This section records the six items that were still open when the completeness stress test was written.  They are retained as provenance, but they are **not** the current frontier.  The subsequent theorem record `MOTHER_COMPLETENESS_THEOREM.md` closes them on the smooth mean-zero periodic state space as follows.
 
-1. **Continuum injectivity.** Prove that full signature equality implies equality of physical states modulo the appropriate Killing/Galilean symmetry in a natural Sobolev or distributional class.
-2. **Stable inverse.** Put the microlocal six-direction inverse into a pseudodifferential/elliptic framework and prove a quantitative estimate with explicit lower-order terms.
-3. **Canonical signature norm.** Identify the continuum norm whose principal part is the enstrophy/Korn metric derived above and whose shifted-cut realization is representation independent.
-4. **Domain and zero-mode control.** Treat \(H_a\), threshold seams, zero curl, whole-space decay and boundaries without silently importing periodic finite-spectrum simplifications.
-5. **Signature-image dynamics.** Characterize the image of the physical map \(u\mapsto\mathscr O(u)\) and write the NS flow intrinsically on this image rather than merely by conjugation through an inverse map.
-6. **Gauge geometry.** Formalize the vertical curl commutant as a bundle/gauge sector and determine the exact compatibility tying it to the horizontal signature for physical connections.
+1. **Continuum injectivity -- RESOLVED.**  Sections 3--8 of the theorem recover the strain from the principal mother symbol and then recover \(u\) from \(\Delta u=2\operatorname{div}S\).  The only pre-normalization kernel is the Euclidean Killing sector; mean-zero periodicity removes it.
+2. **Stable inverse -- RESOLVED.**  The theorem gives an explicit linear decoder and the exact homogeneous Sobolev isometry, not merely a qualitative inverse.  Six fixed directions also give deterministic two-sided observability constants.
+3. **Canonical signature norm -- RESOLVED.**  The normalized spherical principal-symbol norm is exactly the velocity \(\dot H^{s+1}\) norm for every real \(s\) for which the homogeneous norm is finite.
+4. **Domain and zero-mode control -- RESOLVED ON THE PERIODIC THEOREM SCOPE.**  Mean-zero removes the curl-zero state mode; one-sided spectral involutions handle discrete threshold seams without changing the layer-cake integral.  Schwartz whole-space mother/strain/Sobolev completeness is also recorded.  Arbitrary boundaries and a publish-grade operator-topology treatment of the full shifted integral on continuous spectrum remain outside the theorem's stated scope, not missing steps in the periodic theorem.
+5. **Signature-image dynamics -- RESOLVED.**  With the explicit decoder \(R_{\mathscr O}\), the projector
+   \[
+   \Pi_{\mathscr O}=\mathcal S R_{\mathscr O}
+   \]
+   characterizes the physical signature image, and the NS vector field is exactly conjugated to an autonomous vector field tangent to that image.
+6. **Gauge geometry -- RESOLVED FOR PHYSICAL CONNECTIONS.**  The off-spectral connection is recovered by the inverse of \(\operatorname{ad}_C\) away from equal curl roots; the curl-commuting vertical block is then selected by the physical state reconstructed from the same signature.  Thus the commutant is real isospectral dynamics but not an independent missing primitive.
 
-These are structural geometry problems.  Blow-up/regularity becomes one possible later application rather than the definition or purpose of the signature.
+The genuinely open questions after theoremization are different: low-regularity completions, arbitrary domains/boundaries, and whether this complete coordinate geometry yields new a priori dynamical control relevant to regularity.  Those questions must not be confused with completeness itself.
 
 ---
 
