@@ -1,7 +1,7 @@
-# NEO Curl Spectral-Obstruction Signature
+# Curl Spectral-Flag Signature
 ## The spectral-flag differential of the NS connection relative to curl
 
-**Purpose.** Record the structural object exposed jointly by the historical curl-polar programme, the NEO anchor compiler, and the terminal/provenance worktrees.  The central point is not regularity or blow-up.  Those are applications.  The primary claim of this note is structural: the family below is a differential signature of how the physical divergence-free connection fails to preserve the spectral flag of curl.  It simultaneously normalizes the NEO mother deformation, the full first curl functional calculus, and the historical torsion/stress/curvature costumes.  The object should therefore be treated as part of the geometry of Navier--Stokes itself, not as another candidate positive quantity.
+**Purpose.** Record the structural object exposed jointly by the historical curl-polar programme, the NEO anchor compiler, and the terminal/provenance worktrees.  The central point is not regularity or blow-up.  Those are applications.  The primary claim of this note is structural: the family below is a differential signature of how the physical divergence-free connection fails to preserve the spectral flag of curl.  It simultaneously normalizes the mother deformation, the full first curl functional calculus, and the historical torsion/stress/curvature costumes.  The object should therefore be treated as part of the geometry of Navier--Stokes itself, not as another candidate positive quantity.
 
 The proposed universal signature is the shifted curl-spectral family
 \[
@@ -32,7 +32,7 @@ The physical critical slice is
 The evidence and exact identities below show that:
 
 1. \(\mathscr O_a\) is equivalent to the failure of the physical connection to preserve the spectral cut \(H_a\);
-2. the entire family \(a\mapsto\mathscr O_a\) reconstructs the NEO mother deformation \([\nabla,C]\) by exact spectral tomography;
+2. the entire family \(a\mapsto\mathscr O_a\) reconstructs the mother deformation \([\nabla,C]\) by exact spectral tomography;
 3. more strongly, every first spectral deformation \([\nabla,f(C)]\) is a weighted moment of the same shifted signature, so the full first curl functional calculus contains no additional deformation species;
 4. on finite spectral localizations, the kernel of the full signature is exactly the curl commutant: two metric connections have the same signature iff their difference commutes with \(C\);
 5. historical objects such as hard flip, Euler torsion, Nijenhuis defect, helical stress divergence, helicity curvature and longitudinal Codazzi rate are contractions, polarizations, physical-space renderers or covariant jets of the same signature rather than new source species;
@@ -134,13 +134,13 @@ Because \(H_a\) is orthogonal and permutes an orthonormal basis,
 =2\sum_i\|[\nabla_{e_i},H_a]\|_{HS}^2.
 }
 \]
-`audits/neo_curl_spectral_obstruction_signature.py` stress-tests this identity on random metric connections.
+`audits/spectral_flag_signature.py` stress-tests this identity on random metric connections.
 
 **DEDUCTION.** \(\mathscr O_a\) is not merely one scalar critical reader.  Its operator norm is equivalent, at finite dimension, to the complete non-parallelness of the cut.
 
 ---
 
-## 3. Relation to the NEO mother deformation -- EXACT
+## 3. Relation to the mother deformation -- EXACT
 
 The intrinsic curl mother is
 \[
@@ -216,7 +216,7 @@ On a finite spectrum this is an ordinary finite sum over intervals between signe
 \[
 \boxed{a\mapsto\mathscr O_a}
 \]
-is a spectral tomography of the NEO mother deformation.  NEO's mother-jet language and the historical hinge language are two coordinate systems for the same first-order differential information.
+is a spectral tomography of the mother deformation.  the mother-jet compiler language and the historical hinge language are two coordinate systems for the same first-order differential information.
 
 ---
 
@@ -530,7 +530,7 @@ The historical programme retained the global spectral objects \(H,\Lambda\) and 
 The endpoint-first programme deliberately imposes
 \[
 \boxed{
-\text{Local NEO first; global spectral NEO only when licensed},
+\text{Local compiler first; global spectral calculus only when licensed},
 }
 \]
 because a bounded ancient singular profile need not belong to global \(L^2\) or \(\dot H^{1/2}\).  Its strength is terminal extraction and local normal-form rigidity, but this typing rule removes direct access to \(\mathscr O_0\).
@@ -667,7 +667,7 @@ The discovery campaign preceding this note established the following finite-dime
 | vortex-stretching tomography from shifted cuts | residual \(\sim10^{-15}\) |
 | corrected periodic state-signature rank, \(|k_i|\le1\) | rank \(52\), nullity \(3\) Galilean directions |
 
-`audits/neo_curl_spectral_obstruction_signature.py` records the algebraically portable core of these checks.  The larger pseudo-spectral experiments were discovery audits and should be promoted into separate reproducible files if this programme becomes canonical.
+`audits/spectral_flag_signature.py` records the algebraically portable core of these checks.  The larger pseudo-spectral experiments were discovery audits and should be promoted into separate reproducible files if this programme becomes canonical.
 
 ---
 
@@ -709,7 +709,7 @@ W(a)=4\langle|C-a|u,J_a\rangle.
 \]
 At the physical fold \(a=0\), the historical final Codazzi/heat-rate obstruction is a covariant/parabolic jet of this same object.
 
-**Working interpretation.** NEO's mother deformation and history's succession of torsion/stress/curvature/Codazzi costumes are not separate ontologies.  They are different resolutions and derivative levels of one curl spectral-compatibility signature.  Regularity is one later application; the more basic problem is to understand this quotient geometry and the dynamics it induces on spectral flags.
+**Working interpretation.** the mother deformation and history's succession of torsion/stress/curvature/Codazzi costumes are not separate ontologies.  They are different resolutions and derivative levels of one curl spectral-compatibility signature.  Regularity is one later application; the more basic problem is to understand this quotient geometry and the dynamics it induces on spectral flags.
 
 ---
 
@@ -790,7 +790,7 @@ H_a\operatorname{skew}\mathscr O_a(v)\,da.
 }
 \]
 
-Thus the full first spectral wardrobe of NEO is a family of moments of one shifted spectral-flag signature.  In particular:
+Thus the full first curl-spectral wardrobe is a family of moments of one shifted spectral-flag signature.  In particular:
 \[
 f(x)=x
 \quad\Rightarrow\quad
@@ -805,7 +805,7 @@ The discontinuous reader \(f(x)=\operatorname{sgn}x\) is recovered in the spectr
 
 **AUDIT.** Random finite spectral geometries were tested with polynomial, exponential, trigonometric and smooth-hinge readers.  The portable audit stayed below \(10^{-15}\).  The same reconstruction was checked on actual Fourier/Galerkin NS operators with residuals of order \(10^{-15}\).
 
-**INTERPRETATION.** NEO divided differences and history's shifted-hinge geometry are two bases for the same differential information.  The scalar identity above is the layer-cake representation of the divided difference.
+**INTERPRETATION.** divided-difference calculus and history's shifted-hinge geometry are two bases for the same differential information.  The scalar identity above is the layer-cake representation of the divided difference.
 
 ---
 
@@ -892,13 +892,13 @@ This does **not** say that the first tensor \(\mathscr O_a\) alone numerically d
 
 **AUDIT.** Orders \(1,2,3,4\) were tested for exponential, trigonometric/polynomial and smooth-absolute-value readers.  Worst residual across the campaign was \(1.2\times10^{-15}\).
 
-This supplies a direct bridge between the shifted-signature language and the NEO order-two/higher divided-difference normalizer.
+This supplies a direct bridge between the shifted-signature language and the the order-two/higher divided-difference normalizer.
 
 ---
 
 ## 25. Local stretching is a moment of the same signature -- EXACT / FOURIER AUDIT
 
-The NEO mother self-contraction is
+The mother self-contraction is
 \[
 E_u u=[\nabla_u,C]u=P[(\omega\cdot\nabla)u].
 \]
@@ -1131,6 +1131,6 @@ On finite spectral localizations it has four canonical properties:
 =\operatorname{Comm}(C).
 }
 \]
-Hence NEO's mother deformation, the deformation of every curl spectral reader, the shifted hinge family, vortex stretching, helicity torsion, stress divergence and helicity curvature are not independent species.  They are coordinates, contractions, moments or jets of one spectral-compatibility geometry.
+Hence the mother deformation, the deformation of every curl spectral reader, the shifted hinge family, vortex stretching, helicity torsion, stress divergence and helicity curvature are not independent species.  They are coordinates, contractions, moments or jets of one spectral-compatibility geometry.
 
 Regularity is only one possible application.  The more basic open programme is to determine whether Navier--Stokes admits a useful autonomous formulation on this quotient geometry, and whether the state can be reconstructed from the signature modulo its genuine symmetries in the continuum settings of interest.

@@ -1,4 +1,4 @@
-"""Portable algebra audit for the NEO curl spectral-obstruction signature.
+"""Portable algebra audit for the curl spectral-flag signature.
 
 The audit is intentionally finite-dimensional.  It checks identities that are purely
 algebraic once a metric state-space connection, a self-adjoint curl operator and its

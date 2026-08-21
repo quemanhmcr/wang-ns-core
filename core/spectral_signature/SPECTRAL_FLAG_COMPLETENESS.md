@@ -1,7 +1,7 @@
-# NEO Curl Spectral-Flag Signature: Completeness Stress Test
+# Spectral-Flag Completeness Stress Test
 ## Microlocal inverse, Killing kernel, whole-state recovery, and the boundary of the whole-NS claim
 
-**Status.** Research dossier following `research/NEO_CURL_SPECTRAL_OBSTRUCTION_SIGNATURE.md`.
+**Status.** Research dossier following [`SPECTRAL_FLAG_SIGNATURE.md`](SPECTRAL_FLAG_SIGNATURE.md).
 
 **Purpose.** The preceding signature note established the shifted family
 \[
@@ -241,7 +241,7 @@ Median relative errors were approximately
 \]
 in units of \(10^{-15}\), with maxima below \(4.3\times10^{-15}\).  Quadratic spectral stocks were recovered even more accurately, at \(10^{-16}\) to \(10^{-15}\).
 
-This is strong evidence that the signature does not merely encode one nonlinear balance.  It identifies the physical state from which all ordinary NEO/NS faces follow.
+This is strong evidence that the signature does not merely encode one nonlinear balance.  It identifies the physical state from which all ordinary NS faces follow.
 
 ---
 

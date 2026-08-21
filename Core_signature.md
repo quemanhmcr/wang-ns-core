@@ -2,35 +2,35 @@
 
 ## I. Bản đồ đọc nhanh
 
-Tài liệu này là cửa vào cho phần lõi mới của repository: câu chuyện dẫn từ NEO anchors tới mother deformation, từ những reader thất bại tới spectral-flag signature, rồi tới theorem completeness của toàn trạng thái Navier--Stokes trơn trong setting đồng nhất.
+Tài liệu này là cửa vào cho **whole-state spectral signature của Navier--Stokes**. Object chính không phải NEO, không phải một terminal defect, và không phải một scalar critical reader. Cấu trúc canonical hiện tại là
 
-Hai nền NEO được đóng gói tại:
+\[
+\boxed{
+E_u=[\nabla_u,C]
+\quad\longleftrightarrow\quad
+\{\mathscr O_a(u)\}_{a\in\mathbb R}.
+}
+\]
 
-- [NEO Anchor Compiler](core/NEO/NEO_ANCHOR_COMPILER.md)
-- [NEO Discovery Workbench](core/NEO/NEO_DISCOVERY_WORKBENCH.md)
+Trong đó mother deformation `E` là object complete nhỏ nhất, còn family `O_a` là spectral-flag normal form của nó.
 
-Toàn snapshot của campaign `research/neo-provenance-propagation`, gồm cả file đã commit lẫn file dirty/untracked tại thời điểm đóng gói, nằm tại:
+Corpus canonical nằm tại:
 
-- [core/Oa_spectral_flag/](core/Oa_spectral_flag/)
-- [Snapshot manifest](core/Oa_spectral_flag/MANIFEST.md)
-- [Exact source paths](core/Oa_spectral_flag/SNAPSHOT_PATHS.txt)
-- [Source worktree status](core/Oa_spectral_flag/SOURCE_WORKTREE_STATUS.txt)
-- [Source git log](core/Oa_spectral_flag/SOURCE_GIT_LOG.txt)
-- [SHA-256 ledger](core/Oa_spectral_flag/SHA256SUMS.txt)
+- [Spectral Signature Core](core/spectral_signature/README.md)
+- [Spectral-Flag Signature](core/spectral_signature/SPECTRAL_FLAG_SIGNATURE.md)
+- [Spectral-Flag Completeness](core/spectral_signature/SPECTRAL_FLAG_COMPLETENESS.md)
+- [Mother / Spectral-Flag Completeness Theorem](core/spectral_signature/MOTHER_COMPLETENESS_THEOREM.md)
+- [History and Falsification](core/spectral_signature/HISTORY_AND_FALSIFICATION.md)
 
-Ba văn bản nên đọc theo đúng thứ tự là:
+Ba audit executable tương ứng:
 
-1. [NEO Curl Spectral-Obstruction Signature](core/Oa_spectral_flag/research/NEO_CURL_SPECTRAL_OBSTRUCTION_SIGNATURE.md)
-2. [NEO Curl Spectral Signature Completeness](core/Oa_spectral_flag/research/NEO_CURL_SPECTRAL_SIGNATURE_COMPLETENESS.md)
-3. [NEO Mother / Spectral-Flag Completeness Theorem](core/Oa_spectral_flag/research/NEO_MOTHER_SPECTRAL_FLAG_COMPLETENESS_THEOREM.md)
+1. [Signature algebra audit](core/spectral_signature/audits/spectral_flag_signature.py)
+2. [Completeness audit](core/spectral_signature/audits/spectral_flag_completeness.py)
+3. [Theorem core audit](core/spectral_signature/audits/mother_completeness_theorem.py)
 
-Ba audit tương ứng:
+NEO được giữ riêng tại [core/NEO/](core/NEO/) đúng vai trò của nó: **compiler/workbench đã dẫn tới discovery và giúp ép ontology về anchors nhỏ**. NEO không phải chủ đề của spectral-signature core.
 
-1. [Signature algebra audit](core/Oa_spectral_flag/audits/neo_curl_spectral_obstruction_signature.py)
-2. [Completeness audit](core/Oa_spectral_flag/audits/neo_curl_spectral_signature_completeness.py)
-3. [Theorem core audit](core/Oa_spectral_flag/audits/neo_mother_spectral_flag_completeness_theorem.py)
-
-Phần dưới không thay thế ba văn bản trên. Nó kể lại vì sao chúng xuất hiện, các ngõ cụt nào đã bị phá, những hiện tượng nào ban đầu trông không liên quan nhưng cuối cùng hóa ra là các reader của cùng một object, và tại sao object cuối cùng lại nhỏ hơn family đã dẫn ta tới nó.
+Phần II dưới đây kể lại con đường khám phá: những reader nào đã mù, những overclaim nào bị falsify, vì sao zero fold không đủ, vì sao shifted family xuất hiện, và vì sao cuối cùng family lớn lại co về mother `E=[\nabla,C]`.
 
 ---
 
@@ -64,7 +64,7 @@ Lúc đó \(E\) được hiểu như một mother deformation tiện dụng. Ch�
 
 Một hypothetical singularity dẫn tới bounded mild ancient profile. Nhưng bounded ở đây là bounded velocity, không phải tự động có global \(L^2\), không phải tự động có \(\dot H^{1/2}\), và do đó không tự động được phép dùng mọi spectral object toàn cục. Từ đây có một typing rule:
 
-\[ \boxed{ \text{Local NEO = default terminal compiler,} \qquad \text{Global spectral NEO = typed upgrade.} } \]
+\[ \boxed{ \text{Local compiler = default terminal language,} \qquad \text{Global spectral calculus = typed upgrade.} } \]
 
 Terminal analysis tạo ra record points và local curl-frame quantities. Ở normalized curl contact,
 
@@ -242,7 +242,7 @@ nên
 
 \[ \boxed{ [D,C] = \frac12\int_{\mathbb R} H_a\operatorname{skew}\mathscr O_a\,da. } \]
 
-Đây là bước thật sự unifying. NEO mother deformation
+Đây là bước thật sự unifying. mother deformation
 
 \[ E=[D,C] \]
 
@@ -262,7 +262,7 @@ lập tức cho
 
 \[ \boxed{ [\nabla_v,f(C)] = \frac12\int f'(a) H_a\operatorname{skew}\mathscr O_a(v)\,da. } \]
 
-Polynomial readers pass. Exponential readers pass. Trigonometric readers pass. Smooth absolute-value readers pass. Actual Fourier NS geometry cũng pass. Vậy spectral wardrobe của NEO không chứa nhiều first-order species. Nó chỉ chứa các moments khác nhau của cùng spectral-flag differential.
+Polynomial readers pass. Exponential readers pass. Trigonometric readers pass. Smooth absolute-value readers pass. Actual Fourier NS geometry cũng pass. Vậy curl spectral wardrobe không chứa nhiều first-order species. Nó chỉ chứa các moments khác nhau của cùng spectral-flag differential.
 
 ### II.12. Higher spectral jets cũng không tạo species mới
 
@@ -278,7 +278,7 @@ Layer-cake linearity cho
 
 \[ \boxed{ \operatorname{ad}_{D_1}\cdots\operatorname{ad}_{D_n}f(C) = \frac12\int f'(a) \operatorname{ad}_{D_1}\cdots\operatorname{ad}_{D_n}H_a\,da. } \]
 
-Audits đến order four đều machine-level. Điều này giải thích vì sao NEO order-two calculus chỉ thấy second mother + products of first mothers. Higher order tăng jet order và arity. Nó không tạo spectral ontology mới.
+Audits đến order four đều machine-level. Điều này giải thích vì sao order-two compiler chỉ thấy second mother + products of first mothers. Higher order tăng jet order và arity. Nó không tạo spectral ontology mới.
 
 ### II.13. Quotient by curl commutant xuất hiện tự nhiên
 
@@ -396,11 +396,11 @@ Finite truncations cho thấy full operator \(O_0\) có thể vẫn injective. N
 
 \[ A_0=[\nabla_u,H] \]
 
-có response decay như lower-order object. Trong khi cuts dịch tới gần spectral level của probe có response order lớn hơn nhiều. Ratio giữa best moving cut và zero cut tăng gần như quadratic theo probe frequency. Đây là bằng chứng rằng \(a=0\) có ý nghĩa critical nhưng không phải stable whole-state coordinate ở UV. Zero fold giữ angular/helicity curvature. Moving cuts giữ principal radial/strain information. Do đó tên folder campaign được chọn là `Oa_spectral_flag`, không phải `O0`.
+có response decay như lower-order object. Trong khi cuts dịch tới gần spectral level của probe có response order lớn hơn nhiều. Ratio giữa best moving cut và zero cut tăng gần như quadratic theo probe frequency. Đây là bằng chứng rằng \(a=0\) có ý nghĩa critical nhưng không phải stable whole-state coordinate ở UV. Zero fold giữ angular/helicity curvature. Moving cuts giữ principal radial/strain information. Do đó canonical folder được đặt là `spectral_signature`, không phải `O0`: object chính là toàn spectral flag, còn zero fold chỉ là một critical slice.
 
 ### II.22. Polar decomposition giải thích UV anatomy
 
-NEO đã có identity
+Compiler đã có identity
 
 \[ E=A_0\Lambda+HL. \]
 
@@ -650,7 +650,7 @@ Finite local jets không determine global spectral signature. Analytic divergenc
 
 ### II.43. Kinh nghiệm về compression
 
-Scalarization quá sớm là nguy hiểm. \(O\to J\to W\) là một information-loss cascade. Krylov contractions vẫn mất tensor slots. Ngược lại, spectral family trông lớn nhưng reverse-compile exact về mother. Compression đúng phải preserve inverse map. Compression sai chỉ preserve một vài moments. Đây là tiêu chuẩn rất thực dụng cho future NEO constructions.
+Scalarization quá sớm là nguy hiểm. \(O\to J\to W\) là một information-loss cascade. Krylov contractions vẫn mất tensor slots. Ngược lại, spectral family trông lớn nhưng reverse-compile exact về mother. Compression đúng phải preserve inverse map. Compression sai chỉ preserve một vài moments. Đây là tiêu chuẩn rất thực dụng cho future constructions.
 
 ### II.44. Theorem đã được đóng ở scope nào
 
@@ -670,7 +670,7 @@ Một coordinate complete của NS state relative to curl có giá trị độc 
 
 ### II.48. Cách đọc corpus sau narrative này
 
-Nếu muốn thấy object được phát hiện như thế nào, đọc [signature note](core/Oa_spectral_flag/research/NEO_CURL_SPECTRAL_OBSTRUCTION_SIGNATURE.md). Nếu muốn thấy toàn bộ stress tests dẫn tới completeness, đọc [completeness dossier](core/Oa_spectral_flag/research/NEO_CURL_SPECTRAL_SIGNATURE_COMPLETENESS.md). Nếu muốn proof chain sạch nhất và exact constants, đọc [mother/spectral-flag theorem](core/Oa_spectral_flag/research/NEO_MOTHER_SPECTRAL_FLAG_COMPLETENESS_THEOREM.md). Nếu muốn reproduce algebra, chạy [signature audit](core/Oa_spectral_flag/audits/neo_curl_spectral_obstruction_signature.py). Nếu muốn reproduce microlocal completeness, chạy [completeness audit](core/Oa_spectral_flag/audits/neo_curl_spectral_signature_completeness.py). Nếu muốn reproduce theorem constants và gauge/projector identities, chạy [theorem audit](core/Oa_spectral_flag/audits/neo_mother_spectral_flag_completeness_theorem.py). Nếu muốn hiểu những nhánh propagation chưa được theoremize nhưng đã tham gia vào discovery, xem toàn bộ `research/` và `audits/` trong snapshot.
+Nếu muốn thấy object được phát hiện như thế nào, đọc [Spectral-Flag Signature](core/spectral_signature/SPECTRAL_FLAG_SIGNATURE.md). Nếu muốn thấy stress tests dẫn tới completeness, đọc [Spectral-Flag Completeness](core/spectral_signature/SPECTRAL_FLAG_COMPLETENESS.md). Nếu muốn proof chain sạch nhất và exact constants, đọc [Mother / Spectral-Flag Completeness Theorem](core/spectral_signature/MOTHER_COMPLETENESS_THEOREM.md). Nếu muốn xem riêng các falsification đã quyết định hình dạng cuối của theory, đọc [History and Falsification](core/spectral_signature/HISTORY_AND_FALSIFICATION.md). Ba audit canonical nằm trong [core/spectral_signature/audits/](core/spectral_signature/audits/). Các nhánh G3/Riccati/discriminant/scale cũ không còn nằm trong canonical core; chúng vẫn tồn tại trong Git history nếu cần nghiên cứu lịch sử discovery.
 
 ### II.49. Một câu cuối về tên \(O_a\)
 
@@ -682,7 +682,7 @@ Mũi tên hai chiều đầu là structural equivalence. Các mũi tên sau là 
 
 ### II.50. Working conclusion
 
-Điều bắt đầu như một hunt cho terminal obstruction đã biến thành một statement về geometry của toàn smooth homogeneous incompressible Navier--Stokes state space. Chúng tôi đã thấy local rigidity quá yếu. Đã thấy scalar readers mù. Đã thấy tensor contractions mù. Đã thấy zero spectral fold chỉ là một slice. Đã thấy shifted cuts tomographically reconstruct mother deformation. Đã thấy mother principal symbol chính là strain quadratic form. Đã viết được inverse state explicit. Đã xác định exact Killing kernel. Đã có exact Sobolev signature norm. Đã có six-direction observability constants. Đã có signature-image projector. Đã có NS flow conjugacy trên image. Và cuối cùng đã quay lại đúng object nhỏ nhất của NEO:
+Điều bắt đầu như một hunt cho terminal obstruction đã biến thành một statement về geometry của toàn smooth homogeneous incompressible Navier--Stokes state space. Chúng tôi đã thấy local rigidity quá yếu. Đã thấy scalar readers mù. Đã thấy tensor contractions mù. Đã thấy zero spectral fold chỉ là một slice. Đã thấy shifted cuts tomographically reconstruct mother deformation. Đã thấy mother principal symbol chính là strain quadratic form. Đã viết được inverse state explicit. Đã xác định exact Killing kernel. Đã có exact Sobolev signature norm. Đã có six-direction observability constants. Đã có signature-image projector. Đã có NS flow conjugacy trên image. Và cuối cùng đã quay lại đúng complete mother object nhỏ nhất:
 
 \[ \boxed{ E_u=[\nabla_u,C]. } \]
 
@@ -700,54 +700,62 @@ core/
 ├── NEO/
 │   ├── NEO_ANCHOR_COMPILER.md
 │   └── NEO_DISCOVERY_WORKBENCH.md
-└── Oa_spectral_flag/
-    ├── MANIFEST.md
-    ├── SNAPSHOT_PATHS.txt
-    ├── SOURCE_WORKTREE_STATUS.txt
-    ├── SOURCE_GIT_LOG.txt
-    ├── SHA256SUMS.txt
-    ├── NEO_PROPAGATION_FRONTIER.md
-    ├── research/
-    │   └── ... toàn bộ research artifacts riêng của worktree ...
+└── spectral_signature/
+    ├── README.md
+    ├── SPECTRAL_FLAG_SIGNATURE.md
+    ├── SPECTRAL_FLAG_COMPLETENESS.md
+    ├── MOTHER_COMPLETENESS_THEOREM.md
+    ├── HISTORY_AND_FALSIFICATION.md
     └── audits/
-        └── ... toàn bộ audit artifacts riêng của worktree ...
+        ├── spectral_flag_signature.py
+        ├── spectral_flag_completeness.py
+        └── mother_completeness_theorem.py
 ```
 
-`core/Oa_spectral_flag/` là snapshot bảo tồn của worktree `research/neo-provenance-propagation` tại HEAD `5ac3f70`, cộng với working-copy modifications và untracked files tồn tại tại thời điểm snapshot.
+Cấu trúc này cố ý **không** lưu cả worktree discovery dưới `core/`. Những nhánh G3, discriminant, scale, Riccati và propagation là lịch sử nghiên cứu; Git history đã giữ chúng. `core/spectral_signature/` chỉ chứa những gì cần để đọc, kiểm và tái hiện theory whole-state signature hiện tại.
 
-Không file nguồn riêng nào của worktree bị bỏ chỉ vì nó chưa commit.
-
-Không file trùng với main được nhân bản vào snapshot campaign, ngoại trừ hai NEO foundation được chủ động copy vào `core/NEO/` theo cấu trúc mới.
+NEO cũng được tách riêng. Nó là compiler/workbench nền, không phải prefix của theory mới.
 
 ## IV. Reproduction checklist
 
-Đọc provenance trước:
+Đọc theo thứ tự:
 
-- [MANIFEST.md](core/Oa_spectral_flag/MANIFEST.md)
-- [SOURCE_WORKTREE_STATUS.txt](core/Oa_spectral_flag/SOURCE_WORKTREE_STATUS.txt)
-- [SOURCE_GIT_LOG.txt](core/Oa_spectral_flag/SOURCE_GIT_LOG.txt)
+1. [README](core/spectral_signature/README.md)
+2. [Signature](core/spectral_signature/SPECTRAL_FLAG_SIGNATURE.md)
+3. [Completeness](core/spectral_signature/SPECTRAL_FLAG_COMPLETENESS.md)
+4. [Theorem](core/spectral_signature/MOTHER_COMPLETENESS_THEOREM.md)
+5. [Falsification history](core/spectral_signature/HISTORY_AND_FALSIFICATION.md)
 
-Kiểm byte integrity:
-
-```bash
-cd core/Oa_spectral_flag
-sha256sum -c SHA256SUMS.txt
-```
-
-Chạy ba audit lõi:
+Chạy ba audit canonical từ root repository:
 
 ```bash
-python audits/neo_curl_spectral_obstruction_signature.py
-python audits/neo_curl_spectral_signature_completeness.py
-python audits/neo_mother_spectral_flag_completeness_theorem.py
+python core/spectral_signature/audits/spectral_flag_signature.py
+python core/spectral_signature/audits/spectral_flag_completeness.py
+python core/spectral_signature/audits/mother_completeness_theorem.py
 ```
 
-Sau đó mới chạy các propagation/terminal audits còn lại nếu muốn tái hiện đường discovery đầy đủ.
+Ba audit này lần lượt kiểm algebra/tomography, microlocal completeness, và theorem constants + gauge/projector identities.
 
 ## V. Trạng thái claim
 
-Claim mạnh nhất đang được lưu trong corpus là **structural completeness theorem** cho smooth mean-zero divergence-free periodic Navier--Stokes state space, cùng Schwartz whole-space extension ở mức mother/strain/Sobolev core và weak spectral packaging cho shifted family.
+Claim canonical là **structural whole-NS completeness theorem** cho smooth mean-zero divergence-free periodic state space, với Schwartz whole-space extension được ghi rõ scope trong theorem note.
 
-Claim đó không phải global regularity theorem.
+Nội dung cốt lõi là
 
-Nó nói rằng mother/spectral-flag signature không bỏ mất state information, có inverse explicit modulo symmetry thích hợp, có quantitative Sobolev stability, và carry được toàn smooth NS vector field qua exact coordinate conjugacy.
+\[
+\boxed{
+\mathscr O
+\longleftrightarrow
+E=[\nabla,C]
+\longleftrightarrow
+S
+\longleftrightarrow
+u/\operatorname{Kill}
+\longrightarrow
+F_{NS}(u).
+}
+\]
+
+Ở đây `u/\operatorname{Kill}` là state modulo Euclidean Killing symmetry trước normalization; trên mean-zero periodic class state được xác định duy nhất.
+
+Claim này **không phải** global regularity theorem và không tự nó loại trừ blow-up. Nó nói rằng mother/spectral-flag signature không bỏ mất smooth-state information, có inverse explicit, có quantitative Sobolev stability, và carry toàn smooth NS vector field qua exact coordinate conjugacy.

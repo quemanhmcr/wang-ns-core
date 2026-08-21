@@ -1,12 +1,12 @@
-# NEO Mother / Spectral-Flag Completeness Theorem
+# Mother / Spectral-Flag Completeness Theorem
 ## Structural whole-Navier--Stokes coordinates on the smooth periodic state space
 
 **Status.** Structural theorem on the smooth mean-zero divergence-free three-torus, with a Schwartz whole-space extension recorded separately.  This is **not** a regularity theorem, blow-up exclusion theorem, or weak-solution theorem.
 
 This note closes the structural question left open by the two preceding records:
 
-- `NEO_CURL_SPECTRAL_OBSTRUCTION_SIGNATURE.md` identified the full shifted spectral-flag signature;
-- `NEO_CURL_SPECTRAL_SIGNATURE_COMPLETENESS.md` stress-tested injectivity, microlocal inversion, scaling, gauge, and NS-coordinate evolution.
+- `SPECTRAL_FLAG_SIGNATURE.md` identified the full shifted spectral-flag signature;
+- `SPECTRAL_FLAG_COMPLETENESS.md` stress-tested injectivity, microlocal inversion, scaling, gauge, and NS-coordinate evolution.
 
 The decisive simplification is that the full shifted family is a canonical spectral normal form of a smaller already-complete object:
 \[
@@ -136,7 +136,7 @@ H_a\operatorname{skew}\mathscr O_a(u)\,da.
 \]
 The identity is exact on trigonometric polynomials and hence on smooth states when interpreted against trigonometric test fields.
 
-This is the precise statement that the full spectral flag is a tomography of the NEO mother deformation.
+This is the precise statement that the full spectral flag is a tomography of the mother deformation.
 
 ---
 
@@ -354,7 +354,7 @@ E
 \]
 on the physical image, while \(\mathscr O\) supplies the canonical spectral-cut resolution of the already-complete mother tensor.
 
-This is the strongest NEO compression exposed by the campaign:
+This is the strongest compression exposed by the campaign:
 
 > the compiler becomes smaller as it becomes stronger.
 
@@ -702,7 +702,7 @@ The discovery path moved through
 \[
 R_H\to\mathscr O_a\to E_u.
 \]
-The full spectral family was necessary to expose the invariant structure, but the mother \(E_u\) is the smaller complete object.  This is a concrete instance of the NEO rule:
+The full spectral family was necessary to expose the invariant structure, but the mother \(E_u\) is the smaller complete object.  This is a concrete instance of the compiler rule:
 
 > stronger compilers should become smaller, not accumulate mechanisms.
 
