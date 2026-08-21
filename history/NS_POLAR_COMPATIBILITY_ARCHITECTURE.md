@@ -1415,7 +1415,7 @@ T_E'=0,
 ---
 
 ## 90. NEO gateway: all new mechanisms must compile from the anchors — RESEARCH RULE / EXACT CORE
-The architecture now uses the dedicated [NEO Anchor Compiler](NEO_ANCHOR_COMPILER.md) as the mandatory ontology audit. The only fixed inputs are
+The architecture now uses the dedicated [NEO Anchor Compiler](../core/NEO/NEO_ANCHOR_COMPILER.md) as the mandatory ontology audit. The only fixed inputs are
 \[
 \boxed{u(t),\qquad P,\qquad C=\operatorname{curl},\qquad C^2=(-\Delta)P,\qquad t.}
 \]
@@ -1439,7 +1439,7 @@ while support/Hodge, angular and radial first jets are functional-calculus rende
 
 The NEO file records the current strongest deductions: the opposite-helicity block is a kernel of the phase Sylvester map but is resolved by complementary curl/modulus relations; the mother jet is local; all first-order spectral costumes are divided-difference filters of it; higher wardrobes are Leibniz/Faà-di-Bruno prolongations; and exact Fourier selection rules forbid a principal same-to-opposite helicity symbol. Near the spectral diagonal this yields a one-derivative gain, whereas far-off-diagonal escape remains exposed to the square-anchor heat scale.
 
-**Mandatory research discipline.** Do not add a new primitive merely because a defect changes tensor type or observer. First compile it from \((u,P,C,C^2,t)\), locate any algebraic kernel, use the square anchor before estimates, and keep physical time and \(\nu C^2\) visible. The detailed formulas, adversarial unit tests, mother-jet experiments and current open NEO partition are maintained only in [NEO_ANCHOR_COMPILER.md](NEO_ANCHOR_COMPILER.md).
+**Mandatory research discipline.** Do not add a new primitive merely because a defect changes tensor type or observer. First compile it from \((u,P,C,C^2,t)\), locate any algebraic kernel, use the square anchor before estimates, and keep physical time and \(\nu C^2\) visible. The detailed formulas, adversarial unit tests, mother-jet experiments and current open NEO partition are maintained only in [NEO_ANCHOR_COMPILER.md](../core/NEO/NEO_ANCHOR_COMPILER.md).
 
 ---
 

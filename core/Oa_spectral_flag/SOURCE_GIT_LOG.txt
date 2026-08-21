@@ -1,0 +1,30 @@
+5ac3f70 (HEAD -> research/neo-provenance-propagation) research: theoremize mother spectral-flag completeness
+55426dc research: audit spectral-flag completeness
+7a89710 research: establish curl spectral-flag signature
+d360c56 research: add NEO provenance and propagation programme
+a59ff93 (origin/main, origin/HEAD, main) docs: sharpen terminal extraction and rigidity ledger
+e8a01fc docs: curate NS history facts for NEO terminal strategy
+b708920 docs: add NEO discovery workbench
+c65ad14 docs: define NEO singularity problem
+586dc7b docs: archive legacy research paths
+c805f72 docs: close NEO order-two compiler
+2f2cce3 docs: pivot NEO toward singularity normal forms
+d66114b docs: rebuild NEO as curl-genetic compiler
+d3fe59d docs: extend NEO dynamic compiler
+854c4f6 docs: sharpen NEO coherence incidence frontier
+b9300cf docs: decode NEO coherence leakage contradiction
+a7db3e4 docs: split NEO anchor compiler
+61dc68d docs: expose NEO lock-regenerate contradiction
+46a70b7 docs: formalize NEO anchor compiler
+9f79029 docs: isolate immutable compatibility anchors
+613795e Add critical visibility speed compatibility
+f63c58c Decode Riccati double-involution compatibility
+487103b docs: turn BSVO journey into structural clues
+231bb96 docs: map curl polar compatibility architecture
+d86f642 docs: sharpen intrinsic helicity Codazzi frontier
+16f5735 docs: make Clay-to-SVO spine purely analytic
+9233424 docs: close Clay-to-sidecar upstream spine
+f5ec7aa docs: sharpen full-state control-volume frontier
+d880796 docs: make endpoint throat definitions self-contained
+3be50e3 docs: add control-volume methodology
+54c070f docs: recast BSVO frontier from mother law

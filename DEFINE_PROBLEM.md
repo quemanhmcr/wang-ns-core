@@ -4,7 +4,7 @@
 This file is the active problem contract for the Wang--Navier--Stokes programme.
 The long exploratory files are archived under `history/`.
 They remain evidence and audit history, but they are no longer the proof surface.
-The canonical compiler is `NEO_ANCHOR_COMPILER.md`.
+The canonical compiler is `core/NEO/NEO_ANCHOR_COMPILER.md`.
 This file states what problem we are actually trying to solve and how NEO should be used.
 
 ## 0. Status labels

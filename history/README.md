@@ -17,7 +17,7 @@ This repository intentionally contains exactly **eight tracked documents**:
 5. `SOLUTION_MAP.md` — short Clay-to-QED proof graph with proof-location links.
 6. `BSVO_FULL_STATE_FRONTIER.md` — the dedicated remaining `B/S/V/O` full-state proof block.
 7. `NS_POLAR_COMPATIBILITY_ARCHITECTURE.md` — the full polar/Hodge/compatibility synthesis, with a compact mandatory NEO gateway.
-8. `NEO_ANCHOR_COMPILER.md` — the canonical curl-genetic reconstruction algebra: local/nonlocal completeness, NS genetic equation, compiler normal forms, higher-jet closure and adversarial audits.
+8. `../core/NEO/NEO_ANCHOR_COMPILER.md` — the canonical curl-genetic reconstruction algebra: local/nonlocal completeness, NS genetic equation, compiler normal forms, higher-jet closure and adversarial audits.
 
 No theorem implementation, regression code, result archive, PR history, packet scaffolding or CI transcript belongs here.  If a future edit grows a core file without changing the frontier, compress before merging.
 
@@ -25,7 +25,7 @@ Target line budgets: `README <= 210`, `CONTROL_VOLUME_METHOD <= 100`, `PHYSICAL_
 
 ## How to read the eight files
 
-For the shortest route, read `CONTROL_VOLUME_METHOD.md` first for the proof discipline, then `PHYSICAL_CORE.md` for the Clay(A)-to-`S/V/O` endpoint spine, `SOLUTION_MAP.md` for composition, and `BSVO_FULL_STATE_FRONTIER.md` for the remaining open block.  Read `MIXED_FRONTIER.md` when auditing why older owner/bridge routes are forbidden and why the endpoint Hahn/support/constant plumbing is exact. Read `NS_POLAR_COMPATIBILITY_ARCHITECTURE.md` for the geometric synthesis and use `NEO_ANCHOR_COMPILER.md` as the canonical reconstruction/compiler manual whenever deriving, classifying or estimating an NS object: normalize it through the curl-genetic language before allowing a new primitive into the architecture.  A physicist should not need a separate synthesis document to understand the current theorem architecture; the source repository is needed only to inspect upstream proofs, constants, implementation records or historical derivations.
+For the shortest route, read `CONTROL_VOLUME_METHOD.md` first for the proof discipline, then `PHYSICAL_CORE.md` for the Clay(A)-to-`S/V/O` endpoint spine, `SOLUTION_MAP.md` for composition, and `BSVO_FULL_STATE_FRONTIER.md` for the remaining open block.  Read `MIXED_FRONTIER.md` when auditing why older owner/bridge routes are forbidden and why the endpoint Hahn/support/constant plumbing is exact. Read `NS_POLAR_COMPATIBILITY_ARCHITECTURE.md` for the geometric synthesis and use `../core/NEO/NEO_ANCHOR_COMPILER.md` as the canonical reconstruction/compiler manual whenever deriving, classifying or estimating an NS object: normalize it through the curl-genetic language before allowing a new primitive into the architecture.  A physicist should not need a separate synthesis document to understand the current theorem architecture; the source repository is needed only to inspect upstream proofs, constants, implementation records or historical derivations.
 
 The key discipline is:
 
