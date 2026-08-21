@@ -1,5 +1,64 @@
 # Core Signature
 
+## I. Metric–Lie / Hodge formation core
+
+Core canonical mới tại [core/metric_lie_hodge/README.md](core/metric_lie_hodge/README.md) xuất phát từ một câu hỏi khác với terminal/reader programmes: **cái gì sinh ra chính Navier--Stokes trước khi ta chọn bất kỳ observer nào?**
+
+Datum tối thiểu đang được kiểm là oriented metric-Lie/Hodge core
+
+\[
+\boxed{
+\mathcal C_{NS}
+=
+(\mathfrak g_\sigma,[\cdot,\cdot],\langle\cdot,\cdot\rangle_{L^2},C),
+\qquad C=\operatorname{curl}.
+}
+\]
+
+Đặt metric Lie tensor
+
+\[
+T(a,b,c)=\langle a,[b,c]\rangle
+\]
+
+và formation form
+
+\[
+\boxed{
+\ell_{\nu,u}(a,b)
+=-\langle u,[a,b]\rangle
+-\nu\langle Ca,Cb\rangle.
+}
+\]
+
+Nếu \(\mathcal L_{\nu,u}\) là Riesz operator của form này thì trên smooth periodic divergence-free class
+
+\[
+\boxed{
+\mathcal L_{\nu,u}=\mathcal J_u-\nu C^2,
+\qquad
+\mathcal J_ub=P(b\times\omega),
+\qquad
+\partial_tu=\mathcal L_{\nu,u}u.
+}
+\]
+
+Structural claim đã đạt được là: geodesic Euler, Lie--Poisson Euler, metric-defect/strain formation, curl-helicity Killing structure và Stokes/Dirichlet dissipation đều được dựng functorially từ cùng core datum; pressure là Hodge completion khi intrinsic flow được nhúng trở lại ambient vector fields. Mixed Euler--heat descendants được tổ chức bởi bracket algebra của đúng hai primitive flows, không cần thêm một local dynamical generator trong các canonical audits hiện tại.
+
+Phần theorem/identity exact nằm tại [FORMATION_LAW.md](core/metric_lie_hodge/FORMATION_LAW.md) và [COMPATIBILITY_GEOMETRY.md](core/metric_lie_hodge/COMPATIBILITY_GEOMETRY.md).  Boundary/topology buộc refinement từ formal curl sang typed Hodge/de Rham realization; xem [DOMAIN_TOPOLOGY.md](core/metric_lie_hodge/DOMAIN_TOPOLOGY.md).  Restricted uniqueness evidence, black-box reconstruction và falsification record được tách tại [EVIDENCE_AND_SCOPE.md](core/metric_lie_hodge/EVIDENCE_AND_SCOPE.md).
+
+Claim chưa đạt: chưa có unrestricted classification theorem trên mọi manifold/domain, chưa có canonical cohomological obstruction quotient cuối, và core này không phải proof global regularity.
+
+Canonical audits:
+
+```bash
+python core/metric_lie_hodge/audits/formation_core_audit.py
+python core/metric_lie_hodge/audits/bch_core_audit.py
+python core/metric_lie_hodge/audits/domain_topology_audit.py
+```
+
+---
+
 ## I. Bản đồ đọc nhanh
 
 Tài liệu này là cửa vào cho **whole-state spectral signature của Navier--Stokes**. Object chính không phải NEO, không phải một terminal defect, và không phải một scalar critical reader. Cấu trúc canonical hiện tại là

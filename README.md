@@ -1,8 +1,8 @@
 # Wang–Navier–Stokes Core
 
-Repository này tập trung vào một structural description của smooth homogeneous incompressible Navier–Stokes thông qua **mother curl deformation** và **curl spectral-flag signature**.
+Repository này chứa các structural cores bổ sung nhau cho smooth homogeneous incompressible Navier–Stokes.  `core/spectral_signature/` mô tả whole-state encoding qua mother curl deformation và shifted spectral flags; `core/metric_lie_hodge/` mô tả formation law của chính phương trình từ metric-Lie/Hodge data.  `core/NEO/` được giữ riêng như compiler/workbench discovery.
 
-Object trung tâm là
+Trong spectral-signature core, object trung tâm là
 
 \[
 \boxed{
@@ -39,6 +39,40 @@ W_0.
 \]
 
 Mũi tên đầu là equivalence qua spectral tomography. Các mũi tên sau là contractions/readers làm mất information.
+
+## Metric–Lie / Hodge formation core
+
+Core bổ sung tại [core/metric_lie_hodge/README.md](core/metric_lie_hodge/README.md) bắt đầu từ datum
+
+\[
+\boxed{
+\mathcal C_{NS}
+=
+(\mathfrak g_\sigma,[\cdot,\cdot],\langle\cdot,\cdot\rangle_{L^2},C).
+}
+\]
+
+Đặt
+
+\[
+\boxed{
+\ell_{\nu,u}(a,b)
+=-\langle u,[a,b]\rangle
+-\nu\langle Ca,Cb\rangle.
+}
+\]
+
+Nếu \(\mathcal L_{\nu,u}\) là Riesz operator của form này thì
+
+\[
+\boxed{
+\mathcal L_{\nu,u}=\mathcal J_u-\nu C^2,
+\qquad
+\partial_tu=\mathcal L_{\nu,u}u.
+}
+\]
+
+Claim của core này là structural formation: projected Euler/geodesic/Lie–Poisson part và Stokes/Dirichlet part được sinh từ cùng oriented metric-Lie/Hodge datum.  Nó không thay thế spectral-signature completeness theorem và không phải regularity theorem.
 
 ## Kết quả structural chính
 
@@ -113,8 +147,11 @@ Tức microlocal signature norm, sau universal normalization, chính là Sobolev
 
 ## Đọc từ đâu
 
-- [Core_signature.md](Core_signature.md) — narrative dài: từ terminal/C0 failures tới \(O_a\), rồi quay về complete mother \(E=[\nabla,C]\).
-- [core/spectral_signature/README.md](core/spectral_signature/README.md) — cửa vào canonical theory.
+- [Core_signature.md](Core_signature.md) — entry narrative chung; Mục I mới tóm tắt metric–Lie/Hodge formation core, Mục II cũ giữ nguyên lịch sử spectral-signature.
+- [core/metric_lie_hodge/README.md](core/metric_lie_hodge/README.md) — cửa vào formation theory: metric Lie tensor, Riesz operator pencil, domain/topology typing và Euler–heat descendant algebra.
+- [core/metric_lie_hodge/FORMATION_LAW.md](core/metric_lie_hodge/FORMATION_LAW.md) — exact formation identities và công thức \(u_t=\mathcal L_{\nu,u}u\).
+- [core/metric_lie_hodge/COMPATIBILITY_GEOMETRY.md](core/metric_lie_hodge/COMPATIBILITY_GEOMETRY.md) — relation giữa material/Poisson mothers, pressure/common mode và BCH compatibility.
+- [core/spectral_signature/README.md](core/spectral_signature/README.md) — cửa vào whole-state spectral-signature theory.
 - [core/spectral_signature/SPECTRAL_FLAG_SIGNATURE.md](core/spectral_signature/SPECTRAL_FLAG_SIGNATURE.md) — definition, reverse compiler, tomography, functional calculus, quotient và readers.
 - [core/spectral_signature/SPECTRAL_FLAG_COMPLETENESS.md](core/spectral_signature/SPECTRAL_FLAG_COMPLETENESS.md) — adversarial completeness campaign và falsification record.
 - [core/spectral_signature/MOTHER_COMPLETENESS_THEOREM.md](core/spectral_signature/MOTHER_COMPLETENESS_THEOREM.md) — structural completeness theorem và explicit decoder.
@@ -126,13 +163,23 @@ Lịch sử các proof programmes/worktrees trước whole-state signature nằm
 
 ## Reproduce canonical audits
 
+Metric–Lie/Hodge formation core:
+
+```bash
+python core/metric_lie_hodge/audits/formation_core_audit.py
+python core/metric_lie_hodge/audits/bch_core_audit.py
+python core/metric_lie_hodge/audits/domain_topology_audit.py
+```
+
+Spectral-signature core:
+
 ```bash
 python core/spectral_signature/audits/spectral_flag_signature.py
 python core/spectral_signature/audits/spectral_flag_completeness.py
 python core/spectral_signature/audits/mother_completeness_theorem.py
 ```
 
-Ba audits này kiểm các identity và experiments canonical: reverse signature algebra, shifted tomography, quotient kernel, microlocal state recovery, Killing kernel, Sobolev/frame constants, gauge reconstruction và signature-image conjugacy.
+Hai audit suites phục vụ hai claim khác nhau: formation/core geometry ở `metric_lie_hodge`, và whole-state signature/completeness ở `spectral_signature`.
 
 ## Scope
 
@@ -168,9 +215,10 @@ README.md
 Core_signature.md
 core/
   NEO/
+  metric_lie_hodge/
   spectral_signature/
 history/
   worktrees/
 ```
 
-`core/spectral_signature/` là phần canonical quan trọng nhất của repository hiện tại.
+`core/spectral_signature/` và `core/metric_lie_hodge/` là hai canonical theory folders với nhiệm vụ khác nhau: một bên whole-state coordinate/completeness, một bên equation formation/core geometry.  `core/NEO/` vẫn là methodology/workbench.
