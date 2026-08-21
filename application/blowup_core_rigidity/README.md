@@ -1,8 +1,8 @@
-# Blow-up Application: Full-Core Critical Rigidity
+# Application 1 — Blow-up via Theory 1: Full-Core Critical Rigidity
 
 ## 1. Purpose
 
-This folder records the current application of the metric–Lie/Hodge formation core to the finite-time blow-up problem for smooth homogeneous incompressible three-dimensional Navier–Stokes.
+This folder is **Application 1 of Theory 1**.  Here **Theory 1** is the canonical Metric–Lie/Hodge Formation Core, applied to the finite-time blow-up problem for smooth homogeneous incompressible three-dimensional Navier–Stokes.
 
 The guiding rule is deliberately strict:
 
