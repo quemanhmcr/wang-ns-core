@@ -156,6 +156,7 @@ Tức microlocal signature norm, sau universal normalization, chính là Sobolev
 - [core/spectral_signature/SPECTRAL_FLAG_COMPLETENESS.md](core/spectral_signature/SPECTRAL_FLAG_COMPLETENESS.md) — adversarial completeness campaign và falsification record.
 - [core/spectral_signature/MOTHER_COMPLETENESS_THEOREM.md](core/spectral_signature/MOTHER_COMPLETENESS_THEOREM.md) — structural completeness theorem và explicit decoder.
 - [core/spectral_signature/HISTORY_AND_FALSIFICATION.md](core/spectral_signature/HISTORY_AND_FALSIFICATION.md) — các failure trực tiếp quyết định hình dạng cuối của theory.
+- [application/blowup_core_rigidity/README.md](application/blowup_core_rigidity/README.md) — application-level reduction của finite-time blow-up question về normalized full-core critical rigidity; phân biệt rõ exact reduction với open rigidity theorem.
 
 NEO compiler/workbench được giữ riêng tại [core/NEO/](core/NEO/). Nó là phương pháp dẫn tới discovery, không phải subject chính của spectral-signature theory.
 
@@ -217,8 +218,10 @@ core/
   NEO/
   metric_lie_hodge/
   spectral_signature/
+application/
+  blowup_core_rigidity/
 history/
   worktrees/
 ```
 
-`core/spectral_signature/` và `core/metric_lie_hodge/` là hai canonical theory folders với nhiệm vụ khác nhau: một bên whole-state coordinate/completeness, một bên equation formation/core geometry.  `core/NEO/` vẫn là methodology/workbench.
+`core/spectral_signature/` và `core/metric_lie_hodge/` là hai canonical theory folders với nhiệm vụ khác nhau: một bên whole-state coordinate/completeness, một bên equation formation/core geometry.  `core/NEO/` vẫn là methodology/workbench.  `application/` chứa các programme áp dụng core vào bài toán cụ thể và không thay đổi claim level của canonical theory.
