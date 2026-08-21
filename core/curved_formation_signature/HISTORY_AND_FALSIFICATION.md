@@ -1,49 +1,90 @@
 # History and Falsification
 
-This note records only the discovery steps that materially determined the final core.  It is not a dump of the research worktree.
+Core 3 did not emerge from a single successful derivation.  Its current form was forced by a sequence of attractive formulations that failed under stronger tests.
 
-## 1. Two apparently separate cores
+This file records those failures because they are part of the theory.
 
-The repository first reached two mature structural descriptions:
+---
 
-- the metric–Lie/Hodge **formation core**, centered on the bilinear Riesz form
-  \[
-  \ell_{\nu,u}(a,b)
-  =-\langle u,[a,b]\rangle-\nu\langle Ca,Cb\rangle;
-  \]
-- the **spectral-signature core**, centered on the complete mother
-  \[
-  E_u=[\nabla_u,C]
-  \]
-  and its shifted spectral-flag normal form.
+## 1. Starting point: two mature structures that looked separate
 
-The natural question was whether these were merely compatible theories or two levels of one geometry.
+The repository first had two strong but apparently different objects.
 
-## 2. First unification experiment: forward and reverse maps
-
-A blind finite-dimensional physical algebra was built in which the core path retained only the metric-Lie tensor \(T\) and curl matrix \(C\).  The physical Fourier implementation was kept separate.
-
-From \(T\), the core path reconstructed the connection by Koszul, then the mother \(E\), then the full shifted flag.  On the selected 28-dimensional mean-zero model, both mother and flag maps had full rank, with condition numbers near \(2.4\).
-
-The reverse path reconstructed state and the full formation operator.  Independent trajectory integrations in physical and signature coordinates commuted at roundoff.
-
-This established that, on a fixed core, the spectral theory was carrying more than static state information: it carried the full formation dynamics.
-
-## 3. First major falsification: the signature image is not Euclidean
-
-An early attempt treated reduced mother coordinates as if their coordinate metric were the identity.  The formation form then failed by order one.  This was not a numerical bug; it exposed the missing transported Riesz metric.
-
-With the induced metric, the same identities returned to roundoff.  The later exact Sobolev argument clarified the result:
+The formation core started from
 
 \[
-L^2_u\longleftrightarrow \dot H^{-1}_q,
-\qquad
-\|Cu\|_2^2\longleftrightarrow L^2_q.
+(\mathfrak g_\sigma,g,T,C)
 \]
 
-The failure therefore forced a genuine structural upgrade: complete coordinates do not automatically preserve the formation metric unless the metric is transported.
+and generated the connection and Navier--Stokes operator.
 
-## 4. Second major falsification: naive operator commutator is not the formation bracket
+The spectral-signature core started from
+
+\[
+E_u=[\nabla_u,C]
+\]
+
+and showed that the mother/shifted flag reconstructs the smooth periodic state modulo Killing symmetry.
+
+The first Core-3 question was modest:
+
+> Is the signature merely compatible with the formation core, or is it a complete representation of the same dynamics?
+
+The answer was stronger than expected, but every later strengthening required new falsification.
+
+---
+
+## 2. First unification: state and dynamics commute across the bridge
+
+A blind finite physical algebra was built in which the reconstruction path retained only the metric-Lie tensor and curl.
+
+From those data it rebuilt the connection, mother and shifted flag.  The reverse path recovered state and the state-dependent formation operator.  Independent trajectory integrations in physical and signature coordinates agreed at roundoff.
+
+This established the first durable statement:
+
+\[
+\boxed{
+\text{on a fixed physical core, the spectral signature carries the full state dynamics.}
+}
+\]
+
+But the first false simplification appeared immediately.
+
+---
+
+## 3. Falsification 1: complete coordinates are not automatically Euclidean
+
+The first reduced mother coordinates were treated as if their metric were the identity.
+
+Formation identities failed by order one.
+
+Transporting the correct Riesz metric restored them to roundoff.
+
+The exact Sobolev bridge later explained why:
+
+\[
+L^2_u
+\longleftrightarrow
+15\dot H^{-1}_q,
+\qquad
+\|Cu\|_2^2
+\longleftrightarrow
+15L^2_q.
+\]
+
+Lesson:
+
+\[
+\boxed{
+\text{coordinate completeness}\neq\text{metric equivalence without transporting }g.
+}
+\]
+
+This warning later became essential for geometric reconstruction.
+
+---
+
+## 4. Falsification 2: the induced bracket is not the operator commutator
 
 The tempting guess
 
@@ -51,205 +92,642 @@ The tempting guess
 E_{[u,v]}=[E_u,E_v]
 \]
 
-failed at order one.  The exact Jacobi calculation revealed the missing term:
+failed at order one.
+
+The correct identity is
 
 \[
+\boxed{
 E_{[u,v]}
-=[\nabla_u,E_v]-[\nabla_v,E_u]-[R(u,v),C].
-\]
-
-This turned curvature from a secondary renderer into a necessary part of the induced Lie geometry.
-
-An infinitesimal loop experiment then measured \([R,C]\) directly as curl holonomy, confirming that the correction was geometric rather than bookkeeping.
-
-## 5. Third major falsification: snapshot signature does not determine an arbitrary core
-
-An exact dark-sector collision was constructed inside a degenerate curl eigenspace.  Two abstract metric-Lie cores had identical mother maps, identical full shifted flags, and identical diagonal dissipative dynamics for every state, while their full Poisson operators differed by order one.
-
-This killed the overclaim
-
-\[
-\text{signature snapshot}\Rightarrow\text{universal background core}.
-\]
-
-The surviving statement became fiberwise: the signature is complete over the canonical physical NS core.  A separate local-isotropic derivation tribunal then showed why the physical core is rigid: the vector-field bracket and curl direction are selected by locality/derivation and oriented Euclidean equivariance in the tested class.
-
-## 6. Fourth major falsification: arbitrary Galerkin projection can lie
-
-Changing the retained Fourier library produced projected mother ranks such as \(18/24\) and \(28/40\), even though the six-direction physical microlocal signature remained full rank.  Some projected brackets had Jacobi defects around \(0.4\)–\(0.6\).
-
-A first Bianchi/curved-DG experiment inside such a Galerkin algebra failed badly.  Measuring the projected Jacobi identity exposed the reason: the truncated algebra was not a faithful Lie category.
-
-The experiment was repeated on full pseudospectral divergence-free fields with low-frequency support.  Jacobi, Bianchi and the first curved-covariant tower identities then held at \(10^{-15}\)–\(10^{-13}\) scale.
-
-This established a methodological rule for the core:
-
-\[
-\boxed{
-\text{finite Galerkin models are useful coordinate labs, but higher Lie/curvature claims require a faithful physical check.}
+=
+[\nabla_u,E_v]-[\nabla_v,E_u]-[R(u,v),C].
 }
 \]
 
-## 7. Curvature tomography closes the two theories
+Curvature was therefore not optional decoration.  It was required for the induced Lie geometry.
 
-The shifted spectral family had already tomographed the mother deformation.  The decisive next test asked whether the same spectral cuts tomograph curvature action.
-
-They do:
-
-\[
-\frac12\int[R,H_a]\,da=[R,C].
-\]
-
-The result was verified both in finite spectral geometry and independently on full physical helical Fourier multipliers.  This moved the relation between the two theories beyond state reconstruction:
-
-\[
-\boxed{
-\text{formation curvature holonomy}
-\longleftrightarrow
-\text{shifted spectral curvature tomography}.
-}
-\]
-
-## 8. Final compression
-
-The resulting canonical picture is
-
-\[
-\boxed{
-(\mathfrak g_\sigma,g,T,C)
-\to
-\nabla
-\to
-E=d_\nabla C
-\leftrightarrow
-\text{shifted spectral flag},
-}
-\]
-
-with the next degrees governed by
-
-\[
-\boxed{
- d_\nabla^2=R\text{-action},
-\qquad
-C\to E\to[R,C]\to R\wedge E\to\cdots.
-}
-\]
-
-The historical lesson is the same one learned repeatedly elsewhere in the repository: when a new “mechanism” appears after changing representation or differentiating, first ask whether it is a generated degree of an existing structure.  In this case the answer led from two apparently separate cores to one curved formation–signature geometry.
+An infinitesimal-loop experiment then measured \([R,C]\) as actual curl holonomy.
 
 ---
 
-## 9. Fifth major correction: “curved representation” is not a curved embedding
+## 5. Falsification 3: a state snapshot does not determine an arbitrary abstract universe
 
-The phrase “curved signature geometry” was initially too loose.  An exact \(so(3)\) test used a linear signature image with constant transported metric.  Its ordinary coordinate curvature was zero, while the transported formation curvature was nonzero and matched the physical curvature at roundoff.
+An exact dark-sector collision was constructed inside a degenerate curl eigenspace.
 
-This forced the wording:
+Two abstract metric-Lie cores could have:
+
+- identical mother maps on the observed state;
+- identical shifted flags;
+- identical diagonal dissipative dynamics;
+
+while their full Poisson operators differed by order one.
+
+This killed
+
+\[
+\text{signature snapshot}
+\Rightarrow
+\text{arbitrary background core}.
+\]
+
+The surviving statement became fiberwise over the canonical physical NS category.
+
+This distinction returns in the newest campaign: **state completeness is not geometric completeness**.
+
+---
+
+## 6. Falsification 4: arbitrary Galerkin projection can lie about geometry
+
+Several finite Fourier libraries produced projected mother rank loss and large Jacobi defects.
+
+A first higher-curvature experiment inside such a projected algebra failed badly.  The failure was not evidence against the continuum identity; the projected bracket was not a Lie bracket.
+
+Repeating the experiment on full pseudospectral divergence-free fields restored Jacobi, Bianchi and curved-covariant identities at \(10^{-15}\)–\(10^{-13}\).
+
+Methodological rule:
 
 \[
 \boxed{
-\text{signature image = linear state representation carrying a curved formation connection.}
+\text{finite coordinate labs may stress inversion, but physical higher-geometry claims require faithful physical checks.}
 }
 \]
 
-The curvature belongs to the represented formation geometry, not to a nonlinear embedding of the signature image.
+This is why the newest campaign separates the 28D sparse stress test from the full physical helical tribunal.
 
-## 10. The spectral-sheet picture emerges
+---
 
-Writing the connection in a curl spectral frame revealed the split
+## 7. Curvature tomography closes the first synthesis
+
+The shifted spectral family already tomographed the mother.  The next test showed
+
+\[
+\boxed{
+\frac12\int[R,H_a]\,da=[R,C].
+}
+\]
+
+Thus the same spectral machinery reads both first deformation and curvature action.
+
+At this point Core 3 could be described as a curved formation--signature representation.
+
+That wording was still too loose.
+
+---
+
+## 8. Falsification 5: “curved representation” does not mean a curved embedding
+
+A linear image can be flat as an ordinary constant-metric vector subspace while carrying a nonzero transported formation connection.
+
+An exact \(so(3)\) control showed:
+
+- linear image curvature: zero;
+- transported formation curvature: nonzero;
+- transported match: roundoff.
+
+The correct sentence became:
+
+\[
+\boxed{
+\text{the signature is a linear representation carrying curved formation geometry.}
+}
+\]
+
+The map is not being advertised as an extrinsically curved embedding.
+
+---
+
+## 9. Curl spectral sheets reveal what the mother is actually measuring
+
+The next campaign decomposed the metric connection as
 
 \[
 \nabla=V+B,
-\qquad [V,C]=0,
+\qquad
+[V,C]=0.
 \]
 
-so that
+Then
 
 \[
+\boxed{
 E=[B,C].
-\]
-
-This exposed the mother as the gap-weighted cross-sheet mixing of the formation connection.  Curvature then decomposed into within-sheet and cross-sheet pieces, with
-
-\[
-K=[R,C]
-\]
-
-seeing only the latter.  Finite spectral and full physical helical audits agreed.
-
-Gauss, Ricci and Codazzi therefore stopped looking like historical costumes: they are the natural block geometry of the curl spectral reduction.
-
-## 11. Sixth falsification: the first curl commutant is not the final gauge
-
-At first order, a connection component commuting with curl is invisible to \(E\).  It was tempting to call the entire commutant a gauge sector.
-
-That interpretation failed.  Generic vertical connection components alter curvature through interaction with the cross-sheet component, and the pair \((E,K)\) reconstructed the hidden lift in every tested compatible-connection degeneracy pattern.
-
-The corrected statement is:
-
-\[
-\boxed{
-\operatorname{comm}(C)=\text{first-order stabilizer}.
 }
 \]
 
-Only transformations stabilizing the complete generated sensor algebra deserve to be called truly dark.
+This was the conceptual turning point.
 
-## 12. Seventh falsification: higher tower does not always add new connection information
+The mother does not change the eigenvalues of curl.  It measures how the formation connection mixes the curl eigensheets.
 
-When curvature was treated as an independent unknown, the higher Bianchi degrees formed a real observability filtration.  A \(3+3\) spectrum left one vertical curvature direction after degree three and lost it only after degree four.
+The finite physical coordinate lab made the scale disparity vivid:
 
-But when curvature was constrained to arise from the same compatible connection that generated \(E\), the degree-two data \((E,K)\) were already generically full rank for the hidden vertical connection.  Higher degrees then added consistency rather than new independent connection information.
+- skew connection dimension: 378;
+- curl stabilizer dimension: 62;
+- full isospectral orbit tangent dimension: 316;
+- physical state image dimension: 28.
 
-This separated two inverse problems that had previously been conflated.
+So the physical state distribution is a very special low-dimensional direction field inside a much larger curl orbit.
 
-## 13. Eighth falsification: curvature is not a danger amplitude
+---
 
-The mother and curvature mother remained nonzero on harmless classes:
+## 10. Gauss--Codazzi--Ricci structure appears
 
-- 2D incompressible flows with zero self-stretching;
-- exact Beltrami states with vanishing Euler self-dynamics;
-- shear flows with vanishing Euler self-dynamics.
-
-Therefore the third core must remain a structural theory of ambient state-space geometry.  Nonzero \(E\) or \([R,C]\) cannot by itself be advertised as evidence of singular behavior.
-
-## 14. Ninth falsification: zero curl is not gauge
-
-An annular harmonic circulation has \(Ch=0\) but can have \([D_h,C]\neq0\) on probes.  A separate algebraic model placed both a visible harmonic-like direction and a truly central direction in \(\ker C\).
-
-This killed the shortcut
+Curvature split as
 
 \[
-\ker C=\text{gauge}.
+R=R_\parallel+R_\perp,
+\qquad
+[R_\parallel,C]=0.
 \]
 
-The true kernel is interaction- and domain-dependent, and topology must be carried explicitly.
-
-## 15. Tenth falsification: BCH is not geometric curvature
-
-Euler–heat BCH descendants and the geometric curvature mother are both generated from the same formation core, but they are not the same object.  Beltrami and shear controls had zero tested Euler–heat diagonal mixed term while ambient \([R,C]\) remained nonzero.
-
-The correct relation is ancestry, not identity:
+In the spectral frame,
 
 \[
-(T,C)
-\longrightarrow
-\begin{cases}
-\text{Euler–heat BCH descendants},\\
-\text{formation connection curvature descendants}.
-\end{cases}
+R_\parallel=[V,V]+\Pi_\parallel[B,B]
 \]
 
-## 16. What the second campaign changed
+and \(R_\perp\) is the cross-sheet/Codazzi sector.
 
-The first campaign established that the spectral-signature theory carries the formation dynamics and curvature.  The second campaign changed the interpretation from a generic “curved representation” into a much more specific statement:
+Because
+
+\[
+K=[R,C]=[R_\perp,C],
+\]
+
+it became clear that \(K\) is not “the curvature”; it is the curvature mother that sees only the off-sheet component directly.
+
+Full physical helical experiments confirmed the same split.
+
+---
+
+## 11. Falsification 6: the curl commutant is not the final gauge
+
+At degree one,
+
+\[
+[V,C]=0
+\]
+
+makes \(V\) invisible to the mother.
+
+It was tempting to call the entire curl commutant gauge.
+
+Curvature destroyed that interpretation: generic within-sheet connection information reappears through cross-sheet loops.
+
+The correct wording became:
 
 \[
 \boxed{
-\textbf{curl supplies a spectral reduction of the formation connection.}
+\operatorname{comm}(C)
+\text{ is a first-order stabilizer, not the final gauge.}
 }
 \]
 
-The mother measures spectral-sheet mixing.  The curvature mother measures cross-sheet curvature.  Gauss/Ricci curvature lives within sheets.  Bianchi identities couple the visible and hidden sectors.  The first commutant is only a stabilizer, not automatically a physical gauge.  Boundary, topology, orientation and metric typing remain indispensable.
+True darkness must stabilize the full generated differential-spectral data, not only \(C\).
 
-The most useful methodological lesson is that each attractive slogan was accepted only after adversarial controls tried to break it.  Several slogans did break, and the resulting theory became both narrower and clearer.
+---
+
+## 12. Falsification 7: higher tower does not always mean new independent connection information
+
+When curvature was treated as an independent unknown tensor, higher Bianchi degrees added rank.
+
+But when curvature was constrained to come from a compatible connection, generic \(E+K\) already reconstructed the hidden connection in finite tests.
+
+Thus the statement
+
+\[
+\text{every higher degree adds new physics}
+\]
+
+was rejected.
+
+The better interpretation is:
+
+> Higher degrees are additional observability/compatibility channels that matter especially at symmetry-degenerate strata.
+
+---
+
+## 13. Falsification 8: mother and curvature are not danger amplitudes
+
+2D, Beltrami and shear controls have harmless/self-nonlinear structure while ambient \(E\) and \(K\) can be nonzero and even large.
+
+Therefore
+
+\[
+E\neq0
+\quad\text{or}\quad
+K\neq0
+\]
+
+is not a singularity or blow-up criterion.
+
+Core 3 is structural geometry first.  Any regularity application must be a separate theorem.
+
+---
+
+## 14. Falsification 9: zero curl is not gauge
+
+A topological harmonic circulation can satisfy
+
+\[
+Cu=0
+\]
+
+while
+
+\[
+E_u\neq0.
+\]
+
+A constant Galilean mode can satisfy both
+
+\[
+Cu=0,
+\qquad E_u=0.
+\]
+
+Thus
+
+\[
+\boxed{
+\ker C\neq\ker(u\mapsto E_u)
+}
+\]
+
+in general.
+
+Gauge is controlled by interaction with the connection, not merely by curl eigenvalue zero.
+
+---
+
+## 15. Falsification 10: Euler--heat BCH descendants are not geometric curl curvature
+
+The Euler--heat splitting descendants and \([R,C]\) share the same parent core \((T,C)\), but they are different tensors.
+
+Beltrami and shear controls can have zero Euler--heat BCH descendant while the formation curvature mother is nonzero.
+
+Therefore
+
+\[
+\boxed{
+\text{BCH splitting defect}\neq[R,C].
+}
+\]
+
+Theories should be unified through their common parent datum, not by renaming distinct descendants as each other.
+
+---
+
+# Campaign III — from state completeness to geometric completeness
+
+## 16. New suspicion: perhaps Theory 2 can reverse-engineer the formation connection
+
+Once
+
+\[
+E=[B,C]
+\]
+
+was understood, the remaining inverse problem became obvious.
+
+Degree one gives \(B\).  What about the hidden stabilizer connection \(V\)?
+
+The new question was
+
+\[
+\boxed{
+(g,C,E,K)
+\stackrel{?}{\Longrightarrow}
+\nabla
+\stackrel{?}{\Longrightarrow}
+T,R,\mathcal J.
+}
+\]
+
+This is categorically stronger than state completeness.
+
+The campaign was designed to kill this hypothesis if possible.
+
+---
+
+## 17. First surprise: the hidden inverse is affine-linear in the exact metric-Lie model
+
+In the left-invariant torsion-free metric-Lie tribunal, once \(B\) is fixed by \(E\), the curvature mother satisfies
+
+\[
+\boxed{
+K=K_B+\mathcal A_{C,E}(V).
+}
+\]
+
+The map \(\mathcal A_{C,E}\) is linear in the hidden within-sheet connection coefficients.
+
+Why the quadratic part disappears is structural: pure vertical commutators remain in the curl stabilizer and are killed by the final commutator with \(C\).
+
+The superposition residual was \(10^{-16}\).
+
+This turned a potentially nonlinear reverse-engineering problem into a Codazzi observability problem.
+
+---
+
+## 18. Generic exact reconstruction succeeds
+
+Four exact Lie-algebra families under randomized non-bi-invariant metrics produced
+
+\[
+\boxed{16/16}
+\]
+
+full-rank generic cases.
+
+From only \(g,C,E,K\), the tribunal reconstructed:
+
+\[
+\nabla,\quad [\cdot,\cdot],\quad R,\quad\mathcal J,\quad\mathcal L_{\nu,u}
+\]
+
+at roundoff scale.
+
+Independent 80-step trajectories agreed within
+
+\[
+5.02\times10^{-16}.
+\]
+
+Noise response was linear with slope
+
+\[
+1.008.
+\]
+
+This was the first strong evidence for formation-geometry completeness.
+
+---
+
+## 19. Physical helical tribunal: curvature sees a connection coefficient that mother sees as exactly zero
+
+A full Fourier/helical experiment selected transitions with the same signed curl eigenvalue.
+
+By construction the mother is exactly blind to that vertical coefficient.
+
+A cross-sheet curvature loop recovered it.
+
+Across 80 resonant triads:
+
+\[
+\text{median error}=9.56\times10^{-16},
+\]
+
+\[
+\text{worst error}=3.51\times10^{-14},
+\]
+
+with noise slope \(1.0004\).
+
+This was the decisive physical confirmation of the mechanism:
+
+\[
+\boxed{
+\text{curvature can reveal first-order spectral blindness.}
+}
+\]
+
+---
+
+## 20. Falsification 11: \(E+K\) is not universally complete
+
+The hypothesis was then attacked across 9 exact Lie-algebra families, 9 spectral multiplicity patterns and 6 random metrics.
+
+The result was mostly positive but not universal:
+
+\[
+\boxed{68/72}
+\]
+
+non-scalar family/pattern combinations were full rank for every tested seed.
+
+All persistent failures occurred at the highly degenerate multiplicity
+
+\[
+5+1.
+\]
+
+The hardest case retained 11 degree-two hidden directions.
+
+Therefore the correct theory is **stratified**.
+
+The statement
+
+\[
+(C,E,K)\text{ always determines }\nabla
+\]
+
+was explicitly rejected.
+
+---
+
+## 21. Higher tower repairs several degenerate failures
+
+At \(5+1\), higher degrees were added exactly where degree two failed.
+
+Several kernels closed completely at degree three.
+
+The hardest case showed
+
+\[
+\boxed{11\to9\to6}.
+\]
+
+This gave higher Bianchi degrees a clearer role: not universal new mechanisms, but completion data on singular spectral strata.
+
+---
+
+## 22. Falsification 12: Bianchi or Jacobi do not automatically restore uniqueness
+
+A natural hope was that integrability would close the remaining kernel.
+
+It did for several families, but failed in the hardest nilpotent-plus-central case.
+
+There:
+
+\[
+K:11,
+\qquad
+K+D R:11,
+\qquad
+K+\text{Jacobi}:7.
+\]
+
+Even the maximal tower plus Jacobi and Bianchi retained a five-dimensional linearized kernel.
+
+So “Cartan equations automatically imply full-rank inverse” was rejected.
+
+---
+
+## 23. Falsification 13: a linearized kernel is not automatically a true dark family
+
+The remaining five directions looked like possible gauge/non-uniqueness.
+
+They were tested nonlinearly.
+
+Along each random kernel direction,
+
+\[
+\boxed{
+\text{full sensor residual}\sim t^2.
+}
+\]
+
+Six independent fitted slopes were equal to \(2.0000000000\) at numerical precision.
+
+Random finite sphere scans found no zero-residual collision.
+
+Thus the linearized inverse is singular, but the nonlinear map still sees those directions at second order.
+
+New lesson:
+
+\[
+\boxed{
+\text{Jacobian blindness}\neq\text{finite darkness}.
+}
+\]
+
+A geometric-completeness theorem may therefore need a stratified nonlinear formulation rather than a uniform inverse-function theorem.
+
+---
+
+## 24. Sparse 28D stress test reveals an observability threshold
+
+The canonical 28D coordinate lab leaves 1736 within-sheet connection coefficients hidden after degree one.
+
+Random scalar curvature projections were reduced until the inverse failed.
+
+Recovery errors were roughly
+
+\[
+0.67,\ 0.51,\ 0.25
+\]
+
+while the system had fewer equations than unknowns.
+
+When 5 projections per pair produced 1890 equations, just above 1736 hidden coefficients, the error collapsed to
+
+\[
+4.4\times10^{-10}.
+\]
+
+This resembles a genuine observability threshold rather than an accidental identity.
+
+The result remains a coordinate stress test, not a faithful projected-Lie theorem.
+
+---
+
+## 25. Held-out readers show that the inverse reconstructs a generator
+
+Only \(E\) and \(K\) were fitted.
+
+The recovered connection then predicted unseen readers
+
+\[
+[\nabla,f(C)],
+\qquad
+[R,f(C)],
+\]
+
+shifted flags and a higher \(dK\) level at \(10^{-15}\).
+
+An \(E\)-only control failed a curvature reader by \(0.931\).
+
+This argues against the interpretation that the inverse simply overfits the supplied matrices.
+
+---
+
+## 26. Metric covariance survives; Euclideanization fails again
+
+The new inverse was pushed through charts with condition numbers up to \(10^3\).
+
+Carrying the transported metric reproduced the same connection up to conditioning error.
+
+Pretending the chart was Euclidean failed by order one.
+
+The first Core-3 lesson therefore survived the entire programme:
+
+\[
+\boxed{
+\text{the metric is part of the signature geometry.}
+}
+\]
+
+---
+
+## 27. Final boundary: geometry does not contain viscosity
+
+The reconstructed data determine the reversible formation geometry, not \(\nu\).
+
+Two systems with the same \(g,C,E,K\) and different viscosity have different formation laws.
+
+But after geometry is known, one generic time tangent calibrates \(\nu\) with linear noise stability.
+
+The resulting architecture is
+
+\[
+\boxed{
+\text{differential spectral geometry}
++
+\nu
+=
+\text{full formation law}.
+}
+\]
+
+This separation is cleaner than trying to force dissipation into the reversible geometric data.
+
+---
+
+## 28. What the third campaign changed permanently
+
+Before this campaign, the strongest canonical phrase was
+
+> the spectral signature is a complete curved representation of the physical formation core.
+
+That is still true as a broad synthesis, but it is no longer the most informative wording.
+
+The stronger and more precise current picture is:
+
+\[
+\boxed{
+\textbf{Core 3 is a curl-spectral differential observability geometry.}
+}
+\]
+
+Its hierarchy is now:
+
+\[
+\boxed{
+\text{state completeness}
+\to
+\text{spectral differential geometry}
+\to
+\text{generic formation-geometry reconstruction}.
+}
+\]
+
+The word **generic** and the distinction between **snapshot data** and **polarized differential data** are essential.
+
+The hardest remaining theorem problem is no longer “find another mechanism”.  It is to characterize the continuum Codazzi observability operator, its singular spectral strata, nonlinear injectivity and true stabilizer.
+
+---
+
+## 29. Durable research rules learned from Core 3
+
+The following rules should govern future work:
+
+1. Never promote a finite projected bracket to physical Lie geometry without a Jacobi/physical check.
+2. Never call a coordinate representation Euclidean unless the transported metric says so.
+3. Never identify a commutant or kernel with gauge from one covariant degree alone.
+4. Never infer finite non-uniqueness from a Jacobian kernel without nonlinear collision tests.
+5. Never call a structural curvature magnitude a danger/blow-up quantity without a separate regularity theorem.
+6. Never merge descendants merely because they share the same parent core.
+7. When a reconstruction works, test held-out readers and trajectories rather than only fitted tensors.
+8. When a generic theorem candidate appears, attack spectral degeneracy and symmetry before polishing the statement.
+9. Keep viscosity typed separately from reversible geometry unless the data explicitly contain a dynamical calibration.
+10. Preserve negative controls in the canonical suite; they are part of the theorem boundary.

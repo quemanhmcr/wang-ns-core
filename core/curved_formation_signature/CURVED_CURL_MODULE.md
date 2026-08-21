@@ -179,35 +179,41 @@ The target curvature action had norm \(0.774\).
 
 Thus the shifted spectral theory tomographs not only the degree-one mother deformation but also the tested degree-two curvature action.
 
-## 6. Current obstruction interpretation
+## 6. Current interpretation: differential observability, not a danger tower
 
-The historical search for a single obstruction \(O\) should not identify \(O\) with \(E\) itself.  The present geometry separates:
+The historical search for a single obstruction \(O\) should not identify \(O\) with \(E\), \(K\), or any raw curvature magnitude.  Harmless 2D, Beltrami and shear controls can carry nonzero ambient mother/curvature.
+
+The durable geometric hierarchy is instead
 
 \[
-C\quad\text{(distinguished structure)},
+C\quad\text{(distinguished signed spectral structure)},
 \]
 
 \[
-E=d_\nabla C\quad\text{(first deformation)},
+E=d_\nabla C\quad\text{(state-complete first deformation)},
 \]
 
 \[
-[R,C]=d_\nabla^2C\quad\text{(first curvature/holonomy level)}.
+K=[R,C]=d_\nabla^2C\quad\text{(cross-sheet curvature sensor)},
 \]
 
-The current candidate architecture is therefore
+followed by higher Bianchi degrees.
+
+The newest evidence gives this tower an inverse-geometric role.  Degree one reconstructs the cross-sheet connection; degree two generically constrains the remaining within-sheet connection through a Codazzi observability system; higher and nonlinear degrees become important on spectrally degenerate singular strata.
+
+Thus the preferred architecture is now
 
 \[
 \boxed{
-\mathbb O_C:
-C,\ d_\nabla C,\ d_\nabla^2C,\ d_\nabla^3C,\ldots,
-\qquad d_\nabla^2=R\text{-action}.
+\text{state completeness}
+\to
+\text{spectral differential geometry}
+\to
+\text{generic formation-geometry reconstruction}.
 }
 \]
 
-What remains open is the correct quotient/cohomology language that distinguishes dynamically dangerous non-flatness from harmless nonzero curvature representatives.
-
----
+Any future regularity obstruction built from this structure is a separate theorem problem.  Core 3 itself does not identify non-flatness with blow-up danger.
 
 ## 7. Spectral reduction correction: \([R,C]\) is the cross-sheet curvature mother
 

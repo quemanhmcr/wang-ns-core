@@ -218,3 +218,32 @@ The corresponding audit residuals are at \(10^{-15}\)–\(10^{-16}\) scale.
 ## 7. Status of the word “equivalence”
 
 The correct statement is **fiberwise equivalence of state/dynamics over a fixed canonical physical core**.  It is not a claim that one signature snapshot determines every possible abstract metric-Lie bracket.  That stronger claim is explicitly false; see [PHYSICAL_RIGIDITY_AND_IDENTIFIABILITY.md](PHYSICAL_RIGIDITY_AND_IDENTIFIABILITY.md).
+
+
+## 8. Transport is not the same inverse problem as geometric reconstruction
+
+Sections 1--7 assume that the canonical physical formation core is already fixed.  In that setting the signature coordinates **transport** the known metric, curl, bracket and formation operator.
+
+The newer Core-3 question is different:
+
+\[
+\boxed{
+(g_\Sigma,C,E(\cdot),K(\cdot,\cdot))
+\stackrel{?}{\Longrightarrow}
+\nabla,T,R,\mathcal J.
+}
+\]
+
+This is an inverse problem for the background formation geometry itself.  The current finite/physical campaign finds generic reconstruction through the curl-spectral split and Codazzi observability map, with singular high-multiplicity strata requiring higher or nonlinear data.
+
+Therefore:
+
+\[
+\boxed{
+\text{state/dynamics equivalence over a fixed core}
+\neq
+\text{background geometric-completeness theorem}.
+}
+\]
+
+The first is already canonical.  The second is the new theorem candidate documented in [GEOMETRIC_COMPLETENESS.md](GEOMETRIC_COMPLETENESS.md).

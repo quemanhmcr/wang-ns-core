@@ -753,182 +753,195 @@ Nếu cần giữ một câu duy nhất từ toàn campaign, hãy giữ câu nà
 
 ---
 
-## III. Curved Formation–Signature Geometry — khi hai core nhập thành một geometry cong
+## III. Core 3 — Curl-Spectral Differential Observability của Formation Geometry
 
-### III.1. Câu hỏi mới xuất hiện sau khi hai theory đã trưởng thành
+Core thứ ba bắt đầu như một câu hỏi nối hai theory đã trưởng thành, nhưng sau ba campaign nó đã biến thành một câu hỏi mạnh hơn hẳn.
 
-Sau khi metric–Lie/Hodge formation core và spectral-signature core cùng đứng được độc lập, một câu hỏi không thể tránh khỏi xuất hiện.
+Formation core trả lời:
 
-Formation core nói phương trình được sinh bởi
+\[
+(g,T,C)
+\Longrightarrow
+\nabla,\mathcal J,\mathcal L_{\nu,u}.
+\]
+
+Spectral-signature core trả lời:
+
+\[
+E_u=[\nabla_u,C]
+\Longleftrightarrow
+u=u\ \text{modulo Killing/Galilean symmetry}.
+\]
+
+Core 3 lúc đầu chỉ hỏi hai construction đó có commute hay không.  Sau campaign curl-spectral reduction, câu hỏi đổi thành:
 
 \[
 \boxed{
+(g_\Sigma,C,E,K)
+\stackrel{?}{\Longrightarrow}
+\nabla
+\stackrel{?}{\Longrightarrow}
+T,R,\mathcal J.
+}
+\]
+
+Nói cách khác: Theory 2 có chỉ encode **state**, hay full differential signature của nó còn reverse-engineer được **formation geometry** đã sinh ra state dynamics?
+
+Câu trả lời hiện tại rất mạnh nhưng phải type cẩn thận:
+
+\[
+\boxed{
+\text{state completeness}
+\to
+\text{spectral differential geometry}
+\to
+\text{generic formation-geometry reconstruction}.
+}
+\]
+
+Từ “generic” là thiết yếu.  Highly degenerate curl spectra tạo singular strata; ở đó higher covariant degrees và nonlinear information có thể cần thiết.
+
+### III.1. Ba cấp completeness phải tách riêng
+
+Core 3 hiện dùng ba khái niệm completeness khác nhau.
+
+**Level A — state completeness.**  Trên canonical smooth mean-zero periodic physical core,
+
+\[
+\boxed{
+E_u\Longrightarrow u
+}
+\]
+
+modulo known Killing/Galilean sector.  Đây là theorem-level result kế thừa từ parent spectral-signature core.
+
+**Level B — differential spectral geometry.**  Mother không chỉ là một observable của từng state; nó là một operator-valued one-form
+
+\[
+\boxed{
+E=d_\nabla C.
+}
+\]
+
+Differentiating covariantly,
+
+\[
+\boxed{
+K:=d_\nabla E=d_\nabla^2C=[R,C].
+}
+\]
+
+Tower đầu tiên là
+
+\[
+\boxed{
+C
+\xrightarrow{d_\nabla}
+E
+\xrightarrow{d_\nabla}
+K=[R,C]
+\xrightarrow{d_\nabla}
+R\wedge E
+\xrightarrow{d_\nabla}\cdots,
+\qquad
+d_\nabla R=0.
+}
+\]
+
+**Level C — geometric completeness.**  Bây giờ hỏi full polarized data
+
+\[
+E(\cdot),
+\qquad
+K(\cdot,\cdot)
+\]
+
+có determine \(\nabla\) hay không.
+
+Điểm này không được rút gọn thành “một snapshot \(E_u\) biết toàn background geometry”.  Vì \(K\) là two-form,
+
+\[
+K(u,u)=0.
+\]
+
+Một state snapshot và một differential geometry là hai loại data khác nhau.
+
+### III.2. State-level bridge vẫn là nền móng
+
+Trên fixed canonical formation core,
+
+\[
 \mathcal C_{NS}
-=(\mathfrak g_\sigma,g_{L^2},T,C),
-}
-\]
-
-với
-
-\[
-T(a,b,c)=\langle a,[b,c]\rangle,
-\qquad C=\operatorname{curl},
-\]
-
-và Riesz formation operator
-
-\[
-\boxed{
-\mathcal L_{\nu,u}=\mathcal J_u-\nu C^2,
+=(\mathfrak g_\sigma,g,T,C),
 \qquad
-u_t=\mathcal L_{\nu,u}u.
-}
+C=\operatorname{curl}.
 \]
 
-Spectral theory lại nói complete mother
+Koszul cho
 
 \[
-\boxed{E_u=[\nabla_u,C]}
+2g(\nabla_ab,c)
+=g([a,b],c)-g([b,c],a)+g([c,a],b).
 \]
 
-và full shifted family \(\{\mathscr O_a(u)\}_a\) encode toàn smooth state modulo đúng Killing/Galilean sector.
-
-Câu hỏi lúc này không còn là “theory nào đúng hơn”. Câu hỏi là:
+Formation operator là
 
 \[
 \boxed{
-\text{spectral signature chỉ là một bộ tọa độ complete, hay nó thật sự mang formation geometry?}
+\mathcal L_{\nu,u}
+=\mathcal J_u-\nu C^2.
 }
 \]
 
-Canonical answer của Mục III là: **nó mang formation geometry, nhưng dưới dạng một curved representation chứ không phải một Euclidean operator space ngây thơ.** Toàn corpus của kết quả này nằm tại [Curved Formation–Signature Core](core/curved_formation_signature/README.md).
-
-### III.2. Forward functor: formation core tự sinh mother
-
-Từ \((g,T)\), Koszul reconstruct Levi–Civita connection \(\nabla\). Khi distinguished curl \(C\) đã được cố định, mother không còn là một primitive mới:
+Forward map tạo mother
 
 \[
-\boxed{
-E=d_\nabla C,
-\qquad
 E_u=[\nabla_u,C].
-}
 \]
 
-Tức formation core tự sinh object trung tâm của spectral theory.
-
-Shifted cuts
-
-\[
-H_a=\operatorname{sgn}(C-aI)
-\]
-
-sinh cut connections \([\nabla_u,H_a]\), và spectral layer cake reconstruct lại mother. Vì vậy forward chain là
-
-\[
-\boxed{
-(g,T,C,u)
-\longrightarrow
-\nabla_u
-\longrightarrow
-E_u
-\longleftrightarrow
-\{\mathscr O_a(u)\}_a.
-}
-\]
-
-Trong blind 28-dimensional tribunal, đường core chỉ được cho \(T\) và \(C\); đường physical Fourier calculus được giữ độc lập. Koszul reconstruct connection, rồi mother và shifted flag khớp physical implementation ở roundoff. Mother và full flag đều có rank \(28/28\), condition numbers chỉ khoảng \(2.4\).
-
-### III.3. Reverse bridge: signature không chỉ reconstruct state mà reconstruct formation operator
-
-Theory 2 đã có
-
-\[
-E\to\sigma_1(E)\to q_u(x,n)\to S(u)\to u.
-\]
-
-Thí nghiệm mới đẩy tiếp:
-
-\[
-\boxed{
-E_u
-\longrightarrow
-u
-\longrightarrow
-\mathcal J_u
-\longrightarrow
-\mathcal L_{\nu,u},
-}
-\]
-
-và cùng điều đó cho full shifted flag.
-
-Trong reduced finite coordinates, full formation operator reconstruct từ mother ở residual \(2.24\times10^{-16}\), từ flag ở \(3.25\times10^{-16}\).
-
-Một cross-check độc lập cố ý không dùng pseudoinverse của core map. Chỉ sáu principal strain readings
-
-\[
-q_r(x)=n_r^TS(u)(x)n_r
-\]
-
-được dùng để reconstruct
-
-\[
-q\to S\to u\to Cu\to\mathcal J_u\to\mathcal L_{\nu,u}.
-\]
-
-Worst residual của toàn chain là \(3.13\times10^{-15}\).
-
-Điều này đổi status của spectral theory: nó không còn chỉ là một camera chụp snapshot. Trên fixed physical core, nó là complete coordinate realization của state-dependent formation dynamics.
-
-### III.4. Dynamic commuting diagram
-
-Hai trajectory được evolve độc lập:
-
-\[
-\dot u=\mathcal L_{\nu,u}u
-\]
-
-ở physical coordinates, và transported formation law ở mother/flag coordinates.
-
-Sau nhiều RK stages, hai đường
-
-\[
-\boxed{
-\text{evolve physical rồi encode}
-=
-\text{encode rồi evolve signature}
-}
-\]
-
-khớp ở khoảng \(10^{-15}\). Independent six-direction microlocal signature trajectory cũng commute ở \(2.07\times10^{-15}\).
-
-Đây là evidence mạnh rằng spectral image carry dynamics, không chỉ carry state labels.
-
-### III.5. Falsification đầu tiên: signature image không mang metric identity
-
-Một bước thử cố ý sai đã rất quan trọng. Nếu coi reduced mother/flag coordinates có Euclidean metric identity, formation operator sai order one:
-
-\[
-0.626\quad\text{trên mother coordinates},
-\qquad
-0.983\quad\text{trên flag coordinates}.
-\]
-
-Lỗi này buộc theory phải transport đúng Riesz metric. Exact spectral Sobolev identity sau đó giải thích hoàn toàn hiện tượng.
-
-Với strain signature
+Principal symbol của mother đọc strain quadratic form
 
 \[
 q_u(x,n)=n^TS(u)(x)n,
 \]
 
-polarization tại \(s=-1\) và \(s=0\) cho
+và spherical inversion reconstruct \(S(u)\), rồi
+
+\[
+\Delta u=2\operatorname{div}S(u)
+\]
+
+reconstruct \(u\) modulo Killing symmetry.
+
+Do đó, khi background core đã fixed,
+
+\[
+\boxed{
+E_u
+\Longrightarrow
+u
+\Longrightarrow
+\mathcal J_u
+\Longrightarrow
+\mathcal L_{\nu,u}.
+}
+\]
+
+Đây là **transport/reconstruction of state over a known core**.  Campaign mới không thay thế kết quả này; nó hỏi liệu background core itself có recover từ differential signature hay không.
+
+### III.3. Falsification nền tảng: signature coordinates không Euclideanize geometry
+
+Ngay từ campaign đầu, một temptation rất tự nhiên là coi reduced signature coordinates như Euclidean coordinates.
+
+Điều đó fail order one.
+
+Metric đúng trên strain signature là
 
 \[
 \boxed{
 \langle u,v\rangle_{L^2}
-=15\int\!\fint(\Lambda^{-1}q_u)(\Lambda^{-1}q_v),
+=
+15\langle\Lambda^{-1}q_u,\Lambda^{-1}q_v\rangle,
 }
 \]
 
@@ -937,413 +950,42 @@ và
 \[
 \boxed{
 \langle Cu,Cv\rangle_{L^2}
-=15\int\!\fint q_uq_v.
+=
+15\langle q_u,q_v\rangle.
 }
 \]
 
-Vì vậy
+Nên
 
 \[
 \boxed{
-g_{\rm kinetic}^{\Sigma}=15\,\dot H^{-1},
+ g^{\Sigma}_{\rm kinetic}=15\dot H^{-1},
 \qquad
-g_{\rm Dirichlet}^{\Sigma}=15\,L^2.}
-\]
-
-Riesz ratio của hai metric levels là
-
-\[
-\boxed{
-(g_{\rm kinetic}^{\Sigma})^{-1}g_{\rm Dirichlet}^{\Sigma}=\Lambda^2,
-}
-\]
-
-chính là heat/curl-square operator. Full bilinear audit đạt \(10^{-14}\)–\(10^{-15}\).
-
-Đây là một bridge exact giữa hai parent cores: kinetic \(L^2\) của formation geometry trở thành \(\dot H^{-1}\) trên signature, còn Dirichlet curl metric trở thành \(L^2\) trên signature.
-
-### III.6. Falsification thứ hai: induced bracket không phải \([E_u,E_v]\)
-
-Một guess tự nhiên nhưng sai là
-
-\[
-E_{[u,v]}\stackrel?=[E_u,E_v].
-\]
-
-Experiment cho median error khoảng \(125\%\); ngay cả best sample vẫn sai hơn \(110\%\).
-
-Exact Jacobi calculation cho công thức đúng:
-
-\[
-\boxed{
-E_{[u,v]}
-=[\nabla_u,E_v]-[\nabla_v,E_u]-[R(u,v),C],
-}
-\]
-
-với
-
-\[
-R(u,v)=[\nabla_u,\nabla_v]-\nabla_{[u,v]}.
-\]
-
-Residual của identity đúng nhỏ hơn \(10^{-15}\). Curvature correction có size order one, không phải perturbation nhỏ.
-
-Đây là bước decisive: **formation Lie geometry đi vào spectral side dưới dạng covariant/curved bracket, không phải ordinary operator Lie algebra.**
-
-### III.7. Curvature được đo trực tiếp như curl holonomy
-
-Để tránh việc gọi \([R,C]\) chỉ là algebraic correction, một infinitesimal corrected commutator loop được dựng. Nếu \(P_h\) là parallel transport quanh loop thì
-
-\[
-\frac{P_h-I}{h^2}\to R(u,v).
-\]
-
-Transport curl quanh chính loop đó:
-
-\[
-\boxed{
-\frac{P_hCP_h^{-1}-C}{h^2}\to[R(u,v),C].
-}
-\]
-
-Khi \(h\) giảm một nửa, curl-holonomy error giảm gần đúng factor \(2\):
-
-\[
-0.03825,\ 0.01915,\ 0.00958,\ 0.00479,\ 0.00240.
-\]
-
-Test geometry có
-
-\[
-\|R\|\approx0.927,
+ g^{\Sigma}_{\rm Dirichlet}=15L^2,
 \qquad
-\|[R,C]\|\approx1.012,
-\]
-
-nên đây không phải near-zero artifact.
-
-Kết luận: curvature term là **actual holonomy của distinguished curl structure**.
-
-### III.8. Theory 2 tomograph được curvature của Theory 1
-
-Từng shifted cut có curvature action
-
-\[
-[R,H_a].
-\]
-
-Layer cake dự đoán
-
-\[
-\boxed{
-\frac12\int[R,H_a]\,da=[R,C].
+(g^{\Sigma}_{\rm kinetic})^{-1}g^{\Sigma}_{\rm Dirichlet}=\Lambda^2.
 }
 \]
 
-Finite spectral audit pass ở \(1.7\times10^{-14}\). Nhưng test quan trọng hơn dùng full helical Fourier multiplier \(H_a=\operatorname{sgn}(C-aI)\), không dùng finite Galerkin state projection.
-
-Trên grid có 231 signed curl roots, 40 cuts active trên curvature state. Ordinary layer cake reconstruct \(Cw\) ở \(6.2\times10^{-14}\); curvature layer cake reconstruct \([R,C]w\) ở
+Bài học này quay lại mạnh hơn trong geometric inverse: object đúng không phải raw matrices
 
 \[
-\boxed{9.1\times10^{-14}},
+(C,E,K),
 \]
 
-trong khi target norm khoảng \(0.774\).
-
-Đây là điểm hai theory thực sự khóa vào nhau:
+mà là typed data
 
 \[
 \boxed{
-\text{formation curvature holonomy}
-\longleftrightarrow
-\text{shifted spectral curvature tomography}.
+(g_\Sigma,C,E,K).
 }
 \]
 
-### III.9. Curved covariant tower
+### III.4. Curl spectral reduction: connection tách thành phần thấy và phần mù
 
-Mother giờ được type như degree-one covariant derivative:
+Take a typed spectral frame của self-adjoint signed curl \(C\).
 
-\[
-\boxed{E=d_\nabla C.}
-\]
-
-Degree two:
-
-\[
-\boxed{d_\nabla E=d_\nabla^2C=[R,C].}
-\]
-
-Bianchi:
-
-\[
-\boxed{d_\nabla R=0.}
-\]
-
-Các level tiếp theo được test:
-
-\[
-\boxed{d_\nabla[R,C]=R\wedge E,}
-\]
-
-\[
-\boxed{d_\nabla(R\wedge E)=R\wedge[R,C].}
-\]
-
-Một lần thử đầu trong projected Galerkin algebra đã fail Bianchi order one. Thay vì bỏ failure này, audit đo Jacobi và phát hiện projected bracket có defect khoảng \(0.64\); truncation đã phá base Lie geometry.
-
-Khi rerun trên full pseudospectral divergence-free fields, không project về finite mode algebra, ta được:
-
-\[
-\begin{array}{c|c}
-\text{identity}&\text{residual}\\
-\hline
-\text{Jacobi}&5.4\times10^{-15}\\
- d_\nabla E=[R,C]&3.4\times10^{-15}\\
- d_\nabla R=0&1.3\times10^{-14}\\
- d_\nabla[R,C]=R\wedge E&4.5\times10^{-14}\\
- d_\nabla(R\wedge E)=R\wedge[R,C]&1.7\times10^{-13}
-\end{array}
-\]
-
-Các levels đều nonzero order \(0.6\)–\(1\).
-
-Do đó current structural candidate là
-
-\[
-\boxed{
-C
-\xrightarrow{d_\nabla}
-E
-\xrightarrow{d_\nabla}
-[R,C]
-\xrightarrow{d_\nabla}
-R\wedge E
-\xrightarrow{d_\nabla}\cdots,
-\qquad
-d_\nabla^2=R\text{-action}.
-}
-\]
-
-Đây là một **curved covariant module**, không phải ordinary complex với \(d^2=0\).
-
-### III.10. Falsification thứ ba: snapshot signature không xác định arbitrary universe
-
-Một overclaim mạnh hơn cũng bị giết bằng exact counterexample.
-
-Lấy
-
-\[
-C=\operatorname{diag}(1,1,1,2,2,2).
-\]
-
-Core A là abelian. Core B mang metric \(so(3)\) bracket bên trong eigenspace đầu của curl. Vì \(C\) scalar trên block đó,
-
-\[
-[\nabla_u,C]=0.
-\]
-
-Vì metric bi-invariant,
-
-\[
-\mathcal J_u u=0.
-\]
-
-Hai cores do đó có cùng mother, cùng full flag và cùng diagonal flow cho mọi state, nhưng
-
-\[
-\|T_B-T_A\|=2.449,
-\]
-
-và generic full Poisson operators khác nhau order one.
-
-Vậy
-
-\[
-\boxed{
-\text{signature snapshot + diagonal PDE trajectory}
-\not\Rightarrow
-\text{arbitrary abstract formation core}.
-}
-\]
-
-Ngược lại, nếu cho **full signature-side operator field** \(\mathcal L_\Sigma(z)\), biết transported metric và curl, thì dependence tuyến tính của covariant Poisson matrix theo \(z\) reconstruct được toàn transported \(T_\Sigma\) ở khoảng \(2.2\times10^{-15}\), và từ đó reconstruct curvature ở khoảng \(3\times10^{-15}\).
-
-Do đó distinction đúng là: snapshot identifies state; full operator field identifies transported core in the tested model.
-
-### III.11. Physical locality giết abstract dark sector
-
-Exact dark-sector collision ở trên thuộc abstract metric-Lie category, không phải local Euclidean fluid bracket.
-
-Trong general local isotropic first-order antisymmetric family, impose scalar derivation law
-
-\[
-[a,fb]=f[a,b]+a(f)b.
-\]
-
-Random jet constraints cho unique normalized solution
-
-\[
-\boxed{
-[a,b]=(a\cdot\nabla)b-(b\cdot\nabla)a
-}
-\]
-
-với coefficient error \(5.3\times10^{-16}\). Một fake isotropic law có derivation defect \(1.44\).
-
-Độc lập, first-order \(SO(3)\)-equivariant rank-three tensor space co về một direction, aligned với \(\varepsilon_{ijk}\), tức curl up to scale/orientation.
-
-Nên trong physical local-Euclidean category, background core không phải arbitrary hidden parameter: locality/derivation + orientation rigidify bracket/curl structure.
-
-### III.12. Falsification thứ tư: arbitrary Galerkin có thể nói dối
-
-Multi-truncation campaign cho:
-
-\[
-\begin{array}{c|c|c|c}
-\text{state dim}&\operatorname{rank}(P_VEP_V)&\operatorname{rank}(\text{projected flag})&\operatorname{rank}(q_{6\rm dir})\\
-\hline
-12&12&12&12\\
-24&18&24&24\\
-28&28&28&28\\
-40&28&28&40
-\end{array}
-\]
-
-Tức projected operator có thể mất information trong khi six-direction physical principal signature vẫn full rank. Đồng thời projected bracket có thể phá Jacobi mạnh.
-
-Đây là methodological correction bắt buộc:
-
-\[
-\boxed{
-\text{finite Galerkin là coordinate lab hữu ích, nhưng deep Lie/curvature claims phải được cross-check trên faithful physical geometry.}
-}
-\]
-
-### III.13. Đột phá thực sự là gì
-
-Sau các pass và falsification, hai theory không còn đứng song song.
-
-Formation core là upstream generator:
-
-\[
-\boxed{
-(\mathfrak g_\sigma,g,T,C)
-\longrightarrow
-\nabla,\mathcal J,\mathcal L_{\nu,u}.
-}
-\]
-
-Spectral core là complete representation layer:
-
-\[
-\boxed{
- u
-\longrightarrow
-E=d_\nabla C
-\longleftrightarrow
-\{\mathscr O_a\}_a.
-}
-\]
-
-Curvature làm relation này genuinely non-flat:
-
-\[
-\boxed{
- d_\nabla^2C=[R,C].
-}
-\]
-
-Và spectral cuts tomograph curvature action đó.
-
-Strongest current canonical statement là
-
-\[
-\boxed{
-\textbf{the spectral-signature theory is a complete curved representation theory of the canonical physical formation core.}
-}
-\]
-
-Đây là claim structural. Nó không nói một signature snapshot sinh ra universal core từ hư không, không nói mọi nonzero curvature là dangerous, và không giải global regularity.
-
-### III.14. Candidate mới cho obstruction architecture
-
-Điểm quan trọng nhất với lịch sử \(O\)-search là mother không còn được xem như obstruction cuối:
-
-\[
-E=d_\nabla C
-\]
-
-là degree-one deformation.
-
-First genuine curvature level là
-
-\[
-\boxed{[R,C]=d_\nabla^2C.}
-\]
-
-Candidate architecture hiện tại là cả curved tower
-
-\[
-\boxed{
-\mathbb O_C:
-C,\ d_\nabla C,\ d_\nabla^2C,\ d_\nabla^3C,\ldots,
-\qquad d_\nabla^2=R\text{-action}.
-}
-\]
-
-Điều chưa biết là quotient/cohomology nào tách dangerous non-integrability khỏi harmless curvature representatives. Vì vậy core mới dừng đúng ở structural geometry, không overclaim blow-up theorem.
-
-### III.15. Canonical corpus và reproduction
-
-Core mới nằm tại:
-
-- [Curved Formation–Signature Core](core/curved_formation_signature/README.md)
-- [Formation–Signature Equivalence](core/curved_formation_signature/FORMATION_SIGNATURE_EQUIVALENCE.md)
-- [Curved Curl Module](core/curved_formation_signature/CURVED_CURL_MODULE.md)
-- [Signature Metric and Dynamics](core/curved_formation_signature/SIGNATURE_METRIC_DYNAMICS.md)
-- [Physical Rigidity and Identifiability](core/curved_formation_signature/PHYSICAL_RIGIDITY_AND_IDENTIFIABILITY.md)
-- [Theorem Status and Scope](core/curved_formation_signature/THEOREM_STATUS_AND_SCOPE.md)
-- [History and Falsification](core/curved_formation_signature/HISTORY_AND_FALSIFICATION.md)
-
-Canonical audits chạy từ root:
-
-```bash
-python core/curved_formation_signature/audits/metric_lie_spectral_unification.py
-python core/curved_formation_signature/audits/signature_to_formation_microlocal.py
-python core/curved_formation_signature/audits/signature_core_identifiability.py
-python core/curved_formation_signature/audits/physical_axiom_rigidity.py
-python core/curved_formation_signature/audits/signature_metric_heat_bridge.py
-python core/curved_formation_signature/audits/galerkin_probe_lie_failure.py
-python core/curved_formation_signature/audits/curved_curl_dg_physical.py
-python core/curved_formation_signature/audits/physical_curvature_flag_tomography.py
-```
-
-Negative controls là một phần của core: dark-sector collision và Galerkin/Jacobi failure được giữ để ngăn theory tự phình thành overclaim.
-
----
-
-
-### III.16. Campaign thứ hai bắt đầu từ một nghi ngờ về chữ “curved”
-
-Sau khi core thứ ba được đưa lên main, một câu hỏi vẫn còn mơ hồ: “curved representation” nghĩa chính xác là gì? Signature image tự nó có cong không, hay chỉ đang mang một connection cong từ formation theory?
-
-Một exact control trên một metric Lie algebra \(so(3)\) trả lời rất dứt khoát. Signature map vẫn là một linear map vào một linear subspace với transported constant metric. Ordinary coordinate Levi–Civita curvature của image đó bằng zero. Nhưng formation curvature khi transport qua signature coordinates vẫn nonzero và khớp physical side ở roundoff.
-
-Do đó canonical wording phải sửa thành:
-
-\[
-\boxed{
-\text{signature image là flat linear state image mang một curved formation connection.}
-}
-\]
-
-“Curved” thuộc về geometry được representation, không thuộc về embedding của image.
-
-### III.17. Curl spectral sheets: decomposition mới của connection
-
-Trong eigenframe của curl, formation connection tách tự nhiên thành
+Decompose metric connection
 
 \[
 \boxed{
@@ -1353,68 +995,76 @@ Trong eigenframe của curl, formation connection tách tự nhiên thành
 }
 \]
 
-Ở đây \(V\) quay bên trong cùng một curl eigenspace; \(B\) trộn các eigenspaces khác nhau. Vì \(V\) commute với curl,
+Ở đây:
+
+- \(V\) chuyển động bên trong cùng curl eigensheet;
+- \(B\) trộn giữa các eigensheets khác nhau.
+
+Mother trở thành
 
 \[
 \boxed{
-E=[\nabla,C]=[B,C].
+E=[B,C].
 }
 \]
 
-Trên spectral slot \(i\to j\),
+Trên spectral blocks \(i,j\),
 
 \[
-E_{ij}=(\lambda_j-\lambda_i)B_{ij}.
+E_{ij}
+=(\lambda_j-\lambda_i)B_{ij}.
 \]
 
-Vì thế mother không chỉ là một commutator abstract. Nó là **spectral second-fundamental / sheet-mixing form**, weighted đúng bởi curl spectral gap.
+Nếu \(\lambda_i\neq\lambda_j\),
 
-Finite physical tribunal reconstruct \(B\) từ \(E\) ở khoảng \(8\times10^{-17}\). Đây là geometric reason vì sao divided differences, spectral gaps và shifted cuts liên tục xuất hiện trong theory 2.
+\[
+\boxed{
+B_{ij}
+=
+\frac{E_{ij}}{\lambda_j-\lambda_i}.
+}
+\]
 
-### III.18. Mother là tangent velocity của curl isospectral orbit
+Nghĩa là degree one reconstruct **toàn cross-sheet connection**.
 
-Cho một skew connection matrix \(A\), đặt
+Phần còn thiếu chính xác là
+
+\[
+V\in\operatorname{comm}(C)\cap\mathfrak{so}.
+\]
+
+Đây là inverse problem thật sự của campaign III.
+
+### III.5. Mother là orbit velocity, không phải eigenvalue drift
+
+Với skew connection operator \(A=\nabla_u\), xét
 
 \[
 C(t)=e^{tA}Ce^{-tA}.
 \]
 
-Thì spectrum của \(C(t)\) không đổi và
+Khi đó
 
 \[
-\dot C(0)=[A,C].
+\dot C(0)=[A,C]=E_u.
 \]
 
-Lấy \(A=\nabla_u\), ta được
+Eigenvalues của \(C(t)\) không đổi.
 
-\[
-\boxed{
-\dot C(0)=E_u.
-}
-\]
+Do đó mother không đo “curl eigenvalues thay đổi bao nhiêu”.  Nó đo **spectral frame của curl bị formation connection xoay/mix như thế nào**.
 
-Trong 28D physical coordinate lab, full skew connection space có dimension \(378\), curl stabilizer có dimension \(62\), nên tangent của orthogonal isospectral orbit có dimension \(316\). Nhưng physical mother image chỉ rank \(28\):
+Finite physical coordinate lab cho một scale picture rõ:
 
-\[
-\boxed{
-E(\mathfrak g_\sigma)
-\subset T_C\mathcal O_C,
-\qquad
-28\ll316.
-}
-\]
+- skew connection dimension: \(378\);
+- curl stabilizer dimension: \(62\);
+- curl isospectral orbit tangent dimension: \(316\);
+- physical state image rank: \(28\).
 
-Nói dễ hiểu: state không encode bằng việc đổi curl eigenvalues. Nó encode bằng **hướng mà formation connection làm curl eigensheets quay/trộn**. Physical NS chỉ chiếm một distribution rất đặc biệt bên trong orbit tangent khổng lồ đó.
+Vậy physical states chiếm một constrained distribution rất nhỏ bên trong full isospectral orbit tangent.
 
-### III.19. Gauss–Codazzi–Ricci không còn là historical costume
+### III.6. Curvature split: Gauss/Ricci bên trong sheet, Codazzi giữa sheets
 
-Formation curvature
-
-\[
-R(a,b)=[\nabla_a,\nabla_b]-\nabla_{[a,b]}
-\]
-
-cũng tách theo curl sheets:
+Formation curvature cũng tách
 
 \[
 R=R_\parallel+R_\perp,
@@ -1422,17 +1072,23 @@ R=R_\parallel+R_\perp,
 [R_\parallel,C]=0.
 \]
 
-Constant-base block algebra cho
+Trong constant spectral-frame model,
 
 \[
 \boxed{
-R_\parallel=[V,V]+\Pi_\parallel[B,B],
+R_\parallel
+=[V,V]+\Pi_\parallel[B,B].
 }
 \]
 
-là within-sheet Gauss/Ricci sector, còn \(R_\perp\) là cross-sheet Codazzi sector.
+Ta có hai vertical curvature species:
 
-Curvature mother trở thành
+1. \(\Pi_\parallel[B,B]\): within-sheet Gauss curvature induced bởi cross-sheet mixing, algebraically determined once \(B\) is known;
+2. \([V,V]\): intrinsic stabilizer curvature từ within-sheet connection.
+
+Cross-sheet sector \(R_\perp\) là Codazzi-like.
+
+Curvature mother chỉ thấy
 
 \[
 \boxed{
@@ -1440,179 +1096,699 @@ K=[R,C]=[R_\perp,C].
 }
 \]
 
-Tức degree 2 không thấy toàn curvature; nó thấy đúng phần curvature đổi curl sheet.
+Vì vậy \(K\) không phải “toàn curvature”.  Nó là gap-weighted sensor của cross-sheet curvature.
 
-Điều này được kiểm hai lần độc lập:
+Full physical helical Gauss/Codazzi tribunal kiểm decomposition này ở \(10^{-15}\)–\(10^{-13}\) scale.
 
-- finite spectral block identities ở machine precision;
-- full physical helical pseudospectral split, với Gauss residual khoảng \(10^{-15}\), Codazzi khoảng \(3\times10^{-15}\), và inversion \(K\to R_\perp\) khoảng \(10^{-13}\).
+### III.7. Cú mở mới: curvature có thể đo phần connection mà mother mù
 
-### III.20. Hai loại vertical curvature
+Một khi \(E\) đã cho \(B\), câu hỏi còn lại là có recover được \(V\) hay không.
 
-Vertical curvature \(R_\parallel\) lại có hai nguồn khác nhau.
-
-Thứ nhất,
+Trong exact finite metric-Lie / left-invariant torsion-free model, connection matrices viết
 
 \[
-\Pi_\parallel[B,B]
+\Gamma_i=B_i+V_i,
+\qquad [V_i,C]=0.
 \]
 
-là Gauss curvature do sheet mixing tự tạo. Dù commute với \(C\), phần này không thật sự unknown vì \(B\) đã reconstruct từ \(E\).
-
-Thứ hai,
+Curvature là
 
 \[
-[V,V]
+R_{ij}
+=[\Gamma_i,\Gamma_j]-\Gamma_{[e_i,e_j]}.
 \]
 
-là intrinsic stabilizer curvature. Trong một \(3+3\) block với nonabelian \(so(3)\oplus so(3)\), có thể có
+Torsion-free bracket itself được sinh từ connection:
 
 \[
-E=0,
-\qquad
-K=0,
-\qquad
-[V,V]\neq0.
+[e_i,e_j]
+=\Gamma_i e_j-\Gamma_j e_i.
 \]
 
-Đây mới là exact dark-sector model của curvature sống hoàn toàn bên trong degenerate spectral sheets.
+Bây giờ apply \([\cdot,C]\).
 
-### III.21. Hai spectral sheets là một special symmetric-space case
-
-Stabilizer decomposition luôn reductive:
+Pure quadratic vertical term
 
 \[
-[\mathfrak h_C,\mathfrak h_C]\subset\mathfrak h_C,
-\qquad
-[\mathfrak h_C,\mathfrak m_C]\subset\mathfrak m_C.
+[V_i,V_j]
 \]
 
-Nhưng khi chỉ có hai spectral blocks,
+vẫn nằm trong curl stabilizer, nên bị commutator với \(C\) giết.
+
+Các quadratic term mà vertical-generated bracket coefficient nhân một \(V\) khác cũng stabilizer-valued và bị giết.
+
+Surviving terms chứa nhiều nhất một factor \(V\).
+
+Do đó exact finite algebra cho
 
 \[
 \boxed{
-[\mathfrak m_C,\mathfrak m_C]\subset\mathfrak h_C.
+K=K_B+\mathcal A_{C,E}(V),
 }
 \]
 
-Do đó pure sheet mixing có thể sinh vertical Gauss curvature mà không sinh cross-sheet curvature:
+với \(\mathcal A_{C,E}\) linear in hidden within-sheet connection.
+
+Đây là **Codazzi observability map**.
+
+Một reverse-engineering problem tưởng nonlinear bỗng thành một linear measurement system sau degree-one spectral reduction.
+
+### III.8. Conditional reconstruction principle
+
+Nếu
 
 \[
-E\neq0,
-\qquad
-R_\parallel\neq0,
-\qquad
-K=0.
+\mathcal A_{C,E}
 \]
 
-Với ba blocks trở lên, two-hop path \(i\to j\to k\) làm \([\mathfrak m,\mathfrak m]\) có horizontal part. Random tests cho median horizontal fraction khoảng \(0.84\) với ba blocks và \(0.94\) với bốn blocks.
-
-### III.22. Cartan/Bianchi tower: cái nào standard, cái nào thật sự đặc thù NS
-
-Đặt
+injective modulo genuine stabilizer, thì
 
 \[
-\Theta:=E=d_\nabla C.
+E\Longrightarrow B,
 \]
 
-Ta có
+\[
+K-K_B
+=\mathcal A_{C,E}(V)
+\Longrightarrow V,
+\]
+
+nên
 
 \[
 \boxed{
-D_\nabla\Theta=[R,C],
-\qquad
-D_\nabla[R,C]=R\wedge\Theta,
-\qquad
-D_\nabla R=0.
+(g,C,E,K)\Longrightarrow\nabla.
 }
 \]
 
-Full physical tribunal cho residual lần lượt khoảng
+Sau đó torsion-free identity cho bracket:
 
 \[
-3.4\times10^{-15},
-\qquad
-5.2\times10^{-14},
-\qquad
-1.2\times10^{-14}.
+[u,v]=\nabla_uv-\nabla_vu.
 \]
 
-Nhưng đây là nơi cần kỷ luật novelty. Các identity \(D^2Q=[R,Q]\) và Bianchi là standard connection geometry. Phần thật sự đặc thù của NS programme là:
+Từ bracket và metric có
+
+\[
+T(a,b,c)=\langle a,[b,c]\rangle,
+\]
+
+rồi reconstruct
+
+\[
+R,\qquad\mathcal J.
+\]
+
+Nếu \(\nu\) đã biết, formation operator là
+
+\[
+\mathcal L_{\nu,u}=\mathcal J_u-\nu C^2.
+\]
+
+Đây là exact **conditional** statement trong typed finite model.  Chưa có theorem rằng continuum NS Codazzi operator luôn/generically injective trên optimal function space.
+
+### III.9. Exact Lie reconstruction tribunal: không chỉ fit tensor, mà rebuild cả dynamics
+
+Tribunal đầu che hoàn toàn:
+
+- bracket;
+- \(T\);
+- \(\nabla\);
+- full curvature;
+- Poisson operator.
+
+Nó chỉ cho inverse biết
+
+\[
+g,C,E,K.
+\]
+
+Bốn exact Lie-algebra families được dùng:
+
+\[
+\mathfrak{so}(3)\oplus\mathfrak{so}(3),
+\]
+
+\[
+\mathfrak{so}(3)\oplus\mathfrak h_3,
+\]
+
+\[
+\mathfrak{so}(3)\oplus\mathfrak{se}(2),
+\]
+
+\[
+\mathfrak h_3\oplus\mathfrak{se}(2),
+\]
+
+mỗi family randomize bằng non-bi-invariant metrics trên bốn seeds.
+
+Kết quả:
+
+\[
+\boxed{16/16\text{ generic cases full rank}.}
+\]
+
+Affine-linearity residual:
+
+\[
+1.5\times10^{-16}	ext{--}2.5\times10^{-16}.
+\]
+
+Worst connection reconstruction error:
+
+\[
+\boxed{3.97\times10^{-15}}.
+\]
+
+Reconstructed connection sinh lại bracket, full curvature, \(\mathcal J\), \(\mathcal L\) ở roundoff scale.
+
+Hai dynamics được integrate độc lập 80 RK4 steps; worst trajectory mismatch:
+
+\[
+\boxed{5.02\times10^{-16}}.
+\]
+
+Noise ladder \(10^{-10}\to10^{-4}\) cho slope
+
+\[
+\boxed{1.008}.
+\]
+
+Nghĩa là generic finite inverse vừa exact vừa linearly stable trong tested range.
+
+### III.10. Physical helical tribunal: cố tình giấu một coefficient khỏi mother rồi lấy curvature tìm lại
+
+Finite Lie result vẫn chưa đủ, vì arbitrary projection từng nói dối.
+
+Nên campaign tạo một full physical Fourier/helical test.
+
+Chọn transition
+
+\[
+q\longrightarrow q+p
+\]
+
+sao cho
+
+\[
+|q+p|=|q|
+\]
+
+và cùng helicity.
+
+Input/output có cùng signed curl eigenvalue.  Do đó coefficient đó thuộc within-sheet connection và mother thấy chính xác zero trong channel này.
+
+Sau đó thêm một Fourier direction khác để tạo cross-sheet curvature loop.
+
+\(K\) recover hidden connection amplitude.
+
+Trên 80 independent resonant triads:
 
 \[
 \boxed{
-C=\operatorname{curl}
-\text{ là distinguished physical endomorphism, và }
-D_\nabla C
-\text{ lại complete cho state.}
+\text{median error}=9.56\times10^{-16},
 }
 \]
-
-Cộng thêm shifted spectral tomography và exact metric bridge.
-
-### III.23. Higher tower thật sự thấy vertical curvature, nhưng phải type inverse problem
-
-Degree 2
-
-\[
-K=[R,C]
-\]
-
-xóa trực tiếp phần \(R_\parallel\). Nhưng degree 3
-
-\[
-D_\nabla K=R\wedge E
-\]
-
-và degree 4
-
-\[
-D_\nabla^2K=R\wedge K
-\]
-
-có thể kéo vertical curvature trở lại thông qua interaction với visible sensors.
-
-Trên full physical helical geometry, vertical-curvature contribution chiếm khoảng \(24\%-29\%\) norm ở degree 3, median \(27\%\), và khoảng \(20\%\) ở degree 4.
-
-Nếu treat vertical curvature như independent unknown, higher degrees tạo một genuine observability filtration. Case \(3+3\) còn đúng một null mode sau degree 3 nhưng degree 4 giết mode đó.
-
-Nhưng nếu impose rằng curvature phải sinh từ cùng compatible connection, generic \((E,K)\) đã reconstruct vertical connection lift ngay ở degree 2 trong tất cả tested degeneracy patterns. Higher degrees khi đó chủ yếu là Bianchi consistency/redundancy.
-
-Do đó câu “mỗi degree lại có physics mới” là sai. Cần phân biệt
 
 \[
 \boxed{
-\text{curvature-as-independent-data}
-\neq
-\text{connection-constrained inverse problem}.
+\text{worst error}=3.51\times10^{-14}.
 }
 \]
 
-### III.24. First-order commutant không phải final gauge
+Noise slope:
 
-Ở degree 1, \(E\) chỉ thấy connection modulo \(\operatorname{comm}(C)\). Nhưng experiment mới cho thấy generic vertical connection component có thể bị \(K\) nhìn thấy thông qua curvature.
+\[
+\boxed{1.0004}.
+\]
 
-Vì vậy:
+Đây là direct physical evidence mạnh nhất cho mechanism:
 
 \[
 \boxed{
-\operatorname{comm}(C)=\text{first-order stabilizer},
+E\text{ mù same-sheet coefficient, nhưng }K\text{ thấy nó qua cross-sheet holonomy.}
 }
 \]
 
-không phải automatically final gauge.
+### III.11. Falsification mới: \(E+K\) không universally complete
 
-Common stabilizer của generated sensor algebra \(C,E,K,dK,d^2K\) trong generic finite spectral tests co từ dimensions như \(6,12,7\) về \(0\). Deliberately vertical controls thì giữ nguyên stabilizer qua mọi degree.
+Nếu dừng sau successful generic tests, ta rất dễ overclaim
 
-“Gauge thật” phải là common stabilizer của **toàn geometry được generate**, không phải chỉ kernel của mother map ở first jet.
+\[
+(C,E,K)\Longrightarrow\nabla\quad\text{always}.
+\]
 
-### III.25. Ba falsification quan trọng về physical interpretation
+Campaign cố tình phá statement này bằng phase diagram:
 
-**Một: curvature không phải danger amplitude.** 2D, Beltrami và shear controls đều có thể có self-dynamics đơn giản hoặc zero nhưng ambient \(E\) và \([R,C]\) vẫn order one. 2D sector còn giữ nonzero pulled-back curvature dù globally regular.
+- 9 exact Lie-algebra families;
+- 9 curl multiplicity patterns;
+- 6 randomized metrics cho mỗi family/pattern.
 
-**Hai: BCH không phải geometric curvature.** Euler–heat BCH mixed descendants có thể bằng zero trên Beltrami/shear trong khi \([R,C]\neq0\). Chúng chỉ là hai descendants khác nhau của cùng \((T,C)\).
+Patterns chạy từ
 
-**Ba: zero curl không phải gauge.** Annular harmonic circulation có \(Ch=0\) nhưng \([D_h,C]\neq0\) trên probes, trong khi constant Galilean mode vẫn mother-dark. Vì vậy
+\[
+2+1+1+1+1
+\]
+
+qua
+
+\[
+2+2+2,\quad3+2+1,\quad3+3,\quad4+2,\quad5+1,
+\]
+
+và scalar control \(6\).
+
+Trong 72 non-scalar family/pattern combinations,
+
+\[
+\boxed{68/72}
+\]
+
+full rank ở mọi tested seed.
+
+Tất cả persistent failures tập trung tại
+
+\[
+\boxed{5+1}.
+\]
+
+Ví dụ degree-two nullities:
+
+\[
+2,\quad2,\quad11,\quad1.
+\]
+
+Do đó universal degree-two completeness bị falsify.
+
+Correct picture phải là **stratified geometric observability**.
+
+### III.12. Scalar curl là exact fully-dark negative control
+
+Nếu
+
+\[
+C=\lambda I,
+\]
+
+thì
+
+\[
+E=[\nabla,C]=0,
+\qquad
+K=[R,C]=0.
+\]
+
+Toàn commutator spectral geometry collapse.
+
+Trong six-dimensional controls,
+
+\[
+\boxed{90/90}
+\]
+
+hidden connection coefficients remain dark.
+
+Điều này chứng minh geometric-completeness mechanism không phải một formal commutator trick.  Nó phụ thuộc essential vào nontrivial curl spectral separation.
+
+### III.13. Higher covariant degrees là completion channels ở singular strata
+
+Ở \(5+1\) failures, campaign không bỏ case xấu mà thêm đúng các degrees tiếp theo:
+
+\[
+K,\qquad dK,\qquad d^2K,\ldots
+\]
+
+Ba families có kernel
+
+\[
+2,\quad2,\quad1
+\]
+
+được degree three giết sạch:
+
+\[
+2\to0,\qquad2\to0,\qquad1\to0.
+\]
+
+Hardest family
+
+\[
+\mathfrak h_3\oplus\mathbb R^3
+\]
+
+cho
+
+\[
+\boxed{11\to9\to6}
+\]
+
+qua degrees two, three, four.
+
+Đẩy tới maximal exterior tower trong base dimension six vẫn còn nullity six.
+
+Bài học:
+
+\[
+\boxed{
+\text{higher degree = additional observability on singular strata, not automatically a new physical mechanism.}
+}
+\]
+
+### III.14. Falsification tiếp: Bianchi/Jacobi không tự động cứu uniqueness
+
+Một hypothesis quá đẹp khác là:
+
+> nếu \(K\) không đủ, cứ impose second Bianchi hoặc Jacobi thì uniqueness phải đóng.
+
+Experiments không cho phép nói vậy.
+
+Trong several \(5+1\) families, đúng là Bianchi hoặc Jacobi đóng kernel.
+
+Nhưng hardest case cho:
+
+\[
+K:\ 11,
+\]
+
+\[
+K+D R:\ 11,
+\]
+
+\[
+K+\text{Jacobi}:\ 7.
+\]
+
+Stack maximal tower + Jacobi + Bianchi vẫn còn
+
+\[
+\boxed{5}
+\]
+
+linearized blind directions.
+
+Vậy “Cartan integrability automatically gives full-rank inverse” cũng bị falsify.
+
+### III.15. Cú tinh nhất: Jacobian kernel không phải finite darkness
+
+Năm linearized blind directions còn lại có thể được gọi vội là “true gauge”.
+
+Campaign không làm vậy.
+
+Nó perturb finite theo direction \(w\) trong chính 5D kernel:
+
+\[
+V(t)=V_0+t w.
+\]
+
+Đo full maximal-tower + Jacobi sensor residual.
+
+Across 2 seeds × 3 random directions, fitted log-log slopes đều bằng
+
+\[
+\boxed{2.0000000000}
+\]
+
+đến numerical precision.
+
+Tức
+
+\[
+\boxed{
+\|\mathcal S(V_0+tw)-\mathcal S(V_0)\|
+\sim c(w)t^2.
+}
+\]
+
+First derivative bằng zero, nhưng second-order data nhìn thấy direction.
+
+Random finite sphere scans ở radii
+
+\[
+0.02,\ 0.05,\ 0.1,\ 0.2
+\]
+
+không tìm thấy machine-zero collision.
+
+Đây không phải proof of nonlinear injectivity.  Nhưng nó giết một ngộ nhận quan trọng:
+
+\[
+\boxed{
+\text{Jacobian kernel}\neq\text{proved gauge or finite non-uniqueness}.
+}
+\]
+
+Một future theorem có thể cần stratified nonlinear inverse geometry, không chỉ inverse-function theorem uniform.
+
+### III.16. 28D sparse stress test: information threshold gần dimension counting
+
+Canonical 28D coordinate lab có curl multiplicities
+
+\[
+2,6,6,6,6,2.
+\]
+
+Sau degree one, số hidden within-sheet connection coefficients là
+
+\[
+\boxed{1736}.
+\]
+
+Không đưa full tensor \(K\) cho inverse.  Chỉ lấy random scalar curvature projections.
+
+Với 12 projections per state pair:
+
+- measurements: \(4536\);
+- hidden coefficients: \(1736\);
+- LSQR recovery error: \(2.75\times10^{-12}\);
+- reconstructed \(\nabla,T,\mathcal J,\mathcal L\): khoảng \(4\times10^{-13}\);
+- noise slope: \(1.0002\).
+
+Measurement-density sweep cho:
+
+\[
+\begin{array}{c|c|c}
+\text{projections/pair}&\text{equations}&\text{error}\\\hline
+2&756&0.672\\
+3&1134&0.508\\
+4&1512&0.245\\
+5&1890&4.4\times10^{-10}\\
+6&2268&1.3\times10^{-10}
+\end{array}
+\]
+
+Accuracy collapse đúng lúc equation count vừa vượt hidden dimension.
+
+Đây là evidence rất mạnh rằng \(K\) đang cung cấp một genuine measurement system cho hidden connection.
+
+Scope warning vẫn giữ: 28D projected object là coordinate stress lab, không phải faithful finite Lie category.
+
+### III.17. Metric covariance: inverse geometry sống trên \(g_\Sigma\), không trên raw coordinates
+
+Geometric inverse được randomize bằng non-orthogonal charts condition numbers
+
+\[
+1,\ 10,\ 100,\ 1000.
+\]
+
+Nếu decoder dùng transported metric \(G_\Sigma\), recovery errors là khoảng
+
+\[
+10^{-15},\quad10^{-15},\quad10^{-12},\quad10^{-8},
+\]
+
+theo numerical conditioning.
+
+Nếu giả vờ signature coordinates có identity metric, errors jump lên
+
+\[
+0.20\text{--}0.53.
+\]
+
+Vậy campaign mới tái xác nhận bài học cổ nhất của Core 3:
+
+\[
+\boxed{
+\text{complete coordinates do not erase the metric.}
+}
+\]
+
+### III.18. Held-out spectral readers: inverse recover generator, không chỉ fit \(E,K\)
+
+Một inverse có thể reproduce training tensors nhưng vẫn không recover đúng geometry.
+
+Nên campaign fit **chỉ** \(E\) và \(K\), rồi bắt reconstructed connection predict unseen readers:
+
+\[
+[\nabla,C^2],
+\qquad
+[\nabla,C^3],
+\qquad
+[\nabla,e^{0.17C}],
+\]
+
+\[
+[\nabla,\sin(0.4C)],
+\qquad
+[\nabla,|C|],
+\]
+
+hinge readers, shifted cuts,
+
+\[
+[R,f(C)],
+\]
+
+và held-out \(dK\).
+
+Tất cả prediction errors ở khoảng
+
+\[
+\boxed{10^{-15}}.
+\]
+
+Negative control fit \(E\) alone miss một curvature reader tới
+
+\[
+\boxed{0.931}.
+\]
+
+Interpretation mạnh nhất:
+
+> full-rank \(E+K\) inverse đang recover connection generator của tested curl functional calculus, không chỉ interpolate hai observed tensors.
+
+### III.19. Shifted flag vẫn là tomography của cùng differential geometry
+
+Với
+
+\[
+H_a=\operatorname{sgn}(C-aI),
+\]
+
+spectral layer cake cho
+
+\[
+\boxed{
+\frac12\int_{\mathbb R}[R,H_a]\,da=[R,C].
+}
+\]
+
+Do đó shifted cuts không tạo một species curvature khác.  Chúng tomograph cùng cross-sheet curvature mother.
+
+Functional calculus cũng collapse về một mother:
+
+\[
+[R,f(C)]_{xy}
+=f^{[1]}(x,y)[R,C]_{xy}.
+\]
+
+Campaign held-out reader confirm chính điều này sau reconstruction.
+
+### III.20. Viscosity là boundary rõ của geometric completeness
+
+Reversible differential geometry không biết \(\nu\).
+
+Hai systems có cùng
+
+\[
+(g,C,E,K)
+\]
+
+nhưng khác viscosity có different formation operators.
+
+Representative operator gap trong tribunal:
+
+\[
+\boxed{0.684}.
+\]
+
+Nhưng sau khi reconstruct reversible geometry, một generic observed time tangent đủ calibrate \(\nu\).
+
+Noise slopes:
+
+\[
+1.02\text{--}1.04.
+\]
+
+Architecture rõ nhất hiện tại là
+
+\[
+\boxed{
+\text{differential spectral geometry}
++
+\nu
+=
+\text{full formation law}.
+}
+\]
+
+Nếu \(\nu\) unknown, một generic dynamical calibration suffices trong finite tribunal.
+
+### III.21. “Curved representation” phải hiểu đúng
+
+Signature image là linear state image.  Nó có thể flat như một ordinary constant-metric vector subspace.
+
+Curvature là curvature của **transported formation connection**.
+
+Exact control từng cho:
+
+- formation curvature norm \(\approx0.304\);
+- transported match \(\sim7.8\times10^{-17}\);
+- naive linear image curvature \(=0\).
+
+Vậy câu đúng là
+
+\[
+\boxed{
+\text{linear signature representation carrying curved formation geometry}.
+}
+\]
+
+Không phải “signature embedding tự nó cong”.
+
+### III.22. First-order commutant không phải final gauge; Jacobian kernel cũng chưa phải gauge
+
+Degree one cho
+
+\[
+[V,C]=0
+\]
+
+nên \(V\) mother-dark.
+
+Nhưng generic \(K\) reconstruct \(V\).
+
+Do đó
+
+\[
+\operatorname{comm}(C)
+\]
+
+chỉ là first-order stabilizer.
+
+Campaign III thêm một correction nữa: ngay cả nullspace của maximal **linearized** sensor map cũng chưa được gọi là gauge, vì finite perturbations có thể visible ở order two.
+
+True gauge phải là exact finite stabilizer của full differential-spectral geometry trong đúng physical category.
+
+Đây là một open classification problem liên quan đến holonomy/centralizer structure.
+
+### III.23. Topology: \(\ker C\) vẫn không phải gauge
+
+Một harmonic circulation có thể satisfy
+
+\[
+Cu=0
+\]
+
+nhưng
+
+\[
+E_u\neq0.
+\]
+
+Constant Galilean mode có thể both curl-zero và mother-dark.
+
+Do đó
 
 \[
 \boxed{
@@ -1620,110 +1796,271 @@ Common stabilizer của generated sensor algebra \(C,E,K,dK,d^2K\) trong generic
 }
 \]
 
-trên topology có harmonic circulation.
+in general.
 
-### III.26. Signed curl canonical nhưng không phải sensor complete duy nhất
+Future geometric-completeness theorem trên nontrivial topology phải giữ harmonic sector typed, không quotient \(\ker C\) mù quáng.
 
-Campaign mới cũng falsify câu quá mạnh rằng chỉ \([\nabla,C]\) mới có thể reconstruct state. Modulus mother
+### III.24. Structural geometry không phải blow-up alarm
+
+2D, Beltrami, shear controls đã falsify interpretation
 
 \[
-[\nabla,|C|]
+\|E\|\text{ lớn}
+\quad\text{or}\quad
+\|K\|\text{ lớn}
+\Rightarrow
+\text{danger}.
 \]
 
-cũng có một microlocal state parametrix trong tested periodic setting, với reconstruction error giảm gần \(m^{-2}\) theo probe frequency.
+Các harmless classes có thể ambiently curved.
 
-Curl vẫn canonical vì nó đồng thời giữ:
+Core 3 do đó không biến geometric completeness thành regularity theorem bằng ngôn ngữ.
 
-- orientation;
-- physical first-order normalization;
-- fine signed spectral partition;
-- cùng operator mà square \(C^2\) sinh Dirichlet/Stokes dissipation.
+Nếu sau này geometry này giúp regularity, cần một separate coercive/a-priori theorem.
 
-Do đó wording đúng là
+### III.25. BCH Euler–heat descendants vẫn là object khác
+
+Euler–heat BCH descendants và formation curl curvature cùng sinh từ parent core \((T,C)\), nhưng không đồng nhất.
+
+Beltrami/shear controls cho BCH descendant zero trong khi \([R,C]\) nonzero.
+
+Do đó
 
 \[
 \boxed{
-E=[\nabla,C]
-\text{ là canonical degree-one complete sensor},
+\text{Euler–heat BCH defect}\neq[R,C].
 }
 \]
 
-không phải unique complete sensor.
+Unification phải qua common parent data, không qua rename descendants.
 
-Orientation test còn cho
+### III.26. Boundary extension vẫn là category change
+
+Periodic theory dùng self-adjoint signed curl trong đúng \(L^2\) geometry.
+
+Trên bounded domain, raw nonnormal curl analog làm reverse formulas fail order one, trong khi positive Stokes form vẫn survive.
+
+Geometric-completeness theorem ở boundary vì vậy cần:
+
+- operator/form domains;
+- boundary trace pairing;
+- Hodge harmonic sector;
+- a correctly typed self-adjoint curl realization hoặc Hodge/Stokes replacement.
+
+Không copy periodic syntax nguyên xi.
+
+### III.27. Điều thực sự mới của Theory 2 sau campaign III
+
+Theory 2 không còn được mô tả tốt nhất như một “signature of velocity”.
+
+Hierarchy bây giờ là:
 
 \[
-C\mapsto-C
+\boxed{
+\textbf{Level A: state completeness}
+}
 \]
 
-không đổi formation dynamics vì \(C^2\) giữ nguyên, nhưng \(E,K\) và helicity đổi dấu, còn shifted flag phản xạ threshold \(a\mapsto-a\). Signed curl geometry vì thế là orientation double cover của cùng unoriented NS flow.
+\[
+E_u\Longleftrightarrow u,
+\]
 
-### III.27. Working conclusion sau campaign thứ hai
+rồi
 
-Bức tranh hiện tại có thể nén thành
+\[
+\boxed{
+\textbf{Level B: differential curl geometry}
+}
+\]
+
+\[
+C\to E\to K\to dK\to\cdots,
+\]
+
+rồi generic tested finite geometry cho
+
+\[
+\boxed{
+\textbf{Level C: formation-geometry reconstruction}
+}
+\]
+
+\[
+(g,C,E,K)
+\Longrightarrow
+\nabla,T,R,\mathcal J.
+\]
+
+Đây là lý do strongest current name được sharpen thành
+
+\[
+\boxed{
+\textbf{Curl-Spectral Differential Observability of Formation Geometry.}
+}
+\]
+
+Một phrase mạnh hơn, “Curl-Spectral Formation-Geometry Completeness”, nên dành cho theorem sau khi continuum injectivity/singular-strata analysis thật sự được đóng.
+
+### III.28. Candidate theorem bây giờ đã đủ precise để tấn công
+
+Open theorem target là định nghĩa continuum Codazzi observability operator
+
+\[
+\boxed{
+\mathcal A_{C,E}:
+\Omega^1(\mathfrak h_C)
+\to
+\Omega^2(\mathfrak m_C)
+}
+\]
+
+trên đúng periodic Sobolev/Fréchet scale, rồi prove một statement dạng
+
+\[
+\boxed{
+(g_\Sigma,C,E,K,\text{finite higher jets if needed})
+\Longrightarrow
+\nabla
+\quad\text{modulo true differential-spectral stabilizer}.
+}
+\]
+
+Các hard pieces đã hiện rất rõ:
+
+1. unbounded operator domains của \(C\), \(\nabla\), commutators;
+2. rigorous \(\operatorname{ad}_C^{-1}\) off the commutant;
+3. Fredholm/injectivity analysis của \(\mathcal A_{C,E}\);
+4. high shell multiplicity và singular spectral strata;
+5. nonlinear injectivity khi Jacobian singular;
+6. exact true stabilizer/holonomy centralizer;
+7. topology/harmonic modes;
+8. boundary Hodge/Stokes typing;
+9. viscosity as a separate scalar calibration.
+
+Đây là một theorem programme cụ thể, không còn là “tìm thêm mechanism”.
+
+### III.29. Canonical falsification rules từ ba campaign
+
+Core 3 bây giờ giữ các rules sau như một phần của methodology:
+
+1. Complete coordinates không được Euclideanize nếu transported metric không cho phép.
+2. Naive operator commutator không được dùng thay induced curved bracket.
+3. Snapshot completeness không được promoted thành arbitrary-core identifiability.
+4. Galerkin projection không được dùng làm proof của higher Lie geometry nếu Jacobi fail.
+5. `comm(C)` không được gọi final gauge từ degree one.
+6. \(\ker C\) không được quotient thành gauge trên topology tổng quát.
+7. Higher tower không được gọi “new physics” chỉ vì nó có degree cao hơn.
+8. Bianchi/Jacobi không được assumed to imply uniqueness without rank test.
+9. Jacobian kernel không được gọi true darkness nếu chưa có finite nonlinear collision test.
+10. Nonzero curvature không được gọi danger/blow-up amplitude nếu chưa có regularity theorem.
+11. Reconstruction phải predict held-out readers/trajectories, không chỉ fitted tensors.
+12. Generic reconstruction claim phải bị stress bằng high spectral degeneracy trước khi canonicalize.
+
+### III.30. Reproduction map cho Core 3 mới
+
+New central reconstruction tribunals:
+
+```bash
+python core/curved_formation_signature/audits/ek_exact_lie_reconstruction.py
+python core/curved_formation_signature/audits/physical_helical_resonant_recovery.py
+python core/curved_formation_signature/audits/ek_rank_phase_diagram.py
+python core/curved_formation_signature/audits/ek_higher_degree_completion.py
+python core/curved_formation_signature/audits/ek_maximal_tower_stabilizer.py
+python core/curved_formation_signature/audits/ek_bianchi_integrability_completion.py
+python core/curved_formation_signature/audits/ek_cartan_integrability_closure.py
+python core/curved_formation_signature/audits/ek_nonlinear_singular_observability.py
+python core/curved_formation_signature/audits/ek_metric_covariant_reconstruction.py
+python core/curved_formation_signature/audits/ek_28d_sparse_codazzi_recovery.py
+python core/curved_formation_signature/audits/ek_heldout_spectral_prediction.py
+python core/curved_formation_signature/audits/ek_minimal_viscosity_calibration.py
+```
+
+Chúng phải được đọc cùng original state/metric/curvature tribunals, đặc biệt:
+
+```bash
+python core/curved_formation_signature/audits/signature_to_formation_microlocal.py
+python core/curved_formation_signature/audits/signature_metric_heat_bridge.py
+python core/curved_formation_signature/audits/curved_curl_dg_physical.py
+python core/curved_formation_signature/audits/full_physical_gauss_codazzi.py
+python core/curved_formation_signature/audits/representation_curvature_not_embedding_curvature.py
+python core/curved_formation_signature/audits/harmless_class_curvature.py
+python core/curved_formation_signature/audits/boundary_metric_typing.py
+```
+
+Strongest current conclusion của Mục III là:
 
 \[
 \boxed{
 \begin{aligned}
-\text{formation geometry:}&\quad (g,T)\Rightarrow\nabla,R,\\
-\text{curl spectral reduction:}&\quad \nabla=V+B,\\
-\text{state soldering:}&\quad E=[B,C],\\
-\text{curvature split:}&\quad R=R_\parallel+R_\perp,\\
-\text{curvature mother:}&\quad K=[R_\perp,C],\\
-\text{Bianchi coupling:}&\quad d_\nabla K=R\wedge E,\quad d_\nabla R=0.
+&\text{Theory 2 theoremically identifies state on the canonical periodic core;}\\
+&\text{its full differential signature carries curl-spectral formation geometry;}\\
+&\text{curvature generically resolves first-order spectral blindness;}\\
+&\text{and the tested finite/physical evidence supports formation-geometry reconstruction}\\
+&\text{away from, and with stratified treatment of, high-symmetry spectral singularities.}
 \end{aligned}
 }
 \]
 
-Nói bằng lời:
+Đây vẫn chưa phải global regularity theorem, và chưa phải completed infinite-dimensional geometric-completeness theorem.  Nhưng Core 3 không còn chỉ là một bridge giữa hai representations: nó đã trở thành một explicit inverse geometry programme.
 
-> Curl chia formation geometry thành các spectral sheets. Theory 1 cung cấp connection làm các sheets tương tác. Theory 2 đo hoàn chỉnh phần sheet mixing ở degree 1 và tomograph cross-sheet curvature ở degree 2. Within-sheet Gauss/Ricci curvature sống trong stabilizer; higher Bianchi couplings cho biết nó tác động trở lại visible geometry như thế nào.
-
-Đây là lý do strongest current wording đổi thành:
-
-\[
-\boxed{
-\textbf{Navier–Stokes formation geometry admits a canonical curl-spectral reduction.}
-}
-\]
-
-Hai canonical notes của update này là [Curl Spectral Reduction](core/curved_formation_signature/CURL_SPECTRAL_REDUCTION.md) và [Deep Geometry Lessons](core/curved_formation_signature/DEEP_GEOMETRY_LESSONS.md). Chúng phải được đọc cùng [Theorem Status and Scope](core/curved_formation_signature/THEOREM_STATUS_AND_SCOPE.md) để phân biệt exact identity, inherited theorem, numerical tribunal và open interpretation.
 
 ## IV. Cấu trúc corpus trên main
 
+Corpus canonical hiện tại có ba tầng mathematical core và một methodology/workbench:
+
 ```text
 Core_signature.md
+README.md
 core/
 ├── NEO/
 │   ├── NEO_ANCHOR_COMPILER.md
 │   └── NEO_DISCOVERY_WORKBENCH.md
-└── spectral_signature/
+├── metric_lie_hodge/
+│   ├── README.md
+│   ├── FORMATION_LAW.md
+│   ├── COMPATIBILITY_GEOMETRY.md
+│   └── audits/
+├── spectral_signature/
+│   ├── README.md
+│   ├── SPECTRAL_FLAG_SIGNATURE.md
+│   ├── SPECTRAL_FLAG_COMPLETENESS.md
+│   ├── MOTHER_COMPLETENESS_THEOREM.md
+│   ├── HISTORY_AND_FALSIFICATION.md
+│   └── audits/
+└── curved_formation_signature/
     ├── README.md
-    ├── SPECTRAL_FLAG_SIGNATURE.md
-    ├── SPECTRAL_FLAG_COMPLETENESS.md
-    ├── MOTHER_COMPLETENESS_THEOREM.md
+    ├── GEOMETRIC_COMPLETENESS.md
+    ├── CURL_SPECTRAL_REDUCTION.md
+    ├── FORMATION_SIGNATURE_EQUIVALENCE.md
+    ├── CURVED_CURL_MODULE.md
+    ├── SIGNATURE_METRIC_DYNAMICS.md
+    ├── PHYSICAL_RIGIDITY_AND_IDENTIFIABILITY.md
+    ├── DEEP_GEOMETRY_LESSONS.md
+    ├── THEOREM_STATUS_AND_SCOPE.md
     ├── HISTORY_AND_FALSIFICATION.md
     └── audits/
-        ├── spectral_flag_signature.py
-        ├── spectral_flag_completeness.py
-        └── mother_completeness_theorem.py
 ```
 
-Cấu trúc này cố ý **không** lưu cả worktree discovery dưới `core/`. Những nhánh G3, discriminant, scale, Riccati và propagation là lịch sử nghiên cứu; Git history đã giữ chúng. `core/spectral_signature/` chỉ chứa những gì cần để đọc, kiểm và tái hiện theory whole-state signature hiện tại.
+Vai trò từng core:
 
-NEO cũng được tách riêng. Nó là compiler/workbench nền, không phải prefix của theory mới.
+1. `metric_lie_hodge/`: **formation core** — metric, Lie tensor, signed curl/Hodge data và formation operator.
+2. `spectral_signature/`: **state completeness core** — mother/shifted flag, reverse compiler và quantitative state reconstruction.
+3. `curved_formation_signature/`: **differential observability core** — transport giữa hai parent cores, curl-spectral reduction, curvature/holonomy, Codazzi reconstruction candidate, singular spectral strata và higher/nonlinear completion.
+4. `NEO/`: methodology/workbench — giữ riêng khỏi theorem subject.
+
+Discovery worktrees, failed mechanisms và proof programmes cũ không được copy wholesale vào `core/`; Git history và `history/` giữ archaeology.  Canonical core chỉ giữ theory, scope corrections và executable tribunals cần để reproduce current claims.
 
 ## V. Reproduction checklist
 
-Đọc theo thứ tự:
+### V.1. Formation parent core
 
-1. [README](core/spectral_signature/README.md)
-2. [Signature](core/spectral_signature/SPECTRAL_FLAG_SIGNATURE.md)
-3. [Completeness](core/spectral_signature/SPECTRAL_FLAG_COMPLETENESS.md)
-4. [Theorem](core/spectral_signature/MOTHER_COMPLETENESS_THEOREM.md)
-5. [Falsification history](core/spectral_signature/HISTORY_AND_FALSIFICATION.md)
+```bash
+python core/metric_lie_hodge/audits/formation_core_audit.py
+python core/metric_lie_hodge/audits/bch_core_audit.py
+python core/metric_lie_hodge/audits/domain_topology_audit.py
+```
 
-Chạy ba audit canonical từ root repository:
+### V.2. Spectral-signature parent core
 
 ```bash
 python core/spectral_signature/audits/spectral_flag_signature.py
@@ -1731,13 +2068,52 @@ python core/spectral_signature/audits/spectral_flag_completeness.py
 python core/spectral_signature/audits/mother_completeness_theorem.py
 ```
 
-Ba audit này lần lượt kiểm algebra/tomography, microlocal completeness, và theorem constants + gauge/projector identities.
+### V.3. Core 3 — state bridge / physical geometry
+
+```bash
+python core/curved_formation_signature/audits/metric_lie_spectral_unification.py
+python core/curved_formation_signature/audits/signature_to_formation_microlocal.py
+python core/curved_formation_signature/audits/signature_core_identifiability.py
+python core/curved_formation_signature/audits/physical_axiom_rigidity.py
+python core/curved_formation_signature/audits/signature_metric_heat_bridge.py
+python core/curved_formation_signature/audits/curved_curl_dg_physical.py
+python core/curved_formation_signature/audits/physical_curvature_flag_tomography.py
+python core/curved_formation_signature/audits/full_physical_gauss_codazzi.py
+```
+
+### V.4. Core 3 — geometric-completeness campaign
+
+```bash
+python core/curved_formation_signature/audits/ek_exact_lie_reconstruction.py
+python core/curved_formation_signature/audits/physical_helical_resonant_recovery.py
+python core/curved_formation_signature/audits/ek_rank_phase_diagram.py
+python core/curved_formation_signature/audits/ek_higher_degree_completion.py
+python core/curved_formation_signature/audits/ek_maximal_tower_stabilizer.py
+python core/curved_formation_signature/audits/ek_bianchi_integrability_completion.py
+python core/curved_formation_signature/audits/ek_cartan_integrability_closure.py
+python core/curved_formation_signature/audits/ek_nonlinear_singular_observability.py
+python core/curved_formation_signature/audits/ek_metric_covariant_reconstruction.py
+python core/curved_formation_signature/audits/ek_28d_sparse_codazzi_recovery.py
+python core/curved_formation_signature/audits/ek_heldout_spectral_prediction.py
+python core/curved_formation_signature/audits/ek_minimal_viscosity_calibration.py
+```
+
+Negative controls are part of the suite, not failures to be removed.  In particular:
+
+- scalar curl must remain fully dark;
+- high-degeneracy \(5+1\) cases must expose rank loss;
+- Bianchi/Jacobi must **not** be reported as universal uniqueness mechanisms;
+- the five-dimensional linearized hardest-case kernel must remain quadratically visible rather than being mislabeled as exact gauge;
+- Euclideanizing a non-orthogonal signature chart must fail;
+- \(E\)-only held-out curvature prediction must fail by order one.
 
 ## VI. Trạng thái claim
 
-Claim canonical là **structural whole-NS completeness theorem** cho smooth mean-zero divergence-free periodic state space, với Schwartz whole-space extension được ghi rõ scope trong theorem note.
+Repository hiện có hai theorem-level parent achievements và một stronger synthesis/candidate layer.
 
-Nội dung cốt lõi là
+### VI.1. Theorem-level state statement
+
+Trên smooth mean-zero divergence-free periodic state space,
 
 \[
 \boxed{
@@ -1755,4 +2131,76 @@ F_{NS}(u).
 
 Ở đây `u/\operatorname{Kill}` là state modulo Euclidean Killing symmetry trước normalization; trên mean-zero periodic class state được xác định duy nhất.
 
-Claim này **không phải** global regularity theorem và không tự nó loại trừ blow-up. Nó nói rằng mother/spectral-flag signature không bỏ mất smooth-state information, có inverse explicit, có quantitative Sobolev stability, và carry toàn smooth NS vector field qua exact coordinate conjugacy.
+Đây là whole-state completeness/conjugacy statement của parent spectral-signature theory.
+
+### VI.2. Exact Core-3 differential identities
+
+Core 3 exact layer gồm
+
+\[
+E=d_\nabla C,
+\qquad
+K=d_\nabla E=[R,C],
+\qquad
+d_\nabla K=R\wedge E,
+\qquad
+d_\nabla R=0,
+\]
+
+cùng curl spectral splitting
+
+\[
+\nabla=V+B,
+\qquad
+[V,C]=0,
+\qquad
+E=[B,C].
+\]
+
+Trong exact finite metric-Lie setting, after \(B\) is recovered from \(E\), curvature mother satisfies
+
+\[
+\boxed{
+K=K_B+\mathcal A_{C,E}(V)
+}
+\]
+
+với \(\mathcal A_{C,E}\) linear in hidden stabilizer connection.
+
+Nếu \(\mathcal A_{C,E}\) injective modulo true stabilizer, reconstruction
+
+\[
+(g,C,E,K)\Longrightarrow\nabla,T,R,\mathcal J
+\]
+
+là exact conditional implication.
+
+### VI.3. Candidate continuum statement
+
+Executable campaign supports mạnh rằng generic tested spectral strata are degree-two observable, while highly degenerate strata form singular inverse geometry where higher/nonlinear data matter.
+
+Nhưng repository **chưa** theoremize:
+
+\[
+(g_\Sigma,C,E,K,\ldots)
+\Longrightarrow
+\nabla
+\]
+
+trên full infinite-dimensional NS Sobolev/Fréchet category.
+
+Open pieces include continuum Codazzi injectivity/Fredholm theory, shell multiplicity strata, nonlinear singular observability, true stabilizer/holonomy centralizer, operator domains, topology and boundary Hodge typing.
+
+### VI.4. Viscosity and regularity nonclaims
+
+Reversible differential geometry does not determine \(\nu\); one extra scalar dynamical calibration is required when viscosity is not already given.
+
+None of the above is a global regularity theorem.  Core 3 does not claim that nonzero \(E\), \(K\), \(R\), or any finite tower norm characterizes blow-up.  2D, shear and Beltrami controls explicitly forbid that shortcut.
+
+Strongest current sentence is therefore:
+
+\[
+\boxed{
+\textbf{Theory 2 is state-complete and its full differential signature is a strongly supported, stratified curl-spectral observability geometry for the NS formation core.}
+}
+\]

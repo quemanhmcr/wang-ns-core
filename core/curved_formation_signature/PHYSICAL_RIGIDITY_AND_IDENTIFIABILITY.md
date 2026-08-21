@@ -166,7 +166,7 @@ Keeping this distinction explicit is essential to the theory.
 
 ---
 
-## 6. The curl commutant is only the first-order stabilizer
+## 6. From first-order stabilizer to stratified geometric identifiability
 
 At degree one, the mother forgets connection components that commute with curl:
 
@@ -174,35 +174,40 @@ At degree one, the mother forgets connection components that commute with curl:
 E=[\nabla,C]=[B,C]
 \]
 
-for the spectral splitting \(\nabla=V+B\) with \([V,C]=0\).  This justifies calling \(V\) vertical or gauge-like **at first order**.
+for the spectral splitting \(\nabla=V+B\) with \([V,C]=0\).  This makes \(V\) invisible to the mother and identifies \(\operatorname{comm}(C)\) as a **first-order stabilizer**.
 
-The deep inverse campaign shows that this wording must not be promoted to a final gauge statement.  Generic vertical components alter curvature through their interaction with \(B\), and the pair \((E,K)\), with
+The newest inverse campaign shows what happens next.  Once \(B\) is reconstructed from \(E\), the curvature mother has the exact finite metric-Lie form
 
 \[
-K=[R,C],
+\boxed{
+K=K_B+\mathcal A_{C,E}(V),
+}
 \]
 
-reconstructed the missing vertical connection lift at machine precision in all tested generic degeneracy patterns.  Only a sector stabilizing the complete generated sensor algebra remains genuinely dark.
+with \(\mathcal A_{C,E}\) linear in the hidden stabilizer connection.  When this Codazzi observability map is injective, \((g,C,E,K)\) reconstructs the complete formation connection and hence the bracket, curvature and Poisson geometry.
 
-Thus the safe hierarchy is
+This is generic in the tested finite campaign, but not universal.  A rank phase diagram over 9 Lie-algebra families, 9 curl multiplicity patterns and 6 randomized metrics found full rank for every tested seed in 68 of 72 non-scalar family/pattern combinations.  All persistent failures were concentrated at the highly degenerate pattern \(5+1\).
+
+Higher covariant degrees reduce several such kernels.  In the hardest tested example the linearized nullity decreases
+
+\[
+11\to9\to6,
+\]
+
+and the maximal tower plus Jacobi/Bianchi leaves a five-dimensional first-order kernel.  Nonlinear probing shows that this remaining kernel is quadratically visible rather than demonstrably dark.
+
+Thus the safe identifiability hierarchy is
 
 \[
 \boxed{
 \operatorname{comm}(C)
-=
-\text{first-order stabilizer},
+=\text{first-order stabilizer},
 }
 \]
 
-not
+followed by a stratified differential-spectral inverse problem.  A true physical gauge must remain invisible to the full nonlinear differential geometry, not merely to \(E\) or to the Jacobian of a finite sensor tower.
 
-\[
-\boxed{
-\operatorname{comm}(C)
-=
-\text{final physical gauge}.
-}
-\]
+For the complete reconstruction statement and negative controls, see [GEOMETRIC_COMPLETENESS.md](GEOMETRIC_COMPLETENESS.md).
 
 ## 7. Zero curl is not a gauge criterion
 

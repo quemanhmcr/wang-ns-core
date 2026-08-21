@@ -298,31 +298,41 @@ not
 
 This distinction should be preserved in all future statements.
 
-## 9. Higher Bianchi degrees and vertical observability
+## 9. Higher Bianchi degrees, geometric completeness, and singular strata
 
-Although \(K=[R,C]\) deletes the curl-commuting part of \(R\) at degree two, higher covariant degrees can couple that hidden curvature back to already-visible sensors:
+Although \(K=[R,C]\) deletes the curl-commuting part of \(R\) at degree two, it can still constrain the **connection** that produced that curvature.  After \(E\) reconstructs the cross-sheet connection \(B\), the unknown within-sheet part \(V\) enters the exact finite metric-Lie curvature mother through a Codazzi observability map
 
 \[
- d_\nabla K=R\wedge E,
-\qquad
- d_\nabla^2K=R\wedge K.
+K=K_B+\mathcal A_{C,E}(V).
 \]
 
-On full physical helical decompositions, the vertical curvature contribution to \(d_\nabla K\) was about \(24\%-29\%\) of the tested norm, with median \(27\%\).  At degree four the corresponding contribution remained about \(20\%\).
+At generic tested spectral points this map is full rank, so \(E+K\) reconstructs the entire connection.  A broad rank phase diagram found full rank for all tested seeds in 68 of 72 non-scalar family/multiplicity combinations.
 
-In abstract curvature-identification problems, this produces a genuine observability filtration.  For example, a \(3+3\) spectrum left one vertical curvature mode unresolved after degree three, while degree four removed the last null direction.  A fully vertical sector with \(E=K=0\) remained dark at every tested degree.
+However, the highly degenerate multiplicity pattern \(5+1\) produces genuine **linearized singular strata**.  In the hardest tested family the degree-two nullity was 11.  Higher covariant degrees reduced it as
 
-However, when curvature is constrained to come from an actual compatible connection, generic \(E+K\) already reconstructed the hidden vertical connection in all tested degeneracy patterns.  Higher degrees then act primarily as compatibility/Bianchi redundancy rather than automatically adding new independent connection data.
+\[
+\boxed{11\to9\to6},
+\]
 
-This distinction is essential:
+while several other \(5+1\) kernels closed completely at degree three.
+
+Even the maximal available exterior tower plus Jacobi/Bianchi can retain a linearized kernel.  That does not automatically imply finite non-uniqueness: the remaining five-dimensional kernel in the hardest test was quadratically visible under finite perturbation,
+
+\[
+\|\mathcal S(V_0+tw)-\mathcal S(V_0)\|\sim c(w)t^2.
+\]
+
+The correct interpretation is therefore stratified:
 
 \[
 \boxed{
-\text{curvature-as-independent-data filtration}
-\neq
-\text{connection-constrained inverse problem}.
+\text{generic degree-two observability}
+\quad+\quad
+\text{higher/nonlinear completion on singular spectral strata}.
 }
 \]
+
+This is stronger and more precise than the earlier dichotomy between “curvature as independent data” and “connection-constrained inverse”.  See [GEOMETRIC_COMPLETENESS.md](GEOMETRIC_COMPLETENESS.md) for the full reconstruction campaign.
 
 ## 10. Tangent first, stabilizer later
 
@@ -379,3 +389,41 @@ In words:
 > Curl decomposes formation geometry into spectral sheets.  The complete mother measures how the formation connection mixes those sheets.  Curvature splits into within-sheet Gauss/Ricci and cross-sheet Codazzi parts.  The curvature mother sees the cross-sheet part, while higher Bianchi couplings can expose how the hidden within-sheet geometry acts on already-visible spectral deformation.
 
 This is the current canonical geometric interpretation of the third core.
+
+## 13. From spectral reduction to inverse geometry
+
+The third campaign turns the decomposition above into an inverse problem.
+
+Degree one gives
+
+\[
+E=[B,C]
+\]
+
+and therefore reconstructs \(B\) off the curl commutant.
+
+The remaining unknown is the within-sheet connection \(V\).  In the exact finite metric-Lie / left-invariant torsion-free model, the curvature mother has the affine-linear form
+
+\[
+\boxed{
+K=K_B+\mathcal A_{C,E}(V).
+}
+\]
+
+Thus the spectral Gauss--Codazzi split is not only descriptive.  Its Codazzi sector supplies a measurement operator for the connection component that the mother cannot see.
+
+When \(\mathcal A_{C,E}\) has full rank modulo the genuine stabilizer,
+
+\[
+\boxed{
+(g,C,E,K)
+\Longrightarrow
+\nabla
+\Longrightarrow
+T,R,\mathcal J.
+}
+\]
+
+A broad finite phase diagram shows this degree-two reconstruction to be generic in the tested families but not universal: high spectral multiplicity \(5+1\) produces singular strata, where higher covariant degrees and nonlinear information add observability.
+
+The full mechanism, physical helical tribunal, rank failures, quadratic singular visibility, metric covariance, sparse 28D stress test and viscosity boundary are recorded in [GEOMETRIC_COMPLETENESS.md](GEOMETRIC_COMPLETENESS.md).

@@ -151,3 +151,22 @@ Q=\langle Cu,S(u)Cu\rangle.
 \]
 
 The independent six-direction microlocal reverse audit recovered the pressure-source field at relative residual \(3.13\times10^{-15}\) and the tested stretching contraction at roundoff.  These are consequences/readers of the recovered state geometry, not additional primitive coordinates.
+
+
+## 6. Metric role in geometric reconstruction
+
+The geometric-completeness campaign confirms that the transported metric is not merely needed to write the old formation operator correctly.  It is also required to define the new inverse problem itself.
+
+The hidden connection decomposition is metric-skew, the curl spectral projectors are interpreted in the self-adjoint metric structure, and the Codazzi observability system is coordinate-covariant only when the transported Riesz metric is carried.
+
+Non-orthogonal signature charts with condition numbers \(10\), \(100\), and \(1000\) recover the same connection after whitening by \(G_\Sigma\).  Treating the same charts as Euclidean gives order-one inverse errors.
+
+Hence the canonical differential-signature datum is
+
+\[
+\boxed{
+(g_\Sigma,C,E,K,\ldots),
+}
+\]
+
+not an untyped list of matrices.  See [GEOMETRIC_COMPLETENESS.md](GEOMETRIC_COMPLETENESS.md).

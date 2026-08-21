@@ -74,29 +74,68 @@ Nếu \(\mathcal L_{\nu,u}\) là Riesz operator của form này thì
 
 Claim của core này là structural formation: projected Euler/geodesic/Lie–Poisson part và Stokes/Dirichlet part được sinh từ cùng oriented metric-Lie/Hodge datum.  Nó không thay thế spectral-signature completeness theorem và không phải regularity theorem.
 
-## Curved Formation–Signature core
+## Core 3 — Curl-Spectral Differential Observability
 
-Core hợp nhất tại [core/curved_formation_signature/README.md](core/curved_formation_signature/README.md) trả lời câu hỏi xuất hiện sau khi hai theory trên đã trưởng thành: **formation core sinh ra phương trình, còn spectral signature chỉ là tọa độ hoàn chỉnh hay thật sự mang geometry của formation core?**
+Core thứ ba tại [core/curved_formation_signature/README.md](core/curved_formation_signature/README.md) đã trưởng thành thêm một cấp.
 
-Kết quả canonical đã được sharpen sau campaign thứ hai.  Không chỉ có
+Ban đầu Core 3 chỉ trả lời:
 
-\[
-\boxed{
-E=d_\nabla C,
-\qquad
-E_u=[\nabla_u,C],
-}
-\]
+> formation core sinh ra phương trình, còn spectral signature có thật sự mang cùng state/dynamics geometry hay chỉ là một bộ tọa độ hoàn chỉnh?
 
-và
+Câu trả lời đầu tiên là state-level equivalence trên fixed physical core.  Campaign tiếp theo nhìn ra curl spectral sheets và curvature split.  Campaign mới nhất hỏi câu mạnh hơn:
 
 \[
 \boxed{
-d_\nabla E=d_\nabla^2C=[R,C].
+(g_\Sigma,C,E,K)
+\stackrel{?}{\Longrightarrow}
+\nabla
+\stackrel{?}{\Longrightarrow}
+T,R,\mathcal J.
 }
 \]
 
-Curl còn tạo một **spectral reduction** của formation connection.  Trong curl spectral frame,
+Core 3 hiện phân biệt ba cấp completeness:
+
+\[
+\boxed{
+\textbf{state completeness}
+}
+\]
+
+\[
+E_u=[\nabla_u,C]\Longleftrightarrow u
+\]
+
+trên smooth mean-zero periodic physical core, modulo Killing/Galilean symmetry;
+
+\[
+\boxed{
+\textbf{differential spectral geometry}
+}
+\]
+
+\[
+C
+\xrightarrow{d_\nabla}
+E
+\xrightarrow{d_\nabla}
+K=[R,C]
+\xrightarrow{d_\nabla}
+R\wedge E
+\to\cdots;
+\]
+
+và candidate mới:
+
+\[
+\boxed{
+\textbf{formation-geometry completeness}
+}
+\]
+
+ở generic spectral strata.
+
+Trong curl spectral frame,
 
 \[
 \boxed{
@@ -108,72 +147,80 @@ E=[B,C].
 }
 \]
 
-Nói cách khác, \(V\) quay bên trong cùng curl eigensheet, còn \(B\) trộn giữa các eigensheets; mother \(E\) đo chính sheet-mixing part này, weighted bởi spectral gaps.
+Do đó degree one reconstruct cross-sheet connection \(B\).  Phần còn thiếu \(V\) quay bên trong cùng curl eigensheets.
 
-Formation curvature cũng tách
-
-\[
-R=R_\parallel+R_\perp,
-\qquad
-[R_\parallel,C]=0,
-\]
-
-với within-sheet Gauss/Ricci sector
-
-\[
-R_\parallel=[V,V]+\Pi_\parallel[B,B]
-\]
-
-và cross-sheet Codazzi sector \(R_\perp\).  Curvature mother chỉ thấy cross-sheet part:
+Newest exact finite metric-Lie mechanism là
 
 \[
 \boxed{
-K=[R,C]=[R_\perp,C].
+K=K_B+\mathcal A_{C,E}(V),
 }
 \]
 
-Higher Bianchi levels couple hidden within-sheet curvature trở lại các sensor đã thấy:
+với \(\mathcal A_{C,E}\) là một **Codazzi observability map** tuyến tính theo hidden within-sheet connection trong typed left-invariant torsion-free model.  Nếu map này injective modulo true stabilizer, thì
 
 \[
 \boxed{
-d_\nabla K=R\wedge E,
-\qquad
-d_\nabla R=0.
+(g,C,E,K)
+\Longrightarrow
+\nabla
+\Longrightarrow
+T,R,\mathcal J.
 }
 \]
 
-Shifted spectral cuts vẫn tomograph curvature action:
+Exact Lie tribunals cho full-rank reconstruction ở 16/16 generic cases, worst connection error \(3.97\times10^{-15}\), và independent 80-step trajectories match tới \(5.02\times10^{-16}\).
+
+Quan trọng hơn, full physical helical tribunal cố tình chọn một same-signed-curl Fourier transition mà mother \(E\) **mù tuyệt đối**.  Cross-sheet curvature loop \(K\) recover hidden connection coefficient đó trên 80 resonant triads với median error
+
+\[
+\boxed{9.56\times10^{-16}}
+\]
+
+và noise slope \(1.0004\).
+
+Nhưng campaign cũng falsify phiên bản quá mạnh.  Phase diagram 9 Lie families × 9 curl multiplicity patterns × 6 random metrics cho 68/72 non-scalar family/pattern combinations full rank ở mọi tested seed; persistent failures tập trung ở high-degeneracy pattern
+
+\[
+\boxed{5+1}.
+\]
+
+Ở hardest case, higher tower giảm linearized nullity
+
+\[
+\boxed{11\to9\to6},
+\]
+
+và maximal tower + Jacobi/Bianchi vẫn còn 5 first-order blind directions.  Nonlinear test cho chính 5 directions đó lại thấy
 
 \[
 \boxed{
-\frac12\int [R,H_a]\,da=[R,C].
+\text{sensor residual}\sim t^2
 }
 \]
 
-Metric bridge giữ nguyên exact trên strain signature \(q_u(x,n)=n^TS(u)(x)n\):
+với fitted slopes \(2.0000000000\).  Tức Jacobian singular không đồng nghĩa finite non-uniqueness.
+
+Do đó strongest current wording không phải “\(E+K\) always complete”, mà là:
 
 \[
 \boxed{
-L^2_u\longleftrightarrow15\,\dot H^{-1}_q,
-\qquad
-\|Cu\|_2^2\longleftrightarrow15\,L^2_q.
+\textbf{Core 3 is a curl-spectral differential observability geometry for the formation core.}
 }
 \]
 
-Strongest current wording là:
+Generic tested spectral strata reconstruct formation geometry ở degree two; highly symmetric strata có thể cần higher/nonlinear data.
+
+Viscosity \(\nu\) không nằm trong reversible geometry này.  Sau khi geometry được reconstruct, một generic time tangent đủ calibrate \(\nu\) trong finite tribunal.  Architecture hiện tại là
 
 \[
 \boxed{
-\textbf{Navier–Stokes formation geometry admits a canonical curl-spectral reduction.}
+\text{differential spectral geometry}+\nu
+=\text{full formation law}.
 }
 \]
 
-“Curved representation” ở đây nghĩa là signature coordinates mang transported formation connection/curvature; **signature image tự nó vẫn là một linear flat state image**.  \([R,C]\) cũng không phải blow-up amplitude: 2D, Beltrami và shear controls đều có thể có nonzero ambient curvature.  `comm(C)` chỉ là first-order stabilizer, không phải final gauge; và \(\ker C\) không được đồng nhất với gauge trên topology không tầm thường.
-
-Hai notes quan trọng nhất của update này:
-
-- [CURL_SPECTRAL_REDUCTION.md](core/curved_formation_signature/CURL_SPECTRAL_REDUCTION.md) — isospectral orbit, stabilizer splitting, spectral sheets, Gauss–Codazzi–Ricci và Cartan/Bianchi structure.
-- [DEEP_GEOMETRY_LESSONS.md](core/curved_formation_signature/DEEP_GEOMETRY_LESSONS.md) — falsifications, topology/boundary lessons, BCH distinction, harmless classes và các scope corrections.
+Đọc [GEOMETRIC_COMPLETENESS.md](core/curved_formation_signature/GEOMETRIC_COMPLETENESS.md) cho campaign mới nhất, [CURL_SPECTRAL_REDUCTION.md](core/curved_formation_signature/CURL_SPECTRAL_REDUCTION.md) cho spectral-sheet geometry, và [HISTORY_AND_FALSIFICATION.md](core/curved_formation_signature/HISTORY_AND_FALSIFICATION.md) cho toàn bộ các formulation đã bị experiments giết.
 
 ## Kết quả structural chính
 
@@ -250,6 +297,7 @@ Tức microlocal signature norm, sau universal normalization, chính là Sobolev
 
 - [Core_signature.md](Core_signature.md) — narrative chung: Mục I giới thiệu formation core, Mục II giữ lịch sử spectral-signature, Mục III kể quá trình hai theory hợp nhất thành curved formation–signature geometry.
 - [core/curved_formation_signature/README.md](core/curved_formation_signature/README.md) — cửa vào core hợp nhất và current structural claim.
+- [core/curved_formation_signature/GEOMETRIC_COMPLETENESS.md](core/curved_formation_signature/GEOMETRIC_COMPLETENESS.md) — newest core result: state-vs-geometry completeness, Codazzi inverse map, generic rank, singular strata, nonlinear observability và viscosity calibration.
 - [core/curved_formation_signature/FORMATION_SIGNATURE_EQUIVALENCE.md](core/curved_formation_signature/FORMATION_SIGNATURE_EQUIVALENCE.md) — forward/reverse bridge và dynamical conjugacy trên fixed physical core.
 - [core/curved_formation_signature/CURL_SPECTRAL_REDUCTION.md](core/curved_formation_signature/CURL_SPECTRAL_REDUCTION.md) — curl isospectral orbit, spectral-sheet splitting, Gauss–Codazzi–Ricci và Cartan/Bianchi geometry.
 - [core/curved_formation_signature/DEEP_GEOMETRY_LESSONS.md](core/curved_formation_signature/DEEP_GEOMETRY_LESSONS.md) — falsifications, topology/boundary typing, BCH distinction, harmless controls và kinh nghiệm tránh overclaim.
@@ -311,13 +359,25 @@ python core/curved_formation_signature/audits/harmless_class_curvature.py
 python core/curved_formation_signature/audits/harmonic_zero_mode_signature.py
 python core/curved_formation_signature/audits/boundary_metric_typing.py
 python core/curved_formation_signature/audits/representation_curvature_not_embedding_curvature.py
+python core/curved_formation_signature/audits/ek_exact_lie_reconstruction.py
+python core/curved_formation_signature/audits/physical_helical_resonant_recovery.py
+python core/curved_formation_signature/audits/ek_rank_phase_diagram.py
+python core/curved_formation_signature/audits/ek_higher_degree_completion.py
+python core/curved_formation_signature/audits/ek_maximal_tower_stabilizer.py
+python core/curved_formation_signature/audits/ek_bianchi_integrability_completion.py
+python core/curved_formation_signature/audits/ek_cartan_integrability_closure.py
+python core/curved_formation_signature/audits/ek_nonlinear_singular_observability.py
+python core/curved_formation_signature/audits/ek_metric_covariant_reconstruction.py
+python core/curved_formation_signature/audits/ek_28d_sparse_codazzi_recovery.py
+python core/curved_formation_signature/audits/ek_heldout_spectral_prediction.py
+python core/curved_formation_signature/audits/ek_minimal_viscosity_calibration.py
 ```
 
 Ba audit suites phục vụ ba tầng claim khác nhau: formation/core geometry ở `metric_lie_hodge`, whole-state signature/completeness ở `spectral_signature`, và curl-spectral reduction / transported formation geometry ở `curved_formation_signature`.  Deep suite cố ý giữ cả negative controls: harmless curvature, topology zero-mode, boundary typing, BCH-vs-curvature và flat-image-vs-curved-connection.
 
 ## Scope
 
-Repository hiện có hai theorem-level parent structures và một canonical synthesis core. Spectral-signature completeness được theoremize sạch trên smooth mean-zero periodic state space; formation identities là exact trên typed periodic setting; core thứ ba hiện được sharpen thành **curl-spectral reduction of formation geometry**, tổ chức exact connection/curvature identities cùng full-physical adversarial tribunals mà không overclaim thành regularity theorem.
+Repository hiện có hai theorem-level parent structures và một canonical synthesis core. Spectral-signature state completeness được theoremize trên smooth mean-zero periodic state space; formation identities là exact trên typed periodic setting. Core thứ ba hiện được sharpen thành **curl-spectral differential observability of formation geometry**: nó có một exact conditional Codazzi reconstruction mechanism và rất mạnh executable evidence cho generic formation-geometry completeness, nhưng continuum injectivity/singular-strata theorem vẫn open.
 
 Nó **không** tự động chứng minh:
 
@@ -356,4 +416,4 @@ history/
   worktrees/
 ```
 
-`core/metric_lie_hodge/` và `core/spectral_signature/` là hai parent cores: một bên equation formation, một bên whole-state coordinate/completeness. `core/curved_formation_signature/` là canonical synthesis core mô tả **curl-spectral reduction** của formation geometry: spectral soldering, Gauss/Codazzi/Ricci curvature split, Bianchi coupling và signature-side dynamics. `core/NEO/` vẫn là methodology/workbench.
+`core/metric_lie_hodge/` và `core/spectral_signature/` là hai parent cores: một bên equation formation, một bên whole-state coordinate/completeness. `core/curved_formation_signature/` là canonical synthesis core hiện mô tả **curl-spectral differential observability** của formation geometry: state completeness, spectral soldering, Gauss/Codazzi/Ricci split, Codazzi reconstruction of hidden connection, singular spectral strata, Bianchi/higher-degree completion và signature-side dynamics. `core/NEO/` vẫn là methodology/workbench.

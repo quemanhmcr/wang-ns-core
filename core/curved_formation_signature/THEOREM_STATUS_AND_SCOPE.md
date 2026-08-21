@@ -1,212 +1,650 @@
 # Theorem Status and Scope
 
-This note separates exact identities, inherited theorems, standard differential geometry, executable evidence, and current interpretation.  The distinction matters because the deep campaign exposed several places where a numerically compelling statement was stronger than the theorem actually justified.
+Core 3 now contains three different kinds of mathematical content and must keep them visibly separated:
 
-## 1. Exact algebraic / differential identities
+1. exact differential/algebraic identities;
+2. theorem-level state completeness inherited from the parent spectral-signature core;
+3. a new **formation-geometry completeness candidate** supported by exact conditional reconstruction and extensive executable evidence.
 
-Within a smooth typed setting where the indicated operators and covariant exterior derivatives are defined:
+The third item is powerful, but it is not yet an infinite-dimensional theorem.
 
-1. **Koszul reconstruction**
-   \[
-   (g,T)\Longrightarrow\nabla.
-   \]
-2. **Formation Riesz law**
-   \[
-   \mathcal L_{\nu,u}=\mathcal J_u-\nu C^2,
-   \qquad
-   u_t=\mathcal L_{\nu,u}u.
-   \]
-3. **Mother / spectral soldering form**
-   \[
-   \boxed{E=d_\nabla C,\qquad E_u=[\nabla_u,C].}
-   \]
-4. **Curvature-corrected mother bracket**
-   \[
-   E_{[u,v]}
-   =[\nabla_u,E_v]-[\nabla_v,E_u]-[R(u,v),C].
-   \]
-5. **Covariant square**
-   \[
-   \boxed{d_\nabla^2C=[R,C].}
-   \]
-6. **Second Bianchi identity**
-   \[
-   \boxed{d_\nabla R=0.}
-   \]
-7. **Next covariant levels**
-   \[
-   d_\nabla[R,C]=R\wedge E,
-   \qquad
-   d_\nabla(R\wedge E)=R\wedge[R,C],
-   \]
-   with the usual graded conventions.
-8. **Curvature functional calculus**
-   \[
-   [R,f(C)]_{xy}=f^{[1]}(x,y)[R,C]_{xy}
-   \]
-   whenever the functional calculus is typed.
-9. **Shifted-cut curvature layer cake**
-   \[
-   \frac12\int[R,H_a]\,da=[R,C]
-   \]
-   in the corresponding spectral layer-cake sense.
+---
 
-These are identities of connection/curvature calculus once the NS formation data and distinguished curl operator are fixed.
+## 1. Status legend
 
-## 2. Standard geometry versus NS-specific content
+Throughout Core 3, claims should be read with the following labels.
 
-The relations
+### EXACT
+
+An algebraic or differential identity once the operators, domains and connection are typed.
+
+### INHERITED THEOREM
+
+A theorem already established in one of the canonical parent cores and used here without re-proving it.
+
+### CONDITIONAL EXACT
+
+An exact finite/typed reconstruction statement whose conclusion follows if an explicitly defined observability operator is injective modulo stabilizer.
+
+### EXECUTABLE EVIDENCE
+
+A numerical or exact-computational tribunal that supports, falsifies or delimits a candidate statement.
+
+### OPEN
+
+A continuum theorem, boundary extension, quotient theorem, regularity consequence or novelty statement not proved by the present corpus.
+
+---
+
+## 2. EXACT formation identities
+
+On the typed smooth periodic physical formation core,
 
 \[
-d_\nabla^2Q=[R,Q],
-\qquad
-d_\nabla R=0
+\mathcal C_{NS}
+=(\mathfrak g_\sigma,g,T,C),
+\qquad C=\operatorname{curl},
 \]
 
-for endomorphism-valued fields are standard differential geometry.  The third core does **not** claim the invention of a new Bianchi identity.
+the metric and Lie tensor reconstruct the Levi--Civita connection through Koszul:
 
-The NS-specific structural package is instead:
+\[
+2\langle\nabla_ab,c\rangle
+=
+\langle[a,b],c\rangle
+-
+\langle[b,c],a\rangle
++
+\langle[c,a],b\rangle.
+\]
 
-- the canonical formation datum \((\mathfrak g_\sigma,g,T,C)\);
-- the physical choice \(C=\operatorname{curl}\);
-- the completeness of \(E=d_\nabla C\) as a smooth-state sensor modulo the known Killing/Galilean sector;
-- the spectral-flag tomography of \(E\) and the tested curvature action;
-- the exact formation/signature metric bridge;
-- the curl-spectral reduction of the formation connection and curvature.
+The formation operator is
 
-This is the level at which novelty comparisons should be made.
+\[
+\mathcal L_{\nu,u}
+=
+\mathcal J_u-\nu C^2.
+\]
 
-## 3. Theorems inherited from the parent cores
+The mother is
 
-The present core relies on, but does not duplicate, theorem statements in:
+\[
+\boxed{
+E=d_\nabla C,
+\qquad E_u=[\nabla_u,C].
+}
+\]
 
-- [Metric–Lie / Hodge Formation Core](../metric_lie_hodge/README.md), especially the Riesz/Poisson/Dirichlet formation identities;
-- [Mother / Spectral-Flag Completeness Theorem](../spectral_signature/MOTHER_COMPLETENESS_THEOREM.md), especially mother completeness modulo Killing symmetry, strain reconstruction, exact Sobolev signature identity, and signature-image conjugacy on the smooth periodic class.
+The curvature-corrected mother bracket is
 
-The signature metric identities in this core follow by polarization of the established Sobolev identity at \(s=-1\) and \(s=0\).
+\[
+\boxed{
+E_{[u,v]}
+=
+[\nabla_u,E_v]
+-
+[\nabla_v,E_u]
+-
+[R(u,v),C].
+}
+\]
 
-## 4. Exact spectral reduction in a typed spectral frame
+The covariant square is
 
-When curl admits the relevant orthogonal spectral decomposition, split the skew connection into the curl stabilizer and its orthogonal complement:
+\[
+\boxed{
+d_\nabla^2C=[R,C].
+}
+\]
+
+Writing
+
+\[
+K=[R,C],
+\]
+
+the next Bianchi relation is
+
+\[
+\boxed{
+d_\nabla K=R\wedge E.
+}
+\]
+
+The second Bianchi identity is
+
+\[
+\boxed{
+d_\nabla R=0.
+}
+\]
+
+These are standard connection/endomorphism-bundle identities once the NS datum \((g,T,C)\) has selected the distinguished connection and curl object.  Core 3 does not claim novelty for the abstract Bianchi calculus itself.
+
+---
+
+## 3. EXACT spectral reduction formulas
+
+In a typed spectral frame for self-adjoint \(C\), decompose the metric connection into the curl commutant and its off-sheet complement:
 
 \[
 \nabla=V+B,
-\qquad [V,C]=0.
+\qquad
+[V,C]=0.
 \]
 
 Then
 
 \[
-\boxed{E=[B,C].}
-\]
-
-Decompose formation curvature as
-
-\[
-R=R_\parallel+R_\perp,
-\qquad [R_\parallel,C]=0.
-\]
-
-The curvature mother satisfies
-
-\[
-\boxed{[R,C]=[R_\perp,C].}
-\]
-
-In the constant-base block model, the vertical curvature has the Gauss/Ricci form
-
-\[
-R_\parallel=[V,V]+\Pi_\parallel[B,B],
-\]
-
-while the off-sheet part has the corresponding Codazzi form.  The full physical helical audits independently verified these block identities on periodic divergence-free fields.
-
-The splitting is reductive:
-
-\[
-[\mathfrak h_C,\mathfrak h_C]\subset\mathfrak h_C,
-\qquad
-[\mathfrak h_C,\mathfrak m_C]\subset\mathfrak m_C.
-\]
-
-For two spectral blocks it is symmetric-space type, \([\mathfrak m_C,\mathfrak m_C]\subset\mathfrak h_C\); for three or more blocks, off-sheet two-hop mixing may occur.
-
-## 5. Canonical executable evidence
-
-The combined canonical audit suite verifies, among other things:
-
-- blind reconstruction of the formation connection/mother/flag from \((T,C)\) in a physical coordinate lab;
-- complete mean-zero state rank and exact Galilean kernel in the selected model;
-- independent six-direction microlocal reconstruction of state and formation dynamics;
-- trajectory-level commuting diagrams;
-- necessity of the transported Riesz metric;
-- full-operator-field recovery of the transported formation tensor;
-- local physical rigidity of the vector-field bracket and curl direction;
-- full physical Jacobi/Bianchi/covariant identities;
-- shifted-cut tomography of \([R,C]\);
-- mother as tangent velocity on the curl isospectral orbit;
-- spectral stabilizer splitting and Gauss–Codazzi–Ricci decomposition;
-- full physical helical verification of that decomposition;
-- generic recovery of the hidden curl-commuting connection lift from \((E,K)\);
-- order-one vertical-curvature contribution to higher Bianchi degrees;
-- blind reversible/irreversible parity separation on signature coordinates;
-- orientation double-cover behavior under \(C\mapsto-C\);
-- topology and boundary negative controls;
-- deliberate examples where curvature is nonzero on harmless 2D/Beltrami/shear states;
-- the distinction between represented formation curvature and naive embedding curvature.
-
-Exact numerical identities generally lie between \(10^{-15}\) and \(10^{-13}\).  Finite-step holonomy tests have the predicted discretization error instead of roundoff residuals.
-
-## 6. Strongest current canonical interpretation
-
-The strongest supported synthesis is
-
-\[
 \boxed{
-\textbf{Navier–Stokes formation geometry admits a canonical curl-spectral reduction.}
+E=[B,C].
 }
 \]
 
-More explicitly:
+For spectral blocks with eigenvalues \(\lambda_i,\lambda_j\),
 
-- formation data generate \(\nabla\), \(R\), \(\mathcal J\), \(C^2\), and the NS flow;
-- curl decomposes the connection into within-sheet and cross-sheet parts;
-- the complete mother \(E=d_\nabla C\) is the canonical degree-one state soldering into a distinguished distribution of the curl isospectral orbit;
-- formation curvature decomposes into within-sheet Gauss/Ricci and cross-sheet Codazzi sectors;
-- \([R,C]\) is the curvature mother for the first curl functional calculus of the cross-sheet sector;
-- higher Bianchi degrees can couple curl-commuting curvature back to visible sensors;
-- the full signature-side operator field carries the transported formation dynamics autonomously;
-- the signature image itself need not be a curved embedding.
+\[
+E_{ij}
+=(\lambda_j-\lambda_i)B_{ij}.
+\]
 
-This is stronger and more precise than the earlier slogan “the two cores are compatible”, while being narrower than an unrestricted equivalence of all abstract metric-Lie cores.
+Hence off the commutant,
 
-## 7. Explicit nonclaims and corrections
+\[
+\boxed{
+B_{ij}
+=
+\frac{E_{ij}}{\lambda_j-\lambda_i}
+\qquad(\lambda_i\neq\lambda_j).
+}
+\]
 
-The canonical core does **not** claim:
+Similarly, if
 
-1. that the standard identities \(d_\nabla^2=[R,\cdot]\) or \(d_\nabla R=0\) are novel;
-2. that the signature image is intrinsically or extrinsically curved merely because it carries a curved formation connection;
-3. that \([R,C]\), \(E\), or any tested higher covariant level is a blow-up indicator;
-4. that the entire curl commutant is a final physical gauge;
-5. that \(\ker C\) may be blindly quotiented on topologically nontrivial domains;
-6. that \([\nabla,C]\) is the only possible complete state sensor;
-7. that Euler–heat BCH descendants are identical to formation curl curvature;
-8. that arbitrary Galerkin truncation preserves Jacobi, Bianchi, or continuum mother completeness;
-9. that the periodic reverse compiler applies unchanged to arbitrary boundary conditions;
-10. that every higher covariant degree necessarily adds independent connection information.
+\[
+R=R_\parallel+R_\perp,
+\qquad
+[R_\parallel,C]=0,
+\]
 
-These corrections are part of the theory, not disclaimers added after the fact.
+then
 
-## 8. Open scope
+\[
+\boxed{
+K=[R,C]=[R_\perp,C].
+}
+\]
 
-The following remain open:
+Thus degree one determines cross-sheet connection, and degree two measures cross-sheet curvature.
 
-1. a fully typed infinite-dimensional theorem for the curl-spectral reduction on an optimal Sobolev/Fréchet scale;
-2. a publish-grade boundary/manifold version using the correct Hodge/Stokes realization and harmonic cohomology;
-3. a canonical definition of the final dark/stabilizer quotient generated by the whole covariant sensor algebra;
-4. a theorem characterizing when \((E,K)\) globally determines the compatible formation connection rather than only generically in finite spectral models;
-5. an optimal formulation of the higher-degree observability filtration;
-6. a comparison theorem with established geometric hydrodynamics, adjoint-orbit, gauge/Higgs, Cartan-reduction and Hodge formulations;
-7. any regularity theorem linking this structural geometry to a priori control of 3D NS.
+---
 
-The core is therefore a **canonical structural synthesis with exact identities, inherited completeness theorems, and strong adversarial evidence**.  It is not a completed solution of the Navier–Stokes regularity problem.
+## 4. EXACT shifted-cut curvature tomography
+
+Whenever the spectral layer-cake representation is typed,
+
+\[
+H_a=\operatorname{sgn}(C-aI)
+\]
+
+satisfies
+
+\[
+\boxed{
+\frac12\int_{\mathbb R}[R,H_a]\,da=[R,C].
+}
+\]
+
+This is the curvature analogue of the mother tomography already used by the spectral-signature core.
+
+---
+
+## 5. INHERITED THEOREM — state completeness
+
+Core 3 inherits from the canonical spectral-signature theorem that, on the smooth mean-zero periodic physical class,
+
+\[
+\boxed{
+E_u\Longrightarrow u
+}
+\]
+
+modulo the known Killing/Galilean sector, with an explicit reconstruction through the strain signature/principal symbol.
+
+The full shifted flag also reconstructs the mother and hence the state.
+
+This is **state completeness**.
+
+It must not be silently upgraded to background-geometry completeness from a single state snapshot.
+
+---
+
+## 6. EXACT metric bridge inherited by Core 3
+
+For
+
+\[
+q_u(x,n)=n^TS(u)(x)n,
+\]
+
+polarization of the parent Sobolev identity gives
+
+\[
+\boxed{
+\langle u,v\rangle_{L^2}
+=
+15\langle\Lambda^{-1}q_u,\Lambda^{-1}q_v\rangle,
+}
+\]
+
+and
+
+\[
+\boxed{
+\langle Cu,Cv\rangle_{L^2}
+=
+15\langle q_u,q_v\rangle.
+}
+\]
+
+Therefore
+
+\[
+\boxed{
+ g^{\Sigma}_{\rm kinetic}=15\dot H^{-1},
+\qquad
+ g^{\Sigma}_{\rm Dirichlet}=15L^2,
+\qquad
+(g^{\Sigma}_{\rm kinetic})^{-1}g^{\Sigma}_{\rm Dirichlet}=\Lambda^2.
+}
+\]
+
+This is why geometric reconstruction must carry \(g_\Sigma\).  Raw Euclidean signature coordinates are not canonical.
+
+---
+
+## 7. CONDITIONAL EXACT — Codazzi reconstruction of the hidden connection
+
+The newest exact algebraic statement is a conditional one.
+
+After \(E\) determines the cross-sheet connection \(B\), write
+
+\[
+\nabla=B+V,
+\qquad
+V\in\mathfrak h_C:=\operatorname{comm}(C)\cap\mathfrak{so}.
+\]
+
+In the exact finite metric-Lie / left-invariant torsion-free setting used by the canonical reconstruction audit, the curvature mother has the form
+
+\[
+\boxed{
+K=K_B+\mathcal A_{C,E}(V),
+}
+\]
+
+where \(\mathcal A_{C,E}\) is linear in the unknown stabilizer-valued connection coefficients.
+
+The pure quadratic vertical curvature term lies in the curl commutant and disappears after applying \([\cdot,C]\); the remaining terms are affine-linear in \(V\).
+
+Therefore:
+
+> **Conditional reconstruction statement.** If \(\mathcal A_{C,E}\) is injective modulo the genuine stabilizer, then \((g,C,E,K)\) determines \(V\), hence the complete connection \(\nabla=B+V\).  The torsion-free bracket, Lie tensor, full curvature and reversible Poisson/formation operator are then reconstructed.
+
+This implication is exact once the hypotheses and category are fixed.
+
+What is **not** yet a theorem is that the corresponding infinite-dimensional physical NS observability operator is generically injective on an optimal function space.
+
+---
+
+## 8. EXECUTABLE EVIDENCE — exact metric-Lie reconstruction
+
+`ek_exact_lie_reconstruction.py` tested four exact Lie-algebra families under randomized non-bi-invariant metrics.
+
+Results:
+
+- full Codazzi rank in \(16/16\) generic tested cases;
+- affine-linearity residual \(\sim10^{-16}\);
+- worst connection reconstruction error \(3.97\times10^{-15}\);
+- bracket, full curvature, Poisson and formation operator reconstructed at roundoff scale;
+- independently integrated 80-step trajectories matched within \(5.02\times10^{-16}\);
+- noise slope \(1.008\).
+
+This is unusually strong finite exact evidence for the conditional reconstruction mechanism.
+
+---
+
+## 9. EXECUTABLE EVIDENCE — direct physical helical recovery
+
+`physical_helical_resonant_recovery.py` avoids using a projected finite Lie algebra as the main evidence.
+
+It selects a same-signed-curl Fourier transition for which the hidden connection coefficient is exactly invisible to \(E\), then uses a cross-sheet physical curvature loop to reconstruct it from \(K\).
+
+Across 80 independent resonant triads:
+
+\[
+\text{median error}=9.56\times10^{-16},
+\]
+
+\[
+\text{worst error}=3.51\times10^{-14},
+\]
+
+with noise slope \(1.0004\).
+
+This is the strongest direct physical evidence that curvature resolves first-order spectral blindness.
+
+---
+
+## 10. EXECUTABLE EVIDENCE — generic rank with singular strata
+
+`ek_rank_phase_diagram.py` sweeps 9 Lie-algebra families, 9 spectral multiplicity patterns and 6 randomized metrics.
+
+Among 72 non-scalar family/pattern combinations,
+
+\[
+\boxed{68/72}
+\]
+
+were full rank for every tested seed.
+
+All persistent failures were concentrated at the highly degenerate pattern
+
+\[
+5+1.
+\]
+
+The universal statement
+
+\[
+(C,E,K)\Longrightarrow\nabla\quad\text{for every spectral multiplicity}
+\]
+
+is therefore **falsified**.
+
+The current claim is generic and stratified.
+
+---
+
+## 11. EXACT NEGATIVE CONTROL — scalar curl
+
+If
+
+\[
+C=\lambda I,
+\]
+
+then
+
+\[
+E=0,
+\qquad
+K=0.
+\]
+
+The rank campaign correctly leaves the complete hidden connection dark.
+
+In the six-dimensional controls this means
+
+\[
+90/90
+\]
+
+hidden coefficients remain unobservable.
+
+Any formulation of geometric completeness must therefore assume nontrivial spectral separation and cannot be purely formal in \([\cdot,C]\).
+
+---
+
+## 12. EXECUTABLE EVIDENCE — higher-degree completion
+
+At rank-deficient \(5+1\) points, the tower
+
+\[
+K,\quad dK,\quad d^2K,\ldots
+\]
+
+was tested as additional observability data.
+
+Three families closed completely at degree three.  In the hardest \(\mathfrak h_3\oplus\mathbb R^3\) case,
+
+\[
+\boxed{11\to9\to6}
+\]
+
+through degrees two, three and four.
+
+The maximal available exterior tower retained a six-dimensional linearized kernel.
+
+Thus higher degrees can add rank, but they are not asserted to add independent physical mechanisms at generic points.
+
+---
+
+## 13. EXECUTABLE NEGATIVE CONTROL — Bianchi/Jacobi do not automatically close every kernel
+
+Several tempting stronger claims were explicitly falsified.
+
+Second Bianchi and Jacobi close some high-degeneracy kernels, but in the hardest \(\mathfrak h_3\oplus\mathbb R^3\) case:
+
+- \(K\) nullity: \(11\);
+- \(K+D R\) nullity: \(11\);
+- \(K+\)Jacobi nullity: \(7\).
+
+The maximal tower plus Jacobi and Bianchi still retains a five-dimensional **linearized** kernel.
+
+Therefore neither
+
+\[
+\text{Bianchi alone}\Rightarrow\text{uniqueness}
+\]
+
+nor
+
+\[
+\text{maximal linearized tower}\Rightarrow\text{full rank}
+\]
+
+is a canonical claim.
+
+---
+
+## 14. EXECUTABLE EVIDENCE — nonlinear visibility of a linearized kernel
+
+`ek_nonlinear_singular_observability.py` probes the remaining five-dimensional linearized kernel.
+
+Along random kernel directions \(w\), the maximal-tower-plus-Jacobi residual behaves as
+
+\[
+\boxed{
+\|\mathcal S(V_0+tw)-\mathcal S(V_0)\|\sim c(w)t^2.
+}
+\]
+
+The fitted slopes across all tested directions equal \(2.0000000000\) at numerical precision.
+
+Random finite sphere scans found no machine-zero collision.
+
+This supports, but does not prove, local nonlinear injectivity at that singular stratum.
+
+The key canonical distinction is
+
+\[
+\boxed{
+\text{Jacobian kernel}\neq\text{proved finite gauge/non-uniqueness}.
+}
+\]
+
+---
+
+## 15. EXECUTABLE EVIDENCE — coordinate covariance
+
+`ek_metric_covariant_reconstruction.py` applies non-orthogonal charts with condition numbers up to \(10^3\).
+
+With the transported metric, the same geometric connection is reconstructed, with numerical loss explained by chart conditioning.
+
+If the chart is falsely Euclideanized, errors become order one.
+
+Thus the candidate geometric-completeness data are intrinsically
+
+\[
+\boxed{(g_\Sigma,C,E,K)}
+\]
+
+rather than coordinate matrices alone.
+
+---
+
+## 16. EXECUTABLE EVIDENCE — 28D sparse information threshold
+
+The canonical 28D coordinate stress lab has curl multiplicities
+
+\[
+2,6,6,6,6,2
+\]
+
+and
+
+\[
+1736
+\]
+
+connection coefficients hidden from degree one.
+
+Twelve random scalar curvature projections per state pair reconstruct all hidden coefficients with error \(2.75\times10^{-12}\), and the descendants \(\nabla,T,\mathcal J,\mathcal L\) at roughly \(4\times10^{-13}\).
+
+A measurement-density sweep exhibits a sharp practical transition when the number of scalar curvature measurements first exceeds the number of hidden coefficients.
+
+This is coordinate-lab stress evidence only; it is not promoted to a finite projected Lie theorem because arbitrary projection can violate Jacobi.
+
+---
+
+## 17. EXECUTABLE EVIDENCE — held-out spectral functional calculus
+
+After fitting only \(E\) and \(K\), the reconstructed connection predicts held-out readers
+
+\[
+[\nabla,f(C)]
+\quad\text{and}\quad
+[R,f(C)]
+\]
+
+for polynomial, exponential, trigonometric, absolute-value, hinge and shifted-cut functions, plus a held-out \(dK\) level.
+
+Errors are approximately \(10^{-15}\).
+
+An \(E\)-only control misses a curvature reader by \(0.931\).
+
+This supports the interpretation that the reconstructed object is the underlying spectral generator, not merely an overfit to \(E,K\).
+
+---
+
+## 18. Viscosity status
+
+The reversible differential geometry does not determine \(\nu\).
+
+Two systems can have identical
+
+\[
+(g,C,E,K)
+\]
+
+but different formation operators because
+
+\[
+\mathcal L_{\nu,u}=\mathcal J_u-\nu C^2.
+\]
+
+`ek_minimal_viscosity_calibration.py` verifies that once the reversible geometry is known, one generic observed time tangent recovers the scalar \(\nu\) with linear noise stability in the finite tribunal.
+
+Thus the candidate full-data architecture is
+
+\[
+\boxed{
+\text{reversible spectral geometry}+\nu
+=\text{formation law}.
+}
+\]
+
+---
+
+## 19. Strongest current canonical interpretation
+
+The present corpus supports the following statement:
+
+> The canonical physical Navier--Stokes formation core admits a curl-spectral differential representation.  The mother is theorem-level complete for state on the smooth periodic class.  The full differential signature splits the formation connection into observable cross-sheet and initially hidden within-sheet sectors.  Curvature supplies an exact Codazzi-type linear measurement of the hidden sector in the finite metric-Lie model and directly recovers same-sheet physical Fourier connection amplitudes in helical tests.  Generic tested spectral strata are fully observable at degree two; highly degenerate strata can require higher and nonlinear information.
+
+This is stronger than the old phrase “complete curved representation”, but more precise.
+
+The recommended name for the new candidate is:
+
+\[
+\boxed{
+\textbf{Curl-Spectral Formation-Geometry Completeness}
+}
+\]
+
+or, more cautiously,
+
+\[
+\boxed{
+\textbf{Curl-Spectral Differential Observability.}
+}
+\]
+
+---
+
+## 20. Explicit nonclaims
+
+Core 3 does **not** currently claim:
+
+1. a proved infinite-dimensional theorem that \((g,C,E,K)\) reconstructs \(\nabla\) on the full periodic NS Fréchet/Sobolev category;
+2. that one mother snapshot \(E_u\) reconstructs the background connection;
+3. that \(E+K\) is full rank at every spectral multiplicity;
+4. that every linearized kernel is a physical gauge;
+5. that higher tower levels always add new independent physics;
+6. that Bianchi or Jacobi alone force uniqueness;
+7. that nonzero mother or curvature is a blow-up signal;
+8. that \(\ker C\) is a gauge sector;
+9. that the signature image is extrinsically curved as a linear embedding;
+10. that Euler--heat BCH descendants equal formation curvature;
+11. that viscosity is encoded by reversible spectral geometry;
+12. a boundary/manifold theorem without a typed Hodge/Stokes replacement;
+13. global regularity or exclusion of finite-time singularity;
+14. novelty relative to every existing Cartan, holonomy, isospectral-orbit or hydrodynamic-geometric formalism.
+
+---
+
+## 21. Open theorem programme
+
+The next theorem-level programme is no longer vague.
+
+It is to define and analyze, on the actual periodic function space,
+
+\[
+\boxed{
+\mathcal A_{C,E}:\Omega^1(\mathfrak h_C)\to\Omega^2(\mathfrak m_C),
+}
+\]
+
+with correct domains and Sobolev orders, and prove a statement of the form
+
+\[
+\boxed{
+(g_\Sigma,C,E,K,\text{finite higher jets if required})
+\Longrightarrow
+\nabla
+\quad\text{modulo the true differential-spectral stabilizer}.
+}
+\]
+
+The hard pieces are:
+
+- unbounded curl and connection domains;
+- spectral multiplicities and shell degeneracy;
+- Fredholm/injectivity properties of the continuum Codazzi map;
+- nonlinear resolution of singular Jacobian strata;
+- topology/harmonic modes;
+- boundary Hodge typing;
+- exact characterization of the residual stabilizer/holonomy centralizer.
+
+Until that programme is completed, geometric completeness remains a precisely formulated and strongly tested **candidate**, not a closed theorem.
