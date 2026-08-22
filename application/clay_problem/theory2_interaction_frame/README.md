@@ -25,37 +25,21 @@ and then moves to an anchored material interaction frame in which the state obey
 
 The point is architectural: **do the control-volume accounting in a frame where the PDE is heat, but never replace the complete Theory-2 state by a lossy scalar reader.**
 
-## Start here: theorem-first doctrine
+## A note on how to work from here
 
-Every new idea in this directory must start from the **proved Theory-2 maps**, not from a late observer, a scalar obstruction, or a convenient renamed descendant. The safe spine is
+The most useful lesson from the earlier endgame is not a new rule, but a change of habit: when developing an idea, it is usually safer to return first to the original Theory-2 theorems and ask what the complete state is already telling us.  The natural spine is
 
 \[
 \boxed{
-\Sigma(u)\longleftrightarrow E_u\longleftrightarrow u,
+\Sigma(u)\longleftrightarrow E_u\longleftrightarrow u.
 }
 \]
 
-followed only by exact coordinate changes whose inverse or gauge is retained. This order is not stylistic. It is the main protection against recreating the historical loop.
+The historical stock/work/traffic constructions were often exact and useful, but they lived after contractions of this complete state.  Once such a reader was asked to carry the whole dynamics, information hidden in its kernel could reappear one derivative later as phase, polarization, geometry, or another apparently new defect.  Much of the old loop can be understood as repeatedly recovering information that had been compressed away too early.
 
-The historical endgame became difficult partly because complete state information was contracted too early into stock/work/traffic readers. Those readers were correct at their own level, but they had nontrivial kernels; later differentiation then made the discarded phase, polarization, geometry or higher-state information reappear under new names. That produced the pattern
+That experience suggests a simple working perspective for this directory.  New coordinates, control volumes, normalizations and observables are most trustworthy when their relation to the Mother/Flag theorems remains visible.  A contraction can be extremely useful for an estimate without having to become the state of the proof; when it stops seeing something, the complete coordinate \(u/E/\Sigma\) is still available in the background.  Likewise, an interaction frame is valuable because it reorganizes the same information, not because it creates a smaller hidden model of the PDE.
 
-\[
-\text{complete state}
-\to\text{lossy reader}
-\to\text{blindness}
-\to\text{new defect}
-\to\text{reconstruction of discarded information}.
-\]
-
-The rule here is therefore strict:
-
-1. **Compile backward first.** Before using a new object, identify the exact Mother/Flag theorem, renderer formula, contraction map, or higher-jet chain rule that produces it.
-2. **Never promote a contraction to the state.** A scalar/tensor reader may prove an estimate; if it becomes blind, return to \(u/E/\Sigma\) rather than differentiating it into a new ontology.
-3. **Keep invertibility explicit.** Any moving frame, normalization, localization or quotient must retain its inverse, its gauge, or a proved reconstruction theorem.
-4. **Separate information from control.** Theory 2 supplies complete state information; regularity progress begins only when a step adds a genuine coercive estimate, compactness/rigidity theorem, or contradiction.
-5. **Treat a new name as suspicious until it reduces analytic freedom.** If an object is only another renderer of the same complete state, it is bookkeeping, not progress.
-
-A contributor should be able to draw an exact dependency arrow from every proposed mechanism back to the Theory-2 spine. If that arrow is missing, the proposal is not ready to enter the proof architecture.
+This also keeps two different questions separate.  Theory 2 addresses **what information describes the physical state**.  The blow-up problem still asks **what analytic estimate, compactness or rigidity prevents that state from concentrating**.  Keeping that distinction visible has so far been the most reliable way to tell genuine progress from another change of notation.
 
 ## Files
 
@@ -64,12 +48,9 @@ A contributor should be able to draw an exact dependency arrow from every propos
 3. [`02_ANALYTIC_FRONTIER_AND_LESSONS.md`](02_ANALYTIC_FRONTIER_AND_LESSONS.md) — exact owners, the half-derivative seam, the monodromy target, no-go statements, and research lessons.
 4. [`audits/interaction_frame_algebra.py`](audits/interaction_frame_algebra.py) — finite-dimensional sign/algebra audit for the interaction-frame identities.
 
-## Mandatory discipline
+## Working perspective
 
-- **Primitive state:** \(u\), equivalently \(E_u\) or the full shifted flag \(\Sigma(u)\).
-- **Frame:** \(U_t=-\nabla_uU\), \(U(t_0)=I\). It is an anchored coordinate change, not a new physical source.
-- **Readers:** spectral stocks, work, traffic, moments, packets and hinge quantities may prove inequalities but may not replace the primitive state without an explicit inverse theorem.
-- **Progress:** a new step must prove coercivity, compactness/rigidity, eliminate a genuine kernel, or contradict a singular-endpoint requirement. A new renderer is not progress.
+Throughout the notes, \(u\), equivalently \(E_u\) or the full shifted flag \(\Sigma(u)\), remains the complete physical state.  The anchored frame \(U_t=-\nabla_uU\), \(U(t_0)=I\), is used to expose the moving heat geometry while retaining its inverse/gauge.  Spectral stocks, work, traffic, moments and packets are then read from that state when they sharpen an estimate.  The intended direction of travel is toward coercivity, compactness or rigidity; merely finding another renderer of the same complete information is useful bookkeeping, but not by itself a new endpoint mechanism.
 
 ## Core dependencies
 
