@@ -25,6 +25,38 @@ and then moves to an anchored material interaction frame in which the state obey
 
 The point is architectural: **do the control-volume accounting in a frame where the PDE is heat, but never replace the complete Theory-2 state by a lossy scalar reader.**
 
+## Start here: theorem-first doctrine
+
+Every new idea in this directory must start from the **proved Theory-2 maps**, not from a late observer, a scalar obstruction, or a convenient renamed descendant. The safe spine is
+
+\[
+\boxed{
+\Sigma(u)\longleftrightarrow E_u\longleftrightarrow u,
+}
+\]
+
+followed only by exact coordinate changes whose inverse or gauge is retained. This order is not stylistic. It is the main protection against recreating the historical loop.
+
+The historical endgame became difficult partly because complete state information was contracted too early into stock/work/traffic readers. Those readers were correct at their own level, but they had nontrivial kernels; later differentiation then made the discarded phase, polarization, geometry or higher-state information reappear under new names. That produced the pattern
+
+\[
+\text{complete state}
+\to\text{lossy reader}
+\to\text{blindness}
+\to\text{new defect}
+\to\text{reconstruction of discarded information}.
+\]
+
+The rule here is therefore strict:
+
+1. **Compile backward first.** Before using a new object, identify the exact Mother/Flag theorem, renderer formula, contraction map, or higher-jet chain rule that produces it.
+2. **Never promote a contraction to the state.** A scalar/tensor reader may prove an estimate; if it becomes blind, return to \(u/E/\Sigma\) rather than differentiating it into a new ontology.
+3. **Keep invertibility explicit.** Any moving frame, normalization, localization or quotient must retain its inverse, its gauge, or a proved reconstruction theorem.
+4. **Separate information from control.** Theory 2 supplies complete state information; regularity progress begins only when a step adds a genuine coercive estimate, compactness/rigidity theorem, or contradiction.
+5. **Treat a new name as suspicious until it reduces analytic freedom.** If an object is only another renderer of the same complete state, it is bookkeeping, not progress.
+
+A contributor should be able to draw an exact dependency arrow from every proposed mechanism back to the Theory-2 spine. If that arrow is missing, the proposal is not ready to enter the proof architecture.
+
 ## Files
 
 1. [`00_THEOREM_SPINE.md`](00_THEOREM_SPINE.md) — derivation from Mother/Flag Completeness to the moving-heat system and spectral-measure law.
