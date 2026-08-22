@@ -2003,6 +2003,516 @@ Strongest current conclusion của Mục III là:
 
 Đây vẫn chưa phải global regularity theorem, và chưa phải completed infinite-dimensional geometric-completeness theorem.  Nhưng Core 3 không còn chỉ là một bridge giữa hai representations: nó đã trở thành một explicit inverse geometry programme.
 
+### III.31. Campaign IV: câu hỏi mới không còn là “reconstruct connection”
+
+Campaign III dùng polarized differential data để hỏi
+
+\[
+(g,C,E,K)\rightsquigarrow\nabla?
+\]
+
+Campaign IV cố tình lấy ít data hơn.
+
+Fix một generic state \(u_*\) và chỉ giữ
+
+\[
+\boxed{
+C,
+\qquad
+E_{u_*}=[\nabla_{u_*},C].
+}
+\]
+
+Câu hỏi là:
+
+> một generic state mother có mang theo state-independent **syntax của interaction law** mà state đó thuộc vào hay không?
+
+Đây là inverse problem khác geometric completeness.  Nó hỏi về **presentation/category**, không hỏi toàn coefficients của connection.
+
+### III.32. Hai operator letters nổ thành full observable algebra
+
+Trong canonical 28D physical spectral lab,
+
+\[
+\dim\operatorname{Alg}(C)=6.
+\]
+
+Nhưng với một generic mother,
+
+\[
+\boxed{
+\dim\operatorname{Alg}(C,E_u)=784=28^2.
+}
+\]
+
+Noncommutative word span tăng theo
+
+\[
+\boxed{
+1,3,7,15,31,63,125,246,483,784.
+}
+\]
+
+Hai generators không thể span \(784\) directions trước depth \(9\), vì
+
+\[
+2^9-1=511<784<1023=2^{10}-1.
+\]
+
+Observed saturation xảy ra đúng tại
+
+\[
+\boxed{L=9},
+\]
+
+là information-theoretic minimum depth.
+
+Independent SVD trên toàn \(1023\) words xác nhận rank \(784/784\) trên nhiều generic states.
+
+Đồng thời common commutant collapse
+
+\[
+\boxed{
+152\to1.
+}
+\]
+
+Tức một generic mother phá toàn nontrivial linear symmetry commuting with curl trong tested 28D representation.
+
+### III.33. Falsification: graph connected chưa đủ
+
+Một explanation quá đơn giản là:
+
+\[
+\text{connected curl-sheet graph}
+\Rightarrow
+\text{full operator algebra}.
+\]
+
+Sai.
+
+Với curl multiplicities
+
+\[
+(2,6,6,6,6,2),
+\]
+
+all \(1296\) connected labeled trees vẫn giữ nontrivial commutant.
+
+Complete graph với rank-one block maps vẫn còn commutant dimension
+
+\[
+45.
+\]
+
+Generic rich block maps mới nhanh chóng collapse về scalar identity.
+
+Vì vậy theorem target đúng hơn là
+
+\[
+\boxed{
+\text{spectral connectivity}
++
+\text{inter-sheet channel richness}
+\Rightarrow
+\text{irreducibility}.
+}
+\]
+
+### III.34. First relations: curl law và derivative của curl law
+
+Base window có signed roots
+
+\[
+\{\pm1,\pm\sqrt2,\pm\sqrt3\}.
+\]
+
+Do đó exact finite spectral relation là
+
+\[
+\boxed{
+p(C)=0,
+\qquad
+p(x)=(x^2-1)(x^2-2)(x^2-3).
+}
+\]
+
+Hay
+
+\[
+C^6-6C^4+11C^2-6I=0.
+\]
+
+Vì
+
+\[
+E=[A,C],
+\]
+
+commute relation trên với \(A\) cho
+
+\[
+\boxed{Dp_C(E)=0.}
+\]
+
+At word degree \(6\), có \(127\) formal words nhưng rank \(125\).  Numerical nullspace đúng 2D, và two theoretical relations \(p(C),Dp_C(E)\) span toàn nullspace với principal cosines
+
+\[
+\boxed{1,1}.
+\]
+
+### III.35. Relation thứ ba là physical interaction law
+
+At degree \(7\), ngoài spectral ideal xuất hiện đúng một state-independent relation mới.
+
+Blind extraction và root-incidence analysis cho closed form
+
+\[
+\boxed{
+Q(C,E)
+=(C^2-I)(C^2E+EC^2-5E)(C^2-I)=0.
+}
+\]
+
+Nó encode base-window interaction selection:
+
+\[
+-\sqrt3\leftrightarrow+\sqrt3,
+\qquad
+-\sqrt2\leftrightarrow+\sqrt2
+\]
+
+là forbidden, còn \(-1\leftrightarrow+1\) vẫn allowed.
+
+Pure root/multiplicity calculation không suy ra relation này.  Same-spectrum generic off-block control cũng không có nó.
+
+Vì vậy
+
+\[
+\boxed{
+Q\text{ records physical interaction incidence, not spectrum alone.}
+}
+\]
+
+### III.36. Ba laws sinh toàn pre-saturation presentation
+
+Ba state-independent laws
+
+\[
+\boxed{
+p(C)=0,\qquad Dp_C(E)=0,\qquad Q(C,E)=0}
+\]
+
+không chỉ giải thích vài identity riêng lẻ.
+
+Across four generic physical states, two-sided ideal của chúng match **toàn numerical relation space**:
+
+\[
+\begin{array}{c|c|c}
+\text{degree}&\text{numerical nullity}&\text{three-law ideal rank}\\
+\hline
+6&2&2\\
+7&9&9\\
+8&28&28
+\end{array}
+\]
+
+Không còn hidden relation trước degree \(9\).
+
+At degree \(9\), word algebra hit finite ceiling
+
+\[
+\dim M_{28}=784,
+\]
+
+nên finite-representation capacity bắt đầu sinh nhiều relations mới.
+
+Do đó finite-window evidence support một presentation dạng
+
+\[
+\boxed{
+\mathcal A_{\rm window}
+\approx
+\langle C,E\mid p(C),Dp_C(E),Q(C,E)\rangle
+}
+\]
+
+trước saturation.
+
+### III.37. One-snapshot law archaeology và rival-theory identification
+
+Cho algorithm chỉ
+
+\[
+C,E_{u_*}
+\]
+
+của một generic state.
+
+Không cho full mother one-form, connection, bracket, Fourier graph hay forbidden-edge list.
+
+Relation learned từ một state transfer sang \(200\) unseen physical mother states ở machine precision.
+
+Toàn degree-8 relation subspace learned từ one state transfer sang \(80\) unseen physical states với minimum principal cosine
+
+\[
+\boxed{0.9999999999999991}.
+\]
+
+Sau quotient common spectral relations, physical-specific subspace reject same-spectrum generic off-block law với separation
+
+\[
+\boxed{5.98\times10^8}.
+\]
+
+Relation-only classifier còn distinguish đúng:
+
+- all three same-spectrum same-forbidden-count physical rivals;
+- an independent eight-law same-spectrum stress family.
+
+Tức snapshot fingerprint có thể identify **which interaction law**, không chỉ number of missing channels.
+
+### III.38. Exact-helical law holography
+
+Các effects trên không chỉ sống trong projected finite bracket.
+
+Exact complex helical mother restricted to base window satisfies
+
+\[
+p(C)=0,
+\qquad
+Dp_C(E)=0,
+\qquad
+Q(C,E)=0
+\]
+
+với normalized residuals khoảng
+
+\[
+10^{-19}\text{--}10^{-21}.
+\]
+
+Ở exact \(|k|^2\le6\) window:
+
+\[
+160\text{ helical nodes},
+\qquad
+12\text{ signed curl roots},
+\]
+
+whole support category dùng \(13\) independent support representatives.
+
+Nhưng generic state chỉ support trên
+
+\[
+\boxed{
+(0,0,1),
+\quad
+(0,1,-1),
+\quad
+(1,-1,-1)
+}
+\]
+
+đã recover complete root-level interaction category và degree-16 physical quotient relation.
+
+Relation cosine bằng essentially \(1\), và all \(12\) forbidden root channels được recover với minimum separation \(1.53\times10^9\).
+
+### III.39. Scale tăng, law phức tạp hơn nhưng three-direction illumination vẫn sống
+
+Cùng fixed three support directions được tested trên exact helical windows:
+
+\[
+52,64,112,160,184,244,292,356,500,512
+\]
+
+nodes.
+
+At largest tested window:
+
+\[
+28\text{ signed curl roots},
+\qquad
+432\text{ active channels},
+\qquad
+324\text{ forbidden channels}.
+\]
+
+Vẫn có
+
+\[
+\boxed{
+\text{missing}=0,
+\qquad
+\text{extra}=0.
+}
+\]
+
+trong root-level category recovered by the same three-direction generic state.
+
+Presentation degree tăng với scale, nên law không trivialize.  Nhưng tested support complexity để illuminate law vẫn bounded by three.
+
+Đây là current **law-holography** phenomenon.
+
+### III.40. Projective consistency của spectral windows
+
+Interaction categories được compare dưới refinements
+
+\[
+3\to4\to5\to6\to8\to9\to10\to12\to14\to16.
+\]
+
+Ở every step, restrict larger-window law xuống old signed curl roots cho
+
+\[
+\boxed{
+\text{old edges added}=0,
+\qquad
+\text{old edges lost}=0.
+}
+\]
+
+Chỉ new roots mang new channels/relations vào.
+
+Điều này chưa prove continuum inverse limit, nhưng nó là evidence đầu tiên rằng finite-window presentations có thể organize thành một coherent projective family.
+
+### III.41. Falsification quyết định: one snapshot không reconstruct full polarized geometry
+
+Version quá mạnh
+
+\[
+(C,E_u)
+\Longrightarrow
+\text{full formation geometry}
+\]
+
+bị giết trực tiếp.
+
+Hai distinct metric-compatible connection one-forms được construct sao cho training
+
+\[
+(C,E_{u_*},\nabla_{u_*})
+\]
+
+match tới machine precision và share same tested presentation category.
+
+Nhưng unseen directions có
+
+\[
+\text{mother median difference}=17.2\%,
+\qquad
+\text{max}=53.7\%,
+\]
+
+và
+
+\[
+\text{connection median difference}=22.4\%,
+\qquad
+\text{max}=75.7\%.
+\]
+
+Vậy canonical boundary là
+
+\[
+\boxed{
+\text{snapshot}\rightsquigarrow\text{syntax/category},
+\qquad
+\text{not full polarized coefficients}.
+}
+\]
+
+### III.42. Curvature là geometry calibration beyond snapshot
+
+Snapshot collision được refine thành continuous one-parameter family \(\nabla^{(\delta)}\) có same training snapshot.
+
+Một generic scalar curvature polarization
+
+\[
+\langle z,K^{(\delta)}(u_*,v)w\rangle
+\]
+
+recover hidden parameter trong
+
+\[
+\boxed{80/80}
+\]
+
+trials.
+
+Median error
+
+\[
+9.1\times10^{-15},
+\]
+
+worst error
+
+\[
+4.1\times10^{-13},
+\]
+
+noise slope
+
+\[
+\boxed{0.995}.
+\]
+
+Đây nối Campaign IV trở lại Campaign III cực sạch:
+
+\[
+\boxed{
+\text{mother snapshot}\Rightarrow\text{law syntax},
+\qquad
+\text{curvature polarization}\Rightarrow\text{geometry calibration}.
+}
+\]
+
+### III.43. Core-3 hierarchy sau Campaign IV
+
+Core 3 hiện có bốn levels:
+
+\[
+\boxed{
+\text{state completeness}
+\to
+\text{differential spectral geometry}
+\to
+\text{formation-geometry observability}
+\to
+\text{presentation bootstrap}.
+}
+\]
+
+Strongest candidate wording cho level mới là
+
+\[
+\boxed{
+\textbf{Curl--Mother Presentation Bootstrap}.
+}
+\]
+
+Nhưng câu “one snapshot knows the whole theory” là false.
+
+Câu sống sót mạnh hơn về cấu trúc là:
+
+> một generic mother snapshot có thể mang state-independent syntax của physical interaction category, trong khi polarized \(E,K\) determine geometric realization cụ thể của syntax đó.
+
+### III.44. Reproduction map cho Campaign IV
+
+Complete presentation-bootstrap suite:
+
+```bash
+python core/curved_formation_signature/run_presentation_bootstrap_audits.py
+```
+
+Runner này execute \(39\) tribunals canonicalized dưới
+
+```text
+research/theory2_universal_compiler/audits/
+```
+
+bao gồm full-algebra generation, SVD robustness, relation extraction, three-law presentation closure, same-spectrum rival theories, exact-helical law holography, projective window consistency, noise breakdown, nonorthogonal covariance, snapshot impossibility và one-curvature-scalar calibration.
 
 ## IV. Cấu trúc corpus trên main
 
@@ -2030,6 +2540,8 @@ core/
 └── curved_formation_signature/
     ├── README.md
     ├── GEOMETRIC_COMPLETENESS.md
+    ├── PRESENTATION_BOOTSTRAP.md
+    ├── run_presentation_bootstrap_audits.py
     ├── CURL_SPECTRAL_REDUCTION.md
     ├── FORMATION_SIGNATURE_EQUIVALENCE.md
     ├── CURVED_CURL_MODULE.md
@@ -2039,14 +2551,19 @@ core/
     ├── THEOREM_STATUS_AND_SCOPE.md
     ├── HISTORY_AND_FALSIFICATION.md
     └── audits/
+research/
+└── theory2_universal_compiler/
+    ├── THEORY2_SELF_DESCRIBING_ALGEBRA_LAB.md
+    └── audits/
 ```
 
 Vai trò từng core:
 
 1. `metric_lie_hodge/`: **formation core** — metric, Lie tensor, signed curl/Hodge data và formation operator.
 2. `spectral_signature/`: **state completeness core** — mother/shifted flag, reverse compiler và quantitative state reconstruction.
-3. `curved_formation_signature/`: **differential observability core** — transport giữa hai parent cores, curl-spectral reduction, curvature/holonomy, Codazzi reconstruction candidate, singular spectral strata và higher/nonlinear completion.
-4. `NEO/`: methodology/workbench — giữ riêng khỏi theorem subject.
+3. `curved_formation_signature/`: **differential observability + presentation core** — transport giữa hai parent cores, curl-spectral reduction, curvature/holonomy, Codazzi reconstruction candidate, singular spectral strata, higher/nonlinear completion và Campaign-IV generator--relations bootstrap.
+4. `research/theory2_universal_compiler/`: executable Campaign-IV tribunal corpus referenced canonically by Core 3.
+5. `NEO/`: methodology/workbench — giữ riêng khỏi theorem subject.
 
 Discovery worktrees, failed mechanisms và proof programmes cũ không được copy wholesale vào `core/`; Git history và `history/` giữ archaeology.  Canonical core chỉ giữ theory, scope corrections và executable tribunals cần để reproduce current claims.
 
@@ -2098,6 +2615,14 @@ python core/curved_formation_signature/audits/ek_heldout_spectral_prediction.py
 python core/curved_formation_signature/audits/ek_minimal_viscosity_calibration.py
 ```
 
+### V.5. Core 3 — presentation-bootstrap campaign
+
+```bash
+python core/curved_formation_signature/run_presentation_bootstrap_audits.py
+```
+
+Runner này execute toàn \(39\) Campaign-IV audits trong `research/theory2_universal_compiler/audits/`.
+
 Negative controls are part of the suite, not failures to be removed.  In particular:
 
 - scalar curl must remain fully dark;
@@ -2105,11 +2630,15 @@ Negative controls are part of the suite, not failures to be removed.  In particu
 - Bianchi/Jacobi must **not** be reported as universal uniqueness mechanisms;
 - the five-dimensional linearized hardest-case kernel must remain quadratically visible rather than being mislabeled as exact gauge;
 - Euclideanizing a non-orthogonal signature chart must fail;
-- \(E\)-only held-out curvature prediction must fail by order one.
+- \(E\)-only held-out curvature prediction must fail by order one;
+- one snapshot must **not** determine the full polarized mother/connection one-form;
+- the base-window selection polynomial must fail on larger windows;
+- connected low-rank block graphs must retain nontrivial symmetry;
+- high enough noise must eventually break law classification rather than being hidden.
 
 ## VI. Trạng thái claim
 
-Repository hiện có hai theorem-level parent achievements và một stronger synthesis/candidate layer.
+Repository hiện có hai theorem-level parent achievements và một stronger synthesis layer với hai distinct candidate inverse levels: formation-geometry observability và presentation bootstrap.
 
 ### VI.1. Theorem-level state statement
 
@@ -2191,7 +2720,51 @@ trên full infinite-dimensional NS Sobolev/Fréchet category.
 
 Open pieces include continuum Codazzi injectivity/Fredholm theory, shell multiplicity strata, nonlinear singular observability, true stabilizer/holonomy centralizer, operator domains, topology and boundary Hodge typing.
 
-### VI.4. Viscosity and regularity nonclaims
+### VI.4. Campaign-IV presentation statement
+
+Finite/exact-helical tribunals support một level inverse khác:
+
+\[
+\boxed{
+(C,E_{u_*})
+\rightsquigarrow
+\text{operator syntax / relation ideal / interaction category}.
+}
+\]
+
+Base-window evidence cho two-generator algebra saturation
+
+\[
+\operatorname{Alg}(C,E_u)=M_{28}
+\]
+
+trong generic tested states, và three-law pre-saturation presentation
+
+\[
+\langle C,E\mid p(C),Dp_C(E),Q(C,E)\rangle.
+\]
+
+Exact-helical multi-window tribunals support sparse law holography và projective consistency của root-level interaction categories.
+
+Nhưng repository cũng có exact experimental counterexample to
+
+\[
+(C,E_u)\Rightarrow\text{full polarized geometry}.
+\]
+
+Do đó canonical split là
+
+\[
+\boxed{
+\text{snapshot}\Rightarrow\text{syntax/category},
+\qquad
+\text{polarized }E,K\Rightarrow\text{geometry coefficients}.
+}
+\]
+
+No continuum presentation theorem or inverse-limit theorem is claimed.
+
+### VI.5. Viscosity and regularity nonclaims
 
 Reversible differential geometry does not determine \(\nu\); one extra scalar dynamical calibration is required when viscosity is not already given.
 
@@ -2201,6 +2774,6 @@ Strongest current sentence is therefore:
 
 \[
 \boxed{
-\textbf{Theory 2 is state-complete and its full differential signature is a strongly supported, stratified curl-spectral observability geometry for the NS formation core.}
+\textbf{Theory 2 is state-complete; its polarized differential signature is a strongly supported stratified observability geometry, while a generic mother snapshot is experimentally supported as a finite spectral presentation bootstrap for the physical interaction category.}
 }
 \]

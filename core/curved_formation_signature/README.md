@@ -25,9 +25,9 @@ The last arrow is the newest result.  It is **not yet an infinite-dimensional th
 
 ---
 
-## 1. Three levels of completeness
+## 1. Four levels of completeness
 
-Core 3 now distinguishes three logically different claims.
+Core 3 now distinguishes four logically different claims.
 
 ### Level A — state completeness
 
@@ -122,6 +122,42 @@ T,R,\mathcal J.
 This is the current geometric-completeness mechanism.
 
 Read [GEOMETRIC_COMPLETENESS.md](GEOMETRIC_COMPLETENESS.md) for the complete statement, tribunals, failures and theorem target.
+
+### Level D — presentation bootstrap
+
+Campaign IV asks a different inverse question.  Fix one generic state and form
+
+\[
+\boxed{
+C,\qquad E_{u_*}=[\nabla_{u_*},C].
+}
+\]
+
+In the tested finite physical spectral categories, these two operator letters can generate the full ambient observable algebra, while their noncommutative relations recover state-independent spectral and interaction-incidence laws.
+
+The strongest current hierarchy is therefore
+
+\[
+\boxed{
+(C,E_{u_*})
+\rightsquigarrow
+\text{operator syntax / relation ideal / interaction category},
+}
+\]
+
+but not the full polarized connection.  Campaign IV explicitly constructs distinct metric-compatible connection one-forms with the same training snapshot and the same presentation category but order-one differences on unseen directions.
+
+Thus
+
+\[
+\boxed{
+\text{snapshot}\Rightarrow\text{syntax},\qquad
+\text{polarized }E,K\Rightarrow\text{geometry},\qquad
+\nu\Rightarrow\text{dissipation}.
+}
+\]
+
+Read [PRESENTATION_BOOTSTRAP.md](PRESENTATION_BOOTSTRAP.md) for the generator--relations campaign, exact-helical law holography, rival-theory identification, projective window consistency and the snapshot-impossibility controls.
 
 ---
 
@@ -441,15 +477,16 @@ This is why the transported metric is structural rather than cosmetic.
 
 ## 10. Read Core 3 in this order
 
-1. [GEOMETRIC_COMPLETENESS.md](GEOMETRIC_COMPLETENESS.md) — newest central result: state completeness versus geometric completeness, Codazzi inverse map, adversarial phase diagram, higher-degree completion, nonlinear singular observability, metric covariance and viscosity calibration.
-2. [CURL_SPECTRAL_REDUCTION.md](CURL_SPECTRAL_REDUCTION.md) — curl sheets, orbit/stabilizer geometry, \(\nabla=V+B\), Gauss–Codazzi–Ricci split and Bianchi tower.
-3. [FORMATION_SIGNATURE_EQUIVALENCE.md](FORMATION_SIGNATURE_EQUIVALENCE.md) — state-level forward/reverse bridge on a fixed physical formation core.
-4. [SIGNATURE_METRIC_DYNAMICS.md](SIGNATURE_METRIC_DYNAMICS.md) — exact transported kinetic/Dirichlet metrics and heat as their Riesz ratio.
-5. [CURVED_CURL_MODULE.md](CURVED_CURL_MODULE.md) — curvature-corrected mother bracket, holonomy and shifted-cut curvature tomography.
-6. [PHYSICAL_RIGIDITY_AND_IDENTIFIABILITY.md](PHYSICAL_RIGIDITY_AND_IDENTIFIABILITY.md) — abstract dark sectors, physical locality, Galerkin warnings, topology and domain typing.
-7. [DEEP_GEOMETRY_LESSONS.md](DEEP_GEOMETRY_LESSONS.md) — durable lessons and failed interpretations.
-8. [THEOREM_STATUS_AND_SCOPE.md](THEOREM_STATUS_AND_SCOPE.md) — exact identities, inherited theorems, executable evidence, candidate statements and explicit nonclaims.
-9. [HISTORY_AND_FALSIFICATION.md](HISTORY_AND_FALSIFICATION.md) — chronological record of how the theory changed when experiments contradicted attractive but false formulations.
+1. [PRESENTATION_BOOTSTRAP.md](PRESENTATION_BOOTSTRAP.md) — newest Campaign-IV result: two-letter operator generation, state-independent relation ideals, rival-law identification, exact-helical sparse law holography, projective spectral windows and the syntax-versus-geometry boundary.
+2. [GEOMETRIC_COMPLETENESS.md](GEOMETRIC_COMPLETENESS.md) — Campaign III: state completeness versus geometric completeness, Codazzi inverse map, adversarial phase diagram, higher-degree completion, nonlinear singular observability, metric covariance and viscosity calibration.
+3. [CURL_SPECTRAL_REDUCTION.md](CURL_SPECTRAL_REDUCTION.md) — curl sheets, orbit/stabilizer geometry, \(\nabla=V+B\), Gauss–Codazzi–Ricci split and Bianchi tower.
+4. [FORMATION_SIGNATURE_EQUIVALENCE.md](FORMATION_SIGNATURE_EQUIVALENCE.md) — state-level forward/reverse bridge on a fixed physical formation core.
+5. [SIGNATURE_METRIC_DYNAMICS.md](SIGNATURE_METRIC_DYNAMICS.md) — exact transported kinetic/Dirichlet metrics and heat as their Riesz ratio.
+6. [CURVED_CURL_MODULE.md](CURVED_CURL_MODULE.md) — curvature-corrected mother bracket, holonomy and shifted-cut curvature tomography.
+7. [PHYSICAL_RIGIDITY_AND_IDENTIFIABILITY.md](PHYSICAL_RIGIDITY_AND_IDENTIFIABILITY.md) — abstract dark sectors, physical locality, Galerkin warnings, topology and domain typing.
+8. [DEEP_GEOMETRY_LESSONS.md](DEEP_GEOMETRY_LESSONS.md) — durable lessons and failed interpretations.
+9. [THEOREM_STATUS_AND_SCOPE.md](THEOREM_STATUS_AND_SCOPE.md) — exact identities, inherited theorems, executable evidence, candidate statements and explicit nonclaims.
+10. [HISTORY_AND_FALSIFICATION.md](HISTORY_AND_FALSIFICATION.md) — chronological record of how the theory changed when experiments contradicted attractive but false formulations.
 
 ---
 
@@ -504,7 +541,15 @@ python core/curved_formation_signature/audits/ek_heldout_spectral_prediction.py
 python core/curved_formation_signature/audits/ek_minimal_viscosity_calibration.py
 ```
 
-The suite deliberately includes negative controls and singular cases.  Passing the suite does not mean every test is a full-rank positive reconstruction; it means the code reproduces both the positive mechanism and the failures that delimit its scope.
+Run the presentation-bootstrap campaign:
+
+```bash
+python core/curved_formation_signature/run_presentation_bootstrap_audits.py
+```
+
+This executes the 39 Campaign-IV tribunals stored under `research/theory2_universal_compiler/audits/`.
+
+The suite deliberately includes negative controls and singular cases.  Passing the suite does not mean every test is a positive universality claim; it means the code reproduces both the positive mechanisms and the failures that delimit their scope.
 
 ---
 
@@ -512,12 +557,25 @@ The suite deliberately includes negative controls and singular cases.  Passing t
 
 The strongest canonical interpretation is now:
 
-> **Core 3 is a curl-spectral differential observability geometry for the canonical physical Navier--Stokes formation core.**  The mother is complete for state on the smooth periodic class.  The full differential signature carries a spectral reduction of the connection.  In broad exact finite tests and direct physical helical interactions, curvature recovers connection information hidden from degree one.  At generic tested spectral points, \((g,C,E,K)\) reconstructs the formation connection and its reversible descendants.  High spectral degeneracy creates singular strata where higher degrees and nonlinear information matter.
+> **Core 3 is a curl-spectral differential observability and presentation geometry for the canonical physical Navier--Stokes formation core.**  The mother is theorem-level complete for state on the smooth periodic class.  In finite and exact-helical spectral categories, a generic snapshot \((C,E_u)\) can generate an irreducible operator language and reveal state-independent interaction relations.  The polarized differential data \(E(\cdot),K(\cdot,\cdot)\) remain necessary to determine the actual formation-geometry coefficients.  Generic tested spectral strata reconstruct geometry at degree two; singular strata can require higher and nonlinear information.
+
+A compact architecture is
+
+\[
+\boxed{
+\text{snapshot}\Rightarrow\text{syntax},\qquad
+\text{polarized geometry}\Rightarrow\text{connection},\qquad
+\nu\Rightarrow\text{dissipation}.
+}
+\]
 
 This does **not** claim:
 
-- a completed infinite-dimensional geometric-completeness theorem;
-- that one state snapshot reconstructs the entire background geometry;
+- a completed infinite-dimensional formation-geometry theorem;
+- a completed continuum presentation-bootstrap theorem;
+- that one state snapshot reconstructs the entire polarized background geometry;
+- that the base-window polynomial selection law is universal at all spectral scales;
+- that graph connectivity alone forces full operator irreducibility;
 - that \(E+K\) is full rank at every spectral multiplicity;
 - that a Jacobian kernel is automatically gauge;
 - that nonzero \(E\), \(K\) or curvature is a blow-up indicator;

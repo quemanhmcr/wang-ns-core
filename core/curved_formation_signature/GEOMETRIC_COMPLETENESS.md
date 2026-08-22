@@ -900,3 +900,35 @@ with:
 8. viscosity treated separately as the scalar dissipative calibration.
 
 Until those points are proved, **formation-geometry completeness remains a theorem candidate with unusually strong adversarial evidence**, not a completed continuum theorem.
+
+---
+
+## 19. Campaign-IV handoff: geometry completeness is not the final inverse level
+
+Campaign III answers a polarized inverse problem:
+
+\[
+(g,C,E,K)\rightsquigarrow\nabla.
+\]
+
+Campaign IV asks a different question with less data:
+
+\[
+(C,E_{u_*})\rightsquigarrow ?
+\]
+
+The new experiments show that, in the tested finite and exact-helical spectral categories, one generic mother snapshot can generate a large operator language and carry state-independent relation fingerprints of the interaction category.
+
+This does **not** replace the geometric-completeness problem.  An explicit collision tribunal constructs distinct metric-compatible connection one-forms with the same training snapshot and the same tested presentation category but different polarized geometry on unseen directions.
+
+Thus the current Core-3 hierarchy is
+
+\[
+\boxed{
+\text{snapshot}\Rightarrow\text{presentation syntax/category},
+\qquad
+\text{polarized }E,K\Rightarrow\text{geometry coefficients}.
+}
+\]
+
+Read [PRESENTATION_BOOTSTRAP.md](PRESENTATION_BOOTSTRAP.md) for the Campaign-IV generator--relations programme, exact-helical law holography, rival-theory identification and projective spectral-window evidence.

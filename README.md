@@ -74,153 +74,174 @@ Nếu \(\mathcal L_{\nu,u}\) là Riesz operator của form này thì
 
 Claim của core này là structural formation: projected Euler/geodesic/Lie–Poisson part và Stokes/Dirichlet part được sinh từ cùng oriented metric-Lie/Hodge datum.  Nó không thay thế spectral-signature completeness theorem và không phải regularity theorem.
 
-## Core 3 — Curl-Spectral Differential Observability
+## Core 3 — Curl-Spectral Differential Observability and Presentation Bootstrap
 
-Core thứ ba tại [core/curved_formation_signature/README.md](core/curved_formation_signature/README.md) đã trưởng thành thêm một cấp.
-
-Ban đầu Core 3 chỉ trả lời:
-
-> formation core sinh ra phương trình, còn spectral signature có thật sự mang cùng state/dynamics geometry hay chỉ là một bộ tọa độ hoàn chỉnh?
-
-Câu trả lời đầu tiên là state-level equivalence trên fixed physical core.  Campaign tiếp theo nhìn ra curl spectral sheets và curvature split.  Campaign mới nhất hỏi câu mạnh hơn:
+Core thứ ba tại [core/curved_formation_signature/README.md](core/curved_formation_signature/README.md) hiện có bốn tầng rõ ràng.
 
 \[
 \boxed{
-(g_\Sigma,C,E,K)
-\stackrel{?}{\Longrightarrow}
-\nabla
-\stackrel{?}{\Longrightarrow}
-T,R,\mathcal J.
+\text{state completeness}
+\to
+\text{differential spectral geometry}
+\to
+\text{formation-geometry observability}
+\to
+\text{presentation bootstrap}.
 }
 \]
 
-Core 3 hiện phân biệt ba cấp completeness:
+Ba tầng đầu giữ nguyên architecture của Campaign III.  Trong curl spectral frame,
 
 \[
-\boxed{
-\textbf{state completeness}
-}
-\]
-
-\[
-E_u=[\nabla_u,C]\Longleftrightarrow u
-\]
-
-trên smooth mean-zero periodic physical core, modulo Killing/Galilean symmetry;
-
-\[
-\boxed{
-\textbf{differential spectral geometry}
-}
-\]
-
-\[
-C
-\xrightarrow{d_\nabla}
-E
-\xrightarrow{d_\nabla}
-K=[R,C]
-\xrightarrow{d_\nabla}
-R\wedge E
-\to\cdots;
-\]
-
-và candidate mới:
-
-\[
-\boxed{
-\textbf{formation-geometry completeness}
-}
-\]
-
-ở generic spectral strata.
-
-Trong curl spectral frame,
-
-\[
-\boxed{
 \nabla=V+B,
 \qquad
 [V,C]=0,
 \qquad
-E=[B,C].
-}
+E=[B,C],
 \]
 
-Do đó degree one reconstruct cross-sheet connection \(B\).  Phần còn thiếu \(V\) quay bên trong cùng curl eigensheets.
+và curvature mother cho Codazzi measurement
 
-Newest exact finite metric-Lie mechanism là
+\[
+K=K_B+\mathcal A_{C,E}(V).
+\]
+
+Ở generic tested finite strata, polarized data \((g,C,E,K)\) reconstruct formation connection; high-degeneracy strata giữ nguyên các singular/higher-order caveats đã canonical hóa.
+
+Campaign IV hỏi một câu khác: **một generic state snapshot tự nó biết gì về law-space mà nó thuộc vào?**
+
+Fix một generic state \(u_*\) và chỉ lấy hai operator letters
+
+\[
+\boxed{C,\qquad E_{u_*}=[\nabla_{u_*},C].}
+\]
+
+Trong canonical 28D physical spectral lab,
+
+\[
+\dim\operatorname{Alg}(C)=6,
+\qquad
+\boxed{\dim\operatorname{Alg}(C,E_{u_*})=784=28^2}.
+\]
+
+Word-span growth là
+
+\[
+\boxed{1,3,7,15,31,63,125,246,483,784},
+\]
+
+và full matrix-algebra saturation xảy ra đúng ở depth \(9\), là information-theoretic lower bound cho hai generators.
+
+Nhưng phần mới quan trọng hơn full algebra là **relations**.  Trong base spectral window, ba state-independent laws
 
 \[
 \boxed{
-K=K_B+\mathcal A_{C,E}(V),
+p(C)=0,
+\qquad
+Dp_C(E)=0,
+\qquad
+Q(C,E)=0
 }
 \]
 
-với \(\mathcal A_{C,E}\) là một **Codazzi observability map** tuyến tính theo hidden within-sheet connection trong typed left-invariant torsion-free model.  Nếu map này injective modulo true stabilizer, thì
+với
+
+\[
+p(x)=(x^2-1)(x^2-2)(x^2-3),
+\]
+
+và
+
+\[
+Q(C,E)
+=(C^2-I)(C^2E+EC^2-5E)(C^2-I)
+\]
+
+sinh **toàn bộ numerical word-relation space** tới degree \(8\):
+
+\[
+2=2,
+\qquad
+9=9,
+\qquad
+28=28.
+\]
+
+Relation space học từ một generic mother transfer sang 80 unseen physical states với minimum principal cosine
+
+\[
+\boxed{0.9999999999999991}.
+\]
+
+Same-spectrum rival-law controls không share physical quotient relation.  Relation-only classifier phân biệt đúng cả ba physical same-count rivals và một eight-law stress family.
+
+Điều này cũng sống trong exact helical action, không chỉ projected finite bracket.  Một generic state chỉ support trên ba Fourier directions
+
+\[
+(0,0,1),
+\qquad
+(0,1,-1),
+\qquad
+(1,-1,-1)
+\]
+
+recover toàn root-level interaction category trong mười exact helical windows từ \(52\) tới \(512\) nodes.  Ở window lớn nhất, cùng ba directions reveal
+
+\[
+432\text{ active channels}
+\quad\text{và}\quad
+324\text{ forbidden channels}.
+\]
+
+Các finite-window interaction laws còn projectively consistent khi scale tăng: restriction về old curl roots không thêm hay mất một old transition nào trong các refinement tests.
+
+Nhưng Campaign IV cũng falsify câu quá mạnh:
+
+\[
+(C,E_u)
+\not\Longrightarrow
+\text{full polarized formation geometry}.
+\]
+
+Hai metric-compatible connection one-forms khác nhau có thể share cùng training
+
+\[
+(C,E_{u_*},\nabla_{u_*})
+\]
+
+tới machine precision và cùng presentation category, nhưng khác mạnh trên unseen directions.
+
+Một generic scalar curvature polarization lại recover được hidden geometry parameter trong 80/80 trials, với noise slope \(0.995\).
+
+Vì vậy architecture canonical mới là
 
 \[
 \boxed{
-(g,C,E,K)
-\Longrightarrow
-\nabla
-\Longrightarrow
-T,R,\mathcal J.
+\text{snapshot}\Rightarrow\text{syntax / interaction category},
 }
 \]
-
-Exact Lie tribunals cho full-rank reconstruction ở 16/16 generic cases, worst connection error \(3.97\times10^{-15}\), và independent 80-step trajectories match tới \(5.02\times10^{-16}\).
-
-Quan trọng hơn, full physical helical tribunal cố tình chọn một same-signed-curl Fourier transition mà mother \(E\) **mù tuyệt đối**.  Cross-sheet curvature loop \(K\) recover hidden connection coefficient đó trên 80 resonant triads với median error
-
-\[
-\boxed{9.56\times10^{-16}}
-\]
-
-và noise slope \(1.0004\).
-
-Nhưng campaign cũng falsify phiên bản quá mạnh.  Phase diagram 9 Lie families × 9 curl multiplicity patterns × 6 random metrics cho 68/72 non-scalar family/pattern combinations full rank ở mọi tested seed; persistent failures tập trung ở high-degeneracy pattern
-
-\[
-\boxed{5+1}.
-\]
-
-Ở hardest case, higher tower giảm linearized nullity
-
-\[
-\boxed{11\to9\to6},
-\]
-
-và maximal tower + Jacobi/Bianchi vẫn còn 5 first-order blind directions.  Nonlinear test cho chính 5 directions đó lại thấy
 
 \[
 \boxed{
-\text{sensor residual}\sim t^2
+\text{polarized }E,K\Rightarrow\text{formation geometry},
 }
 \]
-
-với fitted slopes \(2.0000000000\).  Tức Jacobian singular không đồng nghĩa finite non-uniqueness.
-
-Do đó strongest current wording không phải “\(E+K\) always complete”, mà là:
 
 \[
 \boxed{
-\textbf{Core 3 is a curl-spectral differential observability geometry for the formation core.}
+\nu\Rightarrow\text{dissipative calibration}.
 }
 \]
 
-Generic tested spectral strata reconstruct formation geometry ở degree two; highly symmetric strata có thể cần higher/nonlinear data.
-
-Viscosity \(\nu\) không nằm trong reversible geometry này.  Sau khi geometry được reconstruct, một generic time tangent đủ calibrate \(\nu\) trong finite tribunal.  Architecture hiện tại là
+Strongest current candidate name cho Campaign IV là
 
 \[
 \boxed{
-\text{differential spectral geometry}+\nu
-=\text{full formation law}.
+\textbf{Curl--Mother Presentation Bootstrap}.
 }
 \]
 
-Đọc [GEOMETRIC_COMPLETENESS.md](core/curved_formation_signature/GEOMETRIC_COMPLETENESS.md) cho campaign mới nhất, [CURL_SPECTRAL_REDUCTION.md](core/curved_formation_signature/CURL_SPECTRAL_REDUCTION.md) cho spectral-sheet geometry, và [HISTORY_AND_FALSIFICATION.md](core/curved_formation_signature/HISTORY_AND_FALSIFICATION.md) cho toàn bộ các formulation đã bị experiments giết.
+Đọc [PRESENTATION_BOOTSTRAP.md](core/curved_formation_signature/PRESENTATION_BOOTSTRAP.md) cho campaign mới nhất, [GEOMETRIC_COMPLETENESS.md](core/curved_formation_signature/GEOMETRIC_COMPLETENESS.md) cho Campaign III, và [HISTORY_AND_FALSIFICATION.md](core/curved_formation_signature/HISTORY_AND_FALSIFICATION.md) cho toàn bộ các formulation đã bị experiments giết.
 
 ## Kết quả structural chính
 
