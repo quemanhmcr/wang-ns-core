@@ -48,7 +48,7 @@ Một note mới tại [core/spectral_signature/HALF_DERIVATIVE_POLAR_KORN_BRIDG
 - reciprocal Lemma A có exact rational certificate cho \(Q\chi_{\rm geom}^2/|p-p'|\ge\sqrt6/8\);
 - reciprocal Lemma B cho finite multiplicity \(\le2\) trên mỗi canonical companion role;
 - equal-heat collision geometry để lại đúng heat invariant \(|k|^2\) bên cạnh amplitude/translation modes;
-- final target được sharpen thành một **hypocoercive Polar--Korn coupling** giữa A+B tangent geometry và \(-\nu C^2\) heat-normal direction.
+- final target được sharpen thành một **hypocoercive Polar--Korn coupling** giữa A+B reciprocal conductance/finite-incidence geometry và \(-\nu C^2\) heat-normal direction.
 
 Các update này **không** tuyên bố global 3D regularity.  Modified-energy/hypocoercive inequality cần để biến exact visibility square thành finite action vẫn là open theorem target.
 

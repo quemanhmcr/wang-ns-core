@@ -351,7 +351,7 @@ Equal-heat geometry sees only tangent motion along \(\kappa=\text{const}\) and t
 This gives the correct late-stage split:
 \[
 \boxed{
-\text{A+B / projective geometry: tangent coercivity on heat fibers},
+\text{A+B / projective geometry: tangent control ingredients on heat fibers},
 }
 \]
 \[
@@ -454,7 +454,7 @@ If such an estimate is proved, then
 \]
 contradicts the exact singular-endpoint visibility theorem.  That would close the historical \(Y\Rightarrow\bot\) implication.
 
-No such modified-energy inequality is proved in this PR.  The point of the reconstruction is that the target is now typed much more narrowly than "control Codazzi": the missing key is the cross term that converts already-known tangent and normal coercivities into a hypocoercive visibility estimate.
+No such modified-energy inequality is proved in this PR.  The point of the reconstruction is that the target is now typed much more narrowly than "control Codazzi": the missing key is the cross term that converts the certified local tangent controls and distinguished heat-normal calibration into a hypocoercive visibility estimate.
 
 ---
 

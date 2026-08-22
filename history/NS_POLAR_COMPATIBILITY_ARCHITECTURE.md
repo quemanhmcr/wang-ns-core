@@ -1903,7 +1903,7 @@ Then identically
 Theory 2 therefore splits the late obstruction into tangent and normal pieces: A+B supplies the hard equal-heat/projective geometry tangent to \(\kappa=\mathrm{const}\), while the distinguished viscous generator \(-\nu C^2\) supplies the normal heat calibration.  The fifth collision invariant is a signal that these two pieces must be coupled, not another free gauge.
 
 ## 99.3 The remaining key is a hypocoercive Polar--Korn coupling — OPEN
-The subsequent Codazzi/time-packing exploration was useful but was asking the wrong final question.  The complete mother already has exact Korn observability for any tangent vector, while Sections 96--99 now identify the static equal-heat coercive geometry and the heat-normal direction.  The remaining problem is to combine them without squaring the Codazzi coupling as an independent source norm.
+The subsequent Codazzi/time-packing exploration was useful but was asking the wrong final question.  The complete mother already has exact Korn observability for any tangent vector, while Sections 96--99 now identify the static equal-heat control geometry and the heat-normal direction.  The remaining problem is to combine them without squaring the Codazzi coupling as an independent source norm.
 
 The exact radial--Jordan--Codazzi acceleration identity is
 \[
@@ -1937,7 +1937,7 @@ The sharpened target is a modified energy \(\mathscr E_{\rm T2}\) with
 \]
 for a universal \(c>0\) on the correctly typed physical class.
 
-No such inequality is proved here.  The update is a reclassification of the final key: **A+B closes the aligned static reciprocal geometry; \(\nu C^2\) identifies the missing fifth/normal direction; the remaining theorem is the cross-term/hypocoercive Polar--Korn bridge that turns these already-known coercivities into a finite visibility-speed action.**
+No such inequality is proved here.  The update is a reclassification of the final key: **A+B closes the aligned static reciprocal geometry; \(\nu C^2\) identifies the missing fifth/normal direction; the remaining theorem is the cross-term/hypocoercive Polar--Korn bridge that turns these already-known local/structural controls into a finite visibility-speed action.**
 
 ---
 
