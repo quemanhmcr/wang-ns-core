@@ -131,7 +131,7 @@ That suggests the right global upgrade of the historical A+B results:
 \[
 \boxed{
 \text{persistent self-generated forward drift}
-\ \Longrightarrow\ 
+\ \Longrightarrow\
 \text{unavoidable companion leakage or degeneration to a harmless null class.}
 }
 \]
