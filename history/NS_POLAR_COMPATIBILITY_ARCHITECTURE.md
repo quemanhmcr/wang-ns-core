@@ -1695,58 +1695,249 @@ The exact amplitude cancellation in each four-mode partition therefore gives
 \]
 Thus a deep reciprocal cancellation cannot remain a cheap two-atom coherence. To cancel a child-scale source at radius \(Q\), it emits a companion source-square amplified by the parent/child ratio \(R/Q\). This is precisely the factor missing from the abstract heat-fiber Cauchy argument. It is an actual quartet leakage of the true convolution, not a new budget.
 
-## 98. Diamond coarea converts reciprocal leakage into the endpoint child \(H^{-1}\) weight — DEEP-FIBER DEDUCTION / AUDIT
+## 98. Diamond coarea and reciprocal leakage give the endpoint child weight — EXACT COAREA / CERTIFIED THEOREM
 The exact analytic diamond incidence measure for two same-output parent orbits is
 \[
 \boxed{
  d\Xi=\frac{dp\,dp'\,d\mathcal H^2(y)}{16|p-p'|}.
 }
 \]
-In the reciprocal orthogonal geometry above,
+The deep reciprocal asymptotic of Section 97 already showed that the companion amplification cancels the parent separation and leaves the inverse child scale.  The scale-free statement can now be promoted beyond audit.
+
+For a nondegenerate reciprocal quartet define the two complete companion-partition ratios
 \[
-|p-p'|=\frac R{\sqrt2}+o(R).
+A=\frac{G_{pp'}G_{mm'}}{G_{pm}G_{p'm'}},
+\qquad
+B=\frac{G_{pm'}G_{mp'}}{G_{pm}G_{p'm'}},
+\qquad
+\chi_{\rm geom}^2=\max(A,B).
 \]
-Consequently the companion amplification and the incidence Jacobian cancel the deep parent scale:
+With the canonical unordered same-helicity labeling and \(R=|p-m|=|p'-m'|\), exact reciprocal parametrization reduces the geometry to
+\[
+\boxed{
+A^2+B^2\ge\frac3{32}\frac{R^2}{Q^2}.
+}
+\]
+The orthogonal-plane geometry also gives
+\[
+|p-p'|\le\frac R{\sqrt2}.
+\]
+Therefore
+\[
+\boxed{
+\frac{Q\,\chi_{\rm geom}^2}{|p-p'|}
+\ge\frac{\sqrt6}{8}.
+}
+\]
+The constant is sharp at the compactified deep-fiber / near-Beltrami corner.  An exact rational Bernstein certificate for the full physical reciprocal domain is reproduced by
+
+```bash
+python core/spectral_signature/audits/reciprocal_lemma_a_certificate.py
+```
+
+Multiplying the certified bound by the diamond coarea density removes the parent separation:
 \[
 \boxed{
 \frac{\chi_{\rm geom}^2}{|p-p'|}
-\longrightarrow
-\frac{\sqrt6}{8Q|\sin\gamma|}
-\ge
-\frac{\sqrt6}{8Q}.
+\ge\frac{\sqrt6}{8Q}.
 }
 \]
-The surviving weight is exactly the inverse child radius \(Q^{-1}\), i.e. the Fourier weight of the final \(\Lambda^{-1}\) endpoint source. This is a structural explanation of how the missing half-heat factor can reappear as physical companion multiplicity rather than as static parent-symbol decay.
+The surviving weight is exactly \(Q^{-1}\), the Fourier weight of the final \(\Lambda^{-1}\) endpoint source.  Thus the half-heat factor missing from the unrestricted heat-fiber Cauchy argument is present in the true reciprocal companion geometry.
 
-A finite-geometry sweep is consistent with the stronger scale-free inequality
+## 99. Reciprocal global multiplicity is finite — EXACT SYMBOLIC THEOREM
+The former open seam in this route was global companion-incidence multiplicity.  For one fixed nonzero off-diagonal canonical companion role \((p,p')\), write
+\[
+a=|p|,\qquad b=|p'|,\qquad c=p\cdot p',\qquad S=P+M,\qquad w=Q^2.
+\]
+Reciprocality/equal heat and orthogonality give two polynomials \(F(S,w)=G(S,w)=0\).  Exact elimination yields
 \[
 \boxed{
-\frac{Q\,\chi_{\rm geom}^2}{|p-p'|}\ge\frac{\sqrt6}{8}
+\operatorname{Res}_w(F,G)=4S^6L(S)H(S),
 }
 \]
-throughout the reciprocal family, with equality approached in the deep-fiber limit. At present this stronger uniform statement is classified only as **AUDIT / CANDIDATE LEMMA**; an exact algebraic proof is still required before it can be used in the proof graph.
-
-## 99. Sharpened NEO coherence--incidence theorem target — CANDIDATE PRINCIPLE / OPEN
-The endpoint coherence problem can now be split by the exact projective zero set. If a heat-fiber resultant has efficiency close to its total microscopic variation, the pairwise projective variance forces most coherent mass toward one of only two nontrivial aligned geometries:
-
-1. **reflection / equal-\(\beta\)**: either side-companion leakage remains visible, or the configuration approaches the Beltrami equal-radius null, where the hard source-square is controlled by the finite radial-variance action of Section 96;
-2. **reciprocal / orthogonal-plane**: companion incidence amplifies source-square by \(R/Q\), and the exact diamond coarea cancels the parent factor \(R\), leaving the endpoint child weight \(Q^{-1}\) as in Section 98.
-
-Away from these aligned sets, projective separation contributes directly to the exact resultant variance deficit and cannot sustain near-perfect macroscopic coherence.
-
-This suggests a more precise form of the open estimate in Section 94. On each actual high heat fiber one seeks a scale-free inequality of the schematic form
+where
+\[
+L(S)=S^2-2aS+2a^2-2b^2
+\]
+and
 \[
 \boxed{
-\text{coherent hard pair mass at child }Q
-\ \lesssim\
-\text{projective variance}
-+\text{radial-sterile hard square}
-+\text{diamond companion square with }Q^{-1}\text{ incidence}.
+H(S)=D(S-a)^2-E^2,
+\qquad
+D=(a+b)^2-4c,
+\qquad
+E=b(a+b)-2c.
 }
 \]
-Every term is only a reading of existing NS/NEO objects: actual vector-source variance, the kinetic-owned radial defect, actual companion source-square, and the existing \(\Lambda^{-1}\) endpoint weight. No coherence wallet, genealogy, observer source, or new clock is introduced.
+The \(L\)-branch is nonphysical: it forces \(Q=0\) or \(P'+M'=0\).  Away from the diagonal \(p=p'\), \(D>0\); physicality requires \(S=a+M>a\), so exactly one radial root survives:
+\[
+\boxed{
+M=\frac{|E|}{\sqrt D}.
+}
+\]
+The child radius is then unique, and the remaining two dot-product constraints intersect the child sphere in at most two mirror points.  Hence
+\[
+\boxed{
+\#\{\text{nondegenerate reciprocal preimages of one canonical companion role}\}\le2.
+}
+\]
+Moreover the angular reconstruction Jacobian is
+\[
+\boxed{
+|\det D\Phi(q)|=2|q\cdot(p\times p')|,
+}
+\]
+and reciprocal plane orthogonality gives
+\[
+\boxed{
+|q\cdot(p\times p')|
+=\frac{|q\times p|\,|q\times p'|}{Q}.
+}
+\]
+Thus angular Jacobian degeneracy occurs only on the collinear source-null faces already carried by the original source coefficients.  The exact symbolic certificate is
 
-The remaining analytic seam is now concrete: **global companion-incidence multiplicity**. One must prove that, after integrating over the full actual edge space, the map from coherent source pairs to companion diamonds has summable multiplicity and does not recreate the continuum factor removed by the coarea cancellation. If this global incidence theorem holds, the coherence--leakage estimate of Section 94 would be reduced to already-owned microscopic square action plus genuine square-anchor repair. If the multiplicity is not summable, the exact form of that failure identifies the next NEO jet that must be used. No such global incidence theorem is claimed here.
+```bash
+python core/spectral_signature/audits/reciprocal_lemma_b_certificate.py
+```
+
+**STATUS UPDATE.** Sections 97--99 now close the exact aligned reciprocal *static* incidence seam that was previously left open.  This does not by itself prove a finite spacetime budget for the longitudinal Codazzi rate: local coercivity plus finite multiplicity is not the same as a hypocoercive time estimate.
+
+## 99.1 The complete moving flag supplies the old missing half derivative — EXACT
+The forced heat barrier in `BSVO_FULL_STATE_FRONTIER.md` Section 20.29 is one half heat derivative short if one stays on the unrestricted edge Hilbert space.  Theory 2 identifies where that derivative lives before contraction.
+
+For one hard edge with parent radii \(P,M\), opposite-helicity child radius \(Q\), and heat
+\[
+\kappa=P^2+M^2,
+\]
+the moving hard selector \(\chi_a\) is the indicator of an interval of length
+\[
+\boxed{
+d_e=Q+\min(P,M).
+}
+\]
+Triangle closure gives
+\[
+\boxed{
+\frac1{\sqrt2}\sqrt\kappa
+\le d_e
+\le\frac3{\sqrt2}\sqrt\kappa.
+}
+\]
+Therefore the pre-contraction flag square obeys
+\[
+\boxed{
+\frac1{\sqrt2}G_{-1/2}
+\le
+\int_{\mathbb R}G_{-1}^{\rm flag}(a)\,da
+\le
+\frac3{\sqrt2}G_{-1/2}.
+}
+\]
+In deep high--high \(\to\) low geometry the child piece \(Q/\sqrt\kappa\to0\) while the parent-side contribution tends to \(1/\sqrt2\).  Thus the missing half derivative was not absent; a zero-cut/child-only renderer had discarded the parent-side sweep of the complete spectral flag.
+
+Equivalently, for an operator \(T\) in the curl spectral basis,
+\[
+\boxed{
+\frac14\int_{\mathbb R}\|[T,H_a]\|_{\rm edge}^2\,da
+=\sum_{x,y}|x-y||T_{xy}|^2
+=\bigl\||\operatorname{ad}_C|^{1/2}T\bigr\|_{\rm edge}^2.
+}
+\]
+This is the operator-space location of the old half-derivative gap.
+
+## 99.2 Equal-heat geometry has one extra collision invariant: heat — EXACT INCLUSION / FINITE-LATTICE AUDIT
+Let
+\[
+\eta_k=\frac{N_k}{a_k}
+\]
+on active Fourier coefficients and define the equal-heat diamond defect
+\[
+\delta_\Diamond\eta
+=\eta_p+\eta_m-\eta_{p'}-\eta_{m'}
+\]
+for
+\[
+p+m=p'+m',
+\qquad
+|p|^2+|m|^2=|p'|^2+|m'|^2.
+\]
+Every
+\[
+\boxed{
+\eta_k=\alpha+\beta\cdot k+\gamma|k|^2
+}
+\]
+lies in the kernel.  The first four invariants \(1,k_x,k_y,k_z\) are amplitude/translation directions; the fifth invariant \(|k|^2\) is exactly the heat coordinate.
+
+A complete finite-lattice relation-matrix audit on \(|k_i|\le K\), \(K=1,2,3\), finds no extra kernel: the nullity is exactly five, while the first positive eigenvalues are approximately
+\[
+1.9572,\qquad5.9228,\qquad14.1859.
+\]
+This is an audit, not a continuum spectral-gap theorem.  Reproduce it with
+
+```bash
+python core/spectral_signature/audits/equal_heat_collision_gap.py
+```
+
+The physical logarithmic rate is
+\[
+\boxed{
+r_k=\frac{\dot a_k}{a_k}=\eta_k-\nu|k|^2.
+}
+\]
+For arbitrary same-output pairs, define the parabolic defect
+\[
+\boxed{
+\Delta_\Diamond^\nu\eta
+=\eta_p+\eta_m-\eta_{p'}-\eta_{m'}
+-\nu(\kappa-\kappa').
+}
+\]
+Then identically
+\[
+\boxed{
+\Delta_\Diamond^\nu\eta
+=r_p+r_m-r_{p'}-r_{m'}.
+}
+\]
+Theory 2 therefore splits the late obstruction into tangent and normal pieces: A+B supplies the hard equal-heat/projective geometry tangent to \(\kappa=\mathrm{const}\), while the distinguished viscous generator \(-\nu C^2\) supplies the normal heat calibration.  The fifth collision invariant is a signal that these two pieces must be coupled, not another free gauge.
+
+## 99.3 The remaining key is a hypocoercive Polar--Korn coupling — OPEN
+The subsequent Codazzi/time-packing exploration was useful but was asking the wrong final question.  The complete mother already has exact Korn observability for any tangent vector, while Sections 96--99 now identify the static equal-heat coercive geometry and the heat-normal direction.  The remaining problem is to combine them without squaring the Codazzi coupling as an independent source norm.
+
+The exact radial--Jordan--Codazzi acceleration identity is
+\[
+\boxed{
+EQ'-\frac E2\ddot{\mathcal R}_0-W_\Lambda^2
+=\mathcal U\bigl(\langle\Lambda u,Z_{\rm Cod}\rangle+\mathcal C_{compat}\bigr).
+}
+\]
+The representation-free visibility speed is
+\[
+\boxed{
+\mathfrak v=\frac{W_\Lambda^2}{\mathcal U},
+}
+\]
+and a finite singular endpoint forces
+\[
+\boxed{
+\int^{T_*}\mathfrak v\,dt=\infty.
+}
+\]
+The acceleration law already contains the negative square \(-W_\Lambda^2\).  A successful closure should therefore be hypocoercive: add a cross term between the angular/equal-heat coordinate and the radial/heat coordinate so that its derivative exposes this square, while A+B, radial variance, Curl--Killing, mother Korn observability and genuine viscosity absorb the compatibility terms.
+
+The sharpened target is a modified energy \(\mathscr E_{\rm T2}\) with
+\[
+\boxed{
+\frac d{dt}\mathscr E_{\rm T2}
++c\frac{W_\Lambda^2}{\mathcal U}
+\le
+\text{genuinely viscous / already-owned terms},
+}
+\]
+for a universal \(c>0\) on the correctly typed physical class.
+
+No such inequality is proved here.  The update is a reclassification of the final key: **A+B closes the aligned static reciprocal geometry; \(\nu C^2\) identifies the missing fifth/normal direction; the remaining theorem is the cross-term/hypocoercive Polar--Korn bridge that turns these already-known coercivities into a finite visibility-speed action.**
 
 ---
 

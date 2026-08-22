@@ -1901,6 +1901,321 @@ rồi generic tested finite geometry cho
 
 Một phrase mạnh hơn, “Curl-Spectral Formation-Geometry Completeness”, nên dành cho theorem sau khi continuum injectivity/singular-strata analysis thật sự được đóng.
 
+### III.27A. Regularity-frontier post-mortem: Theory 2 chỉ ra hai chìa khóa bị mất dấu
+
+Campaign III làm một việc quan trọng hơn việc thêm một observer mới: nó cho phép đọc lại toàn bộ late regularity frontier bằng **complete spectral flag** thay vì bằng từng historical costume riêng lẻ.
+
+Câu chuyện có ba pha.
+
+#### Pha 1 — historical heat analysis thấy thiếu đúng một nửa đạo hàm
+
+Forced hard-edge heat law có dạng
+
+\[
+(\partial_t+\nu\kappa_e)f_e=g_e,
+\qquad
+\kappa_e=P^2+M^2.
+\]
+
+Heat-fiber/Cauchy analysis của history cho thấy direct resultant endpoint cần
+
+\[
+G_{-1/2}
+=\sum_e\kappa_e^{-1/2}|g_e|^2,
+\]
+
+trong khi generic edge estimate mới dừng ở
+
+\[
+G_{-1}.
+\]
+
+Endpoint \(\alpha=-1/2\) log-diverges.  Lúc đó cách đọc tự nhiên là: *còn thiếu nửa heat derivative*.
+
+Theory 2 đổi cách đọc.  Với hard edge signed roots
+
+\[
+x=hP,
+\qquad y=hM,
+\qquad z=-hQ,
+\]
+
+moving selector
+
+\[
+\chi_a(e)
+=\frac14(1-H_a(z)H_a(x))(1-H_a(z)H_a(y))
+\]
+
+có support length
+
+\[
+\boxed{
+d_e=Q+\min(P,M).
+}
+\]
+
+Và triangle closure cho
+
+\[
+\boxed{
+\frac1{\sqrt2}\sqrt\kappa_e
+\le d_e
+\le\frac3{\sqrt2}\sqrt\kappa_e.
+}
+\]
+
+Do đó
+
+\[
+\boxed{
+\int_{\mathbb R}G_{-1}^{\rm flag}(a)\,da
+\asymp
+G_{-1/2}.
+}
+\]
+
+Tức nửa đạo hàm không phải một supplier mới. Nó là **độ dài coarea của complete moving curl flag**. Trong deep high--high \(\to\) low, child-side \(Q/\sqrt\kappa\to0\), còn parent-side sweep tiến tới \(1/\sqrt2\). Zero cut đã bỏ mất đúng phần đó.
+
+Ở operator level cùng statement là
+
+\[
+\boxed{
+\frac14\int_{\mathbb R}\|[T,H_a]\|_{\rm edge}^2da
+=\bigl\||\operatorname{ad}_C|^{1/2}T\bigr\|_{\rm edge}^2.
+}
+\]
+
+Đây là chìa khóa thứ nhất: **missing half derivative = half derivative của spectral deformation trong operator space**.
+
+#### Pha 2 — Theory 2/NEO giải mã static coherence thành A và B
+
+Khi endpoint đã có đúng half-derivative geometry, câu hỏi chuyển sang: contraction có thể dùng coherence để trốn payment hay không?
+
+Exact projective classification ép aligned equal-heat fibers về hai nontrivial geometries:
+
+1. reflection/equal-\(\beta\), tiến về Beltrami equal-radius null và được radial variance khóa;
+2. reciprocal-\(\beta\)/orthogonal-plane, phát actual companion sources.
+
+Reciprocal branch sinh hai partition ratios
+
+\[
+A=\frac{G_{pp'}G_{mm'}}{G_{pm}G_{p'm'}},
+\qquad
+B=\frac{G_{pm'}G_{mp'}}{G_{pm}G_{p'm'}}.
+\]
+
+Exact rational certificate mới cho
+
+\[
+\boxed{
+A^2+B^2\ge\frac3{32}\frac{R^2}{Q^2},
+}
+\]
+
+và do
+
+\[
+|p-p'|\le\frac R{\sqrt2},
+\]
+
+suy ra sharp uniform lower bound
+
+\[
+\boxed{
+\frac{Q\chi_{\rm geom}^2}{|p-p'|}
+\ge\frac{\sqrt6}{8}.
+}
+\]
+
+Đây là **Lemma A**: local reciprocal conductance không suy giảm ở deep fiber.
+
+Sau đó exact symbolic elimination cho fixed companion role:
+
+\[
+\operatorname{Res}_w(F,G)
+=4S^6L(S)\bigl[D(S-a)^2-E^2\bigr].
+\]
+
+Nonphysical \(L\)-branch bị loại; physical branch có đúng một radial root và nhiều nhất hai mirror children. Jacobian angular chỉ suy biến trên source-null faces.
+
+Đây là **Lemma B**:
+
+\[
+\boxed{
+\#\text{ reciprocal preimages per canonical companion role}\le2.
+}
+\]
+
+A + B + diamond coarea
+
+\[
+ d\Xi=\frac{dp\,dp'\,d\mathcal H^2(y)}{16|p-p'|}
+\]
+
+để lại đúng
+
+\[
+\boxed{Q^{-1}}.
+\]
+
+Tức static reciprocal seam trước đây ghi là open đã được đóng ở aligned level.
+
+#### Pha 3 — vì sao sau A+B vẫn bị kéo vào Codazzi/time-packing
+
+Sau A+B, ta vô tình tiếp tục hỏi theo historical habit:
+
+\[
+\text{``làm sao bound }\Lambda^{-1}C_H\text{ hoặc làm Codazzi spike persist?''}
+\]
+
+Theory 2 cho thấy đây là cách đặt câu hỏi chưa đúng. Codazzi là covariant jet của cùng complete signature; square riêng nó làm mất tangent/normal coupling và dẫn lại đúng temporal-integrability deficit cũ.
+
+Để thấy ổ khóa thật, xét equal-heat diamond defect
+
+\[
+\delta_\Diamond\eta
+=\eta_p+\eta_m-\eta_{p'}-\eta_{m'},
+\qquad
+\eta_k=\frac{N_k}{a_k}.
+\]
+
+Momentum + equal heat giữ không chỉ affine invariants mà cả quadratic heat invariant:
+
+\[
+\boxed{
+\eta_k=\alpha+\beta\cdot k+\gamma|k|^2
+\quad\Longrightarrow\quad
+\delta_\Diamond\eta=0.
+}
+\]
+
+Vì vậy equal-heat collision kernel tự nhiên có năm directions
+
+\[
+\boxed{
+1,\ k_x,\ k_y,\ k_z,\ |k|^2.
+}
+\]
+
+Finite-lattice complete relation audits tại \(K=1,2,3\) cho nullity đúng \(5\), không thấy extra UV soft mode. Chìa khóa bị thiếu không phải một graph eigenvector bí ẩn: **mode thứ năm chính là heat**.
+
+Physical logarithmic rate là
+
+\[
+\boxed{
+r_k=\frac{\dot a_k}{a_k}=\eta_k-\nu|k|^2.
+}
+\]
+
+Với arbitrary same-output pair, parabolic defect
+
+\[
+\boxed{
+\Delta_\Diamond^\nu\eta
+=\eta_p+\eta_m-\eta_{p'}-\eta_{m'}
+-\nu(\kappa-\kappa')
+}
+\]
+
+thỏa identically
+
+\[
+\boxed{
+\Delta_\Diamond^\nu\eta
+=r_p+r_m-r_{p'}-r_{m'}.
+}
+\]
+
+Do đó late problem có đúng split mà complete Theory 2 đòi hỏi:
+
+\[
+\boxed{
+\text{A+B / projective geometry = tangent coercivity trên equal-heat fibers},
+}
+\]
+
+\[
+\boxed{
+-\nu C^2 = normal heat calibration.
+}
+\]
+
+Hai phần này phải được ghép như một hypocoercive system; không phần nào là một wallet mới.
+
+#### Chìa khóa cuối thực sự: Polar--Korn cross term
+
+Mother completeness đã cho exact Korn observability cho mọi tangent vector \(v\):
+
+\[
+\boxed{
+2\|S(v)\|_{\dot H^s}^2
+=\|v\|_{\dot H^{s+1}}^2.
+}
+\]
+
+Vậy observability không còn thiếu. A+B cũng đã cho static tangent geometry; \(\nu C^2\) cho distinguished normal direction.
+
+Exact radial--Jordan--Codazzi acceleration law lại có sẵn square đúng dấu:
+
+\[
+\boxed{
+EQ'-\frac E2\ddot{\mathcal R}_0-W_\Lambda^2
+=\mathcal U\bigl(\langle\Lambda u,Z_{\rm Cod}\rangle+\mathcal C_{compat}\bigr).
+}
+\]
+
+Và finite singular endpoint bắt
+
+\[
+\boxed{
+\int^{T_*}\mathfrak v\,dt=\infty,
+\qquad
+\mathfrak v=\frac{W_\Lambda^2}{\mathcal U}.
+}
+\]
+
+Điều còn thiếu vì vậy không nên là
+
+\[
+\int\|\Lambda^{-1}Z_{\rm Cod}\|_2^2dt<\infty.
+\]
+
+Target đúng là tìm một **modified hypocoercive energy** \(\mathscr E_{\rm T2}\), có cross term giữa angular/equal-heat coordinate và radial/heat coordinate, sao cho
+
+\[
+\boxed{
+\frac d{dt}\mathscr E_{\rm T2}
++c\frac{W_\Lambda^2}{\mathcal U}
+\le
+\text{genuine viscous / already-owned terms}.
+}
+\]
+
+Nếu có inequality này, visibility speed trở thành time-integrable và mâu thuẫn endpoint xảy ra trực tiếp. Codazzi lúc đó là coupling term được absorb/cancel trong modified energy, không phải một source norm cần square độc lập.
+
+Đây là **chìa khóa thứ hai**:
+
+\[
+\boxed{
+\textbf{A+B reciprocal conductance/finite-incidence control}
++\textbf{ heat fifth-mode calibration}
++\textbf{ hypocoercive Polar--Korn cross term}.
+}
+\]
+
+Status phải giữ chính xác:
+
+- moving-flag half derivative: **EXACT**;
+- reciprocal Lemma A: **CERTIFIED**;
+- reciprocal Lemma B: **EXACT SYMBOLIC**;
+- equal-heat five-dimensional kernel: four+heat invariants **EXACT**, no-extra-kernel for tested boxes **AUDIT**;
+- mother Korn observability: **EXACT**;
+- hypocoercive Polar--Korn modified-energy inequality: **OPEN**;
+- global 3D regularity: **OPEN**.
+
+Canonical late-frontier note và executable certificates nằm tại [From the Missing Half Derivative to the Polar--Korn Target](core/spectral_signature/HALF_DERIVATIVE_POLAR_KORN_BRIDGE.md).
+
 ### III.28. Candidate theorem bây giờ đã đủ precise để tấn công
 
 Open theorem target là định nghĩa continuum Codazzi observability operator

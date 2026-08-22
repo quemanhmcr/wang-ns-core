@@ -37,6 +37,7 @@ The first arrow is an equivalence through spectral tomography.  The later arrows
 2. [SPECTRAL_FLAG_COMPLETENESS.md](SPECTRAL_FLAG_COMPLETENESS.md) — records the adversarial experiments that tested whether the signature carries the whole physical state and the full NS vector field.
 3. [MOTHER_COMPLETENESS_THEOREM.md](MOTHER_COMPLETENESS_THEOREM.md) — gives the clean structural theorem: the mother deformation is complete modulo Killing symmetry, the signature is its canonical spectral normal form, and smooth NS is exactly conjugate to a flow on the signature image.
 4. [HISTORY_AND_FALSIFICATION.md](HISTORY_AND_FALSIFICATION.md) — the short record of what failed and why the final object has its present tensor/operator form.
+5. [HALF_DERIVATIVE_POLAR_KORN_BRIDGE.md](HALF_DERIVATIVE_POLAR_KORN_BRIDGE.md) — the late regularity-frontier reconstruction: the moving flag supplies the missing half derivative, reciprocal Lemmas A/B close the aligned static incidence seam, and the remaining key is retyped as a hypocoercive Polar--Korn coupling rather than a stand-alone Codazzi budget.
 
 For the longer discovery narrative, begin at the repository root: [Core_signature.md](../../Core_signature.md).
 
@@ -100,9 +101,12 @@ This is a structural completeness statement.  It is not a global regularity theo
 python core/spectral_signature/audits/spectral_flag_signature.py
 python core/spectral_signature/audits/spectral_flag_completeness.py
 python core/spectral_signature/audits/mother_completeness_theorem.py
+python core/spectral_signature/audits/reciprocal_lemma_a_certificate.py
+python core/spectral_signature/audits/reciprocal_lemma_b_certificate.py
+python core/spectral_signature/audits/equal_heat_collision_gap.py
 ```
 
-These three audits are the canonical executable core.  Older G3, Riccati, discriminant, scale, and propagation experiments remain recoverable from Git history, but are intentionally not part of this directory because they are discovery history rather than the final spectral-signature theory.
+These audits are the canonical executable core and late-frontier certificates.  Older G3, Riccati, discriminant, scale, and propagation experiments remain recoverable from Git history, but are intentionally not part of this directory because they are discovery history rather than the final spectral-signature theory.
 
 ## Relation to NEO
 

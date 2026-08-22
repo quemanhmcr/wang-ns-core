@@ -16,6 +16,8 @@ E_u=[\nabla_u,C]
 
 Nothing in `history/` should be read as overriding the current theorem/scope statements in the spectral-signature core.
 
+The current late-frontier reconstruction is [From the Missing Half Derivative to the Polar--Korn Target](../core/spectral_signature/HALF_DERIVATIVE_POLAR_KORN_BRIDGE.md).  It records the certified reciprocal A/B updates and the retyped open hypocoercive target; historical files below preserve the route by which those objects were discovered.
+
 ## 1. Old physical-road history
 
 The original physical-road distillation is preserved as:

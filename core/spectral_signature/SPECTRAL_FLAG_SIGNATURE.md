@@ -711,6 +711,8 @@ At the physical fold \(a=0\), the historical final Codazzi/heat-rate obstruction
 
 **Working interpretation.** the mother deformation and history's succession of torsion/stress/curvature/Codazzi costumes are not separate ontologies.  They are different resolutions and derivative levels of one curl spectral-compatibility signature.  Regularity is one later application; the more basic problem is to understand this quotient geometry and the dynamics it induces on spectral flags.
 
+The late endpoint reconstruction that uses this principle to locate the missing half derivative, certify reciprocal incidence, and isolate the remaining hypocoercive Polar--Korn target is recorded in [HALF_DERIVATIVE_POLAR_KORN_BRIDGE.md](HALF_DERIVATIVE_POLAR_KORN_BRIDGE.md).  That note is explicitly a frontier/status document, not a regularity theorem.
+
 ---
 
 ## 20. Structural reclassification: the signature belongs to the NS state-space geometry -- EXACT INTERPRETATION
