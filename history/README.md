@@ -18,6 +18,8 @@ Nothing in `history/` should be read as overriding the current theorem/scope sta
 
 The current late-frontier reconstruction is [From the Missing Half Derivative to the Polar--Korn Target](../core/spectral_signature/HALF_DERIVATIVE_POLAR_KORN_BRIDGE.md).  It records the certified reciprocal A/B updates and the retyped open hypocoercive target; historical files below preserve the route by which those objects were discovered.
 
+For a short retrospective that re-reads the old X/Y, shell, all-UV, helicity, A+B and monodromy branches from the current complete-state finite-density picture, see [`FROM_HISTORICAL_ENDGAME_TO_COMPLETE_UV_CONVEYOR.md`](FROM_HISTORICAL_ENDGAME_TO_COMPLETE_UV_CONVEYOR.md).  It is an interpretation map, not a theorem registry.
+
 ## 1. Old physical-road history
 
 The original physical-road distillation is preserved as:

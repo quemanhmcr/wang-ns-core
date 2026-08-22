@@ -41,6 +41,8 @@ That experience suggests a simple working perspective for this directory.  New c
 
 This also keeps two different questions separate.  Theory 2 addresses **what information describes the physical state**.  The blow-up problem still asks **what analytic estimate, compactness or rigidity prevents that state from concentrating**.  Keeping that distinction visible has so far been the most reliable way to tell genuine progress from another change of notation.
 
+A concise retrospective of how the older X/Y, all-UV, helicity, A+B and monodromy branches fit this newer picture is kept in [`history/FROM_HISTORICAL_ENDGAME_TO_COMPLETE_UV_CONVEYOR.md`](../../../history/FROM_HISTORICAL_ENDGAME_TO_COMPLETE_UV_CONVEYOR.md).  It is background for understanding the route, not a dependency of the current theorem spine.
+
 ## Files
 
 1. [`00_THEOREM_SPINE.md`](00_THEOREM_SPINE.md) — derivation from Mother/Flag Completeness to the moving-heat system and spectral-measure law.
