@@ -52,6 +52,16 @@ Một note mới tại [core/spectral_signature/HALF_DERIVATIVE_POLAR_KORN_BRIDG
 
 Các update này **không** tuyên bố global 3D regularity.  Modified-energy/hypocoercive inequality cần để biến exact visibility square thành finite action vẫn là open theorem target.
 
+
+## Clay application handoff
+
+Application-level Navier--Stokes endgame notes now live at
+[application/clay_problem/theory2_realtime_endgame/](application/clay_problem/theory2_realtime_endgame/).
+The handoff records the Theory-2 realtime anti-loop doctrine, exact reduction
+chain, formula compendium, and the single remaining **open** Dynamic
+Rich-Packet Polar--Korn theorem.  It is deliberately explicit that structural
+finality of the reduction is not a claim of solved global regularity.
+
 ## Metric–Lie / Hodge formation core
 
 Core bổ sung tại [core/metric_lie_hodge/README.md](core/metric_lie_hodge/README.md) bắt đầu từ datum
