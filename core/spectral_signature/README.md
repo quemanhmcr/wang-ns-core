@@ -104,6 +104,9 @@ python core/spectral_signature/audits/mother_completeness_theorem.py
 python core/spectral_signature/audits/reciprocal_lemma_a_certificate.py
 python core/spectral_signature/audits/reciprocal_lemma_b_certificate.py
 python core/spectral_signature/audits/equal_heat_collision_gap.py
+python core/spectral_signature/audits/parabolic_synchronization_kernel.py
+python core/spectral_signature/audits/source_projective_fisher.py
+python core/spectral_signature/audits/source_scaling_typing.py
 ```
 
 These audits are the canonical executable core and late-frontier certificates.  Older G3, Riccati, discriminant, scale, and propagation experiments remain recoverable from Git history, but are intentionally not part of this directory because they are discovery history rather than the final spectral-signature theory.

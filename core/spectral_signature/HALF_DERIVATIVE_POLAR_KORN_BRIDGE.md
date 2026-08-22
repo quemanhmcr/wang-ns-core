@@ -406,7 +406,352 @@ The remaining task is to show that the physical A+B/heat measurements form a coe
 
 ---
 
-## 10. The real final key: a hypocoercive Polar--Korn lemma -- OPEN
+## 9.5. Realtime anti-loop reduction: the parabolic synchronization kernel -- EXACT / AUDIT / OPEN TRANSFER
+
+The dynamic scalar triangle already gives
+\[
+EQ-\frac E2\dot{\mathcal R}_0=\mathcal U W_\Lambda.
+\]
+Differentiating this identity is exactly the radial--Jordan--Codazzi acceleration identity before the Codazzi rendering is substituted.  Therefore a modified energy built only by algebraically recombining
+\[
+\mathcal U,\qquad \mathcal R_0,\qquad Q,\qquad W_\Lambda
+\]
+cannot create new coercivity by itself: at scalar level one only rewrites the same polar triangle.  A genuine Polar--Korn closure must use the information that was lost by scalar contraction, namely the physical pair-source/projective tangent geometry together with the heat-normal direction.
+
+That coupling has a canonical rate variable.  On an active Fourier/helical coefficient put
+\[
+\eta_k=\frac{N_k}{a_k},
+\qquad
+\boxed{r_k=\frac{\dot a_k}{a_k}=\eta_k-\nu|k|^2.}
+\]
+For two parent pairs with the same output, define the physical parabolic synchronization defect
+\[
+\boxed{
+\delta_\Diamond r
+:=r_p+r_m-r_{p'}-r_{m'}
+=\Delta_\Diamond^\nu\eta.
+}
+\]
+This is not a new observer.  If
+\[
+f_e=C_ea_pa_m
+\]
+is one existing helical pair source, then exactly
+\[
+\dot f_e=(r_p+r_m)f_e.
+\]
+Thus \(\delta_\Diamond r\) is the relative logarithmic rate by which two already-existing same-output source atoms lose synchronization.
+
+### Exact continuum kernel lemma
+
+There are two nested functional equations.
+
+First, if a \(C^2\) function \(\eta\) satisfies
+\[
+\eta(p)+\eta(m)=\eta(p')+\eta(m')
+\]
+for all local elastic diamonds
+\[
+p+m=p'+m',
+\qquad
+|p|^2+|m|^2=|p'|^2+|m'|^2,
+\]
+then
+\[
+\boxed{
+\eta(k)=\alpha+\beta\cdot k+\gamma|k|^2.
+}
+\]
+Indeed, writing
+\[
+p=c+z,\qquad m=c-z,
+\]
+the sum \(\eta(c+z)+\eta(c-z)\) is radial in \(z\).  Its quadratic Taylor term therefore forces
+\[
+\operatorname{Hess}\eta(c)=\lambda(c)I.
+\]
+In dimension at least two, equality of the diagonal second derivatives and vanishing of the mixed derivatives force \(\lambda\) to be constant, giving the displayed quadratic-affine form.  This is the continuum version of the five collision invariants.
+
+Second, after the physical heat calibration, suppose a \(C^1\) rate \(r\) satisfies
+\[
+\boxed{
+\delta_\Diamond r=0
+}
+\]
+for all local same-output parallelograms.  Taking
+\[
+p=x+h,\qquad m=y,\qquad p'=x,\qquad m'=y+h
+\]
+gives
+\[
+r(x+h)-r(x)=r(y+h)-r(y).
+\]
+Hence every sufficiently small increment depends only on \(h\), not on the base point.  Differentiating in \(h\) at zero gives a base-point-independent gradient, so
+\[
+\boxed{
+r(k)=\sigma+b\cdot k.}
+\]
+The heat mode has disappeared.  The kernel has collapsed from
+\[
+1,k_x,k_y,k_z,|k|^2
+\]
+to exactly
+\[
+\boxed{1,k_x,k_y,k_z.}
+\]
+These are precisely the amplitude/translation symmetry directions appearing in the historical affine-synchronization terminal theorem.
+
+The same conclusion upgrades to the actual two-helicity full-vector source grammar on a connected open nonzero-frequency region.  Let \(r_+(k),r_-(k)\) be \(C^1\) physical logarithmic rates, and assume that all nonzero full-vector source atoms with one common output synchronize their parent-rate sums.  On a generic noncollinear parent pair with unequal radii, the exact source zero set (20.85) removes none of the four parent-helicity choices.  Comparing the \((+,+)\) and \((+,-)\) atoms with the same geometric parents gives
+\[
+r_+(m)=r_-(m),
+\]
+and comparing \((+,+)\) with \((-,+)\) gives the same equality at \(p\).  Hence the two sheet rates agree on the generic set, and continuity extends the equality across the codimension-one source-null seams.  The remaining same-output synchronization equation is therefore the scalar parallelogram equation above, so
+\[
+\boxed{
+r_+(k)=r_-(k)=\sigma+b\cdot k.
+}
+\]
+Thus **full physical parabolic source synchronization has no hidden helicity mode**.  Its continuum kernel is exactly affine.
+
+### Physical finite-helical audit
+
+`audits/parabolic_synchronization_kernel.py` tests the same statement without replacing the NS pair grammar by a complete abstract graph.
+
+For the kinematic same-output relation matrix on lattice boxes \(|k_i|\le K\), the observed kernel is exactly four-dimensional for
+\[
+K=1,2,3,4,
+\]
+with first positive eigenvalues approximately
+\[
+2.2176,\qquad2.7836,\qquad2.9827,\qquad3.0790.
+\]
+
+More importantly, the audit then keeps only parent pairs whose full Leray vector source is nonzero according to the exact zero set (20.85): collinear shear and the same-helicity equal-radius Beltrami equator are removed, and no other nondegenerate pair is removed.  The resulting synchronization incidence matrix has integer entries, so its rank is certified exactly modulo the prime \(1000003\).  The results are
+\[
+\begin{array}{c|c|c|c}
+R^2&\text{helical nodes}&\text{rank}&\text{nullity}\\\hline
+2&36&30&6\\
+3&52&48&4\\
+5&112&108&4\\
+6&160&156&4.
+\end{array}
+\]
+The deliberately poor \(R^2=2\) window is a negative control: its interaction category is not rich enough and two extra directions survive.  As soon as the next physical shell is present, the kernel collapses exactly to the four affine directions, and stays there on the larger tested windows.
+
+This is the correct anti-loop signal.  The remaining theorem should not ask for the next derivative of Codazzi.  It should prove a **quantitative stability/coercivity version of this parabolic synchronization functional equation on the actual physical source category**, with the A+B/reflection geometry supplying tangent conductance and \(-\nu C^2\) supplying the missing heat-normal calibration.
+
+The clean terminal chain would then be
+\[
+\boxed{
+\begin{gathered}
+\text{finite singular endpoint}
+\Longrightarrow
+\text{mandatory macroscopic source coherence},\\
+\text{A+B + reflection + physical heat}
+\Longrightarrow
+\text{vanishing/controlled parabolic synchronization defect},\\
+\delta_\Diamond r\to0
+\Longrightarrow
+r(k)=\sigma+i\,v\cdot k
+\quad\text{modulo the physical reality symmetry},\\
+\text{affine synchronization}
+\Longrightarrow
+\text{monochromatic translating/decaying terminal physics or the zero }L^2(\mathbb R^3)\text{ state},\\
+\Longrightarrow\bot.
+\end{gathered}}
+\]
+
+The kernel classification is no longer the missing item.  The **OPEN transfer** is the single quantitative arrow from endpoint coherence, through the already-certified A+B/reflection/heat geometry, to coercive control of the parabolic synchronization defect.  If an attempted proof of that arrow produces a new uncontrolled jet or wallet, it has re-entered the historical loop and must be stopped rather than prolonged.
+
+
+
+---
+
+## 9.55. Endpoint raw UV amplification is **not yet coherence** -- EXACT DEDUCTION / SCALING CORRECTION
+
+Let \(J_{>L}\) denote the all-three-roots high-frequency hard-flip resultant from the exact excision theorem, and let \(S_{2,>L}\) be the corresponding restriction of the microscopic edge-source square.  The established endpoint facts give, for every fixed finite \(L\),
+\[
+\int_0^{T_*}\|J_{>L}(t)\|_2^2\,dt=\infty,
+\qquad
+\int_0^{T_*}S_{2,>L}(t)\,dt<\infty.
+\]
+Hence for every \(M<\infty\) there are times arbitrarily close to the endpoint at which
+\[
+\boxed{
+\|J_{>L}(t)\|_2^2\ge M\,S_{2,>L}(t).
+}
+\]
+One may therefore choose \(L_n\to\infty\), \(M_n\to\infty\), \(t_n\uparrow T_*\) with
+\[
+\boxed{
+\frac{\|J_{>L_n}(t_n)\|_2^2}{S_{2,>L_n}(t_n)}\to\infty.
+}
+\]
+Every edge in the selected high-frequency restriction has
+\[
+\kappa_e=|p|^2+|m|^2\ge2L_n^2.
+\]
+
+The realtime Theory-2 typing correction is that this quotient is **not scale invariant**, so it must not be called projective coherence.  On the whole-space parabolic scaling relevant to a singular microscope,
+\[
+u_\lambda(x,t)=\lambda u(\lambda x,\lambda^2t),
+\qquad
+\widehat u_\lambda(k,t)=\lambda^{-2}\widehat u(k/\lambda,\lambda^2t).
+\]
+A quadratic one-derivative edge-source density scales as
+\[
+ f_\lambda(p,m,t)
+ =\lambda^{-3}f(p/\lambda,m/\lambda,\lambda^2t).
+\]
+Since the edge measure has six Fourier dimensions,
+\[
+\boxed{S_{2,\mathrm{edge}}[u_\lambda](t)=S_{2,\mathrm{edge}}[u](\lambda^2t),}
+\]
+whereas convolution over one three-dimensional parent fiber gives
+\[
+\widehat J_\lambda(q,t)=\widehat J(q/\lambda,\lambda^2t),
+\qquad
+\boxed{
+\|J[u_\lambda](t)\|_2^2
+=\lambda^3\|J[u](\lambda^2t)\|_2^2.
+}
+\]
+Consequently
+\[
+\frac{\|J[u_\lambda]\|_2^2}{S_{2,\mathrm{edge}}[u_\lambda]}
+=\lambda^3
+\frac{\|J[u]\|_2^2}{S_{2,\mathrm{edge}}[u]},
+\]
+and at spacetime level
+\[
+\int S_{2,\mathrm{edge}}[u_\lambda]dt
+=\lambda^{-2}\int S_{2,\mathrm{edge}}[u]dt,
+\qquad
+\int\|J[u_\lambda]\|_2^2dt
+=\lambda\int\|J[u]\|_2^2dt.
+\]
+Thus raw resultant amplification can be produced by ordinary concentration scaling even when the scale-normalized source geometry does not become more coherent.
+
+If a packet has one characteristic physical frequency \(K\), the dimensionless static amplification is instead of the form
+\[
+\boxed{
+\mathfrak A_K
+:=\frac{\|J_K\|_2^2}{K^3 S_{2,K}}.
+}
+\]
+The endpoint facts above do **not** presently imply \(\mathfrak A_{K_n}\to\infty\).  Therefore Section 9.55 supplies an all-UV concentration sequence, but not yet a projectively aligned source packet.  Any later compactness argument must preserve a scale-normalized quantity, or use the canonical moving-front scale, before invoking A+B/projective rigidity.
+
+This correction is an anti-loop gain: it removes a false interpretation rather than manufacturing a stronger descendant to support it.
+
+---
+
+## 9.6. Source-projective Fisher identity: the microscopic Polar--Korn law -- EXACT / OPEN OWNER
+
+The synchronization defect has an intrinsic metric meaning on the already-existing physical edge-source field; no new rate tensor is required.  Fix a child/source sector and write
+\[
+\dot f_e=\lambda_e f_e,
+\qquad
+\lambda_e=r_p+r_m.
+\]
+Let
+\[
+M=\int |f_e|^2\,de,
+\qquad
+d\mu(e)=\frac{|f_e|^2}{M}\,de.
+\]
+Then the complex projective/Fubini--Study speed of the source ray is exactly
+\[
+\boxed{
+\frac{M\|\dot f\|_2^2-|\langle f,\dot f\rangle|^2}{M^2}
+=
+\operatorname{Var}_\mu(\lambda)
+=
+\frac12\iint |\lambda_e-\lambda_{e'}|^2\,d\mu(e)d\mu(e').
+}
+\]
+For two same-output atoms the difference \(\lambda_e-\lambda_{e'}\) is precisely \(\delta_\Diamond r\).  Thus the parabolic synchronization Dirichlet form is not an invented Codazzi norm: it is the projective Fisher speed of the true quadratic source field.
+
+Writing
+\[
+\lambda_e=\eta_e-\nu\kappa_e,
+\qquad
+\eta_e:=\eta_p+\eta_m,
+\qquad
+\kappa_e:=|p|^2+|m|^2,
+\]
+gives an exact tangent/normal variance decomposition
+\[
+\boxed{
+\operatorname{Var}_\mu(\lambda)
+=
+\operatorname{Var}_\mu(\eta)
++\nu^2\operatorname{Var}_\mu(\kappa)
+-2\nu\operatorname{Re}\operatorname{Cov}_\mu(\eta,\kappa).
+}
+\]
+There is also a canonical heat-normal cross identity.  With
+\[
+\bar\kappa=\int\kappa\,d\mu,
+\]
+the normalized source weights obey
+\[
+\dot\mu_e=2\bigl(\operatorname{Re}\lambda_e-\operatorname{Re}\bar\lambda\bigr)\mu_e,
+\]
+and therefore
+\[
+\boxed{
+\dot{\bar\kappa}
++2\nu\operatorname{Var}_\mu(\kappa)
+=
+2\operatorname{Re}\operatorname{Cov}_\mu(\kappa,\eta).
+}
+\]
+This is the microscopic Polar--Korn structure sought in Sections 7--10: physical heat contributes the normal variance with a favorable sign, while nonlinear source-rate variation supplies the tangent forcing.  The five-to-four kernel collapse of Section 9.5 is the zero-set statement of the same geometry.
+
+`audits/source_projective_fisher.py` verifies the projective numerator identity, the pairwise variance formula, the heat-normal identity and the tangent/normal split to machine precision on random complex source fields.
+
+The realtime anti-loop consequence is equally important.  The identity does **not** by itself make the Fisher action finite.  Bounding \(\|\dot f\|\) as a new source-rate norm would merely recreate the Codazzi/time-packing loop.  A valid final argument must therefore do one of exactly two things:
+
+1. show that the projective Fisher action is paid by the already-owned A+B/reflection/heat geometry on an interaction-rich stratum; or
+2. pass to a normalized terminal sequence on which this action degenerates, so the exact affine synchronization kernel and terminal rigidity apply.
+
+No third rate/jet owner is licensed.
+
+
+There is also a source-space visibility-speed consequence.  Since
+\[
+\dot{\bar\kappa}
+=2\operatorname{Re}\operatorname{Cov}_\mu(\kappa,\lambda),
+\qquad
+\lambda=r_p+r_m,
+\]
+Cauchy gives
+\[
+\boxed{
+\frac{\dot{\bar\kappa}^{\,2}}{4\bar\kappa}
+\le
+\frac{\operatorname{Var}_\mu(\kappa)}{\bar\kappa}
+\operatorname{Var}_\mu(\lambda).
+}
+\]
+Hence any finite-time normalized source packet with \(\bar\kappa(t_n)\to\infty\) must satisfy
+\[
+\boxed{
+\int^{T_*}
+\frac{\operatorname{Var}_\mu(\kappa)}{\bar\kappa}
+\operatorname{Var}_\mu(\lambda)\,dt
+=\infty.
+}
+\]
+Indeed this is the same Cauchy argument as for \((\sqrt{\mathcal U})'\): finite action would keep \(\sqrt{\bar\kappa}\) bounded on a finite interval.  The two factors have the desired typing: \(\operatorname{Var}_\mu(\kappa)\) is the heat-normal spread and \(\operatorname{Var}_\mu(\lambda)\) is exactly the parabolic synchronization/projective-Fisher defect.
+
+This conditional identity should not be silently upgraded to the full endpoint theorem.  The all-three-roots UV result proves that singular torsion escapes every fixed frequency scale, but a publish-grade closure must still construct a canonical normalized physical source packet (or an equivalent projective-limit object) whose mean heat escapes and for which the A+B/flag conductance passes to the limit.  That extraction/transfer is now the precise remaining analytic seam.
+
+---
+
+## 10. The real final key: a parabolic Source--Korn / hypocoercive Polar--Korn transfer -- OPEN
+
+Section 9.5 sharpens what a successful modified energy is allowed to do.  A scalar recombination of the dynamic polar triangle is tautological, while a naive state-weighted source Korn gap can degenerate near sparse/source-null states.  Therefore the target must be **stratified**: interaction-rich states are controlled through parabolic source-synchronization coercivity, while degeneration of that coercivity must converge to an already-classified harmless/source-null terminal geometry rather than create another jet.
 
 The radial--Jordan--Codazzi acceleration identity is exact:
 \[
@@ -438,9 +783,9 @@ The target is a modified energy \(\mathscr E_{\rm T2}\) satisfying schematically
 \text{terms already owned by genuine viscosity},
 }
 \]
-with \(c>0\) universal on the typed physical class.
+with \(c>0\) uniform on each quantitatively interaction-rich stratum; degeneration of that richness belongs to the terminal-rigidity branch, not to a claim of one global source-weighted gap.
 
-Equivalently, one seeks a **hypocoercive Polar--Korn inequality** coupling
+Equivalently, one seeks a **parabolic Source--Korn / hypocoercive Polar--Korn dichotomy** coupling
 
 1. A+B reciprocal conductance/finite incidence plus projective/reflection tangent control;
 2. the \(\nu C^2\) normal heat direction;
@@ -448,13 +793,15 @@ Equivalently, one seeks a **hypocoercive Polar--Korn inequality** coupling
 4. Curl--Killing and radial--Jordan compatibility;
 5. the built-in \(-W_\Lambda^2\) square of the acceleration law.
 
-If such an estimate is proved, then
+On the interaction-rich stratum this may be realized by a modified-energy estimate of the displayed type.  On a degenerating stratum the required conclusion is instead terminal rigidity: the state must approach the Beltrami/shear/monochromatic or affine-synchronized null geometries already known to be harmless.  No new descendant is permitted in that branch.
+
+If this stratified transfer is proved, then
 \[
 \int^{T_*}\mathfrak v<\infty
 \]
 contradicts the exact singular-endpoint visibility theorem.  That would close the historical \(Y\Rightarrow\bot\) implication.
 
-No such modified-energy inequality is proved in this PR.  The point of the reconstruction is that the target is now typed much more narrowly than "control Codazzi": the missing key is the cross term that converts the certified local tangent controls and distinguished heat-normal calibration into a hypocoercive visibility estimate.
+No such stratified transfer theorem is proved in this PR.  The point of the reconstruction is that the target is now typed much more narrowly than "control Codazzi": the missing key is a coercivity-or-rigidity mechanism that converts the certified local tangent controls and distinguished heat-normal calibration into a finite visibility action without creating another descendant.
 
 ---
 
@@ -468,9 +815,13 @@ No such modified-energy inequality is proved in this PR.  The point of the recon
 | Reciprocal sharp lower bound \(Q\chi_{\rm geom}^2/|p-p'|\ge\sqrt6/8\) | **CERTIFIED THEOREM** |
 | Reciprocal canonical multiplicity \(\le2\) + Jacobian null classification | **EXACT SYMBOLIC THEOREM** |
 | Equal-heat collision invariants contain \(1,k,|k|^2\) | **EXACT** |
-| No extra kernel on lattice boxes \(K\le3\) | **AUDIT** |
+| No extra equal-heat kernel on lattice boxes \(K\le3\) | **AUDIT** |
+| Full physical parabolic source-synchronization kernel on a connected local continuum domain | **EXACT AFFINE-RIGIDITY THEOREM** |
+| Physical full-vector synchronization kernel is exactly four-dimensional on tested interaction-rich windows | **EXACT ACTIVE-SET CLASSIFICATION / EXACT MODULAR RANK** |
+| Source-projective Fisher / heat-normal microscopic Polar--Korn identities | **EXACT** |
+| Endpoint coherence \(\Rightarrow\) coercive/vanishing parabolic synchronization defect | **OPEN TRANSFER** |
 | Complete mother/signature Korn observability | **EXACT THEOREM** |
-| Global hypocoercive Polar--Korn modified-energy estimate | **OPEN** |
+| Global stratified Source--Korn / hypocoercive Polar--Korn transfer | **OPEN** |
 | Global 3D NS regularity | **OPEN** |
 
 The intended research discipline is therefore:
