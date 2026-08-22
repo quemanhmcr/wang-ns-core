@@ -1,100 +1,152 @@
 # 02 — Analytic frontier and lessons
 
-## Status ledger
+## Current frontier
 
-### EXACT
-
-- Mother/full-flag completeness on the stated smooth normalized class.
-- Anchored interaction-frame identities
-  \[
-  v_t=-\nu(C^\sharp)^2v,
-  \quad C^\sharp_t=U^*E_uU,
-  \quad (H_a^\sharp)_t=U^*A_aU.
-  \]
-- Critical metric law and normalized spectral-probability law.
-- Finite \(L_t^2\mathfrak M_0\) Mother action from kinetic viscosity.
-- Shifted-flag half-derivative identity.
-- Exact zero flag motion is rigid: if \(A_a(u)=0\) for a.e. \(a\), then \(E_u=0\), hence \(u=0\) modulo the known Killing sector.
-
-### DEDUCTION / interpretation
-
-At a heat scale \(K\), a dangerous state must move spectral mass outward on time \(\sim K^{-2}\) fast enough to defeat the positive operator \(\nu(C^\sharp)^2\). This motivates the language
+The structural problem is no longer to discover another observable.  Theory 2 already supplies the complete physical coordinate
 
 \[
-\text{adiabatic heat decay}
-\quad\vee\quad
-\text{nonadiabatic flag motion},
+\Sigma(u)\longleftrightarrow E_u\longleftrightarrow u.
 \]
 
-but the quantitative adiabatic theorem is not yet proved.
+The remaining issue is analytic: can a complete state keep moving critical mass toward the ultraviolet quickly enough to balance viscosity through arbitrarily many scales?
 
-Similarly, (4.2) in `00_THEOREM_SPINE.md` gives the exact broad/thin heat statistic
+The latest reduction separates two genuinely different possibilities through the scale-invariant critical shell density
 
 \[
-\operatorname{Var}_\mu(\kappa),
+\mu_{\rm sh}(u):=\sup_{M>0}M\|P_Mu\|_2^2.
 \]
 
-but converting a thin outward-moving heat fiber into spatial Mother concentration is still an analytic step.
-
-### OPEN
-
-The preferred target is a one-step critical monodromy theorem. Let \(\mathcal U(t,s)\) solve
+### Finite-density branch
 
 \[
-\partial_t\mathcal U(t,s)=-\nu(C^\sharp(t))^2\mathcal U(t,s),
+\sup_{t<T_*}\mu_{\rm sh}(u(t))<\infty.
 \]
 
-and set \(\Lambda^\sharp=|C^\sharp|\). On a normalized positive spectral sector define
+Here deep scale jumps are quantitatively inefficient.  The exact Fourier commutator and the existing shell estimate show that high--high--low radial transfer loses a factor \((L/H)^2\).  Thus a dangerous finite-density state cannot rely mainly on spectral teleportation.  It must sustain a locally connected, self-generated UV current network through many scales.
+
+The correct enemy is therefore not an instantaneous perfect tracker.  It is a normalized complete core whose own connection keeps reproducing a persistent outward critical drift while viscosity acts at the same parabolic scale.
+
+### Infinite-density branch
 
 \[
-\mathcal K_{s,T}
-=(\Lambda^\sharp(s))^{-1/2}
-\mathcal U(T,s)^*\Lambda^\sharp(T)\mathcal U(T,s)
-(\Lambda^\sharp(s))^{-1/2}.
-\tag{1.1}
+\mu_{\rm sh}(u(t_n))\to\infty.
 \]
 
-The desired theorem has only two legitimate branches:
+This is an amplitude/concentration branch.  It is not solved by the finite-density conveyor analysis and should not be silently renamed affine degeneration without an additional theorem.
+
+The two branches are exhaustive, but they require different rigidity mechanisms.
+
+## What is exact now
+
+The finite-density picture rests on four exact or already-certified pieces.
+
+First, critical nonlinear growth is one curl-functional-calculus commutator:
 
 \[
 \boxed{
-\|\mathcal K_{s,T}\|\le1-\varepsilon
-\quad\vee\quad
-\text{a near-neutral normalized complete state compactifies into an exact harmless kernel.}
+\langle N,\Lambda u\rangle
+=\frac12\langle u,[\nabla_u,\Lambda]u\rangle,
+\qquad \Lambda=|C|.
 }
-\tag{1.2}
 \]
 
-The zero kernel is structurally classified; the quantitative passage to it is open.
+Second, the commutator is a shifted-flag moment,
 
-## No-go ledger
+\[
+[\nabla_u,\Lambda]
+=\frac12\int_{\mathbb R}\operatorname{sgn}(a)[\nabla_u,H_a]\,da,
+\]
 
-1. **Do not use \(X/Y\), traffic, a hinge scalar, Fisher action, or a source ray as the master state.** They are downstream contractions.
-2. **Do not claim finite weak Mother action closes the cascade.** A critical generation at scale \(K\) may cost only \(K^{-1}\) over one parabolic time.
-3. **Do not identify the flag edge norm with the physical Mother norm without a theorem.** Their half-derivative relation is the seam to be proved, not assumed.
-4. **Do not prove an abstract “skew + heat” theorem and call it NS.** The final estimate must use 3D physical-section information, e.g. the Mother principal symbol
-   \[
-   \sigma_1(E_u)(x,\xi)b
-   =-i\frac{\xi^TS(u)\xi}{|\xi|^2}\,\xi\times b,
-   \qquad \operatorname{tr}S=0,
-   \]
-   or an equivalent incompressible 3D convolution identity.
-5. **Do not call \((v,C^\sharp)\) complete after discarding the frame gauge.** Keep \(U\), or keep \(u/E/\Sigma\) as ontology.
+so it is a Theory-2 renderer, not a new primitive.
 
-## Two genuine analytic enemies
+Third, an ordered Fourier transition \(q\to k\) can exist only through the actual third leg \(p=k-q\).  Its force--leverage coefficient contains
 
-The interaction frame removes observer-induced ambiguity but not physical noncompactness. Two useful hostile classes remain:
+\[
+\big||k|-|q|\big|\,|\widehat u_p\cdot q|,
+\qquad
+|\widehat u_p\cdot q|
+\le \min(|q|,|k|)|\widehat u_p|.
+\]
 
-- **localized affine-strain escape:** on a core where \(u\approx A(t)x\), \(A=A^T\), \(\operatorname{tr}A=0\), viscosity does not see the exact affine field because \(\Delta(Ax)=0\); finite-energy localization alone has the wrong scaling to exclude an expanding normalized affine core;
-- **genuinely non-affine concentrated Mother motion:** the complete strain/Mother varies on the parabolic scale and must be controlled by a true compactness/coercivity theorem.
+After shell normalization the third scale matters, and the deep \(H,H,L\) regime carries the already-proved quadratic loss \((L/H)^2\).
 
-These are physical analytic enemies, not missing-information artifacts.
+Fourth, the critical balance remains exact under arbitrary dynamically chosen NS rescaling.  At \(\dot H^{1/2}\), dilation drift cancels identically.  This makes the critical level the natural place to study a moving UV core without committing in advance to Type-I self-similarity.
 
-## Lessons to carry forward
+The detailed formulas and the corresponding Mother cocycle are recorded in [`03_RENORMALIZED_COMPLETE_UV_CONVEYOR.md`](03_RENORMALIZED_COMPLETE_UV_CONVEYOR.md).
 
-- **Complete first, contract last.**
-- **Euler is geometry motion, not a new source, in the interaction frame.**
-- **Heat is the only sign-definite normal generator.**
-- **The missing half derivative is already present geometrically in the full moving flag.**
-- **The remaining task is quantitative monodromy/compactness, not ontology discovery.**
-- **A successful END should become smaller than the historical endgame, not accumulate descendants.**
+## What this changes about B
+
+The critical first-entry barrier remains useful as a local gate.  For a genuinely closed NS state, the standard endpoint estimate gives
+
+\[
+X'\le 2(C\sqrt X-\nu)\|u\|_{\dot H^{3/2}}^2,
+\qquad
+X=\|u\|_{\dot H^{1/2}}^2.
+\]
+
+At the certified barrier \(X_0=(\nu/C)^2\), a positive first crossing from below would force equality; energy orthogonality then reduces the equality case to the trivial mean-zero state.  Thus a localized/projected UV birth cannot be explained by a closed self-interaction alone: its environment or the rest of the complete network must enter the balance.
+
+What changes is the role of this observation.  A strict pointwise efficiency gap is useful but is not enough to finish the finite-density branch.  Even a uniformly inefficient bounded-step cascade can time-pack because parabolic residence times scale like \(K^{-2}\).  Equality classification therefore controls only the extremal corner of the problem.
+
+The stronger target is a dynamical rigidity statement on the complete state:
+
+\[
+\boxed{
+\textbf{No Precompact Self-Generated Critical Drift.}
+}
+\]
+
+Schematic form: after a legitimate complete-core extraction and quotient by true physical symmetries, there should be no non-null precompact renormalized Theory-2 trajectory with bounded shell density whose long-time averaged complete spectral drift toward the UV balances critical heat dissipation.
+
+This formulation keeps the historical good ideas in their proper roles:
+
+- the three-scale kernel rules out efficient deep teleportation;
+- concentration compactness must produce the normalized complete core;
+- the fact that \((\nabla_u)_{kq}\) is generated by \(u_{k-q}\) supplies the self-generation constraint absent from shell models;
+- A+B/reflection geometry is used to classify unavoidable companion leakage or null degeneration;
+- recurrent/long-time averaged critical and helicity balances constrain any surviving normalized orbit.
+
+## The main analytic seam
+
+Bounded shell density does **not** imply bounded critical norm:
+
+\[
+\|u\|_{\dot H^{1/2}}^2
+=\int_0^\infty \mu(R)\,\frac{dR}{R}.
+\]
+
+A bounded-height front can therefore widen through unbounded logarithmic scale and still make the critical norm diverge.  Since \(\dot H^{1/2}\) is scale invariant, rescaling does not remove this defect.
+
+Consequently the passage
+
+\[
+\text{finite-density UV current network}
+\Longrightarrow
+\text{precompact renormalized complete core}
+\]
+
+is a real concentration-compactness theorem, not a consequence of scaling.  It must preserve a nontrivial complete-state mark, control profile splitting and tails, and pass the Mother/flag geometry to the limit.
+
+This is presently the central compactness seam.
+
+## Experience carried forward
+
+The useful lesson from the historical endgame is that locality, current and leakage should remain **readers of one complete state**, not be promoted into a new traffic ontology.  Deep transfer estimates tell us what a singular state cannot do efficiently; they do not tell us that there is a unique lineage.  Likewise, recurrence is meaningful only after a normalized complete core has actually been extracted.
+
+The most economical path now is therefore:
+
+\[
+\boxed{
+\text{Theory-2 complete state}
+\to
+\text{three-scale locality}
+\to
+\text{complete-core compactness}
+\to
+\text{self-generation / leakage rigidity}
+\to
+\text{no persistent critical drift}.
+}
+\]
+
+A new reader is useful only insofar as it shortens one of these arrows.

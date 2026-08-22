@@ -45,8 +45,10 @@ This also keeps two different questions separate.  Theory 2 addresses **what inf
 
 1. [`00_THEOREM_SPINE.md`](00_THEOREM_SPINE.md) — derivation from Mother/Flag Completeness to the moving-heat system and spectral-measure law.
 2. [`01_COMPLETENESS_AND_GAUGE.md`](01_COMPLETENESS_AND_GAUGE.md) — proof that the anchored frame preserves Theory-2 information, plus the gauge warning for the pair \((v,C^\sharp)\).
-3. [`02_ANALYTIC_FRONTIER_AND_LESSONS.md`](02_ANALYTIC_FRONTIER_AND_LESSONS.md) — exact owners, the half-derivative seam, the monodromy target, no-go statements, and research lessons.
-4. [`audits/interaction_frame_algebra.py`](audits/interaction_frame_algebra.py) — finite-dimensional sign/algebra audit for the interaction-frame identities.
+3. [`02_ANALYTIC_FRONTIER_AND_LESSONS.md`](02_ANALYTIC_FRONTIER_AND_LESSONS.md) — the current analytic frontier: finite/infinite shell-density split, complete-core compactness, and the no-persistent-drift target.
+4. [`03_RENORMALIZED_COMPLETE_UV_CONVEYOR.md`](03_RENORMALIZED_COMPLETE_UV_CONVEYOR.md) — exact critical spectral current, three-scale force--leverage locality, arbitrary-scale renormalization, and the complete Mother cocycle.
+5. [`audits/interaction_frame_algebra.py`](audits/interaction_frame_algebra.py) — finite-dimensional sign/algebra audit for the interaction-frame identities.
+6. [`audits/critical_current_and_renormalization.py`](audits/critical_current_and_renormalization.py) — sign/scaling audit for the critical current and renormalized balance, including the dyadic-surrogate warning.
 
 ## Working perspective
 
@@ -58,4 +60,4 @@ Throughout the notes, \(u\), equivalently \(E_u\) or the full shifted flag \(\Si
 - [`core/spectral_signature/SPECTRAL_FLAG_SIGNATURE.md`](../../../core/spectral_signature/SPECTRAL_FLAG_SIGNATURE.md)
 - [`core/spectral_signature/HALF_DERIVATIVE_POLAR_KORN_BRIDGE.md`](../../../core/spectral_signature/HALF_DERIVATIVE_POLAR_KORN_BRIDGE.md)
 
-The interaction frame is therefore a **Theory-2-preserving application layer**, not a replacement for Theory 2.
+The interaction frame is therefore a **Theory-2-preserving application layer**, not a replacement for Theory 2.  The current finite-density programme uses spectral current and moving fronts only as readers of that complete state; the object to compactify, when possible, remains the reconstructed Mother/signature trajectory.

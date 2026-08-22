@@ -58,7 +58,7 @@ Các update này **không** tuyên bố global 3D regularity.  Modified-energy/h
 Application-level Navier--Stokes endgame notes now live at
 [application/clay_problem/theory2_realtime_endgame/](application/clay_problem/theory2_realtime_endgame/).
 
-Hướng blow-up theorem-first mới được đặt tại [application/clay_problem/theory2_interaction_frame/](application/clay_problem/theory2_interaction_frame/): Mother/full flag vẫn là complete state, còn anchored interaction frame viết NS thành heat trên một curl geometry chuyển động mà không quotient state xuống scalar traffic.
+Hướng blow-up theorem-first mới được đặt tại [application/clay_problem/theory2_interaction_frame/](application/clay_problem/theory2_interaction_frame/): Mother/full flag vẫn là complete state; frontier finite-density hiện được retype thành three-scale UV locality, complete-core compactness và bài toán loại trừ persistent self-generated critical drift.
 The handoff records the Theory-2 realtime anti-loop doctrine, exact reduction
 chain, formula compendium, and the single remaining **open** Dynamic
 Rich-Packet Polar--Korn theorem.  It is deliberately explicit that structural

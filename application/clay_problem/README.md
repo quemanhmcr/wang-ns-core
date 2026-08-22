@@ -20,4 +20,4 @@ v_t=-\nu(C^\sharp)^2v,
 C^\sharp_t=U^*E_uU.
 \]
 
-Folder này giữ \(u\leftrightarrow E_u\leftrightarrow\Sigma(u)\) làm complete state, coi interaction frame là coordinate có gauge được giữ rõ ràng, và retype frontier thành critical monodromy / compactness-rigidity thay vì scalar traffic reconstruction.
+Folder này giữ \(u\leftrightarrow E_u\leftrightarrow\Sigma(u)\) làm complete state, coi interaction frame là coordinate có gauge được giữ rõ ràng, và hiện retype finite-density frontier thành three-scale UV locality, complete-core compactness và no persistent self-generated critical drift; shell current vẫn chỉ là reader, không phải ontology mới.
