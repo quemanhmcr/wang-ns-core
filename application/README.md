@@ -14,3 +14,4 @@ Hiện tại:
 
 - [clay_problem/](clay_problem/) chứa các application hướng tới Clay Millennium problems;
 - [clay_problem/theory2_realtime_endgame/](clay_problem/theory2_realtime_endgame/) là handoff đầy đủ cho Theory-2 realtime Navier--Stokes endgame.
+- [clay_problem/theory2_interaction_frame/](clay_problem/theory2_interaction_frame/) là spine blow-up theorem-first: complete Theory-2 state + anchored interaction frame + moving heat geometry + critical monodromy frontier.
