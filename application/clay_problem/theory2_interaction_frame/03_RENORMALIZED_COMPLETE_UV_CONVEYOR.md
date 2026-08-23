@@ -1,370 +1,450 @@
-# 03 — Renormalized complete UV conveyor
+# 03 — Renormalized critical current, triadic curvature, and live side channels
 
-**Status:** exact current/renormalization formulas plus a sharply typed open finite-density rigidity target.  This note is not a regularity theorem.
+## Status
 
-## 1. Exact critical spectral current
+This note records exact critical-production identities and the finite-band coercivities they imply.  Pair-source geometry is kept separate from closed-triad critical work.
 
-Let
+## 1. Pair source is not critical production
+
+For a Fourier pair `a+b=s`, the projected source
 
 \[
-\Lambda=|C|,\qquad N=-\Gamma_u u,\qquad \Gamma_u=\nabla_u,\qquad \Gamma_u^*=-\Gamma_u.
+P_s\mathcal B(a,b)
 \]
 
-Then
+says what the two parent modes try to generate at output `s`.  It does **not** by itself give critical production.  The exact critical work is the closed cubic quantity
 
 \[
 \boxed{
-\mathcal T_{1/2}:=\langle N,\Lambda u\rangle
-=\frac12\langle u,[\Gamma_u,\Lambda]u\rangle.
+\mathcal T(u)
+=\operatorname{Re}\langle N,|C|u\rangle
+=\frac12\operatorname{Re}\langle u,[\Gamma_u,|C|]u\rangle.
 }
 \tag{1.1}
 \]
 
-For the spectral resolution of \(\Lambda\), write \(u_\lambda=P_\lambda u\) in the discrete case and define
+The output must already carry amplitude and phase for the source to perform work.
+
+## 2. Affine spectral defect of `|C|` — EXACT identity
+
+Euler energy and helicity conservation give
 
 \[
-J_{\lambda\rho}
-:=2\operatorname{Re}\langle u_\lambda,\Gamma_u u_\rho\rangle.
+\operatorname{Re}\langle N,u\rangle=0,
+\qquad
+\operatorname{Re}\langle N,Cu\rangle=0.
 \]
 
-Skew-adjointness gives
-
-\[
-\boxed{J_{\lambda\rho}=-J_{\rho\lambda},}
-\tag{1.2}
-\]
-
-and therefore
+Hence for every real `alpha,beta`,
 
 \[
 \boxed{
-\mathcal T_{1/2}
-=\frac14\sum_{\lambda,\rho}(\rho-\lambda)J_{\lambda\rho}.
-}
-\tag{1.3}
-\]
-
-On continuous spectrum the same statement is read through the corresponding antisymmetric spectral current measure.
-
-This current is a contraction, not the state.  Theory 2 keeps the complete generator behind it:
-
-\[
-\boxed{
-[\Gamma_u,\Lambda]
-=\frac12\int_{\mathbb R}\operatorname{sgn}(a)A_a(u)\,da.
-}
-\tag{1.4}
-\]
-
-In particular \([\Gamma_u,\Lambda]\) can vanish on equal-\(|C|\) motion that is still visible to the full shifted flag.  Equality and compactness arguments must therefore return to \(E_u\) or \(\Sigma(u)\) when the radial reader becomes blind.
-
-## 2. Three-scale force--leverage geometry
-
-For one Fourier interaction
-
-\[
-p+q=k,
-\]
-
-where \(p\) is the advecting leg, the ordered commutator coefficient contains
-
-\[
-\big||k|-|q|\big|\,(\widehat u_p\cdot q).
-\]
-
-Incompressibility gives
-
-\[
-\widehat u_p\cdot q=\widehat u_p\cdot k,
-\]
-
-and hence
-
-\[
-\boxed{
-|\widehat u_p\cdot q|
-\le \min(|q|,|k|)|\widehat u_p|.
+\mathcal T(u)
+=\operatorname{Re}\left\langle
+N,(|C|-\alpha-\beta C)u
+\right\rangle.
 }
 \tag{2.1}
 \]
 
-Let \(P,Q,K\) denote dyadic sizes of \(p,q,k\).  Put
+Consequences:
 
-\[
-L=\min(P,Q,K)
-\]
+- if `u` is homochiral, `|C|=+/- C` on the state and `T=0`;
+- if the signed-curl spectral support lies on a single absolute radius, `|C|=rI` on the state and `T=0`.
 
-and let \(M_1,M_2\) be the two remaining scales.  Using
-
-\[
-\|\widehat u_L\|_1
-\lesssim L^{3/2}\|u_L\|_2
-=L\sqrt{\mu_L},
-\qquad
-\mu_L=L\|u_L\|_2^2,
-\]
-
-one obtains the natural block majorant
+On a normalized finite frequency window, after remote forcing is put into a controlled error and the localized nonlinear source is uniformly bounded, a fixed production floor implies the coercive locator
 
 \[
 \boxed{
-|\mathcal T_{P,Q,K}|
-\lesssim
-\sqrt{\mu_L}\,
-\Psi(P,Q,K)
-\prod_{i=1}^2\big(M_i^{3/2}\|u_{M_i}\|_2\big),
+\inf_{\alpha,\beta}
+\|(|C|-\alpha-\beta C)U\|_2
+\ge c(\delta,M,L)>0.
 }
 \tag{2.2}
 \]
 
-with dimensionless three-scale kernel
+The scalar in (2.2) is not a state.  Spectrally it is the least-squares error of fitting the V-shaped graph `lambda -> |lambda|` by one affine line on the signed-curl spectral measure of `U`.
+
+Because an affine line fits any two signed spectral points, a quantitative defect in a compact normalized interval forces three quantitatively separated signed-curl sectors carrying nontrivial mass.  In particular both helicities are present and at least one helicity sign has radial multiplicity.
+
+## 3. Exact heterochiral closed-triad curvature
+
+Consider one isolated helical Euler triad with signed curl eigenvalues
 
 \[
-\boxed{
-\Psi(P,Q,K)
-\sim
-\frac{|K-Q|\min(K,Q)L}{(M_1M_2)^{3/2}},
-}
-\tag{2.3}
+\lambda_i=\sigma_i k_i,
+\qquad k_i=|\xi_i|,
+\qquad \xi_1+\xi_2+\xi_3=0.
 \]
 
-up to the fixed shell/projector constants of the chosen decomposition.
-
-In the deep high--high--low regime
+Let `e_i` be the modal kinetic-energy rates.  Energy and helicity conservation give
 
 \[
-P\sim Q\sim H,\qquad K\sim L\ll H,
-\]
-
-this becomes
-
-\[
-\boxed{
-\Psi\sim\left(\frac LH\right)^2.
-}
-\tag{2.4}
-\]
-
-This is the norm-level form of force times leverage: the large radial gap supplies leverage, while incompressibility and the low shell supply two powers of the deep ratio after critical normalization.
-
-The consequence is aggregate, not genealogical.  With bounded shell density, the total capacity of sufficiently deep interactions can be made an arbitrarily small fraction of \(\|u\|_{\dot H^{3/2}}^2\).  Thus a dangerous finite-density state must place a definite portion of its critical drive in bounded-ratio interactions.  No unique parent chain is inferred.
-
-A matching uniform theorem for the near-diagonal limit \(K/Q\downarrow1\) is still open at the fully summed level; coefficient-wise the commutator vanishes with \(|K-Q|\), but a fine radial decomposition is needed before promoting this to a global lower step size.
-
-## 3. Self-generation is the NS constraint absent from shell models
-
-The connection matrix element joining \(q\) to \(k\) is generated by the third Fourier leg:
-
-\[
-\boxed{
-(\Gamma_u)_{kq}\ \text{is generated by}\ \widehat u_{k-q}.
-}
+e_1+e_2+e_3=0,
+\qquad
+\lambda_1e_1+\lambda_2e_2+\lambda_3e_3=0.
 \tag{3.1}
 \]
 
-Thus a forward spectral edge is not an externally prescribed coupling.  The same state must carry the companion mode that creates the edge, and that companion participates simultaneously in the rest of the convolution network.
-
-For example, collinear doubling \(k=2q\) has \(p=q\), hence
+When these constraints are independent,
 
 \[
-\widehat u_p\cdot q=0,
+(e_1,e_2,e_3)
+=\mathcal A
+(\lambda_2-\lambda_3,
+ \lambda_3-\lambda_1,
+ \lambda_1-\lambda_2).
+\tag{3.2}
 \]
 
-so the scalar shell-model doubling channel is absent.  Strong finite-ratio transfer therefore requires non-collinear companion geometry.
-
-The open rigidity question is therefore not whether one desired edge can be efficient.  It is whether a **complete physical state can close the entire self-generated network** while maintaining persistent outward critical drift and suppressing all companion leakage.  The certified A+B/reflection results are natural local ingredients for this network-closure problem, but the required global theorem is not yet proved.
-
-## 4. Finite-density and infinite-density branches
-
-Define the hard radial shell \(P_M=1_{\{M/2<\Lambda\le M\}}\) and
+The critical-norm contribution is
 
 \[
-\mu_{\rm sh}(t)=\sup_{M>0}M\|P_Mu(t)\|_2^2.
+\dot Q_{\rm triad}
+=\sum_i|\lambda_i|e_i.
 \]
 
-The two branches are
+With the convention (3.2),
 
 \[
 \boxed{
-\sup_{t<T_*}\mu_{\rm sh}(t)<\infty
+\dot Q_{\rm triad}
+=-\mathcal A
+\det
+\begin{pmatrix}
+1&1&1\\
+\lambda_1&\lambda_2&\lambda_3\\
+|\lambda_1|&|\lambda_2|&|\lambda_3|
+\end{pmatrix}.
+}
+\tag{3.3}
+\]
+
+This is the exact discrete curvature of the function `|lambda|` against the two conserved affine functions `1` and `lambda`.
+
+For a `++-` triad
+
+\[
+\lambda_1=\alpha>0,
+\qquad
+\lambda_2=\beta>0,
+\qquad
+\lambda_3=-\gamma<0,
+\]
+
+one gets
+
+\[
+\boxed{
+\dot Q_{\rm triad}
+=2\gamma(\alpha-\beta)\mathcal A.
+}
+\tag{3.4}
+\]
+
+Moreover
+
+\[
+e_3=(\alpha-\beta)\mathcal A,
+\]
+
+so
+
+\[
+\boxed{
+\dot Q_{\rm triad}=2\gamma e_{\rm minority}.
+}
+\tag{3.5}
+\]
+
+Thus positive critical production in a heterochiral triad is equivalent to kinetic-energy gain of the unique minority-helicity leg.  Nonzero production also requires radial asymmetry between the two same-helicity legs.
+
+Homochiral triads give zero critical production because `|lambda|` is affine on one helicity half-line.
+
+## 4. Exact physical-space heterochiral production
+
+Write
+
+\[
+u=u_++u_-,
+\qquad
+Cu=\Lambda u_+-\Lambda u_-,
+\qquad
+\Lambda u=\Lambda u_++\Lambda u_-.
+\]
+
+Using the rotational Euler form and scalar triple products,
+
+\[
+\boxed{
+\mathcal T(u)
+=2\int_{\mathbb R^3}
+u\cdot
+(\Lambda u_+\times\Lambda u_-)\,dx
 }
 \tag{4.1}
 \]
 
-and
+up to the globally fixed sign convention.
+
+This immediately gives, on a normalized finite band,
 
 \[
-\boxed{
-\mu_{\rm sh}(t_n)\to\infty
-\quad\text{along some }t_n\uparrow T_*.
-}
+|\mathcal T|
+\lesssim
+\|P(u_+\times\Lambda u_+)\|_2\|\Lambda u_-\|_2
++
+\|P(u_-\times\Lambda u_-)\|_2\|\Lambda u_+\|_2.
 \tag{4.2}
 \]
 
-The first is the domain of the present conveyor analysis.  The second is an amplitude/concentration branch and requires a different theorem.
-
-For the exact continuous shell layer cake, put
+Hence a fixed production floor forces
 
 \[
-\mu(R)=R\|P_{(R/2,R]}u\|_2^2.
+\boxed{
+\max_{\sigma=\pm}
+\|P(u_\sigma\times\Lambda u_\sigma)\|_2
+\ge c(\delta,M,L).
+}
+\tag{4.3}
+\]
+
+An efficient state is therefore separated, in at least one helicity sector, from single-radius Beltrami-by-helicity geometry.
+
+## 5. Single-pair output polarization — EXACT
+
+For pure-helicity parent modes `(a,sigma)` and `(b,tau)`, let
+
+\[
+\alpha=|a|,
+\qquad
+\beta=|b|,
+\qquad
+s=a+b.
+\]
+
+In the triad plane basis, the projected source has shape
+
+\[
+P_s\mathcal B(a,b)
+\propto
+\sin\theta
+\left[
+\frac{\beta^2-\alpha^2}{|s|}t_s
++i(\beta\tau-\alpha\sigma)n
+\right]AB.
+\tag{5.1}
+\]
+
+For every nonzero noncollinear interaction, both output helicities are nonzero.  A one-helicity output can occur only at a source-null triangle degeneration; equal-radius homochiral parents give the familiar complete null.
+
+The ratio between weaker and stronger child-helicity amplitudes is controlled exactly by triangle defects.  These pairwise facts are source geometry, not yet closed-triad work.
+
+## 6. Productive triad forces a comparable reality-difference source
+
+Take the two same-helicity majority legs `k,p` of a quantitatively productive heterochiral triad.  By (3.4),
+
+\[
+|k|\ne|p|.
+\]
+
+Reality supplies the mode `-p` with the same helicity label.  The pair `(k,-p)` outputs
+
+\[
+d=k-p.
+\]
+
+It is a same-helicity, unequal-radius, noncollinear pair, so (5.1) gives a nonzero source with both child helicities.  It cannot use the equal-radius homochiral null.
+
+If a coarse productive channel carries a fixed fraction of normalized critical production and parent scale ratios stay in a compact interval, the amplitude bounds force quantitative separation from both radial-equality and collinearity.  Consequently
+
+\[
+\boxed{|d|\simeq K}
+\tag{6.1}
+\]
+
+for the front scale `K`, and the difference source has fixed nonzero strength.
+
+For
+
+\[
+s=k+p,
+\qquad d=k-p,
+\]
+
+one has the exact geometry
+
+\[
+\boxed{s\cdot d=|k|^2-|p|^2.}
+\tag{6.2}
+\]
+
+The orthogonal equal-radius twin mechanism occurs only when the critical triad leverage vanishes.  Therefore a productive triad forces a genuinely comparable **live side source channel**.  This does not yet prove that the resulting child participates nontrivially in the next generation; further polarization/network geometry is required.
+
+## 7. Equal-radius heterochiral reality twin — EXACT special case
+
+For a source pair with
+
+\[
+|a|=|b|=r,
+\qquad \tau=-\sigma,
+\]
+
+reality supplies outputs
+
+\[
+s=a+b,
+\qquad d=a-b,
+\]
+
+with
+
+\[
+\boxed{s\cdot d=0.}
+\tag{7.1}
+\]
+
+Both source vectors are pure-normal and have equal raw magnitude
+
+\[
+\boxed{|F_s|=|F_d|=r\sin\theta\,|AB|}
+\tag{7.2}
+\]
+
+up to the common normalization convention.  This is a useful leakage lemma, but because equal-radius same-helicity critical leverage is zero it is not itself the geometry of a productive closed critical triad.
+
+## 8. Exact finite-scale increment current on `R^3`
+
+For smooth decaying divergence-free fields, the fractional-Laplacian representation and transport symmetrization give
+
+\[
+\boxed{
+\mathcal T(u)
+=c
+\iint
+\frac{
+[(u(x)-u(y))\cdot(x-y)]
+|u(x)-u(y)|^2
+}{|x-y|^6}
+\,dx\,dy
+}
+\tag{8.1}
+\]
+
+up to a universal sign/normalization constant.
+
+Writing `y=x+r omega`, define
+
+\[
+\Phi_u(r)
+=r^{-2}
+\int_{\mathbb R^3}\int_{S^2}
+[\delta_{r,\omega}u(x)\cdot\omega]
+|\delta_{r,\omega}u(x)|^2
+\,d\omega dx.
 \]
 
 Then
 
 \[
-\|u\|_{\dot H^{1/2}}^2
-=\int_0^\infty \mu(R)\,\frac{dR}{R}.
+\mathcal T(u)=c\int_0^\infty\Phi_u(r)\frac{dr}{r}.
+\tag{8.2}
 \]
 
-Thus even in the finite-density branch the critical norm can diverge through unbounded logarithmic width.  Hence bounded shell height alone gives no precompact critical state.
+Incompressibility gives the exact spherical cancellation
 
-## 5. Critical balance under arbitrary moving NS scale
+\[
+\boxed{
+\int_{S^2}\delta_{r,\omega}u(x)\cdot\omega\,d\omega=0.
+}
+\tag{8.3}
+\]
 
-Let \(\lambda(t)>0\) be a chosen moving frequency scale and \(x_c(t)\) a center.  Write
+Critical transfer therefore requires correlation between radial increment sign and increment energy; isotropic radial compression alone cannot produce it.  Equation (8.1) is an exact finite-scale identity, not a principal-symbol approximation.
+
+## 9. Arbitrary moving scale — EXACT
+
+Let
 
 \[
 u(x,t)=\lambda(t)U(y,s),
 \qquad
 y=\lambda(t)(x-x_c(t)),
 \qquad
-\frac{ds}{dt}=\lambda(t)^2.
+\frac{ds}{dt}=\lambda^2.
 \]
 
-Set
+Put
 
 \[
-\beta(s)=\frac{\lambda_t}{\lambda^3},
+\beta=\frac{\lambda_t}{\lambda^3},
 \qquad
-\gamma(s)=\frac{x_c'}{\lambda}.
+\gamma=\frac{x_c'}{\lambda}.
 \]
 
-Then the projected equation becomes
+Then
 
 \[
-\boxed{
-U_s
-+\beta(U+y\cdot\nabla U)
--\gamma\cdot\nabla U
-+\Gamma_UU
+U_s+\beta(U+y\cdot\nabla U)-\gamma\cdot\nabla U+\Gamma_UU
 =-\nu C^2U.
-}
-\tag{5.1}
+\tag{9.1}
 \]
 
 For
 
 \[
-X_\sigma(U)=\|U\|_{\dot H^\sigma}^2,
+X_\sigma=\|U\|_{\dot H^\sigma}^2,
 \]
-
-the homogeneous Sobolev balance is
 
 \[
 \boxed{
-\frac12\frac d{ds}X_\sigma
-+\frac{2\sigma-1}{2}\,\beta X_\sigma
+\frac12X_\sigma'
++\frac{2\sigma-1}{2}\beta X_\sigma
 +\nu X_{\sigma+1}
-=\mathcal N_\sigma(U),
+=\mathcal N_\sigma(U).
 }
-\tag{5.2}
+\tag{9.2}
 \]
 
-where \(\mathcal N_\sigma\) is the Euler contribution.  Translation modulation contributes no quadratic stock term because \(\nabla\) is skew on \(L^2\).
-
-At the critical index \(\sigma=1/2\), the dilation term vanishes for **every** choice of \(\lambda(t)\):
+At `sigma=1/2` the dilation drift vanishes for **every** dynamic choice of scale:
 
 \[
 \boxed{
-\frac12\frac d{ds}X_{1/2}
-+\nu X_{3/2}
-=\mathcal N_{1/2}(U).
+\frac12X_{1/2}'+\nu X_{3/2}=\mathcal T(U).
 }
-\tag{5.3}
+\tag{9.3}
 \]
 
-For the Leray scale \(\lambda=(T-t)^{-1/2}\), one has \(\beta=1/2\), recovering the familiar coefficient \((2\sigma-1)/4\).
+This is why the critical norm is the correct moving-front metric.
 
-The same scale invariance gives the helicity law
+## 10. Renormalized complete Mother cocycle — EXACT pathwise
 
-\[
-\boxed{
-\frac d{ds}\langle U,CU\rangle
-+2\nu\Big(
-\|\Lambda^{3/2}U_+\|_2^2
--\|\Lambda^{3/2}U_-\|_2^2
-\Big)=0.
-}
-\tag{5.4}
-\]
-
-Thus any sufficiently recurrent normalized core with bounded critical stock and helicity obeys, after long-time averaging,
-
-\[
-\nu\langle X_{3/2}\rangle
-=\langle\mathcal N_{1/2}\rangle,
-\tag{5.5}
-\]
-
-and
-
-\[
-\left\langle
-\|\Lambda^{3/2}U_+\|_2^2
--\|\Lambda^{3/2}U_-\|_2^2
-\right\rangle=0.
-\tag{5.6}
-\]
-
-These are conditional average identities, not an existence theorem for the recurrent core.
-
-## 6. Renormalized Mother cocycle
-
-Let \(\mathcal M(U)=E_U=[\nabla_U,C]\), and let \(R_E\) be the Theory-2 physical decoder on the complete Mother image.  Applying \(\mathcal M\) to (5.1) gives the exact pathwise equation
+Let `M(U)=E_U` and `R_E` be the Theory-2 decoder.  Applying the linear Mother map to (9.1) gives
 
 \[
 \boxed{
 E_s
-=
-\mathcal M\!\left(
-F_\nu(U)
+=\mathcal M\!\left(
+-\Gamma_UU-\nu C^2U
 -\beta(U+y\cdot\nabla U)
 +\gamma\cdot\nabla U
 \right),
-\qquad U=R_EE,
+\qquad U=R_EE.
 }
-\tag{6.1}
+\tag{10.1}
 \]
 
-where
+The full shifted signature is reconstructed from the same physical state.  Hence renormalization changes coordinates but does not replace the complete Theory-2 state by the critical current.
 
-\[
-F_\nu(U)=-\Gamma_UU-\nu C^2U.
-\]
+## 11. What these identities do and do not prove
 
-Equivalently, on the physical Mother image,
+They prove that a productive finite-density front must simultaneously carry:
 
-\[
-\boxed{
-E_s
-=\mathcal G_{\nu,\beta,\gamma}(E).
-}
-\tag{6.2}
-\]
+- both helicities;
+- non-affine signed-curl radial structure;
+- same-helicity radial multiplicity;
+- a fixed homochiral self-interaction field in at least one sign;
+- exact finite-scale increment anisotropy;
+- comparable side-source channels forced by productive triads.
 
-The full shifted signature is recovered from \(E\) through the Theory-2 state reconstruction followed by reevaluation.  The cocycle therefore remains complete; no shell current, flux or moving front is promoted to the state.
-
-## 7. The open theorem
-
-The finite-density branch would close if one could prove the following two-step statement.
-
-### Complete-core compactness
-
-From every hypothetical finite-density singular UV current network, extract after translation/rescaling a nontrivial complete core trajectory whose orbit is precompact in a topology strong enough to pass the critical balance and the relevant Mother/A+B geometry.  Profile splitting must either decouple harmlessly or leave a smaller core carrying the same persistent UV drift.
-
-### No precompact self-generated critical drift
-
-No non-null precompact complete renormalized trajectory, modulo true physical symmetries, can satisfy bounded shell density together with persistent positive long-time averaged critical drift balancing viscosity.
-
-The intended rigidity mechanism is that every forward connection edge must be generated by the same state.  The required global upgrade of the A+B/reflection results would then show that an interaction-rich network cannot hide all companion outputs unless it degenerates toward already-classified harmless strata.
-
-This is narrower than global regularity, but it is the present finite-density endpoint.  The main unresolved work is compactness plus global network rigidity, not the invention of another spacetime wallet.
+They do **not** prove that a broadband state must generate new Fourier support: a full annulus may already contain every side output.  The remaining enemy can therefore be a genuinely continuous mixed-helicity interaction medium.  `04`--`05` address the causal compactification and the self-generated recurrent mixer problem for that broadband case.
