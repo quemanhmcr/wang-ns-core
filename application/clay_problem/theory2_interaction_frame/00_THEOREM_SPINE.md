@@ -1,10 +1,10 @@
-# 00 — Theorem spine: complete state to moving heat geometry
+# 00 — Theorem spine: complete state, bipolar flags, moving heat
 
 ## Status
 
-**EXACT through Sections 1--6; OPEN only where explicitly labelled.** Work first on the smooth mean-zero divergence-free torus, with the Schwartz whole-space extension inherited from the Mother Completeness theorem.
+`EXACT` unless explicitly marked otherwise.  This is structural Theory-2/NS algebra, not a regularity theorem.
 
-## 1. Start from the complete Theory-2 state
+## 1. Complete Theory-2 state
 
 Let
 
@@ -20,228 +20,281 @@ H_a=\operatorname{sgn}(C-aI),\qquad
 A_a(u)=[\Gamma_u,H_a].
 \]
 
-The shifted signature satisfies the exact reverse compiler
+The shifted signature gives the exact layer cake
 
 \[
-A_a(u)=H_a\operatorname{skew}\mathscr O_a(u),
-\]
-
-and layer cake gives
-
-\[
-\boxed{
-E_u=\frac12\int_{\mathbb R}A_a(u)\,da.
-}
+\boxed{E_u=\frac12\int_{\mathbb R}A_a(u)\,da.}
 \tag{1.1}
 \]
 
-Mother Completeness reconstructs strain from the principal symbol
+Mother Completeness reconstructs strain from
 
 \[
 \sigma_1(E_u)(x,\xi)b
-=-i\frac{\xi^TS(u)\xi}{|\xi|^2}\,\xi\times b,
+=-i\frac{\xi^TS(u)\xi}{|\xi|^2}\,\xi\times b
 \]
 
-then reconstructs velocity by
+and then velocity from
 
 \[
 \Delta u=2\operatorname{div}S(u).
 \]
 
-Hence, on the normalized physical state class,
+Hence
 
 \[
-\boxed{
-\{\mathscr O_a(u)\}_a\longleftrightarrow E_u\longleftrightarrow u.
-}
+\boxed{\Sigma(u)\longleftrightarrow E_u\longleftrightarrow u.}
 \tag{1.2}
 \]
 
-This equivalence is the spine. Every later contraction is subordinate to it.
+Every shell quantity, packet, current, spectral measure, and defect used later is a reader of this state.
 
-## 2. Anchored material interaction frame — EXACT
+## 2. Anchored material interaction frame
 
-The projected NS equation is
-
-\[
- u_t+\Gamma_u u=-\nu C^2u,
- \qquad \Gamma_u^*=-\Gamma_u
-\tag{2.1}
-\]
-
-on \(L^2_\sigma\). Fix \(t_0\) and solve
+The projected equation is
 
 \[
-\boxed{
-U_t=-\Gamma_uU,\qquad U(t_0)=I.
-}
-\tag{2.2}
+u_t+\Gamma_u u=-\nu C^2u,
+\qquad \Gamma_u^*=-\Gamma_u.
 \]
 
-Then \(U\) is unitary. Define
+Solve
 
 \[
- v=U^*u,
- \qquad
- C^\sharp=U^*CU,
- \qquad
- H_a^\sharp=U^*H_aU.
-\tag{2.3}
+U_t=-\Gamma_uU,\qquad U(t_0)=I,
 \]
 
-Direct differentiation gives
+and define
+
+\[
+v=U^*u,\qquad C^\sharp=U^*CU,\qquad H_a^\sharp=U^*H_aU.
+\]
+
+Then
 
 \[
 \boxed{v_t=-\nu(C^\sharp)^2v,}
-\tag{2.4}
+\tag{2.1}
 \]
 
 \[
 \boxed{C^\sharp_t=U^*E_uU,}
-\tag{2.5}
+\tag{2.2}
 \]
-
-and
 
 \[
 \boxed{(H_a^\sharp)_t=U^*A_a(u)U.}
-\tag{2.6}
+\tag{2.3}
 \]
 
-Thus Euler has not disappeared physically. It has moved from the state equation into the isospectral motion of the curl/heat geometry.
-
-If
-
-\[
-K=U^*\Gamma_uU,
-\]
-
-then equivalently
+With `K=U^*Gamma_uU`,
 
 \[
 C^\sharp_t=[K,C^\sharp],
 \qquad
 (H_a^\sharp)_t=[K,H_a^\sharp].
-\tag{2.7}
-\]
-
-The spectrum of \(C^\sharp\) is fixed; only its eigenspaces move.
-
-## 3. Critical metric law — EXACT
-
-Let
-
-\[
-\Lambda^\sharp=|C^\sharp|.
-\]
-
-Because functional calculus is transported by the unitary frame,
-
-\[
-(\Lambda^\sharp)_t=[K,\Lambda^\sharp].
 \]
 
 Therefore
 
 \[
-\boxed{
-\frac d{dt}\langle v,\Lambda^\sharp v\rangle
-=
-\langle v,[K,\Lambda^\sharp]v\rangle
--2\nu\langle v,(\Lambda^\sharp)^3v\rangle.
-}
+\boxed{\operatorname{spec}C^\sharp(t)=\operatorname{spec}C.}
+\tag{2.4}
+\]
+
+The cascade is not eigenvalue growth of `C^sharp`; it is motion of the state relative to an isospectral moving flag geometry while heat acts.
+
+## 3. `E` is not the critical-production operator
+
+Define
+
+\[
+\boxed{F_u=[\Gamma_u,|C|].}
 \tag{3.1}
 \]
 
-The second term is true critical heat dissipation. Hence every positive critical growth is exactly motion of the complete heat geometry against that dissipation.
-
-## 4. Spectral-probability law — EXACT
-
-Let
-
-\[
-M=\|v\|_2^2,
-\qquad
- d\mu_t(\lambda)
- =\frac{d\langle v,1_{d\lambda}(C^\sharp)v\rangle}{M}.
-\]
-
-For every suitable real \(f\),
+Functional calculus gives two distinct moments of the same complete flag family:
 
 \[
 \boxed{
-\frac d{dt}\mathbb E_{\mu_t}f
-=
-\frac{\langle v,[K,f(C^\sharp)]v\rangle}{M}
--2\nu\operatorname{Cov}_{\mu_t}(f(\lambda),\lambda^2).
+E_u=\frac12\int_{\mathbb R}A_a(u)\,da,
+\qquad
+F_u=\frac12\int_{\mathbb R}\operatorname{sgn}(a)A_a(u)\,da.
+}
+\tag{3.2}
+\]
+
+Euler helicity conservation gives
+
+\[
+\boxed{\operatorname{Re}\langle u,E_uu\rangle=0.}
+\tag{3.3}
+\]
+
+The exact nonlinear critical production is instead
+
+\[
+\boxed{
+\mathcal T(u)
+=\langle -\Gamma_uu,|C|u\rangle
+=\frac12\operatorname{Re}\langle u,F_uu\rangle.
+}
+\tag{3.4}
+\]
+
+Thus `E` remains the complete Mother deformation; `F` is a derived critical reader.  No later argument may speak of positive `E`-production.
+
+## 4. Bipolar radial flags
+
+Set only as a scalar locator
+
+\[
+j_u(a)=\operatorname{Re}\langle u,A_a(u)u\rangle.
+\]
+
+Then
+
+\[
+\int_{\mathbb R}j_u(a)\,da=0
+\]
+
+and
+
+\[
+\boxed{
+\mathcal T(u)=\frac14\int_{\mathbb R}\operatorname{sgn}(a)j_u(a)\,da.
 }
 \tag{4.1}
 \]
 
-With \(\kappa=\lambda^2\) and \(\bar\kappa=\mathbb E_\mu\kappa\),
+For `r>0` define
+
+\[
+A_r^{\rm rad}=\frac12(A_r-A_{-r}),
+\qquad
+A_r^{\rm sgn}=\frac12(A_r+A_{-r}).
+\]
+
+Then
 
 \[
 \boxed{
-\dot{\bar\kappa}
-+2\nu\operatorname{Var}_\mu(\kappa)
-=
-\frac{\langle v,[K,(C^\sharp)^2]v\rangle}{M}.
+F_u=\int_0^\infty A_r^{\rm rad}\,dr,
+\qquad
+E_u=\int_0^\infty A_r^{\rm sgn}\,dr.
 }
 \tag{4.2}
 \]
 
-This is the native moving-heat form of the old heat-normal identities. No source-ray or traffic ontology is needed.
-
-## 5. Genuine physical owner — EXACT
-
-Mother Sobolev isometry gives, after the universal normalization,
+Writing
 
 \[
-\|E_u\|_{\mathfrak M_0}^2=\|u\|_{\dot H^1}^2.
+j_{\rm rad}(r)=\frac12(j_u(r)-j_u(-r)),
+\]
+
+one gets
+
+\[
+\boxed{\mathcal T(u)=\frac12\int_0^\infty j_{\rm rad}(r)\,dr.}
+\tag{4.3}
+\]
+
+Positive critical production is therefore a positive net radial first-moment current; it does not assert pointwise outward motion at every radius.
+
+## 5. Signed flags are involutions
+
+The canonical `H_a` is a sign operator, not a projection:
+
+\[
+\boxed{H_a^2=I}
+\]
+
+away from the threshold kernel.  Hence
+
+\[
+\boxed{H_aA_a+A_aH_a=0.}
 \tag{5.1}
 \]
 
-The kinetic energy law therefore owns
+With
+
+\[
+P_a^\pm=\frac12(I\pm H_a),
+\]
+
+this is equivalent to
+
+\[
+P_a^+A_aP_a^+=P_a^-A_aP_a^-=0.
+\]
+
+Thus `A_a` is exactly off-diagonal across the signed-curl threshold and
 
 \[
 \boxed{
-2\nu\int_0^T\|E_u(t)\|_{\mathfrak M_0}^2dt
-\le \|u(t_0)\|_2^2.
-}
+j_u(a)=2\operatorname{Re}\langle P_a^+u,A_aP_a^-u\rangle.}
 \tag{5.2}
 \]
 
-This is a real finite quadratic action of the complete heat-geometry velocity. It is, however, subcritical for an infinite parabolic cascade: a critical packet at frequency \(K\) has \(\dot H^1\)-cost \(\sim K\), hence only \(\sim K^{-1}\) cost over one heat time \(K^{-2}\).
+## 6. Critical balance and radial strain
 
-## 6. Exact half-derivative geometry
-
-For a spectrally represented operator \(T\), the shifted-flag layer cake gives
+Let
 
 \[
-\boxed{
-\frac14\int_{\mathbb R}\|[T,H_a]\|_{\rm edge}^2da
-=
-\sum_{x,y}|x-y||T_{xy}|^2
-=
-\big\||\operatorname{ad}_C|^{1/2}T\big\|_{\rm edge}^2.
-}
+Q=\|u\|_{\dot H^{1/2}}^2,
+\qquad D=\|u\|_{\dot H^{3/2}}^2.
+\]
+
+Then
+
+\[
+\boxed{\frac12Q'+\nu D=\mathcal T.}
 \tag{6.1}
 \]
 
-The complete moving flag therefore contains exactly the historical missing half spectral derivative **before contraction**.
-
-**Typing warning.** The edge norm in (6.1) is not automatically the same continuum norm as the viscously owned microlocal Mother norm in (5.2). Bridging them with the true 3D physical section is an analytic theorem, not a notation change.
-
-## 7. Canonical analytic question — OPEN
-
-The theorem-first problem is now:
+The principal symbol of `F` is, up to the global sign convention,
 
 \[
 \boxed{
-\text{Can true 3D heat plus complete flag motion force a uniform critical
-one-step contraction, or else compactify into an exact harmless Mother kernel?}
+\sigma_1(F_u)(x,\xi)b
+=-\frac{\xi^TS(u)(x)\xi}{|\xi|}\,b.
 }
-\tag{7.1}
+\tag{6.2}
 \]
 
-This is a critical monodromy / compactness-rigidity problem on complete information. It is not a search for another observer.
+It is scalar on the divergence-free polarization fiber.  The leading radial-strain coupling is therefore helicity-blind.  Heterochirality of the exact cubic production comes from nonlinear self-consistency, not from opposite principal-symbol signs on `h_+` and `h_-`.
+
+## 7. Spectral occupation is a reader
+
+For `B=C^sharp`, the measure
+
+\[
+\rho_t(d\lambda)=d\langle v,1_{d\lambda}(B(t))v\rangle
+\]
+
+records how the state occupies the moving isospectral geometry.  It is useful but incomplete: it does not determine Fourier phase, direction, polarization, or `Gamma_u`.  The control law moving `rho_t` is generated by the same **complete state** `Sigma(u) <-> u`, not by `rho_t` itself.
+
+This distinction is essential because externally prescribed isospectral mixers can exhibit recurrent normalized spectral occupation under heat; such abstract models are not Navier--Stokes.
+
+## 8. Similarity frame adds deterministic dilation
+
+In backward similarity variables
+
+\[
+y=\frac{x-x_*}{\sqrt{T_*-t}},
+\quad s=-\log(T_*-t),
+\quad V=\sqrt{T_*-t}\,u,
+\]
+
+the equation contains the similarity dilation generator in addition to Euler and heat.  If material transport is also removed, the spectral occupation evolves through
+
+\[
+\boxed{
+\text{deterministic log-scale drift}
++\text{self-generated flag rotation}
++\text{heat}.
+}
+\tag{8.1}
+\]
+
+The later IR boundary anomaly is the boundary flux associated with this scale drift.  Structural completeness ends here; proving compactness and excluding the remaining recurrent mixer are analytic problems developed in `02`--`05`.
