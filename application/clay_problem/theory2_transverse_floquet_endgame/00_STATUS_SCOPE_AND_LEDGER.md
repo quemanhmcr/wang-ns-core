@@ -2,7 +2,45 @@
 
 ## 1. Exact claim of this dossier
 
-Theory-2 has achieved strong structural closure:
+Theory-2 has strong structural closure, but
+
+\[
+\boxed{
+\text{structural completeness}\neq\text{Navier–Stokes regularity}.
+}
+\]
+
+The stationary finite-`κ` branch has been reduced to exact transverse saturation
+
+\[
+\boxed{T=\kappa R_{\rm fv}},
+\]
+
+then audited against finite-network, continuum-companion, occupation-packing, and finite-reader mechanisms.
+
+The current conclusion is sharper than the previous “continuum companion laminate” frontier:
+
+\[
+\boxed{
+\text{quadratic companion export}
+\to
+\text{linear finite-viscosity absorption}
+\to
+\text{subcritical quadratic regeneration}
+}
+\]
+
+is compatible with every coercive fact presently in the ledger.
+
+The current finite theorem target is therefore a **multiplicative companion-loop holonomy defect**, not additive companion-mass propagation.
+
+> **No global regularity claim is made. Current threshold: NO.**
+
+---
+
+## 2. Current strongest exact reductions
+
+### 2.1 Complete Theory-2 state
 
 \[
 O_a(u)\ \forall a
@@ -14,7 +52,7 @@ S(u)
 u,
 \]
 
-and the Poisson Formation mother
+and
 
 \[
 K_u=[C,J_u]
@@ -24,62 +62,21 @@ S(Cu)
 u.
 \]
 
-Actual-state vector cocycles classify the relevant zero sets, while finite-viscosity geometry supplies genuine coercive statements. However,
-
-\[
-\boxed{
-\text{structural completeness}\neq\text{Navier–Stokes regularity}.
-}
-\]
-
-The current stationary finite-`κ` problem has now been reduced beyond the all-depth common-ray formulation to a **finite transverse saturation problem plus one continuum companion-nonconcentration step**.
-
----
-
-## 2. Current strongest exact reductions
-
-### 2.1 Complete state and critical work
-
-\[
-\Lambda=|C|=HC,
-\qquad
-W_\Lambda=2\langle\Lambda u,N(u)\rangle
-=\langle u,[\Lambda,J_u]u\rangle
-=2\langle Hu,K_uu\rangle.
-\]
-
-### 2.2 Constrained-gradient split
+### 2.2 Constrained-gradient / transverse split
 
 \[
 N=\gamma G+T,
 \qquad
 G=\Lambda(\Lambda-a-bC)u,
 \qquad
-\gamma=\frac{W_\Lambda}{2d^2},
+\gamma=\frac{W_\Lambda}{2d^2}.
 \]
 
-with `T` the unique transverse steering component.
+`T` is the unique transverse steering component.
 
-### 2.3 Actual-state semigroup Formation cocycles
+### 2.3 Bounded-module passivity
 
-\[
-\Pi_y(u)=P_yJ_u-J_{P_yu}P_y,
-\]
-
-\[
-\mathcal C_\tau(u)
-=e^{-\tau C^2}J_u-J_{e^{-\tau C^2}u}e^{-\tau C^2}.
-\]
-
-### 2.4 Bounded spectral module passivity
-
-For
-
-\[
-Q=1_{[\rho,R\rho]}(\Lambda),
-\]
-
-internal projected Formation is skew and
+For `Q=1_{[\rho,R\rho]}(\Lambda)`, internal projected Formation is skew and
 
 \[
 \boxed{
@@ -89,11 +86,11 @@ internal projected Formation is skew and
 }
 \]
 
-Thus arbitrary internal high-valence/time-dependent recycling inside a fixed finite-ratio spectral module is passive after a finite viscous horizon.
+This kills finite-ratio internal recycling after a finite viscous horizon but does not imply regeneration from newly occupied packets.
 
-### 2.5 Finite-viscosity normalized recurrence
+### 2.4 Normalized finite-viscosity flow
 
-On `R^3`, normalize `E=M=1`. Then
+On `\mathbb R^3`, with `E=M=1`,
 
 \[
 \boxed{
@@ -105,17 +102,13 @@ v_\theta=N(v)-\kappa C^2v+\kappa D_2v-\beta\mathcal Lv,
 \beta=W_\Lambda-2\kappa(D_3-D_2).
 \]
 
-Every critically neutral cycle satisfies
+Neutral cycles have positive scale drift
 
 \[
-\boxed{
 \Delta\log r=2\int\kappa D_2\,d\theta>0.
-}
 \]
 
-### 2.6 Complete transverse Floquet reduction
-
-After factoring all commuting nontransverse dynamics,
+### 2.5 Complete transverse Floquet reduction
 
 \[
 \boxed{
@@ -125,9 +118,9 @@ After factoring all commuting nontransverse dynamics,
 }
 \]
 
-Only `T` remains as unresolved dynamical source.
+Only `T` remains unresolved after factoring the commuting nontransverse dynamics.
 
-### 2.7 Stationary positive-depth `T` coercivity
+### 2.6 Stationary positive-depth `T` coercivity
 
 For nondegenerate stationary finite-`κ` profiles,
 
@@ -139,126 +132,143 @@ H_3=0,
 |b|<1,
 \]
 
-and the positive-depth transverse equation is
+and
 
 \[
-\boxed{
 \gamma(1-\sigma b)\partial_y\mathcal V_\sigma
 +(\gamma a-2\kappa D_2y)\mathcal V_\sigma
 =\mathcal T_\sigma.
-}
 \]
 
-The derivative coefficient is positive on both helicity sheets and, on the stationary branch, obeys the stronger finite-viscosity bound
+On compact stationary finite-Reynolds strata,
 
 \[
-\boxed{
-\gamma(1-\sigma b)\ge\kappa.
-}
-\]
-
-Compact stationary finite-Reynolds strata therefore satisfy a mode-count-independent transverse load
-
-\[
-\boxed{
 \|T\|_{H^{-1/2}}\gtrsim_{\mathcal K}\kappa.
-}
 \]
 
-### 2.8 Stationary transverse saturation
+This is a load theorem, not saturation exclusion.
+
+### 2.7 Exact stationary saturation residual
 
 Define
 
 \[
 Y_v=\Lambda^2v-D_2v+2D_2\mathcal Lv,
+\qquad
+R_{\rm fv}=Y_v-\frac{D_3}{d^2}G_v.
 \]
 
-\[
-R_{\rm fv}
-=Y_v-\frac{D_3}{d^2}G_v.
-\]
-
-Then stationarity is exactly
-
-\[
-\boxed{T=\kappa R_{\rm fv}.}
-\]
-
-Moreover `R_{\rm fv}` is the `H^{-1/2}` transverse projection of `Y_v`.
-
-The stationary residual has the exact Pythagorean decomposition
+Then
 
 \[
 \boxed{
-\begin{aligned}
-\|T-\kappa R\|_{-1/2}^{2}
-={}&
-(\|T\|_{-1/2}-\kappa\|R\|_{-1/2})^2\\
-&+2\kappa\|T\|_{-1/2}\|R\|_{-1/2}(1-\cos\vartheta).
-\end{aligned}}
-\]
-
-Thus a stationary profile must saturate both an angle defect and a gain defect.
-
-The minimal coercive closure is
-
-\[
-\boxed{
-\|T-\kappa R_{\rm fv}\|_{-1/2}
-\ge
-\eta_{\mathcal K}
-\bigl(
-\|T\|_{-1/2}+\kappa\|R_{\rm fv}\|_{-1/2}
-\bigr).
+\|N-\mu Y\|_{H^{-1/2}}^2
+=
+\|T-\mu R_{\rm fv}\|_{H^{-1/2}}^2
++
+\frac{(W/2-\mu D_3)^2}{d^2}.
 }
 \]
 
-### 2.9 Finite completed-network rigidity
-
-For a finite completed nonexceptional physical interaction network, actual-state rank-one completion plus reality companions and unequal-shell rigidity rule out
+On the stationary scalar stratum `W=2κD_3`,
 
 \[
-\boxed{T=\lambda R_{\rm fv},\qquad\lambda>0.}
+\boxed{N=\kappa Y\iff T=\kappa R_{\rm fv}.}
 \]
 
-Therefore compact finite-complexity completed network families possess a positive transverse angle gap.
+The transverse residual further splits into angle and gain defects.
 
-### 2.10 Rank-one mass propagation
+### 2.8 `R_{\rm fv}` has trivial finite-energy kernel
 
-If diagonal same-output products cancel, actual-state rank one gives
+On helicity sheet `σ=±1`, with `r=D_3/d^2`,
+
+\[
+\widehat{R_{\rm fv}}_\sigma
+=
+-2D_2\rho\partial_\rho f_\sigma
++
+([1-r(1-\sigma b)]\rho^2+ra\rho-4D_2)f_\sigma.
+\]
+
+The homogeneous zero-mode behaves like `\rho^{-2}` at the origin, hence
+
+\[
+\boxed{R_{\rm fv}(v)=0,\ v\in L^2\Longrightarrow v=0.}
+\]
+
+### 2.9 Exact high-frequency sign on both helicity sheets
+
+The stationary regression identities give
+
+\[
+1-|b|-\frac{d^2}{D_3}
+=
+\frac{D_2(D_2-|Q|)}{D_3-Q^2}.
+\]
+
+Since nonzero stationary `H_3=0` states have both helicity sheets active,
+
+\[
+|Q|<D_2.
+\]
+
+Therefore, with `r=D_3/d^2`,
 
 \[
 \boxed{
+\chi_\sigma:=r(1-\sigma b)-1>0
+}
+\]
+
+for both `σ=±1`, and
+
+\[
+\boxed{
+R_{{\rm fv},\sigma}
+=
+-2D_2\rho\partial_\rho
+-\chi_\sigma\rho^2+O(\rho).
+}
+\]
+
+### 2.10 Rank-one multiplicative completion
+
+Same-state rank one gives both the raw cross-mass estimate
+
+\[
 \sum_{i\ne j}|A_iB_j|^2
 \ge
-\sum_i|A_iB_i|^2.
-}
+\sum_i|A_iB_i|^2
 \]
 
-Hence coherent hiding cannot destroy raw completed companion interaction mass.
+and the rectangle product identity
+
+\[
+\boxed{Z_{ii}Z_{jj}=Z_{ij}Z_{ji}.}
+\]
+
+The additive estimate is no longer expected to be the terminal invariant; the multiplicative identity is the basis of the current holonomy target.
 
 ---
 
-## 3. Nonclaims / anti-loop guards
+## 3. Critical no-go / anti-loop guards
 
-The following moves are forbidden:
+The following moves are now explicitly rejected:
 
-- structural completeness `≠` Navier–Stokes regularity;
-- operator-pair positivity `≠` actual-state return sign;
-- symbol positivity `≠` nonlinear PDE coercivity;
-- vector observability `≠` critical-work orientation;
-- near-neutrality `≠` small `T`;
-- arbitrary Galerkin triads are not physical substitutes because companion leakage is deleted;
-- no infinite scalar moment hierarchy recovers complete Formation;
-- there is no universal dissipation frequency;
-- a terminal defect need not contain one positive-mass bubble;
-- torus dilation is not an exact internal continuous symmetry;
-- global critical Floquet spectral gap is false because of the infrared translation characteristic;
-- the whole positive-depth Laplace family is not a smaller theorem: inverting it reconstructs the stationary radial equation;
-- compactness does not imply finite Fourier/triad complexity;
-- finite completed-network coercivity does not imply a uniform continuum constant;
-- raw rank-one interaction mass does not automatically equal occupied critical state mass;
-- abstract tensor tomography cannot replace the actual same-state rank-one object `v\otimes v`.
+- structural completeness `≠` regularity;
+- operator positivity `≠` actual-state return sign;
+- arbitrary Galerkin triads delete physical companions;
+- continuum Laplace inversion is not a smaller theorem;
+- finite-network nonclosure at each depth `≠` uniform infinite-depth gap;
+- raw interaction mass `≠` occupied state mass;
+- occupied state mass `≠` regenerated nonlinear ancestry;
+- bounded occupation packing `≠` non-extinction;
+- reproduction by a factor `c<1` `≠` contradiction;
+- finite jets/readers do not remove continuum compact-operator singular sequences by themselves;
+- ordinary state compactness `≠` hereditary compactness of normalized descendants;
+- local companion shape/gain mismatch cannot be universal because frozen `R_{\rm fv}` is radially right-invertible on compact annuli;
+- bounded-module contraction proves occupation needs forcing, not that occupation regenerates forcing;
+- the finite-`κ` helicity gap controls regression degeneration, not microscopic descendant amplitude.
 
 ---
 
@@ -267,99 +277,116 @@ The following moves are forbidden:
 ### EXACT
 
 1. Theory-2 flag / commutator / strain equivalences.
-2. Poisson Formation Hamiltonian structure and complete mother `K_u`.
-3. Constrained-gradient decomposition `N=γG+T`.
-4. Strict neutral-cell super-viscous creation identity.
+2. Poisson Formation Hamiltonian structure and mother `K_u`.
+3. `N=γG+T` constrained-gradient split.
+4. Strict neutral-cell super-viscous creation.
 5. Mixed-helicity necessity and polarized Curl–Killing.
-6. Actual-state Poisson zero-set visibility.
-7. True-heat / Poisson finite covariance formulas and parity.
-8. Physical sum–difference companion leakage.
-9. Paired mixed Poisson–heat curvature positivity.
-10. Rank-one cross-completion of angular cancellation.
-11. Bounded spectral module finite-step contraction.
-12. Finite-viscosity doubly normalized flow and positive neutral scale drift.
-13. Nonexistence of `T=0` stationary / periodic finite-Reynolds normalized profiles.
-14. Complete transverse Floquet normal form.
-15. Critical log-frequency monodromy and infrared characteristic.
-16. Stationary regression algebra and `|b|<1`.
-17. Positive-Poisson-depth ray anti-alignment family.
-18. First-order depth equation and signed `T` passivity.
-19. Canonical heat-depth radial derivative / raywise energy-inward critical-neutral geometry.
-20. Exact stationary vector saturation `T=κR_{\rm fv}`.
-21. `R_{\rm fv}` is the transverse projection of the finite-viscosity radial/dilation defect.
-22. Exact Pythagorean angle/gain decomposition of the stationary residual.
-23. Rank-one companion cancellation propagates comparable raw interaction mass.
-24. Finite completed nonexceptional interaction networks cannot realize positive transverse saturation.
+6. Actual-state Poisson/heat visibility and covariance identities.
+7. Physical reality sum–difference companions.
+8. Mixed Poisson–heat reverse-pair positivity.
+9. Rank-one cross-completion and rectangle product identity.
+10. Bounded-module finite-step contraction.
+11. Normalized finite-viscosity flow and positive neutral scale drift.
+12. Complete transverse Floquet normal form.
+13. Stationary regression algebra, `H_3=0`, `|b|<1`.
+14. Positive-depth `T` equation, signed passivity, and compact-stratum `T` load.
+15. Exact stationary residual decomposition and `T=κR_{\rm fv}` saturation.
+16. Trivial finite-energy kernel of `R_{\rm fv}`.
+17. Stationary support closure under exact saturation.
+18. Strict high-frequency sign `χ_σ>0` on both helicity sheets.
+19. Finite completed-network saturation rigidity.
+20. Rank-one raw-mass propagation inside nonlinear cancellation.
 
 ### DEDUCTION
 
-1. Compact nonexceptional strata admit finite vector observation gaps.
-2. Closed three-shell/high-valence internal recycling is not the terminal obstruction.
-3. Persistent finite-Reynolds regeneration requires cross-module / transverse replenishment.
-4. Compact periodic finite-`κ` recurrence would imply parabolic physical concentration.
-5. Compact stationary finite-`κ` strata satisfy a scale-critical `T` gap.
-6. Finite `κ` quantitatively separates stationary profiles from `d=0`, `|b|=1`, and the pure-helicity regression boundary, assuming the stated critical bilinear estimate.
-7. Once exact positive parallelism is excluded on a compact class, a quantitative angle gap follows by continuity.
+1. Compact nonexceptional strata admit finite actual-state observation gaps.
+2. Persistent finite-Reynolds regeneration requires transverse/cross-module replenishment.
+3. Compact periodic finite-`κ` recurrence would imply parabolic physical concentration.
+4. Finite `κ` separates stationary states from `d=0`, `|b|=1`, and pure-helicity regression degeneration, under the stated critical bilinear estimate.
+5. Exact saturation exclusion on a compact graph-topology class implies a quantitative saturation gap.
+6. On high-frequency fixed-ratio annuli,
+   \[
+   \|f\|_{-1/2}\lesssim_{\mathcal K}\rho^{-2}\|R_{\rm fv}f\|_{-1/2}.
+   \]
+7. Under localized fixed-shape scaling, finite-viscosity absorption may dominate nonlinear regeneration at high frequency.
 
 ### AUDIT
 
-1. Arbitrary rotating skew+heat models permit transient critical gain; NS-specific physical restrictions are essential.
-2. The all-depth Laplace family is injective but not a global finite-reader coercive theorem.
-3. The hostile angular laminate has exact local cancellation while cross-output displacement can be only `O(h^2)`; there is no uniform one-step outward gap.
-4. Functional compactness does not bound physical triad count.
+1. Whole positive-depth ray inversion repackages the stationary radial equation.
+2. Hostile angular laminates destroy any uniform one-step outward jump.
+3. Finite physical companion maps on continuum incidence fibers are compact in dangerous oscillatory variables; finite reader families cannot be bounded below on unrestricted hidden spheres.
+4. Ordinary compactness does not control normalized microscopic descendants.
+5. Perfect one-generation companion-output coercivity plus bounded occupation does not prevent geometric extinction.
+6. Dyadic ancestry with
+   \[
+   a_{n+1}\sim a_n^2/(\kappa\rho_n)
+   \]
+   is compatible with finite `D_3`.
+7. Local frozen `R_{\rm fv}` can absorb arbitrary smooth compact-annulus forcing; one-edge range/gain obstruction is unavailable.
+8. Additive mass propagation / occupation packing is therefore not a sufficient final stationary mechanism.
 
 ### OPEN
 
-1. **Companion nonconcentration:** completed rank-one Formation mass cannot survive through arbitrarily many increasingly fine angular/radial generations with nonvanishing size unless the state approaches an exceptional stratum.
-2. **Finite-depth interaction-to-occupation:** construct a mode-count-independent physical functional `\mathfrak M_{\rm comp}` such that finitely many positive-depth state readers control completed companion interaction mass and that functional controls orthogonal leakage/export.
-3. **Finite-Reynolds transverse saturation rigidity:** deduce a uniform angle defect or gain defect and thereby exclude `T=κR_{\rm fv}` on compact stationary nonexceptional components.
-4. **Periodic transverse Floquet rigidity:** time-ordered analogue for recurrent finite-`κ` normalized trajectories.
-5. Euler-dominated recurrence / scale-radiation terminal classification remains separate.
+1. **Finite Companion Holonomy Problem:** define exact finite-viscosity transfer factors on the smallest reality-complete rank-one loop and prove a bounded-depth projective phase/gain defect
+   \[
+   |\mathfrak G(\Gamma)-1|\ge c_{\mathcal K}>0.
+   \]
+2. Prove every nonexceptional hidden cancellation forces such a bounded-depth completed loop, or classify failures into existing exceptional branches.
+3. Relate mixed Poisson–heat reverse-pair curvature to the loop holonomy defect, if possible.
+4. Periodic transverse Floquet rigidity remains separately OPEN.
+5. Euler-dominated recurrence / terminal scale-radiation classification remains separate.
 
 ---
 
 ## 5. Current final frontier
 
-The finite-complexity physical problem is closed. The remaining stationary obstruction is uniquely localized to the continuum limit:
+The former final implication
 
 \[
-\boxed{
-\text{completed rank-one interaction mass migrating through an increasingly fine angular/radial companion laminate.}
-}
-\]
-
-The missing implication is
-
-\[
-\boxed{
-\text{completed companion interaction mass}
+\text{interaction mass}
 \Longrightarrow
-\text{finite-depth occupied mass or a transverse angle/gain defect}.
-}
+\text{occupied mass or angle defect}
 \]
 
-A desirable finite formulation is
+is no longer sufficient.
+
+The current obstruction is the **absorption reset**:
 
 \[
 \boxed{
-\sum_{j=1}^{m}\|\mathcal V(y_j)\|_2^2
-\ge
-c_{\mathcal K}\,\mathfrak M_{\rm comp}(v),
+\text{nonlinear companion export}
+\longrightarrow
+\kappa R_{\rm fv}\text{-absorption}
+\longrightarrow
+\text{smaller nonlinear descendant}.
 }
 \]
 
-with
+Because descendant amplitudes may tend rapidly to zero, the desired terminal invariant should be amplitude-independent.
+
+The current candidate is a finite companion loop gain/holonomy
 
 \[
 \boxed{
-\mathfrak M_{\rm comp}(v)
-\gtrsim
-\|T_{\perp R}(v)\|_{-1/2}^2
-+
-\text{exported hidden mass}.
+\mathfrak G(\Gamma)
+=
+\prod_{e\in\Gamma}
+\frac{\text{nonlinear companion transfer on }e}
+{\text{finite-viscosity radial transfer on }e}.
 }
 \]
 
-If this bridge is proved using finitely many existing semigroup depths and actual rank-one companion geometry, without inverting the continuum ray family, the compact stationary finite-`κ` branch will have been reduced to a genuinely smaller coercive theorem rather than a rewritten stationary Navier–Stokes equation.
+The desired theorem is
 
-**Status: OPEN.**
+\[
+\boxed{
+|\mathfrak G(\Gamma)-1|
+\ge c_{\mathcal K}>0
+}
+\]
+
+for a bounded-depth physical loop forced by every nonexceptional hidden cancellation.
+
+If proved before global raywise reconstruction, this would be a genuine finite anti-repacking theorem and would exclude exact stationary saturation.
+
+**Status: OPEN. Threshold decision: NO.**
