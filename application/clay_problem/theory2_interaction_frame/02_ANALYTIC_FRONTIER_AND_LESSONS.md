@@ -2,7 +2,7 @@
 
 ## Status
 
-This note separates already-certified deductions from the two analytic lemmas that now control the finite-density compactness programme.  Nothing here proves global regularity.
+This note separates already-certified deductions from the analytic lemmas that control the finite-density compactness programme. Nothing here proves global regularity.
 
 ## 1. Finite-density versus infinite-density branches — EXACT split
 
@@ -33,7 +33,7 @@ and
 \tag{1.2}
 \]
 
-The present directory targets (1.1).  The infinite-density branch remains an amplitude/strain concentration problem and is not automatically an affine branch.
+The present directory targets (1.1). The infinite-density branch remains an amplitude/strain concentration problem and is not automatically an affine branch.
 
 If a finite-time singularity occurs while (1.1) holds, then
 
@@ -66,7 +66,7 @@ Therefore
 \tag{2.1}
 \]
 
-This is the critical Morrey signature of the formal `1/|x|` scaling.  It does **not** by itself imply global weak-`L^3` on `R^3`; additional global distribution/tightness would be needed.
+This is the critical Morrey signature of the formal `1/|x|` scaling. It does **not** by itself imply global weak-`L^3` on `R^3`; additional global distribution/tightness would be needed.
 
 After normalizing a top shell to frequency one, remote IR obeys for every `m>=0`
 
@@ -102,7 +102,7 @@ After critical shell normalization the deep high--high--low regime has the aggre
 \tag{3.1}
 \]
 
-Hence sufficiently deep scale jumps contribute an arbitrarily small fraction of the critical drive under bounded shell density.  This is an aggregate locality theorem, not a unique genealogy theorem.
+Hence sufficiently deep scale jumps contribute an arbitrarily small fraction of the critical drive under bounded shell density. This is an aggregate locality theorem, not a unique genealogy theorem.
 
 ## 4. Leading-edge shell inequality — OPEN prove-now lemma
 
@@ -129,7 +129,7 @@ The target shell inequality has the form
 
 The three terms represent comparable-scale quadratic forcing, deep-IR shear of an already existing high mode, and high--high production of a lower output.
 
-The important point is historical: a static bound `a_j<epsilon` does not forbid a remote `0.99 epsilon` bump.  The UV tail must be propagated from the smooth initial data by a spacetime first-exit argument.
+The important point is historical: a static bound `a_j<epsilon` does not forbid a remote `0.99 epsilon` bump. The UV tail must be propagated from the smooth initial data by a spacetime first-exit argument.
 
 Let `J(t)` be the highest `epsilon`-active shell and
 
@@ -155,7 +155,7 @@ Choosing
 \tag{4.3}
 \]
 
-with `theta_0=epsilon<<nu` yields a negative first-exit derivative.  The desired conclusion is
+with `theta_0=epsilon<<nu` yields a negative first-exit derivative. The desired conclusion is
 
 \[
 \boxed{
@@ -178,7 +178,7 @@ After normalizing the current front to `J=0`, the super-geometric UV tail implie
 \tag{5.1}
 \]
 
-if the quadratic barrier persists at all depths.  The IR half is summable because
+if the quadratic barrier persists at all depths. The IR half is summable because
 
 \[
 \sum_{j<0}2^{(2s-1)j}\mu_j
@@ -188,6 +188,58 @@ if the quadratic barrier persists at all depths.  The IR half is summable becaus
 These supercritical norms are auxiliary compactness controls, not state variables.
 
 They supply one-sided UV tightness, continuity of the complete Mother/flag maps on fixed windows, and the uniform integrability later needed for Abel endpoint limits.
+
+### 5.1 Gaussian corollary and recycling derivative budget
+
+The finite-step recycling route in `06` needs less than the full super-geometric barrier. A super-geometric sequence `theta_m` automatically implies, after converting the block index `m` to relative shell number `q`, a weaker Gaussian envelope
+
+\[
+\boxed{
+a_q
+\lesssim
+\begin{cases}
+\sqrt M,&q\le0,\\
+C\exp[-c(q-D)^2],&q>0.
+\end{cases}}
+\tag{5.2}
+\]
+
+Thus (5.2) is a `DEDUCTION` from (4.4). Conversely, if a corrected historical fat-shell argument proves only (5.2), that weaker result is already sufficient for the time-jet theorem of `06`.
+
+Bernstein then gives
+
+\[
+\|\nabla^mP_qU\|_\infty
+\lesssim2^{(m+1)q}a_q.
+\]
+
+The IR sum is geometric. On the UV side,
+
+\[
+(m+1)(\log2)q-c(q-D)^2
+\]
+
+has a quadratic maximum in `m`, so
+
+\[
+\boxed{
+\|\nabla^mU\|_\infty
+\lesssim C_0e^{C_1m^2},
+}
+\tag{5.3}
+\]
+
+and, for `m>=1`,
+
+\[
+\boxed{
+\|\nabla^mU\|_2
+\lesssim C_0e^{C_1m^2}.
+}
+\tag{5.4}
+\]
+
+These are not merely regularity decorations. They are the quantitative input that prevents a small broadband cancellation residual from oscillating in time at an arbitrarily prescribed frequency. Repeated NS time differentiation can then be targeted by the complete recycling-jet estimate in `06`.
 
 ## 6. Active-time estimate — OPEN flux lemma, then DEDUCTION
 
@@ -239,7 +291,7 @@ one obtains
 \tag{6.5}
 \]
 
-Hence a fixed normalized scale cannot remain active with positive asymptotic time density.  This excludes a large class of zero-scale recurrent enemies without using helicity or branch counting.
+Hence a fixed normalized scale cannot remain active with positive asymptotic time density. This excludes a large class of zero-scale recurrent enemies without using helicity or branch counting.
 
 ## 7. Record-time critical production — EXACT
 
@@ -273,11 +325,11 @@ D(t_n)\gtrsim\frac{Q(t_n)^3}{\|u_0\|_2^4}\to\infty.
 \tag{7.2}
 \]
 
-After a whole-triad bounded-ratio decomposition and removal of deep interactions, one should extract arbitrarily high windows with a fixed heterochiral production/dissipation ratio.  That localization is an `OPEN` macroblock lemma; one must localize closed-triad production, not merely shell influx.
+After a whole-triad bounded-ratio decomposition and removal of deep interactions, one should extract arbitrarily high windows with a fixed heterochiral production/dissipation ratio. That localization is an `OPEN` macroblock lemma; one must localize closed-triad production, not merely shell influx.
 
 ## 8. Coherence and co-located helicities — DEDUCTION after record-block extraction
 
-On a fixed normalized window, finite density bounds the `L^2` mass.  A fixed production ratio gives a lower bound on physical coherence
+On a fixed normalized window, finite density bounds the `L^2` mass. A fixed production ratio gives a lower bound on physical coherence
 
 \[
 \chi_B
@@ -286,13 +338,15 @@ On a fixed normalized window, finite density bounds the `L^2` mass.  A fixed pro
 \tag{8.1}
 \]
 
-and fixed lower masses in both helical sectors.  Translation-profile decoupling then implies that some productive profile contains the `+` and `-` components in the same spatial translation profile; separated opposite helicities cannot carry a fixed heterochiral trilinear current.
+and fixed lower masses in both helical sectors for an instantaneous efficient production block. Translation-profile decoupling then implies that some productive profile contains the `+` and `-` components in the same spatial translation profile; separated opposite helicities cannot carry a fixed heterochiral trilinear current.
 
-The inverse-Bernstein Riesz atom locates one coherent component, but a single radial evaluation atom has zero critical production by parity.  Therefore an efficient motor has a fixed-size internal phase/polarization component beyond that atom.
+This statement must not be upgraded into a theorem that every transport front has comparable helical masses. `06` explicitly studies the homochiral-dominant possibility in which the overlapping catalyst is much smaller than the work-active mixer.
+
+The inverse-Bernstein Riesz atom locates one coherent component, but a single radial evaluation atom has zero critical production by parity. Therefore an efficient motor has a fixed-size internal phase/polarization component beyond that atom.
 
 ## 9. Causal record ramps and Type-I-like ray — OPEN/DEDUCTION split
 
-Choose record activations separated by a fixed number `B` of dyadic shells.  If the leading-edge barrier keeps shell `j+B` below a small fraction of threshold until it is born, a normalized shell-speed bound gives
+Choose record activations separated by a fixed number `B` of dyadic shells. If the leading-edge barrier keeps shell `j+B` below a small fraction of threshold until it is born, a normalized shell-speed bound gives
 
 \[
 t_{j+B}-t_j\gtrsim2^{-2(j+B)}.
@@ -352,15 +406,16 @@ K_n^2(T_*-t_n)\asymp1,
 \tag{9.5}
 \]
 
-Thus Type-I-like causal centering is a consequence of two explicit analytic lemmas, not an assumption.
+Thus Type-I-like causal centering is a consequence of explicit analytic lemmas, not an assumption.
 
-## 10. Current compactness frontier
+## 10. Current compactness and recycling frontier
 
-The finite-density compactness programme is now reduced to proving:
+The finite-density programme is now reduced to proving:
 
-1. the historical leading-edge barrier (4.4), including the moving-record induction;
+1. the historical leading-edge barrier (4.4), or at minimum the Gaussian corollary (5.2) needed for Track B;
 2. high-pass/active-time control such as (6.3)--(6.5);
 3. dynamic translation-cocompactness and causal profile inheritance over bounded normalized times;
-4. minimality strong enough to remove spatial satellites while retaining a nontrivial complete record ray.
+4. minimality strong enough to remove spatial satellites while retaining a nontrivial complete record ray;
+5. the work-local complete recycling-jet estimate of `06`.
 
-Once these close, `04` passes to backward similarity variables and treats the old staircase as an outgoing IR boundary rather than as a returning reservoir.
+Once the first four close, `04` passes to backward similarity variables and treats the old staircase as an outgoing IR boundary rather than as a returning reservoir. The fifth is a separate dynamical coercivity theorem on the resulting work-active causal nodes: it forbids the sharp hidden-fast-mixer mechanism in which an `O(nu)` overlapping catalyst services an arbitrarily larger homochiral mixer.
