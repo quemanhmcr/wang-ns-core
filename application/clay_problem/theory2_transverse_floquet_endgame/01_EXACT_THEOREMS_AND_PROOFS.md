@@ -262,6 +262,42 @@ This equals \(1\) for all nonzero factors iff every row and column exponent sum 
 
 ---
 
+## Theorem 8 — Finite completed-network saturation rigidity
+
+Consider a **finite**, reality-complete physical interaction network satisfying:
+
+1. all rank-one cross incidences forced by same-output cancellation are retained;
+2. active unequal-shell interactions are separated from same-root, collinear, Leray-null and equal-radius exceptional strata;
+3. the established finite-support unequal-shell completion lemma applies: a finite exact unequal-shell completion with no exported physical output is globally collinear/null.
+
+Then
+
+\[
+\boxed{T=\lambda R_{\rm fv},\qquad \lambda>0}
+\]
+
+is impossible on the network.
+
+### Proof
+
+Both \(G\) and \(R_{\rm fv}\) are supported on occupied state packets. If \(T=\lambda R_{\rm fv}\), then
+
+\[
+N=\gamma G+\lambda R_{\rm fv}
+\]
+
+has no output outside the occupied packet family. Hence every physical Formation output outside the occupied support must cancel exactly.
+
+Same-output cancellation preserves the actual-state rank-one factorization, so Theorem 7 forces the corresponding cross incidences. Reality forces the companion outputs as well. Because the network is finite, repeated physical completion cannot export indefinitely. Therefore exact closure with no new occupied output is reached in finitely many steps.
+
+By the finite-support unequal-shell completion lemma, such a finite exact nonexporting completion is necessarily collinear/null (or another explicitly excluded exceptional geometry), contradicting hypothesis 2. ∎
+
+### Scope
+
+This theorem is only finite-network rigidity. It does **not** imply that an infinite PDE state contains a finite exact completed witness. That missing extraction step is OPEN and is isolated in `04_OPEN_FRONTIER.md`.
+
+---
+
 ## Status
 
-Everything in this file is **EXACT**. None of these identities alone implies a stationary saturation gap. The stationary reduction begins in `02_STATIONARY_FINITE_VISCOSITY.md`.
+Everything in Theorems 1–7 is **EXACT**. Theorem 8 is the established finite-network Theory-2 rigidity theorem under its explicit finite completion/nonexceptionality hypotheses. None of these statements by itself yields PDE stationary rigidity; the stationary reduction begins in `02_STATIONARY_FINITE_VISCOSITY.md`.
