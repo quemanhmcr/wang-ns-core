@@ -1,229 +1,166 @@
-# 11 — Transverse saturation and companion nonconcentration
+# 11 — Transverse saturation: exact core and superseded additive frontier
 
 ## Status
 
-This chapter records the next stationary finite-`κ` reduction after the common-ray Poisson-depth analysis. The continuum ray family is **not** used as the final theorem: because it is Laplace-invertible, attacking the entire family head-on would reconstruct the stationary radial equation and risk repackaging the stationary Navier–Stokes profile problem.
+This chapter now serves two purposes:
 
-The genuinely smaller object is the exact transverse saturation
+1. preserve the exact stationary saturation reduction;
+2. record which earlier additive companion strategies have been **superseded** by the absorption-reset analysis in `13_ABSORPTION_RESET_AND_FINITE_COMPANION_HOLONOMY.md`.
 
-\[
-\boxed{T(v)=\kappa R_{\rm fv}(v)}.
-\]
+The current frontier is **not** companion nonconcentration / interaction-to-occupation by itself. The deeper obstruction is quadratic companion export followed by linear finite-viscosity absorption and subcritical nonlinear regeneration.
 
-The finite completed-network version is already rigid. The only remaining obstruction is a continuum limit in which completed rank-one companion mass migrates through an increasingly fine angular/radial laminate.
-
-> **Nonclaim.** The continuum-laminate obstruction is still OPEN. Nothing below proves 3D Navier–Stokes regularity or excludes every finite-`κ` stationary profile.
+> **Nonclaim.** Stationary finite-`κ` saturation rigidity remains OPEN.
 
 ---
 
-# 1. EXACT — stationary residual has a Pythagorean saturation decomposition
+# 1. EXACT — stationary residual and saturation
 
 Write
 
 \[
-R:=R_{\rm fv}(v).
+Y_v=\Lambda^2v-D_2v+2D_2\mathcal Lv,
+\qquad
+R_{\rm fv}=Y_v-\frac{D_3}{d^2}G_v.
 \]
 
-The normalized stationary equation is exactly
+On the stationary scalar stratum
 
 \[
-\boxed{T(v)=\kappa R(v)}.
+W=2\kappa D_3,
+\qquad
+\gamma=\kappa\frac{D_3}{d^2},
 \]
 
-In the `H^{-1/2}` Hilbert structure define
+one has
 
 \[
-\cos\vartheta(v)
+\boxed{N-\kappa Y=T-\kappa R_{\rm fv}.}
+\]
+
+More generally,
+
+\[
+\boxed{
+\|N-\mu Y\|_{H^{-1/2}}^2
 =
-\frac{\operatorname{Re}(T,R)_{-1/2}}
-{\|T\|_{-1/2}\|R\|_{-1/2}}.
+\|T-\mu R_{\rm fv}\|_{H^{-1/2}}^2
++
+\frac{(W/2-\mu D_3)^2}{d^2}.
+}
 \]
 
-Then identically
+Therefore stationarity is exactly
+
+\[
+\boxed{T=\kappa R_{\rm fv}.}
+\]
+
+The transverse residual itself has the Pythagorean decomposition
 
 \[
 \boxed{
 \begin{aligned}
 \|T-\kappa R\|_{-1/2}^{2}
 ={}&
-\bigl(\|T\|_{-1/2}-\kappa\|R\|_{-1/2}\bigr)^2\\
+(\|T\|_{-1/2}-\kappa\|R\|_{-1/2})^2\\
 &+2\kappa\|T\|_{-1/2}\|R\|_{-1/2}(1-\cos\vartheta).
 \end{aligned}}
 \]
 
-Thus exact stationarity requires simultaneous saturation of two independent defects:
+Thus either an angle defect or a gain defect is sufficient.
+
+---
+
+# 2. EXACT — `R_{\rm fv}` has no nonzero finite-energy kernel
+
+On helicity sheet `σ=±1`, with `r=D_3/d^2`,
 
 \[
-\boxed{\vartheta=0}
+\widehat{R_{\rm fv}}_\sigma
+=
+-2D_2\rho\partial_\rho f_\sigma
++
+\left(
+[1-r(1-\sigma b)]\rho^2+ra\rho-4D_2
+\right)f_\sigma.
+\]
+
+If `R_{\rm fv}(v)=0`, the raywise homogeneous solution behaves as
+
+\[
+f_\sigma(\rho,\omega)\sim C_\sigma(\omega)\rho^{-2}
+\qquad(\rho\downarrow0),
+\]
+
+which is not finite energy unless `C_\sigma=0`. First-order uniqueness then gives
+
+\[
+\boxed{R_{\rm fv}(v)=0,\ v\in L^2\Longrightarrow v=0.}
+\]
+
+On compact graph-topology normalized classes where `R_{\rm fv}` is continuous,
+
+\[
+\inf_{\mathcal K}\|R_{\rm fv}\|_{H^{-1/2}}>0.
+\]
+
+Hence denominator degeneration is not the hard issue.
+
+---
+
+# 3. EXACT — saturation implies Fourier-support closure
+
+Because `G`, `Y`, and `R_{\rm fv}` are Fourier-local multiplier/radial-differential expressions,
+
+\[
+\operatorname{supp}G,
+\operatorname{supp}Y,
+\operatorname{supp}R_{\rm fv}
+\subseteq
+\operatorname{supp}v.
+\]
+
+Therefore exact saturation gives
+
+\[
+N=\gamma G+\kappa R_{\rm fv}
+\]
+
+and hence
+
+\[
+\boxed{\operatorname{supp}N(v)\subseteq\operatorname{supp}v.}
+\]
+
+Finite completed spectral networks cannot realize this nonexceptionally. Continuum states can evade support export through already occupied tails, so support closure alone is not a PDE contradiction.
+
+---
+
+# 4. EXACT — finite completed networks remain rigid
+
+For a finite completed nonexceptional physical network, reality companions, unequal-shell rigidity, and actual-state rank-one completion rule out
+
+\[
+T=\lambda R_{\rm fv},
+\qquad
+\lambda>0.
+\]
+
+This finite theorem remains valid and important.
+
+What has changed is the inference to the continuum: finite-network nonclosure at every depth does **not** imply a uniform infinite-depth gap, because terminal defects may shrink to zero under finite-viscosity absorption.
+
+---
+
+# 5. EXACT — rank-one propagation applies only inside nonlinear cancellation
+
+If same-output diagonal incidences cancel,
+
+\[
+Z_{ij}=A_iB_j
 \]
 
 and
-
-\[
-\boxed{\|T\|_{-1/2}=\kappa\|R\|_{-1/2}}.
-\]
-
-Hence an angle gap is sufficient but not logically necessary. A uniform gain mismatch would also exclude stationarity.
-
-The minimal coercive target is
-
-\[
-\boxed{
-\frac{\|T-\kappa R\|_{-1/2}}
-{\|T\|_{-1/2}+\kappa\|R\|_{-1/2}}
-\ge \eta_{\mathcal K}>0.
-}
-\]
-
----
-
-# 2. EXACT / compactness reduction — the real issue is exact positive saturation
-
-On a compact class `\mathcal K` on which
-
-\[
-v\mapsto T(v),\qquad v\mapsto R(v)
-\]
-
-are continuous into `H^{-1/2}`, and with
-
-\[
-\inf_{\mathcal K}\|T\|_{-1/2}>0,
-\qquad
-\inf_{\mathcal K}\|R\|_{-1/2}>0,
-\]
-
-exact exclusion of positive parallelism
-
-\[
-T(v)\notin\mathbb R_+R(v)
-\qquad\forall v\in\mathcal K
-\]
-
-immediately yields a quantitative angle gap by compactness.
-
-Therefore the constant `\eta_{\mathcal K}` is not the conceptual difficulty. The exact classification problem is
-
-\[
-\boxed{T(v)=\lambda R_{\rm fv}(v),\qquad \lambda>0.}
-\]
-
-For a stationary profile one only needs to exclude the special gain
-
-\[
-\lambda=\kappa.
-\]
-
-On the scalar stationary constraint surface
-
-\[
-W=2\kappa D_3,
-\qquad
-\gamma=\kappa D_3/d^2,
-\]
-
-one has
-
-\[
-\boxed{N-\kappa Y=T-\kappa R.}
-\]
-
-Thus if `T=\lambda R`, the stationary residual is
-
-\[
-\boxed{N-\kappa Y=(\lambda-\kappa)R.}
-\]
-
-This is why either an angle defect or a gain defect can close the stationary branch.
-
----
-
-# 3. EXACT — finite completed physical networks cannot saturate nonexceptionally
-
-Consider a physical interaction network with finitely many completed spectral incidence classes. Assume:
-
-- all reality companions are retained;
-- rank-one cross incidences are retained;
-- `R_{\rm fv}` is local to the occupied spectral packets;
-- active unequal-shell interactions remain away from the already classified collinear, same-root, skinny, and null strata.
-
-If
-
-\[
-T=\lambda R_{\rm fv},\qquad \lambda>0,
-\]
-
-then every Formation output outside the occupied packet family must vanish because `R_{\rm fv}` has no support there.
-
-But the completed rank-one companion results imply that exact non-null unequal-shell hiding cannot remain inside a finite physical network. Same-output cancellation forces cross incidences; repeated completion either reaches an exceptional geometry or exports to new spectral data.
-
-In the periodic finite-support setting the resulting rigidity is
-
-\[
-\boxed{
-\text{finite exact unequal-shell hidden completion}
-\Longrightarrow
-\text{collinear/null exception}.
-}
-\]
-
-Therefore, for every genuinely finite completed nonexceptional interaction network,
-
-\[
-\boxed{T=\lambda R_{\rm fv},\ \lambda>0}
-\]
-
-is impossible.
-
-Consequently every compact finite-complexity family has a positive transverse angle gap.
-
-This closes the finite physical version of the desired stationary rigidity theorem.
-
----
-
-# 4. AUDIT — why the finite theorem does not automatically compactify
-
-The hostile angular annihilator
-
-\[
-z_h=\delta_{-h}-2\cos h\,\delta_0+\delta_h
-\]
-
-kills the local `\pm1` angular moments exactly, while rank-one cross-completion changes output radius by only
-
-\[
-O(h^2).
-\]
-
-The base physical triangle may remain uniformly noncollinear and non-skinny as
-
-\[
-h\downarrow0.
-\]
-
-Therefore a proof based only on "every hidden interaction exports strictly outward" has a coercivity constant that may degenerate to zero in the continuum limit.
-
-There is no uniform one-generation radial jump.
-
-This is not a stationary NS construction. Full rank-one completion continues to produce further interactions. But it proves that the finite-support theorem cannot be promoted to a mode-count-independent theorem by a naive `N\to\infty` limit.
-
----
-
-# 5. EXACT — rank-one cancellation propagates raw companion mass
-
-Suppose same-output cancellation uses diagonal incidence products
-
-\[
-Z_{ii}=A_iB_i.
-\]
-
-Actual-state rank one forces
-
-\[
-Z_{ij}=A_iB_j.
-\]
-
-Whenever the diagonal incidences cancel,
 
 \[
 \boxed{
@@ -233,191 +170,138 @@ Whenever the diagonal incidences cancel,
 }
 \]
 
-Hence coherent angular hiding cannot destroy raw interaction mass. It exports at least comparable rank-one companion mass.
+Thus raw companion mass cannot disappear while the mechanism stays inside nonlinear Formation cancellation.
 
-This estimate is mode-count independent.
-
-Away from physical coupling degeneracies, helical Formation coupling is uniformly comparable to raw rank-one mass. At fixed finite `κ`, the already proved inequalities
-
-\[
-\frac{d^2}{D_3}\gtrsim \kappa^2,
-\qquad
-1-|b|\gtrsim \kappa^2
-\]
-
-exclude the pure-helicity / constrained-gradient saturation escape.
-
-Thus the unresolved mechanism is reduced to
+The crucial limitation is now explicit:
 
 \[
 \boxed{
-\text{completed rank-one interaction mass migrating through an increasingly fine angular/radial companion laminate.}
+\text{rank-one mass propagation stops when a companion output is absorbed into }\kappa R_{\rm fv}.
 }
 \]
 
+After linear absorption there is no theorem forcing another nonlinear canceller of comparable size.
+
 ---
 
-# 6. OPEN — companion nonconcentration
+# 6. SUPERSEDED — continuum laminate as the unique final obstruction
 
-Functional compactness does not bound the number of physical triads. A single smooth state may have infinitely many Fourier interactions.
+Earlier versions of this chapter treated
 
-What compactness can exclude is a fixed nonzero amount of norm or defect living indefinitely in progressively finer unresolved structure.
+\[
+\text{increasingly fine angular/radial companion laminate}
+\]
 
-The correct question is therefore:
+as the unique stationary obstruction.
+
+That diagnosis is incomplete.
+
+The continuum phase/compact-operator singular-sequence issue is real, but even if one grants a perfect mode-independent one-generation companion-output theorem, an ancestry can still extinguish through
 
 \[
 \boxed{
-\text{Does exact positive transverse alignment force a nonvanishing amount of Formation mass to survive at every generation of companion completion?}
+\text{nonlinear export}
+\to
+\text{linear finite-viscosity absorption}
+\to
+\text{smaller nonlinear regeneration}.
 }
 \]
 
-If yes, an infinite laminate would transport a nonvanishing defect through arbitrarily fine scales and violate compactness/tightness.
-
-If instead the propagated mass can decay summably generation by generation, a smooth compact profile could in principle carry infinite ancestry.
-
-The exact missing theorem is therefore:
-
-\[
-\boxed{\textbf{Companion nonconcentration.}}
-\]
-
-> On a positively oriented finite-`κ` state satisfying the stationary scalar constraints, a nonzero amount of completed rank-one Formation mass cannot remain trapped through arbitrarily many generations inside an angular/radial neighborhood whose diameter tends to zero, unless the state approaches a previously classified exceptional stratum.
-
-Combined with rank-one mass propagation, this would produce a mode-count-independent transverse angle or saturation gap.
+Therefore the angular laminate is no longer the deepest obstruction.
 
 ---
 
-# 7. OPEN — interaction mass must be converted into occupied state mass or an orthogonal defect
+# 7. SUPERSEDED — interaction-to-occupation as a sufficient final theorem
 
-The remaining quantitative bridge is
+Earlier target:
 
 \[
-\boxed{
-\text{nondecaying companion interaction mass}
+\text{completed companion interaction mass}
 \Longrightarrow
-\text{nondecaying state occupation or an unavoidable orthogonal component}.
-}
+\text{finite-depth occupied mass or angle/gain defect}
 \]
 
-The difficulty is real: the stationary infrared law allows
+is **not sufficient by itself**.
+
+Even if each generation pays occupation mass, one may have
 
 \[
-\widehat v(\rho\omega)=O(\rho),
+m_{n+1}=q m_n,
+\qquad
+0<q<1,
 \]
 
-with leading ancestry carried by `T`. Therefore an infinite companion chain can in principle terminate in a very small smooth infrared tail without carrying order-one critical stock there.
+so
 
-Likewise increasingly fine angular structures may carry little state mass while remaining catalytically relevant.
+\[
+\sum_n(m_n-m_{n+1})<\infty
+\]
 
-The current rank-one inequalities control interaction products more strongly than they control the state occupation required to sustain those products.
+while `m_n→0`.
+
+Thus bounded occupation packing does not exclude geometric extinction.
+
+The same warning applies to any companion functional `\mathfrak M_{\rm comp}` that only converts interaction into additive occupation cost.
 
 ---
 
-# 8. Desired finite-depth interaction-to-occupation bridge
+# 8. SUPERSEDED — finite-jet / finite-reader coercivity as a stand-alone route
 
-Because a compact stationary finite-`κ` class is observed by finitely many positive Poisson depths, choose
+On localized continuum incidence fibers, finite physical companion maps with finitely many smooth Poisson/heat weights are compact in the dangerous oscillatory factor variable.
 
-\[
-y_1,\dots,y_m>0
-\]
+Therefore finite readers cannot be bounded below on unrestricted infinite-dimensional hidden-cancellation spheres.
 
-so that
-
-\[
-\sum_{\sigma,j}\|\mathcal V_\sigma(y_j)\|_2^2
-\ge c_{\mathcal K}>0.
-\]
-
-The desired strengthening is not another observability theorem for `v`. It is a finite-depth bridge from completed interaction mass to actual occupied state mass:
-
-\[
-\boxed{
-\sum_{j=1}^{m}\|\mathcal V(y_j)\|_2^2
-\ge
-c_{\mathcal K}\,\mathfrak M_{\rm comp}(v),
-}
-\]
-
-where `\mathfrak M_{\rm comp}` is a nonnegative completed rank-one companion-mass functional satisfying
-
-\[
-\boxed{
-\mathfrak M_{\rm comp}(v)
-\gtrsim
-\|T_{\perp R}(v)\|_{-1/2}^{2}
-+
-\text{exported hidden mass}.
-}
-\]
-
-If such a finite functional can be constructed, the loop becomes
-
-\[
-\text{alignment}
-\Rightarrow
-\text{hidden companion mass}
-\Rightarrow
-\text{rank-one export}
-\Rightarrow
-\text{finite-depth occupation}
-\Rightarrow
-\text{new completed interaction},
-\]
-
-with no quantitative loss.
-
-A finite compact spectral region cannot support that indefinitely unless a completed circulation closes. Away from the exceptional set, the existing mixed Poisson–heat positivity then obstructs a completely hidden nonnegative circulation.
-
-This would close the compact stationary finite-`κ` branch without inverting the continuum ray family.
+Finite jets/readers become useful only after a separate hereditary/projective compactness or finite-dimensional physical rigidity has been proved. They cannot supply that rigidity themselves.
 
 ---
 
-# 9. Minimal final theorem
+# 9. Current stationary target
 
-The strongest desirable theorem is an angle gap,
+The current frontier is recorded in Chapter 13.
+
+The additive question
 
 \[
-\angle(T,R_{\rm fv})\ge\eta_{\mathcal K}>0.
+\text{how much mass survives each generation?}
 \]
 
-But the mathematically minimal closure is the saturation gap
+has been replaced by the amplitude-independent projective question
 
 \[
 \boxed{
-\|T-\kappa R_{\rm fv}\|_{H^{-1/2}}
-\ge
-\eta_{\mathcal K}
-\left(
-\|T\|_{H^{-1/2}}
-+
-\kappa\|R_{\rm fv}\|_{H^{-1/2}}
-\right).
+\text{can a finite completed rank-one loop be absorbed with exactly consistent phase and gain?}
 }
 \]
 
-Any finite physical theorem that provides either a uniform angle defect or a uniform gain defect rules out the compact stationary finite-`κ` branch immediately.
+The proposed finite object is a companion loop holonomy
+
+\[
+\mathfrak G(\Gamma)
+=
+\prod_{e\in\Gamma}
+\frac{\text{nonlinear companion transfer}}
+{\text{finite-viscosity radial transfer}},
+\]
+
+with the desired theorem
+
+\[
+\boxed{|\mathfrak G(\Gamma)-1|\ge c_{\mathcal K}>0.}
+\]
+
+This is OPEN.
 
 ---
 
 # 10. Current verdict
 
-The repackaging objection is **not fully eliminated**, but it is now localized to one quantitative implication:
+The exact transverse saturation reduction remains the correct stationary object:
 
 \[
-\boxed{
-\text{completed companion interaction mass}
-\Longrightarrow
-\text{finite-depth occupied mass or angle/gain defect}.
-}
+\boxed{T=\kappa R_{\rm fv}.}
 \]
 
-Everything before that is genuinely coercive:
+What has been retired is the claim that companion nonconcentration / interaction-to-occupation is the unique final coercive bridge.
 
-1. bounded-module recycling has a mode-count-independent viscous loss;
-2. adaptive actual-state covariance has a signed debt;
-3. stationary `T` has finite-depth coercive load;
-4. rank-one cancellation exports comparable companion interaction mass;
-5. finite completed networks cannot hide nonexceptionally;
-6. finite `κ` quantitatively separates the stationary branch from the pure-helicity regression boundary.
-
-If the interaction-to-occupation bridge is proved with finitely many physical semigroup depths and the existing rank-one companion identities, the compact stationary finite-`κ` problem will have been reduced to a genuinely smaller coercive theorem rather than a rewritten stationary Navier–Stokes equation.
+The strongest current obstruction is the **absorption reset**. The most promising finite anti-repacking target is a **multiplicative companion-loop holonomy defect**.
