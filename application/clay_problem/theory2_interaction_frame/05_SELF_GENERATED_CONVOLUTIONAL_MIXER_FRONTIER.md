@@ -2,7 +2,7 @@
 
 ## Status
 
-This note isolates the remaining 3D obstruction after the finite-density compactness programme.  The Fourier mixer identities are `EXACT`; the no-self-generated-mixer statement is `OPEN`.
+This note isolates the remaining 3D obstruction after the finite-density compactness programme. The Fourier mixer identities are `EXACT`; the global no-self-generated-mixer statement is `OPEN`. The finite-step recycling chapter `06` now removes one sharp homochiral-dominant catalytic subbranch, conditional on the historical UV edge and a work-local profile lift.
 
 ## 1. Exact Fourier matrix of the material mixer
 
@@ -30,7 +30,7 @@ A single Fourier coefficient `u_hat(p)` simultaneously controls the entire trans
 \tag{1.2}
 \]
 
-This Toeplitz/convolutional reuse is the NS self-generation constraint.  Shell models and arbitrary moving-matrix models do not have it.
+This Toeplitz/convolutional reuse is the NS self-generation constraint. Shell models and arbitrary moving-matrix models do not have it.
 
 ## 2. Why abstract moving heat cannot close the problem
 
@@ -46,7 +46,7 @@ with externally prescribed periodic unitary `U(s)` can be combined with
 v_s=-\nu B(s)^2v
 \]
 
-to produce recurrent **normalized** spectral occupation after Floquet rescaling.  Such a model is not Navier--Stokes because the unitary mixer is prescribed independently of the state.
+to produce recurrent **normalized** spectral occupation after Floquet rescaling. Such a model is not Navier--Stokes because the unitary mixer is prescribed independently of the state.
 
 Therefore no theorem of the form
 
@@ -54,7 +54,7 @@ Therefore no theorem of the form
 \text{isospectral moving operator}+\text{heat}\Rightarrow\text{decay}
 \]
 
-can be the final argument.  The remaining theorem must use
+can be the final argument. The remaining theorem must use
 
 \[
 \boxed{U_s=-\Gamma_VU}
@@ -71,7 +71,7 @@ Let
 =d\langle v,1_{d\lambda}(C^\sharp(s))v\rangle.
 \]
 
-This measure is a useful reader of radial occupation.  It does not determine Fourier phases, angular directions, helicity polarizations, or convolution matrix entries.
+This measure is a useful reader of radial occupation. It does not determine Fourier phases, angular directions, helicity polarizations, or convolution matrix entries.
 
 The correct self-consistency statement is therefore
 
@@ -116,7 +116,7 @@ Hence if
 
 then the **raw** material coupling driven by one strong control mode necessarily acts on a positive family of input channels.
 
-The actual NS output contains the Leray/polarization factor `P_{q+p}`.  Therefore angular covariance alone is insufficient for a projected spectator theorem.  A correct coercive tensor must include polarization, for example
+The actual NS output contains the Leray/polarization factor `P_{q+p}`. Therefore angular covariance alone is insufficient for a projected spectator theorem. A correct coercive tensor must include polarization, for example
 
 \[
 M_{Q,p}^{\rm proj}
@@ -130,9 +130,9 @@ A uniform lower eigenvalue bound for the relevant projected tensor would give a 
 
 ## 5. What the spectator mechanism can and cannot prove
 
-A strong control channel in a genuinely 3D, polarization-nondegenerate broadband state cannot behave as an independently tunable shell edge.  It drives many spectator channels because the same `u_hat(p)` is reused across an entire convolution diagonal.
+A strong control channel in a genuinely 3D, polarization-nondegenerate broadband state cannot behave as an independently tunable shell edge. It drives many spectator channels because the same `u_hat(p)` is reused across an entire convolution diagonal.
 
-However a broadband recurrent state may already contain all spectator outputs.  No new support need be created.  Therefore
+However a broadband recurrent state may already contain all spectator outputs. No new support need be created. Therefore
 
 \[
 \text{side source}\Rightarrow\text{new Fourier support}\Rightarrow\bot
@@ -152,11 +152,11 @@ For sparse/coarse channel systems, the exact identities in `03` remain strong:
 - two strong cancellation channels cannot make both cross amplitude products small;
 - cancellation across separated signed-curl inputs leaves the complete flag footprint (01.4.3).
 
-These facts make a finite-skeleton closure theorem plausible.  They do not yet classify a smooth broadband state.
+These facts make a finite-skeleton closure theorem plausible. They do not yet classify a smooth broadband state.
 
 ## 7. Principal incompressible deformation — exact geometry, insufficient dynamics
 
-For an incompressible deformation gradient `F in SL(3)`, covectors evolve by `F^{-T}`.  For three independent directions define
+For an incompressible deformation gradient `F in SL(3)`, covectors evolve by `F^{-T}`. For three independent directions define
 
 \[
 \tau
@@ -175,7 +175,7 @@ If radial magnitudes change by factors `r_i`, then
 
 Thus one linear incompressible deformation cannot expand three independent covectors by a common factor `R>1` without shrinking angular volume by at least `R^{-3}`.
 
-This recovers the geometric intuition that radial expansion tends to collimate directions.  It is not the final theorem because comparable-scale NS convolution is not passive WKB transport by one smooth background strain; different regions and different channels can see different effective deformations.
+This recovers the geometric intuition that radial expansion tends to collimate directions. It is not the final theorem because comparable-scale NS convolution is not passive WKB transport by one smooth background strain; different regions and different channels can see different effective deformations.
 
 ## 8. Berry/helicity topology — useful locally, not a global mixed-helicity obstruction
 
@@ -192,11 +192,11 @@ Hence
 \tag{8.1}
 \]
 
-Berry/Bargmann phases may obstruct particular pure-helicity or finite-cycle cancellations, but the mixed-helicity rank-two bundle has no corresponding first-Chern obstruction.  Therefore Berry curvature cannot by itself prove nonexistence of a genuinely 3D mixed-helicity broadband recurrent state.
+Berry/Bargmann phases may obstruct particular pure-helicity or finite-cycle cancellations, but the mixed-helicity rank-two bundle has no corresponding first-Chern obstruction. Therefore Berry curvature cannot by itself prove nonexistence of a genuinely 3D mixed-helicity broadband recurrent state.
 
 ## 9. Similarity spectral transport has three pieces
 
-In the physical interaction frame `C^sharp` is isospectral and heat acts diagonally in its instantaneous spectral decomposition.  In backward similarity variables the occupation reader also feels deterministic scale drift.  Schematically,
+In the physical interaction frame `C^sharp` is isospectral and heat acts diagonally in its instantaneous spectral decomposition. In backward similarity variables the occupation reader also feels deterministic scale drift. Schematically,
 
 \[
 \boxed{
@@ -209,7 +209,7 @@ In the physical interaction frame `C^sharp` is isospectral and heat acts diagona
 \tag{9.1}
 \]
 
-Here `J_flag` is generated by the complete NS state, `D_scale` is the known similarity log-frequency drift, and the final term is heat.  The IR Abel boundary in `04` records the flux through the outgoing end generated by this combined open dynamics.
+Here `J_flag` is generated by the complete NS state, `D_scale` is the known similarity log-frequency drift, and the final term is heat. The IR Abel boundary in `04` records the flux through the outgoing end generated by this combined open dynamics.
 
 ## 10. Invariant-measure endgame — OPEN
 
@@ -219,10 +219,10 @@ Assume the compactness programme in `02`--`04` produces a compact invariant set 
 \Sigma_{\rm ext}=(\Sigma_{\rm loc}^{T2},\mathfrak W_{\rm IR}).
 \]
 
-Take an invariant probability measure `m` on a minimal recurrent subset.  A finite-density bad branch would have to carry, on a positive-measure productive set, the coercivities already extracted from the exact identities:
+Take an invariant probability measure `m` on a minimal recurrent subset. A finite-density bad branch would have to carry, on a positive-measure productive set, the coercivities already extracted from the exact identities:
 
 - fixed physical coherence;
-- co-located `+/-` mass;
+- co-located productive helicity interaction, without assuming comparable total helical masses;
 - nonzero signed-radial affine defect;
 - nonzero homochiral self-interaction in at least one helicity;
 - nontrivial radial flag current;
@@ -236,7 +236,7 @@ Take an invariant probability measure `m` on a minimal recurrent subset.  A fini
 
 whenever the Abel boundary limit is justified.
 
-The sharp remaining target is:
+The sharp global target remains:
 
 \[
 \boxed{
@@ -251,7 +251,7 @@ IR boundary flux.
 \tag{10.1}
 \]
 
-This includes fixed points, periodic orbits, quasiperiodic dynamics, and aperiodic recurrent sets.  It does not assume DSS.
+This includes fixed points, periodic orbits, quasiperiodic dynamics, and aperiodic recurrent sets. It does not assume DSS.
 
 ## 11. Relation to the transverse-Floquet dossier
 
@@ -259,23 +259,105 @@ The folder
 
 [`../theory2_transverse_floquet_endgame/`](../theory2_transverse_floquet_endgame/)
 
-contains exact results for specialized normalized stationary/periodic branches: terminal critical-Reynolds scaling, transverse normal forms, common-ray Poisson-depth identities, and coercive transverse debt statements.  Those results remain valid and should be applied when the compact recurrent set extracted here enters their hypotheses.
+contains exact results for specialized normalized stationary/periodic branches: terminal critical-Reynolds scaling, transverse normal forms, common-ray Poisson-depth identities, transverse saturation, and companion nonconcentration as the current continuum seam. Those results remain valid and should be applied when the compact recurrent set extracted here enters their hypotheses.
 
 They do not replace the causal compactness and IR-boundary work in `02`--`04`, because a hypothetical finite-density enemy may be an open recurrent core rather than a stationary profile or an exact Floquet cycle.
 
-## 12. Final frontier
+## 12. Global broadband enemy
 
-After all reductions, the unresolved object is no longer a shell cascade or a finite list of triads.  It is
+After the structural reductions, the unresolved object is
 
 \[
 \boxed{
 \begin{gathered}
-\text{a compact, complete, broadband, mixed-helicity 3D state whose own}\
-\text{Toeplitz/convolutional connection transports its spectral occupation}\
-\text{outward in similarity scale while heat dissipates and old generations}\
+\text{a compact, complete, broadband, mixed-helicity 3D state whose own}\\
+\text{Toeplitz/convolutional connection transports its spectral occupation}\\
+\text{outward in similarity scale while heat dissipates and old generations}\\
 \text{are exported through the complete IR boundary.}
 \end{gathered}}
 \tag{12.1}
 \]
 
-Externally prescribed mixers show that moving heat alone is insufficient.  Shell models show that scalar anomaly balance alone is insufficient.  The remaining theorem must use **self-generation by the same complete physical state**.  No such global no-mixer inequality is currently proved.
+Externally prescribed mixers show that moving heat alone is insufficient. Shell models show that scalar anomaly balance alone is insufficient. The remaining theorem must use **self-generation by the same complete physical state**.
+
+## 13. Finite-step recycling removes the sharp `O(nu)` catalyst escape — conditional reduction
+
+The new chapter [`06_FINITE_STEP_RECYCLING_AND_CATALYST_RIGIDITY.md`](06_FINITE_STEP_RECYCLING_AND_CATALYST_RIGIDITY.md) attacks a specific worst subbranch without assuming finite Fourier complexity.
+
+In a causal-node frame write
+
+\[
+V=W+z,
+\qquad
+W=P_+V,
+\qquad
+z=P_-V,
+\]
+
+and let
+
+\[
+S=P_-\Gamma_WW
+\]
+
+be the actual summed negative-helicity source generated by the positive-helicity mixer. The exact first-recycling diagnostic contains
+
+\[
+\frac d{d\tau}[-\operatorname{Re}\langle S,z\rangle]
+=
+\|S\|_2^2
++\text{actual catalyst/recycling correlations}.
+\]
+
+More importantly, the historical UV edge supplies a quantitative bound on the **entire NS time jet**. Conditional on the complete recycling-jet theorem and the work-local profile lift, finite-order Landau--Kolmogorov interpolation yields
+
+\[
+\boxed{
+\|QS\|_2
+\lesssim
+(1+\nu+A)\delta
+\exp\left[
+C\sqrt{\log\left(\frac{eA}{\delta}\right)}
+\right]
++o_L(1).
+}
+\tag{13.1}
+\]
+
+Combining this with the exact linear-in-catalyst critical-work identity gives
+
+\[
+\boxed{
+\nu A^2
+\lesssim
+(1+\nu+A)\delta^2
+\exp\left[
+C\sqrt{\log\left(\frac{eA}{\delta}\right)}
+\right]
++o_L(1).
+}
+\tag{13.2}
+\]
+
+Therefore, on the large homochiral-dominant work-active subbranch,
+
+\[
+\boxed{
+\delta=O(\nu)
+\quad\Longrightarrow\quad
+A/\nu=O(1).
+}
+\tag{13.3}
+\]
+
+This specifically rules out the asymptotic
+
+\[
+A/\nu\to\infty,
+\qquad
+\delta/\nu=O(1)
+\]
+
+once the hypotheses of `06` are proved. It does **not** imply `||V_-|| ~ ||V_+||`, and it does not close the fully mixed broadband recurrent branch.
+
+The significance is methodological: compactness is not being used to turn infinite recycling into a finite graph. The coercive estimate is finite-order and acts on the actual summed source after all broadband phase cancellation. An externally prescribed fast mixer evades it only because its time jet is independent data; an NS mixer is not.
