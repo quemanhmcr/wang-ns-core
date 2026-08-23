@@ -2,206 +2,279 @@
 
 ## Purpose
 
-Folder này ghi lại **toàn bộ proof chain mới nhất của Theory-2 / NEO Navier–Stokes**, từ các exact equivalence đầu tiên cho tới frontier hiện tại.
+This dossier records the current theorem-first proof chain of Theory-2 / NEO Navier–Stokes, with explicit separation between **EXACT**, **DEDUCTION**, **AUDIT**, and **OPEN** statements.
 
-Finite-viscosity recurrence đã được reduce qua ba tầng:
+The stationary finite-`κ` frontier has moved through several reductions:
 
-1. **transverse Floquet fixed-point problem** driven only by `T`;
-2. stationary finite-`κ` branch → **all-positive-Poisson-depth transverse coercivity**;
-3. stationary saturation → **finite completed-network rigidity**, với obstruction duy nhất còn lại là continuum companion laminate / interaction-to-occupation.
+1. complete Theory-2 state and constrained-gradient split `N=γG+T`;
+2. transverse Floquet / stationary `T`-only reduction;
+3. all-positive-depth stationary `T` coercivity;
+4. exact stationary saturation `T=κR_{\rm fv}`;
+5. finite completed-network rigidity;
+6. audits showing that continuum companion mass / occupation packing is not enough;
+7. current pivot to a **finite multiplicative companion-loop holonomy obstruction**.
 
-> **Không có claim Navier–Stokes regularity / Clay problem đã được giải.**
+> **No claim of 3D Navier–Stokes global regularity or Clay-problem resolution is made.**
 >
-> Exact reductions dưới đây cô lập obstruction thật ngày càng chặt, nhưng theorem cuối vẫn OPEN.
+> The current finite-holonomy theorem is OPEN.
 
 ---
 
 ## Governing doctrine
 
-> Keep the complete Theory-2 state all the way through.  
-> Contract only at the exact estimate that genuinely needs a scalar reader.
+> Keep the complete Theory-2 state until a genuinely coercive terminal estimate is proved.
 
-Không quay lại historical scalar traffic/source/Fisher/Codazzi architectures như independent ontologies. Không dùng arbitrary Galerkin truncation để xoá physical companions. Không xem continuum Laplace invertibility là một coercive theorem.
+Do not:
+
+- replace physical companion completion by arbitrary Galerkin triads;
+- treat continuum Laplace invertibility as a coercive theorem;
+- equate raw rank-one interaction mass with occupied state mass;
+- assume ordinary state compactness controls normalized microscopic descendants;
+- or hide the stationary PDE inside a “finite” theorem whose proof first reconstructs the full raywise equation.
 
 ---
 
 ## Ledger convention
 
-- **EXACT** — algebraic / spectral / Fourier identity trực tiếp từ stated Theory-2 structure.
-- **DEDUCTION** — exact identities + explicitly stated compactness / continuity / profile hypotheses.
-- **AUDIT** — hostile finite-dimensional/scaling mechanism; không phải PDE theorem.
-- **OPEN** — analytic arrow chưa proved.
+- **EXACT** — direct algebraic / Fourier / spectral identity.
+- **DEDUCTION** — exact identities plus stated analytic hypotheses.
+- **AUDIT** — hostile model or mechanism testing an inference; not an NS counterexample unless explicitly proved as one.
+- **OPEN** — analytic arrow not proved.
 
 ---
 
 ## File map
 
-1. `00_STATUS_SCOPE_AND_LEDGER.md` — current status, theorem ledger, nonclaims, final frontier.
-2. `01_CORE_THEORY2_STATE.md` — curl flag, commutator state, Poisson Formation mother, exact equivalences.
-3. `02_CRITICAL_GEOMETRY_AND_CONSTRAINED_GRADIENT.md` — `M`, `W_Λ`, `G`, `γ`, `T`, helicity sheets, neutral-cell identities.
-4. `03_FLAGS_COCYCLES_AND_ACTUAL_STATE_VISIBILITY.md` — Poisson/heat cocycles, parity, actual-state zero set, subordination.
-5. `04_COMPANIONS_TRIADS_AND_MIXED_CURVATURE.md` — polarized Curl–Killing, real companions, mixed Poisson–heat positivity, triad sign preservation.
-6. `05_ANGULAR_CANCELLATION_RANK_ONE_AND_MODULE_COERCIVITY.md` — angular kernel, rank-one completion, outward grading, radial SVD, bounded-module contraction.
-7. `06_TERMINAL_SCALING_AND_RENORMALIZED_BRANCHES.md` — critical Reynolds scaling, Euler branch, finite-viscosity normalized flow.
-8. `07_TRANSVERSE_FLOQUET_NORMAL_FORM.md` — complete nontransverse integration, weighted log-frequency monodromy, `T`-only forcing equation.
-9. `08_NO_GO_COUNTERMECHANISMS_AND_OPEN_THEOREMS.md` — false shortcuts, hostile constructions, terminal alternatives.
-10. `09_CHRONOLOGICAL_THEOREM_CHAIN.md` — chronological proof chain through transverse Floquet reduction.
-11. `10_COMMON_RAY_POISSON_DEPTH_AND_T_COERCIVITY.md` — all-depth stationary ray law, first-order depth equation for `T`, signed passivity, `H^{-1/2}` coercivity, raywise spread debt.
-12. `11_TRANSVERSE_SATURATION_AND_COMPANION_NONCONCENTRATION.md` — Pythagorean stationary saturation, finite completed-network closure, rank-one mass propagation, continuum laminate obstruction, finite-depth interaction-to-occupation target.
-13. `12_PROOF_ARCHITECTURE_LESSONS.md` — proof-engineering lessons, anti-repacking tests, compactness/mode-count warnings, accepted closure criteria.
+1. `00_STATUS_SCOPE_AND_LEDGER.md` — current status, exact/open ledger, final frontier.
+2. `01_CORE_THEORY2_STATE.md` — Curl flag, commutator state, Poisson Formation mother.
+3. `02_CRITICAL_GEOMETRY_AND_CONSTRAINED_GRADIENT.md` — critical stocks, `G`, `γ`, `T`, helicity sheets.
+4. `03_FLAGS_COCYCLES_AND_ACTUAL_STATE_VISIBILITY.md` — Poisson/heat cocycles and actual-state visibility.
+5. `04_COMPANIONS_TRIADS_AND_MIXED_CURVATURE.md` — Curl–Killing, reality companions, reverse-pair curvature.
+6. `05_ANGULAR_CANCELLATION_RANK_ONE_AND_MODULE_COERCIVITY.md` — angular cancellation, rank-one completion, bounded-module coercivity.
+7. `06_TERMINAL_SCALING_AND_RENORMALIZED_BRANCHES.md` — terminal scaling and normalized finite-viscosity/Euler branches.
+8. `07_TRANSVERSE_FLOQUET_NORMAL_FORM.md` — exact transverse Floquet reduction.
+9. `08_NO_GO_COUNTERMECHANISMS_AND_OPEN_THEOREMS.md` — no-go mechanisms and hostile audits.
+10. `09_CHRONOLOGICAL_THEOREM_CHAIN.md` — chronological theorem chain.
+11. `10_COMMON_RAY_POISSON_DEPTH_AND_T_COERCIVITY.md` — all-depth stationary ray laws and `T` coercivity.
+12. `11_TRANSVERSE_SATURATION_AND_COMPANION_NONCONCENTRATION.md` — exact saturation core plus explicit record of additive routes now superseded.
+13. `12_PROOF_ARCHITECTURE_LESSONS.md` — anti-repacking and proof-engineering doctrine.
+14. `13_ABSORPTION_RESET_AND_FINITE_COMPANION_HOLONOMY.md` — current stationary frontier: absorption reset and finite loop holonomy.
 
 ---
 
-## Current strongest stationary reduction
+## Current strongest stationary exact reduction
 
-For stationary normalized finite-`κ` states, define the explicit transverse finite-viscosity defect
+Define
 
 \[
-R_{\rm fv}
-=
-Y_v-\frac{D_3}{d^2}G_v,
+Y_v=\Lambda^2v-D_2v+2D_2\mathcal Lv,
 \qquad
-Y_v=\Lambda^2v-D_2v+2D_2\mathcal Lv.
+R_{\rm fv}=Y_v-\frac{D_3}{d^2}G_v.
 \]
 
-Stationarity is exactly
+On the stationary scalar stratum,
+
+\[
+W=2\kappa D_3,
+\qquad
+\gamma=\kappa\frac{D_3}{d^2},
+\]
+
+and
 
 \[
 \boxed{T(v)=\kappa R_{\rm fv}(v).}
 \]
 
-The residual obeys the Pythagorean identity
+The full residual identity is
 
 \[
 \boxed{
-\begin{aligned}
-\|T-\kappa R\|_{-1/2}^{2}
-={}&
-(\|T\|_{-1/2}-\kappa\|R\|_{-1/2})^2\\
-&+2\kappa\|T\|_{-1/2}\|R\|_{-1/2}(1-\cos\vartheta).
-\end{aligned}}
-\]
-
-Thus stationary existence requires simultaneous saturation of
-
-\[
-\text{angle defect}=0
-\qquad\text{and}\qquad
-\text{gain defect}=0.
-\]
-
-The minimal compact coercive closure is therefore
-
-\[
-\boxed{
-\|T-\kappa R_{\rm fv}\|_{-1/2}
-\ge
-\eta_{\mathcal K}
-\left(
-\|T\|_{-1/2}+\kappa\|R_{\rm fv}\|_{-1/2}
-\right).
+\|N-\kappa Y\|_{H^{-1/2}}^2
+=
+\|T-\kappa R_{\rm fv}\|_{H^{-1/2}}^2
++
+\frac{(W/2-\kappa D_3)^2}{d^2}.
 }
 \]
 
-A pure angle gap is sufficient but stronger than necessary.
+Thus once exact saturation is excluded on a compact graph-topology class, the quantitative saturation gap follows by continuity.
+
+The hard problem is exact exclusion.
 
 ---
 
-## What is already closed
+## New exact finite-viscosity structure
 
-### Finite completed physical networks
-
-For finite completed nonexceptional physical interaction networks, actual-state rank-one completion and physical companion leakage rule out
+For helicity sheet `σ=±1`, put `r=D_3/d^2`. The stationary transverse field is
 
 \[
-T=\lambda R_{\rm fv},\qquad \lambda>0.
+\widehat{R_{\rm fv}}_\sigma
+=
+-2D_2\rho\partial_\rho f_\sigma
++
+\left(
+[1-r(1-\sigma b)]\rho^2+ra\rho-4D_2
+\right)f_\sigma.
 \]
 
-Hence finite-complexity completed networks have a positive transverse angle gap.
+The regression identities and `H_3=0` imply for nonzero stationary states
 
-### Rank-one mass propagation
+\[
+|Q|<D_2,
+\qquad
+r(1-\sigma b)>1
+\]
 
-If same-output diagonal incidences cancel, rank one forces cross incidences and
+on both sheets. Hence
 
 \[
 \boxed{
+R_{{\rm fv},\sigma}
+=
+-2D_2\rho\partial_\rho
+-\chi_\sigma\rho^2+O(\rho),
+\qquad
+\chi_\sigma>0.
+}
+\]
+
+The frozen radial operator is therefore high-frequency stable and admits finite-energy solutions for arbitrary smooth compact-annulus forcing.
+
+This kills the hoped-for universal one-edge theorem
+
+\[
+\text{“a physical companion output has the wrong local shape/gain for }R_{\rm fv}\text{.”}
+\]
+
+Local absorption is flexible; only same-state multi-edge self-consistency can still obstruct saturation.
+
+---
+
+## Why the additive companion-mass programme is no longer the final route
+
+Rank-one cancellation still gives the exact raw-mass propagation
+
+\[
 \sum_{i\ne j}|A_iB_j|^2
 \ge
 \sum_i|A_iB_i|^2.
-}
 \]
 
-Thus coherent angular hiding cannot destroy raw companion interaction mass.
+But this only propagates mass while cancellation stays nonlinear.
 
-### Fixed finite Reynolds
+Once a companion output is absorbed into
 
-The stationary branch is quantitatively separated from the constrained-gradient / pure-helicity boundary. That escape belongs to `κ→0`, the Euler branch.
+\[
+\kappa R_{\rm fv},
+\]
+
+rank-one completion is no longer forced at comparable amplitude.
+
+The finite-viscosity scaling permits schematically
+
+\[
+\boxed{
+a_{n+1}
+\lesssim
+\frac{a_n^2}{\kappa\rho_n}.}
+\]
+
+Thus an infinite outward ancestry can decay superlinearly while keeping
+
+\[
+\sum_n\rho_n^3a_n^2<\infty.
+\]
+
+Consequences:
+
+- perfect one-generation companion-output coercivity would still not suffice;
+- interaction-to-occupation alone would still not suffice;
+- bounded occupation packing alone would still not suffice;
+- reproduction with factor `<1` would still not suffice;
+- finite readers cannot repair this amplitude reset.
+
+This is the **quadratic-to-linear absorption reset**.
 
 ---
 
-## Current final frontier
+## Current final frontier — finite companion holonomy
 
-The finite-network theorem does **not** automatically pass uniformly to an infinite physical network. The hostile angular laminate allows successive completed outputs to move only by `O(h^2)` as `h→0`, so there is no uniform one-generation outward jump.
+Actual-state rank one is multiplicative:
 
-The single remaining stationary obstruction is
+\[
+\boxed{Z_{ii}Z_{jj}=Z_{ij}Z_{ji}.}
+\]
+
+The current proposal is to attach to a bounded-depth completed physical loop `Γ` a projective gain/phase quantity
 
 \[
 \boxed{
-\text{completed rank-one interaction mass migrating through an increasingly fine angular/radial companion laminate.}
+\mathfrak G(\Gamma)
+=
+\prod_{e\in\Gamma}
+\frac{\text{nonlinear companion transfer on }e}
+{\text{finite-viscosity radial transfer on }e}.
 }
 \]
 
-The missing finite theorem is an interaction-to-occupation / nonconcentration bridge:
+Exact saturation around a closed loop should require unit consistency,
+
+\[
+\mathfrak G(\Gamma)=1,
+\]
+
+including phase.
+
+The desired finite theorem is
 
 \[
 \boxed{
-\text{completed companion interaction mass}
-\Longrightarrow
-\text{finite-depth occupied mass or a transverse angle/gain defect}.
+\textbf{Finite Companion Loop Defect:}
+\qquad
+|\mathfrak G(\Gamma)-1|
+\ge c_{\mathcal K}>0
 }
 \]
 
-A desirable finite-depth form is
+for some bounded-depth reality-complete loop forced by every nonexceptional hidden cancellation.
 
-\[
-\boxed{
-\sum_{j=1}^{m}\|\mathcal V(y_j)\|_2^2
-\ge
-c_{\mathcal K}\,\mathfrak M_{\rm comp}(v),
-}
-\]
+A successful proof should combine:
 
-with a physical completed companion functional satisfying
+- rank-one multiplicative completion;
+- reality / reverse pairs;
+- Curl–Killing and helicity polarization;
+- finite-viscosity radial transfers;
+- and possibly the already established mixed Poisson–heat reverse-pair curvature.
 
-\[
-\boxed{
-\mathfrak M_{\rm comp}(v)
-\gtrsim
-\|T_{\perp R}(v)\|_{-1/2}^{2}
-+
-\text{exported hidden mass}.
-}
-\]
+This target is attractive because it is finite and amplitude-independent: it can survive descendant amplitudes tending to zero.
 
-If this is proved with finitely many fixed positive semigroup depths and a mode-count-independent constant, then the compact stationary finite-`κ` branch is genuinely reduced to a smaller coercive theorem rather than a Laplace-rewritten stationary NS equation.
-
-For periodic finite-`κ` recurrence, the parallel OPEN problem remains transverse Floquet rigidity.
+**Status: OPEN.**
 
 ---
 
 ## Anti-repacking test
 
-The present route counts as genuine reduction only if the next theorem is finite and coercive. It must **not** rely on:
+The holonomy route counts as genuine reduction only if the defect is proved before reconstructing the full stationary ray equation.
 
-- inversion of the whole positive-depth Laplace family;
+A successful theorem must involve finitely many physical incidences and finitely many transfer factors with a mode-count-independent projective defect.
+
+The following do not count as closure:
+
+- global inversion of `T=κR_{\rm fv}` over all rays;
+- full positive-depth Laplace inversion;
 - an infinite scalar moment hierarchy;
-- a finite-mode outward-support argument whose constant degenerates as angular spacing tends to zero;
-- or replacement of the actual rank-one stress `v\otimes v` by an arbitrary tensor model.
+- a finite-support theorem with constants degenerating with complexity;
+- or a hereditary compactness hypothesis effectively equivalent to saturation exclusion.
 
-The current proof architecture passes this test up to one remaining step: **interaction-to-occupation for an infinite completed companion laminate**.
+---
+
+## Parallel periodic/Floquet frontier
+
+The periodic finite-`κ` recurrent branch remains separately OPEN through the exact transverse Floquet source equation. The stationary holonomy pivot may eventually suggest a cycle/monodromy analogue, but no such theorem is currently established.
 
 ---
 
 ## Nonclaim
 
-Dossier này **không** chứng minh global regularity của 3D Navier–Stokes. Stationary finite-`κ` finite-complexity geometry is closed, but the continuum companion-laminate limit and periodic/Floquet recurrence remain OPEN.
+Theory-2 has not proved 3D Navier–Stokes global regularity. The current stationary finite-`κ` obstruction has been sharpened to a finite multiplicative loop/holonomy problem, but the required loop defect theorem is unproved.
