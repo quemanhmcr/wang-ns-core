@@ -1,98 +1,81 @@
 # 00 — Definitions and hypotheses
 
-## 0. Status convention
+## 0. Scope
 
-Every assertion in this dossier is one of:
+This dossier treats only the **normalized stationary finite-viscosity branch** of Theory-2 on finite-energy divergence-free fields. It does not claim Navier–Stokes global regularity and does not close the Euler or periodic/Floquet branches.
 
-- **EXACT**: identity/theorem proved from the stated Theory-2 definitions and hypotheses;
-- **DEDUCTION**: consequence of EXACT statements plus an explicitly stated compactness/regularity hypothesis;
-- **AUDIT/NO-GO**: a rigorous obstruction to an inference or proof architecture; not a Navier–Stokes counterexample unless stated;
-- **OPEN**: not proved.
+Every statement is labelled as one of:
 
-No statement in this dossier claims 3D Navier–Stokes global regularity.
+- **EXACT** — follows from the displayed Theory-2 identities;
+- **DEDUCTION** — exact identities plus the explicit compactness/nondegeneracy hypotheses below;
+- **NO-GO** — proves that a proposed implication does not follow from the present hypotheses;
+- **OPEN** — additional physical structure not yet derived from the Theory-2 axioms.
 
 ---
 
-## 1. Ambient classes
+## 1. Basic Theory-2 objects
 
-We use two settings, never interchange them silently.
-
-### (P) Periodic structural class
-
-Smooth mean-zero divergence-free vector fields on `T^3`. This is the class used for the complete shifted-curl flag and finite spectral-network statements.
-
-### (R) Finite-energy Euclidean class
-
-Smooth divergence-free vector fields on `R^3` with enough decay/regularity for all displayed Fourier, radial, `H^{-1/2}`, and integration-by-parts identities. This is the class used for continuous dilation, normalized stationary profiles, radial transfer, and the current frontier.
-
-`P` denotes Leray projection. Set
+Let
 
 \[
 C=\operatorname{curl},\qquad \Lambda=|C|,\qquad H=\operatorname{sgn}C,
 \]
 
-so `C=HΛ` on the divergence-free mean-zero subspace.
-
----
-
-## 2. Curl/Formation state
-
-For the velocity field `u`, define
+and let \(P\) be the Leray projector. Define
 
 \[
-E_u=[\nabla_u,C].
+J_u b=P(b\times Cu),\qquad N(u)=J_u u.
 \]
 
-For every real shift `a`,
+Then
 
 \[
-H_a=\operatorname{sgn}(C-aI),\qquad
-A_a(u)=[\nabla_u,H_a],
+J_u^*=-J_u,\qquad J_u(Cu)=0.
 \]
 
+The Poisson mother is
+
 \[
-O_a(u)=H_aA_a(u)-A_a(H_au).
+K_u=[C,J_u],\qquad K_u b=-2P(S(Cu)b),\qquad K_u^*=K_u,
 \]
 
-Define the Poisson/Formation operator
+and
 
 \[
-J_ub=P(b\times Cu),\qquad N(u)=J_uu,
+CN(u)=K_u u.
 \]
 
-and the Formation mother
+The polarized Curl–Killing identity is
 
 \[
-K_u=[C,J_u].
+J_a(Cb)+J_b(Ca)=0.
 \]
 
-The Navier–Stokes equation is
+For helical atoms \(Ca=xa\), \(Cb=yb\),
 
 \[
-u_t=N(u)-\nu C^2u.
+\boxed{2B(a_x,b_y)=(x-y)P(b_y\times a_x).}
 \]
 
 ---
 
-## 3. Critical stocks and constrained gradient
+## 2. Critical stocks and constrained-gradient split
 
-Define
+Set
 
 \[
-M=\langle u,\Lambda u\rangle,
-\qquad
-D_2=\|\Lambda u\|_2^2,
-\qquad
+M=\langle u,\Lambda u\rangle,\qquad
+D_2=\|\Lambda u\|_2^2,\qquad
 D_3=\|\Lambda^{3/2}u\|_2^2,
 \]
 
-and critical work
+and
 
 \[
-W=2\langle\Lambda u,N(u)\rangle.
+W=2\langle \Lambda u,N(u)\rangle.
 \]
 
-Choose real `a,b` so that
+Choose \(a,b\in\mathbb R\) so that
 
 \[
 G=\Lambda(\Lambda-a-bC)u
@@ -101,186 +84,158 @@ G=\Lambda(\Lambda-a-bC)u
 satisfies
 
 \[
-\langle u,G\rangle=0,
-\qquad
-\langle Cu,G\rangle=0.
+\langle u,G\rangle=\langle Cu,G\rangle=0.
 \]
 
-Set
+Define
 
 \[
-d^2=\|G\|_{H^{-1/2}}^2
-=\|\Lambda^{1/2}(\Lambda-a-bC)u\|_2^2.
+d^2:=\|G\|_{H^{-1/2}}^2.
 \]
 
-When `d>0`, define
+For \(d>0\), set
 
 \[
-\gamma=\frac{W}{2d^2}
+\gamma=\frac{W}{2d^2}.
 \]
 
-and the transverse component
+Then define \(T\) by the exact orthogonal decomposition
 
 \[
-\boxed{N=\gamma G+T.}
+\boxed{N=\gamma G+T,}
 \]
 
-Then
+with
 
 \[
-\langle T,u\rangle=
-\langle T,Cu\rangle=
-\langle T,\Lambda u\rangle=0.
+\langle T,u\rangle=\langle T,Cu\rangle=\langle T,\Lambda u\rangle=0.
 \]
 
 ---
 
-## 4. Semigroup covariances
+## 3. Normalized stationary finite-\(\kappa\) class
 
-Poisson depth:
+We work on a class \(K\) of nonzero normalized states \(v\) satisfying
 
 \[
-P_y=e^{-y\Lambda},
-\qquad
-\Pi_y(u)=P_yJ_u-J_{P_yu}P_y.
+E(v)=\|v\|_2^2=1,\qquad M(v)=\langle v,\Lambda v\rangle=1,
 \]
 
-True heat depth:
+with
 
 \[
-H_\tau=e^{-\tau C^2}=e^{-\tau\Lambda^2},
+0<\kappa_0\le \kappa(v)\le \kappa_1<\infty.
 \]
 
+For stationary normalized candidates,
+
 \[
-\mathcal C_\tau(u)=H_\tau J_u-J_{H_\tau u}H_\tau.
+W=2\kappa D_3,
 \]
 
-The actual-state vectors are
+and the normalized stationary equation is encoded by the finite-viscosity vector
 
 \[
-\Pi_y(u)u=P_yN(u)-N(P_yu),
+Y:=\Lambda^2v-D_2v+2D_2\mathcal Lv,
 \]
 
-and
+where in Fourier variables
 
 \[
-\mathcal C_\tau(u)u=H_\tau N(u)-N(H_\tau u).
+\widehat{\mathcal L f}=-(3/2+\xi\cdot\nabla_\xi)\hat f.
 \]
 
----
-
-## 5. Physical companion interaction
-
-For divergence-free Fourier atoms `a_p,b_q`, with output `k=p+q`, the symmetric physical bilinear Formation is denoted `B(a_p,b_q)` and obeys
+Write
 
 \[
-2B(a_p,b_q)_k
-=-iP_k\big[(a_p\cdot k)b_q+(b_q\cdot k)a_p\big].
+r:=\frac{D_3}{d^2},\qquad
+R_{\rm fv}:=Y-rG.
 \]
 
-For curl eigenatoms
+The stationary transverse saturation equation is
 
 \[
-Ca_x=xa_x,\qquad Cb_y=yb_y,
-\]
-
-polarized Curl–Killing gives
-
-\[
-2B(a_x,b_y)=(x-y)P(b_y\times a_x).
-\]
-
-Reality retains the physical sum/difference companions.
-
-For actual-state incidence factors we write
-
-\[
-Z_{ij}=A_iB_j.
-\]
-
-This rank-one factorization must be preserved; arbitrary tensor or isolated-Galerkin replacements are not allowed.
-
----
-
-## 6. Normalized finite-viscosity variables
-
-In the Euclidean normalized branch impose
-
-\[
-E=\|v\|_2^2=1,
-\qquad
-M=\langle v,\Lambda v\rangle=1.
-\]
-
-Let
-
-\[
-\mathcal L=\frac32+x\cdot\nabla,
-\qquad
-\widehat{\mathcal Lf}
-=-(\tfrac32+\xi\cdot\nabla_\xi)\hat f.
-\]
-
-The normalized finite-viscosity equation is
-
-\[
-\boxed{
-v_\theta=N(v)-\kappa C^2v+\kappa D_2v-\beta\mathcal Lv,
-}
-\]
-
-\[
-\beta=W-2\kappa(D_3-D_2),
-\qquad \kappa>0.
-\]
-
-For stationary normalized candidates, define
-
-\[
-Y_v=C^2v-D_2v+2D_2\mathcal Lv,
-\]
-
-\[
-\boxed{
-R_{\rm fv}=Y_v-\frac{D_3}{d^2}G_v.
-}
+\boxed{T=\kappa R_{\rm fv}.}
 \]
 
 ---
 
-## 7. Hypotheses used only for quantitative compactness deductions
+## 4. Quantitative nondegeneracy hypotheses
 
-When a compact class `K` is invoked, it is assumed explicitly that:
+Whenever compactness is invoked, assume explicitly:
 
-1. `K` lies in a graph topology strong enough for all displayed quantities to be defined;
-2. `v\mapsto T(v)` and `v\mapsto R_{\rm fv}(v)` are continuous into `H^{-1/2}`;
-3. `E=M=1`, `\kappa` is bounded away from `0` and `∞`, and the class is separated from the stated exceptional/null strata whenever such separation is used;
-4. ordinary compactness of `K` is **not** interpreted as finite Fourier complexity or compactness of normalized microscopic descendants.
+\[
+\frac{d^2}{D_3}\ge \delta_0>0,
+\]
 
-A uniform angle gap additionally requires `T` and `R_{\rm fv}` to stay nonzero. The normalized saturation-ratio gap does not require `T\neq0`.
+and bounded normalized coefficients on \(K\). On each helicity sheet \(\sigma=\pm1\), write
+
+\[
+\widehat{R_{\rm fv}}_\sigma
+=
+-2D_2\rho\partial_\rho f_\sigma
++
+\Big([1-r(1-\sigma b)]\rho^2+ra\rho-4D_2\Big)f_\sigma.
+\]
+
+Define
+
+\[
+\chi_\sigma:=r(1-\sigma b)-1.
+\]
+
+On the nonexceptional stationary class we assume the established lower bound
+
+\[
+\chi_\sigma\ge \chi_K>0.
+\]
 
 ---
 
-## 8. Nonclaims
+## 5. Rank-one incidence data
 
-The following are never assumed:
-
-\[
-\text{operator positivity}\Rightarrow\text{actual-state sign},
-\]
+For a finite physical incidence family, the actual-state quadratic coefficients factor as
 
 \[
-\text{finite readers}\Rightarrow\text{finite-dimensional reconstruction},
+\boxed{Z_{ij}=A_iB_j.}
 \]
+
+A physical companion forcing is written schematically as
 
 \[
-\text{finite-network rigidity}\Rightarrow\text{uniform continuum rigidity},
+F_e=Z_e\Phi_e,
 \]
 
-or
+where \(\Phi_e\) contains the Curl-root difference, Leray projection, polarization, helicity branch and output geometry.
+
+Reality completion is retained throughout. Arbitrary isolated Galerkin triads are not admissible substitutes for a physical incidence network.
+
+---
+
+## 6. Compactness hypothesis
+
+Whenever a uniform constant is deduced, \(K\) is assumed compact in a topology strong enough that
 
 \[
-\text{radial solvability}\Rightarrow\text{state-incidence closure}.
+v\mapsto T(v),\quad v\mapsto R_{\rm fv}(v),\quad v\mapsto \kappa(v)
 \]
 
-The final missing structure is stated in `04_OPEN_FRONTIER.md`.
+are continuous into \(H^{-1/2}\) (and that any finite witness holonomy used later is continuous on its domain).
+
+Compactness is used only **after** a pointwise exact theorem has been proved. It is never used to manufacture finite-dimensionality, finite Fourier support, or exact recurrence.
+
+---
+
+## 7. Explicit non-hypotheses
+
+The following are **not** assumed:
+
+1. finite Fourier or triad complexity;
+2. finite-reader injectivity on the natural packet space;
+3. a nontrivial holonomy produced by rank one plus radial absorption;
+4. projective channel closure;
+5. finite-witness extraction from an infinite state;
+6. a uniform angle gap;
+7. Navier–Stokes regularity.
+
+Items 4–5 are the present OPEN physical frontier and are stated only in `04_OPEN_FRONTIER.md` and the conditional closure theorem.
