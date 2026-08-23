@@ -1,254 +1,253 @@
-# 04 — Open frontier
+# 04 — Open physical frontier
 
-## Current threshold
+This file contains the only statements not yet derived from the current Theory-2 axioms.
+
+The stationary analytic reduction is complete up to the exact exclusion
 
 \[
-\boxed{\mathbf{NO}.}
+T(v)=\kappa(v)R_{\rm fv}(v).
 \]
 
-The present Theory-2 ledger does **not** prove a mode-count-independent stationary finite-viscosity saturation gap, and therefore does not prove 3D Navier–Stokes regularity.
-
-The missing structure is now localized to one exact bridge.
+The remaining problem is finite physical state-incidence closure.
 
 ---
 
-## OPEN 1 — Projective State–Incidence Closure Theorem
+## OPEN A — Channel-Resolved Projective Closure (CRPC)
 
-Let occupied packet `α` carry a one-dimensional complex line
-
-\[
-L_\alpha=\mathbb C\psi_\alpha.
-\]
-
-For a physical quadratic incidence
+Let a physical interaction edge be
 
 \[
-e=(\alpha,\beta\to\gamma),
+e=(p,q\to r).
 \]
 
-let `B(ψ_α,ψ_β)` be the complete physical Curl–Killing/Leray companion forcing on the output packet, and let `\mathcal S_{\sigma_\gamma}` be the canonical finite-energy absorber from Theorem S7.
+For a chosen finite witness network, attach one-dimensional complex input lines
+
+\[
+L_p=\mathbb C\psi_p,
+\qquad
+L_q=\mathbb C\psi_q,
+\]
+
+and an **edge-resolved output channel line**
+
+\[
+L_{r,e}.
+\]
+
+Let \(B_e\) be the physical Curl–Killing bilinear interaction for that edge, and let \(\mathcal S_{r,e}\) be the canonical finite-energy radial absorber on its output ray.
 
 The required theorem is:
 
 \[
 \boxed{
-\mathcal S_{\sigma_\gamma}
-B(\psi_\alpha,\psi_\beta)
-=h_e\psi_\gamma
+\mathcal S_{r,e}B_e(L_p,L_q)
+\subseteq L_{r,e}
 }
-\tag{PSC}
 \]
 
-for a scalar `h_e\ne0`, with the output line `L_γ` determined by the **same actual state**, not chosen independently.
-
-Equivalently, if `S^0_σ` denotes the inverse of `\mathscr R_σ` rather than of `κ\mathscr R_σ`, then
-
-\[
-\kappa^{-1}S^0_{\sigma_\gamma}B(\psi_\alpha,\psi_\beta)=h_e\psi_\gamma.
-\]
-
-### Required gauge covariance
-
-Under change of representatives
-
-\[
-\psi_\alpha\mapsto g_\alpha\psi_\alpha,
-\]
-
-(PSC) must imply
+nontrivially, together with a specified projective identification
 
 \[
 \boxed{
-h_e\mapsto g_\alpha g_\beta g_\gamma^{-1}h_e.}
-\tag{G}
+\iota_e:L_{r,e}\longrightarrow L_r
+}
 \]
 
-This is the transformation law of a multiplicative connection on the quadratic incidence hypergraph.
+where \(L_r\) is the state line used as input by the next incidence of the witness.
 
-### What must be proved
+The channel must be followed **before** summation with other incoming interactions at \(r\).
 
-(PSC) must be derived from the actual Navier–Stokes/Curl–Killing Fourier geometry. It may **not** be inserted as an axiom merely to make holonomy possible.
+### Why CRPC is necessary
 
-This is the present smallest formal gap.
+Without channel resolution, the physical amplitude at \(r\) obeys
+
+\[
+a_r=\sum_{e:r_e=r}h_ea_{p_e}a_{q_e},
+\]
+
+so ordinary edgewise multiplicative transport is destroyed by additive mixing.
+
+CRPC is therefore a theorem about persistence of identifiable physical ancestry, not merely about one-dimensionality of the total occupied mode.
 
 ---
 
-## CONDITIONAL 2 — Genuine finite holonomy after (PSC)
+## Conditional definition — projective edge gain
 
-Assume (PSC). Let `n=(n_e)` be an integral incidence cycle satisfying
+If CRPC holds, choose representatives \(\psi_v\in L_v\setminus\{0\}\). For each witness edge there is a unique nonzero scalar \(h_e\) such that
 
 \[
 \boxed{
-\sum_e n_e
-\big([α_e]+[β_e]-[γ_e]\big)=0.
+\iota_e\mathcal S_{r,e}B_e(\psi_p,\psi_q)
+=h_e\psi_r.
 }
-\tag{CYCLE}
 \]
 
-Define
+Under gauge changes
+
+\[
+\psi_v\mapsto g_v\psi_v,
+\qquad g_v\in\mathbb C^\times,
+\]
+
+one has
+
+\[
+\boxed{h_e\mapsto g_pg_qg_r^{-1}h_e.}
+\]
+
+Thus CRPC would induce a multiplicative connection on the quadratic incidence hypergraph.
+
+---
+
+## Conditional definition — finite incidence holonomy
+
+Associate to each edge
+
+\[
+\partial e=[p]+[q]-[r].
+\]
+
+For finitely supported integer coefficients \(n=(n_e)\) satisfying
 
 \[
 \boxed{
-\operatorname{Hol}_n
-=\prod_e h_e^{n_e}.
+\sum_en_e\partial e=0,
 }
-\tag{HOL}
 \]
 
-By (G) and (CYCLE), all vertex gauges cancel, so `Hol_n` is gauge invariant.
-
-If actual packet amplitudes obey the induced transport equations
+define
 
 \[
 \boxed{
-a_{\gamma_e}=h_ea_{\alpha_e}a_{\beta_e},}
-\tag{AMP}
+\operatorname{Hol}_n:=\prod_eh_e^{n_e}.
+}
 \]
 
-then multiplying `(AMP)^{n_e}` around the incidence cycle gives
+The gauge factors cancel by the incidence-cycle condition, so this is a genuine gauge-invariant finite holonomy **provided CRPC has first been proved**.
+
+---
+
+## OPEN B — Exact channel-amplitude consistency
+
+For a channel-resolved witness loop, one must prove that the actual inherited channel amplitudes satisfy the multiplicative transport law
+
+\[
+\boxed{
+a_r=h_ea_pa_q}
+\]
+
+along the selected ancestry channel before it is mixed with the other incoming channels.
+
+Under this law, every incidence cycle satisfies
 
 \[
 \boxed{\operatorname{Hol}_n=1.}
-\tag{CLOSURE}
 \]
 
-This implication is rigorous **conditional on (PSC)**.
+### Proof of the conditional implication
+
+From
+
+\[
+h_e=\frac{a_r}{a_pa_q},
+\]
+
+multiplying with exponents \(n_e\) gives cancellation of every vertex amplitude because
+
+\[
+\sum_en_e([p_e]+[q_e]-[r_e])=0.
+\]
+
+Hence \(\operatorname{Hol}_n=1\). ∎
+
+The OPEN content is not this algebra; it is deriving the edgewise channel-amplitude law from the actual PDE ancestry.
 
 ---
 
-## OPEN 3 — Pointwise finite witness theorem
+## OPEN C — Pointwise finite physical nonflatness
 
-The next nontrivial theorem after (PSC) should not demand a gap for every arbitrarily long loop. The minimal useful statement is:
+Let
 
-> For every nonexceptional positive-alignment candidate `v`, there exists at least one finite physical incidence cycle `n(v)` such that
->
-> \[
-> \boxed{\operatorname{Hol}_{n(v)}(v)\ne1.}
-> \tag{FW}
-> \]
+\[
+P_{\rm stat}:=\{v\in K:T(v)=\kappa(v)R_{\rm fv}(v)\}
+\]
 
-and the same cycle remains a valid witness on a neighborhood of `v`.
+be the forbidden stationary saturation set.
 
-If `K` is compact, finitely many such neighborhoods cover `K`; hence the witness lengths become uniformly bounded and continuity gives a positive defect constant.
-
-This avoids requiring the full holonomy group to be uniformly discrete for arbitrary word length.
-
----
-
-## CONDITIONAL 4 — Saturation exclusion from a finite witness
-
-Assume:
-
-1. (PSC) and therefore the genuine holonomy `(HOL)`;
-2. exact positive saturation implies the physical cycle closure `(CLOSURE)`;
-3. the finite witness theorem `(FW)`.
-
-Then exact positive saturation is impossible:
+The required witness theorem is:
 
 \[
 \boxed{
-T(v)\ne\lambda R_{\rm fv}(v)
-\qquad\forall\lambda>0.
+\forall v\in P_{\rm stat},
+\quad
+\exists\text{ a finite reality-complete, nonexceptional, channel-resolved cycle }\Gamma_v
+\quad
+\text{with}
+\quad
+|\operatorname{Hol}_{\Gamma_v}(v)-1|>0.
 }
 \]
 
-In particular the stationary equality
+The witness need only be finite **pointwise**. No uniform a priori loop length is required.
+
+If the witness remains defined and its defect is continuous on a neighborhood of \(v\), compactness later supplies a finite family of witnesses and a uniform positive constant.
+
+---
+
+## Equivalent OPEN formulation — Finite Witness Extraction (FWE)
+
+Instead of constructing holonomy explicitly, it is sufficient to prove:
+
+> If a normalized PDE state satisfies the forbidden saturation condition, then it contains a finite reality-complete, nonexceptional, channel-resolved subnetwork whose inherited state data satisfy the same exact saturation compatibility.
+
+Symbolically,
 
 \[
+\boxed{
 T=\kappa R_{\rm fv}
-\]
-
-is excluded.
-
-### Proof
-
-Positive saturation forces `Hol_n=1` on every completed physical cycle generated by the same state. The witness cycle gives `Hol_n\ne1`. Contradiction.
-
----
-
-## CONDITIONAL 5 — Quantitative saturation gap by compactness
-
-Assume exact stationary equality has been excluded on a compact class `K` and `R_{\rm fv}\ne0` there. Define
-
-\[
-\Psi(v)
-=
-\frac{\|T(v)-\kappa R_{\rm fv}(v)\|_{H^{-1/2}}}
-{\|T(v)\|_{H^{-1/2}}+
-\kappa\|R_{\rm fv}(v)\|_{H^{-1/2}}}.
-\]
-
-Then `Ψ` is continuous and strictly positive, hence
-
-\[
-\boxed{
-\eta_K:=\min_{v\in K}\Psi(v)>0.
+\Longrightarrow
+\text{finite exact saturation witness}.
 }
 \]
 
-Therefore
+Combined with the established finite-network rigidity theorem, FWE would immediately exclude the global saturated state.
+
+CRPC + pointwise nonflatness and FWE are two formulations of the same missing bridge: **an exact finite physical witness must be extractable from the infinite PDE state without using a Fourier cutoff or deleting companions**.
+
+---
+
+## What is not enough
+
+None of the following proves CRPC/FWE:
+
+\[
+2B(a_x,b_y)=(x-y)P(b_y\times a_x),
+\]
+
+rank-one factorization,
+
+\[
+\chi_\sigma>0,
+\]
+
+radial coercivity, finite Poisson/heat depths, ordinary compactness, or finite-network rigidity by itself.
+
+An infinite ancestry may remain open at every finite stage. Approximate recurrence is not exact algebraic completion.
+
+---
+
+## Minimal unresolved theorem package
+
+The physical endgame is therefore exactly:
 
 \[
 \boxed{
-\|T-\kappa R_{\rm fv}\|_{H^{-1/2}}
-\ge
-\eta_K
-\big(
-\|T\|_{H^{-1/2}}
+\text{CRPC / exact channel inheritance}
 +
-\kappa\|R_{\rm fv}\|_{H^{-1/2}}
-\big).
+\text{pointwise finite nonflat witness (or FWE)}.
 }
 \]
 
-This is the minimal quantitative closure. A uniform angle theorem is stronger and additionally requires nonvanishing of `T`.
+Everything after these statements is a finite compactness argument and is proved in `05_CONDITIONAL_CLOSURE.md`.
 
----
-
-## What would count as genuine progress
-
-A next result counts only if it proves one of:
-
-\[
-\boxed{
-\text{(PSC) from actual same-state physical geometry},
-}
-\]
-
-or a theorem implying it on the admissible stationary class; followed by a finite witness `(FW)`.
-
-The following do **not** count as closure:
-
-- reconstructing the full stationary raywise PDE and renaming it a connection;
-- assuming finite-dimensional packet shape without proof;
-- using finitely many semigroup depths as though they were injective on arbitrary packet space;
-- proving only finite-mode rigidity with constants depending on mode separation;
-- defining a holonomy by multiplying quantities living on unrelated output fibers.
-
----
-
-## Final frontier formula
-
-The complete present chain is
-
-\[
-\boxed{
-\begin{aligned}
-&\text{Theory-2 complete state}
-\to N=\gamma G+T
-\to \text{normalized stationary }N=\kappa Y\\
-&\to T=\kappa R_{\rm fv}
-\to \text{canonical edgewise radial absorption}\\
-&\not\to \text{nontrivial loop consistency without (PSC)}.
-\end{aligned}}
-\]
-
-Therefore the exact next theorem is
-
-\[
-\boxed{
-\textbf{Projective State–Incidence Closure (PSC).}
-}
-\]
-
-Only after (PSC) is proved does finite companion holonomy become a non-vacuous physical object.
+**Status: OPEN.**
