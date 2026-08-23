@@ -4,6 +4,18 @@ Thư mục này chứa các proof programmes dùng Wang--NS Core để nghiên c
 
 ## Navier--Stokes
 
+### Theory-2 transverse Floquet endgame
+
+[theory2_transverse_floquet_endgame/](theory2_transverse_floquet_endgame/) là dossier theorem-first mới nhất, ghi lại toàn bộ chain từ complete Theory-2 state, Poisson/heat Formation cocycles, constrained-gradient geometry, physical companion/rank-one completion, mixed curvature, bounded-module coercivity, terminal critical-Reynolds scaling, tới normalized finite-viscosity **transverse Floquet fixed-point frontier**.
+
+Frontier hiện tại được cô lập thành
+
+\[
+F=\mathbb M_0[F]F+\mathbb G_T[F],
+\]
+
+trong đó `\mathbb M_0` là explicit weighted critical log-frequency translation của toàn bộ nontransverse dynamics, còn `\mathbb G_T` là one-cycle propagated transverse Formation source. Folder giữ ledger `EXACT / DEDUCTION / AUDIT / OPEN` và **không claim Clay solved**.
+
 ### Theory-2 realtime endgame
 
 [theory2_realtime_endgame/](theory2_realtime_endgame/) ghi lại toàn bộ late-stage reduction từ complete spectral signature tới cánh cửa analytic cuối cùng.
