@@ -1,115 +1,134 @@
-# Theory-2 Transverse Floquet Endgame — Formal Proof Dossier
+# Theory-2 stationary finite-viscosity endgame
 
-## Status
+This folder is the current **formal proof package** for the normalized stationary finite-\(\kappa\) Theory-2 branch.
 
-\[
-\boxed{\mathbf{THRESHOLD\;NOT\;CROSSED}.}
-\]
+It is intentionally short. Historical proof attempts, superseded frontiers and narrative development are kept only in Git history.
 
-This directory is a compact theorem-first record of the current Theory-2 / NEO Navier–Stokes proof chain.
-
-It contains only:
-
-1. definitions and hypotheses;
-2. proved identities/theorems with short proofs;
-3. rigorous no-go limits;
-4. the exact next open theorem.
-
-Historical narrative, superseded proof routes, and duplicated chapter-by-chapter development have been removed from `main`; they remain recoverable from Git history.
-
-No file in this directory claims 3D Navier–Stokes global regularity.
+> **Status:** no claim of 3D Navier–Stokes global regularity is made. The stationary endgame is reduced to two explicit OPEN physical statements: channel-resolved projective closure and finite physical witness extraction/nonflatness.
 
 ---
 
-## Files
+## File map
 
-- [`00_DEFINITIONS_AND_HYPOTHESES.md`](00_DEFINITIONS_AND_HYPOTHESES.md)  
-  Ambient classes, Theory-2 objects, normalization, compactness hypotheses, forbidden implicit assumptions.
+1. `00_DEFINITIONS_AND_HYPOTHESES.md`  
+   Ambient class, Theory-2 definitions, normalized stationary hypotheses, compactness assumptions and explicit non-hypotheses.
 
-- [`01_EXACT_THEOREMS_AND_PROOFS.md`](01_EXACT_THEOREMS_AND_PROOFS.md)  
-  Complete Curl/Formation state, constrained-gradient split, critical debt, cocycle visibility, physical companions, rank-one completion, bounded-module passivity, exact transverse Floquet reduction.
+2. `01_EXACT_THEOREMS_AND_PROOFS.md`  
+   Poisson Formation identities, critical work, constrained-gradient split, Curl–Killing companions, rank-one completion, and the finite completed-network rigidity theorem.
 
-- [`02_STATIONARY_FINITE_VISCOSITY.md`](02_STATIONARY_FINITE_VISCOSITY.md)  
-  Stationary identities, regression algebra, exact saturation `T=κR_fv`, ray formula, trivial kernel, high-frequency radial stability, canonical finite-energy radial inverse, direct-product absorption lemma, tautological rank-one holonomy.
+3. `02_STATIONARY_FINITE_VISCOSITY.md`  
+   Exact stationary reduction
+   \[
+   T=\kappa R_{\rm fv},
+   \]
+   residual Pythagorean identity, helicity-ray form of \(R_{\rm fv}\), canonical finite-energy radial inverse, trivial kernel and high-frequency resolvent estimate.
 
-- [`03_NO_GO_THEOREMS.md`](03_NO_GO_THEOREMS.md)  
-  Rigorous obstructions: finite output/frame coercivity, finite reader injectivity, ordinary compactness, additive packing/non-extinction, quadratic-to-linear absorption reset, local range/gain mismatch, and nontrivial holonomy without state-incidence closure.
+4. `03_NO_GO_THEOREMS.md`  
+   Rigorous impossibility statements: edgewise absorption is a direct product; rank-one holonomy is flat; finite readers are not injective; compactness does not create finite exact recurrence; additive mixing destroys ordinary edgewise transport.
 
-- [`04_OPEN_FRONTIER.md`](04_OPEN_FRONTIER.md)  
-  The exact missing theorem: **Projective State–Incidence Closure (PSC)**; conditional genuine holonomy; finite witness theorem; conditional saturation exclusion and compact quantitative gap.
+5. `04_OPEN_FRONTIER.md`  
+   The only unresolved physical bridge:
+   \[
+   \boxed{\text{CRPC / exact channel inheritance + pointwise finite nonflat witness (or FWE)}.}
+   \]
+
+6. `05_CONDITIONAL_CLOSURE.md`  
+   Full downstream proof under the OPEN bridge: genuine finite holonomy, contradiction with exact saturation consistency, compactness upgrade, and quantitative transverse saturation gap.
 
 ---
 
 ## Dependency chain
 
-The proved chain is
+The proved part is
 
 \[
 \boxed{
-\begin{aligned}
-&\text{complete Theory-2 state}
-\Longrightarrow
+\begin{gathered}
+\text{Theory-2 Poisson/Curl–Killing structure}\\
+\Downarrow\\
 N=\gamma G+T\\
-&\Longrightarrow
-\text{normalized finite-viscosity equation}\\
-&\Longrightarrow
-\text{stationary }N=\kappa Y\\
-&\Longrightarrow
+\Downarrow\\
+\text{stationary scalar constraint }W=2\kappa D_3\\
+\Downarrow\\
 \boxed{T=\kappa R_{\rm fv}}\\
-&\Longrightarrow
-\text{canonical edgewise radial absorption}.
-\end{aligned}}
-\]
-
-What is **not** proved is the next arrow
-
-\[
-\boxed{
-\text{absorbed output packet}
-\Longrightarrow
-\text{subsequent incidence projective variable}.
+\Downarrow\\
+\text{radial finite-viscosity operator }\mathscr R_\sigma
+\text{ has a unique finite-energy absorber}\\
+\Downarrow\\
+\text{rank one + radial absorption alone do not generate a nontrivial loop obstruction.}
+\end{gathered}
 }
 \]
 
-That arrow is the current frontier `(PSC)`.
-
-Without it, the only exact finite holonomy is the tautological rank-one identity
+The OPEN physical bridge is
 
 \[
-\operatorname{Hol}^{Z}_\Gamma=1,
+\boxed{
+\begin{gathered}
+\text{preserve an identifiable companion channel before additive mixing}\\
+\Downarrow\\
+\text{projective edge transport }h_e\\
+\Downarrow\\
+\text{extract a finite exact nonflat physical witness from every saturated PDE candidate.}
+\end{gathered}
+}
 \]
 
-which carries no radial information and cannot yield a positive saturation defect.
+If that bridge is proved, the remainder is already rigorous:
+
+\[
+\boxed{
+\begin{gathered}
+\text{exact channel consistency}\Rightarrow \operatorname{Hol}=1,\\
+\text{finite witness nonflatness}\Rightarrow \operatorname{Hol}\neq1,\\
+\Downarrow\\
+T\neq\kappa R_{\rm fv},\\
+\Downarrow\\
+\|T-\kappa R_{\rm fv}\|_{H^{-1/2}}
+\ge
+\eta_K\bigl(\|T\|_{H^{-1/2}}+\kappa\|R_{\rm fv}\|_{H^{-1/2}}\bigr).
+\end{gathered}
+}
+\]
 
 ---
 
-## Minimal success criterion
+## Current OPEN theorem
 
-A genuine next advance must prove from the actual Navier–Stokes/Curl–Killing geometry a gauge-covariant closure law
+The preferred formulation is:
 
-\[
-\boxed{
-\mathcal S_{\sigma_\gamma}B(\psi_\alpha,\psi_\beta)
-=h_e\psi_\gamma,
-}
-\]
+### Channel-Resolved Projective Closure / Finite Witness Theorem
 
-with the output line `L_γ=\mathbb C\psi_γ` belonging to the same actual state.
-
-Only after that is a nontrivial physical holonomy well-defined.
-
-If a finite witness theorem then excludes holonomy one on every nonexceptional positive-alignment candidate, exact stationary saturation is impossible; compactness would then give
+For every normalized nonexceptional state satisfying the forbidden stationary saturation
 
 \[
-\boxed{
-\|T-\kappa R_{\rm fv}\|_{H^{-1/2}}
-\ge
-\eta_K
-\big(
-\|T\|_{H^{-1/2}}+
-\kappa\|R_{\rm fv}\|_{H^{-1/2}}
-\big).
-}
+T(v)=\kappa(v)R_{\rm fv}(v),
 \]
 
-That implication remains conditional because `(PSC)` and the finite witness theorem are OPEN.
+prove that actual Curl–Killing/Navier–Stokes ancestry contains a finite reality-complete channel-resolved witness in which:
+
+1. every selected absorbed companion contribution remains projectively identifiable before summation with other incoming channels;
+2. the inherited channel amplitudes obey exact multiplicative edge transport;
+3. at least one finite incidence cycle is nonflat.
+
+Equivalently, prove Finite Witness Extraction (FWE): every saturated PDE candidate contains a finite exact nonexceptional completed saturation witness, contradicting the established finite-network rigidity theorem.
+
+---
+
+## Nonclaims
+
+This dossier does not prove:
+
+- the CRPC/FWE theorem;
+- absence of all stationary finite-\(\kappa\) states outside the stated class;
+- periodic/Floquet rigidity;
+- Euler recurrence rigidity;
+- 3D Navier–Stokes global regularity.
+
+The formal threshold remains
+
+\[
+\boxed{\mathbf{NO}.}
+\]
+
+The value of the present package is that the remaining gap is now stated as an exact finite physical ancestry theorem rather than as another scalar estimate or moment hierarchy.
