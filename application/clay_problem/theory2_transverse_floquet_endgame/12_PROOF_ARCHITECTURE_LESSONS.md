@@ -116,7 +116,7 @@ This distinction is central:
 
 A small smooth infrared tail or a fine angular laminate may carry little state norm while remaining catalytically relevant.
 
-The missing bridge must therefore be interaction-to-occupation, not another interaction-to-interaction estimate.
+The missing stationary bridge must therefore be interaction-to-occupation, not another interaction-to-interaction estimate.
 
 ---
 
@@ -128,7 +128,7 @@ Hence compactness must never be interpreted as finite Fourier complexity.
 
 What compactness can exclude is a **nonvanishing amount of norm or defect** surviving through finer and finer unresolved structure.
 
-The correct continuum question is:
+The correct stationary continuum question is:
 
 \[
 \boxed{
@@ -146,7 +146,7 @@ Because the positive-depth readers are injective on compact strata, finitely man
 
 That by itself is not enough.
 
-The desired use is a finite-depth estimate of the form
+The desired stationary use is a finite-depth estimate of the form
 
 \[
 \sum_j\|\mathcal V(y_j)\|^2
@@ -217,9 +217,9 @@ Do not mix finite-viscosity coercivity with Euler recurrence arguments.
 
 ---
 
-# 10. The current decisive milestone
+# 10. Stationary decisive milestone
 
-The present anti-repacking test is extremely concrete.
+For the **stationary finite-`κ` branch**, the present anti-repacking test remains concrete.
 
 A genuine next theorem should prove, with finitely many physical semigroup depths and mode-count-independent constants,
 
@@ -238,12 +238,65 @@ Equivalent acceptable outcomes include:
 - a mode-count-independent angle gap;
 - or a mode-count-independent gain gap.
 
-What would **not** count as closure:
+What would **not** count as stationary closure:
 
 - inverting the full continuum Poisson-depth family;
 - introducing another infinite scalar moment hierarchy;
 - proving only a finite-mode outward-support theorem with a constant that degenerates as angular spacing tends to zero;
 - or replacing actual convolution by an arbitrary tensor model.
+
+---
+
+# 10A. A distinct causal-node anti-repacking route
+
+The broader finite-density interaction-frame programme now has a second, genuinely dynamical route recorded in
+
+[`../theory2_interaction_frame/06_FINITE_STEP_RECYCLING_AND_CATALYST_RIGIDITY.md`](../theory2_interaction_frame/06_FINITE_STEP_RECYCLING_AND_CATALYST_RIGIDITY.md).
+
+It should **not** be confused with the stationary companion-nonconcentration theorem.
+
+In a causal-node frame it isolates the actual source/catalyst pair
+
+\[
+S=P_-\Gamma_WW,
+\qquad
+z=P_-V,
+\]
+
+and uses the exact recycling identity together with a historical UV edge to target a complete NS time-jet bound
+
+\[
+\|Q\partial_\tau^rV\|
+\lesssim
+A_0\Omega^re^{Cr^2}.
+\]
+
+Finite-order Landau--Kolmogorov interpolation then turns small catalyst amplitude into small catalyst velocity and hence into a bound on the actual source `S`.
+
+This is a valid anti-repacking mechanism because it produces a finite coercive inequality before reconstructing an infinite hierarchy. It also survives the broadband objection that every side mode may already be occupied: `S` is the fully summed residual after phase cancellation.
+
+The dynamic theorem target is therefore different:
+
+\[
+\boxed{
+\text{historical UV edge}
++\text{work-local complete time jet}
+\Longrightarrow
+\text{finite-step source/catalyst coercivity}.
+}
+\]
+
+Conditional on that theorem, the sharp asymptotic
+
+\[
+A/\nu\to\infty,
+\qquad
+\delta/\nu=O(1)
+\]
+
+is excluded in the homochiral-dominant work-active branch.
+
+This does not replace the stationary interaction-to-occupation theorem; it gives a parallel route for nonstationary causal recurrence.
 
 ---
 
@@ -255,15 +308,27 @@ The recommended theorem-building loop is:
 \boxed{
 \begin{aligned}
 &\text{preserve complete Theory-2 state}\\
-&\to\text{ derive exact physical completion}\\
+&\to\text{ derive exact physical completion or recycling}\\
 &\to\text{ identify a finite saturation/return defect}\\
-&\to\text{ prove mode-count-independent coercivity}\\
+&\to\text{ prove mode-count-independent or finite-order coercivity}\\
 &\to\text{ classify every degeneration of the coercive constant}\\
 &\to\text{ send those degenerations to explicit terminal branches.}
 \end{aligned}
 }
 \]
 
-A proposed theorem should be rejected as likely repackaging if its proof requires reconstructing the entire stationary PDE before any new finite coercive estimate appears.
+A proposed theorem should be rejected as likely repackaging if its proof requires reconstructing the entire stationary or recurrent PDE before any new finite coercive estimate appears.
 
-The current frontier passes this test up to one remaining step: **interaction-to-occupation for an infinite completed companion laminate**.
+There are now two non-equivalent open anti-repacking milestones:
+
+\[
+\boxed{
+\begin{aligned}
+&\textbf{stationary finite-} \kappa:
+&&\text{interaction-to-occupation / companion nonconcentration},\\
+&\textbf{causal recurrent Track B:}
+&&\text{historical-edge complete recycling jet / catalyst rigidity}.
+\end{aligned}}
+\]
+
+Both preserve the actual complete state and both must produce a quantitative estimate before they count as analytic closure.
