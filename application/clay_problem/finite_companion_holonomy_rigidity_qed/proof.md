@@ -1429,6 +1429,7 @@ and
 \[
 \boxed{
 \text{nonflatness: prove a nonzero gauge-invariant defect on that return.}
+}
 \]
 
 Compactness alone gives neither statement.
@@ -2988,7 +2989,7 @@ This is an exact **semigroup multiplier rectangle defect**.
 The quantity \(\mathfrak M_{y,\tau}\) is not, by itself, the projective channel holonomy
 
 \[
-H_R=rac{h_{11}h_{22}}{h_{12}h_{21}}.
+H_R=\frac{h_{11}h_{22}}{h_{12}h_{21}}.
 \]
 
 The gains \(h_{ij}\) also contain Curl–Killing root factors, helical/Leray polarization coefficients, and finite-viscosity radial transfer. Therefore (59.1) proves a strict semigroup curvature mechanism, but it does **not** prove UPN or a holonomy contradiction without an additional identity coupling the saturation equation to these weighted rectangle data.
@@ -3010,8 +3011,7 @@ Both sides are full Hilbert-space objects assembled from continuum Fourier data.
 
 \[
 a_r^{\rm phys}
-=
-\sum_{\alpha\to r}a_{r,\alpha}
+=\sum_{\alpha\to r}a_{r,\alpha}
 \]
 
 or, in the continuum representation, an integral over input fibers. Equality (60.1) does not imply that any selected finite subset of those contributions satisfies the same equality by itself.
@@ -3199,8 +3199,7 @@ Thus
 
 \[
 \boxed{
-\text{finite reconstruction is unnecessary;
-finite separation is sufficient.}
+\text{finite reconstruction is unnecessary; finite separation is sufficient.}
 }
 \tag{64.1}
 \]
