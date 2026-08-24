@@ -111,9 +111,7 @@ h_\sigma(\rho)
 ## Lemma 1.1
 
 \[
-\boxed{
-\mathscr R_\sigma h_\sigma=0.
-}
+\boxed{\mathscr R_\sigma h_\sigma=0.}
 \]
 
 ### Proof
@@ -139,20 +137,10 @@ Thus
 Therefore
 
 \[
-\begin{aligned}
-\mathscr R_\sigma h_\sigma
-&=
-\left(
-4D_2+\chi_\sigma\rho^2-ra\rho
--\chi_\sigma\rho^2+ra\rho-4D_2
-\right)h_\sigma\\
-&=0.
-\end{aligned}
+\mathscr R_\sigma h_\sigma=0.
 \]
 
 \(\square\)
-
----
 
 ## Theorem 1.2 — canonical annular right inverse
 
@@ -164,14 +152,13 @@ Let \(F_\sigma\) be smooth and supported in
 0<\rho_0<\rho_1<\infty.
 \]
 
-Then the equation
+Then
 
 \[
 \kappa\mathscr R_\sigma f=F_\sigma
-\tag{1.1}
 \]
 
-has a unique finite-\(H^{-1/2}\) solution. It is
+has the unique finite-\(H^{-1/2}\) solution
 
 \[
 \boxed{
@@ -179,2255 +166,1247 @@ has a unique finite-\(H^{-1/2}\) solution. It is
 =
 -\frac{h_\sigma(\rho)}{2\kappa D_2}
 \int_0^\rho
-\frac{F(s,\omega)}
-{s\,h_\sigma(s)}\,ds.
+\frac{F(s,\omega)}{s\,h_\sigma(s)}\,ds.
 }
-\tag{1.2}
 \]
 
 ### Proof
 
-Write
+Write \(f=h_\sigma c\). Since \(\mathscr R_\sigma h_\sigma=0\),
 
 \[
-f=h_\sigma c.
-\]
-
-Using Lemma 1.1,
-
-\[
-\begin{aligned}
 \mathscr R_\sigma(h_\sigma c)
-&=
--2D_2\rho
-(h_\sigma'c+h_\sigma c')
-+
-(-\chi_\sigma\rho^2+ra\rho-4D_2)h_\sigma c\\
-&=
--2D_2\rho h_\sigma c'.
-\end{aligned}
+=-2D_2\rho h_\sigma c'.
 \]
 
-Equation (1.1) becomes
+Hence
 
 \[
--2\kappa D_2\rho h_\sigma c'=F,
+c'=-\frac{F}{2\kappa D_2\rho h_\sigma},
 \]
 
-hence
+which yields the formula above after imposing the finite-energy infrared branch. For \(\rho<\rho_0\), the solution vanishes; for \(\rho>\rho_1\), it is a scalar multiple of \(h_\sigma\), hence has Gaussian ultraviolet decay because \(\chi_\sigma>0\).
+
+If two finite-energy solutions exist, their difference is \(C(\omega)h_\sigma(\rho)\). Since \(h_\sigma(\rho)\sim \rho^{-2}\) as \(\rho\downarrow0\),
 
 \[
-c'
-=
--\frac{F}{2\kappa D_2\rho h_\sigma}.
-\]
-
-Taking zero infrared integration constant gives (1.2).
-
-Differentiating (1.2) shows exactly that
-
-\[
-\kappa\mathscr R_\sigma\mathcal S_\sigma F=F.
-\]
-
-For \(\rho<\rho_0\), the integral in (1.2) vanishes, so
-
-\[
-f(\rho,\omega)=0.
-\]
-
-For \(\rho>\rho_1\),
-
-\[
-f(\rho,\omega)
-=
-C_\sigma(\omega)h_\sigma(\rho)
-\]
-
-for a \(\rho\)-independent coefficient \(C_\sigma\).
-
-Since \(\chi_\sigma>0\),
-
-\[
-h_\sigma(\rho)
-=
-\rho^{-2}
-e^{-\frac{\chi_\sigma}{4D_2}\rho^2+O(\rho)},
-\]
-
-so the ultraviolet tail has Gaussian decay.
-
-For uniqueness, suppose \(f_1,f_2\) are finite-energy solutions. Then
-
-\[
-w=f_1-f_2
-\]
-
-satisfies
-
-\[
-\mathscr R_\sigma w=0.
-\]
-
-Therefore
-
-\[
-w=C(\omega)h_\sigma(\rho).
-\]
-
-Near \(\rho=0\),
-
-\[
-h_\sigma(\rho)\sim\rho^{-2}.
-\]
-
-The \(H^{-1/2}\) radial measure is
-
-\[
-\rho\,d\rho\,d\omega.
-\]
-
-Thus a nonzero homogeneous solution would satisfy
-
-\[
-\int_0^\varepsilon
-\rho|w|^2\,d\rho
-\asymp
-|C(\omega)|^2
+\int_0^\varepsilon \rho |h_\sigma|^2\,d\rho
+\sim
 \int_0^\varepsilon \rho^{-3}\,d\rho
 =\infty.
 \]
 
-Hence \(C=0\) almost everywhere and \(w=0\).
-
-Thus (1.2) is the unique finite-energy solution. \(\square\)
+Therefore \(C=0\), proving uniqueness. \(\square\)
 
 ---
 
-# 2. The radial coercivity estimate is consistent with, not opposed to, solvability
+# 2. Radial pairing and high-frequency resolvent estimate
 
-The pairing identity can also be proved exactly.
-
-## Lemma 2.1
-
-For smooth compactly supported \(f\),
+For smooth compactly supported \(f\), integration by parts gives
 
 \[
 \boxed{
-\operatorname{Re}
-\langle f,\mathscr R_\sigma f\rangle_{H^{-1/2}}
+\operatorname{Re}\langle f,\mathscr R_\sigma f\rangle_{H^{-1/2}}
 =
-\int
-\rho
-\left(
--\chi_\sigma\rho^2
-+ra\rho
--2D_2
-\right)|f|^2
-\,d\rho\,d\omega.
+\int \rho\left(-\chi_\sigma\rho^2+ra\rho-2D_2\right)|f|^2\,d\rho\,d\omega.
 }
 \]
 
-### Proof
-
-The differential contribution is
-
-\[
--2D_2
-\operatorname{Re}
-\int
-\rho^2\overline f f'\,d\rho\,d\omega.
-\]
-
-Since
-
-\[
-2\operatorname{Re}(\overline f f')
-=(|f|^2)',
-\]
-
-this equals
-
-\[
--D_2
-\int
-\rho^2(|f|^2)'\,d\rho\,d\omega.
-\]
-
-Integrating by parts,
-
-\[
-=
-2D_2
-\int
-\rho|f|^2\,d\rho\,d\omega.
-\]
-
-The zeroth-order \(-4D_2\) term contributes
-
-\[
--4D_2
-\int \rho|f|^2.
-\]
-
-Combining gives the net coefficient
-
-\[
--2D_2.
-\]
-
-The other terms are immediate. \(\square\)
-
-On a compact coefficient class with
-
-\[
-\chi_\sigma\ge\chi_K>0
-\]
-
-and bounded \(ra,D_2\), there exists \(\rho_K\) such that
-
-\[
-\chi_\sigma\rho^2-ra\rho+2D_2
-\ge c_K\rho^2
-\]
-
-for \(\rho\ge\rho_K\). Hence
-
-\[
--\operatorname{Re}
-\langle f,\mathscr R_\sigma f\rangle
-\ge
-c_K
-\int \rho^3|f|^2.
-\]
-
-On
-
-\[
-\rho_*\le\Lambda\le R\rho_*,
-\]
-
-Cauchy–Schwarz yields
-
-\[
-c_K\rho_*^2\|f\|_{H^{-1/2}}^2
-\le
-\|f\|_{H^{-1/2}}
-\|\mathscr R_\sigma f\|_{H^{-1/2}},
-\]
-
-so
+On a compact coefficient class with \(\chi_\sigma\ge\chi_K>0\), one obtains for sufficiently large \(\rho_*\), on a fixed-ratio annulus,
 
 \[
 \boxed{
 \|f\|_{H^{-1/2}}
-\le
-C_K\rho_*^{-2}
-\|\mathscr R_\sigma f\|_{H^{-1/2}}.
-}
-\tag{2.1}
-\]
-
-This is a resolvent estimate.
-
-It does **not** imply \(f=0\) when the right-hand side is nonzero.
-
-Indeed Theorem 1.2 explicitly constructs \(f\).
-
-Thus
-
-\[
-\boxed{
-\text{high-frequency coercivity}
-=
-\text{small absorber},
-\quad
-\text{not}
-\quad
-\text{absence of absorber}.
+\le C_K\rho_*^{-2}\|\mathscr R_\sigma f\|_{H^{-1/2}}.
 }
 \]
 
-This distinction will be fundamental below.
+This is a gain estimate and is fully compatible with the exact solvability above.
 
 ---
 
-# 3. Complete classification of rank-one multiplicative identities
+# 3. Rank-one cycle identities
 
-Let \(I,J\) be finite index sets and let
+Let \(Z_{ij}=A_iB_j\) on a finite bipartite graph. For any alternating cycle
 
 \[
-Z_{ij}=A_iB_j
+\Gamma:i_1-j_1-i_2-j_2-\cdots-i_m-j_m-i_1,
 \]
 
-on a finite bipartite incidence graph.
-
-We first classify all Laurent-monomial identities.
-
-## Theorem 3.1 — rank-one cycle lattice
-
-Let
+define
 
 \[
-M(Z)
+\operatorname{Hol}^Z_\Gamma
 =
-\prod_{(i,j)} Z_{ij}^{n_{ij}},
-\qquad
-n_{ij}\in\mathbb Z.
+\prod_{\ell=1}^m\frac{Z_{i_\ell j_\ell}}{Z_{i_{\ell+1}j_\ell}},
+\qquad i_{m+1}=i_1.
 \]
 
 Then
 
 \[
-M(Z)=1
+\boxed{\operatorname{Hol}^Z_\Gamma=1.}
 \]
 
-for every choice of nonzero \(A_i,B_j\) if and only if
+All Laurent-monomial identities valid for arbitrary nonzero factors \(A_i,B_j\) are generated by these cycle relations, because the exponent vector must have zero row and column sums, i.e. be an integral circulation in the bipartite graph.
+
+For a rectangle,
 
 \[
-\sum_j n_{ij}=0
+\boxed{Z_{ii}Z_{jj}=Z_{ij}Z_{ji}.}
+\]
+
+---
+
+# 4. Direct-product radial absorption
+
+For finitely many edges \(e\), define
+
+\[
+\mathbf R_\Gamma=\bigoplus_e\kappa\mathscr R_{\sigma_e},
 \qquad
-\forall i,
-\tag{3.1}
-\]
-
-and
-
-\[
-\sum_i n_{ij}=0
-\qquad
-\forall j.
-\tag{3.2}
-\]
-
-Every such exponent pattern is an integer combination of alternating bipartite cycles.
-
-### Proof
-
-Substitute
-
-\[
-Z_{ij}=A_iB_j.
+\mathbf S_\Gamma=\bigoplus_e\mathcal S_{\sigma_e}.
 \]
 
 Then
 
 \[
-M
-=
-\prod_i
-A_i^{\sum_jn_{ij}}
-\prod_j
-B_j^{\sum_in_{ij}}.
+\boxed{\mathbf R_\Gamma\mathbf S_\Gamma=I.}
 \]
 
-For this to equal \(1\) for arbitrary nonzero \(A_i,B_j\), every exponent must vanish, giving (3.1)–(3.2).
-
-Orient the bipartite graph from \(I\) to \(J\). Conditions (3.1)–(3.2) are precisely the zero-boundary condition for an integral circulation on the graph.
-
-The integral circulation lattice of a finite graph is generated by its cycle lattice. Because the graph is bipartite, every cycle is alternating and even.
-
-Hence all rank-one Laurent identities are generated by alternating cycles. \(\square\)
-
----
-
-## Corollary 3.2 — rectangle holonomy
-
-For a \(2\times2\) rectangle,
-
-\[
-\boxed{
-\operatorname{Hol}^{Z}_{ij}
-=
-\frac{Z_{ii}Z_{jj}}
-{Z_{ij}Z_{ji}}
-=1.
-}
-\]
-
-For a longer alternating cycle
-
-\[
-i_1-j_1-i_2-j_2-\cdots-i_m-j_m-i_1,
-\]
-
-one convenient representation is
-
-\[
-\boxed{
-\operatorname{Hol}^{Z}_\Gamma
-=
-\prod_{\ell=1}^m
-\frac{Z_{i_\ell j_\ell}}
-     {Z_{i_{\ell+1}j_\ell}}
-=1.
-}
-\tag{3.3}
-\]
-
-This is invariant under the requested rescaling
-
-\[
-A_i\mapsto cA_i,\qquad
-B_j\mapsto c^{-1}B_j,
-\]
-
-indeed under the much larger independent row/column gauge.
-
-So the exact holonomy contained in rank one is **flat**.
-
----
-
-# 4. Finite simultaneous radial absorption is a direct-product system
-
-Let \(E(\Gamma)\) be a finite collection of physical companion edges.
-
-For each \(e\),
-
-\[
-F_e
-=
-\kappa\mathscr R_{\sigma_e}f_e.
-\]
-
-Define
-
-\[
-\mathbf R_\Gamma
-=
-\bigoplus_{e\in E(\Gamma)}
-\kappa\mathscr R_{\sigma_e}
-\]
-
-and
-
-\[
-\mathbf S_\Gamma
-=
-\bigoplus_{e\in E(\Gamma)}
-\mathcal S_{\sigma_e}.
-\]
-
-## Theorem 4.1
-
-\[
-\boxed{
-\mathbf R_\Gamma\mathbf S_\Gamma=I.
-}
-\tag{4.1}
-\]
-
-Hence every finite family of admissible annular companion forcings has the unique edgewise absorber
-
-\[
-\boxed{
-f_e=\mathcal S_{\sigma_e}F_e.
-}
-\tag{4.2}
-\]
-
-### Proof
-
-Theorem 1.2 gives
-
-\[
-\kappa\mathscr R_{\sigma_e}
-\mathcal S_{\sigma_e}=I
-\]
-
-on every edge separately.
-
-Taking the finite direct sum proves (4.1). \(\square\)
-
----
-
-# 5. Incorporating the Curl–Killing rank-one amplitudes
-
-Write the physical edge forcing schematically as
+Thus locally specified edge forcings can be absorbed edgewise. If
 
 \[
 F_e=Z_e\Phi_e,
 \]
 
-where \(Z_e\) is the rank-one coefficient and \(\Phi_e\) includes all geometric data:
+then
 
 \[
-(x-y),
-\qquad
-P_k,
-\qquad
-\text{polarization},
-\qquad
-\text{helicity branch}.
+\boxed{f_e=Z_e\mathcal S_{\sigma_e}\Phi_e.}
 \]
 
-By linearity,
+This proves that radial inversion alone does not create cross-edge multiplicative compatibility.
+
+---
+
+# 5. Reality completion
+
+The radial coefficients are real, hence under the reality-completed Fourier involution,
 
 \[
-f_e
-=
-\mathcal S_{\sigma_e}(Z_e\Phi_e)
-=
-Z_e\mathcal S_{\sigma_e}\Phi_e.
+F_{\bar e}=\overline{F_e}
+\quad\Longrightarrow\quad
+f_{\bar e}=\overline{f_e}.
 \]
+
+Reality supplies conjugate channels but does not by itself create recurrence between distinct forward edges.
+
+---
+
+# 6. Finite-depth readers are not injective on the full packet space
+
+For a fixed annulus \(I\Subset(0,\infty)\), the space \(C_c^\infty(I)\) is infinite-dimensional. Any finite collection of Poisson/heat readers, including finitely many readers applied to \(\mathscr R_\sigma f\), gives finitely many linear functionals. Their common kernel is nontrivial. Therefore finite depths cannot exactly reconstruct arbitrary radial packets without an independently proved finite-dimensional packet structure.
+
+The Vandermonde determinant correctly proves only finite-jet separation.
+
+---
+
+# 7. Provisional projective formulation and finite-witness compactness
+
+The first version of the argument introduced a Channel-Resolved Projective Closure hypothesis (CRPC), scalar gains \(h_e\), incidence-cycle holonomy, and the compactness principle converting pointwise finite witnesses into finitely many uniform witnesses.
+
+Those formal conclusions are correct once a scalar channel connection exists. The question left open there was whether CRPC itself had to be assumed.
+
+The remainder of this file now resolves that question.
+
+---
+
+# PART II. BRIDGE 1 — EXACT UNFOLDED CHANNEL/FIBER CLOSURE
+
+> **Status update.** This part supersedes the earlier provisional treatment of CRPC as an additional axiom. The closure statement is derived from the complex helical Fourier geometry, the polarized Curl–Killing identity, the scalar radial Green operator, and exact genealogical unfolding before physical summation. What remains after this section is only the finite exact recurrence/nonflat-witness problem, called **Bridge 2**.
+
+We prove
+
+\[
+\boxed{
+\text{physical Curl–Killing interaction}
+\Longrightarrow
+\text{exact channel-resolved projective state/fiber closure}
+}
+\]
+
+on the unfolded interaction network.
+
+Throughout this part, fix a normalized finite-\(\kappa\) state and freeze the stationary scalar coefficients
+
+\[
+D_2,\qquad r=\frac{D_3}{d^2},\qquad a,\qquad b,
+\]
+
+so that
+
+\[
+\mathscr R_\sigma
+=
+-2D_2\rho\partial_\rho
+-\chi_\sigma\rho^2+ra\rho-4D_2,
+\qquad
+\chi_\sigma=r(1-\sigma b)-1>0.
+\]
+
+All Fourier fibers below are complexified. Reality is restored by conjugate completion at the end.
+
+---
+
+## 8. One-dimensional helical Fourier fibers
+
+Let \(k\in\mathbb R^3\setminus\{0\}\). The complexified divergence-free Fourier fiber is
+
+\[
+V_k:=\{z\in\mathbb C^3:k\cdot z=0\},
+\]
+
+which has complex dimension two. Let
+
+\[
+P_k=I-\frac{k\otimes k}{|k|^2}
+\]
+
+and define
+
+\[
+H_k:=\frac{i\,k\times}{|k|}.
+\]
+
+On \(V_k\),
+
+\[
+k\times(k\times z)=-|k|^2z,
+\]
+
+so
+
+\[
+H_k^2=I\qquad\text{on }V_k.
+\]
+
+Moreover \(k\times\) is real skew-adjoint, hence \(i\,k\times\) is Hermitian. Therefore \(H_k\) is Hermitian on the two-dimensional complex space \(V_k\), with eigenvalues \(\pm1\).
 
 Define
 
 \[
-G_e
-=
-\mathcal S_{\sigma_e}\Phi_e.
+E_\sigma(k):=\ker(H_k-\sigma I),
+\qquad \sigma\in\{+1,-1\}.
+\]
+
+Since the two eigenvalues are distinct and \(\dim_\mathbb C V_k=2\),
+
+\[
+\boxed{\dim_\mathbb C E_\sigma(k)=1.}
+\tag{8.1}
+\]
+
+Extending \(H_k\) by zero on the longitudinal direction, the helical projector is
+
+\[
+\boxed{
+Q_\sigma(k)=\frac12(P_k+\sigma H_k).
+}
+\tag{8.2}
+\]
+
+For \(z\in E_\sigma(k)\),
+
+\[
+i\,k\times z=\sigma|k|z.
+\]
+
+Thus a Fourier atom \(ze^{ik\cdot x}\) with \(z\in E_\sigma(k)\) is a Curl eigenmode of signed root \(\sigma|k|\).
+
+Hence
+
+\[
+\boxed{
+\text{one nonzero frequency and one helicity sign determine one complex projective line.}
+}
+\tag{8.3}
+\]
+
+---
+
+## 9. Helical fibers are constant along positive radial rays
+
+Write
+
+\[
+k=\rho\omega,\qquad \rho>0,\quad |\omega|=1.
 \]
 
 Then
 
 \[
-\boxed{
-f_e=Z_eG_e.
-}
-\tag{5.1}
-\]
-
-Now rank one gives relations among \(Z_e\).
-
-For a rectangle,
-
-\[
-Z_{ii}Z_{jj}=Z_{ij}Z_{ji}.
-\]
-
-But there is no corresponding identity
-
-\[
-G_{ii}G_{jj}=G_{ij}G_{ji}.
-\]
-
-Indeed the \(G_e\)'s generally live in different Fourier/helicity/radial output fibers, so that expression is not even intrinsically defined.
-
-This is the first exact obstruction.
-
----
-
-# 6. Reality completion adds conjugation, not cross-edge transport
-
-Because the coefficients of \(\mathscr R_\sigma\) are real,
-
-\[
-\mathcal S_{\bar e}\overline{F_e}
+H_{\rho\omega}
 =
-\overline{\mathcal S_eF_e}
+\frac{i(\rho\omega)\times}{\rho}
+=i\omega\times,
 \]
 
-under the appropriate reality-completed Fourier identification.
-
-Thus
-
-\[
-F_{\bar e}
-=
-\overline{F_e}
-\]
-
-implies
-
-\[
-f_{\bar e}
-=
-\overline{f_e}.
-\]
-
-This supplies the reverse conjugate edge.
-
-It does not impose a relation between two unrelated forward edges \(e\neq e'\).
-
-Hence reality completion does not repair the missing projective transport.
-
----
-
-# 7. A formal no-go theorem for Part A/B
-
-We can now state the logical obstruction abstractly.
-
-## Theorem 7.1 — absorption cannot generate a nontrivial loop consistency condition by itself
-
-Suppose \(\mathcal H\) is a scalar functional of a finite collection
-
-\[
-\{F_e,\mathscr R_{\sigma_e},Z_e\}_{e\in E}
-\]
-
-such that
-
-\[
-\text{rank one + reality + simultaneous exact absorption}
-\Longrightarrow
-\mathcal H=1.
-\tag{7.1}
-\]
-
-Assume the admissible forcing class is the annular class of Theorem 1.2.
-
-Then \(\mathcal H=1\) on every locally admissible rank-one/reality-complete forcing family.
-
-Therefore no such \(\mathcal H\) can simultaneously obey
-
-\[
-|\mathcal H-1|
-\ge c>0
-\]
-
-throughout the same class.
-
-### Proof
-
-Given any admissible finite rank-one/reality-complete forcing family \((F_e)\), Theorem 4.1 provides simultaneous exact absorbers
-
-\[
-f_e=\mathcal S_{\sigma_e}F_e.
-\]
-
-Thus the antecedent of (7.1) holds.
-
-Therefore
-
-\[
-\mathcal H=1.
-\]
-
-This holds for every admissible forcing family under consideration.
-
-Hence
-
-\[
-|\mathcal H-1|=0,
-\]
-
-so no strictly positive lower bound is possible. \(\square\)
-
----
-
-This does **not** prove that the full Navier–Stokes PDE possesses a forbidden saturated state.
-
-It proves something more precise and relevant to the olympiad:
+which is independent of \(\rho\). Hence
 
 \[
 \boxed{
-\text{the finite data explicitly listed in A/B do not contain the global state-incidence compatibility needed to create the contradiction.}
+E_\sigma(\rho\omega)=E_\sigma(\omega)
+\qquad(\rho>0).
 }
-\]
-
-That missing compatibility must be stated as an additional theorem or hypothesis.
-
----
-
-# 8. Additive interaction mixing creates a second obstruction
-
-There is an additional issue that must be handled before one can define an ordinary multiplicative connection.
-
-Navier–Stokes forcing is additive.
-
-Suppose two physical interactions \(e_1,e_2\) feed the same occupied output packet \(r\).
-
-Even if each absorbed contribution lies in the same one-dimensional output line,
-
-\[
-\mathcal S_rF_{e_1}=c_1\psi_r,
-\qquad
-\mathcal S_rF_{e_2}=c_2\psi_r,
-\]
-
-the total state contribution is
-
-\[
-(c_1+c_2)\psi_r.
-\]
-
-The amplitude law is therefore
-
-\[
-\boxed{
-a_r
-=
-h_{e_1}a_{p_1}a_{q_1}
-+
-h_{e_2}a_{p_2}a_{q_2}
-+\cdots .
-}
-\tag{8.1}
-\]
-
-It is **not**
-
-\[
-a_r=h_ea_pa_q
-\]
-
-edge by edge.
-
-But an ordinary product holonomy requires precisely such an edgewise multiplicative law.
-
-Therefore a scalar holonomy requires more than one-dimensional output lines.
-
-It requires **channel resolution before physical summation**.
-
-This is particularly important because the companion construction itself begins with same-output cancellation:
-
-\[
-\sum_i A_iB_i=0.
-\]
-
-Thus additive mixing is not peripheral—it is intrinsic to the geometry.
-
----
-
-# 9. Exact formulation of the missing channel-resolution axiom
-
-A legitimate projective holonomy theorem therefore requires the following additional structure.
-
-## Channel-Resolved Projective Closure (CRPC)
-
-For every edge
-
-\[
-e=(p,q\to r)
-\]
-
-in a chosen finite witness network, there are one-dimensional complex packet/channel lines
-
-\[
-L_p,\quad L_q,\quad L_{r,e},
-\]
-
-and a specified projective identification
-
-\[
-\iota_e:
-L_{r,e}\longrightarrow L_r
-\]
-
-with the next input line used by the witness loop, such that
-
-\[
-\mathcal S_{r,e}
-B_e(L_p,L_q)
-\subseteq
-L_{r,e},
 \tag{9.1}
 \]
 
-nontrivially.
+Fix a nonzero frame vector
 
-Moreover, the channel is followed **before summation with other incoming channels**.
+\[
+e_\sigma(\omega)\in E_\sigma(\omega).
+\]
 
-This is the exact condition that turns a vector-valued interaction into scalar edge transport.
+Every field on this ray/helicity component has the form
 
-It is not currently contained in the Theory-2 frontier.
+\[
+\widehat u_\sigma(\rho,\omega)
+=f_\sigma(\rho,\omega)e_\sigma(\omega).
+\]
+
+No radial derivative of the polarization frame appears. Consequently all radial evolution on a fixed helical ray is scalar.
 
 ---
 
-# 10. Genuine scalar transport under CRPC
+## 10. Exact polarized Curl–Killing channel closure
 
-Choose nonzero representatives
+Take polarized Fourier inputs
 
 \[
-\psi_v\in L_v.
+a_p=Ae_{\sigma_p}(p),
+\qquad
+b_q=Be_{\sigma_q}(q),
 \]
 
-For each edge \(e=(p,q\to r)\), CRPC gives a unique nonzero scalar \(h_e\) such that
+with \(p,q\neq0\), and set
 
 \[
-\boxed{
-\iota_e
-\mathcal S_e
-B_e(\psi_p,\psi_q)
+k=p+q\neq0.
+\]
+
+Their signed Curl roots are
+
+\[
+x=\sigma_p|p|,
+\qquad
+y=\sigma_q|q|.
+\]
+
+The polarized Curl–Killing identity is
+
+\[
+2B(a_p,b_q)
+=(x-y)P_k(b_q\times a_p).
+\]
+
+Projecting to output helicity \(\tau\),
+
+\[
+B^\tau_{p,q}(a_p,b_q)
+:=Q_\tau(k)B(a_p,b_q)
 =
-h_e\psi_r.
-}
+\frac{x-y}{2}Q_\tau(k)(b_q\times a_p).
 \tag{10.1}
 \]
 
-## Theorem 10.1 — gauge law
-
-Under
+Substituting the one-dimensional input representatives,
 
 \[
-\psi_v\mapsto g_v\psi_v,
-\qquad
-g_v\in\mathbb C^\times,
+B^\tau_{p,q}(a_p,b_q)
+=
+AB\frac{x-y}{2}
+Q_\tau(k)
+\bigl(e_{\sigma_q}(q)\times e_{\sigma_p}(p)\bigr).
 \]
 
-we have
+Because \(\operatorname{Ran}Q_\tau(k)=E_\tau(k)\) is one-dimensional, there is a unique scalar \(m^\tau(p,q)\) such that
+
+\[
+Q_\tau(k)
+\bigl(e_{\sigma_q}(q)\times e_{\sigma_p}(p)\bigr)
+=
+m^\tau(p,q)e_\tau(k).
+\]
+
+Define
 
 \[
 \boxed{
-h_e\mapsto
-g_pg_qg_r^{-1}h_e.
+\beta^\tau(p,q)
+:=
+\frac{\sigma_p|p|-\sigma_q|q|}{2}
+\,m^\tau(p,q).
 }
 \tag{10.2}
 \]
 
-### Proof
-
-By bilinearity,
-
-\[
-B_e(g_p\psi_p,g_q\psi_q)
-=
-g_pg_qB_e(\psi_p,\psi_q).
-\]
-
-Applying the linear absorber and channel identification,
-
-\[
-\iota_e\mathcal S_eB_e(g_p\psi_p,g_q\psi_q)
-=
-g_pg_qh_e\psi_r.
-\]
-
-Since the new output representative is
-
-\[
-\psi_r'=g_r\psi_r,
-\]
-
-the new scalar is
-
-\[
-h_e'
-=
-g_pg_qg_r^{-1}h_e.
-\]
-
-\(\square\)
-
----
-
-# 11. Incidence-cycle holonomy
-
-Associate to an interaction
-
-\[
-e=(p,q\to r)
-\]
-
-the incidence vector
-
-\[
-\partial e
-=
-[p]+[q]-[r].
-\]
-
-Let \(n=(n_e)\) be a finitely supported integral cycle satisfying
+Then
 
 \[
 \boxed{
-\sum_e n_e\partial e=0.
+B^\tau_{p,q}(a_p,b_q)
+=AB\,\beta^\tau(p,q)e_\tau(k).
+}
+\tag{10.3}
+\]
+
+Thus every ordered polarized interaction is a bilinear map
+
+\[
+E_{\sigma_p}(p)\times E_{\sigma_q}(q)
+\longrightarrow
+E_\tau(p+q)
+\]
+
+between one-dimensional complex lines.
+
+The channel is nonexceptional precisely when
+
+\[
+\boxed{\beta^\tau(p,q)\neq0.}
+\tag{10.4}
+\]
+
+The two evident degeneracies are contained in this criterion: same signed Curl root makes the factor \(x-y\) vanish, while Leray/helical-polarization degeneracy makes \(m^\tau(p,q)=0\).
+
+---
+
+## 11. Exact separation of rank-one amplitude and physical geometry
+
+If the two input families carry scalar factors \(A_i\) and \(B_j\), then
+
+\[
+Z_{ij}=A_iB_j.
+\]
+
+For a fixed projected channel \((i,j)\),
+
+\[
+\boxed{
+F_{ij}
+=A_iB_j\,\beta_{ij}e_{\tau_{ij}}(k_{ij})
+=Z_{ij}\Phi_{ij},
 }
 \tag{11.1}
 \]
 
-Define
+where \(\Phi_{ij}\) contains the Curl-root, Leray and helicity geometry.
+
+The rank-one identity
 
 \[
-\boxed{
-\operatorname{Hol}_n
+Z_{ii}Z_{jj}=Z_{ij}Z_{ji}
+\]
+
+belongs solely to the input amplitudes. There is no reason for
+
+\[
+\beta_{ii}\beta_{jj}
 =
-\prod_e h_e^{n_e}.
-}
-\tag{11.2}
+\beta_{ij}\beta_{ji}.
 \]
 
-## Theorem 11.1
-
-\(\operatorname{Hol}_n\) is independent of every projective choice \(\psi_v\).
-
-### Proof
-
-Under (10.2),
-
-\[
-\operatorname{Hol}_n'
-=
-\operatorname{Hol}_n
-\prod_e
-(g_{p_e}g_{q_e}g_{r_e}^{-1})^{n_e}.
-\]
-
-For a fixed vertex \(v\), its exponent in the last product is exactly the \(v\)-component of
-
-\[
-\sum_e n_e\partial e.
-\]
-
-By (11.1), this is zero.
-
-All gauge factors cancel, so
-
-\[
-\operatorname{Hol}_n'
-=
-\operatorname{Hol}_n.
-\]
-
-\(\square\)
-
-This is the correct finite projective holonomy.
+This is exactly where a future nontrivial geometric holonomy may arise: the rank-one factors cancel, while the physical channel gains need not.
 
 ---
 
-# 12. Global multiplicative state consistency forces flatness
+## 12. Reality completion of helical channels
 
-Suppose actual channel amplitudes \(a_v\neq0\) satisfy
+For a real vector field,
+
+\[
+\widehat u(-k)=\overline{\widehat u(k)}.
+\]
+
+If \(z\in E_\sigma(k)\), then
+
+\[
+i\,k\times z=\sigma|k|z.
+\]
+
+Conjugation gives
+
+\[
+-i\,k\times\overline z=\sigma|k|\overline z,
+\]
+
+which is equivalent to
+
+\[
+i(-k)\times\overline z=\sigma|k|\overline z.
+\]
+
+Hence
 
 \[
 \boxed{
-a_r=h_ea_pa_q
+\overline{E_\sigma(k)}=E_\sigma(-k).
 }
 \tag{12.1}
 \]
 
-along every edge of the chosen channel-resolved loop.
+For a finite interaction network we may choose reality-compatible local frames
 
-## Theorem 12.1
+\[
+e_\sigma(-k)=\overline{e_\sigma(k)}.
+\]
 
-Every incidence cycle satisfies
+Then
 
 \[
 \boxed{
-\operatorname{Hol}_n=1.
+\beta^\tau(-p,-q)=\overline{\beta^\tau(p,q)}.
 }
+\tag{12.2}
 \]
 
-### Proof
-
-From (12.1),
-
-\[
-h_e
-=
-\frac{a_r}{a_pa_q}.
-\]
-
-Therefore
-
-\[
-\operatorname{Hol}_n
-=
-\prod_e
-\left(
-\frac{a_{r_e}}
-{a_{p_e}a_{q_e}}
-\right)^{n_e}.
-\]
-
-The total exponent of \(a_v\) is the negative of the \(v\)-component of
-
-\[
-\sum_e n_e\partial e,
-\]
-
-which vanishes.
-
-Hence every amplitude cancels and
-
-\[
-\operatorname{Hol}_n=1.
-\]
-
-\(\square\)
-
-So Problem A has exactly the desired mathematical answer **after** CRPC is supplied.
+No global continuous choice of helical phase on the full sphere is required; only finitely many local choices are needed, and their phase dependence will be absorbed by gauge covariance.
 
 ---
 
-# 13. Why Problem B should use an existential witness, not every loop
+## 13. The radial transfer operator preserves the helical line
 
-The statement
-
-\[
-|\operatorname{Hol}_\Gamma-1|
-\ge c_K
-\]
-
-for **every** loop is unnecessarily strong and generally structurally impossible.
-
-For instance, if \(\Gamma^{-1}\) is the reverse path,
+On a fixed ray \(\omega\) write
 
 \[
-\operatorname{Hol}_{\Gamma\Gamma^{-1}}
-=
-\operatorname{Hol}_\Gamma
-\operatorname{Hol}_\Gamma^{-1}
-=1.
+\widehat f(\rho,\omega)
+=f(\rho,\omega)e_\sigma(\omega).
 \]
 
-Thus trivial/retraced cycles always exist in an ordinary connection unless explicitly excluded.
-
-The correct rigidity statement is:
+Since \(e_\sigma(\omega)\) is independent of \(\rho\),
 
 \[
 \boxed{
-\forall v\in P
-\quad
-\exists\text{ a finite physical witness }\Gamma_v
-\quad
-|\operatorname{Hol}_{\Gamma_v}(v)-1|>0.
+\mathscr R_\sigma(fe_\sigma)
+=(\mathscr R_\sigma f)e_\sigma.
 }
 \tag{13.1}
 \]
 
-Here \(P\) is the forbidden saturation set.
-
-This is enough.
-
-Indeed compactness converts it into a uniform finite theorem.
-
----
-
-# 14. Compactness converts pointwise finite witnesses into a uniform finite family
-
-This is one of the most important positive results.
-
-## Theorem 14.1 — finite-witness compactness principle
-
-Let \(P\subset K\) be compact.
-
-Assume that for every \(v\in P\) there exists a finite witness loop \(\Gamma_v\), defined on a neighborhood of \(v\), with continuous defect
-
-\[
-d_{\Gamma_v}(w)
-=
-|\operatorname{Hol}_{\Gamma_v}(w)-1|
-\]
-
-and
-
-\[
-d_{\Gamma_v}(v)>0.
-\]
-
-Then there exist finitely many loops
-
-\[
-\Gamma_1,\ldots,\Gamma_N
-\]
-
-and
-
-\[
-c_K>0
-\]
-
-such that
+The same holds for the canonical finite-energy inverse:
 
 \[
 \boxed{
-\max_{1\le j\le N}
-|\operatorname{Hol}_{\Gamma_j}(v)-1|
-\ge c_K
-\qquad
-\forall v\in P.
+\mathcal S_\sigma(Fe_\sigma)
+=(\mathcal S_\sigma F)e_\sigma.
+}
+\tag{13.2}
+\]
+
+Therefore finite-viscosity radial absorption preserves the one-dimensional helical polarization line exactly.
+
+Moreover, because
+
+\[
+\kappa\mathscr R_\sigma\mathcal S_\sigma=I,
+\]
+
+we have the injectivity-on-forcing statement
+
+\[
+\boxed{
+F\neq0
+\Longrightarrow
+\mathcal S_\sigma F\neq0.
+}
+\tag{13.3}
+\]
+
+Thus the radial absorber creates no new channel nullity.
+
+---
+
+## 14. Exact radial Green kernel
+
+The canonical inverse can be written
+
+\[
+(\mathcal S_\sigma F)(\rho)
+=
+\int_0^\infty G_\sigma(\rho,s)F(s)\,ds,
+\]
+
+where
+
+\[
+\boxed{
+G_\sigma(\rho,s)
+=
+-\frac{h_\sigma(\rho)}{2\kappa D_2\,s\,h_\sigma(s)}
+\mathbf 1_{\{s<\rho\}}.
 }
 \tag{14.1}
 \]
 
-Moreover,
+Substitution of the explicit homogeneous profile gives
 
 \[
 \boxed{
-L_K:=\max_j|\Gamma_j|<\infty.
+G_\sigma(\rho,s)
+=
+-\frac{s}{2\kappa D_2\rho^2}
+\exp\left[
+-\frac{\chi_\sigma}{4D_2}(\rho^2-s^2)
++\frac{ra}{2D_2}(\rho-s)
+\right]
+\mathbf 1_{\{s<\rho\}}.
 }
+\tag{14.2}
 \]
 
-### Proof
+For \(0<s<\rho\), this scalar Green kernel is nonzero. Consequently a radial point-source channel, interpreted distributionally, is propagated to every larger radius on the same ray with a nonzero scalar kernel. For general smooth source packets, cancellations may occur at individual target radii, but the full absorbed channel is nonzero by (13.3).
 
-For each \(v\in P\),
+This distinction avoids confusing nonvanishing of the Green kernel with pointwise nonvanishing of an arbitrary integrated packet.
+
+---
+
+## 15. Atomic Formation-plus-radial channel gain
+
+For an elementary frequency interaction \(p+q=k\), write \(s=|k|\) and \(\omega_k=k/|k|\). For output helicity \(\tau\), the atomic source coefficient is \(AB\beta^\tau(p,q)\).
+
+In the distributional Green representation, its contribution at a target radius \(\rho>s\) on the same ray has scalar coefficient
 
 \[
-d_{\Gamma_v}(v)>0.
+AB\,G_\tau(\rho,s)\beta^\tau(p,q).
 \]
 
-By continuity there is a neighborhood \(U_v\) such that
+Define the elementary gain
 
 \[
-d_{\Gamma_v}(w)
->
-\frac12d_{\Gamma_v}(v)
-=:c_v>0
-\]
-
-for \(w\in U_v\).
-
-The collection \(\{U_v\}_{v\in P}\) covers compact \(P\). Choose a finite subcover
-
-\[
-U_{v_1},\dots,U_{v_N}.
-\]
-
-Set
-
-\[
-\Gamma_j=\Gamma_{v_j},
-\qquad
-c_K=\min_j c_{v_j}>0.
-\]
-
-Given arbitrary \(w\in P\), choose \(j\) with
-
-\[
-w\in U_{v_j}.
+\boxed{
+\mathfrak h_e(\rho;p,q,\tau)
+:=
+G_\tau(\rho,|p+q|)\beta^\tau(p,q).
+}
+\tag{15.1}
 \]
 
 Then
 
 \[
-|\operatorname{Hol}_{\Gamma_j}(w)-1|
-\ge c_{v_j}
-\ge c_K.
-\]
-
-This proves (14.1).
-
-Because only finitely many loops remain,
-
-\[
-L_K=\max_j|\Gamma_j|
-\]
-
-is finite. \(\square\)
-
-This theorem gives precisely the desired independence from
-
-\[
-\text{mode count},
-\quad
-\text{shell count},
-\quad
-\text{completion-tree depth},
-\quad
-\text{Fourier cutoff}.
-\]
-
-Crucially, there was **no a priori finite-mode assumption**.
-
-The only genuinely hard step is the pointwise finite-witness theorem (13.1).
-
----
-
-# 15. Why ordinary compactness does not itself produce a finite witness
-
-Compactness provides a finite subcover **after** each point already has a finite witness.
-
-It does not prove that such a witness exists.
-
-This distinction matters.
-
-An infinite companion cascade may continually export to new spectral data:
-
-\[
-e_1\to e_2\to e_3\to\cdots
-\]
-
-without ever producing an exact state-transport cycle.
-
-Compactness may create approximate recurrence, but
-
-\[
-\text{approximate recurrence}
-\not\Rightarrow
-\text{exact algebraic holonomy cycle}.
-\]
-
-An exact multiplicative identity needs exact recurrence/projective closure.
-
-Thus the missing pointwise finite-witness theorem cannot be replaced merely by compactness.
-
----
-
-# 16. Finite Poisson/heat readers: exact negative theorem
-
-Consider finitely many depths
-
-\[
-y_0,\dots,y_m
-\]
-
-and heat depths
-
-\[
-\tau_0,\dots,\tau_n.
-\]
-
-A typical reader is
-
-\[
-L_j f(\omega)
+\boxed{
+A_{\rm out}^{(e)}
 =
-\int_I
-K_j(\rho)f(\rho,\omega)\,d\rho
+\mathfrak h_e A B.
+}
+\tag{15.2}
 \]
 
-on a fixed annulus \(I\Subset(0,\infty)\).
+Explicitly,
 
-The output may retain the entire angular function \(\omega\mapsto L_jf(\omega)\).
+\[
+\boxed{
+\begin{aligned}
+\mathfrak h_e
+&=
+-\frac{|k|}{2\kappa D_2\rho^2}
+\exp\left[
+-\frac{\chi_\tau}{4D_2}(\rho^2-|k|^2)
++\frac{ra}{2D_2}(\rho-|k|)
+\right]
+\\
+&\qquad\times
+\frac{\sigma_p|p|-\sigma_q|q|}{2}
+\,m^\tau(p,q).
+\end{aligned}
+}
+\tag{15.3}
+\]
 
-Even then, finitely many depths are not injective on arbitrary smooth radial packets.
+This formula is useful for atomic bookkeeping. The packet-level theorem below is the rigorous finite-energy formulation and does not require delta functions.
 
-## Theorem 16.1
+---
 
-For any finite family of Poisson/heat readers, and any finite family of the same readers applied to \(\mathscr R_\sigma f\), there exists a nonzero smooth compactly supported packet \(g\) invisible to all of them.
+## 16. Packet-level projective channel closure
+
+Let \(\mathcal X_p,\mathcal X_q,\mathcal X_r\) denote the relevant channel packet spaces and let
+
+\[
+L_p=\mathbb C\psi_p\subset\mathcal X_p,
+\qquad
+L_q=\mathbb C\psi_q\subset\mathcal X_q
+\]
+
+be one-dimensional input channel lines.
+
+Fix a labeled physical channel \(e\), including its ordered inputs, output-frequency/ray restriction, output helicity, Leray projection, reality branch, and frozen radial inverse. Let
+
+\[
+\mathcal T_e:=\mathcal S_e\circ B_e.
+\]
+
+The map \(\mathcal T_e\) is bilinear. Assume the channel is nonexceptional:
+
+\[
+\mathcal T_e(\psi_p,\psi_q)\neq0.
+\]
+
+Define
+
+\[
+\boxed{
+L_e
+:=
+\operatorname{span}_{\mathbb C}
+\{\mathcal T_e(\psi_p,\psi_q)\}.
+}
+\tag{16.1}
+\]
+
+### Lemma 16.1 — representative independence
+
+The line \(L_e\) is independent of the chosen nonzero representatives of \(L_p,L_q\).
 
 ### Proof
 
-Let
+If
 
 \[
-X=C_c^\infty(I)
+\psi_p\mapsto c_p\psi_p,
+\qquad
+\psi_q\mapsto c_q\psi_q,
 \]
 
-for the radial variable.
-
-Each selected measurement gives a linear functional on \(X\). Measurements of \(\mathscr R_\sigma g\) are also linear functionals of \(g\).
-
-Hence altogether we obtain finitely many linear functionals
+then bilinearity gives
 
 \[
-\ell_1,\dots,\ell_N:X\to\mathbb C.
-\]
-
-Since \(X\) is infinite-dimensional,
-
-\[
-\bigcap_{j=1}^N\ker\ell_j
-\]
-
-has nonzero elements.
-
-Choose
-
-\[
-0\ne g_0
-\]
-
-in this intersection.
-
-Choose any nonzero angular profile \(\phi(\omega)\), and define
-
-\[
-g(\rho,\omega)=g_0(\rho)\phi(\omega).
-\]
-
-Then for every chosen radial kernel \(K_j\),
-
-\[
-\int K_j(\rho)g(\rho,\omega)\,d\rho
+\mathcal T_e(c_p\psi_p,c_q\psi_q)
 =
-\phi(\omega)\ell_j(g_0)
-=0.
+c_pc_q\mathcal T_e(\psi_p,\psi_q).
 \]
 
-Thus the entire angular output vanishes.
+Its span is unchanged. \(\square\)
 
-Likewise all selected measurements of \(\mathscr R_\sigma g\) vanish.
-
-Finally,
-
-\[
-\mathscr R_\sigma g\neq0.
-\]
-
-Otherwise \(g_0\) would be a compactly supported homogeneous solution. But all homogeneous solutions are multiples of \(h_\sigma\), which is nowhere compactly supported unless the coefficient vanishes. Hence \(g_0=0\), contradiction.
-
-Thus a nonzero exactly absorbable packet is invisible to every finite reader. \(\square\)
-
----
-
-# 17. Compactness does not rescue finite-depth injectivity
-
-This can be demonstrated in the strongest elementary manner.
-
-Let \(L\) denote any fixed finite reader map and choose
-
-\[
-0\neq g\in\ker L.
-\]
-
-Take arbitrary \(f_0\) and consider
-
-\[
-K_0
-=
-\{f_0+t g:0\le t\le1\}.
-\]
-
-This is compact.
-
-Yet
-
-\[
-L(f_0+t g)=L(f_0)
-\]
-
-for every \(t\).
-
-Hence:
+Therefore each nonzero labeled channel defines canonically a projective output line
 
 \[
 \boxed{
-\text{compactness}
-\not\Rightarrow
-\text{finite-reader injectivity}.
-}
-\tag{17.1}
-\]
-
-So Problem C cannot be derived from compactness alone.
-
----
-
-# 18. What the Vandermonde determinant does prove
-
-Suppose one already knows that near \(\rho_0\),
-
-\[
-f(\rho_0+s)
-=
-\sum_{r=0}^m c_rs^r
-\]
-
-with no unknown higher-order remainder.
-
-Then
-
-\[
-e^{-y_j(\rho_0+s)}
-=
-e^{-y_j\rho_0}
-\sum_{r=0}^m
-\frac{(-y_j)^r}{r!}s^r+\cdots.
-\]
-
-The coefficient matrix is
-
-\[
-V_{jr}=e^{-y_j\rho_0}(-y_j)^r.
-\]
-
-Its determinant is
-
-\[
-\det V
-=
-e^{-\rho_0\sum_jy_j}
-\prod_{i<j}(y_j-y_i)
-\]
-
-up to a nonzero sign/factorial normalization.
-
-Thus
-
-\[
-\det V\neq0.
-\]
-
-Therefore:
-
-\[
-\boxed{
-m+1\text{ depths separate an }m\text{-jet}.
+\mathcal T_e(L_p,L_q)=L_e
 }
 \]
 
-They do not separate arbitrary smooth functions.
+in the projective sense.
 
-So the Vandermonde result is perfectly valid, but finite-dimensional.
-
----
-
-# 19. Positive finite-depth theorem under a genuine finite-dimensional packet hypothesis
-
-There is nevertheless a useful exact positive result.
-
-## Theorem 19.1
-
-Let \(X\) be a finite-dimensional space of radial packet profiles, \(\dim X=N\), supported in a fixed compact annulus.
-
-Assume the full Poisson transform
-
-\[
-Tf(y)
-=
-\int
-w(\rho)e^{-y\rho}f(\rho)\,d\rho
-\]
-
-is injective on \(X\), with \(w(\rho)\neq0\).
-
-Then there exist at most \(N\) positive depths
-
-\[
-y_1,\dots,y_N
-\]
-
-such that
-
-\[
-f\mapsto
-(Tf(y_1),\dots,Tf(y_N))
-\]
-
-is injective on \(X\).
-
-### Proof
-
-For each \(y>0\), define
-
-\[
-\ell_y(f)=Tf(y)\in\mathbb C.
-\]
-
-Suppose the linear span of
-
-\[
-\{\ell_y:y>0\}
-\]
-
-were a proper subspace of \(X^*\).
-
-Then there would exist a nonzero \(f\in X\) annihilated by every \(\ell_y\):
-
-\[
-Tf(y)=0
-\qquad\forall y>0.
-\]
-
-By injectivity of the full transform, \(f=0\), contradiction.
-
-Hence the family \(\{\ell_y\}\) spans \(X^*\).
-
-Because \(X^*\) is \(N\)-dimensional, one can choose \(N\) members
-
-\[
-\ell_{y_1},\dots,\ell_{y_N}
-\]
-
-forming a basis of \(X^*\).
-
-Their joint evaluation map is injective. \(\square\)
-
-Thus finite-depth semigroup closure is possible once a genuinely finite-dimensional packet class has independently been proved.
-
-It is not a consequence of compactness alone.
+This is the exact packet-level closure statement. It does **not** claim that the aggregated physical packet at the same Fourier label is one-dimensional.
 
 ---
 
-# 20. The stationary positive-alignment issue must be stated carefully
+## 17. Finite-depth iteration
 
-Recall
-
-\[
-N=\gamma G+T,
-\]
-
-and
+Start from a finite collection of seed channel vertices, each carrying a one-dimensional line \(L_c\). Suppose the channel lines have been defined through depth \(n\). For a nonexceptional interaction
 
 \[
-Y=rG+R_{\rm fv},
-\qquad
-r=\frac{D_3}{d^2}.
+e=(c_1,c_2\to c_3)
 \]
 
-For any \(\lambda\),
+with parents of depth at most \(n\), define
 
 \[
-N-\lambda Y
-=
-(\gamma-\lambda r)G
-+
-(T-\lambda R_{\rm fv}).
+L_{c_3}
+:=
+\mathcal T_e(L_{c_1},L_{c_2}).
 \]
 
-Since the two summands are \(H^{-1/2}\)-orthogonal,
+By Lemma 16.1 this is a well-defined one-dimensional line.
 
-\[
-\|N-\lambda Y\|^2
-=
-\|T-\lambda R_{\rm fv}\|^2
-+
-d^2(\gamma-\lambda r)^2.
-\]
+Induction proves:
 
-Using
+### Theorem 17.1 — finite-depth projective closure
 
-\[
-\gamma d^2=\frac W2,
-\qquad
-rd^2=D_3,
-\]
+Every finite rooted interaction history built from nonexceptional polarized Curl–Killing channels and frozen finite-viscosity radial absorption carries a canonically defined one-dimensional complex channel line at every genealogical vertex.
 
-we obtain
+No bound or constant in this construction depends on the total number of Fourier modes, shells, or already generated channels.
+
+\(\square\)
+
+---
+
+## 18. Exact unfolding of additive physical mixing
+
+Several genealogically distinct channels may feed the same physical Fourier/ray/helicity label. They must not be collapsed before the next bilinear expansion.
+
+For a fixed physical label \(r\), define the unfolded channel space
 
 \[
 \boxed{
-\|N-\lambda Y\|^2
+\widetilde{\mathcal H}_r
+:=
+\bigoplus_{e\to r}L_{r,e}.
+}
+\tag{18.1}
+\]
+
+The physical summation map is
+
+\[
+\boxed{
+\Sigma_r:\widetilde{\mathcal H}_r\to\mathcal H_r,
+\qquad
+\Sigma_r((u_e)_e)=\sum_eu_e.
+}
+\tag{18.2}
+\]
+
+Hidden cancellation is simply membership in \(\ker\Sigma_r\). The individual channel coordinates remain present in the unfolded space even if their physical sum vanishes.
+
+Now suppose
+
+\[
+u=\sum_\alpha u_\alpha,
+\qquad
+v=\sum_\beta v_\beta
+\]
+
+are finite unfolded decompositions. Bilinearity gives the exact identity
+
+\[
+\boxed{
+B(u,v)=\sum_{\alpha,\beta}B(u_\alpha,v_\beta).
+}
+\tag{18.3}
+\]
+
+After output projection and radial absorption, linearity gives
+
+\[
+\boxed{
+\mathcal S B(u,v)
 =
-\|T-\lambda R_{\rm fv}\|^2
-+
-\frac{(W/2-\lambda D_3)^2}{d^2}.
+\sum_{\alpha,\beta}
+\mathcal S B(u_\alpha,v_\beta).
+}
+\tag{18.4}
+\]
+
+Thus every downstream physical interaction has an exact expansion into interactions of individual upstream channels. No nonlinear term is discarded: the cross terms are precisely the ordered channel pairs \((\alpha,\beta)\).
+
+At the physical packet level the amplitude law is additive,
+
+\[
+a_r^{\rm phys}
+=
+\sum_{e\to r}a_{r,e},
+\]
+
+whereas at the unfolded channel level each channel separately obeys a multiplicative bilinear law.
+
+This resolves the additive-mixing obstruction exactly.
+
+---
+
+## 19. Canonical genealogical labels
+
+A convenient canonical label for a channel is its finite interaction history.
+
+Seed channels carry primitive labels. If channels \(c_1,c_2\) interact through a physical edge specification \(e\), define the child label
+
+\[
+c=(e;c_1,c_2).
+\]
+
+Iterating produces finite rooted binary trees with physical edge labels. Different histories remain distinct even if they land at the same physical frequency and helicity.
+
+The physical state is recovered by summing all histories with the same physical label:
+
+\[
+\boxed{
+\text{unfolded genealogical network}
+\overset{\Sigma}{\longrightarrow}
+\text{physical state}.
+}
+\tag{19.1}
+\]
+
+The kernel of \(\Sigma\) is precisely where exact hidden cancellations live.
+
+At every fixed finite interaction depth, the expansion is finite whenever the seed decomposition and branching specification are finite. Bridge 1 makes no claim that the infinite-depth unfolded network has finite cardinality.
+
+---
+
+## 20. Scalar edge gains and gauge covariance
+
+Choose a nonzero representative
+
+\[
+\psi_c\in L_c
+\]
+
+for every channel vertex in a finite unfolded network. For an edge
+
+\[
+e=(p,q\to r),
+\]
+
+nonexceptionality and one-dimensionality give a unique scalar \(h_e\in\mathbb C^\times\) such that
+
+\[
+\boxed{
+\mathcal T_e(\psi_p,\psi_q)
+=
+h_e\psi_r.
 }
 \tag{20.1}
 \]
 
-Therefore:
-
-## Lemma 20.1
-
-If
+Under independent changes of representatives
 
 \[
-T=\lambda R_{\rm fv},
+\psi_c\mapsto g_c\psi_c,
+\qquad
+g_c\in\mathbb C^\times,
 \]
 
-then
-
-\[
-N=\lambda Y
-\]
-
-if and only if
+bilinearity gives
 
 \[
 \boxed{
-W=2\lambda D_3.
-}
+h_e\mapsto g_pg_qg_r^{-1}h_e.}
 \tag{20.2}
 \]
 
-For a stationary finite-\(\kappa\) profile,
+This is exactly the multiplicative gauge law required for projective holonomy.
 
-\[
-W=2\kappa D_3,
-\]
-
-hence necessarily
-
-\[
-\lambda=\kappa.
-\]
-
-So the stationary equations directly test
-
-\[
-\boxed{
-T=\kappa R_{\rm fv},
-}
-\]
-
-not arbitrary positive alignment \(T=\lambda R_{\rm fv}\).
-
-To exclude every \(\lambda>0\), the finite-loop theorem itself must apply to the entire positive-alignment stratum, independently of stationarity.
-
-That is a separate assumption.
+For atomic channels, \(h_e\) may be represented by the explicit coefficient \(\mathfrak h_e\) in (15.3), up to the chosen normalization of the three channel representatives.
 
 ---
 
-# 21. Holonomy contradiction theorem
+## 21. Reality covariance on the unfolded network
 
-Now suppose CRPC has been established and suppose the physical nonflatness theorem has also been established.
-
-Let \(P\subset K\) denote the forbidden candidate set.
-
-Assume:
+Define conjugation recursively on genealogical labels. A seed channel at \((k,\sigma)\) is sent to its conjugate at \((-k,\sigma)\). If
 
 \[
-v\in P
-\Longrightarrow
-\text{global channel consistency forces }
-\operatorname{Hol}_{\Gamma_v}(v)=1,
+c=(e;c_1,c_2),
+\]
+
+define
+
+\[
+\bar c=(\bar e;\bar c_1,\bar c_2).
+\]
+
+Because the physical bilinear operator and the frozen radial coefficients are real,
+
+\[
+\boxed{L_{\bar c}=\overline{L_c}.}
 \tag{21.1}
 \]
 
-while finite physical geometry gives
+With reality-compatible representatives,
 
 \[
-|\operatorname{Hol}_{\Gamma_v}(v)-1|>0.
+\psi_{\bar c}=\overline{\psi_c},
+\]
+
+and therefore
+
+\[
+\boxed{h_{\bar e}=\overline{h_e}.}
 \tag{21.2}
 \]
 
-Then no \(v\in P\) exists.
-
-This is immediate:
-
-\[
-1
-=
-\operatorname{Hol}_{\Gamma_v}(v)
-\neq1.
-\]
-
-\(\square\)
-
-For stationary candidates,
-
-\[
-P_{\rm stat}
-=
-\{v:T(v)=\kappa R_{\rm fv}(v)\}.
-\]
-
-Thus a valid nonflatness theorem proves
-
-\[
-\boxed{
-T(v)\neq\kappa R_{\rm fv}(v).
-}
-\tag{21.3}
-\]
-
-Since an actual stationary state satisfies equality, it follows that there is no nonzero stationary profile in the nonexceptional class.
+Thus the projective channel calculus respects reality completion exactly.
 
 ---
 
-# 22. Direct quantitative transverse gap by compactness
+## 22. Local continuity for a fixed finite channel pattern
 
-The norm gap actually requires less than an angle theorem.
+For later compactness arguments, consider a fixed finite nonexceptional channel pattern and let the underlying normalized state vary in \(K\).
 
-Because
-
-\[
-R_{\rm fv}(v)=0\Longrightarrow v=0
-\]
-
-and
+The radial Green kernel is
 
 \[
-E(v)=1,
-\]
-
-we have
-
-\[
-R_{\rm fv}(v)\neq0
-\]
-
-throughout the normalized class.
-
-Assume
-
-\[
-T(v)\neq\kappa(v)R_{\rm fv}(v)
-\qquad
-\forall v\in K.
-\]
-
-Define
-
-\[
-\Psi(v)
+G_{\sigma,v}(\rho,s)
 =
-\frac{
-\|T(v)-\kappa(v)R_{\rm fv}(v)\|_{H^{-1/2}}
-}{
-\|T(v)\|_{H^{-1/2}}
-+
-\kappa(v)\|R_{\rm fv}(v)\|_{H^{-1/2}}
-}.
+-\frac{s}{2\kappa(v)D_2(v)\rho^2}
+\exp\left[
+-\frac{\chi_\sigma(v)}{4D_2(v)}(\rho^2-s^2)
++\frac{r(v)a(v)}{2D_2(v)}(\rho-s)
+\right]
+\mathbf1_{\{s<\rho\}}.
+\]
+
+On the compact normalized class,
+
+\[
+\kappa\ge\kappa_0>0,
+\qquad
+\chi_\sigma\ge\chi_K>0.
+\]
+
+Also, by Cauchy–Schwarz in spectral measure,
+
+\[
+M^2\le ED_2.
+\]
+
+Since \(E=M=1\),
+
+\[
+\boxed{D_2\ge1.}
 \tag{22.1}
 \]
 
-The denominator is positive.
-
-By continuity,
+The helicity-gap assumption gives
 
 \[
-\Psi:K\to(0,\infty)
+r=\frac{D_3}{d^2}\le\delta_0^{-1}.
 \]
 
-is continuous.
+Under the stated graph-topology continuity of the displayed scalar functionals, all frozen coefficients remain locally controlled. On every fixed compact radial rectangle separated from \(0\), the Green kernel depends continuously on \(v,\rho,s\). The helical projectors \(Q_\sigma(k)\) are smooth for \(k\neq0\).
 
-Compactness gives
+Therefore any fixed finite nonexceptional channel pattern has locally continuous channel lines in projective space and locally continuous edge gains after a local gauge choice. Gauge-invariant holonomies, when a finite cycle exists, are consequently continuous without making a global phase choice.
 
-\[
-\eta_K
-=
-\min_{v\in K}\Psi(v)>0.
-\]
-
-Therefore
-
-\[
-\boxed{
-\|T(v)-\kappa R_{\rm fv}(v)\|_{H^{-1/2}}
-\ge
-\eta_K
-\left(
-\|T(v)\|_{H^{-1/2}}
-+
-\kappa\|R_{\rm fv}(v)\|_{H^{-1/2}}
-\right).
-}
-\tag{22.2}
-\]
-
-This is already the desired transverse saturation gap.
-
-It requires no Fourier cutoff, mode-count bound or higher Sobolev constant.
-
-\(\square\)
+This is precisely the continuity needed for the finite-witness compactness principle proved earlier.
 
 ---
 
-# 23. Uniform angular separation
+## 23. Exact Unfolded Channel/Fiber Closure Theorem
 
-For the stronger angular conclusion we need
+We can now package Bridge 1.
 
-\[
-T(v)\neq0
-\]
+### Theorem 23.1 — Exact Unfolded Channel/Fiber Closure
 
-as well as
+Let \(v\) be a normalized finite-\(\kappa\) Theory-2 state with
 
 \[
-R_{\rm fv}(v)\neq0.
-\]
-
-Assume both are nonzero on compact \(K\), and assume
-
-\[
-T(v)\neq\lambda R_{\rm fv}(v)
+d>0,
 \qquad
-\forall \lambda>0.
-\tag{23.1}
+\chi_\sigma>0.
 \]
 
-Define
-
-\[
-q(v)
-=
-\frac{
-\langle T(v),R_{\rm fv}(v)\rangle_{H^{-1/2}}
-}{
-\|T(v)\|_{H^{-1/2}}
-\|R_{\rm fv}(v)\|_{H^{-1/2}}
-}.
-\]
-
-Then \(q\) is continuous.
-
-Cauchy–Schwarz gives
-
-\[
-q(v)\le1.
-\]
-
-Equality \(q(v)=1\) occurs precisely when
-
-\[
-T(v)=\lambda R_{\rm fv}(v)
-\]
-
-with \(\lambda>0\).
-
-By (23.1),
-
-\[
-q(v)<1
-\]
-
-for all \(v\).
-
-Compactness yields
-
-\[
-q_*=\max_Kq<1.
-\]
-
-Set
-
-\[
-\boxed{
-\theta_K=\arccos q_*>0.
-}
-\]
-
-Then
-
-\[
-\boxed{
-\angle(T(v),R_{\rm fv}(v))
-\ge\theta_K.
-}
-\tag{23.2}
-\]
-
-\(\square\)
-
----
-
-# 24. Exact angle/gain inequality
-
-Let
-
-\[
-A=\|T\|,
-\qquad
-B=\kappa\|R_{\rm fv}\|,
-\qquad
-\theta=\angle(T,R_{\rm fv}).
-\]
-
-Then
-
-\[
-\|T-\kappa R_{\rm fv}\|^2
-=
-A^2+B^2-2AB\cos\theta.
-\]
-
-If
-
-\[
-\theta\ge\theta_K,
-\]
-
-then
-
-\[
-\cos\theta\le\cos\theta_K=:c.
-\]
-
-Hence
-
-\[
-\|T-\kappa R_{\rm fv}\|^2
-\ge
-A^2+B^2-2ABc.
-\]
-
-Set
-
-\[
-s
-=
-\sin\frac{\theta_K}{2}.
-\]
-
-Since
-
-\[
-s^2=\frac{1-c}{2},
-\]
-
-we calculate
-
-\[
-\begin{aligned}
-&A^2+B^2-2ABc
--
-s^2(A+B)^2
-\\
-&=
-A^2+B^2-2ABc
--\frac{1-c}{2}(A^2+2AB+B^2)
-\\
-&=
-\frac{1+c}{2}(A-B)^2
-\ge0.
-\end{aligned}
-\]
-
-Therefore
-
-\[
-\boxed{
-\|T-\kappa R_{\rm fv}\|
-\ge
-\sin\left(\frac{\theta_K}{2}\right)
-\left(
-\|T\|+\kappa\|R_{\rm fv}\|
-\right).
-}
-\]
-
-Thus
-
-\[
-\boxed{
-\eta_K
-=
-\sin\left(\frac{\theta_K}{2}\right)>0.
-}
-\tag{24.1}
-\]
-
-\(\square\)
-
----
-
-# 25. Relation to the finite-network theorem already present in Part I
-
-Part I states that for a genuinely finite completed nonexceptional network,
-
-\[
-T=\lambda R_{\rm fv},
-\qquad
-\lambda>0,
-\]
-
-is impossible.
-
-That is already a finite-network rigidity theorem.
-
-But it does **not** automatically give the PDE theorem.
-
-To pass from an infinite/continuum state to that finite theorem, one would need:
-
-\[
-\boxed{
-\textbf{Finite Witness Extraction (FWE)}
-}
-\]
-
-meaning:
-
-> Whenever a normalized PDE state \(v\in K\) satisfies the forbidden positive-alignment condition, there exists a finite reality-complete, nonexceptional, channel-resolved subnetwork whose inherited state data satisfy the same exact saturation compatibility.
-
-If FWE were available, Part I's finite-network theorem would immediately produce a contradiction.
-
-Indeed:
-
-\[
-T=\lambda R_{\rm fv}
-\]
-
-globally
-
-\[
-\overset{\mathrm{FWE}}{\Longrightarrow}
-\]
-
-a finite completed nonexceptional saturation network,
-
-contradicting the established finite-network theorem.
-
-Thus
-
-\[
-T\neq\lambda R_{\rm fv}.
-\]
-
-Compactness then gives the quantitative gap as above.
-
-So FWE is an alternative formulation of the missing bridge.
-
----
-
-# 26. Why FWE does not follow automatically from ordinary compactness
-
-An infinite interaction network may export forever:
-
-\[
-\Gamma_1
-\subset
-\Gamma_2
-\subset
-\Gamma_3
-\subset\cdots
-\]
-
-with each finite stage having open companion outputs feeding the next stage.
-
-Every finite subsystem then fails to be a closed completed network.
-
-Taking a Fourier cutoff would artificially close it—but that is exactly forbidden.
-
-Similarly, compactness of the state can imply subsequential convergence of packets or parameters, but this gives approximate rather than exact recurrence.
-
-The finite-network theorem requires exact completion.
-
-Hence
-
-\[
-\boxed{
-\text{compactness}
-+
-\text{finite-network rigidity}
-\not\Rightarrow
-\text{PDE rigidity}
-}
-\]
-
-without a finite-witness extraction principle.
-
-This is why the completion-depth issue is genuinely substantive.
-
----
-
-# 27. The precise corrected theorem that closes the program
-
-We can now state the final theorem in its mathematically valid form.
-
-## Corrected Finite Companion Holonomy Rigidity Theorem
-
-Let \(K\) be a compact normalized finite-\(\kappa\) Theory-2 class satisfying the quantitative nonexceptionality assumptions.
-
-Assume additionally:
-
-### (H1) Channel-resolved projective closure
-
-Every finite witness interaction can be decomposed into one-dimensional channels satisfying CRPC.
-
-### (H2) Exact candidate consistency
-
-For every forbidden saturation candidate, the channel amplitudes satisfy the multiplicative edge relations
-
-\[
-a_r=h_ea_pa_q.
-\]
-
-### (H3) Pointwise finite physical nonflatness
-
-For every forbidden candidate \(v\), there exists a finite reality-complete physical incidence cycle \(\Gamma_v\) for which
-
-\[
-|\operatorname{Hol}_{\Gamma_v}(v)-1|>0.
-\]
-
-### (H4) Local continuity
-
-For each witness \(\Gamma_v\), its holonomy remains defined and depends continuously on the state on a neighborhood of \(v\).
-
-Then:
-
-\[
-\boxed{
-\text{there exist finitely many witnesses }
-\Gamma_1,\dots,\Gamma_N
-}
-\]
-
-and
-
-\[
-\boxed{
-c_K>0
-}
-\]
-
-such that every forbidden candidate satisfies
-
-\[
-\boxed{
-\max_j
-|\operatorname{Hol}_{\Gamma_j}-1|
-\ge c_K.
-}
-\]
-
-But exact candidate consistency gives
-
-\[
-\operatorname{Hol}_{\Gamma_j}=1
-\]
-
-on every applicable closed cycle.
-
-Therefore no forbidden candidate exists.
-
-In particular, in the stationary case,
-
-\[
-\boxed{
-T(v)\neq\kappa R_{\rm fv}(v)
-\qquad
-\forall v\in K.
-}
-\]
-
-Consequently there exists
-
-\[
-\boxed{
-\eta_K>0
-}
-\]
-
-such that
-
-\[
-\boxed{
-\|T-\kappa R_{\rm fv}\|_{H^{-1/2}}
-\ge
-\eta_K
-\left(
-\|T\|_{H^{-1/2}}
-+
-\kappa\|R_{\rm fv}\|_{H^{-1/2}}
-\right).
-}
-\]
-
-If the hypotheses are strengthened so that all positive proportionalities
-
-\[
-T=\lambda R_{\rm fv},
-\quad \lambda>0
-\]
-
-are excluded and both vectors are uniformly nonzero, then
-
-\[
-\boxed{
-\angle(T,R_{\rm fv})\ge\theta_K>0
-}
-\]
-
-and one may take
-
-\[
-\boxed{
-\eta_K
-=
-\sin\left(\frac{\theta_K}{2}\right).
-}
-\]
+Consider any finite reality-complete collection of nonexceptional polarized Curl–Killing interaction channels, and apply the frozen finite-viscosity radial absorber to every channel output. Then there exists an exact unfolded genealogical channel network satisfying:
+
+1. **One-dimensional channel fibers.** Every channel vertex \(c\) carries a complex one-dimensional state line \(L_c\).
+2. **Exact edge closure.** For every edge \(e=(p,q\to r)\),
+   \[
+   \boxed{\mathcal S_eB_e(L_p,L_q)=L_r}
+   \]
+   in the projective sense.
+3. **Nonvanishing.** A nonzero projected Formation channel has a nonzero absorbed channel.
+4. **Scalar edge law.** For nonzero representatives,
+   \[
+   \boxed{\mathcal S_eB_e(\psi_p,\psi_q)=h_e\psi_r,\qquad h_e\neq0.}
+   \]
+5. **Gauge covariance.** Under \(\psi_c\mapsto g_c\psi_c\),
+   \[
+   \boxed{h_e\mapsto g_pg_qg_r^{-1}h_e.}
+   \]
+6. **Exact additive reconstruction.** The physical state is obtained by summing unfolded channel contributions sharing the same physical label.
+7. **Exact downstream expansion.** Every interaction of physical sums is the sum of interactions of all ordered pairs of unfolded channels.
+8. **Reality covariance.** Under reality-compatible choices,
+   \[
+   \boxed{L_{\bar c}=\overline{L_c},\qquad h_{\bar e}=\overline{h_e}.}
+   \]
+9. **Arbitrary finite-depth iteration.** The construction iterates exactly to every finite interaction depth without any coercivity constant depending on the number of channels, Fourier modes, shells, or completion depth.
 
 ### Proof
 
-- H1 gives well-defined scalar edge gains \(h_e\).
-- Theorem 11.1 gives gauge-invariant finite holonomy.
-- H2 and Theorem 12.1 give
-  \[
-  \operatorname{Hol}_\Gamma=1
-  \]
-  on every exact candidate loop.
-- H3 gives, pointwise, a finite loop with nonzero defect.
-- H4 and compactness, via Theorem 14.1, produce finitely many loops and a uniform \(c_K>0\).
-- This contradicts exact candidate consistency.
-- Hence the forbidden saturation set is empty.
-- The continuous normalized residual \(\Psi\) from (22.1) is strictly positive on compact \(K\), giving \(\eta_K>0\).
-- Under uniform nonvanishing and exclusion of every positive proportionality, Theorems 23–24 yield the angular estimate.
+Item 1 follows from the one-dimensional helical Fourier-fiber theorem at atomic level and, for general packet channels, from the representative-independent definition (16.1).
+
+Item 2 follows from bilinearity of the polarized Curl–Killing map, preservation of helicity lines by the radial transfer operator, and the definition of the child channel line.
+
+Item 3 follows from
 
 \[
-\boxed{\mathrm{QED}}
+\kappa\mathscr R_e\mathcal S_e=I:
+\]
+
+if \(\mathcal S_eF_e=0\), then applying \(\kappa\mathscr R_e\) gives \(F_e=0\).
+
+Item 4 follows because every nonzero vector in a one-dimensional complex line is a unique scalar multiple of any fixed nonzero representative.
+
+Item 5 is the gauge calculation (20.2).
+
+Items 6 and 7 follow from the physical summation map, bilinearity of Formation, and linearity of all output projections and radial absorbers.
+
+Item 8 follows from (12.1), reality of the physical bilinear operator, and reality of the frozen radial coefficients.
+
+Item 9 follows by induction on genealogical depth, using Items 1–4 at each new vertex. No step introduces a constant depending on the size of the already constructed network.
+
+Therefore channel-resolved projective closure is an exact theorem on the unfolded interaction network.
+
+\[
+\boxed{\mathrm{QED}_{\text{Bridge 1}}}
 \]
 
 ---
 
-# 28. What remains genuinely unproved from the original axioms
+## 24. Reconciliation with the earlier no-go theorem
 
-At this point every analytic and compactness step is closed.
+There is no contradiction between Bridge 1 and the earlier direct-product no-go theorem.
 
-The unresolved content has been reduced to exactly two physical statements:
+The no-go theorem considered a finite family of radial equations
+
+\[
+F_e=\kappa\mathscr R_e f_e
+\]
+
+with the edge forcings treated as locally independent data. Such equations indeed impose no cross-edge compatibility by themselves.
+
+Bridge 1 adds information that is not contained in radial inversion alone: in the actual nonlinear interaction genealogy, each \(F_e\) is generated bilinearly from specified parent channel lines, and the resulting child contribution is retained as a labeled state before physical summation. This produces a canonical scalar edge calculus.
+
+What Bridge 1 still does **not** produce is a finite exact recurrence identifying a descendant channel with a previously existing channel in a way that closes an incidence cycle. Thus it does not yet produce a nontrivial holonomy contradiction.
+
+So the logical status is now
 
 \[
 \boxed{
-\textbf{(A) Channel/Fiber Closure}
+\text{radial inversion alone: no loop law}
 }
 \]
 
-Prove directly from actual Curl–Killing/Navier–Stokes geometry that the relevant absorbed companion channels can be followed projectively from one incidence into the next **before additive mixing destroys edge identity**.
-
-And
+but
 
 \[
 \boxed{
-\textbf{(B) Pointwise Finite Nonflatness / Finite Witness Extraction}
+\text{physical bilinear genealogy + unfolding: exact scalar channel connection}.
 }
 \]
-
-Prove that every putative positive saturation candidate contains a finite, exact, nonexceptional physical witness whose projective transfer is incompatible with flat holonomy.
-
-Neither statement follows from:
-
-\[
-2B(a_x,b_y)
-=(x-y)P(b_y\times a_x),
-\]
-
-rank-one alone,
-
-\[
-\chi_\sigma>0,
-\]
-
-radial coercivity,
-
-or finite semigroup moments.
-
-That is now a theorem-level diagnosis, not a heuristic one.
 
 ---
 
-# 29. Final QED status of the original Olympiad
+## 25. Relation to the rank-one companion rectangle
 
-The original requested implication was
+For a same-output rank-one rectangle,
+
+\[
+Z_{mn}=A_mB_n.
+\]
+
+After a labeled Formation-plus-radial transfer, write the scalar channel outputs as
+
+\[
+a_{mn}^{\rm out}=h_{mn}Z_{mn}.
+\]
+
+Whenever the four channel coordinates are compared through compatible projective identifications, rank one gives
 
 \[
 \boxed{
-\text{finite companion/rank-one geometry}
-\Longrightarrow
-\text{transverse saturation gap}.
+\frac{a_{ii}^{\rm out}a_{jj}^{\rm out}}
+{a_{ij}^{\rm out}a_{ji}^{\rm out}}
+=
+\frac{h_{ii}h_{jj}}{h_{ij}h_{ji}}.
 }
+\tag{25.1}
 \]
 
-The rigorous result is:
+The \(A_iB_j\) factors cancel exactly. The remaining ratio is purely geometric/radial channel transfer.
+
+Equation (25.1) is not yet a closed holonomy invariant: a genuine holonomy requires an exact finite cycle of channel identifications. But it identifies the precise scalar quantity in which nonflatness must ultimately appear.
+
+---
+
+## 26. What Bridge 1 does not prove
+
+The unfolded interaction network is genealogical. Before recurrence is proved, it is naturally a directed acyclic expansion: each new interaction history creates a new channel label.
+
+One may therefore have
+
+\[
+c_0\to c_1\to c_2\to\cdots
+\]
+
+with every edge carrying a perfectly well-defined nonzero scalar gain, while no descendant channel is ever exactly identified with an earlier channel.
+
+One-dimensionality does not imply recurrence. Compactness gives approximate recurrence at best and cannot replace exact algebraic identification.
+
+Accordingly Bridge 1 proves scalarization and exact channel/fiber closure, but not a finite loop and not a nonflatness defect.
+
+---
+
+# PART III. THE ONLY REMAINING STRUCTURAL BRIDGE
+
+## 27. Bridge 2 — Finite Channel Recurrence / Nonflat Witness
+
+After Theorem 23.1, the previously provisional assumption “channel-resolved projective closure” is removed from the list of hypotheses.
+
+The remaining theorem is now sharply stated:
 
 \[
 \boxed{
-\begin{aligned}
-&\text{rank-one geometry}
-\\
-&\quad+\text{edgewise radial absorption}
-\\
-&\quad+\text{reality completion}
-\\
-&\quad+\text{finite Poisson/heat depths}
-\\
-&\not\Longrightarrow
-\text{a nontrivial finite holonomy defect}.
-\end{aligned}
+\textbf{Finite Channel Recurrence / Nonflat Witness Theorem}
 }
 \]
 
-The missing bridge is precisely
+For every forbidden positive-alignment or stationary saturation candidate \(v\in K\), prove that the exact unfolded physical channel network contains a finite collection of nonexceptional channel vertices and edges together with exact projective channel identifications forming an incidence cycle \(\Gamma_v\) such that:
 
-\[
-\boxed{
-\text{channel-resolved state-incidence closure}
-+
-\text{finite physical nonflat witness}.
-}
-\]
+1. every edge gain is the physical gain supplied by Bridge 1;
+2. reality completion is respected;
+3. exact candidate consistency forces
+   \[
+   \operatorname{Hol}_{\Gamma_v}(v)=1;
+   \]
+4. the Curl–Killing/radial transfer geometry gives
+   \[
+   \operatorname{Hol}_{\Gamma_v}(v)\neq1.
+   \]
 
-Once those two statements are proved,
+Once this pointwise finite witness is proved, the compactness theorem already established gives finitely many witness patterns and a uniform defect \(c_K>0\), independent of mode count, shell count, Fourier cutoff, and uncontrolled completion depth. The transverse saturation gap then follows from the normalized residual compactness argument.
+
+Thus the updated dependency chain is
 
 \[
 \boxed{
 \begin{gathered}
-\text{finite physical witness}\\
-\Downarrow\\
-\text{nonflat projective holonomy}\\
-\Downarrow\\
-\text{contradiction with exact saturation consistency}\\
-\Downarrow\\
-T\neq\kappa R_{\rm fv}\\
-\Downarrow\\
+\text{helical one-dimensionality}
+\\
+\Downarrow
+\\
+\text{polarized scalar Formation channels}
+\\
+\Downarrow
+\\
+\text{scalar finite-viscosity radial transfer}
+\\
+\Downarrow
+\\
+\text{exact genealogical channel unfolding}
+\\
+\Downarrow
+\\
+\text{gauge-covariant scalar edge gains }h_e
+\\
+\Downarrow
+\\
+\boxed{\text{BRIDGE 1 CLOSED}}
+\\
+\Downarrow
+\\
+\text{finite exact recurrence/nonflat witness}
+\\
+\Downarrow
+\\
+\text{uniform holonomy defect by compactness}
+\\
+\Downarrow
+\\
+T\neq\kappa R_{\rm fv}
+\\
+\Downarrow
+\\
 \|T-\kappa R_{\rm fv}\|
 \ge
-\eta_K(\|T\|+\kappa\|R_{\rm fv}\|),
+\eta_K(\|T\|+\kappa\|R_{\rm fv}\|).
 \end{gathered}
 }
 \]
 
-and, under the stronger positive-alignment hypotheses,
+No continuum Poisson inversion, infinite moment hierarchy, Galerkin evidence, Fourier cutoff, bounded mode count, or uncontrolled higher Sobolev coercivity has been used in Bridge 1.
 
 \[
-\boxed{
-\angle(T,R_{\rm fv})\ge\theta_K>0.
-}
+\boxed{\mathrm{QED}_{\text{Bridge 1}}}
 \]
 
-That closes every part of the argument that follows from the formal frontier and identifies, with no remaining ambiguity, the exact new theorem that must be established to complete the physical Theory-2 program.
+The mathematical frontier is now Bridge 2 alone.
