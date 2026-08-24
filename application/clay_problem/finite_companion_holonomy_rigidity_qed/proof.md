@@ -1429,7 +1429,6 @@ and
 \[
 \boxed{
 \text{nonflatness: prove a nonzero gauge-invariant defect on that return.}
-}
 \]
 
 Compactness alone gives neither statement.
@@ -1927,3 +1926,670 @@ Thus the current exact frontier is
 \text{BRIDGE 2 REDUCED TO EXACT RECURRENCE + PRIMITIVE NONFLATNESS + SAME-SIGN DECOMPOSITION}.
 }
 \]
+
+---
+
+# PART V. BRIDGE 2 — MIDDLE LAYER: COMPLETION THEOREM AND MINIMALITY
+
+> **Logical status.** This part packages the remaining Bridge-2 information in the cleanest theorem form. It does not promote the missing recurrence/nonflatness mechanisms to established facts. Instead it proves exactly what follows if a finite witness can be extracted, and it identifies the minimal hypothesis needed when the finite-network rigidity theorem from Part I.3 is taken as established.
+
+The key distinction is now:
+
+\[
+\boxed{
+\text{local channel calculus is proved (Bridge 1),}
+}
+\]
+
+while
+
+\[
+\boxed{
+\text{finite exact witness extraction is not yet proved.}
+}
+\]
+
+---
+
+## 39. Finite Witness Extraction and Uniform Primitive Nonflatness
+
+Let
+
+\[
+\mathcal P_K
+:=
+\{v\in K:\exists\lambda>0\text{ with }T(v)=\lambda R_{\rm fv}(v)\}
+\]
+
+be the forbidden positive-alignment set.
+
+We formulate two structural conditions.
+
+### (FWE) Finite Witness Extraction
+
+For every \(v\in\mathcal P_K\), there exists a finite exact reality-complete nonexceptional channel subnetwork
+
+\[
+\mathcal N_v
+\]
+
+consisting only of occupied, nonzero channel states, such that:
+
+1. every channel edge and edge gain is the physical one furnished by Bridge 1;
+2. the exact channel amplitude relations inherited from \(v\) hold on \(\mathcal N_v\);
+3. all projective identifications used to close \(\mathcal N_v\) are exact;
+4. \(\mathcal N_v\) is a legitimate finite saturation witness in the sense needed by the finite-network rigidity theorem of Part I.3.
+
+This formulation deliberately avoids asserting that FWE follows from compactness. It is an exact extraction statement.
+
+### (UPN) Uniform Primitive Nonflatness
+
+There exists \(c_K>0\) such that every finite witness \(\mathcal N_v\) supplied by FWE contains at least one incidence-balanced primitive physical cycle \(R\) for which
+
+\[
+\boxed{
+|\operatorname{Hol}_R-1|
+\ge c_K.
+}
+\tag{39.1}
+\]
+
+The cycle \(R\) is required to use occupied nonzero channels, so that the exact scalar amplitude relations are available on every edge.
+
+UPN is a direct primitive-witness formulation. It is stronger than merely asking for a qualitative nonzero curvature, but it has the advantage that it bypasses any need to decompose an arbitrary recurrent loop into many rectangles. A same-sign rectangle decomposition, if later proved, is one possible route to UPN rather than a logically necessary part of the final theorem.
+
+---
+
+## 40. Exact saturation consistency forces primitive holonomy one
+
+### Lemma 40.1
+
+Let \(R\) be any incidence-balanced finite channel cycle contained in an exact occupied channel witness. Suppose its nonzero channel amplitudes satisfy on each edge \(e=(p,q\to r)\)
+
+\[
+\boxed{
+a_r=h_ea_pa_q.}
+\tag{40.1}
+\]
+
+If \((n_e)\) are the signed edge multiplicities of the balanced cycle,
+
+\[
+\sum_e n_e([p_e]+[q_e]-[r_e])=0,
+\tag{40.2}
+\]
+
+then
+
+\[
+\boxed{
+\operatorname{Hol}_R
+:=
+\prod_eh_e^{n_e}
+=1.
+}
+\tag{40.3}
+\]
+
+### Proof
+
+Since all participating channel amplitudes are nonzero, (40.1) gives
+
+\[
+h_e=\frac{a_{r_e}}{a_{p_e}a_{q_e}}.
+\]
+
+Hence
+
+\[
+\operatorname{Hol}_R
+=
+\prod_e
+\left(
+\frac{a_{r_e}}{a_{p_e}a_{q_e}}
+\right)^{n_e}.
+\]
+
+For every channel vertex \(x\), the total exponent of \(a_x\) in this product is the negative of the coefficient of \([x]\) in the incidence sum (40.2). That coefficient is zero. Thus every amplitude factor cancels exactly, leaving
+
+\[
+\operatorname{Hol}_R=1.
+\]
+
+The argument is gauge independent because the cycle is incidence-balanced. \(\square\)
+
+This lemma is the precise projective consistency statement needed in the contradiction argument.
+
+---
+
+## 41. Theory-2 Completion Theorem under FWE and UPN
+
+### Theorem 41.1
+
+Assume Bridge 1, FWE, and UPN. Then
+
+\[
+\boxed{
+T(v)\neq\lambda R_{\rm fv}(v)
+\qquad
+\forall v\in K,
+\quad\forall\lambda>0.
+}
+\tag{41.1}
+\]
+
+### Proof
+
+Assume for contradiction that there exist \(v\in K\) and \(\lambda>0\) such that
+
+\[
+T(v)=\lambda R_{\rm fv}(v).
+\]
+
+Then \(v\in\mathcal P_K\). By FWE, \(v\) admits a finite exact reality-complete nonexceptional witness \(\mathcal N_v\) inheriting the exact occupied-channel amplitude relations.
+
+By UPN, \(\mathcal N_v\) contains an incidence-balanced primitive physical cycle \(R\) with
+
+\[
+|\operatorname{Hol}_R-1|
+\ge c_K>0.
+\tag{41.2}
+\]
+
+But Lemma 40.1 applies to this exact occupied cycle and yields
+
+\[
+\operatorname{Hol}_R=1.
+\tag{41.3}
+\]
+
+Substituting (41.3) into (41.2) gives
+
+\[
+0\ge c_K>0,
+\]
+
+a contradiction.
+
+Therefore no positive alignment can occur on \(K\), proving (41.1). \(\square\)
+
+---
+
+## 42. Immediate exclusion of the stationary finite-\(\kappa\) branch
+
+For an actual stationary finite-\(\kappa\) profile, the established finite-viscosity decomposition gives
+
+\[
+\boxed{
+T(v)=\kappa(v)R_{\rm fv}(v).
+}
+\tag{42.1}
+\]
+
+Since
+
+\[
+\kappa(v)\ge\kappa_0>0,
+\]
+
+(42.1) is a positive alignment with \(\lambda=\kappa(v)\). Theorem 41.1 therefore implies:
+
+### Corollary 42.1
+
+Under Bridge 1, FWE, and UPN, the normalized nonexceptional class contains no nonzero stationary finite-\(\kappa\) profile:
+
+\[
+\boxed{
+K\cap
+\{\text{nonzero stationary finite-}\kappa\text{ profiles}\}
+=\varnothing.
+}
+\tag{42.2}
+\]
+
+If \(K\) itself was introduced as a compact class of putative stationary candidates, the conclusion is that this candidate class is empty.
+
+\(\square\)
+
+---
+
+## 43. Uniform transverse norm gap without an angle theorem
+
+The quantitative defect does not require a separate angular argument.
+
+From the radial homogeneous theorem already proved,
+
+\[
+R_{\rm fv}(v)=0
+\Longrightarrow
+v=0.
+\]
+
+Since the normalized class satisfies \(E(v)=1\),
+
+\[
+\boxed{
+R_{\rm fv}(v)\neq0
+\qquad
+\forall v\in K.
+}
+\tag{43.1}
+\]
+
+Define
+
+\[
+\Psi(v)
+:=
+\frac{
+\|T(v)-\kappa(v)R_{\rm fv}(v)\|_{H^{-1/2}}
+}{
+\|T(v)\|_{H^{-1/2}}
++
+\kappa(v)\|R_{\rm fv}(v)\|_{H^{-1/2}}
+}.
+\tag{43.2}
+\]
+
+The denominator is strictly positive by (43.1) and \(\kappa>0\). Theorem 41.1, applied with \(\lambda=\kappa(v)\), makes the numerator strictly positive.
+
+Assume, as in the definition of the compact Theory-2 class, that \(T\), \(R_{\rm fv}\), and \(\kappa\) depend continuously on \(v\). Then \(\Psi\in C(K)\) and \(\Psi(v)>0\) for every \(v\in K\). Compactness gives
+
+\[
+\eta_K
+:=
+\min_{v\in K}\Psi(v)>0.
+\]
+
+Therefore:
+
+### Theorem 43.1 — uniform transverse saturation gap
+
+\[
+\boxed{
+\|T(v)-\kappa(v)R_{\rm fv}(v)\|_{H^{-1/2}}
+\ge
+\eta_K
+\left(
+\|T(v)\|_{H^{-1/2}}
++
+\kappa(v)\|R_{\rm fv}(v)\|_{H^{-1/2}}
+\right)
+}
+\tag{43.3}
+\]
+
+for every \(v\in K\), with \(\eta_K>0\) depending only on the compact class.
+
+### Proof
+
+Equation (43.3) is simply the definition of \(\Psi\) multiplied by its positive denominator and the lower bound \(\Psi\ge\eta_K\). \(\square\)
+
+This is the strongest estimate needed to exclude stationary saturation, and it remains valid even if \(T(v)=0\) at some points.
+
+---
+
+## 44. Uniform angle gap under nonvanishing of \(T\)
+
+Assume in addition
+
+\[
+T(v)\neq0
+\qquad
+\forall v\in K.
+\tag{44.1}
+\]
+
+We regard \(H^{-1/2}\) as a real Hilbert space when defining angles; equivalently, for complex Fourier representatives use the real part of the Hermitian pairing.
+
+Define
+
+\[
+q(v)
+:=
+\frac{
+\operatorname{Re}\langle T(v),R_{\rm fv}(v)\rangle_{H^{-1/2}}
+}{
+\|T(v)\|_{H^{-1/2}}
+\|R_{\rm fv}(v)\|_{H^{-1/2}}
+}.
+\tag{44.2}
+\]
+
+Then \(q\in C(K)\) and \(q(v)\le1\). Equality \(q(v)=1\) is exactly the equality case of Cauchy–Schwarz with the same orientation, hence
+
+\[
+T(v)=\lambda R_{\rm fv}(v)
+\]
+
+for some \(\lambda>0\), which is excluded by Theorem 41.1. Therefore \(q(v)<1\) everywhere.
+
+Compactness gives
+
+\[
+q_*:=\max_{v\in K}q(v)<1.
+\]
+
+Set
+
+\[
+\boxed{
+\theta_K:=\arccos q_*>0.
+}
+\tag{44.3}
+\]
+
+Then
+
+\[
+\boxed{
+\angle(T(v),R_{\rm fv}(v))
+\ge\theta_K
+\qquad
+\forall v\in K.
+}
+\tag{44.4}
+\]
+
+\(\square\)
+
+---
+
+## 45. Exact angle/gain inequality
+
+Let
+
+\[
+A=\|T\|_{H^{-1/2}},
+\qquad
+B=\kappa\|R_{\rm fv}\|_{H^{-1/2}},
+\qquad
+\theta=\angle(T,R_{\rm fv}).
+\]
+
+Then
+
+\[
+\|T-\kappa R_{\rm fv}\|^2
+=A^2+B^2-2AB\cos\theta.
+\tag{45.1}
+\]
+
+Under (44.4), \(\theta\ge\theta_K\). Put
+
+\[
+c=\cos\theta_K,
+\qquad
+s=\sin\frac{\theta_K}{2},
+\qquad
+s^2=\frac{1-c}{2}.
+\]
+
+Since \(\cos\theta\le c\),
+
+\[
+\|T-\kappa R_{\rm fv}\|^2
+\ge A^2+B^2-2ABc.
+\]
+
+A direct calculation gives
+
+\[
+A^2+B^2-2ABc-s^2(A+B)^2
+=
+\frac{1+c}{2}(A-B)^2
+\ge0.
+\]
+
+Hence
+
+\[
+\boxed{
+\|T-\kappa R_{\rm fv}\|_{H^{-1/2}}
+\ge
+\sin\left(\frac{\theta_K}{2}\right)
+\left(
+\|T\|_{H^{-1/2}}
++
+\kappa\|R_{\rm fv}\|_{H^{-1/2}}
+\right).
+}
+\tag{45.2}
+\]
+
+Thus in the angular formulation one may take
+
+\[
+\boxed{
+\eta_K=\sin\left(\frac{\theta_K}{2}\right)>0.
+}
+\tag{45.3}
+\]
+
+\(\square\)
+
+---
+
+## 46. UPN is not needed if Part I.3 finite-network rigidity is already established
+
+The preceding FWE+UPN theorem is useful when one wants holonomy itself to supply the finite-network contradiction. But the established frontier already contains the stronger finite-network statement:
+
+\[
+\boxed{
+\text{for every genuinely finite completed nonexceptional network, }
+T=\lambda R_{\rm fv},\ \lambda>0,
+\text{ is impossible.}
+}
+\tag{46.1}
+\]
+
+If (46.1) is accepted as an independently proved theorem rather than as a target to be reproved by holonomy, then UPN is logically redundant for the final PDE exclusion.
+
+### Theorem 46.1 — minimal Bridge-2 implication
+
+Assume Bridge 1, FWE, and the finite-network rigidity theorem (46.1). Then
+
+\[
+\boxed{
+T(v)\neq\lambda R_{\rm fv}(v)
+\qquad
+\forall v\in K,
+\quad\forall\lambda>0.
+}
+\tag{46.2}
+\]
+
+Consequently the norm gap (43.3) follows, and under (44.1) the angle gap (44.4) and estimate (45.2) follow.
+
+### Proof
+
+If positive alignment held for some \(v\), FWE would produce a finite exact reality-complete nonexceptional saturation witness \(\mathcal N_v\) inheriting that alignment. This is forbidden by (46.1). Thus no positive alignment exists. The quantitative conclusions then follow from Sections 43–45. \(\square\)
+
+Therefore, **if Part I.3 is genuinely established independently, the only missing Bridge-2 theorem needed for the final exclusion is FWE.**
+
+---
+
+## 47. Why FWE cannot be obtained from compactness alone
+
+The exactness in FWE is essential. Compactness only supplies approximate returns.
+
+The irrational-rotation construction of Section 32 already gives the basic obstruction: a compact continuous state space may carry an infinite orbit with no exact repeat. Thus an implication of the form
+
+\[
+\text{compact reachable class}
+\Longrightarrow
+\text{finite exact witness}
+\]
+
+is false without additional algebraic, arithmetic, or finite-rank structure.
+
+In particular, neither ordinary compactness of \(K\) nor continuity of the channel gains can replace FWE.
+
+One must prove FWE by a mechanism that forces a finite algebraic circuit, or else abandon finite recurrence and rule out an infinite nonexceptional saturation tree directly.
+
+---
+
+## 48. Why strict pointwise curvature does not by itself give UPN
+
+Likewise, a qualitative statement
+
+\[
+\operatorname{Hol}_R\neq1
+\]
+
+for every nondegenerate primitive rectangle does not automatically yield a uniform \(c_K>0\).
+
+Indeed, suppose there exists a sequence of admissible nonexceptional rectangles \(R_n\) approaching a degenerate or coalesced boundary configuration \(R_0\) for which
+
+\[
+H_{R_n}\to1.
+\]
+
+Then
+
+\[
+|H_{R_n}-1|\to0,
+\]
+
+so
+
+\[
+\inf_n|H_{R_n}-1|=0
+\]
+
+despite strict nonflatness at every finite \(n\).
+
+Therefore a uniform primitive defect requires either:
+
+- compactness of the **closed nonexceptional primitive configuration class** together with strict nonflatness on that compact set, as in (C1)–(C2); or
+- an explicit quantitative lower bound that excludes coalescence/degeneration at the level of the holonomy formula.
+
+This is the precise distinction between qualitative curvature and UPN.
+
+---
+
+## 49. Relation between the first and middle layers of Bridge 2
+
+The first layer isolated exact recurrence, primitive curvature, and possible same-sign decomposition. The middle layer shows that there are two clean routes from that local structure to the final contradiction.
+
+### Route H — holonomy route
+
+Prove a finite witness extraction statement and then prove UPN, for example by:
+
+\[
+\boxed{
+\text{FWE}
++
+\text{primitive-cycle extraction}
++
+\text{uniform primitive curvature}
+\Longrightarrow
+\text{UPN}.
+}
+\]
+
+A same-sign decomposition of the entire recurrent block is one possible way to produce a nonflat witness, but it is not required if a single incidence-balanced primitive cycle with uniform defect can already be extracted.
+
+Then Theorem 41.1 gives positive-alignment exclusion.
+
+### Route F — finite-network route
+
+If Part I.3 finite-network rigidity is already established, prove only
+
+\[
+\boxed{\text{FWE}.}
+\]
+
+Then Theorem 46.1 gives the same exclusion without using UPN.
+
+Thus the holonomy program and the finite-network rigidity program should not be counted twice. One must decide whether holonomy is intended to **prove** finite-network rigidity or whether finite-network rigidity is already an input.
+
+---
+
+## 50. Two logically viable mechanisms for proving FWE
+
+Since compactness-to-recurrence is false in continuous geometry, an unconditional proof of FWE must use additional structure. Two logically distinct routes remain.
+
+### Route A — finite algebraic circuit without dynamical recurrence
+
+Show directly that the exact saturation equation
+
+\[
+T=\lambda R_{\rm fv},
+\qquad \lambda>0,
+\]
+
+forces a finite algebraic dependence among actual companion contributions. Such a theorem would extract a finite reality-complete witness without requiring any Fourier frequency or projective state to recur dynamically.
+
+This route would bypass the irrational-rotation obstruction entirely.
+
+### Route B — contradiction for the full infinite completion tree
+
+Allow the exact nonexceptional completion tree to be genuinely infinite and prove that such an infinite saturated tree contradicts a global quantity. The needed functional must be stronger than the currently available shell recursion, since a recursion of the form
+
+\[
+a_{n+1}\lesssim_K\frac{a_n^2}{\kappa\rho_n}
+\]
+
+is compatible with super-exponentially small finite-energy tails.
+
+A successful global functional would therefore have to detect something not already controlled by the existing energy or critical-moment estimates, for example a monotone signed flux, a coercive weighted channel sum, or an exact conservation/curvature quantity that cannot be supported by an infinite nonexceptional tree.
+
+Neither Route A nor Route B has yet been proved by the current frontier. They are the genuinely new mathematical tasks.
+
+---
+
+## 51. Middle-layer status of Bridge 2
+
+The exact logical picture is now:
+
+\[
+\boxed{
+\begin{gathered}
+\text{Bridge 1: exact projective channel connection}\
+\Downarrow\\
+\text{FWE + UPN}\
+\Downarrow\\
+T\neq\lambda R_{\rm fv}\quad(\lambda>0)\\
+\Downarrow\\
+\text{stationary finite-}\kappa\text{ exclusion}\
+\Downarrow\\
+\text{uniform transverse norm gap}\
+\Downarrow\\
+\text{uniform angle gap when }T\neq0.
+\end{gathered}
+}
+\]
+
+If Part I.3 finite-network rigidity is accepted as established independently, this simplifies to
+
+\[
+\boxed{
+\begin{gathered}
+\text{Bridge 1}\
++\boxed{\text{FWE}}\
++\text{Part I.3 finite-network rigidity}\
+\Downarrow\\
+T\neq\lambda R_{\rm fv}\quad(\lambda>0)\\
+\Downarrow\\
+\|T-\kappa R_{\rm fv}\|_{H^{-1/2}}
+\ge
+\eta_K
+\bigl(\|T\|_{H^{-1/2}}+\kappa\|R_{\rm fv}\|_{H^{-1/2}}\bigr).
+\end{gathered}
+}
+\tag{51.1}
+\]
+
+Accordingly, in the minimal reading of the established Theory-2 frontier,
+
+\[
+\boxed{
+\textbf{the remaining Bridge-2 bottleneck is Finite Witness Extraction.}
+}
+\tag{51.2}
+\]
+
+This statement is conditional on Part I.3 truly being an independent established theorem. If Part I.3 is instead intended to be proved by the holonomy mechanism, then both FWE and a nonflat finite witness theorem such as UPN remain necessary.
+
+The next layer of Bridge 2 must therefore attack FWE itself, rather than attempting to deduce exact recurrence from compactness.
