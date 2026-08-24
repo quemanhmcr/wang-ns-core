@@ -1,11 +1,483 @@
-Yes. I will close the argument at the strongest level that is mathematically justified.
+# PART 0. MOTHER / SPECTRAL-FLAG COMPLETENESS FOUNDATION
 
-There are really two statements to prove:
+> **Structural status.** The theorem in this part is a whole-state coordinate theorem for smooth homogeneous incompressible Navier--Stokes. It is logically prior to the finite-companion/holonomy argument below. It is **not** a regularity theorem, a blow-up exclusion theorem, or a weak-solution theorem. Its role here is to identify the complete operator-valued state coordinate on which the later helical, channel, semigroup, and rigidity constructions live.
 
-1. **A no-go theorem:** the axioms presently written in Parts A–C do not imply a nontrivial holonomy defect. This can be proved completely.
-2. **A corrected finite-holonomy theorem:** once the missing channel/state-incidence closure and finite-witness property are stated explicitly, the desired mode-count-independent transverse gap follows rigorously. This can also be proved completely.
+The decisive object is the **mother deformation**
 
-What cannot responsibly be supplied is a fictitious proof of the missing physical nonflatness assertion from hypotheses that do not contain enough information to imply it.
+\[
+\boxed{
+\mathcal M(u):=E_u=[\nabla_u,C],
+}
+\tag{0.1}
+\]
+
+where
+
+\[
+C=\operatorname{curl},
+\qquad
+\nabla_vw=P[(v\cdot\nabla)w],
+\qquad
+S(u)=\frac12(\nabla u+\nabla u^T).
+\]
+
+The full shifted spectral flag is a canonical spectral tomography of this smaller complete object.
+
+> **Notation warning.** The mother operator \(E_u=[\nabla_u,C]\) is not the scalar normalized energy \(E\) appearing later in conditions such as \(E=M=1\). The subscript on \(E_u\) will be retained throughout this Part 0 to keep those objects distinct.
+
+---
+
+## 0.1 Periodic state space and shifted spectral flag
+
+Let
+
+\[
+\mathcal X_\infty
+:=
+\left\{
+ u\in C^\infty(\mathbb T^3;\mathbb R^3):
+ \nabla\cdot u=0,
+ \ \int_{\mathbb T^3}u\,dx=0
+\right\}.
+\]
+
+On \(\mathcal X_\infty\), periodic curl is self-adjoint and has no zero mode. For every real threshold \(a\), set
+
+\[
+H_a:=\operatorname{sgn}(C-aI),
+\qquad
+\Gamma_u:=\nabla_u,
+\]
+
+\[
+A_a(u):=[\Gamma_u,H_a],
+\qquad
+\mathscr O_a(u):=H_aA_a(u)-A_a(H_au).
+\tag{0.2}
+\]
+
+At a discrete spectral seam one may take either one-sided sign convention. The seam set is countable and does not affect the layer-cake integral below.
+
+---
+
+## 0.2 Mother / Spectral-Flag Completeness Theorem
+
+### Theorem 0.1 — complete structural compiler
+
+For \(u,v\in\mathcal X_\infty\), the following are equivalent:
+
+\[
+\boxed{
+\mathscr O_a(u)=\mathscr O_a(v)
+\quad\text{for a.e. }a\in\mathbb R,
+}
+\tag{0.3}
+\]
+
+\[
+\boxed{E_u=E_v,}
+\tag{0.4}
+\]
+
+\[
+\boxed{S(u)=S(v),}
+\tag{0.5}
+\]
+
+\[
+\boxed{u=v.}
+\tag{0.6}
+\]
+
+More precisely, the reconstruction is explicit:
+
+\[
+\boxed{
+\{\mathscr O_a(u)\}_{a\in\mathbb R}
+\longrightarrow
+E_u
+\longrightarrow
+\sigma_1(E_u)
+\longrightarrow
+q_u(x,n)
+\longrightarrow
+S(u)
+\longrightarrow
+u,
+}
+\tag{0.7}
+\]
+
+where the last symbol in (0.7) is the recovered velocity \(u\) itself, namely
+
+\[
+\boxed{u=2\Delta^{-1}\operatorname{div}S(u).}
+\tag{0.8}
+\]
+
+Thus the intended compiler is
+
+\[
+\boxed{
+\mathscr O
+\longleftrightarrow
+E
+\longleftrightarrow
+S
+\longleftrightarrow
+u/\operatorname{Kill}.
+}
+\tag{0.9}
+\]
+
+Here \(u/\operatorname{Kill}\) means that before periodic mean-zero normalization the only kernel is the flat Killing sector; on the mean-zero torus that kernel is zero.
+
+### Proof
+
+Because \(\Gamma_u^*=-\Gamma_u\), \(H_a^*=H_a\), and \(H_a^2=I\), one has
+
+\[
+A_a(u)^*=A_a(u),
+\qquad
+H_aA_a(u)+A_a(u)H_a=0.
+\]
+
+Hence \(H_aA_a(u)\) is skew-adjoint, while \(A_a(H_au)\) is self-adjoint. Therefore
+
+\[
+\boxed{
+A_a(u)=H_a\operatorname{skew}\mathscr O_a(u).
+}
+\tag{0.10}
+\]
+
+For scalar curl spectral values \(x,y\),
+
+\[
+\frac12\int_{\mathbb R}
+\bigl(\operatorname{sgn}(y-a)-\operatorname{sgn}(x-a)\bigr)\,da
+=y-x.
+\]
+
+Consequently, first on trigonometric test fields and then in the natural weak operator sense,
+
+\[
+\boxed{
+E_u
+=[\Gamma_u,C]
+=\frac12\int_{\mathbb R}A_a(u)\,da
+=\frac12\int_{\mathbb R}
+H_a\operatorname{skew}\mathscr O_a(u)\,da.
+}
+\tag{0.11}
+\]
+
+Since Leray projection commutes with curl on the flat torus,
+
+\[
+\boxed{
+E_uv
+=-P\sum_{j=1}^3\nabla u_j\times\partial_jv.
+}
+\tag{0.12}
+\]
+
+Thus \(E_u\) is an exact projected first-order operator in the probe field. For \(\xi\neq0\), \(b\perp\xi\), its principal symbol is
+
+\[
+\sigma_1(E_u)(x,\xi)b
+=-iP_\xi\bigl((\nabla u(x))^T\xi\times b\bigr).
+\]
+
+Writing \((\nabla u)^T\xi=\alpha\xi+r\) with \(r\perp\xi\), the term \(r\times b\) is parallel to \(\xi\) and is killed by \(P_\xi\). Since the skew part of \(\nabla u\) has zero quadratic form,
+
+\[
+\alpha
+=\frac{\xi^TS(u)\xi}{|\xi|^2}.
+\]
+
+Therefore
+
+\[
+\boxed{
+\sigma_1(E_u)(x,\xi)b
+=-i\frac{\xi^TS(u)(x)\xi}{|\xi|^2}\,\xi\times b.
+}
+\tag{0.13}
+\]
+
+For \(n\in S^2\), define the scalar strain reader
+
+\[
+q_u(x,n):=n^TS(u)(x)n.
+\tag{0.14}
+\]
+
+Equation (0.13) determines \(q_u\) exactly. The spherical fourth-moment identity and \(\operatorname{tr}S=0\) give
+
+\[
+\boxed{
+S(u)(x)
+=\frac{15}{2}
+\fint_{S^2}q_u(x,n)n\otimes n\,dn.
+}
+\tag{0.15}
+\]
+
+Finally incompressibility gives
+
+\[
+\operatorname{div}S(u)=\frac12\Delta u,
+\]
+
+so the mean-zero normalization yields (0.8). Thus equality of the full flag implies equality of \(E\), equality of \(E\) implies equality of strain, and equality of strain implies equality of the state. The converse implications are immediate from the definitions. \(\square\)
+
+---
+
+## 0.3 The mother is already complete
+
+### Corollary 0.2
+
+The smaller map
+
+\[
+\boxed{
+\mathcal M:u\mapsto E_u=[\nabla_u,C]
+}
+\tag{0.16}
+\]
+
+is injective on \(\mathcal X_\infty\), with an explicit linear decoder obtained from its principal symbol. The full shifted flag is therefore a spectral resolution of an already-complete mother coordinate rather than an independent enlargement of the state.
+
+This is the structural compression used throughout the remainder of the proof:
+
+\[
+\boxed{
+\text{stronger compiler}\quad\Longrightarrow\quad\text{smaller primitive object}.
+}
+\tag{0.17}
+\]
+
+---
+
+## 0.4 Exact Sobolev observability of the mother coordinate
+
+For every real \(s\) for which the homogeneous norms are finite,
+
+\[
+\boxed{
+2\|S(u)\|_{\dot H^s}^2
+=\|u\|_{\dot H^{s+1}}^2.
+}
+\tag{0.18}
+\]
+
+Moreover
+
+\[
+\boxed{
+\|u\|_{\dot H^{s+1}}^2
+=15\int_{\mathbb T^3}
+\fint_{S^2}
+|\Lambda_x^sq_u(x,n)|^2\,dn\,dx.
+}
+\tag{0.19}
+\]
+
+A continuum of directions is not required for quantitative inversion. With
+
+\[
+n_1=e_1,
+\quad n_2=e_2,
+\quad n_3=e_3,
+\]
+
+\[
+n_4=\frac{e_1+e_2}{\sqrt2},
+\quad
+n_5=\frac{e_1+e_3}{\sqrt2},
+\quad
+n_6=\frac{e_2+e_3}{\sqrt2},
+\]
+
+one has the deterministic six-reader estimate
+
+\[
+\boxed{
+\frac{7-\sqrt{17}}{16}
+\|u\|_{\dot H^{s+1}}^2
+\le
+\sum_{r=1}^6
+\|\Lambda_x^sq_u(\cdot,n_r)\|_2^2
+\le
+\frac{7+\sqrt{17}}{16}
+\|u\|_{\dot H^{s+1}}^2.
+}
+\tag{0.20}
+\]
+
+The constants are universal, bandwidth independent, and scale covariant.
+
+In particular, whenever a residual
+
+\[
+W:=T-\kappa R_{\rm fv}
+\]
+
+lies in the domain of the mother decoder, the target transverse norm admits the exact structural reader
+
+\[
+\boxed{
+\|W\|_{\dot H^{-1/2}}^2
+=2\|S(W)\|_{\dot H^{-3/2}}^2,
+}
+\tag{0.21}
+\]
+
+and the six fixed strain directions quantitatively observe the same residual by taking \(s=-3/2\) in (0.20).
+
+This does **not** by itself prove that \(W\neq0\); it says that once non-saturation is established, the mother coordinate supplies a mode-count-independent quantitative measurement of the residual.
+
+---
+
+## 0.5 Mother embedding of the projective channel calculus
+
+Whenever a channel representative \(\psi_c\) lies in the domain of \(\mathcal M\), define its mother line
+
+\[
+\boxed{
+\mathbb E_c
+:=\mathcal M(L_c)
+=\mathbb C E_{\psi_c}.
+}
+\tag{0.22}
+\]
+
+Because \(\mathcal M\) is linear and injective on the physical state class,
+
+\[
+\boxed{
+L_c=L_d
+\iff
+\mathbb E_c=\mathbb E_d.
+}
+\tag{0.23}
+\]
+
+Under a projective gauge change \(\psi_c\mapsto g_c\psi_c\),
+
+\[
+E_{\psi_c}\mapsto g_cE_{\psi_c}.
+\]
+
+Thus the one-dimensional channel geometry constructed later in Bridge 1 admits a faithful mother-coordinate realization. In particular, projective equality need not be tested by an ad hoc metric when the full mother data are available.
+
+This embedding is a **coordinate statement**, not a recurrence theorem: completeness does not imply that two distinct genealogical descendants ever become exactly equal.
+
+---
+
+## 0.6 Compatibility with the no-go theorems below
+
+Mother completeness does not invalidate any of the no-go statements in Parts I–VI.
+
+1. The complete object is operator/tensor valued. A finite list of scalar Poisson/heat readers can have a large kernel even though \(E_u\) or the full flag is complete.
+2. Exact radial inversion remains a direct-product operation when edge forcings are treated as independent data.
+3. Rank-one amplitude identities remain flat: rank one alone produces holonomy \(1\).
+4. Mother completeness supplies neither exact genealogical recurrence nor primitive nonflatness.
+5. Compactness of a continuous complete state geometry does not imply exact projective discreteness.
+
+Accordingly Sections 28–32 below remain valid as **conditional finite-state recurrence lemmas**, but exact discreteness is not promoted here to a structural consequence of Theory-2.
+
+---
+
+## 0.7 Whole-space scope
+
+For divergence-free Schwartz fields on \(\mathbb R^3\), the local mother formula (0.12), principal-symbol identity (0.13), spherical inversion (0.15), Poisson reconstruction, and Sobolev identities remain valid; decay removes the Euclidean Killing sector. The shifted spectral family is defined by the Fourier/helical spectral calculus and (0.11) is interpreted weakly against Schwartz test fields.
+
+The later continuum \(L^2\)-support arguments in Part VI use less regular objects. **No step below may silently use Mother Theorem 0.1 to upgrade an arbitrary rough \(L^2\) state to the smooth/Schwartz class.** Whenever the mother decoder or its principal symbol is invoked in the whole-space terminal program, the required regularity/topology must be stated at that point.
+
+This keeps structural completeness separate from the regularity problem.
+
+---
+
+## 0.8 Updated dependency chain for the present proof
+
+The current proof should therefore be read in the following order:
+
+\[
+\boxed{
+\begin{gathered}
+\text{whole-state mother completeness}
+\\
+\mathscr O\longleftrightarrow E=[\nabla_u,C]\longleftrightarrow S\longleftrightarrow u/\operatorname{Kill}
+\\
+\Downarrow
+\\
+\text{helical one-dimensional spectral fibers}
+\\
+\Downarrow
+\\
+\text{polarized scalar Curl--Killing Formation channels}
+\\
+\Downarrow
+\\
+\text{scalar finite-viscosity radial transfer}
+\\
+\Downarrow
+\\
+\text{exact genealogical unfolding and gauge-covariant gains}
+\\
+\Downarrow
+\\
+\boxed{\text{BRIDGE 1}}
+\\
+\Downarrow
+\\
+\text{support-geometric companion rectangles}
+\\
++\ \text{strict semigroup multiplier curvature}
+\\
+\Downarrow
+\\
+\boxed{\text{FSSS / finite bounded-reader separation}}
+\\
+\Downarrow
+\\
+T\neq\lambda R_{\rm fv}\quad(\lambda>0)
+\\
+\Downarrow
+\\
+\text{compactness + mother/physical norm observability}
+\\
+\Downarrow
+\\
+\|T-\kappa R_{\rm fv}\|_{H^{-1/2}}
+\ge
+\eta_K\bigl(\|T\|_{H^{-1/2}}+\kappa\|R_{\rm fv}\|_{H^{-1/2}}\bigr).
+\end{gathered}
+}
+\tag{0.24}
+\]
+
+The Mother theorem therefore strengthens the foundation and the quantitative readout, but it does **not** manufacture the missing Bridge-2 separation identity. In the current frontier of this file, the genuinely new terminal task remains the finite bounded-reader determinant/FSSS problem formulated in Part VI.
+
+---
+
+# BEGIN FINITE-COMPANION / HOLONOMY RIGIDITY PROOF
+
+The material below is retained as the current finite-companion proof and its successive Bridge-2 audits. The Mother theorem above is logically prior to it and should be used as the structural whole-state compiler throughout.
+
+---
+
+This file records the strongest level of the finite-companion argument that is mathematically justified after importing the Mother / Spectral-Flag Completeness Theorem above.
+
+There are now three structural layers:
+
+1. **No-go layer.** The radial equations, rank-one identities, compactness, and finite scalar readers do not by themselves imply a nontrivial holonomy defect.
+2. **Bridge-1 layer.** Exact channel-resolved projective closure is proved from helical one-dimensionality, polarized Curl--Killing Formation, scalar finite-viscosity transfer, and genealogical unfolding. It is no longer an additional axiom.
+3. **Bridge-2 terminal layer.** The current proof extracts positive-measure support-geometric companion rectangles and proves strict mixed heat--Poisson semigroup multiplier curvature. What remains unproved is the finite bounded-reader separation statement FSSS (or an equivalent theorem forcing saturation-flat finite data).
+
+Accordingly, what cannot responsibly be supplied is a fictitious proof of the remaining saturation-separation identity from hypotheses that do not yet imply it.
 
 ---
 
@@ -71,7 +543,7 @@ Consequently the requested positive defect
 
 does **not** follow from the displayed assumptions of A–C.
 
-However, if one supplements the theory by an exact **channel-resolved projective state-incidence closure law** and a **pointwise finite nonflat witness theorem**, then compactness produces finitely many witness loops and a uniform \(c_K>0\); this excludes positive saturation and yields the desired transverse norm gap. Under uniform nonvanishing, it also yields the angular gap.
+The remainder of this file goes further than these no-go statements. Bridge 1 proves the exact channel-resolved projective closure law rather than assuming it. Later parts then replace the failed compactness-to-recurrence route by support-geometric rectangle extraction and strict semigroup multiplier curvature. The current terminal bottleneck is FSSS: a finite bounded-reader identity for which positive saturation forces flatness while the extracted semigroup rectangle forces nonflatness. Once such a pointwise separation theorem is established, compactness of the normalized class produces the desired uniform transverse gap; under uniform nonvanishing it also yields the angular gap.
 
 We now prove every assertion.
 
