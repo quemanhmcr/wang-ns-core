@@ -2546,15 +2546,15 @@ The exact logical picture is now:
 \[
 \boxed{
 \begin{gathered}
-\text{Bridge 1: exact projective channel connection}\
+\text{Bridge 1: exact projective channel connection}\\
 \Downarrow\\
-\text{FWE + UPN}\
+\text{FWE + UPN}\\
 \Downarrow\\
 T\neq\lambda R_{\rm fv}\quad(\lambda>0)\\
 \Downarrow\\
-\text{stationary finite-}\kappa\text{ exclusion}\
+\text{stationary finite-}\kappa\text{ exclusion}\\
 \Downarrow\\
-\text{uniform transverse norm gap}\
+\text{uniform transverse norm gap}\\
 \Downarrow\\
 \text{uniform angle gap when }T\neq0.
 \end{gathered}
@@ -2566,9 +2566,9 @@ If Part I.3 finite-network rigidity is accepted as established independently, th
 \[
 \boxed{
 \begin{gathered}
-\text{Bridge 1}\
-+\boxed{\text{FWE}}\
-+\text{Part I.3 finite-network rigidity}\
+\text{Bridge 1}\\
++\boxed{\text{FWE}}\\
++\text{Part I.3 finite-network rigidity}\\
 \Downarrow\\
 T\neq\lambda R_{\rm fv}\quad(\lambda>0)\\
 \Downarrow\\
@@ -2593,3 +2593,762 @@ Accordingly, in the minimal reading of the established Theory-2 frontier,
 This statement is conditional on Part I.3 truly being an independent established theorem. If Part I.3 is instead intended to be proved by the holonomy mechanism, then both FWE and a nonflat finite witness theorem such as UPN remain necessary.
 
 The next layer of Bridge 2 must therefore attack FWE itself, rather than attempting to deduce exact recurrence from compactness.
+
+---
+
+# PART VI. BRIDGE 2 — NEAR-FINAL LAYER: MEASURABLE RECTANGLES AND SEMIGROUP SEPARATION
+
+> **Logical reset.** The preceding FWE formulation asks a continuum PDE equality to restrict exactly to a finite closed subsystem. That is stronger than what the Fourier convolution structure presently supplies. The purpose of this part is to replace the recurrence paradigm by a measure-theoretic finite-rectangle mechanism, while carefully separating what is proved from the one final separation identity that remains open.
+
+The new mechanism has three stages:
+
+\[
+\boxed{
+\text{positive-measure Fourier support}
+\Longrightarrow
+\text{positive-measure family of exact support rectangles}
+\Longrightarrow
+\text{strict semigroup rectangle multiplier curvature}.
+}
+\]
+
+The last implication needed for the full Theory-2 contradiction is different:
+
+\[
+\boxed{
+T=\lambda R_{\rm fv}
+\Longrightarrow
+\text{a finite bounded-reader flatness identity on one such rectangle}.
+}
+\]
+
+That final implication is the **Finite Semigroup Separation of Saturation** problem.
+
+---
+
+## 52. Positive-measure helical support
+
+Let \(v\in L^2(\mathbb R^3;\mathbb R^3)\) be divergence-free and normalized by \(E(v)=1\). Decompose
+
+\[
+\widehat v=\widehat v_++\widehat v_-
+\]
+
+using the measurable helical projectors \(Q_\pm(k)\). At least one helicity component, say \(\widehat v_\sigma\), has nonzero \(L^2\) norm.
+
+### Lemma 52.1
+
+There exist
+
+\[
+0<r_0<r_1<\infty,
+\qquad
+\eta>0,
+\]
+
+such that
+
+\[
+S
+:=
+\{k:r_0<|k|<r_1,\ |\widehat v_\sigma(k)|\ge\eta\}
+\tag{52.1}
+\]
+
+has finite positive Lebesgue measure.
+
+### Proof
+
+Because \(\widehat v_\sigma\neq0\) in \(L^2\), its nonzero set has positive measure. Write that set, up to a null set, as the countable union
+
+\[
+\bigcup_{m,n,N\ge1}
+\left\{
+\frac1m<|k|<N,
+\quad
+|\widehat v_\sigma(k)|\ge\frac1n
+\right\}.
+\]
+
+If every member of this union had measure zero, the nonzero set would have measure zero, contradiction. Hence one member has positive measure. It lies in a bounded annulus and therefore has finite measure. \(\square\)
+
+The use of \(|\widehat v_\sigma(k)|\) is frame independent; no global helical phase choice is needed.
+
+---
+
+## 53. Same-output fibers on a positive-measure set
+
+Define
+
+\[
+g(k)
+:=(\mathbf1_S*\mathbf1_S)(k)
+=
+\int_{\mathbb R^3}
+\mathbf1_S(p)\mathbf1_S(k-p)\,dp.
+\tag{53.1}
+\]
+
+Since \(S\) has finite positive measure,
+
+\[
+g\ge0,
+\qquad
+\int_{\mathbb R^3}g(k)\,dk
+=|S|^2>0.
+\tag{53.2}
+\]
+
+Consequently the set
+
+\[
+K_S:=\{k:g(k)>0\}
+\]
+
+has positive measure. For every \(k_0\in K_S\), define the same-output fiber
+
+\[
+S_{k_0}
+:=
+\{p\in S:k_0-p\in S\}.
+\tag{53.3}
+\]
+
+Then
+
+\[
+\boxed{|S_{k_0}|=g(k_0)>0.}
+\tag{53.4}
+\]
+
+Thus a nonzero finite-energy state does not merely supply one isolated same-output incidence: on a positive-measure set of outputs it supplies positive-measure families of input pairs.
+
+---
+
+## 54. Exact support-geometric companion rectangles
+
+Fix \(k_0\in K_S\). Since \(S_{k_0}\) has positive measure, the product set
+
+\[
+S_{k_0}\times S_{k_0}
+\]
+
+has positive six-dimensional measure, whereas the diagonal \(\{p=p'\}\) has measure zero. Hence one may choose
+
+\[
+p,p'\in S_{k_0},
+\qquad
+p\neq p'.
+\]
+
+Set
+
+\[
+q=k_0-p,
+\qquad
+q'=k_0-p',
+\qquad
+d=p-p'\neq0.
+\]
+
+Then all four input points lie in \(S\), and
+
+\[
+\boxed{
+\begin{array}{ccc}
+(p,q)&\longrightarrow&k_0,\\
+(p',q')&\longrightarrow&k_0,\\
+(p,q')&\longrightarrow&k_0+d,\\
+(p',q)&\longrightarrow&k_0-d.
+\end{array}
+}
+\tag{54.1}
+\]
+
+This is an exact algebraic companion rectangle in Fourier support.
+
+### Important measure-theoretic qualification
+
+For an \(L^2\) Fourier state, individual point values are defined only after choosing an a.e. representative, and a single frequency point has zero measure in the convolution integral. Therefore (54.1) is **not yet a finite physical subsystem of the nonlinear convolution**. Its rigorous content is support geometry: almost every chosen tuple consists of Lebesgue points of a representative and obeys the exact frequency identities above.
+
+This corrects the stronger but unjustified interpretation that four isolated Fourier points by themselves contribute a nonzero finite summand to \(N(v)\).
+
+We call (54.1) a **support-geometric physical rectangle**.
+
+---
+
+## 55. Nonexceptional selection
+
+Some geometric degeneracies can be removed by null-set arguments. For example, on a fixed same-helicity fiber \(q=k_0-p\), same-root degeneracy
+
+\[
+|p|=|q|
+\]
+
+is equivalent to
+
+\[
+2k_0\cdot p=|k_0|^2,
+\]
+
+an affine plane and hence a three-dimensional null set. Collinearity conditions are likewise lower-dimensional.
+
+For the helical polarization factor, on each local helical chart the projected coefficient
+
+\[
+Q_\tau(p+q)
+\bigl(e_{\sigma_q}(q)\times e_{\sigma_p}(p)\bigr)
+\]
+
+is smooth, and in the analytic regions of the standard helical frame its scalar representative is real-analytic. If that branch is not identically Formation-null, its zero set is null on the corresponding connected chart.
+
+The high-high-low/thin-shell exclusions are not automatically null-set statements. Accordingly the precise nonexceptional extraction assumption needed here is:
+
+### (NE-S) Active support nonexceptionality
+
+There exists a positive-measure set of outputs \(K_S^{\rm act}\subset K_S\) such that, for each \(k_0\in K_S^{\rm act}\), the set of pairs \((p,p')\in S_{k_0}^2\) for which all four incidences in (54.1) lie in the uniformly nonexceptional region has positive measure.
+
+If the phrase “uniformly separated from the exceptional configurations” in the definition of \(K\) is intended in this measure-theoretic support sense, then (NE-S) is exactly that hypothesis specialized to the extracted rectangle family.
+
+### Theorem 55.1 — finite support rectangle extraction
+
+Under Lemma 52.1 and (NE-S), every nonzero normalized state in the active nonexceptional class contains an exact support-geometric rank-one companion rectangle of the form (54.1), and in fact a positive-measure family of such rectangles.
+
+No recurrence, Fourier cutoff, mode-count bound, or projective discreteness is used.
+
+\(\square\)
+
+This is the rigorous form of **Finite Physical Rectangle Extraction (FPRE)** available at the \(L^2\)-support level.
+
+---
+
+## 56. Rank-one identity on almost-everywhere rectangle data
+
+Choose a local measurable helical frame on a chart containing the selected points and write
+
+\[
+\widehat v_\sigma(k)=a_\sigma(k)e_\sigma(k)
+\]
+
+for an a.e. scalar coefficient \(a_\sigma\). At Lebesgue points of this representative define
+
+\[
+A_1=a_\sigma(p),
+\quad A_2=a_\sigma(p'),
+\quad B_1=a_\sigma(q),
+\quad B_2=a_\sigma(q').
+\]
+
+Because the four points lie in \(S\), these coefficients are nonzero a.e. on the selected active family. Put
+
+\[
+Z_{ij}=A_iB_j.
+\]
+
+Then purely algebraically
+
+\[
+\boxed{
+Z_{11}Z_{22}=Z_{12}Z_{21}.
+}
+\tag{56.1}
+\]
+
+This identity is exact for the almost-everywhere fiber data. Again, it should not be confused with a decomposition of the full convolution integral into four atomic terms.
+
+---
+
+## 57. Reality completion remains finite at the geometric level
+
+If \(v\) is real,
+
+\[
+\widehat v(-k)=\overline{\widehat v(k)}.
+\]
+
+Therefore every support-geometric rectangle (54.1) has the conjugate rectangle
+
+\[
+(-p,-q)\to-k_0,
+\quad
+(-p',-q')\to-k_0,
+\]
+
+\[
+(-p,-q')\to-(k_0+d),
+\quad
+(-p',-q)\to-(k_0-d).
+\]
+
+Thus geometric reality completion requires only finitely many companion incidences. This is an exact support statement, not an assertion of finite closure of the full nonlinear integral.
+
+---
+
+## 58. Exact mixed heat–Poisson rectangle multiplier curvature
+
+For \(y\ge0\) and \(\tau>0\), define the positive radial semigroup multiplier
+
+\[
+m_{y,\tau}(k)
+:=
+\exp(-y|k|-\tau|k|^2).
+\tag{58.1}
+\]
+
+For the rectangle (54.1), define
+
+\[
+\mathfrak M_{y,\tau}(k_0,d)
+:=
+\frac{m_{y,\tau}(k_0)^2}
+{m_{y,\tau}(k_0+d)m_{y,\tau}(k_0-d)}.
+\tag{58.2}
+\]
+
+### Theorem 58.1 — strict semigroup rectangle curvature
+
+For every \(y\ge0\), \(\tau>0\), and \(d\neq0\),
+
+\[
+\boxed{
+\log\mathfrak M_{y,\tau}(k_0,d)
+=
+y\bigl(|k_0+d|+|k_0-d|-2|k_0|\bigr)
++2\tau|d|^2>0.
+}
+\tag{58.3}
+\]
+
+Consequently
+
+\[
+\boxed{
+\mathfrak M_{y,\tau}(k_0,d)>1.
+}
+\tag{58.4}
+\]
+
+### Proof
+
+The Poisson contribution is
+
+\[
+y\bigl(|k_0+d|+|k_0-d|-2|k_0|\bigr),
+\]
+
+which is nonnegative by convexity of the Euclidean norm. For the heat contribution, the parallelogram identity gives
+
+\[
+|k_0+d|^2+|k_0-d|^2
+=2|k_0|^2+2|d|^2,
+\]
+
+hence the logarithmic heat ratio equals \(2\tau|d|^2\), strictly positive because \(\tau>0\) and \(d\neq0\). Summing proves (58.3). \(\square\)
+
+The heat factor is what guarantees strictness even in the collinear case where the Poisson contribution may vanish.
+
+---
+
+## 59. Semigroup weighting breaks the rank-one rectangle exactly
+
+Weight the four a.e. rank-one coefficients by their output multipliers:
+
+\[
+\widetilde Z_{ij}
+:=
+m_{y,\tau}(k_{ij})Z_{ij},
+\]
+
+where
+
+\[
+k_{11}=k_{22}=k_0,
+\qquad
+k_{12}=k_0+d,
+\qquad
+k_{21}=k_0-d.
+\]
+
+Then (56.1) gives
+
+\[
+\boxed{
+\frac{\widetilde Z_{11}\widetilde Z_{22}}
+{\widetilde Z_{12}\widetilde Z_{21}}
+=
+\mathfrak M_{y,\tau}(k_0,d)>1.
+}
+\tag{59.1}
+\]
+
+This is an exact **semigroup multiplier rectangle defect**.
+
+### Distinction from projective channel holonomy
+
+The quantity \(\mathfrak M_{y,\tau}\) is not, by itself, the projective channel holonomy
+
+\[
+H_R=rac{h_{11}h_{22}}{h_{12}h_{21}}.
+\]
+
+The gains \(h_{ij}\) also contain Curl–Killing root factors, helical/Leray polarization coefficients, and finite-viscosity radial transfer. Therefore (59.1) proves a strict semigroup curvature mechanism, but it does **not** prove UPN or a holonomy contradiction without an additional identity coupling the saturation equation to these weighted rectangle data.
+
+This distinction is essential.
+
+---
+
+## 60. Why the old FWE does not follow from rectangle extraction
+
+Suppose globally
+
+\[
+T=\lambda R_{\rm fv}.
+\tag{60.1}
+\]
+
+Both sides are full Hilbert-space objects assembled from continuum Fourier data. Even if the nonlinear side is unfolded into labeled contributions, a physical output packet generally has an additive representation
+
+\[
+a_r^{\rm phys}
+=
+\sum_{\alpha\to r}a_{r,\alpha}
+\]
+
+or, in the continuum representation, an integral over input fibers. Equality (60.1) does not imply that any selected finite subset of those contributions satisfies the same equality by itself.
+
+The elementary scalar model
+
+\[
+1=\sum_{n=1}^\infty 2^{-n}
+\]
+
+already shows the logical issue: the exact infinite relation need not be inherited by a finite subcollection.
+
+Thus
+
+\[
+\boxed{
+\text{global saturation equality}
+\not\Longrightarrow
+\text{exact finite subsystem saturation}
+}
+\tag{60.2}
+\]
+
+from linearity and bilinearity alone.
+
+This is a separate obstruction from the failure of compactness to imply recurrence. Even though support rectangles exist immediately, the old FWE requirement remains too strong without another algebraic theorem.
+
+---
+
+## 61. Point evaluation cannot serve as the final reader
+
+There is a second functional-analytic reason not to stop at the four pointwise coefficients in Section 56. Point evaluation at a prescribed Fourier frequency is not a bounded functional on \(L^2(\mathbb R^3)\), nor on the natural critical Hilbert spaces without additional regularity.
+
+Therefore the final contradiction must be formulated using bounded linear readers: localized integrals, semigroup pairings, or other continuous functionals on the state space. The support-geometric rectangle and the strict multiplier formula provide the geometry that such readers should detect, but do not themselves constitute a bounded finite certificate.
+
+---
+
+## 62. Canonical heat commutator identity on the stationary branch
+
+The canonical heat depth remains useful because it simplifies the stationary linear side exactly.
+
+Let
+
+\[
+H_\tau=e^{-\tau\Lambda^2}.
+\]
+
+In Fourier radial variables,
+
+\[
+\widehat{Lv}
+=-\left(\frac32+\rho\partial_\rho\right)\widehat v.
+\]
+
+A direct differentiation gives
+
+\[
+\boxed{
+L H_\tau
+=H_\tau L+2\tau\Lambda^2H_\tau,
+}
+\tag{62.1}
+\]
+
+or equivalently
+
+\[
+H_\tau L
+=L H_\tau-2\tau\Lambda^2H_\tau.
+\tag{62.2}
+\]
+
+Recall
+
+\[
+Y=\Lambda^2-D_2+2D_2L.
+\]
+
+Using (62.2),
+
+\[
+\begin{aligned}
+H_\tau Y
+&=
+\Lambda^2H_\tau-D_2H_\tau+2D_2H_\tau L\\
+&=
+(1-4D_2\tau)\Lambda^2H_\tau
+-D_2H_\tau+2D_2L H_\tau.
+\end{aligned}
+\tag{62.3}
+\]
+
+At the canonical depth
+
+\[
+\tau_*=\frac1{4D_2},
+\]
+
+the quadratic spectral term disappears:
+
+\[
+\boxed{
+H_{\tau_*}Y
+=D_2(2L-1)H_{\tau_*}.
+}
+\tag{62.4}
+\]
+
+Hence on a stationary profile \(N(v)=\kappa Yv\),
+
+\[
+\boxed{
+H_{\tau_*}N(v)
+=
+\kappa D_2(2L-1)H_{\tau_*}v.
+}
+\tag{62.5}
+\]
+
+If \(w=H_{\tau_*}v\), the heat covariance becomes
+
+\[
+\boxed{
+\mathcal C_{\tau_*}(v)
+=
+\kappa D_2(2L-1)w-N(w).
+}
+\tag{62.6}
+\]
+
+There is no identity in the present frontier forcing the right-hand side to vanish. Thus strict semigroup curvature does not automatically contradict stationarity merely by applying \(H_{\tau_*}\).
+
+---
+
+## 63. Finite Saturation Certificate: the correct finite target
+
+The preceding analysis suggests replacing old FWE by a weaker and more natural finite-certificate theorem.
+
+### Finite Saturation Certificate (FSC)
+
+For every forbidden saturation candidate
+
+\[
+T(v)=\lambda R_{\rm fv}(v),
+\qquad \lambda>0,
+\]
+
+one seeks finitely many bounded linear readers
+
+\[
+\ell_1,\dots,\ell_m
+\]
+
+and a finite active support-geometric companion rectangle \(R\) such that:
+
+1. the reader data retain an exact finite rank-one compatibility associated with \(R\);
+2. the saturation equality forces those finite data to satisfy a flat scalar relation
+   \[
+   \mathscr D(v)=0;
+   \]
+3. the strict semigroup rectangle multiplier curvature of Section 58 forces
+   \[
+   \mathscr D(v)\neq0.
+   \]
+
+FSC is a finite **certificate of incompatibility**, not a finite invariant subsystem of the PDE.
+
+This formulation is compatible with continuum Fourier convolution because bounded readers may integrate the full continuum while returning only finitely many scalar outputs.
+
+---
+
+## 64. Finite-reader noninjectivity is not an obstruction to FSC
+
+Earlier we proved that no fixed finite collection of Poisson/heat depths is injective on the full infinite-dimensional radial packet space. That theorem remains valid.
+
+FSC does not ask for injectivity. To contradict
+
+\[
+T=\lambda R_{\rm fv},
+\]
+
+one only needs a finite functional \(\mathscr D\) that separates the forbidden equality from the actual geometric data. A finite family of readers may fail to reconstruct the state while still detecting one specific incompatibility.
+
+Thus
+
+\[
+\boxed{
+\text{finite reconstruction is unnecessary;
+finite separation is sufficient.}
+}
+\tag{64.1}
+\]
+
+This is precisely why the finite-reader program remains viable despite the no-injectivity theorem of Section 6.
+
+---
+
+## 65. Finite Semigroup Separation of Saturation (FSSS)
+
+The final missing theorem can now be stated without recurrence or finite-support assumptions.
+
+### Conjectural Theorem 65.1 — FSSS
+
+There exist finitely many positive Poisson depths
+
+\[
+y_0,\dots,y_m
+\]
+
+and finitely many heat depths
+
+\[
+\tau_0,\dots,\tau_n,
+\]
+
+with the canonical depth \(\tau_*=1/(4D_2)\) included after normalization, together with finitely many bounded angular/radial test functionals, such that the following holds uniformly on the compact nonexceptional class \(K\):
+
+if
+
+\[
+T(v)=\lambda R_{\rm fv}(v),
+\qquad \lambda>0,
+\]
+
+then the resulting finite reader data satisfy a flat compatibility identity
+
+\[
+\boxed{\mathscr D(v)=0.}
+\tag{65.1}
+\]
+
+On the other hand, whenever the active support of \(v\) contains the nonexceptional rectangle furnished by Theorem 55.1, the same finite reader determinant satisfies
+
+\[
+\boxed{\mathscr D(v)\neq0,}
+\tag{65.2}
+\]
+
+with the nonzero sign ultimately controlled by the strict multiplier curvature
+
+\[
+\mathfrak M_{y,\tau}(k_0,d)>1.
+\]
+
+If Theorem 65.1 is proved, then positive alignment is impossible and the compactness argument of Sections 43–45 immediately supplies the uniform transverse gap and, under nonvanishing of \(T\), the uniform angle gap.
+
+### Status
+
+Theorem 65.1 is **not proved** by the present frontier. In particular, Sections 52–59 do not yet construct the bounded determinant \(\mathscr D\), and (62.6) shows that naive vanishing of heat covariance cannot be used as the missing flatness identity.
+
+---
+
+## 66. What has genuinely been gained
+
+The near-final layer removes several artificial requirements from the earlier Bridge-2 route.
+
+The proved support/semigroup geometry does not require:
+
+- completion-tree recurrence;
+- exact projective discreteness;
+- a minimum Fourier mode spacing;
+- finite Fourier support;
+- a Fourier cutoff;
+- continuum Poisson inversion.
+
+The new proved chain is
+
+\[
+\boxed{
+\begin{gathered}
+v\neq0,\quad v\in L^2\\
+\Downarrow\\
+\text{positive-measure helical support}\\
+\Downarrow\\
+\text{positive-measure same-output fibers}\\
+\Downarrow\\
+\text{exact support-geometric companion rectangles}\\
+\Downarrow\\
+\text{strict mixed heat--Poisson multiplier curvature}.
+\end{gathered}
+}
+\tag{66.1}
+\]
+
+Under (NE-S), the rectangles can be selected entirely in the nonexceptional active region.
+
+What has **not** been gained is an exact finite restriction of the saturation equation.
+
+---
+
+## 67. Updated Bridge-2 frontier
+
+The old logical target
+
+\[
+\text{compactness}
+\Longrightarrow
+\text{recurrence}
+\Longrightarrow
+\text{finite saturation network}
+\]
+
+is no longer the preferred route, because neither implication is available in the continuum setting without new assumptions.
+
+The refined target is
+
+\[
+\boxed{
+\begin{gathered}
+\text{Bridge 1 exact channel calculus}\\
++\\
+\text{support-geometric rectangle extraction}\\
++\\
+\text{strict semigroup multiplier curvature}\\
++\\
+\boxed{\text{FSSS}}\\
+\Downarrow\\
+T\neq\lambda R_{\rm fv}\quad(\lambda>0)\\
+\Downarrow\\
+\|T-\kappa R_{\rm fv}\|_{H^{-1/2}}
+\ge
+\eta_K
+\bigl(\|T\|_{H^{-1/2}}+
+\kappa\|R_{\rm fv}\|_{H^{-1/2}}\bigr).
+\end{gathered}
+}
+\tag{67.1}
+\]
+
+Thus the mathematically sharp near-final problem is no longer “prove recurrence.” It is:
+
+\[
+\boxed{
+\textbf{construct a finite bounded-reader determinant }\mathscr D
+\textbf{ for which saturation forces flatness and semigroup rectangle curvature forces nonflatness.}
+}
+\tag{67.2}
+\]
+
+That is the remaining candidate bridge to an unconditional Theory-2 theorem.
