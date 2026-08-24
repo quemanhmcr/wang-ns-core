@@ -4716,3 +4716,883 @@ D_\kappa=0\Rightarrow\mathfrak C_{\tau,y}=0\\
 \]
 
 The next mathematically decisive task is therefore not another compactness argument. It is the explicit construction—or rigorous disproof—of the Ward functional in (76.3).
+
+---
+
+# PART VIII. STRUCTURAL STOP — CHANNEL-QUOTIENT DESCENT NO-GO AND PHYSICAL HEAT-RIGIDITY RESET
+
+> **Status update.** This part performs the promised final audit of the most natural GWCI construction. The conclusion is a genuine no-go theorem: the positive paired-conductance functional of Part VII does not, in general, descend through physical additive channel aggregation by pushing its channel gradient through the adjoint aggregation map. This invalidates the **channel-faithful descent route** to GWCI. It does **not** rule out every logically possible Ward identity; a functional constructed directly after physical aggregation remains a separate possibility.
+
+The exact test is
+
+\[
+\boxed{
+\mathcal Q_{\tau,y}(\mathcal B(v))
+\stackrel{?}{\in}
+\operatorname{Ran}\Sigma^*,
+}
+\tag{84.1}
+\]
+
+where \(\mathcal B(v)\) denotes the unfolded channel lift and \(\mathcal Q_{\tau,y}\) is the channel gradient of the paired-conductance energy. We show that (84.1) fails generically already at the exact Curl--Killing symbol level.
+
+---
+
+## 84. Localized physical aggregation on one output fiber
+
+Fix a nonzero output frequency \(k\), input helicities \(\alpha,\beta\in\{\pm1\}\), and output helicity \(\tau\). Write
+
+\[
+q=k-p.
+\]
+
+The exact polarized Curl--Killing scalar symbol is
+
+\[
+\boxed{
+\beta_{\alpha\beta}^{\tau}(p,k-p)
+=
+\frac{\alpha|p|-\beta|k-p|}{2}
+\,m_{\alpha\beta}^{\tau}(p,k-p),
+}
+\tag{84.2}
+\]
+
+where
+
+\[
+Q_\tau(k)
+\bigl(e_\beta(k-p)\times e_\alpha(p)\bigr)
+=
+m_{\alpha\beta}^{\tau}(p,k-p)e_\tau(k).
+\tag{84.3}
+\]
+
+If
+
+\[
+a_\alpha(p)
+:=\langle\widehat v(p),e_\alpha(p)\rangle,
+\]
+
+then the channel lift on this output fiber is
+
+\[
+\boxed{
+F_k(p)
+:=
+\beta_{\alpha\beta}^{\tau}(p,k-p)
+\,a_\alpha(p)a_\beta(k-p).
+}
+\tag{84.4}
+\]
+
+The physical Formation coefficient sees only the additive aggregate
+
+\[
+N_\tau(k)
+=
+\int F_k(p)\,dp
+\]
+
+up to the finite sum over input-helicity sectors.
+
+For the functional-analytic range calculation we localize to a finite-measure incidence patch \(U\Subset\mathbb R^3\) containing the wave packets used below. Set
+
+\[
+X_U:=L^2(U;\mathbb C),
+\qquad
+\Sigma_UF:=\int_UF(p)\,dp.
+\tag{84.5}
+\]
+
+Then \(\Sigma_U:X_U\to\mathbb C\) is bounded. Its adjoint is
+
+\[
+\boxed{
+(\Sigma_U^*z)(p)=z
+\quad\text{for a.e. }p\in U,
+}
+\tag{84.6}
+\]
+
+and therefore
+
+\[
+\boxed{
+\operatorname{Ran}\Sigma_U^*
+=
+\{\text{constant functions on }U\}.
+}
+\tag{84.7}
+\]
+
+Thus channel-faithful descent requires the channel derivative at a fixed physical output to assign the same dual coefficient to every incidence decomposition represented inside \(U\).
+
+---
+
+## 85. Wave-packet symbol localization
+
+The obstruction can be tested on a finite symbol configuration.
+
+### Lemma 85.1 — wave-packet symbol extraction
+
+Let \(\mathscr I(v)=0\) be a universal polynomial Fourier identity built from finitely many multilinear interactions, Fourier multipliers smooth on the frequencies under consideration, Leray/helical projections, and Curl--Killing symbols. If \(\mathscr I(v)=0\) for every real Schwartz field, then the corresponding discrete algebraic symbol identity holds on every finite nonexceptional frequency configuration.
+
+### Proof
+
+Choose distinct nonzero frequencies
+
+\[
+\xi_1,\dots,\xi_M
+\]
+
+and a bump \(\varphi\in C_c^\infty(B(0,1))\). Put
+
+\[
+\varphi_{\varepsilon,j}(k)
+:=
+\varepsilon^{-3/2}
+\varphi\left(\frac{k-\xi_j}{\varepsilon}\right).
+\]
+
+For sufficiently small \(\varepsilon\), the supports are pairwise disjoint and avoid every singular multiplier locus. Define
+
+\[
+\widehat v_\varepsilon
+=
+\sum_jc_j\varphi_{\varepsilon,j}e_{\sigma_j}
++
+\text{reality completion}.
+\tag{85.1}
+\]
+
+Every smooth multiplier converges uniformly on the \(j\)-th packet to its value at \(\xi_j\). By separation of the packet supports, each prescribed finite interaction history has a leading term given by the corresponding discrete symbol, while histories with distinct output centers remain separated at leading order. After dividing by the common packet-scaling factor of the polynomial expression and letting \(\varepsilon\downarrow0\), the asserted universal identity yields its discrete symbol identity.
+
+Therefore a single finite nonexceptional symbol configuration violating a proposed algebraic range identity disproves the corresponding universal Schwartz-field identity. \(\square\)
+
+---
+
+## 86. Four same-output decompositions with two common companion outputs
+
+Choose four decompositions
+
+\[
+p_i+q_i=k,
+\qquad i=1,2,3,4,
+\tag{86.1}
+\]
+
+such that
+
+\[
+\boxed{
+p_1-p_2=p_3-p_4=:d\neq0.}
+\tag{86.2}
+\]
+
+Then
+
+\[
+p_1+q_2=k+d,
+\qquad
+p_3+q_4=k+d,
+\]
+
+so there are two distinct channels into the same physical output \(k+d\):
+
+\[
+e_{12}:=(p_1,q_2\to k+d),
+\qquad
+e_{34}:=(p_3,q_4\to k+d).
+\tag{86.3}
+\]
+
+Their reverse companions are
+
+\[
+e_{21}:=(p_2,q_1\to k-d),
+\qquad
+e_{43}:=(p_4,q_3\to k-d).
+\tag{86.4}
+\]
+
+Choose \((k,d,p_1,p_3)\) generically so that all relevant frequencies are distinct and nonzero, no relevant pair is collinear or same-root, and the required helical projections are nonzero. The excluded conditions form a finite union of proper algebraic/analytic subvarieties on any fixed helical chart, so such nonexceptional configurations exist. In particular we may assume
+
+\[
+\boxed{
+\beta_{12},\beta_{21},\beta_{34},\beta_{43}\neq0.
+}
+\tag{86.5}
+\]
+
+Let
+
+\[
+A_i:=a_{\alpha_i}(p_i),
+\qquad
+B_i:=a_{\beta_i}(q_i),
+\]
+
+and define the exact discrete channel amplitudes
+
+\[
+\boxed{
+z_{ij}:=\beta_{ij}A_iB_j.}
+\tag{86.6}
+\]
+
+Because the positive-frequency packet centers are chosen distinct, the \(A_i,B_i\) are independent complex parameters in the discrete symbol test. Reality completion only adds their conjugate partners at negative frequencies.
+
+---
+
+## 87. Discrete paired-conductance gradient
+
+For a same-output pair \((i,j)\), let
+
+\[
+\Gamma_{ij}
+:=
+1-\exp[-\Xi_{\tau,y}(k,p_i-p_j)].
+\tag{87.1}
+\]
+
+The finite symbol localization of the paired-conductance functional contains
+
+\[
+\boxed{
+\mathfrak C_{\rm disc}
+=
+\sum_{i<j}
+\Gamma_{ij}
+|z_{ij}|^2|z_{ji}|^2.
+}
+\tag{87.2}
+\]
+
+Using the Wirtinger derivative,
+
+\[
+\frac{\partial}{\partial\overline{z}_{ij}}
+\bigl(|z_{ij}|^2|z_{ji}|^2\bigr)
+=
+z_{ij}|z_{ji}|^2.
+\]
+
+Hence the channel gradient coordinate is
+
+\[
+\boxed{
+(\mathcal Q_{\rm disc})_{ij}
+=
+\Gamma_{ij}z_{ij}|z_{ji}|^2,
+}
+\tag{87.3}
+\]
+
+up to a harmless common factor if oriented pairs are double counted.
+
+At the output \(k+d\), physical aggregation of the two coordinates in (86.3) is
+
+\[
+\Sigma_{k+d}(z_{12},z_{34})
+=z_{12}+z_{34},
+\tag{87.4}
+\]
+
+so
+
+\[
+\boxed{
+\operatorname{Ran}\Sigma_{k+d}^*
+=
+\{(\zeta,\zeta):\zeta\in\mathbb C\}.
+}
+\tag{87.5}
+\]
+
+By (86.2),
+
+\[
+\Gamma_{12}=\Gamma_{34}=:\Gamma>0.
+\tag{87.6}
+\]
+
+Therefore the two relevant gradient coordinates are
+
+\[
+\boxed{
+\Gamma
+\bigl(
+ z_{12}|z_{21}|^2,
+ z_{34}|z_{43}|^2
+\bigr).
+}
+\tag{87.7}
+\]
+
+For this vector to lie in (87.5), one would need the universal identity
+
+\[
+\boxed{
+z_{12}|z_{21}|^2
+=
+z_{34}|z_{43}|^2.
+}
+\tag{87.8}
+\]
+
+We now show that no such Curl--Killing symbol identity exists.
+
+---
+
+## 88. Amplitude-scaling contradiction
+
+Substituting (86.6) into (87.8) gives
+
+\[
+\beta_{12}A_1B_2
+\,|\beta_{21}A_2B_1|^2
+=
+\beta_{34}A_3B_4
+\,|\beta_{43}A_4B_3|^2.
+\tag{88.1}
+\]
+
+Fix all amplitudes except \(A_1\), with every fixed amplitude nonzero, and set
+
+\[
+A_1=t,
+\qquad t\in\mathbb C^\times.
+\]
+
+The left side of (88.1) is
+
+\[
+C t,
+\qquad C\neq0,
+\]
+
+whereas the right side is a nonzero constant \(C_0\) independent of \(t\). Thus (88.1) would require
+
+\[
+Ct=C_0
+\]
+
+for every \(t\in\mathbb C^\times\), which is impossible.
+
+Hence (87.8) is not a universal discrete symbol identity.
+
+By Lemma 85.1, no universal sufficiently regular field identity can force the channel gradient of paired conductance into the adjoint aggregation range.
+
+### Theorem 88.1 — channel-faithful range no-go
+
+For generic nonexceptional states/configurations,
+
+\[
+\boxed{
+\mathcal Q_{\tau,y}(\mathcal B(v))
+\notin
+\operatorname{Ran}\Sigma^*.
+}
+\tag{88.2}
+\]
+
+In particular, there is no universal physical Ward field \(\Phi_{\tau,y}(v)\) satisfying
+
+\[
+\boxed{
+\mathcal Q_{\tau,y}(\mathcal B(v))
+=
+\Sigma^*\Phi_{\tau,y}(v)
+}
+\tag{88.3}
+\]
+
+for all sufficiently regular active nonexceptional states.
+
+\[
+\boxed{\mathrm{QED}}
+\]
+
+---
+
+## 89. Exact kernel-cancellation witness
+
+The failure can be written directly in the kernel of aggregation. Let
+
+\[
+q_{12}:=\Gamma z_{12}|z_{21}|^2,
+\qquad
+q_{34}:=\Gamma z_{34}|z_{43}|^2.
+\]
+
+For a configuration with \(q_{12}\neq q_{34}\), set
+
+\[
+H
+:=
+(q_{12}-q_{34},-(q_{12}-q_{34})).
+\tag{89.1}
+\]
+
+Then
+
+\[
+\Sigma_{k+d}H=0,
+\]
+
+but with the real Hilbert pairing,
+
+\[
+\operatorname{Re}
+\langle(q_{12},q_{34}),H\rangle
+=
+|q_{12}-q_{34}|^2>0.
+\tag{89.2}
+\]
+
+Thus the conductance derivative does not annihilate the hidden-cancellation direction \(\ker\Sigma\). This is the exact infinitesimal obstruction to physical quotient descent.
+
+---
+
+## 90. General quotient-descent criterion
+
+The preceding phenomenon is not specific to Curl--Killing.
+
+### Theorem 90.1 — quotient descent criterion
+
+Let \(X,H\) be real Hilbert spaces, let \(\Sigma:X\to H\) be bounded and linear, and let \(C:X\to\mathbb R\) be continuously Fréchet differentiable. Then the following are equivalent:
+
+1. there exists a function \(\widetilde C:\operatorname{Ran}\Sigma\to\mathbb R\) such that
+   \[
+   C=\widetilde C\circ\Sigma;
+   \]
+2. for every \(F\in X\) and every \(K\in\ker\Sigma\),
+   \[
+   \boxed{DC(F)[K]=0;}
+   \tag{90.1}
+   \]
+3. for every \(F\in X\),
+   \[
+   \boxed{
+   \nabla C(F)\in(\ker\Sigma)^\perp
+   =\overline{\operatorname{Ran}\Sigma^*}.
+   }
+   \tag{90.2}
+   \]
+
+If \(\operatorname{Ran}\Sigma\) is closed, the closure in (90.2) may be removed.
+
+### Proof
+
+If \(C=\widetilde C\circ\Sigma\), then the chain rule gives
+
+\[
+DC(F)=D\widetilde C(\Sigma F)\circ\Sigma,
+\]
+
+so (90.1) follows for every \(K\in\ker\Sigma\).
+
+Conversely, assume (90.1). If \(F_1,F_2\) satisfy \(\Sigma F_1=\Sigma F_2\), then \(K:=F_2-F_1\in\ker\Sigma\). Along the affine line \(F(t)=F_1+tK\),
+
+\[
+\frac{d}{dt}C(F(t))
+=DC(F(t))[K]=0.
+\]
+
+Hence \(C(F_1)=C(F_2)\). Thus \(C\) is constant on every affine fiber of \(\Sigma\), and \(\widetilde C(\Sigma F):=C(F)\) is well-defined on \(\operatorname{Ran}\Sigma\).
+
+Finally, in a Hilbert space,
+
+\[
+DC(F)[K]
+=\langle\nabla C(F),K\rangle.
+\]
+
+Therefore (90.1) is equivalent to \(\nabla C(F)\perp\ker\Sigma\), and the standard adjoint identity gives
+
+\[
+(\ker\Sigma)^\perp
+=
+\overline{\operatorname{Ran}\Sigma^*}.
+\]
+
+\(\square\)
+
+The paired companion conductance violates (90.1) by Section 89. Therefore it is not a functional of the physical quotient variable \(\Sigma F\).
+
+---
+
+## 91. Consequence for the proposed GWCI descent route
+
+Part VII left open a GWCI of the schematic form
+
+\[
+\mathfrak W(v;D_\kappa)=\mathfrak C(v).
+\]
+
+One natural attempted construction was:
+
+\[
+\text{positive channel conductance}
+\longrightarrow
+\text{differentiate in channel space}
+\longrightarrow
+\mathcal Q(\mathcal B(v))
+\stackrel{?}{=}
+\Sigma^*\Phi(v)
+\longrightarrow
+\langle\Phi(v),D_\kappa(v)\rangle
+=
+\mathfrak C(v).
+\tag{91.1}
+\]
+
+Theorem 88.1 proves that the third arrow in (91.1) fails generically. Therefore:
+
+\[
+\boxed{
+\text{the channel-gradient / adjoint-aggregation route to GWCI is impossible in general.}
+}
+\tag{91.2}
+\]
+
+This is a structural no-go, not an estimate failure. No strengthening of a norm inequality can force a generic vector outside \(\operatorname{Ran}\Sigma^*\) into that range.
+
+### Scope of the no-go
+
+Theorem 88.1 does **not** prove that every conceivable identity named “GWCI” is impossible. It excludes identities obtained by making the paired channel conductance descend through physical aggregation in the channel-faithful manner (88.3), or equivalently by treating \(\mathfrak C\) itself as a physical quotient functional. A genuinely different Ward functional built directly from physical aggregate fields after convolution is not covered by this no-go theorem.
+
+Accordingly the status statement in Section 83 is now sharpened: the most natural channel-descent construction of GWCI has been rigorously disproved.
+
+---
+
+## 92. What survives the stop theorem
+
+The stop theorem does not invalidate the previously proved local/channel results. In particular:
+
+1. **Bridge 1 remains valid:** exact unfolded projective channel closure and gauge-covariant scalar gains are unchanged.
+2. **Support rectangle extraction remains valid:** under (NE-S), active nonexceptional states possess positive-measure families of companion rectangles.
+3. **Heat--Poisson reverse-pair curvature remains valid:**
+   \[
+   \Gamma_{\tau,y}(k,d)>0
+   \qquad(d\neq0).
+   \]
+4. **Channel-lift conductance remains positive:** under (G-Reg) and (G-NE),
+   \[
+   \mathfrak C_{\tau,y}(v)>0.
+   \]
+
+What fails is exactly the additional assertion
+
+\[
+\boxed{
+\mathfrak C_{\tau,y}
+\text{ descends through the additive physical aggregation }\Sigma.
+}
+\tag{92.1}
+\]
+
+Thus channel curvature remains genuine information, but it cannot by itself be converted into a physical Ward pairing by quotient descent.
+
+---
+
+## 93. Physical semigroup commutator: a quotient-safe candidate
+
+The next candidate must be formed **after** physical convolution channels have already been summed.
+
+Let
+
+\[
+H_\tau:=e^{-\tau\Lambda^2},
+\]
+
+and write the quadratic nonlinearity as \(N(v)=B(v,v)\). Define
+
+\[
+\boxed{
+\mathcal K_\tau(v)
+:=
+H_\tau N(v)
+-
+B(H_{\tau/2}v,H_{\tau/2}v).
+}
+\tag{93.1}
+\]
+
+In Fourier variables, with \(q=k-p\),
+
+\[
+\boxed{
+\widehat{\mathcal K_\tau(v)}(k)
+=
+\int
+\left[
+ e^{-\tau|k|^2}
+-
+ e^{-\frac\tau2(|p|^2+|q|^2)}
+\right]
+\widehat B_v(p,q)\,dp.
+}
+\tag{93.2}
+\]
+
+The integral in (93.2) is the physical aggregate. Only after that aggregation does one take a norm such as
+
+\[
+\boxed{
+\|\mathcal K_\tau(v)\|_2^2\ge0.
+}
+\tag{93.3}
+\]
+
+Therefore hidden channel cancellation is treated exactly as the PDE treats it, and the quotient obstruction of Theorem 88.1 is absent by construction.
+
+However, stationarity does not imply \(\mathcal K_\tau(v)=0\). Indeed, even if
+
+\[
+N(v)=\kappa Yv,
+\]
+
+there is no established identity identifying
+
+\[
+B(H_{\tau/2}v,H_{\tau/2}v)
+\]
+
+with \(\kappa YH_\tau v\). Thus \(\mathcal K_\tau\) is a structurally admissible physical object, but not yet the final Ward functional.
+
+---
+
+## 94. Canonical heat identity: the exact physical starting point
+
+The correct physical starting point is the canonical heat identity already proved in Section 62. At
+
+\[
+\tau_*
+=
+\frac{1}{4D_2},
+\qquad
+w:=H_{\tau_*}v,
+\]
+
+we have
+
+\[
+\boxed{
+H_{\tau_*}Yv
+=
+D_2(2L-1)w.
+}
+\tag{94.1}
+\]
+
+Hence every stationary finite-\(\kappa\) state satisfies the exact physical relation
+
+\[
+\boxed{
+H_{\tau_*}N(v)
+=
+\kappa D_2(2L-1)H_{\tau_*}v.
+}
+\tag{94.2}
+\]
+
+No channel quotient appears in (94.2). All nonlinear incidences have already been physically aggregated inside \(N(v)\).
+
+Moreover, because the heat multiplier \(e^{-\tau_*|k|^2}\) is strictly positive for every finite frequency, \(H_{\tau_*}\) is injective on the natural tempered-distribution classes on which the expressions are defined. Together with (94.1), relation (94.2) is therefore an exact semigroup re-expression of the stationary equation, not a lossy finite reader.
+
+---
+
+## 95. New terminal theorem: Canonical Physical Heat-Rigidity
+
+The Bridge-2 terminal problem is now reset as follows.
+
+### Conjectural Theorem 95.1 — Canonical Physical Heat-Rigidity (CPHR)
+
+Let \(v\) belong to the normalized active nonexceptional finite-\(\kappa\) class, with enough regularity that all terms below are defined, and put
+
+\[
+\tau_*(v)=\frac1{4D_2(v)},
+\qquad
+w=H_{\tau_*}v.
+\]
+
+Assume
+
+\[
+\boxed{
+H_{\tau_*}N(v)
+=
+\kappa D_2(2L-1)w.
+}
+\tag{95.1}
+\]
+
+Then
+
+\[
+\boxed{v=0.}
+\tag{95.2}
+\]
+
+Equivalently, because \(E(v)=1\) in the normalized class, no such nonexceptional normalized state exists.
+
+### Status
+
+Theorem 95.1 is **not proved** by the present file. It is the new physical-space semigroup rigidity target. Unlike FWE, recurrence, holonomy, FSSS-by-channel-descent, or channel-faithful GWCI, it is posed entirely after physical nonlinear aggregation.
+
+A proof of CPHR would exclude stationary finite-\(\kappa\) profiles directly.
+
+---
+
+## 96. Consequence for the transverse defect on the scalar stationary stratum
+
+The same logical distinction emphasized in Section 79 remains necessary. CPHR directly excludes the stationary equation
+
+\[
+N=\kappa Y.
+\]
+
+On an arbitrary normalized state, this is not identical to the transverse relation \(T=\kappa R_{\rm fv}\). But on
+
+\[
+\Sigma_\kappa
+=
+\{v:W=2\kappa D_3\},
+\]
+
+Section 79 proved
+
+\[
+N-\kappa Y
+=
+T-\kappa R_{\rm fv}.
+\tag{96.1}
+\]
+
+Therefore, if CPHR is proved and \(v\in\Sigma_\kappa\) satisfied
+
+\[
+T(v)=\kappa R_{\rm fv}(v),
+\]
+
+then (96.1) would give \(N(v)=\kappa Y_v\), hence (94.2), and CPHR would force \(v=0\), contradicting \(E(v)=1\).
+
+Thus CPHR would imply
+
+\[
+\boxed{
+T(v)\neq\kappa R_{\rm fv}(v)
+\qquad
+\forall v\in\Sigma_\kappa.
+}
+\tag{96.2}
+\]
+
+Compactness of \(\Sigma_\kappa\) would then reproduce the uniform transverse gap of Section 80 without any GWCI, FWE, or recurrence assumption.
+
+---
+
+## 97. Final status after the structural stop
+
+The proof program has now eliminated one entire false route.
+
+### QED in this part
+
+\[
+\boxed{
+\mathcal Q_{\tau,y}(\mathcal B(v))
+\notin\operatorname{Ran}\Sigma^*
+\quad\text{generically}.
+}
+\tag{97.1}
+\]
+
+Consequently
+
+\[
+\boxed{
+\text{channel-descent GWCI is impossible in general.}
+}
+\tag{97.2}
+\]
+
+The precise meaning of (97.2) is the channel-gradient / adjoint-aggregation construction of Section 91; it does not exclude every possible physical Ward identity.
+
+### Still valid
+
+\[
+\boxed{
+\text{Bridge 1}
++
+\text{support-geometric rectangles}
++
+\text{strict semigroup curvature}
++
+\text{positive channel-lift conductance}
+}
+\]
+
+remain established under their stated hypotheses.
+
+### New terminal frontier
+
+The preferred terminal theorem is now
+
+\[
+\boxed{
+\textbf{Canonical Physical Heat-Rigidity:}
+\qquad
+H_{\tau_*}N(v)
+=
+\kappa D_2(2L-1)H_{\tau_*}v
+\Longrightarrow
+v=0
+}
+\tag{97.3}
+\]
+
+on the normalized active nonexceptional class.
+
+If (97.3) is established, then stationary finite-\(\kappa\) states are excluded directly. On the scalar stationary stratum it also excludes \(T=\kappa R_{\rm fv}\), after which the already proved compactness argument gives
+
+\[
+\|T-\kappa R_{\rm fv}\|_{H^{-1/2}}
+\ge
+\eta_K
+\bigl(
+\|T\|_{H^{-1/2}}
++
+\kappa\|R_{\rm fv}\|_{H^{-1/2}}
+\bigr).
+\]
+
+Thus the updated dependency chain is
+
+\[
+\boxed{
+\begin{gathered}
+\text{Bridge 1 exact unfolded channel calculus}\\
++\text{support rectangles and semigroup curvature}\\
+\Downarrow\\
+\text{channel-descent route audited and ruled out}\\
+\Downarrow\\
+\boxed{\text{work directly after physical aggregation}}\\
+\Downarrow\\
+H_{\tau_*}N(v)
+=
+\kappa D_2(2L-1)H_{\tau_*}v\\
+\Downarrow\\
+\boxed{\text{CPHR — the remaining terminal rigidity theorem}}\\
+\Downarrow\\
+\text{stationary exclusion}\\
+\Downarrow\\
+\text{transverse gap on }\Sigma_\kappa.
+\end{gathered}
+}
+\tag{97.4}
+\]
+
+No further claim of unconditional QED is made until CPHR, or an equivalent physical-output rigidity theorem, is proved.
