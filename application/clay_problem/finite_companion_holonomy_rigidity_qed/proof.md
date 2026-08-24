@@ -3823,3 +3823,896 @@ Thus the mathematically sharp near-final problem is no longer “prove recurrenc
 \]
 
 That is the remaining candidate bridge to an unconditional Theory-2 theorem.
+
+---
+
+# PART VII. RETROFIT PART I.5 — GLOBAL PAIRED CONDUCTANCE (GCC)
+
+> **Logical status.** This part installs the strongest rigorous form of the proposed Part I.5. The positive conductance representation (GCC-2), strict kernel positivity (GCC-3), and strict positivity on the active nonexceptional class (GCC-4) are proved below, subject to the explicit regularity and active-support hypotheses stated here. The stationary vanishing statement (GCC-1) requires one additional global identity, called the **Global Ward–Conductance Identity (GWCI)**. GWCI is isolated as the sole new identity in this layer and is not asserted to follow from the preceding local rectangle theory.
+
+This part should be read as a retrofit: logically it belongs near the semigroup covariance material, but it is appended here to preserve the audit trail of the proof program.
+
+---
+
+## 68. Helical channel symbol and same-output coordinates
+
+Choose local unit helical frames \(e_\sigma(k)\) and write
+
+\[
+\widehat v(k)=\sum_{\sigma=\pm} f_\sigma(k)e_\sigma(k),
+\qquad
+ik\times e_\sigma(k)=\sigma|k|e_\sigma(k).
+\tag{68.1}
+\]
+
+For a same-helicity input pair \((p,q)\) with \(p+q=k\), define the vector-valued polarized Curl–Killing symbol
+
+\[
+\boxed{
+\mathfrak b_\sigma^\tau(p,q)
+:=
+\frac{\sigma(|p|-|q|)}{2}
+Q_\tau(k)
+\bigl(e_\sigma(q)\times e_\sigma(p)\bigr)
+\in E_\tau(k).
+}
+\tag{68.2}
+\]
+
+The corresponding channel amplitude is
+
+\[
+\boxed{
+\mathcal F_\sigma^\tau[v](p,q)
+:=
+f_\sigma(p)f_\sigma(q)\,
+\mathfrak b_\sigma^\tau(p,q).
+}
+\tag{68.3}
+\]
+
+Only norms of these channel amplitudes will enter the conductance density, so the definition is independent of the local phase choice of the helical frame.
+
+The same-helicity sector is sufficient for the positivity mechanism whenever one active helicity sheet carries positive mass. A mixed-helicity version is obtained by adding the finite sum over the two input signs and does not alter the structural arguments below.
+
+Now parameterize two same-output incidences by
+
+\[
+p+q=k,
+\qquad
+p'+q'=k,
+\tag{68.4}
+\]
+
+and set
+
+\[
+d:=p-p'.
+\tag{68.5}
+\]
+
+Then
+
+\[
+q'=q+d,
+\]
+
+and the two partner-swapped outputs are
+
+\[
+\boxed{
+k_+=p+q'=k+d,\qquad k_-=p'+q=k-d.}
+\tag{68.6}
+\]
+
+This is exactly the companion rectangle geometry of Sections 54–59.
+
+---
+
+## 69. Mixed heat–Poisson conductance kernel
+
+Fix
+
+\[
+\tau>0,
+\qquad y\ge0,
+\]
+
+and set
+
+\[
+m_{\tau,y}(k)
+:=e^{-\tau|k|^2-y|k|}.
+\tag{69.1}
+\]
+
+Define
+
+\[
+\Delta_H(k,d)
+:=|k+d|^2+|k-d|^2-2|k|^2,
+\tag{69.2}
+\]
+
+and
+
+\[
+\Delta_P(k,d)
+:=|k+d|+|k-d|-2|k|.
+\tag{69.3}
+\]
+
+The parallelogram identity gives
+
+\[
+\boxed{\Delta_H(k,d)=2|d|^2,}
+\tag{69.4}
+\]
+
+whereas convexity of the Euclidean norm gives
+
+\[
+\boxed{\Delta_P(k,d)\ge0.}
+\tag{69.5}
+\]
+
+Set
+
+\[
+\Xi_{\tau,y}(k,d)
+:=\tau\Delta_H(k,d)+y\Delta_P(k,d).
+\tag{69.6}
+\]
+
+Then
+
+\[
+\frac{m_{\tau,y}(k+d)m_{\tau,y}(k-d)}{m_{\tau,y}(k)^2}
+=e^{-\Xi_{\tau,y}(k,d)}.
+\tag{69.7}
+\]
+
+### Definition 69.1 — paired conductance kernel
+
+Define
+
+\[
+\boxed{
+\Gamma_{\tau,y}(k,d)
+:=1-e^{-\Xi_{\tau,y}(k,d)}.
+}
+\tag{69.8}
+\]
+
+### Lemma 69.2 — strict reverse-pair conductance
+
+For all \(k,d\in\mathbb R^3\),
+
+\[
+0\le \Gamma_{\tau,y}(k,d)<1,
+\]
+
+and
+
+\[
+\boxed{
+d\neq0\quad\Longrightarrow\quad
+\Gamma_{\tau,y}(k,d)>0.}
+\tag{69.9}
+\]
+
+### Proof
+
+By (69.4)–(69.6),
+
+\[
+\Xi_{\tau,y}(k,d)
+=2\tau|d|^2+y\Delta_P(k,d)
+\ge0.
+\]
+
+If \(d\neq0\), then \(2\tau|d|^2>0\), so \(\Xi_{\tau,y}>0\). The claims follow immediately from \(\Gamma=1-e^{-\Xi}\). \(\square\)
+
+This is the exact global kernel counterpart of the strict rectangle multiplier curvature in Theorem 58.1.
+
+---
+
+## 70. Companion rectangle mass density
+
+For \((k,p,p')\in\mathbb R^9\), set
+
+\[
+q:=k-p,
+\qquad
+q':=k-p'.
+\tag{70.1}
+\]
+
+Define the nonnegative companion density
+
+\[
+\boxed{
+\mathcal M_v(k,p,p')
+:=
+\sum_{\sigma=\pm}
+\sum_{\tau_+,\tau_-=\pm}
+\bigl|\mathcal F_\sigma^{\tau_+}[v](p,q')\bigr|^2
+\bigl|\mathcal F_\sigma^{\tau_-}[v](p',q)\bigr|^2.
+}
+\tag{70.2}
+\]
+
+This density contains all four Fourier amplitude factors \(f_\sigma(p),f_\sigma(p'),f_\sigma(q),f_\sigma(q')\). It is phase-insensitive and nonnegative. The degree-eight homogeneity in the Fourier amplitude is intentional: the role of \(\mathcal M_v\) is not to reproduce \(N(v)\) itself, but to provide a positive companion-pair mass that cannot be destroyed by phase cancellation.
+
+Because \(L^2\) alone does not guarantee integrability of the degree-eight weighted density, we state the regularity input explicitly.
+
+### (G-Reg) Global conductance regularity
+
+For the selected \((\tau,y)\), assume
+
+\[
+\boxed{
+\mathfrak C_{\tau,y}(v)<\infty
+}
+\tag{G-Reg}
+\]
+
+for every \(v\in K\), where \(\mathfrak C_{\tau,y}\) is defined below, and assume that
+
+\[
+v\longmapsto \mathfrak C_{\tau,y}(v)
+\]
+
+is continuous in the graph topology of \(K\).
+
+This is a genuine regularity assumption and should not be hidden inside the bare \(L^2\) normalization.
+
+---
+
+## 71. Global paired-conductance functional
+
+Define
+
+\[
+\boxed{
+\mathfrak C_{\tau,y}(v)
+:=
+\iiint_{\mathbb R^9}
+\Gamma_{\tau,y}(k,p-p')
+\mathcal M_v(k,p,p')
+\,dk\,dp\,dp'.
+}
+\tag{71.1}
+\]
+
+Under (G-Reg), this is a finite nonnegative real number.
+
+### GCC-2 — positive Fourier representation
+
+Equation (71.1) is exactly a positive Fourier representation of the form
+
+\[
+\boxed{
+\mathfrak C(v)
+=
+\int_\Omega
+\Gamma(\zeta)
+|\mathcal A_v(\zeta)|^2\,d\mu(\zeta),
+}
+\tag{71.2}
+\]
+
+where the finitely many helicity-output pairs are regarded as the components of the vector \(\mathcal A_v\).
+
+Thus GCC-2 holds by construction.
+
+\[
+\boxed{\mathrm{QED}_{\mathrm{GCC2}}}
+\]
+
+---
+
+## 72. GCC-3 — strict positivity of the conductance kernel
+
+By Lemma 69.2,
+
+\[
+\Gamma_{\tau,y}(k,p-p')>0
+\]
+
+whenever \(p\neq p'\). The diagonal
+
+\[
+\{(k,p,p'):p=p'\}
+\]
+
+has Lebesgue measure zero in \(\mathbb R^9\). Therefore
+
+\[
+\boxed{
+\Gamma_{\tau,y}>0
+\quad\text{a.e. on genuine companion pairs.}
+}
+\tag{72.1}
+\]
+
+No uniform pointwise lower bound
+
+\[
+\Gamma_{\tau,y}\ge c>0
+\]
+
+is claimed or needed; such a bound would fail as \(p'\to p\).
+
+Hence GCC-3 is proved in the sharp form relevant to the integral functional.
+
+\[
+\boxed{\mathrm{QED}_{\mathrm{GCC3}}}
+\]
+
+---
+
+## 73. Active nonexceptionality at the triple level
+
+To prove strict positivity of the full integral, it is not enough merely to say that the state is “not identically Formation-null.” What is needed is positive companion mass on a positive-measure subset of the triple space. The support hypothesis (NE-S) from Section 55 supplies precisely this after restriction to the active helical sheet.
+
+For clarity we record the equivalent conductance-level formulation.
+
+### (G-NE) Active triple nonexceptionality
+
+For every \(v\in K\), there exist a helicity sign \(\sigma\) and a measurable set
+
+\[
+\Omega_v^\sharp\subset\mathbb R^9,
+\qquad
+|\Omega_v^\sharp|>0,
+\]
+
+such that for every \((k,p,p')\in\Omega_v^\sharp\):
+
+1. \(p\neq p'\);
+2. the four Fourier inputs \(p,p',k-p,k-p'\) lie in an active positive-amplitude region of \(v\);
+3. for at least one pair \((\tau_+,\tau_-)\),
+   \[
+   \mathcal F_\sigma^{\tau_+}[v](p,k-p')\neq0,
+   \qquad
+   \mathcal F_\sigma^{\tau_-}[v](p',k-p)\neq0.
+   \]
+
+The measure-theoretic rectangle theorem plus (NE-S) imply (G-NE). Conversely, (G-NE) is exactly the hypothesis needed by the integral positivity proof and avoids overclaiming from pointwise genericity.
+
+---
+
+## 74. GCC-4 — strict global companion conductance
+
+### Theorem 74.1
+
+Assume \(E(v)=1\), (G-Reg), and (G-NE). Then
+
+\[
+\boxed{
+\mathfrak C_{\tau,y}(v)>0.
+}
+\tag{74.1}
+\]
+
+### Proof
+
+By (G-NE), there is a positive-measure set \(\Omega_v^\sharp\) on which at least one term in the finite sum (70.2) is strictly positive. Hence
+
+\[
+\mathcal M_v(k,p,p')>0
+\qquad\text{on }\Omega_v^\sharp.
+\]
+
+Also \(p\neq p'\) there, so Lemma 69.2 gives
+
+\[
+\Gamma_{\tau,y}(k,p-p')>0
+\qquad\text{on }\Omega_v^\sharp.
+\]
+
+Thus the nonnegative integrand in (71.1) is strictly positive on a set of positive measure. Since the integral is finite by (G-Reg), it follows that
+
+\[
+\mathfrak C_{\tau,y}(v)>0.
+\]
+
+\(\square\)
+
+Therefore
+
+\[
+\boxed{\mathrm{QED}_{\mathrm{GCC4}}}
+\]
+
+under the explicit active-support and regularity hypotheses.
+
+---
+
+## 75. Compactness upgrades integrated positivity to a uniform gap
+
+Assume now that \(K\) is compact, (G-Reg) holds continuously on \(K\), and every \(v\in K\) satisfies (G-NE). By Theorem 74.1,
+
+\[
+\mathfrak C_{\tau,y}(v)>0
+\qquad\forall v\in K.
+\]
+
+Since \(v\mapsto\mathfrak C_{\tau,y}(v)\) is continuous and \(K\) is compact,
+
+\[
+\boxed{
+c_K^{\rm GCC}
+:=
+\min_{v\in K}\mathfrak C_{\tau,y}(v)>0.
+}
+\tag{75.1}
+\]
+
+This is the correct way to obtain a uniform conductance gap. No pointwise lower bound on \(|p-p'|\) or on \(\Gamma_{\tau,y}\) is required. In particular, the possible degeneration \(p'\to p\) is handled only after integration and compactness.
+
+---
+
+## 76. GCC-1 and the exact missing global identity
+
+The stationary equation is
+
+\[
+N(v)=\kappa Y_v.
+\]
+
+Define its full defect
+
+\[
+\boxed{
+D_\kappa(v)
+:=N(v)-\kappa Y_v.
+}
+\tag{76.1}
+\]
+
+Stationarity is exactly
+
+\[
+D_\kappa(v)=0.
+\tag{76.2}
+\]
+
+The local rectangle and semigroup-curvature results do not imply that \(\mathfrak C_{\tau,y}\) vanishes when (76.2) holds, because the physical nonlinear output is an additive continuum integral and phase/cross-channel cancellations occur before one reaches a positive channel-pair square.
+
+Thus GCC-1 requires one genuinely global identity.
+
+### Required Supplementary Theorem 76.1 — Global Ward–Conductance Identity (GWCI)
+
+There exist fixed finite parameters
+
+\[
+\tau>0,
+\qquad
+y\ge0,
+\]
+
+and a continuous real-valued functional
+
+\[
+\mathfrak W_{\tau,y}(v;D),
+\]
+
+real-linear in its second variable \(D\in H^{-1/2}\), constructed from finitely many admissible semigroup operations, helical/Leray projections, and finite polarized companion symmetrizations, such that for every sufficiently regular normalized state in the class,
+
+\[
+\boxed{
+\mathfrak W_{\tau,y}
+\bigl(v;N(v)-\kappa Y_v\bigr)
+=
+\mathfrak C_{\tau,y}(v).
+}
+\tag{76.3}
+\]
+
+Equation (76.3) is the **Global Ward–Conductance Identity**.
+
+### Status of GWCI
+
+GWCI is not proved by the current frontier. In particular:
+
+- local semigroup rectangle curvature does not imply (76.3);
+- the canonical heat commutator identity (62.6) does not imply (76.3);
+- additive channel aggregation prevents one from replacing the required global symmetrization by a formal four-point argument.
+
+A proof of GWCI must exhibit \(\mathfrak W_{\tau,y}\) explicitly and verify, at the Fourier-symbol level, that all cross terms reorganize exactly into the positive density \(\Gamma_{\tau,y}\mathcal M_v\). Merely asserting that such a reorganization occurs would be circular.
+
+---
+
+## 77. GCC-1 follows immediately from GWCI
+
+### Proposition 77.1
+
+Assume GWCI. If \(v\) is a stationary finite-\(\kappa\) state, then
+
+\[
+\boxed{
+\mathfrak C_{\tau,y}(v)=0.
+}
+\tag{77.1}
+\]
+
+### Proof
+
+Stationarity gives \(D_\kappa(v)=0\). Since \(\mathfrak W_{\tau,y}(v;\cdot)\) is real-linear,
+
+\[
+\mathfrak W_{\tau,y}(v;0)=0.
+\]
+
+Applying (76.3),
+
+\[
+\mathfrak C_{\tau,y}(v)
+=
+\mathfrak W_{\tau,y}(v;D_\kappa(v))
+=0.
+\]
+
+\(\square\)
+
+Thus
+
+\[
+\boxed{\mathrm{QED}_{\mathrm{GCC1}}\quad\text{conditional on GWCI}.}
+\]
+
+---
+
+## 78. Conditional stationary exclusion
+
+### Theorem 78.1 — no nonexceptional stationary state under GWCI
+
+Assume GWCI, (G-Reg), and (G-NE). Then no normalized nonzero stationary finite-\(\kappa\) state belongs to the active class.
+
+### Proof
+
+If \(v\) were stationary, Proposition 77.1 would give
+
+\[
+\mathfrak C_{\tau,y}(v)=0.
+\]
+
+But Theorem 74.1 gives
+
+\[
+\mathfrak C_{\tau,y}(v)>0.
+\]
+
+Contradiction. \(\square\)
+
+Therefore
+
+\[
+\boxed{
+\{v:\ E(v)=1,\ v\text{ active nonexceptional},\ N(v)=\kappa Y_v\}
+=\varnothing
+}
+\tag{78.1}
+\]
+
+under GWCI.
+
+This is the exact stationary conclusion supplied by GCC-1–4.
+
+---
+
+## 79. From GWCI to the transverse defect on the scalar stationary stratum
+
+A careful distinction is required here. GWCI directly excludes
+
+\[
+D_\kappa=N-\kappa Y=0.
+\]
+
+It does **not**, on an arbitrary normalized state, directly exclude the transverse equality
+
+\[
+T=\kappa R_{\rm fv},
+\]
+
+because the constrained-gradient component of \(N-\kappa Y\) may still be nonzero.
+
+Recall
+
+\[
+N=\gamma G+T,
+\qquad
+Y=rG+R_{\rm fv},
+\qquad
+r=\frac{D_3}{d^2},
+\]
+
+so
+
+\[
+N-\kappa Y
+=(\gamma-\kappa r)G
++(T-\kappa R_{\rm fv}).
+\tag{79.1}
+\]
+
+Define the **scalar stationary stratum**
+
+\[
+\boxed{
+\Sigma_\kappa
+:=
+\{v\in K:\ W(v)=2\kappa(v)D_3(v)\}.
+}
+\tag{79.2}
+\]
+
+On \(\Sigma_\kappa\),
+
+\[
+\gamma
+=\frac{W}{2d^2}
+=\kappa\frac{D_3}{d^2}
+=\kappa r.
+\]
+
+Hence (79.1) reduces exactly to
+
+\[
+\boxed{
+N-\kappa Y
+=T-\kappa R_{\rm fv}
+\qquad\text{on }\Sigma_\kappa.
+}
+\tag{79.3}
+\]
+
+### Corollary 79.1
+
+Assume GWCI, (G-Reg), and (G-NE). Then for every \(v\in\Sigma_\kappa\),
+
+\[
+\boxed{
+T(v)\neq\kappa(v)R_{\rm fv}(v).
+}
+\tag{79.4}
+\]
+
+### Proof
+
+If equality held, then (79.3) would give \(D_\kappa(v)=0\). GWCI would force \(\mathfrak C_{\tau,y}(v)=0\), contradicting Theorem 74.1. \(\square\)
+
+If the compact class \(K\) is itself defined inside the scalar stationary stratum, then (79.4) holds on all of \(K\). If \(K\) is a larger normalized class, the conclusion is only asserted on the closed subset \(\Sigma_\kappa\).
+
+---
+
+## 80. Uniform transverse gap on the scalar stationary stratum
+
+Assume \(K\) is compact and the displayed scalar functionals are continuous. Then \(\Sigma_\kappa\) is closed in \(K\), hence compact.
+
+By the radial homogeneous theorem,
+
+\[
+R_{\rm fv}(v)=0\Longrightarrow v=0.
+\]
+
+Since \(E(v)=1\),
+
+\[
+R_{\rm fv}(v)\neq0
+\qquad\forall v\in\Sigma_\kappa.
+\tag{80.1}
+\]
+
+Define
+
+\[
+\Psi_\kappa(v)
+:=
+\frac{
+\|T(v)-\kappa(v)R_{\rm fv}(v)\|_{H^{-1/2}}
+}{
+\|T(v)\|_{H^{-1/2}}
++
+\kappa(v)\|R_{\rm fv}(v)\|_{H^{-1/2}}
+}.
+\tag{80.2}
+\]
+
+The denominator is positive by (80.1), and Corollary 79.1 makes the numerator positive. Continuity and compactness therefore give
+
+\[
+\eta_K^{\rm GCC}
+:=
+\min_{v\in\Sigma_\kappa}\Psi_\kappa(v)>0,
+\]
+
+provided \(\Sigma_\kappa\neq\varnothing\). Thus
+
+\[
+\boxed{
+\|T-\kappa R_{\rm fv}\|_{H^{-1/2}}
+\ge
+\eta_K^{\rm GCC}
+\bigl(
+\|T\|_{H^{-1/2}}
++
+\kappa\|R_{\rm fv}\|_{H^{-1/2}}
+\bigr)
+\quad\text{on }\Sigma_\kappa.
+}
+\tag{80.3}
+\]
+
+If \(\Sigma_\kappa=\varnothing\), the stationary candidate stratum is already absent and no quantitative minimum on it is needed.
+
+This is the rigorous transverse-gap consequence of GWCI. It avoids the stronger but unjustified inference that stationary exclusion alone implies \(T\neq\kappa R_{\rm fv}\) on every point of an arbitrary larger class \(K\).
+
+---
+
+## 81. Parameterized positive-alignment version
+
+For \(\lambda>0\), define
+
+\[
+D_\lambda(v):=N(v)-\lambda Y_v
+\]
+
+and the scalar alignment stratum
+
+\[
+\Sigma_\lambda
+:=
+\{v:\ W(v)=2\lambda D_3(v)\}.
+\tag{81.1}
+\]
+
+On \(\Sigma_\lambda\), the same decomposition gives
+
+\[
+\boxed{
+D_\lambda
+=T-\lambda R_{\rm fv}.
+}
+\tag{81.2}
+\]
+
+Thus a parameterized GWCI of the form
+
+\[
+\boxed{
+\mathfrak W_{\tau,y}^{(\lambda)}
+\bigl(v;N(v)-\lambda Y_v\bigr)
+=
+\mathfrak C_{\tau,y}^{(\lambda)}(v),
+}
+\tag{81.3}
+\]
+
+with a strictly positive right-hand side on the active nonexceptional part of \(\Sigma_\lambda\), would imply
+
+\[
+\boxed{
+T(v)\neq\lambda R_{\rm fv}(v)
+\qquad
+\text{for every }v\in\Sigma_\lambda.
+}
+\tag{81.4}
+\]
+
+If such a parameterized identity is uniform in \(\lambda\) over a compact positive interval and if \(T,R_{\rm fv}\) are nonzero, the compact angle argument from Sections 44–45 yields a uniform angular gap.
+
+No such parameterized GWCI is presently claimed proved.
+
+---
+
+## 82. Relationship between GCC and FSSS
+
+GCC and FSSS describe the same remaining obstruction at two different levels.
+
+FSSS asks for a finite bounded-reader determinant \(\mathscr D\) such that saturation forces flatness while semigroup rectangle geometry forces nonflatness.
+
+GWCI asks for a stronger global Ward functional whose evaluation on the full defect equals an explicitly positive companion integral:
+
+\[
+\mathfrak W(v;D_\kappa)=\mathfrak C(v).
+\]
+
+Therefore
+
+\[
+\boxed{
+\text{GWCI}\Longrightarrow\text{a global finite-separation certificate of stationary saturation}.
+}
+\tag{82.1}
+\]
+
+A successful explicit construction of \(\mathfrak W\) would close the stationary FSSS problem in one stroke. Conversely, an FSSS determinant need not factor through a positive integral of the precise form (71.1), so FSSS is logically weaker than GWCI.
+
+This hierarchy is useful:
+
+\[
+\boxed{
+\text{GWCI is a strong sufficient theorem; FSSS is the minimal finite-separation target.}
+}
+\tag{82.2}
+\]
+
+---
+
+## 83. Exact status of Part I.5
+
+The rigorous status is now:
+
+### Proved from explicit semigroup geometry plus the stated regularity/nonexceptionality hypotheses
+
+\[
+\boxed{\mathrm{GCC2}}
+\qquad
+\boxed{\mathrm{GCC3}}
+\qquad
+\boxed{\mathrm{GCC4}}
+\]
+
+and the compactness upgrade
+
+\[
+\boxed{
+\inf_{v\in K}\mathfrak C_{\tau,y}(v)>0
+}
+\]
+
+whenever \(K\) is compact, (G-Reg) is continuous, and (G-NE) holds throughout \(K\).
+
+### Conditional on the new global identity
+
+GWCI implies GCC-1:
+
+\[
+D_\kappa(v)=0
+\Longrightarrow
+\mathfrak C_{\tau,y}(v)=0.
+\]
+
+Combining GCC-1 with GCC-4 excludes active nonexceptional stationary states.
+
+On the scalar stationary stratum \(W=2\kappa D_3\), the exact decomposition identifies
+
+\[
+D_\kappa=T-\kappa R_{\rm fv},
+\]
+
+so the same argument yields the uniform transverse gap (80.3) by compactness.
+
+### Not proved by the bare frontier
+
+\[
+\boxed{\text{GWCI (76.3)}}
+\]
+
+remains a genuinely new global multilinear identity. Until an explicit Ward operator \(\mathfrak W_{\tau,y}\) is constructed and its Fourier symbol is checked term by term, Part I.5 does not give an unconditional Navier–Stokes contradiction.
+
+Thus the exact endpoint of this layer is
+
+\[
+\boxed{
+\begin{gathered}
+\text{local companion geometry}\\
++\text{positive-measure support rectangles}\\
++\text{strict heat--Poisson conductance}\\
+\Downarrow\\
+\mathfrak C_{\tau,y}(v)>0\\
+\text{for active nonexceptional }v,\\[1mm]
+\boxed{\text{GWCI still required}}\\
+\Downarrow\\
+D_\kappa=0\Rightarrow\mathfrak C_{\tau,y}=0\\
+\Downarrow\\
+\text{stationary contradiction and transverse gap on }\Sigma_\kappa.
+\end{gathered}
+}
+\tag{83.1}
+\]
+
+The next mathematically decisive task is therefore not another compactness argument. It is the explicit construction—or rigorous disproof—of the Ward functional in (76.3).
