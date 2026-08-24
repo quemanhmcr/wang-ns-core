@@ -1070,8 +1070,7 @@ g_c\in\mathbb C^\times,
 bilinearity gives
 
 \[
-\boxed{
-h_e\mapsto g_pg_qg_r^{-1}h_e.}
+\boxed{h_e\mapsto g_pg_qg_r^{-1}h_e.}
 \tag{20.2}
 \]
 
@@ -1410,3 +1409,521 @@ No continuum Poisson inversion, infinite moment hierarchy, Galerkin evidence, Fo
 \]
 
 The mathematical frontier is now Bridge 2 alone.
+
+---
+
+# PART IV. BRIDGE 2 — FIRST LAYER: EXACT RECURRENCE AND PRIMITIVE CURVATURE
+
+> **Logical status.** The statements in this part are rigorous conditional theorems. They isolate two genuinely new hypotheses that are not consequences of Bridge 1: exact projective discreteness and quantitative primitive nonflatness. The purpose of this part is to prove exactly what follows from those hypotheses and to prevent compactness or curvature language from being used beyond its legitimate scope.
+
+Bridge 2 naturally splits into two logically distinct tasks:
+
+\[
+\boxed{
+\text{recurrence: produce an exact finite return}
+}
+\]
+
+and
+
+\[
+\boxed{
+\text{nonflatness: prove a nonzero gauge-invariant defect on that return.}
+}
+\]
+
+Compactness alone gives neither statement.
+
+---
+
+## 28. Reachable projective channel states
+
+Let \(\mathfrak P_K\) denote the set of all projective channel states reachable from candidates \(v\in K\) through the exact unfolded construction of Bridge 1.
+
+A point \(X\in\mathfrak P_K\) is understood to contain **all data required for exact future reuse of the channel**, not merely its Fourier direction or its polarization line. In particular, equality \(X=Y\) means that the two states are interchangeable as inputs for the subsequent channel calculus, including all labels that enter the allowed successor rule.
+
+Equip \(\mathfrak P_K\) with a metric \(d_{\rm proj}\) satisfying
+
+\[
+\boxed{
+d_{\rm proj}(X,Y)=0\iff X=Y.
+}
+\tag{28.1}
+\]
+
+The metric is not assumed to be induced by a finite Fourier truncation.
+
+We distinguish a single-channel state from a **completed frontier state**. A completed frontier state records the entire finite collection of open channel ends, with their projective data and incidence labels, at a given stage of a companion-completion procedure. Exact recurrence of one distinguished channel is weaker than exact recurrence of a completed frontier state; only the latter automatically closes all side parents and open boundaries needed for an incidence-cycle holonomy.
+
+---
+
+## 29. Exact projective discreteness hypotheses
+
+Assume the following.
+
+### (R1) Compactness
+
+\[
+\boxed{\mathfrak P_K\text{ is compact}.}
+\tag{R1}
+\]
+
+### (R2) Exact projective discreteness
+
+There exists \(\delta_K>0\) such that for all reachable states \(X,Y\in\mathfrak P_K\),
+
+\[
+\boxed{
+X\neq Y
+\Longrightarrow
+d_{\rm proj}(X,Y)\ge\delta_K.
+}
+\tag{R2}
+\]
+
+### (R3) Nontermination outside the excluded exceptional set
+
+Every open nonexceptional channel admits at least one allowed successor channel.
+
+These hypotheses are deliberately stronger than compactness. Their role is transparent: (R1)+(R2) make the reachable projective state set finite, while (R3) forces an infinite successor process whenever no exceptional termination occurs.
+
+---
+
+## 30. Uniform Finite Exact Channel Recurrence Theorem
+
+### Theorem 30.1
+
+Assume (R1)–(R3). Then every infinite nonexceptional successor path
+
+\[
+c_0\to c_1\to c_2\to\cdots
+\]
+
+contains an exact repeated projective channel state. More precisely, there exists an integer \(N_K<\infty\), depending only on \((\mathfrak P_K,d_{\rm proj},\delta_K)\), such that along every such path there exist
+
+\[
+0\le i<j\le N_K
+\]
+
+with
+
+\[
+[c_i]=[c_j].
+\]
+
+Consequently the first exact channel recurrence has length at most \(N_K\).
+
+### Proof
+
+Because \(\mathfrak P_K\) is compact, it is totally bounded. Choose
+
+\[
+\varepsilon=\frac{\delta_K}{3}.
+\]
+
+There exist points \(X_1,\dots,X_{N_K}\in\mathfrak P_K\) such that
+
+\[
+\mathfrak P_K
+\subset
+\bigcup_{\ell=1}^{N_K}
+B_{\delta_K/3}(X_\ell).
+\tag{30.1}
+\]
+
+Each ball in (30.1) contains at most one reachable projective state. Indeed, if reachable \(Y,Z\) lie in the same ball, then
+
+\[
+d_{\rm proj}(Y,Z)
+\le d(Y,X_\ell)+d(X_\ell,Z)
+<\frac{2\delta_K}{3}<\delta_K.
+\]
+
+By (R2), this forces \(Y=Z\).
+
+Hence
+
+\[
+\boxed{
+\#\mathfrak P_K^{\rm reach}\le N_K.
+}
+\tag{30.2}
+\]
+
+By (R3), an open nonexceptional channel can be continued recursively to obtain an infinite successor path. Consider the first \(N_K+1\) projective states
+
+\[
+[c_0],[c_1],\dots,[c_{N_K}].
+\]
+
+There are at most \(N_K\) distinct reachable states by (30.2), so the pigeonhole principle gives indices
+
+\[
+0\le i<j\le N_K
+\]
+
+such that
+
+\[
+[c_i]=[c_j].
+\]
+
+Because equality in \(\mathfrak P_K\) is equality of the full channel data needed for exact reuse, this is an exact recurrence, not merely an approximate return. Its length satisfies
+
+\[
+1\le j-i\le N_K.
+\]
+
+No mode count, shell count, Fourier cutoff, or preassigned completion depth enters \(N_K\). \(\square\)
+
+---
+
+## 31. Channel recurrence versus completed-incidence recurrence
+
+Theorem 30.1 must not be overinterpreted.
+
+A bilinear channel edge has the form
+
+\[
+e=(p,q\to r).
+\]
+
+Following one distinguished successor chain records only one line of descent. The intermediate edges may involve side parents not belonging to that chain. Therefore equality
+
+\[
+[c_i]=[c_j]
+\]
+
+alone does **not** imply that the sum of incidence boundaries of the intervening edges vanishes.
+
+For a genuine multiplicative holonomy one needs an incidence-balanced finite object. Accordingly define a **completed frontier state** \(\mathfrak F\) to record all open channel ends of a finite companion-completion stage. A finite completion block \(\mathcal B\) from \(\mathfrak F_i\) to \(\mathfrak F_j\) is exactly closed when
+
+\[
+\boxed{\mathfrak F_i=\mathfrak F_j.}
+\tag{31.1}
+\]
+
+In that case every open boundary channel at the beginning is matched by the corresponding channel at the end, and the signed sum of the internal interaction incidences has zero total boundary. Thus the closed block defines an integral incidence cycle and therefore supports gauge-invariant product holonomy.
+
+This leads to the correct strengthened recurrence hypothesis.
+
+### (R2-F) Exact completed-frontier discreteness
+
+The set \(\mathfrak F_K\) of reachable completed frontier states is compact and \(\delta_K^{\rm F}\)-separated in a metric that detects exact equality of all open channel data.
+
+### Corollary 31.1 — uniform completed recurrence
+
+If the completion rule has no nonexceptional terminal frontier and (R2-F) holds, then every infinite companion-completion trajectory contains an exact closed completion block of length at most a constant \(N_K^{\rm F}<\infty\) depending only on the compact completed-frontier class.
+
+### Proof
+
+Apply the proof of Theorem 30.1 verbatim to the state space \(\mathfrak F_K\). Equality of two frontier states closes all open boundaries, so the intervening finite block is incidence-balanced. \(\square\)
+
+This is the form of exact recurrence actually needed by the holonomy theorem.
+
+---
+
+## 32. Exact discreteness is genuinely necessary
+
+Compactness without (R2) does not imply exact recurrence.
+
+Let \(S^1\) carry its usual compact metric, let \(R_\alpha\) denote rotation by angle \(\alpha\), and assume
+
+\[
+\frac{\alpha}{2\pi}\notin\mathbb Q.
+\]
+
+For \(X_0\in S^1\), define
+
+\[
+X_n=R_\alpha^nX_0.
+\]
+
+Then the orbit lies in a compact space and is dense in \(S^1\), hence contains arbitrarily close pairs. Nevertheless
+
+\[
+X_n\neq X_m
+\qquad(n\neq m).
+\]
+
+Therefore
+
+\[
+\boxed{
+\text{compactness alone}
+\not\Longrightarrow
+\text{exact recurrence}.
+}
+\tag{32.1}
+\]
+
+The same obstruction applies a fortiori to projective channel dynamics. Exact discreteness, or some different arithmetic/algebraic mechanism with the same consequence, is substantive mathematical input.
+
+---
+
+## 33. Gauge-invariant holonomy on a closed completion block
+
+Let \(\mathcal B\) be an exact completed-incidence recurrence block, so its internal edge multiset admits integers \(n_e\) satisfying
+
+\[
+\boxed{
+\sum_e n_e\partial e=0,
+\qquad
+\partial e=[p_e]+[q_e]-[r_e].
+}
+\tag{33.1}
+\]
+
+Bridge 1 assigns each nonexceptional edge a nonzero scalar gain \(h_e\) with gauge transformation
+
+\[
+h_e\mapsto g_{p_e}g_{q_e}g_{r_e}^{-1}h_e.
+\]
+
+Define
+
+\[
+\boxed{
+\operatorname{Hol}_{\mathcal B}
+:=
+\prod_e h_e^{n_e}.
+}
+\tag{33.2}
+\]
+
+By (33.1), all gauge factors cancel. Hence \(\operatorname{Hol}_{\mathcal B}\) is a well-defined gauge-invariant scalar attached to the exact completed recurrence block.
+
+If actual nonzero channel amplitudes satisfy the exact multiplicative consistency law
+
+\[
+a_{r_e}=h_ea_{p_e}a_{q_e}
+\]
+
+on every edge of the block, then the same incidence cancellation gives
+
+\[
+\boxed{\operatorname{Hol}_{\mathcal B}=1.}
+\tag{33.3}
+\]
+
+Thus recurrence supplies the finite object on which nonflatness must contradict exact candidate consistency.
+
+---
+
+## 34. Primitive completed rectangles and curvature
+
+A primitive completed rectangle \(R\) is, by definition here, a four-channel completed block whose signed edge multiplicities form an incidence-balanced cycle. Write its four gains as
+
+\[
+h_{ii},\quad h_{ij},\quad h_{ji},\quad h_{jj},
+\]
+
+with the orientation chosen so that
+
+\[
+\boxed{
+H_R
+:=
+\frac{h_{ii}h_{jj}}{h_{ij}h_{ji}}
+}
+\tag{34.1}
+\]
+
+is the holonomy of the rectangle cycle.
+
+The incidence-balance requirement is essential: without it, the quotient in (34.1) need not be gauge invariant because the four output channel lines may carry independent gauge factors.
+
+For an incidence-balanced completed rectangle, Bridge 1's gauge law implies that \(H_R\) is gauge invariant.
+
+Define the logarithmic modulus curvature
+
+\[
+\boxed{
+\Omega(R):=\log|H_R|.
+}
+\tag{34.2}
+\]
+
+The rank-one amplitudes have disappeared from \(H_R\); only the physical Formation-plus-radial edge gains remain.
+
+---
+
+## 35. Quantitative primitive-curvature hypotheses
+
+To turn the qualitative frontier statement about positive reverse-pair curvature into a uniform theorem, one needs an explicit nonflatness hypothesis.
+
+Let \(\mathfrak R_K\) be the set of primitive completed nonexceptional rectangle configurations reachable from \(K\). Assume:
+
+### (C1) Strict primitive nonflatness with fixed orientation
+
+\[
+\boxed{
+\Omega(R)>0
+\qquad
+\forall R\in\mathfrak R_K.
+}
+\tag{C1}
+\]
+
+Equivalently, after the chosen common orientation,
+
+\[
+|H_R|>1.
+\]
+
+### (C2) Compactness and continuity
+
+The configuration space \(\mathfrak R_K\) is compact and
+
+\[
+R\mapsto\Omega(R)
+\]
+
+is continuous.
+
+These assumptions are not supplied merely by Bridge 1. In particular, (C1) is the local geometric statement that must ultimately be derived from the explicit channel gain if the program is to become unconditional.
+
+---
+
+## 36. Uniform Primitive Curvature Gap Lemma
+
+### Lemma 36.1
+
+Under (C1)–(C2), there exists \(\omega_K>0\) such that
+
+\[
+\boxed{
+\Omega(R)\ge\omega_K
+\qquad
+\forall R\in\mathfrak R_K.
+}
+\tag{36.1}
+\]
+
+Equivalently,
+
+\[
+\boxed{|H_R|\ge e^{\omega_K}>1.}
+\tag{36.2}
+\]
+
+### Proof
+
+By compactness of \(\mathfrak R_K\) and continuity of \(\Omega\), the minimum
+
+\[
+\omega_K
+:=
+\min_{R\in\mathfrak R_K}\Omega(R)
+\]
+
+is attained.
+
+By (C1), every value of \(\Omega\) on \(\mathfrak R_K\) is strictly positive. If \(\omega_K=0\), attainment would produce \(R_*\in\mathfrak R_K\) with \(\Omega(R_*)=0\), contradicting (C1). Hence
+
+\[
+\omega_K>0.
+\]
+
+Exponentiating gives (36.2). \(\square\)
+
+---
+
+## 37. Orientation-free form
+
+If the physical convention yields the opposite sign,
+
+\[
+\Omega(R)<0
+\]
+
+on every primitive rectangle, the same compactness argument gives
+
+\[
+\Omega(R)\le-\omega_K<0.
+\]
+
+A convention-independent statement is therefore
+
+\[
+\boxed{
+|\Omega(R)|
+=
+\bigl|\log|H_R|\bigr|
+\ge\omega_K.
+}
+\tag{37.1}
+\]
+
+For a single primitive rectangle this implies
+
+\[
+|H_R-1|
+\ge
+1-e^{-\omega_K}.
+\tag{37.2}
+\]
+
+The passage from primitive rectangles to an arbitrary recurrent witness loop requires one more combinatorial/geometric statement: a same-sign rectangle decomposition with no cancellation of logarithmic curvature. That statement is the next subproblem of Bridge 2 and is **not** assumed proved here.
+
+---
+
+## 38. Status after the first layer of Bridge 2
+
+The rigorous conclusions established in this part are:
+
+\[
+\boxed{
+\begin{gathered}
+\text{compactness + exact projective discreteness + nontermination}
+\\
+\Longrightarrow
+\\
+\text{uniform finite exact channel recurrence},
+\end{gathered}
+}
+\]
+
+and, at the stronger completed-frontier level,
+
+\[
+\boxed{
+\text{uniform finite exact completed-incidence recurrence}.
+}
+\]
+
+On every exact closed completion block, Bridge 1 supplies a gauge-invariant holonomy, and exact multiplicative candidate consistency forces that holonomy to equal \(1\).
+
+Separately,
+
+\[
+\boxed{
+\text{compact primitive rectangle class + strict primitive nonflatness}
+\Longrightarrow
+\text{uniform primitive curvature gap }\omega_K>0.
+}
+\]
+
+What remains to complete Bridge 2 is now sharply divided into three local/global rigidity tasks:
+
+1. derive exact projective or completed-frontier discreteness from the physical channel data, or replace it by another exact recurrence mechanism;
+2. derive strict primitive nonflatness \(\Omega(R)\neq0\) with a fixed sign directly from the explicit Curl–Killing/radial channel gains;
+3. prove that every exact recurrent witness admits an incidence-balanced primitive-rectangle decomposition whose logarithmic curvatures have the same orientation and therefore cannot cancel.
+
+Only after these three points are established can one conclude a depth-independent lower bound
+
+\[
+|\operatorname{Hol}_\Gamma-1|\ge c_K>0
+\]
+
+for the completed recurrent witness and then invoke the already proved compactness argument to obtain the transverse saturation gap.
+
+Thus the current exact frontier is
+
+\[
+\boxed{
+\text{BRIDGE 1 CLOSED}
+\quad\Longrightarrow\quad
+\text{BRIDGE 2 REDUCED TO EXACT RECURRENCE + PRIMITIVE NONFLATNESS + SAME-SIGN DECOMPOSITION}.
+}
+\]
